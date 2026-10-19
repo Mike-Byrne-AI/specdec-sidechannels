@@ -1,0 +1,2729 @@
+{
+  "coder": "gamma",
+  "ctx_mode": 1,
+  "draft": "meta-llama/Llama-3.2-1B",
+  "k": 2,
+  "max_rank": 64,
+  "model": {
+    "dtype": "fp32",
+    "id": "meta-llama/Llama-3.2-1B",
+    "snapshot": "4e20de362430cd3b72f300e6b0f18e50e7166e08"
+  },
+  "provenance": {
+    "cpu_threads": 16,
+    "cuda": "12.4",
+    "cudnn": 90100,
+    "deterministic_algorithms": false,
+    "envprobe_digest": "2d2a2e0c1d7795d5383d36bd22b9b51dfac7fde4171fa4f0db074f6de145bbbd",
+    "gpu": "NVIDIA GeForce RTX 3080 Ti",
+    "model_id": "meta-llama/Llama-3.2-1B",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "snapshot": "4e20de362430cd3b72f300e6b0f18e50e7166e08",
+    "torch": "2.6.0+cu124",
+    "transformers": "4.57.3"
+  },
+  "sessions": {
+    "0": {
+      "all_tokens": 539,
+      "bytes": 177,
+      "gen_tokens": 512,
+      "payload_bits": 584,
+      "rows": [
+        0,
+        1
+      ],
+      "score_seconds": 0.3501645000651479,
+      "turns": [
+        {
+          "gen_bits": 8,
+          "gen_div": 2,
+          "gen_syms": 256,
+          "prompt_bits": 86,
+          "prompt_syms": 9
+        },
+        {
+          "gen_bits": 326,
+          "gen_div": 53,
+          "gen_syms": 256,
+          "prompt_bits": 141,
+          "prompt_syms": 17
+        }
+      ]
+    },
+    "1": {
+      "all_tokens": 536,
+      "bytes": 163,
+      "gen_tokens": 512,
+      "payload_bits": 472,
+      "rows": [
+        2,
+        3
+      ],
+      "score_seconds": 0.11034359992481768,
+      "turns": [
+        {
+          "gen_bits": 18,
+          "gen_div": 3,
+          "gen_syms": 256,
+          "prompt_bits": 84,
+          "prompt_syms": 10
+        },
+        {
+          "gen_bits": 148,
+          "gen_div": 21,
+          "gen_syms": 256,
+          "prompt_bits": 204,
+          "prompt_syms": 13
+        }
+      ]
+    },
+    "10": {
+      "all_tokens": 533,
+      "bytes": 186,
+      "gen_tokens": 512,
+      "payload_bits": 656,
+      "rows": [
+        20,
+        21
+      ],
+      "score_seconds": 0.11001339997164905,
+      "turns": [
+        {
+          "gen_bits": 316,
+          "gen_div": 49,
+          "gen_syms": 256,
+          "prompt_bits": 80,
+          "prompt_syms": 10
+        },
+        {
+          "gen_bits": 85,
+          "gen_div": 12,
+          "gen_syms": 256,
+          "prompt_bits": 168,
+          "prompt_syms": 10
+        }
+      ]
+    },
+    "11": {
+      "all_tokens": 543,
+      "bytes": 163,
+      "gen_tokens": 512,
+      "payload_bits": 472,
+      "rows": [
+        22,
+        23
+      ],
+      "score_seconds": 0.1107759999576956,
+      "turns": [
+        {
+          "gen_bits": 32,
+          "gen_div": 5,
+          "gen_syms": 256,
+          "prompt_bits": 224,
+          "prompt_syms": 15
+        },
+        {
+          "gen_bits": 50,
+          "gen_div": 9,
+          "gen_syms": 256,
+          "prompt_bits": 148,
+          "prompt_syms": 15
+        }
+      ]
+    },
+    "12": {
+      "all_tokens": 539,
+      "bytes": 175,
+      "gen_tokens": 512,
+      "payload_bits": 568,
+      "rows": [
+        24,
+        25
+      ],
+      "score_seconds": 0.10760220000520349,
+      "turns": [
+        {
+          "gen_bits": 108,
+          "gen_div": 16,
+          "gen_syms": 256,
+          "prompt_bits": 88,
+          "prompt_syms": 8
+        },
+        {
+          "gen_bits": 160,
+          "gen_div": 22,
+          "gen_syms": 256,
+          "prompt_bits": 193,
+          "prompt_syms": 18
+        }
+      ]
+    },
+    "13": {
+      "all_tokens": 539,
+      "bytes": 153,
+      "gen_tokens": 512,
+      "payload_bits": 392,
+      "rows": [
+        26,
+        27
+      ],
+      "score_seconds": 0.11140390019863844,
+      "turns": [
+        {
+          "gen_bits": 16,
+          "gen_div": 2,
+          "gen_syms": 256,
+          "prompt_bits": 94,
+          "prompt_syms": 13
+        },
+        {
+          "gen_bits": 59,
+          "gen_div": 5,
+          "gen_syms": 256,
+          "prompt_bits": 205,
+          "prompt_syms": 13
+        }
+      ]
+    },
+    "14": {
+      "all_tokens": 547,
+      "bytes": 160,
+      "gen_tokens": 512,
+      "payload_bits": 448,
+      "rows": [
+        28,
+        29
+      ],
+      "score_seconds": 0.11627450003288686,
+      "turns": [
+        {
+          "gen_bits": 16,
+          "gen_div": 3,
+          "gen_syms": 256,
+          "prompt_bits": 208,
+          "prompt_syms": 20
+        },
+        {
+          "gen_bits": 40,
+          "gen_div": 6,
+          "gen_syms": 256,
+          "prompt_bits": 164,
+          "prompt_syms": 14
+        }
+      ]
+    },
+    "15": {
+      "all_tokens": 537,
+      "bytes": 160,
+      "gen_tokens": 512,
+      "payload_bits": 448,
+      "rows": [
+        30,
+        31
+      ],
+      "score_seconds": 0.10709719988517463,
+      "turns": [
+        {
+          "gen_bits": 36,
+          "gen_div": 5,
+          "gen_syms": 256,
+          "prompt_bits": 86,
+          "prompt_syms": 7
+        },
+        {
+          "gen_bits": 130,
+          "gen_div": 21,
+          "gen_syms": 256,
+          "prompt_bits": 178,
+          "prompt_syms": 17
+        }
+      ]
+    },
+    "16": {
+      "all_tokens": 537,
+      "bytes": 193,
+      "gen_tokens": 512,
+      "payload_bits": 712,
+      "rows": [
+        32,
+        33
+      ],
+      "score_seconds": 0.10876830015331507,
+      "turns": [
+        {
+          "gen_bits": 280,
+          "gen_div": 39,
+          "gen_syms": 256,
+          "prompt_bits": 88,
+          "prompt_syms": 10
+        },
+        {
+          "gen_bits": 120,
+          "gen_div": 15,
+          "gen_syms": 256,
+          "prompt_bits": 206,
+          "prompt_syms": 14
+        }
+      ]
+    },
+    "17": {
+      "all_tokens": 539,
+      "bytes": 161,
+      "gen_tokens": 512,
+      "payload_bits": 456,
+      "rows": [
+        34,
+        35
+      ],
+      "score_seconds": 0.10878999996930361,
+      "turns": [
+        {
+          "gen_bits": 30,
+          "gen_div": 6,
+          "gen_syms": 256,
+          "prompt_bits": 220,
+          "prompt_syms": 15
+        },
+        {
+          "gen_bits": 44,
+          "gen_div": 7,
+          "gen_syms": 256,
+          "prompt_bits": 142,
+          "prompt_syms": 11
+        }
+      ]
+    },
+    "18": {
+      "all_tokens": 537,
+      "bytes": 182,
+      "gen_tokens": 512,
+      "payload_bits": 624,
+      "rows": [
+        36,
+        37
+      ],
+      "score_seconds": 0.1083132999483496,
+      "turns": [
+        {
+          "gen_bits": 160,
+          "gen_div": 19,
+          "gen_syms": 256,
+          "prompt_bits": 111,
+          "prompt_syms": 8
+        },
+        {
+          "gen_bits": 180,
+          "gen_div": 28,
+          "gen_syms": 256,
+          "prompt_bits": 168,
+          "prompt_syms": 16
+        }
+      ]
+    },
+    "19": {
+      "all_tokens": 534,
+      "bytes": 150,
+      "gen_tokens": 512,
+      "payload_bits": 368,
+      "rows": [
+        38,
+        39
+      ],
+      "score_seconds": 0.11063820007257164,
+      "turns": [
+        {
+          "gen_bits": 28,
+          "gen_div": 4,
+          "gen_syms": 256,
+          "prompt_bits": 84,
+          "prompt_syms": 10
+        },
+        {
+          "gen_bits": 66,
+          "gen_div": 11,
+          "gen_syms": 256,
+          "prompt_bits": 172,
+          "prompt_syms": 11
+        }
+      ]
+    },
+    "2": {
+      "all_tokens": 469,
+      "bytes": 202,
+      "gen_tokens": 435,
+      "payload_bits": 784,
+      "rows": [
+        4,
+        5
+      ],
+      "score_seconds": 0.09109269990585744,
+      "turns": [
+        {
+          "gen_bits": 134,
+          "gen_div": 18,
+          "gen_syms": 179,
+          "prompt_bits": 180,
+          "prompt_syms": 18
+        },
+        {
+          "gen_bits": 326,
+          "gen_div": 61,
+          "gen_syms": 256,
+          "prompt_bits": 135,
+          "prompt_syms": 15
+        }
+      ]
+    },
+    "20": {
+      "all_tokens": 542,
+      "bytes": 196,
+      "gen_tokens": 512,
+      "payload_bits": 736,
+      "rows": [
+        40,
+        41
+      ],
+      "score_seconds": 0.11098970007151365,
+      "turns": [
+        {
+          "gen_bits": 342,
+          "gen_div": 30,
+          "gen_syms": 256,
+          "prompt_bits": 195,
+          "prompt_syms": 17
+        },
+        {
+          "gen_bits": 34,
+          "gen_div": 5,
+          "gen_syms": 256,
+          "prompt_bits": 154,
+          "prompt_syms": 12
+        }
+      ]
+    },
+    "21": {
+      "all_tokens": 538,
+      "bytes": 178,
+      "gen_tokens": 512,
+      "payload_bits": 592,
+      "rows": [
+        42,
+        43
+      ],
+      "score_seconds": 0.11068989988416433,
+      "turns": [
+        {
+          "gen_bits": 94,
+          "gen_div": 15,
+          "gen_syms": 256,
+          "prompt_bits": 78,
+          "prompt_syms": 7
+        },
+        {
+          "gen_bits": 222,
+          "gen_div": 40,
+          "gen_syms": 256,
+          "prompt_bits": 182,
+          "prompt_syms": 18
+        }
+      ]
+    },
+    "22": {
+      "all_tokens": 534,
+      "bytes": 192,
+      "gen_tokens": 512,
+      "payload_bits": 704,
+      "rows": [
+        44,
+        45
+      ],
+      "score_seconds": 0.1105180000886321,
+      "turns": [
+        {
+          "gen_bits": 288,
+          "gen_div": 47,
+          "gen_syms": 256,
+          "prompt_bits": 88,
+          "prompt_syms": 10
+        },
+        {
+          "gen_bits": 148,
+          "gen_div": 21,
+          "gen_syms": 256,
+          "prompt_bits": 164,
+          "prompt_syms": 11
+        }
+      ]
+    },
+    "23": {
+      "all_tokens": 172,
+      "bytes": 160,
+      "gen_tokens": 139,
+      "payload_bits": 464,
+      "rows": [
+        46,
+        47
+      ],
+      "score_seconds": 0.03783889999613166,
+      "turns": [
+        {
+          "gen_bits": 98,
+          "gen_div": 17,
+          "gen_syms": 57,
+          "prompt_bits": 156,
+          "prompt_syms": 18
+        },
+        {
+          "gen_bits": 52,
+          "gen_div": 10,
+          "gen_syms": 82,
+          "prompt_bits": 156,
+          "prompt_syms": 14
+        }
+      ]
+    },
+    "24": {
+      "all_tokens": 536,
+      "bytes": 154,
+      "gen_tokens": 512,
+      "payload_bits": 400,
+      "rows": [
+        48,
+        49
+      ],
+      "score_seconds": 0.10924290004186332,
+      "turns": [
+        {
+          "gen_bits": 8,
+          "gen_div": 2,
+          "gen_syms": 256,
+          "prompt_bits": 80,
+          "prompt_syms": 7
+        },
+        {
+          "gen_bits": 112,
+          "gen_div": 21,
+          "gen_syms": 256,
+          "prompt_bits": 177,
+          "prompt_syms": 16
+        }
+      ]
+    },
+    "25": {
+      "all_tokens": 534,
+      "bytes": 151,
+      "gen_tokens": 512,
+      "payload_bits": 376,
+      "rows": [
+        50,
+        51
+      ],
+      "score_seconds": 0.11370570003055036,
+      "turns": [
+        {
+          "gen_bits": 22,
+          "gen_div": 5,
+          "gen_syms": 256,
+          "prompt_bits": 111,
+          "prompt_syms": 9
+        },
+        {
+          "gen_bits": 52,
+          "gen_div": 9,
+          "gen_syms": 256,
+          "prompt_bits": 170,
+          "prompt_syms": 12
+        }
+      ]
+    },
+    "26": {
+      "all_tokens": 307,
+      "bytes": 174,
+      "gen_tokens": 277,
+      "payload_bits": 568,
+      "rows": [
+        52,
+        53
+      ],
+      "score_seconds": 0.06099419994279742,
+      "turns": [
+        {
+          "gen_bits": 32,
+          "gen_div": 6,
+          "gen_syms": 21,
+          "prompt_bits": 208,
+          "prompt_syms": 16
+        },
+        {
+          "gen_bits": 180,
+          "gen_div": 29,
+          "gen_syms": 256,
+          "prompt_bits": 142,
+          "prompt_syms": 13
+        }
+      ]
+    },
+    "27": {
+      "all_tokens": 536,
+      "bytes": 211,
+      "gen_tokens": 512,
+      "payload_bits": 856,
+      "rows": [
+        54,
+        55
+      ],
+      "score_seconds": 0.11012890003621578,
+      "turns": [
+        {
+          "gen_bits": 230,
+          "gen_div": 27,
+          "gen_syms": 256,
+          "prompt_bits": 88,
+          "prompt_syms": 7
+        },
+        {
+          "gen_bits": 350,
+          "gen_div": 55,
+          "gen_syms": 256,
+          "prompt_bits": 176,
+          "prompt_syms": 16
+        }
+      ]
+    },
+    "28": {
+      "all_tokens": 535,
+      "bytes": 163,
+      "gen_tokens": 512,
+      "payload_bits": 472,
+      "rows": [
+        56,
+        57
+      ],
+      "score_seconds": 0.1096321998629719,
+      "turns": [
+        {
+          "gen_bits": 100,
+          "gen_div": 13,
+          "gen_syms": 256,
+          "prompt_bits": 88,
+          "prompt_syms": 10
+        },
+        {
+          "gen_bits": 102,
+          "gen_div": 17,
+          "gen_syms": 256,
+          "prompt_bits": 163,
+          "prompt_syms": 12
+        }
+      ]
+    },
+    "29": {
+      "all_tokens": 542,
+      "bytes": 167,
+      "gen_tokens": 512,
+      "payload_bits": 504,
+      "rows": [
+        58,
+        59
+      ],
+      "score_seconds": 0.10826769983395934,
+      "turns": [
+        {
+          "gen_bits": 28,
+          "gen_div": 4,
+          "gen_syms": 256,
+          "prompt_bits": 195,
+          "prompt_syms": 15
+        },
+        {
+          "gen_bits": 112,
+          "gen_div": 16,
+          "gen_syms": 256,
+          "prompt_bits": 146,
+          "prompt_syms": 14
+        }
+      ]
+    },
+    "3": {
+      "all_tokens": 538,
+      "bytes": 198,
+      "gen_tokens": 512,
+      "payload_bits": 752,
+      "rows": [
+        6,
+        7
+      ],
+      "score_seconds": 0.11044580000452697,
+      "turns": [
+        {
+          "gen_bits": 353,
+          "gen_div": 56,
+          "gen_syms": 256,
+          "prompt_bits": 109,
+          "prompt_syms": 9
+        },
+        {
+          "gen_bits": 66,
+          "gen_div": 14,
+          "gen_syms": 256,
+          "prompt_bits": 213,
+          "prompt_syms": 16
+        }
+      ]
+    },
+    "30": {
+      "all_tokens": 539,
+      "bytes": 148,
+      "gen_tokens": 512,
+      "payload_bits": 352,
+      "rows": [
+        60,
+        61
+      ],
+      "score_seconds": 0.11129139992408454,
+      "turns": [
+        {
+          "gen_bits": 12,
+          "gen_div": 3,
+          "gen_syms": 256,
+          "prompt_bits": 86,
+          "prompt_syms": 8
+        },
+        {
+          "gen_bits": 48,
+          "gen_div": 8,
+          "gen_syms": 256,
+          "prompt_bits": 187,
+          "prompt_syms": 18
+        }
+      ]
+    },
+    "31": {
+      "all_tokens": 533,
+      "bytes": 165,
+      "gen_tokens": 512,
+      "payload_bits": 488,
+      "rows": [
+        62,
+        63
+      ],
+      "score_seconds": 0.1096000000834465,
+      "turns": [
+        {
+          "gen_bits": 94,
+          "gen_div": 13,
+          "gen_syms": 256,
+          "prompt_bits": 84,
+          "prompt_syms": 9
+        },
+        {
+          "gen_bits": 127,
+          "gen_div": 15,
+          "gen_syms": 256,
+          "prompt_bits": 166,
+          "prompt_syms": 11
+        }
+      ]
+    },
+    "32": {
+      "all_tokens": 544,
+      "bytes": 194,
+      "gen_tokens": 512,
+      "payload_bits": 720,
+      "rows": [
+        64,
+        65
+      ],
+      "score_seconds": 0.1099149000365287,
+      "turns": [
+        {
+          "gen_bits": 118,
+          "gen_div": 16,
+          "gen_syms": 256,
+          "prompt_bits": 259,
+          "prompt_syms": 18
+        },
+        {
+          "gen_bits": 166,
+          "gen_div": 21,
+          "gen_syms": 256,
+          "prompt_bits": 154,
+          "prompt_syms": 13
+        }
+      ]
+    },
+    "33": {
+      "all_tokens": 537,
+      "bytes": 177,
+      "gen_tokens": 512,
+      "payload_bits": 584,
+      "rows": [
+        66,
+        67
+      ],
+      "score_seconds": 0.11056820000521839,
+      "turns": [
+        {
+          "gen_bits": 2,
+          "gen_div": 1,
+          "gen_syms": 256,
+          "prompt_bits": 109,
+          "prompt_syms": 9
+        },
+        {
+          "gen_bits": 286,
+          "gen_div": 48,
+          "gen_syms": 256,
+          "prompt_bits": 162,
+          "prompt_syms": 15
+        }
+      ]
+    },
+    "34": {
+      "all_tokens": 534,
+      "bytes": 181,
+      "gen_tokens": 512,
+      "payload_bits": 616,
+      "rows": [
+        68,
+        69
+      ],
+      "score_seconds": 0.10980680002830923,
+      "turns": [
+        {
+          "gen_bits": 144,
+          "gen_div": 22,
+          "gen_syms": 256,
+          "prompt_bits": 92,
+          "prompt_syms": 9
+        },
+        {
+          "gen_bits": 171,
+          "gen_div": 23,
+          "gen_syms": 256,
+          "prompt_bits": 195,
+          "prompt_syms": 12
+        }
+      ]
+    },
+    "35": {
+      "all_tokens": 314,
+      "bytes": 175,
+      "gen_tokens": 282,
+      "payload_bits": 576,
+      "rows": [
+        70,
+        71
+      ],
+      "score_seconds": 0.061396699864417315,
+      "turns": [
+        {
+          "gen_bits": 48,
+          "gen_div": 7,
+          "gen_syms": 26,
+          "prompt_bits": 207,
+          "prompt_syms": 17
+        },
+        {
+          "gen_bits": 163,
+          "gen_div": 22,
+          "gen_syms": 256,
+          "prompt_bits": 148,
+          "prompt_syms": 14
+        }
+      ]
+    },
+    "36": {
+      "all_tokens": 508,
+      "bytes": 167,
+      "gen_tokens": 478,
+      "payload_bits": 504,
+      "rows": [
+        72,
+        73
+      ],
+      "score_seconds": 0.0939795000012964,
+      "turns": [
+        {
+          "gen_bits": 10,
+          "gen_div": 2,
+          "gen_syms": 256,
+          "prompt_bits": 82,
+          "prompt_syms": 9
+        },
+        {
+          "gen_bits": 216,
+          "gen_div": 37,
+          "gen_syms": 222,
+          "prompt_bits": 176,
+          "prompt_syms": 20
+        }
+      ]
+    },
+    "37": {
+      "all_tokens": 534,
+      "bytes": 199,
+      "gen_tokens": 512,
+      "payload_bits": 760,
+      "rows": [
+        74,
+        75
+      ],
+      "score_seconds": 0.11190270003862679,
+      "turns": [
+        {
+          "gen_bits": 310,
+          "gen_div": 52,
+          "gen_syms": 256,
+          "prompt_bits": 88,
+          "prompt_syms": 9
+        },
+        {
+          "gen_bits": 155,
+          "gen_div": 25,
+          "gen_syms": 256,
+          "prompt_bits": 199,
+          "prompt_syms": 12
+        }
+      ]
+    },
+    "38": {
+      "all_tokens": 548,
+      "bytes": 190,
+      "gen_tokens": 512,
+      "payload_bits": 688,
+      "rows": [
+        76,
+        77
+      ],
+      "score_seconds": 0.11570119997486472,
+      "turns": [
+        {
+          "gen_bits": 52,
+          "gen_div": 9,
+          "gen_syms": 256,
+          "prompt_bits": 243,
+          "prompt_syms": 17
+        },
+        {
+          "gen_bits": 226,
+          "gen_div": 34,
+          "gen_syms": 256,
+          "prompt_bits": 142,
+          "prompt_syms": 18
+        }
+      ]
+    },
+    "39": {
+      "all_tokens": 387,
+      "bytes": 179,
+      "gen_tokens": 365,
+      "payload_bits": 608,
+      "rows": [
+        78,
+        79
+      ],
+      "score_seconds": 0.07812660001218319,
+      "turns": [
+        {
+          "gen_bits": 112,
+          "gen_div": 19,
+          "gen_syms": 109,
+          "prompt_bits": 78,
+          "prompt_syms": 7
+        },
+        {
+          "gen_bits": 306,
+          "gen_div": 56,
+          "gen_syms": 256,
+          "prompt_bits": 106,
+          "prompt_syms": 14
+        }
+      ]
+    },
+    "4": {
+      "all_tokens": 537,
+      "bytes": 174,
+      "gen_tokens": 512,
+      "payload_bits": 560,
+      "rows": [
+        8,
+        9
+      ],
+      "score_seconds": 0.10754300002008677,
+      "turns": [
+        {
+          "gen_bits": 220,
+          "gen_div": 34,
+          "gen_syms": 256,
+          "prompt_bits": 92,
+          "prompt_syms": 10
+        },
+        {
+          "gen_bits": 38,
+          "gen_div": 6,
+          "gen_syms": 256,
+          "prompt_bits": 195,
+          "prompt_syms": 14
+        }
+      ]
+    },
+    "40": {
+      "all_tokens": 534,
+      "bytes": 186,
+      "gen_tokens": 512,
+      "payload_bits": 656,
+      "rows": [
+        80,
+        81
+      ],
+      "score_seconds": 0.11165079986676574,
+      "turns": [
+        {
+          "gen_bits": 16,
+          "gen_div": 3,
+          "gen_syms": 256,
+          "prompt_bits": 113,
+          "prompt_syms": 9
+        },
+        {
+          "gen_bits": 332,
+          "gen_div": 49,
+          "gen_syms": 256,
+          "prompt_bits": 172,
+          "prompt_syms": 12
+        }
+      ]
+    },
+    "41": {
+      "all_tokens": 550,
+      "bytes": 182,
+      "gen_tokens": 512,
+      "payload_bits": 624,
+      "rows": [
+        82,
+        83
+      ],
+      "score_seconds": 0.11741489986889064,
+      "turns": [
+        {
+          "gen_bits": 230,
+          "gen_div": 31,
+          "gen_syms": 256,
+          "prompt_bits": 186,
+          "prompt_syms": 21
+        },
+        {
+          "gen_bits": 20,
+          "gen_div": 3,
+          "gen_syms": 256,
+          "prompt_bits": 175,
+          "prompt_syms": 16
+        }
+      ]
+    },
+    "42": {
+      "all_tokens": 538,
+      "bytes": 155,
+      "gen_tokens": 512,
+      "payload_bits": 408,
+      "rows": [
+        84,
+        85
+      ],
+      "score_seconds": 0.11040310002863407,
+      "turns": [
+        {
+          "gen_bits": 58,
+          "gen_div": 8,
+          "gen_syms": 256,
+          "prompt_bits": 78,
+          "prompt_syms": 9
+        },
+        {
+          "gen_bits": 68,
+          "gen_div": 10,
+          "gen_syms": 256,
+          "prompt_bits": 187,
+          "prompt_syms": 16
+        }
+      ]
+    },
+    "43": {
+      "all_tokens": 534,
+      "bytes": 178,
+      "gen_tokens": 512,
+      "payload_bits": 592,
+      "rows": [
+        86,
+        87
+      ],
+      "score_seconds": 0.10920529998838902,
+      "turns": [
+        {
+          "gen_bits": 184,
+          "gen_div": 19,
+          "gen_syms": 256,
+          "prompt_bits": 109,
+          "prompt_syms": 8
+        },
+        {
+          "gen_bits": 64,
+          "gen_div": 10,
+          "gen_syms": 256,
+          "prompt_bits": 222,
+          "prompt_syms": 13
+        }
+      ]
+    },
+    "44": {
+      "all_tokens": 548,
+      "bytes": 180,
+      "gen_tokens": 512,
+      "payload_bits": 608,
+      "rows": [
+        88,
+        89
+      ],
+      "score_seconds": 0.1113414999563247,
+      "turns": [
+        {
+          "gen_bits": 110,
+          "gen_div": 17,
+          "gen_syms": 256,
+          "prompt_bits": 258,
+          "prompt_syms": 23
+        },
+        {
+          "gen_bits": 70,
+          "gen_div": 10,
+          "gen_syms": 256,
+          "prompt_bits": 150,
+          "prompt_syms": 12
+        }
+      ]
+    },
+    "45": {
+      "all_tokens": 427,
+      "bytes": 191,
+      "gen_tokens": 401,
+      "payload_bits": 696,
+      "rows": [
+        90,
+        91
+      ],
+      "score_seconds": 0.08166799996979535,
+      "turns": [
+        {
+          "gen_bits": 220,
+          "gen_div": 36,
+          "gen_syms": 145,
+          "prompt_bits": 80,
+          "prompt_syms": 8
+        },
+        {
+          "gen_bits": 196,
+          "gen_div": 34,
+          "gen_syms": 256,
+          "prompt_bits": 195,
+          "prompt_syms": 17
+        }
+      ]
+    },
+    "46": {
+      "all_tokens": 535,
+      "bytes": 205,
+      "gen_tokens": 512,
+      "payload_bits": 808,
+      "rows": [
+        92,
+        93
+      ],
+      "score_seconds": 0.1132675998378545,
+      "turns": [
+        {
+          "gen_bits": 258,
+          "gen_div": 41,
+          "gen_syms": 256,
+          "prompt_bits": 80,
+          "prompt_syms": 9
+        },
+        {
+          "gen_bits": 278,
+          "gen_div": 38,
+          "gen_syms": 256,
+          "prompt_bits": 182,
+          "prompt_syms": 13
+        }
+      ]
+    },
+    "47": {
+      "all_tokens": 542,
+      "bytes": 176,
+      "gen_tokens": 512,
+      "payload_bits": 576,
+      "rows": [
+        94,
+        95
+      ],
+      "score_seconds": 0.1103204998653382,
+      "turns": [
+        {
+          "gen_bits": 32,
+          "gen_div": 5,
+          "gen_syms": 256,
+          "prompt_bits": 201,
+          "prompt_syms": 16
+        },
+        {
+          "gen_bits": 182,
+          "gen_div": 30,
+          "gen_syms": 256,
+          "prompt_bits": 136,
+          "prompt_syms": 13
+        }
+      ]
+    },
+    "48": {
+      "all_tokens": 539,
+      "bytes": 154,
+      "gen_tokens": 512,
+      "payload_bits": 400,
+      "rows": [
+        96,
+        97
+      ],
+      "score_seconds": 0.10797750018537045,
+      "turns": [
+        {
+          "gen_bits": 20,
+          "gen_div": 4,
+          "gen_syms": 256,
+          "prompt_bits": 92,
+          "prompt_syms": 9
+        },
+        {
+          "gen_bits": 42,
+          "gen_div": 8,
+          "gen_syms": 256,
+          "prompt_bits": 228,
+          "prompt_syms": 17
+        }
+      ]
+    },
+    "49": {
+      "all_tokens": 534,
+      "bytes": 186,
+      "gen_tokens": 512,
+      "payload_bits": 656,
+      "rows": [
+        98,
+        99
+      ],
+      "score_seconds": 0.1065852998290211,
+      "turns": [
+        {
+          "gen_bits": 102,
+          "gen_div": 10,
+          "gen_syms": 256,
+          "prompt_bits": 100,
+          "prompt_syms": 9
+        },
+        {
+          "gen_bits": 228,
+          "gen_div": 32,
+          "gen_syms": 256,
+          "prompt_bits": 208,
+          "prompt_syms": 12
+        }
+      ]
+    },
+    "5": {
+      "all_tokens": 325,
+      "bytes": 158,
+      "gen_tokens": 297,
+      "payload_bits": 440,
+      "rows": [
+        10,
+        11
+      ],
+      "score_seconds": 0.06612779991701245,
+      "turns": [
+        {
+          "gen_bits": 64,
+          "gen_div": 11,
+          "gen_syms": 41,
+          "prompt_bits": 222,
+          "prompt_syms": 17
+        },
+        {
+          "gen_bits": 62,
+          "gen_div": 8,
+          "gen_syms": 256,
+          "prompt_bits": 88,
+          "prompt_syms": 10
+        }
+      ]
+    },
+    "50": {
+      "all_tokens": 543,
+      "bytes": 169,
+      "gen_tokens": 512,
+      "payload_bits": 520,
+      "rows": [
+        100,
+        101
+      ],
+      "score_seconds": 0.10769369988702238,
+      "turns": [
+        {
+          "gen_bits": 58,
+          "gen_div": 9,
+          "gen_syms": 256,
+          "prompt_bits": 220,
+          "prompt_syms": 19
+        },
+        {
+          "gen_bits": 80,
+          "gen_div": 13,
+          "gen_syms": 256,
+          "prompt_bits": 146,
+          "prompt_syms": 11
+        }
+      ]
+    },
+    "51": {
+      "all_tokens": 320,
+      "bytes": 208,
+      "gen_tokens": 295,
+      "payload_bits": 840,
+      "rows": [
+        102,
+        103
+      ],
+      "score_seconds": 0.059842900140210986,
+      "turns": [
+        {
+          "gen_bits": 44,
+          "gen_div": 7,
+          "gen_syms": 39,
+          "prompt_bits": 127,
+          "prompt_syms": 10
+        },
+        {
+          "gen_bits": 477,
+          "gen_div": 85,
+          "gen_syms": 256,
+          "prompt_bits": 187,
+          "prompt_syms": 14
+        }
+      ]
+    },
+    "52": {
+      "all_tokens": 533,
+      "bytes": 172,
+      "gen_tokens": 512,
+      "payload_bits": 544,
+      "rows": [
+        104,
+        105
+      ],
+      "score_seconds": 0.11111479997634888,
+      "turns": [
+        {
+          "gen_bits": 134,
+          "gen_div": 21,
+          "gen_syms": 256,
+          "prompt_bits": 117,
+          "prompt_syms": 9
+        },
+        {
+          "gen_bits": 78,
+          "gen_div": 14,
+          "gen_syms": 256,
+          "prompt_bits": 195,
+          "prompt_syms": 11
+        }
+      ]
+    },
+    "53": {
+      "all_tokens": 545,
+      "bytes": 158,
+      "gen_tokens": 512,
+      "payload_bits": 432,
+      "rows": [
+        106,
+        107
+      ],
+      "score_seconds": 0.11105869989842176,
+      "turns": [
+        {
+          "gen_bits": 26,
+          "gen_div": 6,
+          "gen_syms": 256,
+          "prompt_bits": 207,
+          "prompt_syms": 19
+        },
+        {
+          "gen_bits": 32,
+          "gen_div": 4,
+          "gen_syms": 256,
+          "prompt_bits": 150,
+          "prompt_syms": 13
+        }
+      ]
+    },
+    "54": {
+      "all_tokens": 541,
+      "bytes": 152,
+      "gen_tokens": 512,
+      "payload_bits": 384,
+      "rows": [
+        108,
+        109
+      ],
+      "score_seconds": 0.1066568000242114,
+      "turns": [
+        {
+          "gen_bits": 20,
+          "gen_div": 2,
+          "gen_syms": 256,
+          "prompt_bits": 98,
+          "prompt_syms": 9
+        },
+        {
+          "gen_bits": 38,
+          "gen_div": 8,
+          "gen_syms": 256,
+          "prompt_bits": 207,
+          "prompt_syms": 19
+        }
+      ]
+    },
+    "55": {
+      "all_tokens": 459,
+      "bytes": 199,
+      "gen_tokens": 435,
+      "payload_bits": 760,
+      "rows": [
+        110,
+        111
+      ],
+      "score_seconds": 0.08827319997362792,
+      "turns": [
+        {
+          "gen_bits": 286,
+          "gen_div": 48,
+          "gen_syms": 256,
+          "prompt_bits": 140,
+          "prompt_syms": 10
+        },
+        {
+          "gen_bits": 114,
+          "gen_div": 16,
+          "gen_syms": 179,
+          "prompt_bits": 209,
+          "prompt_syms": 13
+        }
+      ]
+    },
+    "56": {
+      "all_tokens": 540,
+      "bytes": 154,
+      "gen_tokens": 512,
+      "payload_bits": 400,
+      "rows": [
+        112,
+        113
+      ],
+      "score_seconds": 0.11119139986112714,
+      "turns": [
+        {
+          "gen_bits": 16,
+          "gen_div": 2,
+          "gen_syms": 256,
+          "prompt_bits": 170,
+          "prompt_syms": 15
+        },
+        {
+          "gen_bits": 46,
+          "gen_div": 7,
+          "gen_syms": 256,
+          "prompt_bits": 150,
+          "prompt_syms": 12
+        }
+      ]
+    },
+    "57": {
+      "all_tokens": 538,
+      "bytes": 145,
+      "gen_tokens": 512,
+      "payload_bits": 328,
+      "rows": [
+        114,
+        115
+      ],
+      "score_seconds": 0.10718640009872615,
+      "turns": [
+        {
+          "gen_bits": 8,
+          "gen_div": 2,
+          "gen_syms": 256,
+          "prompt_bits": 96,
+          "prompt_syms": 8
+        },
+        {
+          "gen_bits": 44,
+          "gen_div": 7,
+          "gen_syms": 256,
+          "prompt_bits": 164,
+          "prompt_syms": 17
+        }
+      ]
+    },
+    "58": {
+      "all_tokens": 535,
+      "bytes": 171,
+      "gen_tokens": 512,
+      "payload_bits": 536,
+      "rows": [
+        116,
+        117
+      ],
+      "score_seconds": 0.10828079981729388,
+      "turns": [
+        {
+          "gen_bits": 180,
+          "gen_div": 26,
+          "gen_syms": 256,
+          "prompt_bits": 90,
+          "prompt_syms": 10
+        },
+        {
+          "gen_bits": 52,
+          "gen_div": 8,
+          "gen_syms": 256,
+          "prompt_bits": 199,
+          "prompt_syms": 12
+        }
+      ]
+    },
+    "59": {
+      "all_tokens": 545,
+      "bytes": 156,
+      "gen_tokens": 512,
+      "payload_bits": 416,
+      "rows": [
+        118,
+        119
+      ],
+      "score_seconds": 0.11010379996150732,
+      "turns": [
+        {
+          "gen_bits": 26,
+          "gen_div": 6,
+          "gen_syms": 256,
+          "prompt_bits": 214,
+          "prompt_syms": 18
+        },
+        {
+          "gen_bits": 22,
+          "gen_div": 4,
+          "gen_syms": 256,
+          "prompt_bits": 127,
+          "prompt_syms": 14
+        }
+      ]
+    },
+    "6": {
+      "all_tokens": 537,
+      "bytes": 145,
+      "gen_tokens": 512,
+      "payload_bits": 328,
+      "rows": [
+        12,
+        13
+      ],
+      "score_seconds": 0.10573199996724725,
+      "turns": [
+        {
+          "gen_bits": 8,
+          "gen_div": 1,
+          "gen_syms": 256,
+          "prompt_bits": 102,
+          "prompt_syms": 9
+        },
+        {
+          "gen_bits": 32,
+          "gen_div": 6,
+          "gen_syms": 256,
+          "prompt_bits": 168,
+          "prompt_syms": 15
+        }
+      ]
+    },
+    "60": {
+      "all_tokens": 537,
+      "bytes": 179,
+      "gen_tokens": 512,
+      "payload_bits": 600,
+      "rows": [
+        120,
+        121
+      ],
+      "score_seconds": 0.10867510014213622,
+      "turns": [
+        {
+          "gen_bits": 0,
+          "gen_div": 0,
+          "gen_syms": 256,
+          "prompt_bits": 82,
+          "prompt_syms": 9
+        },
+        {
+          "gen_bits": 340,
+          "gen_div": 48,
+          "gen_syms": 256,
+          "prompt_bits": 154,
+          "prompt_syms": 15
+        }
+      ]
+    },
+    "61": {
+      "all_tokens": 539,
+      "bytes": 155,
+      "gen_tokens": 512,
+      "payload_bits": 408,
+      "rows": [
+        122,
+        123
+      ],
+      "score_seconds": 0.10640310007147491,
+      "turns": [
+        {
+          "gen_bits": 12,
+          "gen_div": 3,
+          "gen_syms": 256,
+          "prompt_bits": 144,
+          "prompt_syms": 13
+        },
+        {
+          "gen_bits": 30,
+          "gen_div": 4,
+          "gen_syms": 256,
+          "prompt_bits": 199,
+          "prompt_syms": 13
+        }
+      ]
+    },
+    "62": {
+      "all_tokens": 549,
+      "bytes": 157,
+      "gen_tokens": 512,
+      "payload_bits": 424,
+      "rows": [
+        124,
+        125
+      ],
+      "score_seconds": 0.11174100008793175,
+      "turns": [
+        {
+          "gen_bits": 72,
+          "gen_div": 13,
+          "gen_syms": 256,
+          "prompt_bits": 180,
+          "prompt_syms": 19
+        },
+        {
+          "gen_bits": 16,
+          "gen_div": 3,
+          "gen_syms": 256,
+          "prompt_bits": 135,
+          "prompt_syms": 17
+        }
+      ]
+    },
+    "63": {
+      "all_tokens": 539,
+      "bytes": 157,
+      "gen_tokens": 512,
+      "payload_bits": 424,
+      "rows": [
+        126,
+        127
+      ],
+      "score_seconds": 0.10616999980993569,
+      "turns": [
+        {
+          "gen_bits": 30,
+          "gen_div": 5,
+          "gen_syms": 256,
+          "prompt_bits": 113,
+          "prompt_syms": 10
+        },
+        {
+          "gen_bits": 92,
+          "gen_div": 15,
+          "gen_syms": 256,
+          "prompt_bits": 170,
+          "prompt_syms": 16
+        }
+      ]
+    },
+    "64": {
+      "all_tokens": 537,
+      "bytes": 158,
+      "gen_tokens": 512,
+      "payload_bits": 432,
+      "rows": [
+        128,
+        129
+      ],
+      "score_seconds": 0.10644340002909303,
+      "turns": [
+        {
+          "gen_bits": 44,
+          "gen_div": 7,
+          "gen_syms": 256,
+          "prompt_bits": 84,
+          "prompt_syms": 10
+        },
+        {
+          "gen_bits": 72,
+          "gen_div": 12,
+          "gen_syms": 256,
+          "prompt_bits": 216,
+          "prompt_syms": 14
+        }
+      ]
+    },
+    "65": {
+      "all_tokens": 543,
+      "bytes": 164,
+      "gen_tokens": 512,
+      "payload_bits": 480,
+      "rows": [
+        130,
+        131
+      ],
+      "score_seconds": 0.1079778999555856,
+      "turns": [
+        {
+          "gen_bits": 32,
+          "gen_div": 7,
+          "gen_syms": 256,
+          "prompt_bits": 274,
+          "prompt_syms": 18
+        },
+        {
+          "gen_bits": 26,
+          "gen_div": 6,
+          "gen_syms": 256,
+          "prompt_bits": 129,
+          "prompt_syms": 12
+        }
+      ]
+    },
+    "66": {
+      "all_tokens": 536,
+      "bytes": 176,
+      "gen_tokens": 512,
+      "payload_bits": 576,
+      "rows": [
+        132,
+        133
+      ],
+      "score_seconds": 0.10684240004047751,
+      "turns": [
+        {
+          "gen_bits": 12,
+          "gen_div": 2,
+          "gen_syms": 256,
+          "prompt_bits": 102,
+          "prompt_syms": 8
+        },
+        {
+          "gen_bits": 268,
+          "gen_div": 40,
+          "gen_syms": 256,
+          "prompt_bits": 175,
+          "prompt_syms": 15
+        }
+      ]
+    },
+    "67": {
+      "all_tokens": 536,
+      "bytes": 207,
+      "gen_tokens": 512,
+      "payload_bits": 824,
+      "rows": [
+        134,
+        135
+      ],
+      "score_seconds": 0.10873929993249476,
+      "turns": [
+        {
+          "gen_bits": 354,
+          "gen_div": 59,
+          "gen_syms": 256,
+          "prompt_bits": 111,
+          "prompt_syms": 10
+        },
+        {
+          "gen_bits": 136,
+          "gen_div": 23,
+          "gen_syms": 256,
+          "prompt_bits": 219,
+          "prompt_syms": 13
+        }
+      ]
+    },
+    "68": {
+      "all_tokens": 541,
+      "bytes": 155,
+      "gen_tokens": 512,
+      "payload_bits": 408,
+      "rows": [
+        136,
+        137
+      ],
+      "score_seconds": 0.10944289993494749,
+      "turns": [
+        {
+          "gen_bits": 6,
+          "gen_div": 1,
+          "gen_syms": 256,
+          "prompt_bits": 207,
+          "prompt_syms": 15
+        },
+        {
+          "gen_bits": 14,
+          "gen_div": 3,
+          "gen_syms": 256,
+          "prompt_bits": 162,
+          "prompt_syms": 13
+        }
+      ]
+    },
+    "69": {
+      "all_tokens": 537,
+      "bytes": 203,
+      "gen_tokens": 512,
+      "payload_bits": 792,
+      "rows": [
+        138,
+        139
+      ],
+      "score_seconds": 0.10826810006983578,
+      "turns": [
+        {
+          "gen_bits": 196,
+          "gen_div": 37,
+          "gen_syms": 256,
+          "prompt_bits": 88,
+          "prompt_syms": 8
+        },
+        {
+          "gen_bits": 308,
+          "gen_div": 49,
+          "gen_syms": 256,
+          "prompt_bits": 183,
+          "prompt_syms": 16
+        }
+      ]
+    },
+    "7": {
+      "all_tokens": 535,
+      "bytes": 182,
+      "gen_tokens": 512,
+      "payload_bits": 624,
+      "rows": [
+        14,
+        15
+      ],
+      "score_seconds": 0.10565430019050837,
+      "turns": [
+        {
+          "gen_bits": 42,
+          "gen_div": 7,
+          "gen_syms": 256,
+          "prompt_bits": 88,
+          "prompt_syms": 10
+        },
+        {
+          "gen_bits": 304,
+          "gen_div": 46,
+          "gen_syms": 256,
+          "prompt_bits": 168,
+          "prompt_syms": 12
+        }
+      ]
+    },
+    "70": {
+      "all_tokens": 536,
+      "bytes": 168,
+      "gen_tokens": 512,
+      "payload_bits": 512,
+      "rows": [
+        140,
+        141
+      ],
+      "score_seconds": 0.11045619985088706,
+      "turns": [
+        {
+          "gen_bits": 66,
+          "gen_div": 10,
+          "gen_syms": 256,
+          "prompt_bits": 86,
+          "prompt_syms": 9
+        },
+        {
+          "gen_bits": 147,
+          "gen_div": 17,
+          "gen_syms": 256,
+          "prompt_bits": 193,
+          "prompt_syms": 14
+        }
+      ]
+    },
+    "71": {
+      "all_tokens": 540,
+      "bytes": 183,
+      "gen_tokens": 512,
+      "payload_bits": 632,
+      "rows": [
+        142,
+        143
+      ],
+      "score_seconds": 0.10892349993810058,
+      "turns": [
+        {
+          "gen_bits": 30,
+          "gen_div": 5,
+          "gen_syms": 256,
+          "prompt_bits": 181,
+          "prompt_syms": 15
+        },
+        {
+          "gen_bits": 252,
+          "gen_div": 34,
+          "gen_syms": 256,
+          "prompt_bits": 148,
+          "prompt_syms": 12
+        }
+      ]
+    },
+    "72": {
+      "all_tokens": 538,
+      "bytes": 180,
+      "gen_tokens": 512,
+      "payload_bits": 608,
+      "rows": [
+        144,
+        145
+      ],
+      "score_seconds": 0.10881190001964569,
+      "turns": [
+        {
+          "gen_bits": 224,
+          "gen_div": 36,
+          "gen_syms": 256,
+          "prompt_bits": 112,
+          "prompt_syms": 9
+        },
+        {
+          "gen_bits": 40,
+          "gen_div": 7,
+          "gen_syms": 256,
+          "prompt_bits": 220,
+          "prompt_syms": 16
+        }
+      ]
+    },
+    "73": {
+      "all_tokens": 536,
+      "bytes": 185,
+      "gen_tokens": 512,
+      "payload_bits": 648,
+      "rows": [
+        146,
+        147
+      ],
+      "score_seconds": 0.10681629995815456,
+      "turns": [
+        {
+          "gen_bits": 140,
+          "gen_div": 24,
+          "gen_syms": 256,
+          "prompt_bits": 86,
+          "prompt_syms": 10
+        },
+        {
+          "gen_bits": 176,
+          "gen_div": 24,
+          "gen_syms": 256,
+          "prompt_bits": 226,
+          "prompt_syms": 13
+        }
+      ]
+    },
+    "74": {
+      "all_tokens": 541,
+      "bytes": 159,
+      "gen_tokens": 512,
+      "payload_bits": 440,
+      "rows": [
+        148,
+        149
+      ],
+      "score_seconds": 0.11302220006473362,
+      "turns": [
+        {
+          "gen_bits": 6,
+          "gen_div": 1,
+          "gen_syms": 256,
+          "prompt_bits": 256,
+          "prompt_syms": 17
+        },
+        {
+          "gen_bits": 16,
+          "gen_div": 3,
+          "gen_syms": 256,
+          "prompt_bits": 146,
+          "prompt_syms": 11
+        }
+      ]
+    },
+    "75": {
+      "all_tokens": 538,
+      "bytes": 143,
+      "gen_tokens": 512,
+      "payload_bits": 312,
+      "rows": [
+        150,
+        151
+      ],
+      "score_seconds": 0.10721620009280741,
+      "turns": [
+        {
+          "gen_bits": 12,
+          "gen_div": 2,
+          "gen_syms": 256,
+          "prompt_bits": 105,
+          "prompt_syms": 8
+        },
+        {
+          "gen_bits": 18,
+          "gen_div": 3,
+          "gen_syms": 256,
+          "prompt_bits": 159,
+          "prompt_syms": 17
+        }
+      ]
+    },
+    "76": {
+      "all_tokens": 538,
+      "bytes": 158,
+      "gen_tokens": 512,
+      "payload_bits": 432,
+      "rows": [
+        152,
+        153
+      ],
+      "score_seconds": 0.1083169998601079,
+      "turns": [
+        {
+          "gen_bits": 76,
+          "gen_div": 12,
+          "gen_syms": 256,
+          "prompt_bits": 125,
+          "prompt_syms": 11
+        },
+        {
+          "gen_bits": 26,
+          "gen_div": 5,
+          "gen_syms": 256,
+          "prompt_bits": 184,
+          "prompt_syms": 14
+        }
+      ]
+    },
+    "77": {
+      "all_tokens": 549,
+      "bytes": 189,
+      "gen_tokens": 512,
+      "payload_bits": 680,
+      "rows": [
+        154,
+        155
+      ],
+      "score_seconds": 0.11202170001342893,
+      "turns": [
+        {
+          "gen_bits": 46,
+          "gen_div": 7,
+          "gen_syms": 256,
+          "prompt_bits": 211,
+          "prompt_syms": 19
+        },
+        {
+          "gen_bits": 236,
+          "gen_div": 37,
+          "gen_syms": 256,
+          "prompt_bits": 164,
+          "prompt_syms": 17
+        }
+      ]
+    },
+    "78": {
+      "all_tokens": 537,
+      "bytes": 181,
+      "gen_tokens": 512,
+      "payload_bits": 616,
+      "rows": [
+        156,
+        157
+      ],
+      "score_seconds": 0.10926939989440143,
+      "turns": [
+        {
+          "gen_bits": 154,
+          "gen_div": 28,
+          "gen_syms": 256,
+          "prompt_bits": 144,
+          "prompt_syms": 11
+        },
+        {
+          "gen_bits": 128,
+          "gen_div": 21,
+          "gen_syms": 256,
+          "prompt_bits": 168,
+          "prompt_syms": 13
+        }
+      ]
+    },
+    "79": {
+      "all_tokens": 535,
+      "bytes": 172,
+      "gen_tokens": 512,
+      "payload_bits": 544,
+      "rows": [
+        158,
+        159
+      ],
+      "score_seconds": 0.1089926001150161,
+      "turns": [
+        {
+          "gen_bits": 134,
+          "gen_div": 22,
+          "gen_syms": 256,
+          "prompt_bits": 107,
+          "prompt_syms": 9
+        },
+        {
+          "gen_bits": 102,
+          "gen_div": 18,
+          "gen_syms": 256,
+          "prompt_bits": 180,
+          "prompt_syms": 13
+        }
+      ]
+    },
+    "8": {
+      "all_tokens": 541,
+      "bytes": 191,
+      "gen_tokens": 512,
+      "payload_bits": 696,
+      "rows": [
+        16,
+        17
+      ],
+      "score_seconds": 0.10990709997713566,
+      "turns": [
+        {
+          "gen_bits": 34,
+          "gen_div": 6,
+          "gen_syms": 256,
+          "prompt_bits": 205,
+          "prompt_syms": 17
+        },
+        {
+          "gen_bits": 291,
+          "gen_div": 43,
+          "gen_syms": 256,
+          "prompt_bits": 146,
+          "prompt_syms": 11
+        }
+      ]
+    },
+    "80": {
+      "all_tokens": 546,
+      "bytes": 170,
+      "gen_tokens": 512,
+      "payload_bits": 528,
+      "rows": [
+        160,
+        161
+      ],
+      "score_seconds": 0.11455970001406968,
+      "turns": [
+        {
+          "gen_bits": 104,
+          "gen_div": 15,
+          "gen_syms": 256,
+          "prompt_bits": 222,
+          "prompt_syms": 21
+        },
+        {
+          "gen_bits": 50,
+          "gen_div": 7,
+          "gen_syms": 256,
+          "prompt_bits": 137,
+          "prompt_syms": 12
+        }
+      ]
+    },
+    "81": {
+      "all_tokens": 333,
+      "bytes": 159,
+      "gen_tokens": 305,
+      "payload_bits": 448,
+      "rows": [
+        162,
+        163
+      ],
+      "score_seconds": 0.06602160003967583,
+      "turns": [
+        {
+          "gen_bits": 50,
+          "gen_div": 8,
+          "gen_syms": 49,
+          "prompt_bits": 98,
+          "prompt_syms": 9
+        },
+        {
+          "gen_bits": 156,
+          "gen_div": 25,
+          "gen_syms": 256,
+          "prompt_bits": 139,
+          "prompt_syms": 18
+        }
+      ]
+    },
+    "82": {
+      "all_tokens": 535,
+      "bytes": 165,
+      "gen_tokens": 512,
+      "payload_bits": 488,
+      "rows": [
+        164,
+        165
+      ],
+      "score_seconds": 0.10735269985161722,
+      "turns": [
+        {
+          "gen_bits": 74,
+          "gen_div": 10,
+          "gen_syms": 256,
+          "prompt_bits": 84,
+          "prompt_syms": 8
+        },
+        {
+          "gen_bits": 120,
+          "gen_div": 21,
+          "gen_syms": 256,
+          "prompt_bits": 191,
+          "prompt_syms": 14
+        }
+      ]
+    },
+    "83": {
+      "all_tokens": 541,
+      "bytes": 161,
+      "gen_tokens": 512,
+      "payload_bits": 456,
+      "rows": [
+        166,
+        167
+      ],
+      "score_seconds": 0.10807320009917021,
+      "turns": [
+        {
+          "gen_bits": 62,
+          "gen_div": 11,
+          "gen_syms": 256,
+          "prompt_bits": 220,
+          "prompt_syms": 16
+        },
+        {
+          "gen_bits": 28,
+          "gen_div": 5,
+          "gen_syms": 256,
+          "prompt_bits": 127,
+          "prompt_syms": 12
+        }
+      ]
+    },
+    "84": {
+      "all_tokens": 539,
+      "bytes": 161,
+      "gen_tokens": 512,
+      "payload_bits": 456,
+      "rows": [
+        168,
+        169
+      ],
+      "score_seconds": 0.10845469986088574,
+      "turns": [
+        {
+          "gen_bits": 10,
+          "gen_div": 2,
+          "gen_syms": 256,
+          "prompt_bits": 148,
+          "prompt_syms": 9
+        },
+        {
+          "gen_bits": 56,
+          "gen_div": 12,
+          "gen_syms": 256,
+          "prompt_bits": 226,
+          "prompt_syms": 17
+        }
+      ]
+    },
+    "85": {
+      "all_tokens": 534,
+      "bytes": 174,
+      "gen_tokens": 512,
+      "payload_bits": 560,
+      "rows": [
+        170,
+        171
+      ],
+      "score_seconds": 0.10746180010028183,
+      "turns": [
+        {
+          "gen_bits": 78,
+          "gen_div": 11,
+          "gen_syms": 256,
+          "prompt_bits": 109,
+          "prompt_syms": 9
+        },
+        {
+          "gen_bits": 184,
+          "gen_div": 20,
+          "gen_syms": 256,
+          "prompt_bits": 168,
+          "prompt_syms": 12
+        }
+      ]
+    },
+    "86": {
+      "all_tokens": 544,
+      "bytes": 194,
+      "gen_tokens": 512,
+      "payload_bits": 720,
+      "rows": [
+        172,
+        173
+      ],
+      "score_seconds": 0.10688879992812872,
+      "turns": [
+        {
+          "gen_bits": 28,
+          "gen_div": 5,
+          "gen_syms": 256,
+          "prompt_bits": 257,
+          "prompt_syms": 18
+        },
+        {
+          "gen_bits": 252,
+          "gen_div": 39,
+          "gen_syms": 256,
+          "prompt_bits": 164,
+          "prompt_syms": 13
+        }
+      ]
+    },
+    "87": {
+      "all_tokens": 541,
+      "bytes": 163,
+      "gen_tokens": 512,
+      "payload_bits": 472,
+      "rows": [
+        174,
+        175
+      ],
+      "score_seconds": 0.10676610004156828,
+      "turns": [
+        {
+          "gen_bits": 48,
+          "gen_div": 7,
+          "gen_syms": 256,
+          "prompt_bits": 96,
+          "prompt_syms": 10
+        },
+        {
+          "gen_bits": 138,
+          "gen_div": 23,
+          "gen_syms": 256,
+          "prompt_bits": 170,
+          "prompt_syms": 18
+        }
+      ]
+    },
+    "88": {
+      "all_tokens": 533,
+      "bytes": 167,
+      "gen_tokens": 512,
+      "payload_bits": 504,
+      "rows": [
+        176,
+        177
+      ],
+      "score_seconds": 0.10584810003638268,
+      "turns": [
+        {
+          "gen_bits": 76,
+          "gen_div": 18,
+          "gen_syms": 256,
+          "prompt_bits": 88,
+          "prompt_syms": 9
+        },
+        {
+          "gen_bits": 66,
+          "gen_div": 13,
+          "gen_syms": 256,
+          "prompt_bits": 258,
+          "prompt_syms": 11
+        }
+      ]
+    },
+    "89": {
+      "all_tokens": 544,
+      "bytes": 186,
+      "gen_tokens": 512,
+      "payload_bits": 656,
+      "rows": [
+        178,
+        179
+      ],
+      "score_seconds": 0.10693459981121123,
+      "turns": [
+        {
+          "gen_bits": 12,
+          "gen_div": 2,
+          "gen_syms": 256,
+          "prompt_bits": 205,
+          "prompt_syms": 19
+        },
+        {
+          "gen_bits": 220,
+          "gen_div": 33,
+          "gen_syms": 256,
+          "prompt_bits": 202,
+          "prompt_syms": 12
+        }
+      ]
+    },
+    "9": {
+      "all_tokens": 538,
+      "bytes": 206,
+      "gen_tokens": 512,
+      "payload_bits": 816,
+      "rows": [
+        18,
+        19
+      ],
+      "score_seconds": 0.10873519978486001,
+      "turns": [
+        {
+          "gen_bits": 162,
+          "gen_div": 26,
+          "gen_syms": 256,
+          "prompt_bits": 94,
+          "prompt_syms": 9
+        },
+        {
+          "gen_bits": 352,
+          "gen_div": 58,
+          "gen_syms": 256,
+          "prompt_bits": 195,
+          "prompt_syms": 16
+        }
+      ]
+    },
+    "90": {
+      "all_tokens": 537,
+      "bytes": 182,
+      "gen_tokens": 512,
+      "payload_bits": 624,
+      "rows": [
+        180,
+        181
+      ],
+      "score_seconds": 0.10626320005394518,
+      "turns": [
+        {
+          "gen_bits": 12,
+          "gen_div": 2,
+          "gen_syms": 256,
+          "prompt_bits": 96,
+          "prompt_syms": 9
+        },
+        {
+          "gen_bits": 292,
+          "gen_div": 43,
+          "gen_syms": 256,
+          "prompt_bits": 202,
+          "prompt_syms": 15
+        }
+      ]
+    },
+    "91": {
+      "all_tokens": 534,
+      "bytes": 146,
+      "gen_tokens": 512,
+      "payload_bits": 336,
+      "rows": [
+        182,
+        183
+      ],
+      "score_seconds": 0.10671789990738034,
+      "turns": [
+        {
+          "gen_bits": 16,
+          "gen_div": 3,
+          "gen_syms": 256,
+          "prompt_bits": 86,
+          "prompt_syms": 9
+        },
+        {
+          "gen_bits": 22,
+          "gen_div": 2,
+          "gen_syms": 256,
+          "prompt_bits": 195,
+          "prompt_syms": 12
+        }
+      ]
+    },
+    "92": {
+      "all_tokens": 347,
+      "bytes": 199,
+      "gen_tokens": 317,
+      "payload_bits": 768,
+      "rows": [
+        184,
+        185
+      ],
+      "score_seconds": 0.06712120003066957,
+      "turns": [
+        {
+          "gen_bits": 42,
+          "gen_div": 7,
+          "gen_syms": 61,
+          "prompt_bits": 255,
+          "prompt_syms": 17
+        },
+        {
+          "gen_bits": 338,
+          "gen_div": 59,
+          "gen_syms": 256,
+          "prompt_bits": 125,
+          "prompt_syms": 12
+        }
+      ]
+    },
+    "93": {
+      "all_tokens": 539,
+      "bytes": 187,
+      "gen_tokens": 512,
+      "payload_bits": 664,
+      "rows": [
+        186,
+        187
+      ],
+      "score_seconds": 0.10818039998412132,
+      "turns": [
+        {
+          "gen_bits": 42,
+          "gen_div": 6,
+          "gen_syms": 256,
+          "prompt_bits": 117,
+          "prompt_syms": 10
+        },
+        {
+          "gen_bits": 297,
+          "gen_div": 45,
+          "gen_syms": 256,
+          "prompt_bits": 191,
+          "prompt_syms": 16
+        }
+      ]
+    },
+    "94": {
+      "all_tokens": 535,
+      "bytes": 163,
+      "gen_tokens": 512,
+      "payload_bits": 472,
+      "rows": [
+        188,
+        189
+      ],
+      "score_seconds": 0.10727589996531606,
+      "turns": [
+        {
+          "gen_bits": 104,
+          "gen_div": 16,
+          "gen_syms": 256,
+          "prompt_bits": 90,
+          "prompt_syms": 8
+        },
+        {
+          "gen_bits": 76,
+          "gen_div": 13,
+          "gen_syms": 256,
+          "prompt_bits": 182,
+          "prompt_syms": 14
+        }
+      ]
+    },
+    "95": {
+      "all_tokens": 542,
+      "bytes": 188,
+      "gen_tokens": 512,
+      "payload_bits": 672,
+      "rows": [
+        190,
+        191
+      ],
+      "score_seconds": 0.10676709981635213,
+      "turns": [
+        {
+          "gen_bits": 56,
+          "gen_div": 7,
+          "gen_syms": 256,
+          "prompt_bits": 172,
+          "prompt_syms": 17
+        },
+        {
+          "gen_bits": 254,
+          "gen_div": 37,
+          "gen_syms": 256,
+          "prompt_bits": 175,
+          "prompt_syms": 12
+        }
+      ]
+    },
+    "96": {
+      "all_tokens": 411,
+      "bytes": 162,
+      "gen_tokens": 388,
+      "payload_bits": 464,
+      "rows": [
+        192,
+        193
+      ],
+      "score_seconds": 0.07822209992446005,
+      "turns": [
+        {
+          "gen_bits": 150,
+          "gen_div": 28,
+          "gen_syms": 132,
+          "prompt_bits": 88,
+          "prompt_syms": 7
+        },
+        {
+          "gen_bits": 36,
+          "gen_div": 8,
+          "gen_syms": 256,
+          "prompt_bits": 185,
+          "prompt_syms": 15
+        }
+      ]
+    },
+    "97": {
+      "all_tokens": 536,
+      "bytes": 159,
+      "gen_tokens": 512,
+      "payload_bits": 440,
+      "rows": [
+        194,
+        195
+      ],
+      "score_seconds": 0.10778649989515543,
+      "turns": [
+        {
+          "gen_bits": 20,
+          "gen_div": 3,
+          "gen_syms": 256,
+          "prompt_bits": 88,
+          "prompt_syms": 10
+        },
+        {
+          "gen_bits": 124,
+          "gen_div": 15,
+          "gen_syms": 256,
+          "prompt_bits": 187,
+          "prompt_syms": 13
+        }
+      ]
+    },
+    "98": {
+      "all_tokens": 542,
+      "bytes": 205,
+      "gen_tokens": 512,
+      "payload_bits": 808,
+      "rows": [
+        196,
+        197
+      ],
+      "score_seconds": 0.10678440006449819,
+      "turns": [
+        {
+          "gen_bits": 88,
+          "gen_div": 15,
+          "gen_syms": 256,
+          "prompt_bits": 182,
+          "prompt_syms": 17
+        },
+        {
+          "gen_bits": 336,
+          "gen_div": 58,
+          "gen_syms": 256,
+          "prompt_bits": 181,
+          "prompt_syms": 12
+        }
+      ]
+    },
+    "99": {
+      "all_tokens": 541,
+      "bytes": 189,
+      "gen_tokens": 512,
+      "payload_bits": 680,
+      "rows": [
+        198,
+        199
+      ],
+      "score_seconds": 0.1066199999768287,
+      "turns": [
+        {
+          "gen_bits": 150,
+          "gen_div": 25,
+          "gen_syms": 256,
+          "prompt_bits": 90,
+          "prompt_syms": 10
+        },
+        {
+          "gen_bits": 228,
+          "gen_div": 37,
+          "gen_syms": 256,
+          "prompt_bits": 195,
+          "prompt_syms": 18
+        }
+      ]
+    }
+  },
+  "vocab_size": 128256
+}

@@ -1,0 +1,3311 @@
+{
+ "recovered_on": "2026-10-17",
+ "archive": {
+  "name": "sideband-critic-scratch-2026-10-16",
+  "copied": "2026-10-16T09:56:28.459470+00:00",
+  "source_root": "C:\\Users\\<user>\\AppData\\Local\\Temp\\claude\\c--Users-<user>-Desktop-Research-sideband",
+  "n_files": 309,
+  "manifest_sha256": "a5d14243b38449a4766f4ddb4982ed776e23e9ef24b1e27692150fce3c017c2c",
+  "rule": "the files directly inside a folder whose name starts with critic, with the suffix .py, .txt, .json or .md; nothing nested below such a folder, nothing of another suffix (recovered from the archive on 2026-10-17; it rebuilds the archive exactly)"
+ },
+ "user_token": "<user>",
+ "layout": "<UTC day of the session's earliest file>-<first 8 of the session id>/<archive path minus '<session>/scratchpad/'>",
+ "scrub": "the user's name after 'Users' or 'home' plus a run of path separators or a hyphen, with no word character after it, any case, replaced by the user token; nothing else changed; line endings kept",
+ "lane_rule": "the first window of the file's session whose cutoff (the author time of the first commit the window lists) is after the file's archive mtime (recover.py LANES)",
+ "counts": {
+  "archive": 309,
+  "copied": 308,
+  "exported": 153,
+  "withheld": 155,
+  "not_copied": 1,
+  "scrubbed_files": 121,
+  "substitutions": 248,
+  "scrubbed_files_exported": 40,
+  "substitutions_exported": 92,
+  "bare_name_occurrences_left": 1,
+  "bare_name_files_left": 1
+ },
+ "sessions": [
+  {
+   "dir": "2026-10-01-64064aa4",
+   "session": "64064aa4-b9c8-45b6-9f59-46838015656c",
+   "n_files": 11,
+   "substitutions": 12,
+   "windows": [
+    {
+     "before": "2026-10-01T08:06:31-04:00",
+     "lane": "harness initialisation: results bytes stored as checked out and as cited",
+     "commits": "ab12cbd, d614666",
+     "cutoff_commit": "ab12cbd",
+     "n_files": 11
+    }
+   ]
+  },
+  {
+   "dir": "2026-10-01-4f289fb0",
+   "session": "4f289fb0-652a-439c-a5cf-abf830e63352",
+   "n_files": 3,
+   "substitutions": 2,
+   "windows": [
+    {
+     "before": "2026-10-01T13:34:00-04:00",
+     "lane": "free-bigram twin of F-26's margin: registration rounds",
+     "commits": "d55e62f, 6eaabf4",
+     "cutoff_commit": "d55e62f",
+     "n_files": 3
+    }
+   ]
+  },
+  {
+   "dir": "2026-10-02-12e6097a",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "n_files": 67,
+   "substitutions": 61,
+   "windows": [
+    {
+     "before": "2026-10-02T18:45:54-04:00",
+     "lane": "R1 stratified coverage read: registration rounds",
+     "commits": "fea2431",
+     "cutoff_commit": "fea2431",
+     "n_files": 31
+    },
+    {
+     "before": "2026-10-02T19:47:18-04:00",
+     "lane": "R1 stratified coverage read: landing rounds",
+     "commits": "09e846b",
+     "cutoff_commit": "09e846b",
+     "n_files": 36
+    }
+   ]
+  },
+  {
+   "dir": "2026-10-03-38e3cfca",
+   "session": "38e3cfca-4ea6-4df8-ad3b-d4716d1f4b4a",
+   "n_files": 6,
+   "substitutions": 2,
+   "windows": [
+    {
+     "before": "2026-10-02T22:11:28-04:00",
+     "lane": "derived ledgers levelled after the stratified read",
+     "commits": "b35a202",
+     "cutoff_commit": "b35a202",
+     "n_files": 6
+    }
+   ]
+  },
+  {
+   "dir": "2026-10-03-bd3df22e",
+   "session": "bd3df22e-cbe2-4aa0-9fa2-1f8c060c993b",
+   "n_files": 9,
+   "substitutions": 0,
+   "windows": [
+    {
+     "before": "2026-10-03T04:59:08-04:00",
+     "lane": "R2 generalising free baseline: registration round",
+     "commits": "2fe5926",
+     "cutoff_commit": "2fe5926",
+     "n_files": 1
+    },
+    {
+     "before": "2026-10-03T17:49:26-04:00",
+     "lane": "R2 generalising free baseline: landing rounds",
+     "commits": "2f13134",
+     "cutoff_commit": "2f13134",
+     "n_files": 8
+    }
+   ]
+  },
+  {
+   "dir": "2026-10-03-58dc4aea",
+   "session": "58dc4aea-78c6-4f4b-bdbd-daf075114c98",
+   "n_files": 6,
+   "substitutions": 0,
+   "windows": [
+    {
+     "before": "2026-10-03T20:47:32-04:00",
+     "lane": "landing-text kit: the diff-mode read over the record files",
+     "commits": "cf4eccf",
+     "cutoff_commit": "cf4eccf",
+     "n_files": 6
+    }
+   ]
+  },
+  {
+   "dir": "2026-10-04-d880d7a7",
+   "session": "d880d7a7-5b03-4222-a6bf-23f7b5705b02",
+   "n_files": 3,
+   "substitutions": 2,
+   "windows": [
+    {
+     "before": "2026-10-04T01:16:35-04:00",
+     "lane": "EVID-1: sha-cited files outside results/ stored as cited",
+     "commits": "0eb73d9",
+     "cutoff_commit": "0eb73d9",
+     "n_files": 3
+    }
+   ]
+  },
+  {
+   "dir": "2026-10-04-ae76f7e0",
+   "session": "ae76f7e0-b675-4f4b-8fcc-ef4ee8f05d7c",
+   "n_files": 1,
+   "substitutions": 0,
+   "windows": [
+    {
+     "before": "2026-10-04T06:01:45-04:00",
+     "lane": "horizon read at the R2 encoding: registration round",
+     "commits": "b41d3f3",
+     "cutoff_commit": "b41d3f3",
+     "n_files": 1
+    }
+   ]
+  },
+  {
+   "dir": "2026-10-05-fdeffb05",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "n_files": 39,
+   "substitutions": 13,
+   "windows": [
+    {
+     "before": "2026-10-05T00:11:19-04:00",
+     "lane": "seed-noise floor readouts (F-27): landing rounds",
+     "commits": "73d8dc2, 906edfd",
+     "cutoff_commit": "73d8dc2",
+     "n_files": 8
+    },
+    {
+     "before": "2026-10-05T02:49:49-04:00",
+     "lane": "reader-and-lens re-test at S3: registration rounds",
+     "commits": "b128fda",
+     "cutoff_commit": "b128fda",
+     "n_files": 0
+    },
+    {
+     "before": "2026-10-05T07:41:55-04:00",
+     "lane": "reader-and-lens stage LENS (F-28): landing rounds",
+     "commits": "9bbe905",
+     "cutoff_commit": "9bbe905",
+     "n_files": 13
+    },
+    {
+     "before": "2026-10-05T14:42:42-04:00",
+     "lane": "reader-and-lens stage READERS: landing rounds",
+     "commits": "34078d1",
+     "cutoff_commit": "34078d1",
+     "n_files": 10
+    },
+    {
+     "before": "2026-10-09T17:06:31-04:00",
+     "lane": "reader-and-lens stage READERS-LONG: landing rounds",
+     "commits": "7f0af3e",
+     "cutoff_commit": "7f0af3e",
+     "n_files": 8
+    }
+   ]
+  },
+  {
+   "dir": "2026-10-09-4efb2604",
+   "session": "4efb2604-196f-4619-a6f7-dea2fa75cc20",
+   "n_files": 7,
+   "substitutions": 0,
+   "windows": [
+    {
+     "before": "2026-10-09T21:13:57-04:00",
+     "lane": "OQ-20 seed replay of the verdict legs: registration rounds",
+     "commits": "b6d3701, 9163706",
+     "cutoff_commit": "b6d3701",
+     "n_files": 7
+    }
+   ]
+  },
+  {
+   "dir": "2026-10-13-b10c3ea1",
+   "session": "b10c3ea1-ddef-43f8-a561-0b70da6c8f93",
+   "n_files": 10,
+   "substitutions": 6,
+   "windows": [
+    {
+     "before": "2026-10-13T08:58:10-04:00",
+     "lane": "public cut: the export tool, commit A",
+     "commits": "3e7b744",
+     "cutoff_commit": "3e7b744",
+     "n_files": 10
+    }
+   ]
+  },
+  {
+   "dir": "2026-10-13-46731adb",
+   "session": "46731adb-36bf-4335-804f-ca396f161653",
+   "n_files": 46,
+   "substitutions": 38,
+   "windows": [
+    {
+     "before": "2026-10-13T23:29:08-04:00",
+     "lane": "public cut: commit B, the pinned export and its proof",
+     "commits": "977ff11",
+     "cutoff_commit": "977ff11",
+     "n_files": 46
+    }
+   ]
+  },
+  {
+   "dir": "2026-10-14-a8adf32c",
+   "session": "a8adf32c-e575-46a3-99cc-cb0de01adb55",
+   "n_files": 73,
+   "substitutions": 85,
+   "windows": [
+    {
+     "before": "2026-10-14T08:18:25-04:00",
+     "lane": "public cut: the front-doors lane",
+     "commits": "d481935",
+     "cutoff_commit": "d481935",
+     "n_files": 73
+    }
+   ]
+  },
+  {
+   "dir": "2026-10-15-c8cb4ef4",
+   "session": "c8cb4ef4-c63c-4089-a24d-8367ad2fda94",
+   "n_files": 1,
+   "substitutions": 0,
+   "windows": [
+    {
+     "before": "2026-10-15T01:15:38-04:00",
+     "lane": "public cut: decision batch lane 1, the gates",
+     "commits": "51ceb9c",
+     "cutoff_commit": "51ceb9c",
+     "n_files": 1
+    }
+   ]
+  },
+  {
+   "dir": "2026-10-15-9dfaf64d",
+   "session": "9dfaf64d-4621-4bfa-959a-dc14aeaa3790",
+   "n_files": 23,
+   "substitutions": 27,
+   "windows": [
+    {
+     "before": "2026-10-15T14:14:34-04:00",
+     "lane": "public cut: decision batch lane 2, the tool, the allowlist and the record",
+     "commits": "5c264b0",
+     "cutoff_commit": "5c264b0",
+     "n_files": 23
+    }
+   ]
+  },
+  {
+   "dir": "2026-10-16-4a635c95",
+   "session": "4a635c95-32cd-4b83-b700-20e9fecdfde7",
+   "n_files": 3,
+   "substitutions": 0,
+   "windows": [
+    {
+     "before": "2026-10-16T00:39:36-04:00",
+     "lane": "image audit lane A: CI portability",
+     "commits": "c41f9f1",
+     "cutoff_commit": "c41f9f1",
+     "n_files": 3
+    }
+   ]
+  }
+ ],
+ "withheld": [
+  {
+   "dir": "2026-10-13-b10c3ea1",
+   "session": "b10c3ea1-ddef-43f8-a561-0b70da6c8f93",
+   "lane": "public cut: the export tool, commit A",
+   "commits": "3e7b744",
+   "n_files": 10,
+   "reason": "critic rounds of the public-cut lane (the export tool, commit A, 3e7b744): they review the withheld export tool, its test and the plan, quoting their text, digests and placeholders, and go with them (plan 12; 14.2 item 3)",
+   "files": [
+    {
+     "path": "2026-10-13-b10c3ea1/critic1/eco58.md",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-b10c3ea1/critic1/ecoHEAD.md",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-b10c3ea1/critic1/edited_cited.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-b10c3ea1/critic1/err.txt",
+     "empty": true
+    },
+    {
+     "path": "2026-10-13-b10c3ea1/critic1/exp.manifest.json",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-b10c3ea1/critic1/l31.txt",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-b10c3ea1/critic1/realscan.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-b10c3ea1/critic1/regen.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-b10c3ea1/critic1/sources.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-b10c3ea1/critic1/sweep.txt",
+     "empty": false
+    }
+   ]
+  },
+  {
+   "dir": "2026-10-13-46731adb",
+   "session": "46731adb-36bf-4335-804f-ca396f161653",
+   "lane": "public cut: commit B, the pinned export and its proof",
+   "commits": "977ff11",
+   "n_files": 46,
+   "reason": "critic rounds of the public-cut lane (commit B, the pinned export and its proof, 977ff11): they review the withheld export tool, its test and the plan, quoting their text, digests and placeholders, and go with them (plan 12; 14.2 item 3)",
+   "files": [
+    {
+     "path": "2026-10-13-46731adb/critic/frozen.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic/scan_texts.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic10/plan_added.txt",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic10/plan_removed.txt",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic10/routes10.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic10/scan10.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic11/cl_added.txt",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic11/dry_cl.txt",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic11/dry_msg.txt",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic11/dry_plan.txt",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic11/forms.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic11/plan_added.txt",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic11/scan11.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic11/scan_se.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic11/scan_se2.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic11/se_added.txt",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic12/cl_wt.txt",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic12/dry15_cl.txt",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic12/dry15_plan.txt",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic12/forms12.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic12/plan127.txt",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic12/scan12.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic12/wdiff.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic2/recompute.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic2/scan_cl.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic3/recompute1.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic3/scan_text.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic4/envrun.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic4/r1.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic4/r2.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic5/scan5.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic6/cmp6.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic6/scan6.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic6/scan6_base.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic7/negctl.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic7/negctl_f.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic8/negctl.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic8/negctl_f.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic9/dry12_plan.txt",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic9/exempt.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic9/negctl.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic9/negctl_f.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic9/plan_added.txt",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic9/plan_plus.txt",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic9/routes.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-13-46731adb/critic9/scan.py",
+     "empty": false
+    }
+   ]
+  },
+  {
+   "dir": "2026-10-14-a8adf32c",
+   "session": "a8adf32c-e575-46a3-99cc-cb0de01adb55",
+   "lane": "public cut: the front-doors lane",
+   "commits": "d481935",
+   "n_files": 73,
+   "reason": "critic rounds of the public-cut lane (the front-doors lane, d481935): they review the withheld export tool, its test and the plan, quoting their text, digests and placeholders, and go with them (plan 12; 14.2 item 3)",
+   "files": [
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors/anchors.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors/f26.txt",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors/gloss.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors/norewrite.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors/nums.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors/nums2.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors/quotes.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors/sweep.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors10/bytes.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors10/guards.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors10/lastmsg.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors10/mainrounds.txt",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors10/numbers.json",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors10/registry.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors10/sha_after.txt",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors10/srccmp.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors10/sweepall.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors10/wdiff.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors2/ctx.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors2/ins.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors2/invariants.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors2/labels.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors2/norewrite.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors2/nums.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors2/quotes.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors2/status_before.txt",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors3/anchors.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors3/attrib.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors3/frontdoor_labels.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors3/links.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors3/scoped_nums.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors4/payload_spot.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors4/tally.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors4/unlinked.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors5/appendonly.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors5/firstocc.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors5/glossnums.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors5/guards.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors5/moved.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors5/sweepall.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors6/freeze.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors6/numbers.json",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors6/overlap.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors6/registry.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors6/rewrites.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors7/applies.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors7/guards.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors7/numbers.json",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors7/regdiff.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors7/registry.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors7/rewrites.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors7/rr2.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors7/sweepall.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors7/verdicts.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors7/window.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors7/window2.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors8/grepctx.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors8/guards.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors8/lastmsg.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors8/lastverdict.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors8/numbers.json",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors8/prevdiff.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors8/prevtext.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors8/registry.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors8/sweepall.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors9/firstmsg.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors9/guards.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors9/numbers.json",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors9/prevdiff.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors9/prevdiff2.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors9/registry.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors9/sweepall.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-14-a8adf32c/critic_frontdoors9/wdiff.py",
+     "empty": false
+    }
+   ]
+  },
+  {
+   "dir": "2026-10-15-c8cb4ef4",
+   "session": "c8cb4ef4-c63c-4089-a24d-8367ad2fda94",
+   "lane": "public cut: decision batch lane 1, the gates",
+   "commits": "51ceb9c",
+   "n_files": 1,
+   "reason": "critic rounds of the public-cut lane (decision batch lane 1, the gates, 51ceb9c): they review the withheld export tool, its test and the plan, quoting their text, digests and placeholders, and go with them (plan 12; 14.2 item 3)",
+   "files": [
+    {
+     "path": "2026-10-15-c8cb4ef4/critic_l1/probe.py",
+     "empty": false
+    }
+   ]
+  },
+  {
+   "dir": "2026-10-15-9dfaf64d",
+   "session": "9dfaf64d-4621-4bfa-959a-dc14aeaa3790",
+   "lane": "public cut: decision batch lane 2, the tool, the allowlist and the record",
+   "commits": "5c264b0",
+   "n_files": 23,
+   "reason": "critic rounds of the public-cut lane (decision batch lane 2, the tool, the allowlist and the record, 5c264b0): they review the withheld export tool, its test and the plan, quoting their text, digests and placeholders, and go with them (plan 12; 14.2 item 3)",
+   "files": [
+    {
+     "path": "2026-10-15-9dfaf64d/critic/ep_old.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-15-9dfaf64d/critic/oq19.txt",
+     "empty": false
+    },
+    {
+     "path": "2026-10-15-9dfaf64d/critic/strip_gap8.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-15-9dfaf64d/critic2/attr_more.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-15-9dfaf64d/critic2/attr_more2.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-15-9dfaf64d/critic2/head_gap79.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-15-9dfaf64d/critic2/real_attr.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-15-9dfaf64d/critic3/extra2.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-15-9dfaf64d/critic3/extra3.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-15-9dfaf64d/critic3/extra_cases.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-15-9dfaf64d/critic3/gap24.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-15-9dfaf64d/critic3/landed_test.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-15-9dfaf64d/critic4/attr_mine.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-15-9dfaf64d/critic5/head_test.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-15-9dfaf64d/critic5/linecheck.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-15-9dfaf64d/critic5/parse_ctl.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-15-9dfaf64d/critic5/tool_final.py",
+     "empty": false
+    },
+    {
+     "path": "2026-10-15-9dfaf64d/critic_ga1/README.md",
+     "empty": true
+    },
+    {
+     "path": "2026-10-15-9dfaf64d/critic_ga1/crlf.md",
+     "empty": true
+    },
+    {
+     "path": "2026-10-15-9dfaf64d/critic_ga1/frozen.py",
+     "empty": true
+    },
+    {
+     "path": "2026-10-15-9dfaf64d/critic_ga1/frozzen.py",
+     "empty": true
+    },
+    {
+     "path": "2026-10-15-9dfaf64d/critic_ga1/notes.txt",
+     "empty": true
+    },
+    {
+     "path": "2026-10-15-9dfaf64d/critic_ga1/other.md",
+     "empty": true
+    }
+   ]
+  },
+  {
+   "path": "2026-10-03-58dc4aea/critic/REPORT.md",
+   "session": "58dc4aea-78c6-4f4b-bdbd-daf075114c98",
+   "n_files": 1,
+   "reason": "the critic's copy of docs/REPORT.md as of 2026-10-03, carrying the placeholders the export fills in the tracked file",
+   "files": [
+    {
+     "path": "2026-10-03-58dc4aea/critic/REPORT.md",
+     "empty": false
+    }
+   ]
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic5/diff_ptrs.txt",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "n_files": 1,
+   "reason": "a diff hunk of the withheld idea file read by the R1 landing's fifth round; its lines go with the file they come from (plan section 3)",
+   "files": [
+    {
+     "path": "2026-10-02-12e6097a/strat/critic5/diff_ptrs.txt",
+     "empty": false
+    }
+   ]
+  }
+ ],
+ "not_copied": [
+  {
+   "path": "2026-10-02-12e6097a/strat/critic6/pool.json",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic6/pool.json",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T23:35:01.409594+00:00",
+   "bytes_source": 14915488,
+   "sha256_source": "d7cf82537cd0048fcc9e18fdfd110ce279b4c364c19b842a11b4decc12a4ac00",
+   "why": "a derived index (every formatted number of the R1 payloads mapped to the JSON paths holding it), 14,915,488 bytes, rebuilt by pool.py beside it from the committed payloads; not a report or a script"
+  }
+ ],
+ "files_note": "the exported rows; the withheld rows, digests included, are in MANIFEST_WITHHELD.json, which the public cut withholds with them",
+ "files": [
+  {
+   "path": "2026-10-02-12e6097a/strat/critic/block_now.txt",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic/block_now.txt",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: registration rounds",
+   "commits": "fea2431",
+   "mtime": "2026-10-02T00:39:31.710970+00:00",
+   "bytes_source": 25748,
+   "sha256_source": "65816db0ee17c94e3f0ba9626c343e8f6fcde65b93050deccbdd5b98172ebbf1",
+   "bytes": 25748,
+   "sha256": "65816db0ee17c94e3f0ba9626c343e8f6fcde65b93050deccbdd5b98172ebbf1",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic/mine.json",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic/mine.json",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: registration rounds",
+   "commits": "fea2431",
+   "mtime": "2026-10-02T00:42:47.306149+00:00",
+   "bytes_source": 38918,
+   "sha256_source": "f815c19697463d5b398445e803d380b18856accf9daf9ff7bd3745a48172ad75",
+   "bytes": 38918,
+   "sha256": "f815c19697463d5b398445e803d380b18856accf9daf9ff7bd3745a48172ad75",
+   "substitutions": 0,
+   "eol": "none",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic/recompute_smoke.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic/recompute_smoke.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: registration rounds",
+   "commits": "fea2431",
+   "mtime": "2026-10-02T00:42:46.482970+00:00",
+   "bytes_source": 9291,
+   "sha256_source": "4d2d15c06aca0c254b3690a7b7f9ef781bf03288607f7671bf6e2c2d44099822",
+   "bytes": 9287,
+   "sha256": "abb551dabcec866d252e9150c7970977d7819d72ffe3722ecaa1bba9a38f0c89",
+   "substitutions": 4,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic/t.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic/t.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: registration rounds",
+   "commits": "fea2431",
+   "mtime": "2026-10-02T00:41:56.959604+00:00",
+   "bytes_source": 59,
+   "sha256_source": "6b0e185ec1bbffde70970c44559731aacf8c177f5808222b6b25a37d2ee8f3ce",
+   "bytes": 59,
+   "sha256": "6b0e185ec1bbffde70970c44559731aacf8c177f5808222b6b25a37d2ee8f3ce",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic2/deltas_pretty.txt",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic2/deltas_pretty.txt",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: registration rounds",
+   "commits": "fea2431",
+   "mtime": "2026-10-02T01:22:38.541273+00:00",
+   "bytes_source": 17441,
+   "sha256_source": "ea724fd833bd09b541142841ec74ae12d9007c8c4f427429e3a6cd32fc8db953",
+   "bytes": 17441,
+   "sha256": "ea724fd833bd09b541142841ec74ae12d9007c8c4f427429e3a6cd32fc8db953",
+   "substitutions": 0,
+   "eol": "crlf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic2/mine2.json",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic2/mine2.json",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: registration rounds",
+   "commits": "fea2431",
+   "mtime": "2026-10-02T01:22:30.683633+00:00",
+   "bytes_source": 62078,
+   "sha256_source": "38a9e6deb251c7c31d8f4383787953ff31af0d97a2770b35ed2adc1f21c58bab",
+   "bytes": 62078,
+   "sha256": "38a9e6deb251c7c31d8f4383787953ff31af0d97a2770b35ed2adc1f21c58bab",
+   "substitutions": 0,
+   "eol": "none",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic2/r2a.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic2/r2a.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: registration rounds",
+   "commits": "fea2431",
+   "mtime": "2026-10-02T01:21:46.318746+00:00",
+   "bytes_source": 2506,
+   "sha256_source": "020dde08c54c11ee570881528e276f43250b5336cdadcfbb11052df8ac868a6c",
+   "bytes": 2502,
+   "sha256": "75373a0f85afc072c15ce2280a0419a1d7e2da5cb6170055811d205bd539fe5e",
+   "substitutions": 4,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic2/r2b.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic2/r2b.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: registration rounds",
+   "commits": "fea2431",
+   "mtime": "2026-10-02T01:21:58.441436+00:00",
+   "bytes_source": 3245,
+   "sha256_source": "7234f891cba0b7de364245049c7ed2282390fba19b392428c70933b5cc036b80",
+   "bytes": 3245,
+   "sha256": "7234f891cba0b7de364245049c7ed2282390fba19b392428c70933b5cc036b80",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic2/r2c.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic2/r2c.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: registration rounds",
+   "commits": "fea2431",
+   "mtime": "2026-10-02T01:22:18.805204+00:00",
+   "bytes_source": 5028,
+   "sha256_source": "8d21da08e71d79039dc6c43c035a520a35c4d24aeb0d48bdc36fde7be3475617",
+   "bytes": 5028,
+   "sha256": "8d21da08e71d79039dc6c43c035a520a35c4d24aeb0d48bdc36fde7be3475617",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic2/r2d.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic2/r2d.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: registration rounds",
+   "commits": "fea2431",
+   "mtime": "2026-10-02T01:22:29.300011+00:00",
+   "bytes_source": 1756,
+   "sha256_source": "8d06c54951d270cc325ba447029d6b49099ca59d3c4de6d4ee83c956858b21e8",
+   "bytes": 1756,
+   "sha256": "8d06c54951d270cc325ba447029d6b49099ca59d3c4de6d4ee83c956858b21e8",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic2/recompute2.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic2/recompute2.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: registration rounds",
+   "commits": "fea2431",
+   "mtime": "2026-10-02T01:22:29.316761+00:00",
+   "bytes_source": 12535,
+   "sha256_source": "0445a2a9b92298847bc62af61d2b3ad501a9816bdbe2a90471e6a7e5ff4f61dd",
+   "bytes": 12531,
+   "sha256": "8be3f43a7a4f01fce2c22c6151abf92db0e04751d275ece67fd13af22c86ae89",
+   "substitutions": 4,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic2/round1_report.txt",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic2/round1_report.txt",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: registration rounds",
+   "commits": "fea2431",
+   "mtime": "2026-10-02T01:16:13.999352+00:00",
+   "bytes_source": 14090,
+   "sha256_source": "7993a71a6225081d5ed08527f8f35a84ab38cc08a928c32e996b913529aabdd9",
+   "bytes": 14088,
+   "sha256": "02c98b2d40d96375f721ab0b60738a896a4982840df0e622f2ab688888ab8a67",
+   "substitutions": 2,
+   "eol": "crlf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic2/t.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic2/t.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: registration rounds",
+   "commits": "fea2431",
+   "mtime": "2026-10-02T01:21:16.788678+00:00",
+   "bytes_source": 44,
+   "sha256_source": "6cbbfc258d7a9be6400bae241786be41d7c64a18a578d5fb5602fdf408dab195",
+   "bytes": 44,
+   "sha256": "6cbbfc258d7a9be6400bae241786be41d7c64a18a578d5fb5602fdf408dab195",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic2/t2.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic2/t2.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: registration rounds",
+   "commits": "fea2431",
+   "mtime": "2026-10-02T01:21:30.093853+00:00",
+   "bytes_source": 235,
+   "sha256_source": "71ead7b0488ec14e3be27b2d01bca5a0330bb3f89e48184307c91ec28db266a5",
+   "bytes": 233,
+   "sha256": "3d624c20c2485b8718bea4d5a167c96503e7e53a3e188fdcc474caac73ec8ef0",
+   "substitutions": 2,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic2/v.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic2/v.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: registration rounds",
+   "commits": "fea2431",
+   "mtime": "2026-10-02T01:23:25.310705+00:00",
+   "bytes_source": 3249,
+   "sha256_source": "89512f3f24b26b1f321ea89dcacc77db6bc1edc003c4d4fd42a48b8503ae7187",
+   "bytes": 3246,
+   "sha256": "2b8c365e0139dc13b0cb8747b12f3c61458c5d1f7632401399e6a962bfb0b162",
+   "substitutions": 3,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic2/v2.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic2/v2.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: registration rounds",
+   "commits": "fea2431",
+   "mtime": "2026-10-02T01:23:47.881599+00:00",
+   "bytes_source": 1740,
+   "sha256_source": "575806deb4bbf0080fa0a8e18cfacd207f53993a608b01d1edef040d3a50c166",
+   "bytes": 1737,
+   "sha256": "aa6623cf7db85fe3bb970e02f7e6ec60c660db2533258e2c7161bcc9b2d4b3fd",
+   "substitutions": 3,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic2/v3.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic2/v3.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: registration rounds",
+   "commits": "fea2431",
+   "mtime": "2026-10-02T01:24:23.332525+00:00",
+   "bytes_source": 2501,
+   "sha256_source": "d4602f13840d9476cf6aeb95cf535a3a8757ef5eedbbc247dffd412e8d2d7e1a",
+   "bytes": 2497,
+   "sha256": "c66dd24d8e1d6a912182f669faf979a427c1a113f79025b0a172e51fe659a944",
+   "substitutions": 4,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic2/v4.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic2/v4.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: registration rounds",
+   "commits": "fea2431",
+   "mtime": "2026-10-02T01:24:41.787331+00:00",
+   "bytes_source": 1794,
+   "sha256_source": "ea18010b9fd8b57407830a2a448fb6a98ec0d688232403e27c7dacce0078d6ee",
+   "bytes": 1791,
+   "sha256": "122af685aa4b3305ad9d15f8a4a6cbbea7f9ae9184be128e51e71b823daa53db",
+   "substitutions": 3,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic2/v5.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic2/v5.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: registration rounds",
+   "commits": "fea2431",
+   "mtime": "2026-10-02T01:25:26.752818+00:00",
+   "bytes_source": 4326,
+   "sha256_source": "d6aa8346046f291a7ac0c502abc859a718859538dfb4b748e6af28bcdac2884d",
+   "bytes": 4326,
+   "sha256": "d6aa8346046f291a7ac0c502abc859a718859538dfb4b748e6af28bcdac2884d",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic2/v6.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic2/v6.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: registration rounds",
+   "commits": "fea2431",
+   "mtime": "2026-10-02T01:27:14.196172+00:00",
+   "bytes_source": 1824,
+   "sha256_source": "4e09ba53346cdbc20eebcf99ce68a005b4a2c684efff8c28d4be8d6fda5ee16e",
+   "bytes": 1821,
+   "sha256": "0390d58980f265607fdd0bc873f592ca82367c6a9ded6764b3fca52307205747",
+   "substitutions": 3,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic2/v7.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic2/v7.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: registration rounds",
+   "commits": "fea2431",
+   "mtime": "2026-10-02T01:28:24.307473+00:00",
+   "bytes_source": 1469,
+   "sha256_source": "1efaa10b31885447dd7f520bdadb97b440b1d34ff36271f495f011af28c4f57d",
+   "bytes": 1469,
+   "sha256": "1efaa10b31885447dd7f520bdadb97b440b1d34ff36271f495f011af28c4f57d",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic2/v8.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic2/v8.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: registration rounds",
+   "commits": "fea2431",
+   "mtime": "2026-10-02T01:29:40.882924+00:00",
+   "bytes_source": 1205,
+   "sha256_source": "67d31836ea61bf9b3ff7af65a3ee5c4e868c45d760a633122b583d03543821aa",
+   "bytes": 1202,
+   "sha256": "5af21b9bba70f23b186ba77d7dd6c5e83c3d9fe18be831867e3ec50e0445bf6c",
+   "substitutions": 3,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic3/draft_norm.txt",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic3/draft_norm.txt",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: registration rounds",
+   "commits": "fea2431",
+   "mtime": "2026-10-02T22:33:37.923095+00:00",
+   "bytes_source": 22764,
+   "sha256_source": "d93c4336a478b5918f1ef9b9ad4081d662b71d56afceba25ed55b414ce94909d",
+   "bytes": 22764,
+   "sha256": "d93c4336a478b5918f1ef9b9ad4081d662b71d56afceba25ed55b414ce94909d",
+   "substitutions": 0,
+   "eol": "crlf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic3/e.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic3/e.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: registration rounds",
+   "commits": "fea2431",
+   "mtime": "2026-10-02T22:41:12.744715+00:00",
+   "bytes_source": 742,
+   "sha256_source": "5361d214cd2c3d089b03cca51de59dd3c7870bccdace3b4faee49463552bc9b7",
+   "bytes": 740,
+   "sha256": "53b74899ab19a145d645a1025e28bd6aaa69da85bf796f3dbfcde558b8d51edd",
+   "substitutions": 2,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic3/h.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic3/h.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: registration rounds",
+   "commits": "fea2431",
+   "mtime": "2026-10-02T22:42:25.852309+00:00",
+   "bytes_source": 647,
+   "sha256_source": "38b7e908012b4117c8bd8ba7079bc81e0ecc8e7c45b03592e4dbf35ab39ab1a8",
+   "bytes": 645,
+   "sha256": "25ceae686d8c3102fb8b17b1016ec4299b3ef83699f8f4f03481a45554a8cce3",
+   "substitutions": 2,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic3/pf.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic3/pf.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: registration rounds",
+   "commits": "fea2431",
+   "mtime": "2026-10-02T22:40:18.008744+00:00",
+   "bytes_source": 1264,
+   "sha256_source": "61d718894b665291d4b6e2d407bbb11feeb537c073e99f981a6bd7d08c2c3328",
+   "bytes": 1260,
+   "sha256": "d879d8d8965e995c47ddcf7f481d03e7f5b894751b83f8a47df7f6f3a6a0812e",
+   "substitutions": 4,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic3/rep.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic3/rep.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: registration rounds",
+   "commits": "fea2431",
+   "mtime": "2026-10-02T22:38:53.793015+00:00",
+   "bytes_source": 751,
+   "sha256_source": "d807d60658b674bb4cef46468a21f84050997819e5c23964f809749744f5d8a2",
+   "bytes": 747,
+   "sha256": "3ca1f624df2ba38eb0f63191b9fd11a2fcae3562559a6660404fca586e5e65d3",
+   "substitutions": 4,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic3/round2_report.txt",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic3/round2_report.txt",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: registration rounds",
+   "commits": "fea2431",
+   "mtime": "2026-10-02T22:38:53.886119+00:00",
+   "bytes_source": 14039,
+   "sha256_source": "f3ec908220c9beac6660a98787c34fb7c3cc3f2ec86efa0faa76b6beb3fa9d33",
+   "bytes": 14037,
+   "sha256": "550533f6128a058e98015eb56a6146f6f0e5640bdb0efda93787160f412ded65",
+   "substitutions": 2,
+   "eol": "crlf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic3/tl.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic3/tl.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: registration rounds",
+   "commits": "fea2431",
+   "mtime": "2026-10-02T22:38:02.528235+00:00",
+   "bytes_source": 746,
+   "sha256_source": "f2d1a79892967ff4323d46f4d8ec0cdba38ba0e2c911a5c160b6057202ccc0f4",
+   "bytes": 744,
+   "sha256": "3f560d3f3e34d9e62ec400372a05dcd2af1cfe488ed4a4557e64633445164f27",
+   "substitutions": 2,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic3/tl2.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic3/tl2.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: registration rounds",
+   "commits": "fea2431",
+   "mtime": "2026-10-02T22:39:26.845743+00:00",
+   "bytes_source": 930,
+   "sha256_source": "df68858a7cfed1958a205415b3c71baeaa04f8d4ec714ef4788bae9265ea82bb",
+   "bytes": 928,
+   "sha256": "66284f26ea175e3bb7b20e9dfe4a74b0fb3d6300b466aaf37000569a42af06d7",
+   "substitutions": 2,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic3/wt_norm.txt",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic3/wt_norm.txt",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: registration rounds",
+   "commits": "fea2431",
+   "mtime": "2026-10-02T22:33:37.924094+00:00",
+   "bytes_source": 59136,
+   "sha256_source": "f14b016df0d9e3a09a7c29f4f056f3e9602ceeca29376bb7b3b259d07bfd2a1e",
+   "bytes": 59136,
+   "sha256": "f14b016df0d9e3a09a7c29f4f056f3e9602ceeca29376bb7b3b259d07bfd2a1e",
+   "substitutions": 0,
+   "eol": "crlf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic4/cf_prefetch_strat_s3.txt",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic4/cf_prefetch_strat_s3.txt",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T22:56:51.846990+00:00",
+   "bytes_source": 20168,
+   "sha256_source": "ecedf850288a2c621d17046e74b8af4d6f7606512bc33b0302f3ce02e96ee8c0",
+   "bytes": 20168,
+   "sha256": "ecedf850288a2c621d17046e74b8af4d6f7606512bc33b0302f3ce02e96ee8c0",
+   "substitutions": 0,
+   "eol": "crlf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic4/cf_prefetch_strat_s3_r.txt",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic4/cf_prefetch_strat_s3_r.txt",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T22:56:54.369928+00:00",
+   "bytes_source": 20153,
+   "sha256_source": "f59bc58d6781669f829ed47fe5919ade17c26c56a20aa9a34a4bc1345c9b6b7c",
+   "bytes": 20153,
+   "sha256": "f59bc58d6781669f829ed47fe5919ade17c26c56a20aa9a34a4bc1345c9b6b7c",
+   "substitutions": 0,
+   "eol": "crlf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic4/diag.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic4/diag.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T23:00:36.017532+00:00",
+   "bytes_source": 2786,
+   "sha256_source": "4c695dca2292e398fadb4ef34402069499a6c59b6943ea89b547cfdd7aed2db1",
+   "bytes": 2784,
+   "sha256": "8b6d1407f30e3203e9d644b162a1323abc0add609d8e936bae11a6eade0dc2fc",
+   "substitutions": 2,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic4/dump.json",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic4/dump.json",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T22:56:31.504137+00:00",
+   "bytes_source": 229425,
+   "sha256_source": "455af1079cb684c1faf0d911c2abbe9bf8e18abf82d00702812fcadad79d0d66",
+   "bytes": 229425,
+   "sha256": "455af1079cb684c1faf0d911c2abbe9bf8e18abf82d00702812fcadad79d0d66",
+   "substitutions": 0,
+   "eol": "crlf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic4/p1.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic4/p1.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T22:55:35.076079+00:00",
+   "bytes_source": 2768,
+   "sha256_source": "ca91ce1eb18cb83710a79719a45abada20d54513cdd78030d836b4e8d6991bf8",
+   "bytes": 2767,
+   "sha256": "42895dfd9ae9ab39e5dfea1d57053dff56b60eae3c8c7e00547916a4f631ffcf",
+   "substitutions": 1,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic4/p2.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic4/p2.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T22:55:50.848239+00:00",
+   "bytes_source": 4117,
+   "sha256_source": "b7934450939f720406db4f9a29d14af3eeb0706094b593848d6c3958945163ba",
+   "bytes": 4117,
+   "sha256": "b7934450939f720406db4f9a29d14af3eeb0706094b593848d6c3958945163ba",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic4/p3.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic4/p3.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T22:56:02.703096+00:00",
+   "bytes_source": 2094,
+   "sha256_source": "c7df003a08dd7f8e01311abd80bda65d82a0f59b823dd986b70abde9c592f82e",
+   "bytes": 2094,
+   "sha256": "c7df003a08dd7f8e01311abd80bda65d82a0f59b823dd986b70abde9c592f82e",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic4/p4.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic4/p4.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T22:56:13.106972+00:00",
+   "bytes_source": 2269,
+   "sha256_source": "09e9a411582c0a0eb265f3e9141a0cdbb2517949605718dae9d1c2dea2d7fbb3",
+   "bytes": 2269,
+   "sha256": "09e9a411582c0a0eb265f3e9141a0cdbb2517949605718dae9d1c2dea2d7fbb3",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic4/p5.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic4/p5.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T22:56:28.283529+00:00",
+   "bytes_source": 3582,
+   "sha256_source": "0d514f647e97a77523015002da493a109f076da0037ccb5b85e9cc87fe626067",
+   "bytes": 3582,
+   "sha256": "0d514f647e97a77523015002da493a109f076da0037ccb5b85e9cc87fe626067",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic4/prov.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic4/prov.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T22:57:42.776792+00:00",
+   "bytes_source": 6493,
+   "sha256_source": "84c0c13cf80624487e6142ec941a34f49ec9d78e7c83f7fcce7227a6c60f1f83",
+   "bytes": 6492,
+   "sha256": "58d2ac2efe2b2a5d1379ce4fbd845f1905512e87b6c8331198e13a8a2b8a01e8",
+   "substitutions": 1,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic4/readout.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic4/readout.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T22:58:11.352159+00:00",
+   "bytes_source": 2859,
+   "sha256_source": "c529361d5b0b546e4c5a927abfa7d52eaa1615b79199684f9f91784a16f8b4fa",
+   "bytes": 2859,
+   "sha256": "c529361d5b0b546e4c5a927abfa7d52eaa1615b79199684f9f91784a16f8b4fa",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic4/recompute.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic4/recompute.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T22:56:28.300357+00:00",
+   "bytes_source": 14830,
+   "sha256_source": "bd61caf7d4762f4518c7282b7a67496c693e106c3ed4e1f1e78d3d9889ede021",
+   "bytes": 14829,
+   "sha256": "17bb6ddf51e141b18ae7b384721f0906b557defd1f01d929faa5046802f34a74",
+   "substitutions": 1,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic5/bind.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic5/bind.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T23:13:58.579978+00:00",
+   "bytes_source": 2544,
+   "sha256_source": "6e3169e15231ce04ff701e1a2d1500e7c59467addf63ad1b169fe2d8e201f49c",
+   "bytes": 2544,
+   "sha256": "6e3169e15231ce04ff701e1a2d1500e7c59467addf63ad1b169fe2d8e201f49c",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic5/diff_bp.txt",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic5/diff_bp.txt",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T23:12:42.609421+00:00",
+   "bytes_source": 20283,
+   "sha256_source": "a6146f0ce7422c48157acab9082fdbb899d56075034a2df510f6ad448fab22e0",
+   "bytes": 20283,
+   "sha256": "a6146f0ce7422c48157acab9082fdbb899d56075034a2df510f6ad448fab22e0",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic5/dump5.json",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic5/dump5.json",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T23:18:19.599538+00:00",
+   "bytes_source": 229425,
+   "sha256_source": "455af1079cb684c1faf0d911c2abbe9bf8e18abf82d00702812fcadad79d0d66",
+   "bytes": 229425,
+   "sha256": "455af1079cb684c1faf0d911c2abbe9bf8e18abf82d00702812fcadad79d0d66",
+   "substitutions": 0,
+   "eol": "crlf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic5/findings_line.txt",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic5/findings_line.txt",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T23:14:04.169646+00:00",
+   "bytes_source": 8004,
+   "sha256_source": "86ea502e5f55dd34d3610f7a280d9a2634469608c69ab7d182a39700a06a8364",
+   "bytes": 8004,
+   "sha256": "86ea502e5f55dd34d3610f7a280d9a2634469608c69ab7d182a39700a06a8364",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic5/loo.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic5/loo.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T23:16:49.297688+00:00",
+   "bytes_source": 2450,
+   "sha256_source": "aff77300f32999ecd4d4d06d0d358fcee2548d5205b710f84ede2acb494a107d",
+   "bytes": 2450,
+   "sha256": "aff77300f32999ecd4d4d06d0d358fcee2548d5205b710f84ede2acb494a107d",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic5/o_sweep.txt",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic5/o_sweep.txt",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T23:22:08.827767+00:00",
+   "bytes_source": 18233,
+   "sha256_source": "48e2f9438bcd5fdaab7013da2e3cd631c40a2462c3c23f1ea76cb06e19d1db27",
+   "bytes": 18233,
+   "sha256": "48e2f9438bcd5fdaab7013da2e3cd631c40a2462c3c23f1ea76cb06e19d1db27",
+   "substitutions": 0,
+   "eol": "crlf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic5/outcome.txt",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic5/outcome.txt",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T23:15:27.892030+00:00",
+   "bytes_source": 18989,
+   "sha256_source": "65c3c777b4d1f5d9672c649f5955b547446ad772f2db0edd29cbb06a7d146961",
+   "bytes": 18989,
+   "sha256": "65c3c777b4d1f5d9672c649f5955b547446ad772f2db0edd29cbb06a7d146961",
+   "substitutions": 0,
+   "eol": "crlf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic5/outcome_flat.txt",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic5/outcome_flat.txt",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T23:15:27.892030+00:00",
+   "bytes_source": 18227,
+   "sha256_source": "2668e2da400c09b335146cf5a21d9310bcbdcd7d875f92abe029e54bc7e70439",
+   "bytes": 18227,
+   "sha256": "2668e2da400c09b335146cf5a21d9310bcbdcd7d875f92abe029e54bc7e70439",
+   "substitutions": 0,
+   "eol": "none",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic5/ptr_plus.txt",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic5/ptr_plus.txt",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T23:20:08.319604+00:00",
+   "bytes_source": 13734,
+   "sha256_source": "cca7427f17b742b5b16bb59aca8fe29e6d9f69ee3185934bc24a979dc1960ede",
+   "bytes": 13734,
+   "sha256": "cca7427f17b742b5b16bb59aca8fe29e6d9f69ee3185934bc24a979dc1960ede",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic5/scalars.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic5/scalars.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T23:14:26.612593+00:00",
+   "bytes_source": 3026,
+   "sha256_source": "bfbfe06f208264ab3037617d9e27c2981d9996016bbe2f0d0e63be357101588b",
+   "bytes": 3026,
+   "sha256": "bfbfe06f208264ab3037617d9e27c2981d9996016bbe2f0d0e63be357101588b",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic5/sweep.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic5/sweep.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T23:19:37.876464+00:00",
+   "bytes_source": 2391,
+   "sha256_source": "c61b0de892e1b7e29c6e66f107ac6239eb78c4b1113364b9a342aa16f3d28e41",
+   "bytes": 2391,
+   "sha256": "c61b0de892e1b7e29c6e66f107ac6239eb78c4b1113364b9a342aa16f3d28e41",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic6/added.txt",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic6/added.txt",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T23:33:56.314449+00:00",
+   "bytes_source": 51267,
+   "sha256_source": "9a2950305afb384d9b04a60b1ee0f05c0c515346251b2b34eef398b7079e16b4",
+   "bytes": 51267,
+   "sha256": "9a2950305afb384d9b04a60b1ee0f05c0c515346251b2b34eef398b7079e16b4",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic6/cf_prefetch_strat_s3.txt",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic6/cf_prefetch_strat_s3.txt",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T23:38:22.376276+00:00",
+   "bytes_source": 20168,
+   "sha256_source": "ecedf850288a2c621d17046e74b8af4d6f7606512bc33b0302f3ce02e96ee8c0",
+   "bytes": 20168,
+   "sha256": "ecedf850288a2c621d17046e74b8af4d6f7606512bc33b0302f3ce02e96ee8c0",
+   "substitutions": 0,
+   "eol": "crlf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic6/cf_prefetch_strat_s3_r.txt",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic6/cf_prefetch_strat_s3_r.txt",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T23:38:25.010186+00:00",
+   "bytes_source": 20153,
+   "sha256_source": "f59bc58d6781669f829ed47fe5919ade17c26c56a20aa9a34a4bc1345c9b6b7c",
+   "bytes": 20153,
+   "sha256": "f59bc58d6781669f829ed47fe5919ade17c26c56a20aa9a34a4bc1345c9b6b7c",
+   "substitutions": 0,
+   "eol": "crlf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic6/checknums.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic6/checknums.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T23:35:08.296259+00:00",
+   "bytes_source": 656,
+   "sha256_source": "edea946d84897f73088b15bbbf7d4c79154f7af6fab5167c826518bd25bdabbe",
+   "bytes": 656,
+   "sha256": "edea946d84897f73088b15bbbf7d4c79154f7af6fab5167c826518bd25bdabbe",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic6/load.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic6/load.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T23:32:08.241087+00:00",
+   "bytes_source": 797,
+   "sha256_source": "e0a5389f30b59dc34a63d058e220765a2f1918e34135b1884c7168fbffb06953",
+   "bytes": 796,
+   "sha256": "7c6bf862f33e3979aec809d3c205d834276b0753ebc48f24391b5fd20aa3923d",
+   "substitutions": 1,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic6/lopo.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic6/lopo.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T23:36:29.280147+00:00",
+   "bytes_source": 2034,
+   "sha256_source": "6b9530e05e6e84eca8701fcc8b72edbf9ca7667d89020c07ce61f39ca3216243",
+   "bytes": 2033,
+   "sha256": "cc17378bbaecc759ea44e6d4b5268ec93cc1b08d2629c63781442d29459772a5",
+   "substitutions": 1,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic6/outcome.txt",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic6/outcome.txt",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T23:35:28.557948+00:00",
+   "bytes_source": 20332,
+   "sha256_source": "d524974bb8e7db34520e75007b8efe79d67c6c5561fcd1dd3f49500b83a36737",
+   "bytes": 20332,
+   "sha256": "d524974bb8e7db34520e75007b8efe79d67c6c5561fcd1dd3f49500b83a36737",
+   "substitutions": 0,
+   "eol": "crlf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic6/outcome_n.txt",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic6/outcome_n.txt",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T23:35:38.807147+00:00",
+   "bytes_source": 19519,
+   "sha256_source": "9b17e9d0fb314a600cb62ccedd10afa6664b1e66544885c1fcfa524d26e81e81",
+   "bytes": 19519,
+   "sha256": "9b17e9d0fb314a600cb62ccedd10afa6664b1e66544885c1fcfa524d26e81e81",
+   "substitutions": 0,
+   "eol": "none",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic6/pool.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic6/pool.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T23:35:00.714066+00:00",
+   "bytes_source": 1450,
+   "sha256_source": "d2fac41adb60ce9b217dcc514cfddb81100fa894e4d6790310c1f410aec9a8c9",
+   "bytes": 1449,
+   "sha256": "b52731a56a4fa9849af1309050a87173e57d42c611a65b71c1fada277242a090",
+   "substitutions": 1,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic6/removed.txt",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic6/removed.txt",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T23:33:56.925574+00:00",
+   "bytes_source": 8867,
+   "sha256_source": "b8fedc1a1cd20b870e1d2da470b2a92330fa597590abcc68aa1f73a39155e9e0",
+   "bytes": 8867,
+   "sha256": "b8fedc1a1cd20b870e1d2da470b2a92330fa597590abcc68aa1f73a39155e9e0",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic6/status.txt",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic6/status.txt",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T23:35:28.557948+00:00",
+   "bytes_source": 8444,
+   "sha256_source": "8fe96c4d5758af987506d6ddcd631d6fc101c6aa2926bd8292d5bf5e235e5a33",
+   "bytes": 8444,
+   "sha256": "8fe96c4d5758af987506d6ddcd631d6fc101c6aa2926bd8292d5bf5e235e5a33",
+   "substitutions": 0,
+   "eol": "none",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-02-12e6097a/strat/critic6/triplets.py",
+   "source_path": "12e6097a-8666-465a-b5a3-e76024a56cff/scratchpad/strat/critic6/triplets.py",
+   "session": "12e6097a-8666-465a-b5a3-e76024a56cff",
+   "lane": "R1 stratified coverage read: landing rounds",
+   "commits": "09e846b",
+   "mtime": "2026-10-02T23:35:28.516027+00:00",
+   "bytes_source": 1252,
+   "sha256_source": "d7e555e60575876d0f6e7e7814db132f07bbd00ee43709277b9f68a7ed3706cd",
+   "bytes": 1252,
+   "sha256": "d7e555e60575876d0f6e7e7814db132f07bbd00ee43709277b9f68a7ed3706cd",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-03-38e3cfca/ledger/critic1/cf_primary.txt",
+   "source_path": "38e3cfca-4ea6-4df8-ad3b-d4716d1f4b4a/scratchpad/ledger/critic1/cf_primary.txt",
+   "session": "38e3cfca-4ea6-4df8-ad3b-d4716d1f4b4a",
+   "lane": "derived ledgers levelled after the stratified read",
+   "commits": "b35a202",
+   "mtime": "2026-10-03T01:01:29.126176+00:00",
+   "bytes_source": 20175,
+   "sha256_source": "49712f1187e54514adb072adee4e3cc0905c62418753515249f6d37d841e72e3",
+   "bytes": 20175,
+   "sha256": "49712f1187e54514adb072adee4e3cc0905c62418753515249f6d37d841e72e3",
+   "substitutions": 0,
+   "eol": "mixed",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-03-38e3cfca/ledger/critic1/cf_repl.txt",
+   "source_path": "38e3cfca-4ea6-4df8-ad3b-d4716d1f4b4a/scratchpad/ledger/critic1/cf_repl.txt",
+   "session": "38e3cfca-4ea6-4df8-ad3b-d4716d1f4b4a",
+   "lane": "derived ledgers levelled after the stratified read",
+   "commits": "b35a202",
+   "mtime": "2026-10-03T01:01:31.812794+00:00",
+   "bytes_source": 20160,
+   "sha256_source": "0d3309e22b3aadf044ea54dbdc5a859d4330805dc15d94135e98353c013f3784",
+   "bytes": 20160,
+   "sha256": "0d3309e22b3aadf044ea54dbdc5a859d4330805dc15d94135e98353c013f3784",
+   "substitutions": 0,
+   "eol": "mixed",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-03-38e3cfca/ledger/critic1/fi_head.md",
+   "source_path": "38e3cfca-4ea6-4df8-ad3b-d4716d1f4b4a/scratchpad/ledger/critic1/fi_head.md",
+   "session": "38e3cfca-4ea6-4df8-ad3b-d4716d1f4b4a",
+   "lane": "derived ledgers levelled after the stratified read",
+   "commits": "b35a202",
+   "mtime": "2026-10-03T01:02:43.652426+00:00",
+   "bytes_source": 50149,
+   "sha256_source": "7714eda01e1ed71eedb0ac5e6cdf237fbdd9449582d898e8765737a774c7c8e7",
+   "bytes": 50149,
+   "sha256": "7714eda01e1ed71eedb0ac5e6cdf237fbdd9449582d898e8765737a774c7c8e7",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-03-38e3cfca/ledger/critic1/recompute.py",
+   "source_path": "38e3cfca-4ea6-4df8-ad3b-d4716d1f4b4a/scratchpad/ledger/critic1/recompute.py",
+   "session": "38e3cfca-4ea6-4df8-ad3b-d4716d1f4b4a",
+   "lane": "derived ledgers levelled after the stratified read",
+   "commits": "b35a202",
+   "mtime": "2026-10-03T01:01:43.010031+00:00",
+   "bytes_source": 3761,
+   "sha256_source": "6f8d753171f83b850f5bb9b6f66ed87d957c9a9a229260b2ae5fc98cf66d842b",
+   "bytes": 3760,
+   "sha256": "3af6bcbcc355d596a800c8a814cb77563b6944ec2c1b8e8c6535db72830838f2",
+   "substitutions": 1,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-03-38e3cfca/ledger/critic2/cells.py",
+   "source_path": "38e3cfca-4ea6-4df8-ad3b-d4716d1f4b4a/scratchpad/ledger/critic2/cells.py",
+   "session": "38e3cfca-4ea6-4df8-ad3b-d4716d1f4b4a",
+   "lane": "derived ledgers levelled after the stratified read",
+   "commits": "b35a202",
+   "mtime": "2026-10-03T01:21:04.733269+00:00",
+   "bytes_source": 5026,
+   "sha256_source": "b90e9a363329fb98cf28f9fb474b115f79c4f68c707d04504a6069048f985dfe",
+   "bytes": 5025,
+   "sha256": "ae46246d904f7e11af4551b5f645bb9f26d8f6c6fe53dddaac13559845538d58",
+   "substitutions": 1,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-03-38e3cfca/ledger/critic4/prev_conv.txt",
+   "source_path": "38e3cfca-4ea6-4df8-ad3b-d4716d1f4b4a/scratchpad/ledger/critic4/prev_conv.txt",
+   "session": "38e3cfca-4ea6-4df8-ad3b-d4716d1f4b4a",
+   "lane": "derived ledgers levelled after the stratified read",
+   "commits": "b35a202",
+   "mtime": "2026-10-03T01:40:45.878703+00:00",
+   "bytes_source": 2036,
+   "sha256_source": "2d64cea3654847ebb18d3a4c3f0ba9d2bd9c58f5fc189dd1d9e9e0ba06cdfc88",
+   "bytes": 2036,
+   "sha256": "2d64cea3654847ebb18d3a4c3f0ba9d2bd9c58f5fc189dd1d9e9e0ba06cdfc88",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-16-4a635c95/critic/run_blocked.py",
+   "source_path": "4a635c95-32cd-4b83-b700-20e9fecdfde7/scratchpad/critic/run_blocked.py",
+   "session": "4a635c95-32cd-4b83-b700-20e9fecdfde7",
+   "lane": "image audit lane A: CI portability",
+   "commits": "c41f9f1",
+   "mtime": "2026-10-16T02:34:38.502014+00:00",
+   "bytes_source": 413,
+   "sha256_source": "d1058e508d64ba41dc4cd3b204a587926a43c2f1a400829f9190344e6050de00",
+   "bytes": 413,
+   "sha256": "d1058e508d64ba41dc4cd3b204a587926a43c2f1a400829f9190344e6050de00",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-16-4a635c95/critic/shas.txt",
+   "source_path": "4a635c95-32cd-4b83-b700-20e9fecdfde7/scratchpad/critic/shas.txt",
+   "session": "4a635c95-32cd-4b83-b700-20e9fecdfde7",
+   "lane": "image audit lane A: CI portability",
+   "commits": "c41f9f1",
+   "mtime": "2026-10-16T02:43:01.542770+00:00",
+   "bytes_source": 250,
+   "sha256_source": "648f0d8168d97aab2131f59a8d44dc9d6e749ed0c116209772a86bda2c522ac8",
+   "bytes": 250,
+   "sha256": "648f0d8168d97aab2131f59a8d44dc9d6e749ed0c116209772a86bda2c522ac8",
+   "substitutions": 0,
+   "eol": "crlf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-16-4a635c95/critic/status_before.txt",
+   "source_path": "4a635c95-32cd-4b83-b700-20e9fecdfde7/scratchpad/critic/status_before.txt",
+   "session": "4a635c95-32cd-4b83-b700-20e9fecdfde7",
+   "lane": "image audit lane A: CI portability",
+   "commits": "c41f9f1",
+   "mtime": "2026-10-16T02:41:42.829113+00:00",
+   "bytes_source": 337,
+   "sha256_source": "b38369766b681686ba7824caadcf79ddaa87d74be1551fde6413d31bf458a54e",
+   "bytes": 337,
+   "sha256": "b38369766b681686ba7824caadcf79ddaa87d74be1551fde6413d31bf458a54e",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-09-4efb2604/critic/a1.py",
+   "source_path": "4efb2604-196f-4619-a6f7-dea2fa75cc20/scratchpad/critic/a1.py",
+   "session": "4efb2604-196f-4619-a6f7-dea2fa75cc20",
+   "lane": "OQ-20 seed replay of the verdict legs: registration rounds",
+   "commits": "b6d3701, 9163706",
+   "mtime": "2026-10-10T00:34:11.636711+00:00",
+   "bytes_source": 2963,
+   "sha256_source": "ea318010569ffc7e4a334bfb1a8e725aebbf9a5b49dfc69d05398e1f234ebcf8",
+   "bytes": 2963,
+   "sha256": "ea318010569ffc7e4a334bfb1a8e725aebbf9a5b49dfc69d05398e1f234ebcf8",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-09-4efb2604/critic/confirm.py",
+   "source_path": "4efb2604-196f-4619-a6f7-dea2fa75cc20/scratchpad/critic/confirm.py",
+   "session": "4efb2604-196f-4619-a6f7-dea2fa75cc20",
+   "lane": "OQ-20 seed replay of the verdict legs: registration rounds",
+   "commits": "b6d3701, 9163706",
+   "mtime": "2026-10-09T23:01:32.062793+00:00",
+   "bytes_source": 3515,
+   "sha256_source": "5416a426714d8ad460f365c9997e5896aa1a73b197122b254e5a07e66a905729",
+   "bytes": 3515,
+   "sha256": "5416a426714d8ad460f365c9997e5896aa1a73b197122b254e5a07e66a905729",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-09-4efb2604/critic/determinism.py",
+   "source_path": "4efb2604-196f-4619-a6f7-dea2fa75cc20/scratchpad/critic/determinism.py",
+   "session": "4efb2604-196f-4619-a6f7-dea2fa75cc20",
+   "lane": "OQ-20 seed replay of the verdict legs: registration rounds",
+   "commits": "b6d3701, 9163706",
+   "mtime": "2026-10-09T22:31:50.311606+00:00",
+   "bytes_source": 2125,
+   "sha256_source": "1fe50a1c707ffb198ea2b9b37de33dc02d81e0524fc48211dc18e9891173d38a",
+   "bytes": 2125,
+   "sha256": "1fe50a1c707ffb198ea2b9b37de33dc02d81e0524fc48211dc18e9891173d38a",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-09-4efb2604/critic/estimator.py",
+   "source_path": "4efb2604-196f-4619-a6f7-dea2fa75cc20/scratchpad/critic/estimator.py",
+   "session": "4efb2604-196f-4619-a6f7-dea2fa75cc20",
+   "lane": "OQ-20 seed replay of the verdict legs: registration rounds",
+   "commits": "b6d3701, 9163706",
+   "mtime": "2026-10-09T22:36:57.610568+00:00",
+   "bytes_source": 2387,
+   "sha256_source": "fbefa9601a04b3a2029c973802dd537f2e831162b494ccc2d457ee128318de42",
+   "bytes": 2387,
+   "sha256": "fbefa9601a04b3a2029c973802dd537f2e831162b494ccc2d457ee128318de42",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-09-4efb2604/critic/guard.py",
+   "source_path": "4efb2604-196f-4619-a6f7-dea2fa75cc20/scratchpad/critic/guard.py",
+   "session": "4efb2604-196f-4619-a6f7-dea2fa75cc20",
+   "lane": "OQ-20 seed replay of the verdict legs: registration rounds",
+   "commits": "b6d3701, 9163706",
+   "mtime": "2026-10-09T22:37:41.213767+00:00",
+   "bytes_source": 1439,
+   "sha256_source": "b2d91a420ed16c789bad0eaddd6606f3a357ffeb9230b7c2c6bec858da40de01",
+   "bytes": 1439,
+   "sha256": "b2d91a420ed16c789bad0eaddd6606f3a357ffeb9230b7c2c6bec858da40de01",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-09-4efb2604/critic/recompute.py",
+   "source_path": "4efb2604-196f-4619-a6f7-dea2fa75cc20/scratchpad/critic/recompute.py",
+   "session": "4efb2604-196f-4619-a6f7-dea2fa75cc20",
+   "lane": "OQ-20 seed replay of the verdict legs: registration rounds",
+   "commits": "b6d3701, 9163706",
+   "mtime": "2026-10-09T22:31:32.534839+00:00",
+   "bytes_source": 3836,
+   "sha256_source": "4e2a8ab634a13daa51172a7dd015bd9a676758a6b40d11a3e0dea2a2944a3c19",
+   "bytes": 3836,
+   "sha256": "4e2a8ab634a13daa51172a7dd015bd9a676758a6b40d11a3e0dea2a2944a3c19",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-09-4efb2604/critic/replay_gate.py",
+   "source_path": "4efb2604-196f-4619-a6f7-dea2fa75cc20/scratchpad/critic/replay_gate.py",
+   "session": "4efb2604-196f-4619-a6f7-dea2fa75cc20",
+   "lane": "OQ-20 seed replay of the verdict legs: registration rounds",
+   "commits": "b6d3701, 9163706",
+   "mtime": "2026-10-09T23:12:32.623818+00:00",
+   "bytes_source": 1840,
+   "sha256_source": "9bc1348d95c8d103e81a9c62ce619a56ffa884121cfccccb37bec259abc3fdd6",
+   "bytes": 1840,
+   "sha256": "9bc1348d95c8d103e81a9c62ce619a56ffa884121cfccccb37bec259abc3fdd6",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-01-4f289fb0/critic/rc.py",
+   "source_path": "4f289fb0-652a-439c-a5cf-abf830e63352/scratchpad/critic/rc.py",
+   "session": "4f289fb0-652a-439c-a5cf-abf830e63352",
+   "lane": "free-bigram twin of F-26's margin: registration rounds",
+   "commits": "d55e62f, 6eaabf4",
+   "mtime": "2026-10-01T17:07:39.811565+00:00",
+   "bytes_source": 8124,
+   "sha256_source": "87b0ccf2867a9aa4f89be954673dee9066c0fa2bee9868a782933c5d63318b15",
+   "bytes": 8122,
+   "sha256": "13b662cd635a93f67fa26b90ef5de53fd8458be2d0fd557589a1f54bbfda6afd",
+   "substitutions": 2,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-01-4f289fb0/critic/t.py",
+   "source_path": "4f289fb0-652a-439c-a5cf-abf830e63352/scratchpad/critic/t.py",
+   "session": "4f289fb0-652a-439c-a5cf-abf830e63352",
+   "lane": "free-bigram twin of F-26's margin: registration rounds",
+   "commits": "d55e62f, 6eaabf4",
+   "mtime": "2026-10-01T17:06:49.022990+00:00",
+   "bytes_source": 310,
+   "sha256_source": "21fae918a21d80795134d266af09b4b928b57339d8a22f24d595ff18c339b17d",
+   "bytes": 310,
+   "sha256": "21fae918a21d80795134d266af09b4b928b57339d8a22f24d595ff18c339b17d",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-01-4f289fb0/critic/t2.py",
+   "source_path": "4f289fb0-652a-439c-a5cf-abf830e63352/scratchpad/critic/t2.py",
+   "session": "4f289fb0-652a-439c-a5cf-abf830e63352",
+   "lane": "free-bigram twin of F-26's margin: registration rounds",
+   "commits": "d55e62f, 6eaabf4",
+   "mtime": "2026-10-01T17:06:59.363784+00:00",
+   "bytes_source": 338,
+   "sha256_source": "fcc2da023d9eca56cf18baf78680fdfafa74a7bdf2f1214d1c233e7f0c70ebf5",
+   "bytes": 338,
+   "sha256": "fcc2da023d9eca56cf18baf78680fdfafa74a7bdf2f1214d1c233e7f0c70ebf5",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-03-58dc4aea/critic/FINDINGS.md",
+   "source_path": "58dc4aea-78c6-4f4b-bdbd-daf075114c98/scratchpad/critic/FINDINGS.md",
+   "session": "58dc4aea-78c6-4f4b-bdbd-daf075114c98",
+   "lane": "landing-text kit: the diff-mode read over the record files",
+   "commits": "cf4eccf",
+   "mtime": "2026-10-04T00:04:43.992657+00:00",
+   "bytes_source": 255730,
+   "sha256_source": "b7dfd39a680d7a6b893bb2e98819e64a18055fefd5c5ee2dd441f021e51095ea",
+   "bytes": 255730,
+   "sha256": "b7dfd39a680d7a6b893bb2e98819e64a18055fefd5c5ee2dd441f021e51095ea",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-03-58dc4aea/critic/WHY.md",
+   "source_path": "58dc4aea-78c6-4f4b-bdbd-daf075114c98/scratchpad/critic/WHY.md",
+   "session": "58dc4aea-78c6-4f4b-bdbd-daf075114c98",
+   "lane": "landing-text kit: the diff-mode read over the record files",
+   "commits": "cf4eccf",
+   "mtime": "2026-10-04T00:04:44.011381+00:00",
+   "bytes_source": 29869,
+   "sha256_source": "2aa1232cc92a822d43604de3f4374089f87bce2800e0ea31fafe4f7a610e2460",
+   "bytes": 29869,
+   "sha256": "2aa1232cc92a822d43604de3f4374089f87bce2800e0ea31fafe4f7a610e2460",
+   "substitutions": 0,
+   "eol": "crlf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-03-58dc4aea/critic/numbers.json",
+   "source_path": "58dc4aea-78c6-4f4b-bdbd-daf075114c98/scratchpad/critic/numbers.json",
+   "session": "58dc4aea-78c6-4f4b-bdbd-daf075114c98",
+   "lane": "landing-text kit: the diff-mode read over the record files",
+   "commits": "cf4eccf",
+   "mtime": "2026-10-03T23:38:05.078233+00:00",
+   "bytes_source": 292,
+   "sha256_source": "6afdd1d72c700b901932c425866332696322eca2a39397a61f12666044a768f0",
+   "bytes": 292,
+   "sha256": "6afdd1d72c700b901932c425866332696322eca2a39397a61f12666044a768f0",
+   "substitutions": 0,
+   "eol": "crlf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-03-58dc4aea/critic/reg.md",
+   "source_path": "58dc4aea-78c6-4f4b-bdbd-daf075114c98/scratchpad/critic/reg.md",
+   "session": "58dc4aea-78c6-4f4b-bdbd-daf075114c98",
+   "lane": "landing-text kit: the diff-mode read over the record files",
+   "commits": "cf4eccf",
+   "mtime": "2026-10-03T23:41:14.059075+00:00",
+   "bytes_source": 62,
+   "sha256_source": "90566a1110b331058ccb98e12f36dc811756392ee67f7a0445f67903baf18755",
+   "bytes": 62,
+   "sha256": "90566a1110b331058ccb98e12f36dc811756392ee67f7a0445f67903baf18755",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-03-58dc4aea/critic/reg2.md",
+   "source_path": "58dc4aea-78c6-4f4b-bdbd-daf075114c98/scratchpad/critic/reg2.md",
+   "session": "58dc4aea-78c6-4f4b-bdbd-daf075114c98",
+   "lane": "landing-text kit: the diff-mode read over the record files",
+   "commits": "cf4eccf",
+   "mtime": "2026-10-03T23:56:53.488241+00:00",
+   "bytes_source": 84,
+   "sha256_source": "503ee2abcaf3faa371399bf84b0ea84c8687443673fbcbededef8fb53655ae6d",
+   "bytes": 84,
+   "sha256": "503ee2abcaf3faa371399bf84b0ea84c8687443673fbcbededef8fb53655ae6d",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-01-64064aa4/critic/census.py",
+   "source_path": "64064aa4-b9c8-45b6-9f59-46838015656c/scratchpad/critic/census.py",
+   "session": "64064aa4-b9c8-45b6-9f59-46838015656c",
+   "lane": "harness initialisation: results bytes stored as checked out and as cited",
+   "commits": "ab12cbd, d614666",
+   "mtime": "2026-10-01T10:10:49.728418+00:00",
+   "bytes_source": 1617,
+   "sha256_source": "d96d8c91411fb4fa17f5c611a940c7114efb98d37166b192fd726ba38b569f9e",
+   "bytes": 1614,
+   "sha256": "3ae7e6e1ac2bf22669c0f637dcaab9c41ee787752d3347dc894827ad4cd1cd33",
+   "substitutions": 3,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-01-64064aa4/critic/census2.py",
+   "source_path": "64064aa4-b9c8-45b6-9f59-46838015656c/scratchpad/critic/census2.py",
+   "session": "64064aa4-b9c8-45b6-9f59-46838015656c",
+   "lane": "harness initialisation: results bytes stored as checked out and as cited",
+   "commits": "ab12cbd, d614666",
+   "mtime": "2026-10-01T10:11:21.860031+00:00",
+   "bytes_source": 2503,
+   "sha256_source": "01fdb504c23f1c2c2bde1f4bfc354e5e992657ca0883f88cb414e3d5013887ba",
+   "bytes": 2500,
+   "sha256": "77f0dd2a87da0c24be16adae84d4d1869d0298094a07c1f374406e3a8e2d1529",
+   "substitutions": 3,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-01-64064aa4/critic/census_hits.json",
+   "source_path": "64064aa4-b9c8-45b6-9f59-46838015656c/scratchpad/critic/census_hits.json",
+   "session": "64064aa4-b9c8-45b6-9f59-46838015656c",
+   "lane": "harness initialisation: results bytes stored as checked out and as cited",
+   "commits": "ab12cbd, d614666",
+   "mtime": "2026-10-01T10:10:50.236987+00:00",
+   "bytes_source": 2610,
+   "sha256_source": "8685184842395c0701327624b3253a61578fefceb170c75f04934742cc08fb29",
+   "bytes": 2610,
+   "sha256": "8685184842395c0701327624b3253a61578fefceb170c75f04934742cc08fb29",
+   "substitutions": 0,
+   "eol": "crlf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-01-64064aa4/critic/eol_survey.py",
+   "source_path": "64064aa4-b9c8-45b6-9f59-46838015656c/scratchpad/critic/eol_survey.py",
+   "session": "64064aa4-b9c8-45b6-9f59-46838015656c",
+   "lane": "harness initialisation: results bytes stored as checked out and as cited",
+   "commits": "ab12cbd, d614666",
+   "mtime": "2026-10-01T10:12:36.635047+00:00",
+   "bytes_source": 1387,
+   "sha256_source": "5015ac6678ade7744d2d8f13dae4f1a1c43197f3047fbc2be56ac91f86471240",
+   "bytes": 1386,
+   "sha256": "8b6965ee466dc849919e015e83bebdfce2107d79b4bd1cc9b1ebc518c27699a3",
+   "substitutions": 1,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-01-64064aa4/critic/pats.txt",
+   "source_path": "64064aa4-b9c8-45b6-9f59-46838015656c/scratchpad/critic/pats.txt",
+   "session": "64064aa4-b9c8-45b6-9f59-46838015656c",
+   "lane": "harness initialisation: results bytes stored as checked out and as cited",
+   "commits": "ab12cbd, d614666",
+   "mtime": "2026-10-01T10:10:49.784645+00:00",
+   "bytes_source": 11088,
+   "sha256_source": "369be520fae59dda7b6e577b798efe36a2b54709ff7b82e59e97b090ad596af6",
+   "bytes": 11088,
+   "sha256": "369be520fae59dda7b6e577b798efe36a2b54709ff7b82e59e97b090ad596af6",
+   "substitutions": 0,
+   "eol": "crlf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-01-64064aa4/critic/pats12.txt",
+   "source_path": "64064aa4-b9c8-45b6-9f59-46838015656c/scratchpad/critic/pats12.txt",
+   "session": "64064aa4-b9c8-45b6-9f59-46838015656c",
+   "lane": "harness initialisation: results bytes stored as checked out and as cited",
+   "commits": "ab12cbd, d614666",
+   "mtime": "2026-10-01T10:11:21.915952+00:00",
+   "bytes_source": 2352,
+   "sha256_source": "ace402f807c528a91f0228f481beac4db1a011544d7ddcec95c0886b79f1531a",
+   "bytes": 2352,
+   "sha256": "ace402f807c528a91f0228f481beac4db1a011544d7ddcec95c0886b79f1531a",
+   "substitutions": 0,
+   "eol": "crlf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-01-64064aa4/critic/r125.py",
+   "source_path": "64064aa4-b9c8-45b6-9f59-46838015656c/scratchpad/critic/r125.py",
+   "session": "64064aa4-b9c8-45b6-9f59-46838015656c",
+   "lane": "harness initialisation: results bytes stored as checked out and as cited",
+   "commits": "ab12cbd, d614666",
+   "mtime": "2026-10-01T10:10:28.178523+00:00",
+   "bytes_source": 4367,
+   "sha256_source": "ec1ca40e74c0bdab98eeab320013dd58204634c193df79bff3da76f77eaac133",
+   "bytes": 4364,
+   "sha256": "a6f9e7432cecfee7c457742fadb5586d9b6e13c6025adb8436234dc74ae86250",
+   "substitutions": 3,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-01-64064aa4/critic/r3.py",
+   "source_path": "64064aa4-b9c8-45b6-9f59-46838015656c/scratchpad/critic/r3.py",
+   "session": "64064aa4-b9c8-45b6-9f59-46838015656c",
+   "lane": "harness initialisation: results bytes stored as checked out and as cited",
+   "commits": "ab12cbd, d614666",
+   "mtime": "2026-10-01T10:14:23.331153+00:00",
+   "bytes_source": 4002,
+   "sha256_source": "ee6c9f2164bafea0411332807207b39137cbebfaf91099ad5a618b6e11eb1d36",
+   "bytes": 4001,
+   "sha256": "4969076ed67d8aa4fc4d7d1da8f47ea935107f77991a1140f8c34c5187dc86ad",
+   "substitutions": 1,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-01-64064aa4/critic/r3b.py",
+   "source_path": "64064aa4-b9c8-45b6-9f59-46838015656c/scratchpad/critic/r3b.py",
+   "session": "64064aa4-b9c8-45b6-9f59-46838015656c",
+   "lane": "harness initialisation: results bytes stored as checked out and as cited",
+   "commits": "ab12cbd, d614666",
+   "mtime": "2026-10-01T10:15:06.037706+00:00",
+   "bytes_source": 2917,
+   "sha256_source": "7ad4417fef1febf9de7e6311444ab99058c1b712cd867b18c942bbbf8d3e1ee0",
+   "bytes": 2916,
+   "sha256": "b69d027451f6572926107cf2a629a0f035f9c47a67c63788a59e603fdaaf5c52",
+   "substitutions": 1,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-01-64064aa4/critic/reflect_now.txt",
+   "source_path": "64064aa4-b9c8-45b6-9f59-46838015656c/scratchpad/critic/reflect_now.txt",
+   "session": "64064aa4-b9c8-45b6-9f59-46838015656c",
+   "lane": "harness initialisation: results bytes stored as checked out and as cited",
+   "commits": "ab12cbd, d614666",
+   "mtime": "2026-10-01T10:18:21.907433+00:00",
+   "bytes_source": 1517,
+   "sha256_source": "28182dfe54f5fe0e4a31086959b77f407212c36be371f90db69700c406b9a532",
+   "bytes": 1517,
+   "sha256": "28182dfe54f5fe0e4a31086959b77f407212c36be371f90db69700c406b9a532",
+   "substitutions": 0,
+   "eol": "crlf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-01-64064aa4/critic/staged84.json",
+   "source_path": "64064aa4-b9c8-45b6-9f59-46838015656c/scratchpad/critic/staged84.json",
+   "session": "64064aa4-b9c8-45b6-9f59-46838015656c",
+   "lane": "harness initialisation: results bytes stored as checked out and as cited",
+   "commits": "ab12cbd, d614666",
+   "mtime": "2026-10-01T10:10:31.923650+00:00",
+   "bytes_source": 30412,
+   "sha256_source": "171aec7f2d4f600239422026a574294792df375a78ae64774ca654d2512dd3e6",
+   "bytes": 30412,
+   "sha256": "171aec7f2d4f600239422026a574294792df375a78ae64774ca654d2512dd3e6",
+   "substitutions": 0,
+   "eol": "crlf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-04-ae76f7e0/critic/recompute.py",
+   "source_path": "ae76f7e0-b675-4f4b-8fcc-ef4ee8f05d7c/scratchpad/critic/recompute.py",
+   "session": "ae76f7e0-b675-4f4b-8fcc-ef4ee8f05d7c",
+   "lane": "horizon read at the R2 encoding: registration round",
+   "commits": "b41d3f3",
+   "mtime": "2026-10-04T07:29:07.083221+00:00",
+   "bytes_source": 5010,
+   "sha256_source": "a7a7cf3bdf8bfd7552c31892ea54ba06da2bfe525c01eb0131f3b5a6a13f9225",
+   "bytes": 5010,
+   "sha256": "a7a7cf3bdf8bfd7552c31892ea54ba06da2bfe525c01eb0131f3b5a6a13f9225",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-03-bd3df22e/critic_confirm/mine.txt",
+   "source_path": "bd3df22e-cbe2-4aa0-9fa2-1f8c060c993b/scratchpad/critic_confirm/mine.txt",
+   "session": "bd3df22e-cbe2-4aa0-9fa2-1f8c060c993b",
+   "lane": "R2 generalising free baseline: registration round",
+   "commits": "2fe5926",
+   "mtime": "2026-10-03T05:26:10.637914+00:00",
+   "bytes_source": 2626,
+   "sha256_source": "b1edd1667bb1cc09482febb5673959faecc48648cfc257abf4d7e721997a7c00",
+   "bytes": 2626,
+   "sha256": "b1edd1667bb1cc09482febb5673959faecc48648cfc257abf4d7e721997a7c00",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-03-bd3df22e/critic_r2/part1.py",
+   "source_path": "bd3df22e-cbe2-4aa0-9fa2-1f8c060c993b/scratchpad/critic_r2/part1.py",
+   "session": "bd3df22e-cbe2-4aa0-9fa2-1f8c060c993b",
+   "lane": "R2 generalising free baseline: landing rounds",
+   "commits": "2f13134",
+   "mtime": "2026-10-03T09:22:32.366058+00:00",
+   "bytes_source": 2524,
+   "sha256_source": "4281886175e4e3a9f2f9bed5febbbe48408126151c1af02a578b479fea908af5",
+   "bytes": 2524,
+   "sha256": "4281886175e4e3a9f2f9bed5febbbe48408126151c1af02a578b479fea908af5",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-03-bd3df22e/critic_r2/part2.py",
+   "source_path": "bd3df22e-cbe2-4aa0-9fa2-1f8c060c993b/scratchpad/critic_r2/part2.py",
+   "session": "bd3df22e-cbe2-4aa0-9fa2-1f8c060c993b",
+   "lane": "R2 generalising free baseline: landing rounds",
+   "commits": "2f13134",
+   "mtime": "2026-10-03T09:22:48.008814+00:00",
+   "bytes_source": 3774,
+   "sha256_source": "19e6226a43f6ca74517b80915f30d6b66a227528fc5f965e3a9b62b7058a9300",
+   "bytes": 3774,
+   "sha256": "19e6226a43f6ca74517b80915f30d6b66a227528fc5f965e3a9b62b7058a9300",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-03-bd3df22e/critic_r2/part3.py",
+   "source_path": "bd3df22e-cbe2-4aa0-9fa2-1f8c060c993b/scratchpad/critic_r2/part3.py",
+   "session": "bd3df22e-cbe2-4aa0-9fa2-1f8c060c993b",
+   "lane": "R2 generalising free baseline: landing rounds",
+   "commits": "2f13134",
+   "mtime": "2026-10-03T09:23:03.983429+00:00",
+   "bytes_source": 3767,
+   "sha256_source": "7392447c515423fdd6fd5c1ab2118ee1ea70028fd478b44e9897091d35a51b8f",
+   "bytes": 3767,
+   "sha256": "7392447c515423fdd6fd5c1ab2118ee1ea70028fd478b44e9897091d35a51b8f",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-03-bd3df22e/critic_r2/part4.py",
+   "source_path": "bd3df22e-cbe2-4aa0-9fa2-1f8c060c993b/scratchpad/critic_r2/part4.py",
+   "session": "bd3df22e-cbe2-4aa0-9fa2-1f8c060c993b",
+   "lane": "R2 generalising free baseline: landing rounds",
+   "commits": "2f13134",
+   "mtime": "2026-10-03T09:23:25.748272+00:00",
+   "bytes_source": 4772,
+   "sha256_source": "10c70a6a58afc2030f8ee085ba564afb10b11a96539733e3ce9a8cf0efd38ba0",
+   "bytes": 4772,
+   "sha256": "10c70a6a58afc2030f8ee085ba564afb10b11a96539733e3ce9a8cf0efd38ba0",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-03-bd3df22e/critic_r2/recompute.py",
+   "source_path": "bd3df22e-cbe2-4aa0-9fa2-1f8c060c993b/scratchpad/critic_r2/recompute.py",
+   "session": "bd3df22e-cbe2-4aa0-9fa2-1f8c060c993b",
+   "lane": "R2 generalising free baseline: landing rounds",
+   "commits": "2f13134",
+   "mtime": "2026-10-03T09:23:25.788168+00:00",
+   "bytes_source": 14837,
+   "sha256_source": "d897780557abf917c5dea265739b907370a53c4d7e627bf9f2588c3ea0385902",
+   "bytes": 14837,
+   "sha256": "d897780557abf917c5dea265739b907370a53c4d7e627bf9f2588c3ea0385902",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-03-bd3df22e/critic_r2/show.py",
+   "source_path": "bd3df22e-cbe2-4aa0-9fa2-1f8c060c993b/scratchpad/critic_r2/show.py",
+   "session": "bd3df22e-cbe2-4aa0-9fa2-1f8c060c993b",
+   "lane": "R2 generalising free baseline: landing rounds",
+   "commits": "2f13134",
+   "mtime": "2026-10-03T09:24:02.557020+00:00",
+   "bytes_source": 1554,
+   "sha256_source": "b7a2983edfa4cedbe05b4590e6408240e2b7a9004666fca8dfadd07057dde7ca",
+   "bytes": 1554,
+   "sha256": "b7a2983edfa4cedbe05b4590e6408240e2b7a9004666fca8dfadd07057dde7ca",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-03-bd3df22e/critic_r2/t.txt",
+   "source_path": "bd3df22e-cbe2-4aa0-9fa2-1f8c060c993b/scratchpad/critic_r2/t.txt",
+   "session": "bd3df22e-cbe2-4aa0-9fa2-1f8c060c993b",
+   "lane": "R2 generalising free baseline: landing rounds",
+   "commits": "2f13134",
+   "mtime": "2026-10-03T09:21:11.208893+00:00",
+   "bytes_source": 12,
+   "sha256_source": "472856bc599bbf692fbf190bc9e172437e9736fed3df4dac9485961e47d923c2",
+   "bytes": 12,
+   "sha256": "472856bc599bbf692fbf190bc9e172437e9736fed3df4dac9485961e47d923c2",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-03-bd3df22e/critic_r2/t2.txt",
+   "source_path": "bd3df22e-cbe2-4aa0-9fa2-1f8c060c993b/scratchpad/critic_r2/t2.txt",
+   "session": "bd3df22e-cbe2-4aa0-9fa2-1f8c060c993b",
+   "lane": "R2 generalising free baseline: landing rounds",
+   "commits": "2f13134",
+   "mtime": "2026-10-03T09:22:16.420620+00:00",
+   "bytes_source": 127,
+   "sha256_source": "89abb65eb81fce150a6bbf086092e6baf1c44182227b0f05269225d6672248cb",
+   "bytes": 127,
+   "sha256": "89abb65eb81fce150a6bbf086092e6baf1c44182227b0f05269225d6672248cb",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-04-d880d7a7/critic/clone_fix_after.txt",
+   "source_path": "d880d7a7-5b03-4222-a6bf-23f7b5705b02/scratchpad/critic/clone_fix_after.txt",
+   "session": "d880d7a7-5b03-4222-a6bf-23f7b5705b02",
+   "lane": "EVID-1: sha-cited files outside results/ stored as cited",
+   "commits": "0eb73d9",
+   "mtime": "2026-10-04T02:57:00.897181+00:00",
+   "bytes_source": 535,
+   "sha256_source": "a7414d6ff5a6ad12b3e0291b51a7095c29f852a17625bc9064898f7fe975ebac",
+   "bytes": 535,
+   "sha256": "a7414d6ff5a6ad12b3e0291b51a7095c29f852a17625bc9064898f7fe975ebac",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-04-d880d7a7/critic/clone_fix_before.txt",
+   "source_path": "d880d7a7-5b03-4222-a6bf-23f7b5705b02/scratchpad/critic/clone_fix_before.txt",
+   "session": "d880d7a7-5b03-4222-a6bf-23f7b5705b02",
+   "lane": "EVID-1: sha-cited files outside results/ stored as cited",
+   "commits": "0eb73d9",
+   "mtime": "2026-10-04T02:54:53.324545+00:00",
+   "bytes_source": 535,
+   "sha256_source": "a7414d6ff5a6ad12b3e0291b51a7095c29f852a17625bc9064898f7fe975ebac",
+   "bytes": 535,
+   "sha256": "a7414d6ff5a6ad12b3e0291b51a7095c29f852a17625bc9064898f7fe975ebac",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-04-d880d7a7/critic/controls.py",
+   "source_path": "d880d7a7-5b03-4222-a6bf-23f7b5705b02/scratchpad/critic/controls.py",
+   "session": "d880d7a7-5b03-4222-a6bf-23f7b5705b02",
+   "lane": "EVID-1: sha-cited files outside results/ stored as cited",
+   "commits": "0eb73d9",
+   "mtime": "2026-10-04T03:48:09.832842+00:00",
+   "bytes_source": 1861,
+   "sha256_source": "78f11c5b8ffef7c03984ae4d456f51daeded1446557aa4a568d4437e0d46ee5f",
+   "bytes": 1859,
+   "sha256": "bd1c01b1f1a0a30c84ec6223bc5cb2c1091e8dfdf03c9fd43d4579e1a8420ba6",
+   "substitutions": 2,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/added2.txt",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/added2.txt",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "reader-and-lens stage LENS (F-28): landing rounds",
+   "commits": "9bbe905",
+   "mtime": "2026-10-05T11:40:53.887273+00:00",
+   "bytes_source": 39426,
+   "sha256_source": "801742851bc0c98ec023f57f7221191077aec2ce4c8d5f02f77fbeaab91e6935",
+   "bytes": 39426,
+   "sha256": "801742851bc0c98ec023f57f7221191077aec2ce4c8d5f02f77fbeaab91e6935",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/compare_lens.py",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/compare_lens.py",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "reader-and-lens stage LENS (F-28): landing rounds",
+   "commits": "9bbe905",
+   "mtime": "2026-10-05T11:15:13.276436+00:00",
+   "bytes_source": 3949,
+   "sha256_source": "f60c902f184af31861460657288556095b268958fbcf8e12ae95216f79b0a8f2",
+   "bytes": 3949,
+   "sha256": "f60c902f184af31861460657288556095b268958fbcf8e12ae95216f79b0a8f2",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/compare_long.py",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/compare_long.py",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "reader-and-lens stage READERS-LONG: landing rounds",
+   "commits": "7f0af3e",
+   "mtime": "2026-10-09T08:28:10.806173+00:00",
+   "bytes_source": 3347,
+   "sha256_source": "fd6636a0a6d888d76e718a2fca919d90696ea93707d77912992069aa202e1821",
+   "bytes": 3347,
+   "sha256": "fd6636a0a6d888d76e718a2fca919d90696ea93707d77912992069aa202e1821",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/compare_readers.py",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/compare_readers.py",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "reader-and-lens stage READERS: landing rounds",
+   "commits": "34078d1",
+   "mtime": "2026-10-05T18:18:56.537986+00:00",
+   "bytes_source": 3849,
+   "sha256_source": "1eb2fea400b2d5725b985efb24eb7b18518dddfab0cc4ba76ce2f19b6c21372c",
+   "bytes": 3849,
+   "sha256": "1eb2fea400b2d5725b985efb24eb7b18518dddfab0cc4ba76ce2f19b6c21372c",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/gen_probe.py",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/gen_probe.py",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "reader-and-lens stage READERS-LONG: landing rounds",
+   "commits": "7f0af3e",
+   "mtime": "2026-10-09T20:24:23.697809+00:00",
+   "bytes_source": 39052,
+   "sha256_source": "065ab1cd870ecf5a4e411e5438d97129e6f771a440f70e73274fae7afdcd9d2d",
+   "bytes": 39047,
+   "sha256": "28030587e3f18ec2247f11cb188b9c9d6bc036b3266e05022e956192b1116fa0",
+   "substitutions": 5,
+   "eol": "crlf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/gen_probe2.py",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/gen_probe2.py",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "reader-and-lens stage READERS-LONG: landing rounds",
+   "commits": "7f0af3e",
+   "mtime": "2026-10-09T20:41:22.025743+00:00",
+   "bytes_source": 49188,
+   "sha256_source": "f24bd4373baf63f3b932489596504435151982ad696528a5c25cdc6b182577be",
+   "bytes": 49183,
+   "sha256": "a6fde985c291f260fda9e5d25f10b36984fbb7936600b8dbc6a49b7a8bcec542",
+   "substitutions": 5,
+   "eol": "crlf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/landing_added.txt",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/landing_added.txt",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "reader-and-lens stage LENS (F-28): landing rounds",
+   "commits": "9bbe905",
+   "mtime": "2026-10-05T11:23:16.614946+00:00",
+   "bytes_source": 36705,
+   "sha256_source": "f11f690e6b0f988d855fc0dab885630f225a4c09c43c82e4b51fe060f1678496",
+   "bytes": 36705,
+   "sha256": "f11f690e6b0f988d855fc0dab885630f225a4c09c43c82e4b51fe060f1678496",
+   "substitutions": 0,
+   "eol": "crlf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/part1.py",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/part1.py",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "seed-noise floor readouts (F-27): landing rounds",
+   "commits": "73d8dc2, 906edfd",
+   "mtime": "2026-10-05T03:28:22.025506+00:00",
+   "bytes_source": 496,
+   "sha256_source": "6ec508448ee834a79946b8965fdf8fb11d8514fbc4a5ebfb2f019d9a60b75d38",
+   "bytes": 495,
+   "sha256": "5d90e1a95a4d330b3fb32a80052f8344f8b3730358d6b155f7caf91dadc9dbe7",
+   "substitutions": 1,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/part2.py",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/part2.py",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "seed-noise floor readouts (F-27): landing rounds",
+   "commits": "73d8dc2, 906edfd",
+   "mtime": "2026-10-05T03:28:32.077979+00:00",
+   "bytes_source": 981,
+   "sha256_source": "4b3a7c3430db2db31492ed57eb5ccd223226e53b1fa94effb1c41ef9889f17ed",
+   "bytes": 981,
+   "sha256": "4b3a7c3430db2db31492ed57eb5ccd223226e53b1fa94effb1c41ef9889f17ed",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/part3.py",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/part3.py",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "seed-noise floor readouts (F-27): landing rounds",
+   "commits": "73d8dc2, 906edfd",
+   "mtime": "2026-10-05T03:28:42.052136+00:00",
+   "bytes_source": 1748,
+   "sha256_source": "1021c2866d6cda24bb0403064256e1f80b8248e31a6e21fef0024413aebc3532",
+   "bytes": 1748,
+   "sha256": "1021c2866d6cda24bb0403064256e1f80b8248e31a6e21fef0024413aebc3532",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/part4.py",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/part4.py",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "seed-noise floor readouts (F-27): landing rounds",
+   "commits": "73d8dc2, 906edfd",
+   "mtime": "2026-10-05T03:28:52.730155+00:00",
+   "bytes_source": 2192,
+   "sha256_source": "1d0dbcb3ca7639ad2724cfc012b7031e8918727263ed39f5d7acdf43331d9733",
+   "bytes": 2192,
+   "sha256": "1d0dbcb3ca7639ad2724cfc012b7031e8918727263ed39f5d7acdf43331d9733",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/part5.py",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/part5.py",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "seed-noise floor readouts (F-27): landing rounds",
+   "commits": "73d8dc2, 906edfd",
+   "mtime": "2026-10-05T03:29:04.154993+00:00",
+   "bytes_source": 2379,
+   "sha256_source": "2ab567648edd7dba9b704146baa37be8f69a1823b290d1af0d713615fc2c0a1c",
+   "bytes": 2379,
+   "sha256": "2ab567648edd7dba9b704146baa37be8f69a1823b290d1af0d713615fc2c0a1c",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/part6.py",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/part6.py",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "seed-noise floor readouts (F-27): landing rounds",
+   "commits": "73d8dc2, 906edfd",
+   "mtime": "2026-10-05T03:29:17.378892+00:00",
+   "bytes_source": 2863,
+   "sha256_source": "0cb285039bf8fdf1308fe1e070956223b79543219b287b8a4606c5ee6f836aa0",
+   "bytes": 2863,
+   "sha256": "0cb285039bf8fdf1308fe1e070956223b79543219b287b8a4606c5ee6f836aa0",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/rd_part1.py",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/rd_part1.py",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "reader-and-lens stage READERS: landing rounds",
+   "commits": "34078d1",
+   "mtime": "2026-10-05T18:16:41.790642+00:00",
+   "bytes_source": 2141,
+   "sha256_source": "06709306bc04a818de63cc6372fd0cc411d254b536abbab8c5526dbc93988cd0",
+   "bytes": 2141,
+   "sha256": "06709306bc04a818de63cc6372fd0cc411d254b536abbab8c5526dbc93988cd0",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/rd_part2.py",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/rd_part2.py",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "reader-and-lens stage READERS: landing rounds",
+   "commits": "34078d1",
+   "mtime": "2026-10-05T18:16:52.541675+00:00",
+   "bytes_source": 2065,
+   "sha256_source": "e952aa5f2fab1cec7887b7ee7276d44ecd5c95f21303769a5646ecda983c83de",
+   "bytes": 2065,
+   "sha256": "e952aa5f2fab1cec7887b7ee7276d44ecd5c95f21303769a5646ecda983c83de",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/rd_part3.py",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/rd_part3.py",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "reader-and-lens stage READERS: landing rounds",
+   "commits": "34078d1",
+   "mtime": "2026-10-05T18:17:05.417606+00:00",
+   "bytes_source": 1067,
+   "sha256_source": "b069e0fb7aff765de7dc8e4492e11cc738d1bd739a6c631d0f5891da60283127",
+   "bytes": 1067,
+   "sha256": "b069e0fb7aff765de7dc8e4492e11cc738d1bd739a6c631d0f5891da60283127",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/rd_part4.py",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/rd_part4.py",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "reader-and-lens stage READERS: landing rounds",
+   "commits": "34078d1",
+   "mtime": "2026-10-05T18:17:18.062871+00:00",
+   "bytes_source": 957,
+   "sha256_source": "8f59b6441b0e49e300c16df8537bc91f4b3ed1ad7481d991c7dde064c3b7641f",
+   "bytes": 957,
+   "sha256": "8f59b6441b0e49e300c16df8537bc91f4b3ed1ad7481d991c7dde064c3b7641f",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/rd_part5.py",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/rd_part5.py",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "reader-and-lens stage READERS: landing rounds",
+   "commits": "34078d1",
+   "mtime": "2026-10-05T18:17:18.081499+00:00",
+   "bytes_source": 1563,
+   "sha256_source": "3195d1b5774d5c6273d3f53c8934c4c4cc15798750b12b53a4d12e13c219513b",
+   "bytes": 1563,
+   "sha256": "3195d1b5774d5c6273d3f53c8934c4c4cc15798750b12b53a4d12e13c219513b",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/readers_added.txt",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/readers_added.txt",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "reader-and-lens stage READERS: landing rounds",
+   "commits": "34078d1",
+   "mtime": "2026-10-05T18:25:49.433634+00:00",
+   "bytes_source": 33097,
+   "sha256_source": "d8c89f823e22866da11623f67d93f48ceb35f2b814b6be340946b4f58f197cba",
+   "bytes": 33097,
+   "sha256": "d8c89f823e22866da11623f67d93f48ceb35f2b814b6be340946b4f58f197cba",
+   "substitutions": 0,
+   "eol": "crlf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/readers_added2.txt",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/readers_added2.txt",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "reader-and-lens stage READERS: landing rounds",
+   "commits": "34078d1",
+   "mtime": "2026-10-05T18:31:08.105846+00:00",
+   "bytes_source": 48569,
+   "sha256_source": "a8fb22897a65f88c3f073ee0980626e2f01cf47079e2bbead8f2b78bdbb9d6db",
+   "bytes": 48569,
+   "sha256": "a8fb22897a65f88c3f073ee0980626e2f01cf47079e2bbead8f2b78bdbb9d6db",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/recompute.json",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/recompute.json",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "seed-noise floor readouts (F-27): landing rounds",
+   "commits": "73d8dc2, 906edfd",
+   "mtime": "2026-10-05T03:30:08.621740+00:00",
+   "bytes_source": 14744,
+   "sha256_source": "1b1a06ed2005290f2ec2af8385722760c591bb58619b2b157297447f474e35ca",
+   "bytes": 14744,
+   "sha256": "1b1a06ed2005290f2ec2af8385722760c591bb58619b2b157297447f474e35ca",
+   "substitutions": 0,
+   "eol": "crlf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/recompute.py",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/recompute.py",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "seed-noise floor readouts (F-27): landing rounds",
+   "commits": "73d8dc2, 906edfd",
+   "mtime": "2026-10-05T03:29:17.396171+00:00",
+   "bytes_source": 10659,
+   "sha256_source": "f19a5ccf575bef2873b0eac339c840195e79acb7e065eb12481ffd5f18142f14",
+   "bytes": 10658,
+   "sha256": "243ffa6df3fb0726a183f6b3c8b56e5bcf8108be0b9521273dc7ee7dee673d86",
+   "substitutions": 1,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/recompute_lens.json",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/recompute_lens.json",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "reader-and-lens stage LENS (F-28): landing rounds",
+   "commits": "9bbe905",
+   "mtime": "2026-10-05T11:14:29.802094+00:00",
+   "bytes_source": 12825,
+   "sha256_source": "efb2d656fb79bf0cd9ab8d4ffc64a3d7f21afe561ec1484fe4ec119e5e84087d",
+   "bytes": 12825,
+   "sha256": "efb2d656fb79bf0cd9ab8d4ffc64a3d7f21afe561ec1484fe4ec119e5e84087d",
+   "substitutions": 0,
+   "eol": "crlf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/recompute_lens.py",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/recompute_lens.py",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "reader-and-lens stage LENS (F-28): landing rounds",
+   "commits": "9bbe905",
+   "mtime": "2026-10-05T11:14:25.592036+00:00",
+   "bytes_source": 8522,
+   "sha256_source": "579e6c13f7f047986f0b126b3c9043343e45eecf89e476716f89ec072d980376",
+   "bytes": 8522,
+   "sha256": "579e6c13f7f047986f0b126b3c9043343e45eecf89e476716f89ec072d980376",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/recompute_readers.json",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/recompute_readers.json",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "reader-and-lens stage READERS: landing rounds",
+   "commits": "34078d1",
+   "mtime": "2026-10-05T18:17:23.673434+00:00",
+   "bytes_source": 25669,
+   "sha256_source": "14dc621bd8223273959e0a15c60edac48ec4243887c6351beb7c94411b241401",
+   "bytes": 25669,
+   "sha256": "14dc621bd8223273959e0a15c60edac48ec4243887c6351beb7c94411b241401",
+   "substitutions": 0,
+   "eol": "crlf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/recompute_readers.py",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/recompute_readers.py",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "reader-and-lens stage READERS: landing rounds",
+   "commits": "34078d1",
+   "mtime": "2026-10-05T18:17:18.100809+00:00",
+   "bytes_source": 7793,
+   "sha256_source": "a492fed1211ee948b14e3409095f2dc0b8f48b96355cde2f5920be092482db93",
+   "bytes": 7793,
+   "sha256": "a492fed1211ee948b14e3409095f2dc0b8f48b96355cde2f5920be092482db93",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/recompute_readers_long.json",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/recompute_readers_long.json",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "reader-and-lens stage READERS-LONG: landing rounds",
+   "commits": "7f0af3e",
+   "mtime": "2026-10-09T08:27:21.864216+00:00",
+   "bytes_source": 38230,
+   "sha256_source": "502d264fa55e8e651e08251d02d0c9d0a84b3138b4ca3856e3faf76a531ee3a0",
+   "bytes": 38230,
+   "sha256": "502d264fa55e8e651e08251d02d0c9d0a84b3138b4ca3856e3faf76a531ee3a0",
+   "substitutions": 0,
+   "eol": "crlf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/recompute_readers_long.py",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/recompute_readers_long.py",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "reader-and-lens stage READERS-LONG: landing rounds",
+   "commits": "7f0af3e",
+   "mtime": "2026-10-09T08:27:17.260812+00:00",
+   "bytes_source": 7972,
+   "sha256_source": "1cca66a4f357fbfdb84266326fac2d8ad4b4bb830228d1bf19259789beff5e23",
+   "bytes": 7972,
+   "sha256": "1cca66a4f357fbfdb84266326fac2d8ad4b4bb830228d1bf19259789beff5e23",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/rl3.py",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/rl3.py",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "reader-and-lens stage READERS-LONG: landing rounds",
+   "commits": "7f0af3e",
+   "mtime": "2026-10-09T08:27:17.211507+00:00",
+   "bytes_source": 1078,
+   "sha256_source": "0027d2e2326ccb852bcc8ef36a4e2bce0f8197df729cb5a29dda72dd63429d77",
+   "bytes": 1078,
+   "sha256": "0027d2e2326ccb852bcc8ef36a4e2bce0f8197df729cb5a29dda72dd63429d77",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/rl4.py",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/rl4.py",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "reader-and-lens stage READERS-LONG: landing rounds",
+   "commits": "7f0af3e",
+   "mtime": "2026-10-09T08:27:17.233895+00:00",
+   "bytes_source": 2688,
+   "sha256_source": "025a5b1ecdadf23074b4153f83545689c68ee845c5f50aca5f9c04417ae095b7",
+   "bytes": 2688,
+   "sha256": "025a5b1ecdadf23074b4153f83545689c68ee845c5f50aca5f9c04417ae095b7",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/rl_part1.py",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/rl_part1.py",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "reader-and-lens stage LENS (F-28): landing rounds",
+   "commits": "9bbe905",
+   "mtime": "2026-10-05T11:13:56.653201+00:00",
+   "bytes_source": 2317,
+   "sha256_source": "3fb1e40a2d24d18fd8fd395fd27eb8164f686caf7013b605ff9b190f660cccc6",
+   "bytes": 2317,
+   "sha256": "3fb1e40a2d24d18fd8fd395fd27eb8164f686caf7013b605ff9b190f660cccc6",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/rl_part2.py",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/rl_part2.py",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "reader-and-lens stage LENS (F-28): landing rounds",
+   "commits": "9bbe905",
+   "mtime": "2026-10-05T11:14:05.453488+00:00",
+   "bytes_source": 1531,
+   "sha256_source": "c9853ec0650dca6691c18a1a100e3aacebbc0c200e140e903a19aca76ca6271b",
+   "bytes": 1531,
+   "sha256": "c9853ec0650dca6691c18a1a100e3aacebbc0c200e140e903a19aca76ca6271b",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/rl_part3.py",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/rl_part3.py",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "reader-and-lens stage LENS (F-28): landing rounds",
+   "commits": "9bbe905",
+   "mtime": "2026-10-05T11:14:25.556426+00:00",
+   "bytes_source": 2456,
+   "sha256_source": "bdef05fdd0c4804090de04dee7aedc5d29a28fb2f671aa3ff44594023db43d21",
+   "bytes": 2456,
+   "sha256": "bdef05fdd0c4804090de04dee7aedc5d29a28fb2f671aa3ff44594023db43d21",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/rl_part4.py",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/rl_part4.py",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "reader-and-lens stage LENS (F-28): landing rounds",
+   "commits": "9bbe905",
+   "mtime": "2026-10-05T11:14:25.574539+00:00",
+   "bytes_source": 2218,
+   "sha256_source": "97ae92f50ecfa6890752dcbabf7c2432be13dc28cef3cdd199b36d8e7f5e1dbf",
+   "bytes": 2218,
+   "sha256": "97ae92f50ecfa6890752dcbabf7c2432be13dc28cef3cdd199b36d8e7f5e1dbf",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/t.txt",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/t.txt",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "reader-and-lens stage LENS (F-28): landing rounds",
+   "commits": "9bbe905",
+   "mtime": "2026-10-05T11:12:02.731745+00:00",
+   "bytes_source": 47,
+   "sha256_source": "60348326d83ec4508b2a9964c3756a5d29b9960103ab309d0a52759379567e02",
+   "bytes": 47,
+   "sha256": "60348326d83ec4508b2a9964c3756a5d29b9960103ab309d0a52759379567e02",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/t2.txt",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/t2.txt",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "reader-and-lens stage LENS (F-28): landing rounds",
+   "commits": "9bbe905",
+   "mtime": "2026-10-05T11:12:55.193954+00:00",
+   "bytes_source": 54,
+   "sha256_source": "c8f67db6692f0d83221ff7cc8f3f9c1e4431064b86e0b21e54bdfe1592aff7ef",
+   "bytes": 54,
+   "sha256": "c8f67db6692f0d83221ff7cc8f3f9c1e4431064b86e0b21e54bdfe1592aff7ef",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/t3.txt",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/t3.txt",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "reader-and-lens stage LENS (F-28): landing rounds",
+   "commits": "9bbe905",
+   "mtime": "2026-10-05T11:13:44.556548+00:00",
+   "bytes_source": 116,
+   "sha256_source": "1cd3aa6a5b1253a45653a679b659b24ec67578875ffda2fd153efa4bfd6b3127",
+   "bytes": 116,
+   "sha256": "1cd3aa6a5b1253a45653a679b659b24ec67578875ffda2fd153efa4bfd6b3127",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/t4.txt",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/t4.txt",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "reader-and-lens stage LENS (F-28): landing rounds",
+   "commits": "9bbe905",
+   "mtime": "2026-10-05T11:13:44.600002+00:00",
+   "bytes_source": 139,
+   "sha256_source": "966217cd154b72b7167d248e4b61a8a9d65ef5bd6cba1bf6d16617bbd0dccd1e",
+   "bytes": 139,
+   "sha256": "966217cd154b72b7167d248e4b61a8a9d65ef5bd6cba1bf6d16617bbd0dccd1e",
+   "substitutions": 0,
+   "eol": "lf",
+   "export": "exported"
+  },
+  {
+   "path": "2026-10-05-fdeffb05/critic/textround_long_integrity.py",
+   "source_path": "fdeffb05-309a-409b-9a03-d56ff41b9815/scratchpad/critic/textround_long_integrity.py",
+   "session": "fdeffb05-309a-409b-9a03-d56ff41b9815",
+   "lane": "reader-and-lens stage READERS-LONG: landing rounds",
+   "commits": "7f0af3e",
+   "mtime": "2026-10-09T20:19:29.951015+00:00",
+   "bytes_source": 3115,
+   "sha256_source": "067cab1dbcff9917de80c9eaf425a134474c9bc7b5f80c67de544f84891af58d",
+   "bytes": 3114,
+   "sha256": "dde0ce6ff0d8e972b33274ad546684f845ef9024ff43a332e249c07449ab98f9",
+   "substitutions": 1,
+   "eol": "lf",
+   "export": "exported"
+  }
+ ]
+}

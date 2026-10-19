@@ -1,0 +1,84 @@
+{
+ "manifest": {
+  "checked": 86,
+  "bad": []
+ },
+ "compare_value": {
+  "n_compared": 376,
+  "only_in_payload": [],
+  "only_in_mine": [],
+  "max_abs_diff": 0.0,
+  "worst_key": null,
+  "nonnumeric_unequal": []
+ },
+ "compare_status": {
+  "n_compared": 9,
+  "only_in_payload": [],
+  "only_in_mine": [],
+  "max_abs_diff": 0.0,
+  "worst_key": null,
+  "nonnumeric_unequal": []
+ },
+ "status_mine": {
+  "status": "CORRECTED",
+  "status_by_arm": {
+   "cuda_fp32_b1": "CORRECTED",
+   "cuda_fp32_b8": "CONFIRMED"
+  },
+  "status_at_claim_scope": {
+   "cuda_fp32_b1": "CONFIRMED",
+   "cuda_fp32_b8": "CONFIRMED"
+  },
+  "status_by_claim_site": {
+   "FINDINGS.md:76 (F-10 item (1), A desyncs at theta 0: slot 0)": "CONFIRMED",
+   "FINDINGS.md:55 (F-7 caveats, top-1 flips: slot 0)": "CONFIRMED",
+   "OPEN_QUESTIONS.md:16 (top-1 flips: slot 0)": "CONFIRMED",
+   "FINDINGS.md:114, OPEN_QUESTIONS.md:15, README.md:50 (F-14's E8a sentence, every order difference a near-tie: all depths)": "CORRECTED"
+  }
+ },
+ "slot0_all_arms": {
+  "cuda_fp32_b1": {
+   "n": 1,
+   "max_g": 1.33514404296875e-05,
+   "above_budget": 0
+  },
+  "cuda_fp32_b8": {
+   "n": 0,
+   "max_g": null,
+   "above_budget": 0
+  },
+  "cuda_fp16_b1": {
+   "n": 208,
+   "max_g": 0.02392578125,
+   "above_budget": 0
+  },
+  "cuda_bf16_b1": {
+   "n": 983,
+   "max_g": 0.2630271911621094,
+   "above_budget": 0
+  },
+  "cuda_bf16_b8": {
+   "n": 834,
+   "max_g": 0.2708148956298828,
+   "above_budget": 0
+  }
+ },
+ "slot0_all_arms_status": "CONFIRMED",
+ "where": [
+  "FINDINGS.md:76",
+  "FINDINGS.md:55",
+  "OPEN_QUESTIONS.md:16",
+  "FINDINGS.md:114",
+  "OPEN_QUESTIONS.md:15",
+  "README.md:50"
+ ],
+ "prediction": {
+  "b1_count_above_budget": 2,
+  "b1_max_g": 0.0001478195,
+  "b1_n_diff": 379,
+  "b1_n_nonadjacent": 0,
+  "b8_count_above_budget": 0,
+  "b8_max_g": 5.722046e-05,
+  "b8_n_diff": 411
+ }
+}

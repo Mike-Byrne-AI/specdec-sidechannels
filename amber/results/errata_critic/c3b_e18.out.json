@@ -1,0 +1,81 @@
+{
+ "text_matches_p5": {
+  "all_rows_per_archive": 7.280526165284529,
+  "p5_json_per_archive": 7.280526165284529,
+  "all_rows_concat": 3.9372523387393277,
+  "p5_json_concat": 3.9372523387393277,
+  "exact": true
+ },
+ "dict_training_deterministic": {
+  "4096": true,
+  "16384": true,
+  "65536": true,
+  "262144": true,
+  "gen_16384": true
+ },
+ "harvest_dict_training_deterministic": {
+  "4096": true,
+  "16384": true,
+  "65536": true
+ },
+ "compare_value": {
+  "n": 165,
+  "max_abs_diff": 6.245004513516506e-17,
+  "worst": "/effects_without_literals/concat",
+  "nonnumeric_unequal": [],
+  "only_in_payload": [],
+  "only_in_mine": []
+ },
+ "status_mine": {
+  "status": "CORRECTED",
+  "status_by_claim_site": {
+   "DECISIONS.md:39-44 (D-6, per archive)": "CORRECTED",
+   "FINDINGS.md:95 (F-12, zstd per archive)": "CORRECTED",
+   "FINDINGS.md:86 (F-11, 7.28 per archive)": "CORRECTED",
+   "DECISIONS.md:105 (comparable to zstd, per archive)": "CORRECTED",
+   "FINDINGS.md:102, README.md:46, OPEN_QUESTIONS.md:31, DECISIONS.md:132 (3.4x per session, k=16)": "CORRECTED",
+   "FINDINGS.md:91, README.md:45, docs/BLUEPRINT.md:81, OPEN_QUESTIONS.md:32 (crossover vs zstd concatenated)": "CONFIRMED",
+   "FINDINGS.md:58, FINDINGS.md:62, README.md:31, docs/BLUEPRINT.md:50 (7.6x, concatenated generated text)": "CONFIRMED"
+  }
+ },
+ "status_payload": {
+  "status": "CORRECTED",
+  "status_by_claim_site": {
+   "DECISIONS.md:105 (comparable to zstd, per archive)": "CORRECTED",
+   "DECISIONS.md:39-44 (D-6, per archive)": "CORRECTED",
+   "FINDINGS.md:102, README.md:46, OPEN_QUESTIONS.md:31, DECISIONS.md:132 (3.4x per session, k=16)": "CORRECTED",
+   "FINDINGS.md:58, FINDINGS.md:62, README.md:31, docs/BLUEPRINT.md:50 (7.6x, concatenated generated text)": "CONFIRMED",
+   "FINDINGS.md:86 (F-11, 7.28 per archive)": "CORRECTED",
+   "FINDINGS.md:91, README.md:45, docs/BLUEPRINT.md:81, OPEN_QUESTIONS.md:32 (crossover vs zstd concatenated)": "CONFIRMED",
+   "FINDINGS.md:95 (F-12, zstd per archive)": "CORRECTED"
+  }
+ },
+ "status_equal": true,
+ "cross_all_rows_printed_formula": 263.2249495885558,
+ "prediction": {
+  "amber_v3_arch": 4.181,
+  "harvest_def_rep_amber_v3_arch": 5.253,
+  "harvest_def_rep_zstd_arch_16384": 10.33,
+  "harvest_def_zstd_arch_16384": 4.446,
+  "harvest_def_zstd_arch_4096": 4.737,
+  "harvest_def_zstd_arch_65536": 4.408,
+  "harvest_def_zstd_arch_none": 6.251
+ },
+ "where": [
+  "DECISIONS.md:39-44",
+  "FINDINGS.md:58",
+  "FINDINGS.md:62",
+  "FINDINGS.md:91",
+  "FINDINGS.md:95",
+  "FINDINGS.md:102",
+  "FINDINGS.md:86",
+  "README.md:31",
+  "README.md:45-46",
+  "docs/BLUEPRINT.md:50",
+  "docs/BLUEPRINT.md:81",
+  "OPEN_QUESTIONS.md:31",
+  "OPEN_QUESTIONS.md:32",
+  "DECISIONS.md:132",
+  "DECISIONS.md:105"
+ ]
+}

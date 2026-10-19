@@ -1,0 +1,28 @@
+{
+ "payload_head": "b35e126baf536fd0f4581f001a1334b1a3bd9d15",
+ "payload_cr_bytes": 0,
+ "payload_equals_HEAD_blob": true,
+ "payload_HEAD_blob_id": "1551084f34ab1d8e28567e42df8ed350d472f364",
+ "payload_in_head_commit": null,
+ "tree_matches": true,
+ "inputs_n": 38,
+ "inputs_mismatch": {},
+ "script_blob_matches": true,
+ "script_sha256_lf_matches_committed_at_head": true,
+ "script_sha256_lf_matches_committed_at_HEAD": true,
+ "lib_sha256_lf_matches_committed_at_head": true,
+ "lib_sha256_lf_matches_committed_at_HEAD": true,
+ "protocol_table_n": 20,
+ "protocol_table_mismatch_at_509ad90": {},
+ "protocol_sources_moved_509ad90_to_head": {},
+ "protocol_table_paths_missing_from_payload_inputs": [],
+ "protocol_vs_payload_inputs_differ": {},
+ "protocol_pinned_tree": "ee34f6fa3a04c84d151da0b840e1ee5439f3fa65",
+ "log": [
+  "a00c50c 2026-10-10 22:13:13 -0400 Errata text generator: per-row text functions, --payload/--finding, F-15 block",
+  "861c553 2026-10-10 22:04:23 -0400 Errata recompute payload, second batch: results/errata_recompute_2.json (E15, E16)",
+  "b35e126 2026-10-10 22:03:47 -0400 Errata recompute, second batch: rows E15 and E16, helpers, tests, dry-run evidence",
+  "cfb9595 2026-10-10 21:57:01 -0400 Errata protocol: second-batch amendment pinning E15 and E16 before any code",
+  "509ad90 2026-10-10 20:35:44 -0400 ERRATA_PLAN marked done; CLAUDE.md names the sibling path as laid out on this box"
+ ]
+}

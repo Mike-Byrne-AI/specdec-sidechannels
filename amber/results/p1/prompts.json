@@ -1,0 +1,1007 @@
+{
+  "n": 200,
+  "prompts": [
+    {
+      "family": "instruct",
+      "prompt": "Explain how a refrigerator keeps food cold.",
+      "topic": "a refrigerator keeps food cold"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a lighthouse keeper who hears a knock at midnight.",
+      "topic": "a lighthouse keeper who hears a knock at midnight"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize the causes of the French Revolution.",
+      "topic": "the causes of the French Revolution"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how airplanes stay in the air.",
+      "topic": "airplanes stay in the air"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about a gardener who finds a seed that grows overnight.",
+      "topic": "a gardener who finds a seed that grows overnight"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the plot of a classic heist story.",
+      "topic": "the plot of a classic heist story"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how vaccines train the immune system.",
+      "topic": "vaccines train the immune system"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about two rival street musicians forced to share a corner.",
+      "topic": "two rival street musicians forced to share a corner"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize how the printing press changed Europe.",
+      "topic": "how the printing press changed Europe"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how the tides follow the moon.",
+      "topic": "the tides follow the moon"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about a cartographer mapping a city that keeps changing.",
+      "topic": "a cartographer mapping a city that keeps changing"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the water cycle.",
+      "topic": "the water cycle"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how compilers turn code into programs.",
+      "topic": "compilers turn code into programs"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a retired detective's last unsolved case.",
+      "topic": "a retired detective's last unsolved case"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize the history of the Silk Road.",
+      "topic": "the history of the Silk Road"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how yeast makes bread rise.",
+      "topic": "yeast makes bread rise"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about a baker whose bread makes people remember lost things.",
+      "topic": "a baker whose bread makes people remember lost things"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the rules of chess.",
+      "topic": "the rules of chess"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how GPS receivers find their position.",
+      "topic": "GPS receivers find their position"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a night-shift radio host and a mysterious caller.",
+      "topic": "a night-shift radio host and a mysterious caller"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize the fall of the Roman Empire.",
+      "topic": "the fall of the Roman Empire"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how earthquakes happen.",
+      "topic": "earthquakes happen"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about an apprentice clockmaker who breaks time.",
+      "topic": "an apprentice clockmaker who breaks time"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the theory of plate tectonics.",
+      "topic": "the theory of plate tectonics"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how solar panels make electricity.",
+      "topic": "solar panels make electricity"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a ferry captain on the river between two feuding towns.",
+      "topic": "a ferry captain on the river between two feuding towns"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize the space race of the 1960s.",
+      "topic": "the space race of the 1960s"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how the internet routes a message.",
+      "topic": "the internet routes a message"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about a librarian who discovers an unreturned book from 1911.",
+      "topic": "a librarian who discovers an unreturned book from 1911"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the industrial revolution's effects on cities.",
+      "topic": "the industrial revolution's effects on cities"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how antibiotic resistance evolves.",
+      "topic": "antibiotic resistance evolves"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a child who trades secrets with the neighborhood crows.",
+      "topic": "a child who trades secrets with the neighborhood crows"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize the life cycle of a butterfly.",
+      "topic": "the life cycle of a butterfly"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how noise-cancelling headphones work.",
+      "topic": "noise-cancelling headphones work"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about an astronaut tending a greenhouse alone.",
+      "topic": "an astronaut tending a greenhouse alone"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the history of vaccines.",
+      "topic": "the history of vaccines"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how a bicycle stays upright.",
+      "topic": "a bicycle stays upright"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a translator who finds a word with no equivalent.",
+      "topic": "a translator who finds a word with no equivalent"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize the gold rush era in California.",
+      "topic": "the gold rush era in California"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how inflation changes prices.",
+      "topic": "inflation changes prices"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about an innkeeper snowed in with seven strangers.",
+      "topic": "an innkeeper snowed in with seven strangers"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the workings of a democracy.",
+      "topic": "the workings of a democracy"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how coral reefs form.",
+      "topic": "coral reefs form"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a painter who can only paint places that no longer exist.",
+      "topic": "a painter who can only paint places that no longer exist"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize the discovery of penicillin.",
+      "topic": "the discovery of penicillin"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how batteries store energy.",
+      "topic": "batteries store energy"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about a fisherman who catches a message in a bottle.",
+      "topic": "a fisherman who catches a message in a bottle"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the age of sail and naval exploration.",
+      "topic": "the age of sail and naval exploration"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how the seasons change.",
+      "topic": "the seasons change"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a courier crossing a desert with a fragile package.",
+      "topic": "a courier crossing a desert with a fragile package"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize the basics of photosynthesis.",
+      "topic": "the basics of photosynthesis"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how search engines rank pages.",
+      "topic": "search engines rank pages"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about a violin that refuses to play sad songs.",
+      "topic": "a violin that refuses to play sad songs"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the construction of the Panama Canal.",
+      "topic": "the construction of the Panama Canal"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how glaciers carve valleys.",
+      "topic": "glaciers carve valleys"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a museum guard who notices a statue has moved.",
+      "topic": "a museum guard who notices a statue has moved"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize the history of the Olympic Games.",
+      "topic": "the history of the Olympic Games"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how the human eye focuses.",
+      "topic": "the human eye focuses"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about a shepherd counting one sheep too many.",
+      "topic": "a shepherd counting one sheep too many"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the causes of the First World War.",
+      "topic": "the causes of the First World War"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how encryption protects a message.",
+      "topic": "encryption protects a message"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a tailor sewing a coat for someone they've never met.",
+      "topic": "a tailor sewing a coat for someone they've never met"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize the invention of the telephone.",
+      "topic": "the invention of the telephone"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how volcanoes erupt.",
+      "topic": "volcanoes erupt"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about a chess hustler who meets an unbeatable child.",
+      "topic": "a chess hustler who meets an unbeatable child"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the settlement of the American West.",
+      "topic": "the settlement of the American West"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how supply and demand set prices.",
+      "topic": "supply and demand set prices"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a beekeeper whose bees start spelling words.",
+      "topic": "a beekeeper whose bees start spelling words"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize the principles of natural selection.",
+      "topic": "the principles of natural selection"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how birds navigate during migration.",
+      "topic": "birds navigate during migration"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about a subway conductor on the train's final run.",
+      "topic": "a subway conductor on the train's final run"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the building of the transcontinental railroad.",
+      "topic": "the building of the transcontinental railroad"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how a camera captures an image.",
+      "topic": "a camera captures an image"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a botanist cataloguing a plant that blooms once a century.",
+      "topic": "a botanist cataloguing a plant that blooms once a century"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize the history of jazz music.",
+      "topic": "the history of jazz music"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how lightning forms in storms.",
+      "topic": "lightning forms in storms"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about a blacksmith forging a key without a lock.",
+      "topic": "a blacksmith forging a key without a lock"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the eruption of Mount Vesuvius in 79 AD.",
+      "topic": "the eruption of Mount Vesuvius in 79 AD"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how kidneys filter blood.",
+      "topic": "kidneys filter blood"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a diver exploring a sunken village.",
+      "topic": "a diver exploring a sunken village"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize the development of writing systems.",
+      "topic": "the development of writing systems"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how wind turbines generate power.",
+      "topic": "wind turbines generate power"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about a postman delivering to a house that isn't on any map.",
+      "topic": "a postman delivering to a house that isn't on any map"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the voyages of Polynesian navigators.",
+      "topic": "the voyages of Polynesian navigators"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how memory works in the brain.",
+      "topic": "memory works in the brain"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a weather forecaster who is suddenly always right.",
+      "topic": "a weather forecaster who is suddenly always right"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize the medieval guild system.",
+      "topic": "the medieval guild system"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how ships float despite their weight.",
+      "topic": "ships float despite their weight"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about an archivist who finds their own photograph in a 1920s file.",
+      "topic": "an archivist who finds their own photograph in a 1920s file"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the history of timekeeping.",
+      "topic": "the history of timekeeping"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how credit scores are calculated.",
+      "topic": "credit scores are calculated"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a tour guide inventing history that starts coming true.",
+      "topic": "a tour guide inventing history that starts coming true"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize the Apollo 11 mission.",
+      "topic": "the Apollo 11 mission"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how rainbows appear after rain.",
+      "topic": "rainbows appear after rain"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about a carpenter building a staircase to nowhere.",
+      "topic": "a carpenter building a staircase to nowhere"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the domestication of the horse.",
+      "topic": "the domestication of the horse"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how espresso differs from drip coffee.",
+      "topic": "espresso differs from drip coffee"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a doctor on a houseboat clinic during the floods.",
+      "topic": "a doctor on a houseboat clinic during the floods"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize the history of tea trade.",
+      "topic": "the history of tea trade"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how submarines control their depth.",
+      "topic": "submarines control their depth"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about a stargazer who names a star after a stranger.",
+      "topic": "a stargazer who names a star after a stranger"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the invention of photography.",
+      "topic": "the invention of photography"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how honeybees communicate food locations.",
+      "topic": "honeybees communicate food locations"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a printer whose misprints predict tomorrow.",
+      "topic": "a printer whose misprints predict tomorrow"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize the rise of ancient Athens.",
+      "topic": "the rise of ancient Athens"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how soap removes grease.",
+      "topic": "soap removes grease"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about a lamplighter on the last night before electric lights.",
+      "topic": "a lamplighter on the last night before electric lights"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the spread of the Black Death.",
+      "topic": "the spread of the Black Death"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how muscles grow stronger with exercise.",
+      "topic": "muscles grow stronger with exercise"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a ropemaker asked to braid a rope that cannot break.",
+      "topic": "a ropemaker asked to braid a rope that cannot break"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize the origins of the Olympic marathon.",
+      "topic": "the origins of the Olympic marathon"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how radios tune to one station.",
+      "topic": "radios tune to one station"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about a customs officer who can smell lies.",
+      "topic": "a customs officer who can smell lies"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the history of the compass.",
+      "topic": "the history of the compass"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how bridges carry heavy loads.",
+      "topic": "bridges carry heavy loads"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a piano tuner summoned to a house with no piano.",
+      "topic": "a piano tuner summoned to a house with no piano"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize the Dutch tulip mania.",
+      "topic": "the Dutch tulip mania"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how clouds hold their water.",
+      "topic": "clouds hold their water"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about a girl who inherits her grandmother's unfinished chess game.",
+      "topic": "a girl who inherits her grandmother's unfinished chess game"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the story of the Rosetta Stone.",
+      "topic": "the story of the Rosetta Stone"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how microwave ovens heat food.",
+      "topic": "microwave ovens heat food"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a locksmith locked out of their own shop.",
+      "topic": "a locksmith locked out of their own shop"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize the age of the great cathedrals.",
+      "topic": "the age of the great cathedrals"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how rivers meander over time.",
+      "topic": "rivers meander over time"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about a train that stops at a station not on the timetable.",
+      "topic": "a train that stops at a station not on the timetable"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the whaling era of the 1800s.",
+      "topic": "the whaling era of the 1800s"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how elevators know where to stop.",
+      "topic": "elevators know where to stop"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a market vendor who sells memories by the ounce.",
+      "topic": "a market vendor who sells memories by the ounce"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize the invention of the steam engine.",
+      "topic": "the invention of the steam engine"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how plants sense the direction of light.",
+      "topic": "plants sense the direction of light"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about an old sailor teaching knots to a knotless age.",
+      "topic": "an old sailor teaching knots to a knotless age"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the history of paper money.",
+      "topic": "the history of paper money"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how interest compounds over years.",
+      "topic": "interest compounds over years"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a scarecrow promoted to night watchman.",
+      "topic": "a scarecrow promoted to night watchman"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize the exploration of the deep ocean.",
+      "topic": "the exploration of the deep ocean"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how touchscreens sense a finger.",
+      "topic": "touchscreens sense a finger"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about a well that echoes back different words.",
+      "topic": "a well that echoes back different words"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the founding of the first universities.",
+      "topic": "the founding of the first universities"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how caves form in limestone.",
+      "topic": "caves form in limestone"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a seamstress who stitches storms into quilts.",
+      "topic": "a seamstress who stitches storms into quilts"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize the history of the bicycle.",
+      "topic": "the history of the bicycle"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how sourdough starters stay alive.",
+      "topic": "sourdough starters stay alive"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about a boy who befriends the fog.",
+      "topic": "a boy who befriends the fog"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the California aqueduct system.",
+      "topic": "the California aqueduct system"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how traffic jams form without accidents.",
+      "topic": "traffic jams form without accidents"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a watchmaker's apprentice who hears seconds arguing.",
+      "topic": "a watchmaker's apprentice who hears seconds arguing"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize the race to the South Pole.",
+      "topic": "the race to the South Pole"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how telescopes gather faint light.",
+      "topic": "telescopes gather faint light"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about a mailboat pilot delivering to islands that drift.",
+      "topic": "a mailboat pilot delivering to islands that drift"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the history of chocolate.",
+      "topic": "the history of chocolate"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how sleep consolidates memories.",
+      "topic": "sleep consolidates memories"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a bell ringer whose bell rings one minute early.",
+      "topic": "a bell ringer whose bell rings one minute early"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize the transatlantic telegraph cable.",
+      "topic": "the transatlantic telegraph cable"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how salmon return to their birth river.",
+      "topic": "salmon return to their birth river"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about a cook on a research station at the end of winter.",
+      "topic": "a cook on a research station at the end of winter"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the rise and fall of the Hanseatic League.",
+      "topic": "the rise and fall of the Hanseatic League"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how concrete cures rather than dries.",
+      "topic": "concrete cures rather than dries"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a bridge troll filing for retirement.",
+      "topic": "a bridge troll filing for retirement"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize the invention of the elevator.",
+      "topic": "the invention of the elevator"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how juries reach a verdict.",
+      "topic": "juries reach a verdict"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about a calligrapher hired to write a letter no one can read.",
+      "topic": "a calligrapher hired to write a letter no one can read"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the history of firefighting.",
+      "topic": "the history of firefighting"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how smoke detectors sense a fire.",
+      "topic": "smoke detectors sense a fire"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a park ranger who finds footprints leading up a cliff.",
+      "topic": "a park ranger who finds footprints leading up a cliff"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize the Bronze Age collapse.",
+      "topic": "the Bronze Age collapse"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how languages borrow words from each other.",
+      "topic": "languages borrow words from each other"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about a puppeteer whose puppet starts improvising.",
+      "topic": "a puppeteer whose puppet starts improvising"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the history of the circus.",
+      "topic": "the history of the circus"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how maps flatten a round planet.",
+      "topic": "maps flatten a round planet"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a glassblower shaping a window to another season.",
+      "topic": "a glassblower shaping a window to another season"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize the origins of the weekend.",
+      "topic": "the origins of the weekend"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how insulin regulates blood sugar.",
+      "topic": "insulin regulates blood sugar"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about a night nurse who hums to the hospital generators.",
+      "topic": "a night nurse who hums to the hospital generators"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the Suez Canal's construction.",
+      "topic": "the Suez Canal's construction"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how sailboats sail against the wind.",
+      "topic": "sailboats sail against the wind"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a stonemason repairing a wall that repairs itself.",
+      "topic": "a stonemason repairing a wall that repairs itself"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize the history of glassmaking.",
+      "topic": "the history of glassmaking"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how auctions discover prices.",
+      "topic": "auctions discover prices"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about a ticket taker at a cinema showing tomorrow's films.",
+      "topic": "a ticket taker at a cinema showing tomorrow's films"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the great library of Alexandria.",
+      "topic": "the great library of Alexandria"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how spiders build webs at night.",
+      "topic": "spiders build webs at night"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a herbalist trading remedies for riddles.",
+      "topic": "a herbalist trading remedies for riddles"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize the history of the sandwich.",
+      "topic": "the history of the sandwich"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how libraries organize their shelves.",
+      "topic": "libraries organize their shelves"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about a ferrywoman who accepts only stories as fare.",
+      "topic": "a ferrywoman who accepts only stories as fare"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the development of weather forecasting.",
+      "topic": "the development of weather forecasting"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how thermostats hold a temperature.",
+      "topic": "thermostats hold a temperature"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a kite maker grounded by a windless summer.",
+      "topic": "a kite maker grounded by a windless summer"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize the Viking trade routes.",
+      "topic": "the Viking trade routes"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how deserts get cold at night.",
+      "topic": "deserts get cold at night"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about a census taker in a town of one.",
+      "topic": "a census taker in a town of one"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the invention of canning.",
+      "topic": "the invention of canning"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how passwords get cracked.",
+      "topic": "passwords get cracked"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a saltminer who finds a frozen bell.",
+      "topic": "a saltminer who finds a frozen bell"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Summarize the history of the skyscraper.",
+      "topic": "the history of the skyscraper"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Describe to a curious teenager how orchestras stay in tune.",
+      "topic": "orchestras stay in tune"
+    },
+    {
+      "family": "story",
+      "prompt": "Tell a brief folktale about an organist in a church with no congregation.",
+      "topic": "an organist in a church with no congregation"
+    },
+    {
+      "family": "summarize",
+      "prompt": "Give a concise overview of the origins of paper folding.",
+      "topic": "the origins of paper folding"
+    },
+    {
+      "family": "instruct",
+      "prompt": "Explain how potholes form in winter.",
+      "topic": "potholes form in winter"
+    },
+    {
+      "family": "story",
+      "prompt": "Write a short story about a chimney sweep who maps the city by its rooftops.",
+      "topic": "a chimney sweep who maps the city by its rooftops"
+    }
+  ],
+  "sha256": "d8a4e9e141ce459fe67b65aff923b9fb9a0daf16605055b5c726a422e29ae8ec",
+  "source": "..\\sideband\\data\\prompts.jsonl"
+}

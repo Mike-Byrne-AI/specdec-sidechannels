@@ -1,0 +1,166 @@
+**Verdict: NO-GO for the freeze.** There are 3 BLOCKING objections and 9 ADVISORY. All three blockers can be fixed by editing `docs/BLUEPRINT.md` alone; the tool doesn't need to change for any of them. A text-only fix also keeps the second smoke's attestation (tool sha 7efc250d0ffa) valid. The recompute is exact and I found no leakage path.
+
+Checked directly this round:
+- **Frozen files:** `git diff` against HEAD is empty for both. LF shas are 10599fa98c27 (twin) and 8529532d4d78 (parent).
+- **State files:** `git check-ignore -q` exits 1 on all four cited `.state.jsonl` paths (`prefetch_strat_s3`, `_s3_r`, `prefetch_bigram_s3`, `_s3_r`).
+- **Tests:** 16 passed in 267.92 s (`critic2/pytest.log`).
+- **Tool on disk:** sha 7efc250d0ffa, LF only. This equals the second smoke's attested sha, so the tool hasn't changed since that smoke.
+
+## A. Blocker closure
+| Blocker | Status | Where |
+|---|---|---|
+| **B1** structure | **CLOSED** | Q2 GATE / BRANCH (BLUEPRINT 7003-7012), four labels (7054-7061; tool 544-545, 660-664), D_pt reported (7013-7031), "accounted for" left only as a prohibition (7065) and history (7390), stage-2 strike confined to PT-ABSORBS (7144-7146), K-2 marked NON-CRITERION (7142), multiplicity four (7241-7243) |
+| **B1** F-24 citation | **NOT CLOSED** | Objection 1 |
+| **B2** | **CLOSED** | The three blind configurations are named (7100-7102; tool 483-484) and "any informative block" is gone. The slot the (c) note promises is missing (objection 6). |
+| **B3** | **CLOSED** | 7122-7128 |
+| **B4** | **CLOSED at the two gates** | Tool 486-527 and 676-679; text 7032-7037 and 7077-7083. Not extended to the branch deltas (objections 3 and 4). |
+
+On B3, two checks: `fullfree_s3.json` carries all 8 of the twin's shard shas, so "this very harvest" holds. The harvest npz does contain `hidden.npy`.
+
+## B. Advisory closure (round-1 items 5-19)
+| Item | Status | Where / note |
+|---|---|---|
+| 5 occurrence split | **Partially** | Tool 258-269, text 6908-6921; the boundaries are untested (objection 8) |
+| 6 F-24 arm now | **Declined, reason recorded** | DISCLOSURES (9), 7245-7250 |
+| 7 NEGATIVE covered in words | **Applied** | Tool 677-678, text 7050-7053; see objection 12 |
+| 8 "SURVIVES on covered" | **Applied** | 7088-7090 |
+| 9 share attribution | **Applied** | 6921-6926; 0.0549 / 0.0777 and 0.0551 / 0.0782 equal the twin payloads' `table_coverage` test fields |
+| 10 predictions | **Partially** | 7186-7190 and 7218-7219 applied; unmarked edits elsewhere (objection 2) |
+| 11 ratio | **Applied** | 7357-7359: 0.7921 / 0.0987 = 8.0; 0.7921 / 0.1418 = 5.6 |
+| 12 ORDERING | **Partially** | Re-based (7347-7353) but now stale (objection 2) |
+| 13 REPRODUCE hardening | **Applied** | Tool 634-636, BLAS in the meta, (b) 7337-7339, NEAR priced 6998-6999. 7,588,480 = 59,285 x 128 from the twin's `n_positions`. See objection 9. |
+| 14 conclude-from / `read_twin` | **Applied** | Tool 719-720 and 899-906; 904-905 untested (objection 8) |
+| 15 void payloads | **Partially** | Objection 7 |
+| 16 dilution anchor | **Applied** | |
+| 17 timing clause | **Applied** | |
+| 18 OPEN_QUESTIONS wording | **Applied** | |
+| 19 rename | **Applied** | The remaining COVERAGE-EFFECT mentions (7047, 7178, 7203, 7309, 7408, 7443) are all historical |
+
+## C. Recompute of the second smoke
+I used my own parser and bootstrap: `default_rng(0)`, 2000 resamples, numpy 2.3.5.
+
+- **Discrepancy:** the max abs discrepancy is **0.0 over 26,566 compared values**, with 0 non-numeric mismatches.
+  - Tables: 351 (13 arms x 3 budgets x 9 scopes), pooled and per gate.
+  - Deltas: 297 (11 `DELTA_PAIRS` x 3 x 9).
+  - Labels: every label key, with no key left unchecked. The sentence is reproduced from my labels and flags through the tool's tables.
+  - My bootstrap and `sideband.stats` differ by 0.0.
+- **Rows:** 37,440 = 13 x 3 x 16 x 10 x 6. Pairing holds in all 234 (budget, stratum, arm) cells and is identical across budgets.
+- **Strata:** 179 / 121 / 228 / 694 / 695 / 623 = 2540, which equals the meta's `bigram/test`.
+  - Shares: 0.0705 / 0.0476 / 0.0898 / 0.2732 / 0.2736 / 0.2453.
+  - Unions: covered 0.2079 (528), fallback 0.7921 (2012).
+  - Every scope has positions on all 10 prompts.
+- **Readings at B = 16:**
+
+  | Reading | Value | Result |
+  |---|---|---|
+  | D_eq^COV | +0.0338 [+0.0270, +0.0401] | NOT-SHOWN |
+  | D_eq^FB | +0.1494 [+0.1326, +0.1635] | SIGNAL |
+  | D_eq^PT | +0.0893 [+0.0795, +0.0985] | SIGNAL |
+  | D_add^PT | +0.0896 [+0.0798, +0.0986] | SIGNAL |
+  | anchor | +0.0002 [+0.0001, +0.0004] | |
+
+- **Labels:** **FALLBACK-LOCATED / PT-SURVIVES**. All four straddle flags are False, `covered_negative` is False, the inconsistent-cause field is None, and void is False.
+- **Collapse check:** the second smoke's rows, summed over the three covered strata, equal the first smoke's 24,960 rows exactly: 0 missing, 0 extra, 0 hits and 0 needed mismatches. Encoding, lambdas and harvest shas are equal too.
+- **`--conclude-from`:** exits 0 on the second smoke. The rebuilt tool refuses the first smoke ("unknown stratum 'covered'"), which is correct; the sentence in (b) describes the first build.
+- **(b) and (d) numbers:** every one matches my recompute or the two metas. That includes every delta, all 13 arm rates and the B = 8 / 32 cells; 2282 / 2400 / 2540 positions; 0.5185 / 0.5189 coverage; val-best 0.6308 vs 0.6250; the PT lambdas; 294.3 s and 175.2 s; and scipy-openblas 0.3.30, 24 CPUs, no caps.
+- **(c) numbers:** 13,177 / 234 / 180 / 156 / 2540 / 4,320 / 255 s all match my round-1 report (255.31 s). The anchor +0.0052 [+0.0049, +0.0054] is recomputed from the committed twin state (HISTORY_BIGRAM − history_tok, B = 16).
+- **Critic's prediction:** the quoted body is verbatim against my round-1 report (whitespace-normalised). The preamble changes only "·" to "x" and adds "recorded verbatim".
+
+## Objections
+
+1. **BLOCKING — the B1 citation fix mis-cites F-24 in the other direction (BLUEPRINT 7019-7021).**
+   - The text says "F-24's gate had the full free block on both sides, which is D_eq^PT's shape." That is wrong.
+   - D_eq^PT = history_tok_pt − free_bigram_pt. Its address side has no previous-token table, so the full free block sits on one side only.
+   - F-24's gate (FINDINGS 266) is acc(fplus ++ telemetry) − acc(fplus ++ twin): the full free block on both sides **and** an equal-dims partner.
+   - Here, D_add^PT has the full free block on both sides (F-24's Mt shape), and D_eq^PT is the equal-dims comparison. Neither alone is F-24's gate. Lines 7003-7007 and 7380-7383 are accurate.
+   - **Fix:** replace "which is D_eq^PT's shape" with "and an equal-dims partner; here D_add^PT carries the full free block on both sides (F-24's Mt shape) and D_eq^PT the equal-dims comparison with the summaries on both sides; Q2 reads both and neither alone is F-24's gate."
+
+2. **BLOCKING — the "AS FIRST WRITTEN" predictions were edited without (c) marks (7170-7222, 7347-7353).**
+   - I word-diffed them against the 19:47 draft (`block.md`).
+   - (8), at 7182-7183, lost ", so Q2 modal PT-SURVIVES, PT-ABSORBS the alternative".
+   - (5), at 7178, gained "(now FALLBACK-LOCATED)" with no (c).
+   - In WHAT WOULD SURPRISE THE ASSISTANT:
+     - "D_pt NEGATIVE" became "D_eq^PT or D_add^PT NEGATIVE".
+     - "a label disagreement between the harvests" became "… on Q2", which removes a Q1 disagreement from the surprises.
+     - Only the +0.08 to +0.06 change carries a (c).
+   - The header (6848-6849) says every amendment is marked (c). The ORDERING attestation (7350-7352) was true when I checked in the design round and is false now.
+   - There is no contamination: `block_v2.md` (21:05:52) equals the worktree, and no registered run has happened. The defect is the attestation, and after the freeze it can only be fixed by an erratum.
+   - **Fix:**
+     - Restore the (8) clause verbatim.
+     - Mark the (5) annotation and both surprise edits (c), quoting the original wording.
+     - Date the ORDERING check "(design round, before the (c) amendments)".
+
+3. **BLOCKING — PT-ABSORBS can strike stage 2 while D_add^PT's CI still contains the floor (7077-7083, 7137-7146; tool 655 and 679).**
+   - The straddle variant is chosen on D_eq^PT alone. `d_add_pt_floor_straddle` is computed and never used.
+   - Demonstrated through `conclude()`:
+     - D_eq^PT +0.0400 [+0.0400, +0.0400], with no straddle.
+     - D_add^PT +0.0480 [+0.0430, +0.0530], with straddle True.
+     - Result: PT-ABSORBS, no-straddle variant.
+   - In that case the pinned text says "leave no material address margin", which is not the frozen NOT-SHOWN wording the block requires (7063-7065), and it strikes stage 2. That is B1's failure mode in a narrower window.
+   - Given the primary's previous-table increment of +0.0052, a D_add^PT straddle is likely once PT-ABSORBS is reached. My unconditional estimate for this branch is under 5%; that is a guess, not a measurement.
+   - **Fix (text only):**
+     - PT-ABSORBS strikes stage 2 only if neither D_eq^PT nor D_add^PT straddles the floor; otherwise the text says "not settled at this power".
+     - Apply the same rule to D_add^PT under PT-SURVIVES and PT-COMPLEMENTARY.
+     - Change "leave" to "show no material address margin".
+
+4. **ADVISORY — a straddling D_eq^FB is never flagged (7032-7037 vs tool 653-656).**
+   - The block promises a flag for "a label-bearing delta", and D_eq^FB is one of the four (7241-7243). The tool sets no fallback flag.
+   - Demonstrated: D_eq^FB +0.0600 [+0.0400, +0.0800] gave SIGNAL, no flag, and the sentence "a material margin is shown". This is unlikely on the primary.
+   - **Fix:** narrow 7032 to "gate", and say in words when a branch delta straddles.
+
+5. **ADVISORY — the disagreement rule (7077-7083) can produce a false clause.**
+   - When the replication disagrees, the rule uses the True variants, and those assert "a CI95 that straddles the +0.05 floor" (tool 491-498, 509-526).
+   - That clause is false whenever the primary did not straddle.
+   - **Fix:** pin a separate disagreement sentence.
+
+6. **ADVISORY — the slot B2's (c) note promises is missing.** The note at 7106-7109 says PT GAIN on FALLBACK is "quoted in its place", but the pinned sentence (7096-7105) has no such slot. Add "[PT GAIN on FALLBACK with CI]" or strike the claim.
+
+7. **ADVISORY — void payloads still carry reading-derived fields (tool 657, 663-664; text 7041-7043).**
+   - Demonstrated: a REPRODUCE-INVALID payload kept `covered_negative` True and `pt_inconsistent_cause` "reader".
+   - **Fix:** null both and assert it in the test at line 478.
+   - This is a tool change, so if it is made, say in (d) that the smoke ran on 7efc250d0ffa.
+
+8. **ADVISORY — test gaps.**
+   - The only stratified fixture has every seen token at 5 or more train occurrences (test 219-221), so the covered_1 and covered_2_4 boundaries are never exercised.
+   - I exercised `strata_masks` directly on 12 positions covering occurrence counts 1..9 plus unseen keys: 0 mismatches.
+   - The beyond-the-shas twin refusal in conclude-from (tool 904-905) is untested.
+   - Both additions are test-only.
+
+9. **ADVISORY — NEAR and the identity check interact (6994-6999).**
+   - A hits mismatch on history_tok or FREE_BIGRAM at B = 16 shifts the pooled D_eq, so the identity check voids the run. NEAR therefore survives only on other arms or budgets; say so.
+   - The trial count quoted, 7,588,480, is the primary's; the replication's is 3,817,600.
+
+10. **ADVISORY — some numbers trace to no file.**
+    - 0.7227 of 37,452, 0.0120, 0.0218 and the 5.9767 train maximum (6932-6937).
+    - (a)'s 249.6 s (7277).
+    - (d)'s "two first runs … failed" (7457): only one failing log exists (`tests_v2.log`, 2 failed, 14 passed in 117.48 s).
+    - Save logs for these, or mark them as measured in session.
+
+11. **ADVISORY — the (d) wording overstates the smoke pattern (7470-7472).**
+    - "The pattern the critic's advisory anticipated" is wrong: my round-1 advisory predicted no direction.
+    - The covered_1 and covered_2_4 CIs overlap ([+0.0330, +0.0694] vs [+0.0054, +0.0541]), the positions are unpaired, and the smoke is not evidence. Write "point estimates fall".
+    - Add one attestation: prediction (12) predates the second smoke (`block_v2.md` 21:05:52; the smoke started 21:07:12), and the smoke matched (12)'s direction.
+
+12. **ADVISORY — the "+0.6" bound is the primary's (7051-7053).**
+    - On the primary it is 0.0609 / 0.0987 = 0.617; on the replication it is 0.0659 / 0.1418 = 0.465.
+    - By the same identity, the assistant's "NEGATIVE" surprise at 7218 is nearly vacuous.
+
+The code pass found no leakage:
+- The tables and strata are built on train only.
+- PT at index t is the p_t of the forward that sampled tokens[t]; the target is S[t+1].
+- Val only selects the PT lambdas.
+- Test is read once, at the selected lambdas.
+- The twin's test rows reach only REPRODUCE and the identity check.
+
+The D-5 baseline is present. D-9, gate hygiene and the function-word tax don't apply here. No wall-clock claim is made, and no kill goalpost moves.
+
+What would change my mind: evidence that the PT-ABSORBS-with-straddling-D_add^PT branch can't be reached on these harvests. The cheapest test is the tool's own val pass on the primary (fit plus the PT-arm val evaluation, about 8.5 min going by the (a) profile, no test row read): if history_bigram_pt − history_tok_pt at the val-selected lambdas comes out at or below +0.001, objection 3 drops to advisory. Objections 1 and 2 are facts about the text that no experiment changes; only a (c) note I missed would.
+
+Scratch files are in `C:\Users\<user>\AppData\Local\Temp\claude\c--Users-<user>-Desktop-Research-sideband\12e6097a-8666-465a-b5a3-e76024a56cff\scratchpad\strat\critic2\`:
+- recompute2.py
+- recompute2.log
+- mine2.json
+- deltas_pretty.txt
+- v.py … v8.py
+- round1_report.txt
+- pytest.log

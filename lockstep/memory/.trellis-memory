@@ -1,0 +1,5 @@
+Trellis internal memory sentinel.
+
+This file identifies memory/ as Trellis-owned procedural memory. Do not use
+this directory for secrets, private user data, raw logs, generated artifacts,
+or host-owned application state.

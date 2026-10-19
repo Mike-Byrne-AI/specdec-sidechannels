@@ -1,0 +1,52 @@
+{
+  "T": 20000,
+  "_experiment": "a01_rate_vs_draft_quality",
+  "_written_unix": 1787971639,
+  "regime": "sideband synthetic concept-HMM v0 world, target-greedy content, amber v0 codec (Elias-gamma gaps+ranks); headers excluded from rates",
+  "rows": [
+    {
+      "ac_under_q_bits_per_token": 8.073770276832157,
+      "amber_bits_per_token": 9.294350000000001,
+      "compression_vs_raw": 0.9822450154411768,
+      "divergence_rate": 0.501675,
+      "draft_alpha": 0.5,
+      "ideal_regimeA_bits_per_token": 6.964191411225772,
+      "raw_bits_per_token": 9.129283016944967,
+      "zlib_raw_bits_per_token": 1.0568
+    },
+    {
+      "ac_under_q_bits_per_token": 6.486636196111997,
+      "amber_bits_per_token": 5.837400000000001,
+      "compression_vs_raw": 1.5640340978863072,
+      "divergence_rate": 0.2988,
+      "draft_alpha": 0.7,
+      "ideal_regimeA_bits_per_token": 4.432112361741381,
+      "raw_bits_per_token": 9.129283016944967,
+      "zlib_raw_bits_per_token": 1.0568
+    },
+    {
+      "ac_under_q_bits_per_token": 4.92003804619546,
+      "amber_bits_per_token": 2.1690500000000004,
+      "compression_vs_raw": 4.210614182288815,
+      "divergence_rate": 0.09855,
+      "draft_alpha": 0.9,
+      "ideal_regimeA_bits_per_token": 1.6359733885186922,
+      "raw_bits_per_token": 9.129283016944967,
+      "zlib_raw_bits_per_token": 1.0568
+    },
+    {
+      "ac_under_q_bits_per_token": 4.377498312379547,
+      "amber_bits_per_token": 0.73325,
+      "compression_vs_raw": 12.460415602726785,
+      "divergence_rate": 0.0292,
+      "draft_alpha": 0.97,
+      "ideal_regimeA_bits_per_token": 0.5374735824291021,
+      "raw_bits_per_token": 9.129283016944967,
+      "zlib_raw_bits_per_token": 1.0568
+    }
+  ],
+  "seeds": [
+    0,
+    1
+  ]
+}

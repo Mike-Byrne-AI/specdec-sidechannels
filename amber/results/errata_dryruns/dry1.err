@@ -1,0 +1,19 @@
+[E1] CORRECTED (0.001s)
+[E2] CORRECTED (0.0s)
+[E3] CORRECTED (0.423s)
+[E4] UNRECOMPUTABLE (0.045s)
+[E5] CORRECTED (0.005s)
+[E6] CORRECTED (0.001s)
+None of PyTorch, TensorFlow >= 2.0, or Flax have been found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+[E7] UNRECOMPUTABLE (1.721s)
+[E8a] CORRECTED (0.002s)
+[E8b] CONFIRMED (0.007s)
+[E8c] CORRECTED (2.175s)
+[E9] CORRECTED (0.003s)
+[E10] CONFIRMED (0.0s)
+[E11] CORRECTED (0.002s)
+[E12] CORRECTED (0.023s)
+[E13] UNRECOMPUTABLE (0.265s)
+[E14] CONFIRMED (0.019s)
+fatal: path 'experiments/errata_lib.py' exists on disk, but not in '73575a84170a7042c88694cc6e49a40421362ec4'
+fatal: path 'experiments/errata_recompute.py' exists on disk, but not in '73575a84170a7042c88694cc6e49a40421362ec4'

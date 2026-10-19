@@ -1,0 +1,248 @@
+{
+  "audit": {
+    "cross_bucket_fraction": 0.810752688172043,
+    "cross_bucket_fraction_by_offset": {
+      "1": {
+        "fraction": 0.7962382445141066,
+        "n": 319
+      },
+      "2": {
+        "fraction": 0.8108108108108109,
+        "n": 259
+      },
+      "3": {
+        "fraction": 0.8078817733990148,
+        "n": 203
+      },
+      "4": {
+        "fraction": 0.8456375838926175,
+        "n": 149
+      }
+    },
+    "cross_bucket_fraction_ci95_binomial": [
+      0.784071020427509,
+      0.8354490836200301
+    ],
+    "cross_bucket_fraction_ci95_prompt_bootstrap": [
+      0.7863134165200234,
+      0.8378978925104807
+    ],
+    "cross_bucket_residual_mass": 0.819088277459144,
+    "cross_bucket_residual_mass_ci95_prompt_bootstrap": [
+      0.7992019509925403,
+      0.8399615987267383
+    ],
+    "n_negative_bucket_records": 0,
+    "n_prompts_with_rejections": 20,
+    "n_rejections": 930
+  },
+  "mean_acceptance_rate": 0.7941257423168981,
+  "n_prompts_completed": 20,
+  "n_rejections_logged": 930,
+  "per_prompt_stats": [
+    {
+      "acceptance_rate": 0.8538812785388128,
+      "n_accepted": 187,
+      "n_blocks": 70,
+      "n_proposed": 219,
+      "peak_vram_gb": 7.94,
+      "prompt_idx": 0,
+      "run_id": "20260829T112611Z",
+      "seconds": 14.13
+    },
+    {
+      "acceptance_rate": 0.7807017543859649,
+      "n_accepted": 178,
+      "n_blocks": 78,
+      "n_proposed": 228,
+      "peak_vram_gb": 7.94,
+      "prompt_idx": 1,
+      "run_id": "20260829T112611Z",
+      "seconds": 15.38
+    },
+    {
+      "acceptance_rate": 0.8552036199095022,
+      "n_accepted": 189,
+      "n_blocks": 69,
+      "n_proposed": 221,
+      "peak_vram_gb": 7.94,
+      "prompt_idx": 2,
+      "run_id": "20260829T112611Z",
+      "seconds": 13.33
+    },
+    {
+      "acceptance_rate": 0.7665198237885462,
+      "n_accepted": 174,
+      "n_blocks": 82,
+      "n_proposed": 227,
+      "peak_vram_gb": 7.94,
+      "prompt_idx": 3,
+      "run_id": "20260829T112611Z",
+      "seconds": 15.89
+    },
+    {
+      "acceptance_rate": 0.7831858407079646,
+      "n_accepted": 177,
+      "n_blocks": 79,
+      "n_proposed": 226,
+      "peak_vram_gb": 7.94,
+      "prompt_idx": 4,
+      "run_id": "20260829T112611Z",
+      "seconds": 15.81
+    },
+    {
+      "acceptance_rate": 0.7467811158798283,
+      "n_accepted": 174,
+      "n_blocks": 86,
+      "n_proposed": 233,
+      "peak_vram_gb": 7.94,
+      "prompt_idx": 5,
+      "run_id": "20260829T112611Z",
+      "seconds": 17.01
+    },
+    {
+      "acceptance_rate": 0.8767123287671232,
+      "n_accepted": 192,
+      "n_blocks": 66,
+      "n_proposed": 219,
+      "peak_vram_gb": 7.94,
+      "prompt_idx": 6,
+      "run_id": "20260829T112611Z",
+      "seconds": 13.01
+    },
+    {
+      "acceptance_rate": 0.7807017543859649,
+      "n_accepted": 178,
+      "n_blocks": 80,
+      "n_proposed": 228,
+      "peak_vram_gb": 7.94,
+      "prompt_idx": 7,
+      "run_id": "20260829T112611Z",
+      "seconds": 15.84
+    },
+    {
+      "acceptance_rate": 0.8141592920353983,
+      "n_accepted": 184,
+      "n_blocks": 74,
+      "n_proposed": 226,
+      "peak_vram_gb": 7.94,
+      "prompt_idx": 8,
+      "run_id": "20260829T112611Z",
+      "seconds": 14.64
+    },
+    {
+      "acceptance_rate": 0.7973568281938326,
+      "n_accepted": 181,
+      "n_blocks": 79,
+      "n_proposed": 227,
+      "peak_vram_gb": 7.94,
+      "prompt_idx": 9,
+      "run_id": "20260829T112611Z",
+      "seconds": 16.04
+    },
+    {
+      "acceptance_rate": 0.70042194092827,
+      "n_accepted": 166,
+      "n_blocks": 93,
+      "n_proposed": 237,
+      "peak_vram_gb": 7.94,
+      "prompt_idx": 10,
+      "run_id": "20260829T112611Z",
+      "seconds": 18.45
+    },
+    {
+      "acceptance_rate": 0.8580645161290322,
+      "n_accepted": 133,
+      "n_blocks": 47,
+      "n_proposed": 155,
+      "peak_vram_gb": 7.88,
+      "prompt_idx": 11,
+      "run_id": "20260829T112611Z",
+      "seconds": 8.42
+    },
+    {
+      "acceptance_rate": 0.8061674008810573,
+      "n_accepted": 183,
+      "n_blocks": 75,
+      "n_proposed": 227,
+      "peak_vram_gb": 7.94,
+      "prompt_idx": 12,
+      "run_id": "20260829T112611Z",
+      "seconds": 15.26
+    },
+    {
+      "acceptance_rate": 0.8008849557522124,
+      "n_accepted": 181,
+      "n_blocks": 75,
+      "n_proposed": 226,
+      "peak_vram_gb": 7.94,
+      "prompt_idx": 13,
+      "run_id": "20260829T112611Z",
+      "seconds": 14.81
+    },
+    {
+      "acceptance_rate": 0.8222222222222222,
+      "n_accepted": 185,
+      "n_blocks": 72,
+      "n_proposed": 225,
+      "peak_vram_gb": 7.94,
+      "prompt_idx": 14,
+      "run_id": "20260829T112611Z",
+      "seconds": 14.25
+    },
+    {
+      "acceptance_rate": 0.7222222222222222,
+      "n_accepted": 169,
+      "n_blocks": 89,
+      "n_proposed": 234,
+      "peak_vram_gb": 7.94,
+      "prompt_idx": 15,
+      "run_id": "20260829T112611Z",
+      "seconds": 17.88
+    },
+    {
+      "acceptance_rate": 0.7381974248927039,
+      "n_accepted": 172,
+      "n_blocks": 87,
+      "n_proposed": 233,
+      "peak_vram_gb": 7.94,
+      "prompt_idx": 16,
+      "run_id": "20260829T112611Z",
+      "seconds": 17.87
+    },
+    {
+      "acceptance_rate": 0.863013698630137,
+      "n_accepted": 189,
+      "n_blocks": 68,
+      "n_proposed": 219,
+      "peak_vram_gb": 7.94,
+      "prompt_idx": 17,
+      "run_id": "20260829T112611Z",
+      "seconds": 14.02
+    },
+    {
+      "acceptance_rate": 0.8169642857142857,
+      "n_accepted": 183,
+      "n_blocks": 74,
+      "n_proposed": 224,
+      "peak_vram_gb": 7.94,
+      "prompt_idx": 18,
+      "run_id": "20260829T112611Z",
+      "seconds": 14.67
+    },
+    {
+      "acceptance_rate": 0.6991525423728814,
+      "n_accepted": 165,
+      "n_blocks": 94,
+      "n_proposed": 236,
+      "peak_vram_gb": 7.94,
+      "prompt_idx": 19,
+      "run_id": "20260829T112611Z",
+      "seconds": 18.88
+    }
+  ],
+  "run_id": "20260829T112611Z",
+  "run_ids": [
+    "20260829T112611Z"
+  ]
+}

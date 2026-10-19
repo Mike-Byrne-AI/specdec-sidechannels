@@ -1,0 +1,58 @@
+loaded 7 arms, 49056 positions
+cpu_fp32     -> cuda_fp32_b1  th0.0/m2: A1 T0 C0 sc0  th0.142/m2: A0 T0 C0 sc0  th0.142/m4: A0 T0 C0 sc0  th0.465/m2: A0 T0 C0 sc0  th0.465/m4: A0 T0 C0 sc0  th0.93/m2: A0 T0 C0 sc0  th0.93/m4: A0 T0 C0 sc0
+cpu_fp32     -> cuda_fp16_b1  th0.0/m2: A25 T0 C863 sc228  th0.142/m2: A0 T9 C845 sc222  th0.142/m4: A0 T8 C835 sc222  th0.465/m2: A0 T16 C840 sc217  th0.465/m4: A0 T17 C812 sc214  th0.93/m2: A0 T24 C832 sc209  th0.93/m4: A0 T24 C788 sc205
+cpu_fp32     -> cuda_bf16_b1  th0.0/m2: A159 T0 C4488 sc1605  th0.142/m2: A2 T41 C4318 sc1580  th0.142/m4: A2 T64 C4249 sc1558  th0.465/m2: A0 T88 C4283 sc1548  th0.465/m4: A0 T155 C4093 sc1488  th0.93/m2: A0 T143 C4244 sc1509  th0.93/m4: A0 T253 C3952 sc1418
+cpu_fp32     -> cuda_bf16_b8  th0.0/m2: A148 T0 C4412 sc1564  th0.142/m2: A2 T40 C4238 sc1540  th0.142/m4: A2 T60 C4171 sc1520  th0.465/m2: A0 T89 C4200 sc1505  th0.465/m4: A0 T141 C4020 sc1451  th0.93/m2: A0 T145 C4159 sc1464  th0.93/m4: A0 T243 C3871 sc1379
+cpu_fp32     -> cuda_int8_b1  th0.0/m2: A495 T0 C9164 sc4878  th0.142/m2: A251 T93 C8902 sc4823  th0.142/m4: A251 T196 C8727 sc4753  th0.465/m2: A71 T254 C8676 sc4727  th0.465/m4: A71 T526 C8207 sc4531  th0.93/m2: A18 T460 C8520 sc4602  th0.93/m4: A18 T921 C7762 sc4273
+cpu_fp32     -> cuda_nf4_b1   th0.0/m2: A1726 T0 C13022 sc9061  th0.142/m2: A1366 T308 C12655 sc8909  th0.142/m4: A1366 T514 C12327 sc8711  th0.465/m2: A789 T805 C12102 sc8650  th0.465/m4: A789 T1487 C11173 sc8084  th0.93/m2: A367 T1323 C11690 sc8384  th0.93/m4: A367 T2576 C10194 sc7477
+cuda_bf16_b1 -> cuda_fp32_b1  th0.0/m2: A156 T0 C4496 sc1605  th0.142/m2: A2 T33 C4332 sc1586  th0.142/m4: A2 T72 C4229 sc1558  th0.465/m2: A0 T81 C4295 sc1549  th0.465/m4: A0 T151 C4112 sc1490  th0.93/m2: A0 T130 C4262 sc1516  th0.93/m4: A0 T261 C3949 sc1419
+cuda_bf16_b1 -> cuda_fp16_b1  th0.0/m2: A152 T0 C4329 sc1521  th0.142/m2: A2 T34 C4181 sc1501  th0.142/m4: A2 T64 C4089 sc1476  th0.465/m2: A0 T78 C4146 sc1467  th0.465/m4: A0 T137 C3984 sc1415  th0.93/m2: A0 T123 C4116 sc1437  th0.93/m4: A0 T238 C3837 sc1350
+cuda_bf16_b1 -> cuda_bf16_b8  th0.0/m2: A115 T0 C3983 sc1425  th0.142/m2: A2 T30 C3847 sc1406  th0.142/m4: A2 T48 C3783 sc1388  th0.465/m2: A0 T66 C3819 sc1381  th0.465/m4: A0 T95 C3696 sc1340  th0.93/m2: A0 T115 C3790 sc1352  th0.93/m4: A0 T200 C3580 sc1279
+cuda_bf16_b1 -> cuda_int8_b1  th0.0/m2: A526 T0 C9360 sc4955  th0.142/m2: A210 T115 C9052 sc4890  th0.142/m4: A210 T275 C8813 sc4793  th0.465/m2: A73 T270 C8845 sc4794  th0.465/m4: A73 T548 C8371 sc4586  th0.93/m2: A18 T485 C8682 sc4665  th0.93/m4: A18 T977 C7877 sc4317
+cuda_bf16_b1 -> cuda_nf4_b1   th0.0/m2: A1722 T0 C12999 sc9112  th0.142/m2: A1270 T379 C12551 sc8919  th0.142/m4: A1270 T638 C12138 sc8681  th0.465/m2: A814 T793 C12087 sc8697  th0.465/m4: A814 T1426 C11201 sc8157  th0.93/m2: A368 T1318 C11667 sc8435  th0.93/m4: A368 T2556 C10175 sc7518
+(6.2s)
+XB-3 wide-gap check: {
+ "cpu_fp32->cuda_fp32_b1": {
+  "A_desyncs": 1,
+  "max_gap": 1.33514404296875e-05,
+  "pair_budget_2tau": 8.6e-05,
+  "beyond_budget": false
+ },
+ "cpu_fp32->cuda_fp16_b1": {
+  "A_desyncs": 25,
+  "max_gap": 0.02181243896484375,
+  "pair_budget_2tau": 0.0662,
+  "beyond_budget": false
+ },
+ "cpu_fp32->cuda_bf16_b1": {
+  "A_desyncs": 159,
+  "max_gap": 0.1490955352783203,
+  "pair_budget_2tau": 0.4654,
+  "beyond_budget": false
+ },
+ "cpu_fp32->cuda_bf16_b8": {
+  "A_desyncs": 148,
+  "max_gap": 0.15589332580566406,
+  "pair_budget_2tau": 0.452,
+  "beyond_budget": false
+ },
+ "cuda_bf16_b1->cuda_fp32_b1": {
+  "A_desyncs": 156,
+  "max_gap": 0.25,
+  "pair_budget_2tau": 0.46548599999999996,
+  "beyond_budget": false
+ },
+ "cuda_bf16_b1->cuda_fp16_b1": {
+  "A_desyncs": 152,
+  "max_gap": 0.25,
+  "pair_budget_2tau": 0.5316,
+  "beyond_budget": false
+ },
+ "cuda_bf16_b1->cuda_bf16_b8": {
+  "A_desyncs": 115,
+  "max_gap": 0.25,
+  "pair_budget_2tau": 0.9174,
+  "beyond_budget": false
+ }
+}
+[saved] results/p2b_escape_robustness.json

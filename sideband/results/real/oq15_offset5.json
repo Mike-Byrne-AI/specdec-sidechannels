@@ -1,0 +1,15 @@
+{
+  "registration": "OQ-15 STAGE-C FREEZE (BLUEPRINT 2026-09-03)",
+  "role": "REPORTED-only (never gating): the Stage-C extend signal's a_hat_5 heads",
+  "chosen_lambda": {
+    "free": 10.0,
+    "tel": 10.0
+  },
+  "test_mse": {
+    "free": 0.05469985821808974,
+    "tel": 0.05974761296262184
+  },
+  "trivial_baseline_test_mse": 0.05221683466487417,
+  "n_test_positions": 6362,
+  "off_policy_disclosure": "fixed gamma-6 schedule, off-policy w.r.t. gamma-4; the seed-0 run is the VOIDED seed-0 verdict run (arm 5 scheduler-inert; void resolved at F-19) \u2014 disclosed per the STAGE-C FREEZE"
+}

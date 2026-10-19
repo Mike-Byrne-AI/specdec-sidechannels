@@ -1,0 +1,13 @@
+THE CRITIC'S (2026-10-03; from the committed stratified payloads' per-stratum B = 16 hit rates, D_eq cells, shares and n_positions, FINDINGS.md:287, and the disclosed smoke, whose training-free quantities (REPLAY AGREEMENT, replay_zerofit) transfer and whose fitted arms do not; no harvest array, val row or test row read by the critic):
+(1) REPRODUCE EXACT on both; the identity holds.
+(2) k* interior, 8 or 32 modal (0 or 2 about 0.2; 128 or 512 about 0.15; inf about 0.05); free_r2's lambda interior, 10 modal.
+(3) SHR^FB +0.11..+0.21 SIGNAL; SHR^COV +0.001..+0.012 NOT-SHOWN; SHR^ALL +0.012..+0.032 NOT-SHOWN; SHARE 0.55..1.10.
+(4) D_eq^R2 on FALLBACK +0.05..+0.12, SIGNAL modal (about 0.6), straddling in about half the SIGNAL cases; on ALL +0.035..+0.058, NOT-SHOWN modal with a straddle (SIGNAL about 0.25); on COVERED +0.030..+0.048; Q1 modal R2-FALLBACK-SURVIVES (about 0.6), R2-ABSORBED (about 0.3), R2-POOLED-ONLY (about 0.1).
+(5) history_tok_r2 − history_tok on ALL +0.002..+0.010, on FALLBACK +0.02..+0.07 (history_tok sits below history on cur-unseen 0.7423 vs 0.7571 and both-unseen 0.6860 vs 0.7161); D_add^R2 on ALL +0.040..+0.060.
+(6) free_replay 0.78..0.84 pooled, below FREE_BIGRAM 0.8534 / 0.8449; replay_zerofit 0.54..0.61; replay_cur 0.73..0.80, below free_tok pooled and above it on FALLBACK; free_backoff within 0.006 of free_r2.
+(7) REPLAY AGREEMENT at gate 0 on test 0.22..0.30 on both, the lowest gate; pooled 0.38..0.42; gates 8..15 0.30..0.54, maximum at gates 9..11.
+(8) h_only 0.78..0.88 (above free_tok more likely than not; below history_tok by more than 0.03, about 0.85); free_h − free_r2 on ALL +0.01..+0.05; D_eq^H −0.01..+0.045, NOT-SHOWN modal (NEGATIVE about 0.15, SIGNAL about 0.05); D_add^H +0.015..+0.050, NOT-SHOWN modal (SIGNAL about 0.25, usually straddling); anchor −0.005..+0.020; Q2 modal H-ABSORBS (about 0.6), H-COMPLEMENTARY (about 0.25), H-SURVIVES and H-INCONSISTENT about 0.05 each; a reader guard (item 1) fires about 0.1.
+(9) the replication agrees on Q1 (about 0.7; its FALLBACK gate more likely to straddle) and on Q2 (about 0.75).
+(10) kept-variance share 0.90..0.97.
+(11) 8..40 min on the primary, about half on the replication.
+WOULD SURPRISE THE CRITIC: SHR^COV SIGNAL; k* = inf; free_replay ≥ FREE_BIGRAM pooled; replay_zerofit outside 0.50..0.65; gate-0 agreement ≥ 0.40 or not the lowest gate; D_eq^R2 on FALLBACK NEGATIVE or ≥ +0.15; free_h − free_r2 or the anchor CI-negative at full train size; D_eq^H SIGNAL; h_only ≥ history_tok; any REPRODUCE status other than EXACT; a Q1 disagreement where neither harvest's FALLBACK gate straddles.

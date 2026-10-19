@@ -1,0 +1,2 @@
+a = f"{x['k']}{'|SH' if y else ''}"
+b = "it's"

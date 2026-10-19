@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "amber"
+version = "0.4.0"
+description = "Archives of model-generated text coded as a draft model's rank corrections and decoded by the draft alone; a parked research record with dated errata (README.md)."
+requires-python = ">=3.10"
+# amber imports sideband's tested primitives (world, distributions) rather than
+# re-implementing them, and lockstep (the determinism layer: integer range coder,
+# manifest hardening, envprobe). Install the sibling repos first:
+#   pip install -e ../../Research/sideband -e ../lockstep-ultimate-repo --no-deps
+# (sibling paths as laid out on the development box, 2026-10-10)
+dependencies = ["numpy>=1.26", "sideband>=0.2.0", "lockstep-archive>=0.2.0"]
+
+[project.optional-dependencies]
+# scipy: tests/test_errata_recompute.py reaches the Garwood interval in experiments/errata_lib.py
+# (the image audit of 2026-10-17, docs/audits/2026-10-17-image-audit/README.md, section A item 1)
+dev = ["pytest>=8", "scipy>=1.11"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

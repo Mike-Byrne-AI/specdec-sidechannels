@@ -1,0 +1,81 @@
+{
+  "_experiment": "e05_sidecar_recovery.json",
+  "_written_unix": 1787965557,
+  "beta": 2.5,
+  "gamma": 4,
+  "n_positions": 12000,
+  "n_train": 20000,
+  "regime": "synthetic concept-HMM v0, hardened telemetry (support_gain=0.5, support_noise=0.5, background_noise=0.25, top_n=16), n_slots swept; sidecar = softmax regression on slot multi-hot at last verified position; disagreement-gated beta=2.5",
+  "rows": [
+    {
+      "mean_units_per_slot": 512.0,
+      "n_slots": 8,
+      "recovery_tau0": -1.5206838569844572,
+      "recovery_tau05": -0.009275018770505386,
+      "sidecar_holdout_acc": 0.159,
+      "sidecar_tau0": 0.5950011178222265,
+      "sidecar_tau05": 0.6189869466850199,
+      "stale_oracle": 0.6350039880464619,
+      "vanilla": 0.6191341398251575
+    },
+    {
+      "mean_units_per_slot": 256.0,
+      "n_slots": 16,
+      "recovery_tau0": -0.8798814620861172,
+      "recovery_tau05": 0.022153900559168667,
+      "sidecar_holdout_acc": 0.37675,
+      "sidecar_tau0": 0.6051705545691115,
+      "sidecar_tau05": 0.6194857188645414,
+      "stale_oracle": 0.6350039880464619,
+      "vanilla": 0.6191341398251575
+    },
+    {
+      "mean_units_per_slot": 128.0,
+      "n_slots": 32,
+      "recovery_tau0": -0.21579525590828208,
+      "recovery_tau05": 0.07800066218844487,
+      "sidecar_holdout_acc": 0.62675,
+      "sidecar_tau0": 0.6157095018670156,
+      "sidecar_tau05": 0.6203719984952494,
+      "stale_oracle": 0.6350039880464619,
+      "vanilla": 0.6191341398251575
+    },
+    {
+      "mean_units_per_slot": 64.0,
+      "n_slots": 64,
+      "recovery_tau0": 0.35531543055613213,
+      "recovery_tau05": 0.541066832194044,
+      "sidecar_holdout_acc": 0.832,
+      "sidecar_tau0": 0.6247729417787707,
+      "sidecar_tau05": 0.6277207883296589,
+      "stale_oracle": 0.6350039880464619,
+      "vanilla": 0.6191341398251575
+    },
+    {
+      "mean_units_per_slot": 16.0,
+      "n_slots": 256,
+      "recovery_tau0": 0.9130178015644501,
+      "recovery_tau05": 0.8548512315995687,
+      "sidecar_holdout_acc": 0.97575,
+      "sidecar_tau0": 0.6336235937593343,
+      "sidecar_tau05": 0.6327004991224378,
+      "stale_oracle": 0.6350039880464619,
+      "vanilla": 0.6191341398251575
+    },
+    {
+      "mean_units_per_slot": 4.0,
+      "n_slots": 1024,
+      "recovery_tau0": 0.9481833536702415,
+      "recovery_tau05": 0.9922492226996356,
+      "sidecar_holdout_acc": 0.9975,
+      "sidecar_tau0": 0.6341816657338716,
+      "sidecar_tau05": 0.6348809843871079,
+      "stale_oracle": 0.6350039880464619,
+      "vanilla": 0.6191341398251575
+    }
+  ],
+  "tau_variants": [
+    0.0,
+    0.5
+  ]
+}

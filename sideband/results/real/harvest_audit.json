@@ -1,0 +1,282 @@
+{
+ "contamination": {
+  "ngram": 8,
+  "test_in_train": {
+   "distinct_frac": 0.007611997625615419,
+   "n_distinct": 57278,
+   "occurrence_frac": 0.013727135425406947
+  },
+  "val_in_train": {
+   "distinct_frac": 0.009297465776471213,
+   "n_distinct": 56467,
+   "occurrence_frac": 0.013860334429824562
+  }
+ },
+ "dir": "results/real/harvest_shadow",
+ "duplication": {
+  "loop_rule": "some 8-gram repeats >= 4x within one row",
+  "loopy_row_fraction": 0.002380952380952381,
+  "n_rows": 1680,
+  "within_prompt_across_seed_distinct_8gram_ratio": {
+   "mean": 0.9640223197312948,
+   "min": 0.7223895582329317,
+   "p10": 0.9170180722891565
+  }
+ },
+ "label_marginals": {
+  "concept_k16": {
+   "C_concept": 15,
+   "buckets_sha256": "e31db51ef0f689d97372a831330082e3db5cad8911af9bab6a7849e742383999",
+   "glue_class_id": 15,
+   "n_classes": 16,
+   "per_offset": {
+    "offset_1": {
+     "test": {
+      "entropy_bits": 2.053319269800611,
+      "glue_class_rate": 0.5890647951689244,
+      "majority_class": 15,
+      "majority_rate": 0.5890647951689244,
+      "n_classes_seen": 15,
+      "n_pairs": 61270
+     },
+     "train": {
+      "entropy_bits": 2.044410650020877,
+      "glue_class_rate": 0.5870866876217316,
+      "majority_class": 15,
+      "majority_rate": 0.5870866876217316,
+      "n_classes_seen": 16,
+      "n_pairs": 304461
+     },
+     "val": {
+      "entropy_bits": 2.071537271308749,
+      "glue_class_rate": 0.5830002664535039,
+      "majority_class": 15,
+      "majority_rate": 0.5830002664535039,
+      "n_classes_seen": 16,
+      "n_pairs": 60048
+     }
+    },
+    "offset_2": {
+     "test": {
+      "entropy_bits": 2.0470162058571675,
+      "glue_class_rate": 0.591381287891201,
+      "majority_class": 15,
+      "majority_rate": 0.591381287891201,
+      "n_classes_seen": 15,
+      "n_pairs": 61030
+     },
+     "train": {
+      "entropy_bits": 2.0369574672262893,
+      "glue_class_rate": 0.5894097823327101,
+      "majority_class": 15,
+      "majority_rate": 0.5894097823327101,
+      "n_classes_seen": 16,
+      "n_pairs": 303261
+     },
+     "val": {
+      "entropy_bits": 2.0649631187869852,
+      "glue_class_rate": 0.5853397538790798,
+      "majority_class": 15,
+      "majority_rate": 0.5853397538790798,
+      "n_classes_seen": 16,
+      "n_pairs": 59808
+     }
+    },
+    "offset_3": {
+     "test": {
+      "entropy_bits": 2.0473514068524294,
+      "glue_class_rate": 0.5914788616548774,
+      "majority_class": 15,
+      "majority_rate": 0.5914788616548774,
+      "n_classes_seen": 15,
+      "n_pairs": 60790
+     },
+     "train": {
+      "entropy_bits": 2.036788384513809,
+      "glue_class_rate": 0.589371021085145,
+      "majority_class": 15,
+      "majority_rate": 0.589371021085145,
+      "n_classes_seen": 16,
+      "n_pairs": 302061
+     },
+     "val": {
+      "entropy_bits": 2.0655449132203403,
+      "glue_class_rate": 0.5849785119527263,
+      "majority_class": 15,
+      "majority_rate": 0.5849785119527263,
+      "n_classes_seen": 16,
+      "n_pairs": 59568
+     }
+    },
+    "offset_4": {
+     "test": {
+      "entropy_bits": 2.0474777741052756,
+      "glue_class_rate": 0.5911478117258464,
+      "majority_class": 15,
+      "majority_rate": 0.5911478117258464,
+      "n_classes_seen": 15,
+      "n_pairs": 60550
+     },
+     "train": {
+      "entropy_bits": 2.0367529737394876,
+      "glue_class_rate": 0.589145818168523,
+      "majority_class": 15,
+      "majority_rate": 0.589145818168523,
+      "n_classes_seen": 16,
+      "n_pairs": 300861
+     },
+     "val": {
+      "entropy_bits": 2.0658073812341167,
+      "glue_class_rate": 0.5846649137001079,
+      "majority_class": 15,
+      "majority_rate": 0.5846649137001079,
+      "n_classes_seen": 16,
+      "n_pairs": 59328
+     }
+    }
+   }
+  },
+  "concept_k512": {
+   "C_concept": 510,
+   "buckets_sha256": "04390056c54803ce70a0837f85090cb5dfbaf71590491e97ce73e5349d45a995",
+   "glue_class_id": 510,
+   "n_classes": 511,
+   "per_offset": {
+    "offset_1": {
+     "test": {
+      "entropy_bits": 4.82840136500875,
+      "glue_class_rate": 0.41088624122735434,
+      "majority_class": 510,
+      "majority_rate": 0.41088624122735434,
+      "n_classes_seen": 289,
+      "n_pairs": 61270
+     },
+     "train": {
+      "entropy_bits": 4.850691361503969,
+      "glue_class_rate": 0.41139916114050734,
+      "majority_class": 510,
+      "majority_rate": 0.41139916114050734,
+      "n_classes_seen": 346,
+      "n_pairs": 304461
+     },
+     "val": {
+      "entropy_bits": 4.9195675331085855,
+      "glue_class_rate": 0.40222821742605913,
+      "majority_class": 510,
+      "majority_rate": 0.40222821742605913,
+      "n_classes_seen": 313,
+      "n_pairs": 60048
+     }
+    },
+    "offset_2": {
+     "test": {
+      "entropy_bits": 4.818881910537654,
+      "glue_class_rate": 0.41250204817302966,
+      "majority_class": 510,
+      "majority_rate": 0.41250204817302966,
+      "n_classes_seen": 289,
+      "n_pairs": 61030
+     },
+     "train": {
+      "entropy_bits": 4.840013492229302,
+      "glue_class_rate": 0.4130270624973208,
+      "majority_class": 510,
+      "majority_rate": 0.4130270624973208,
+      "n_classes_seen": 346,
+      "n_pairs": 303261
+     },
+     "val": {
+      "entropy_bits": 4.910181990721849,
+      "glue_class_rate": 0.40384229534510435,
+      "majority_class": 510,
+      "majority_rate": 0.40384229534510435,
+      "n_classes_seen": 313,
+      "n_pairs": 59808
+     }
+    },
+    "offset_3": {
+     "test": {
+      "entropy_bits": 4.819038614835626,
+      "glue_class_rate": 0.41255140648132915,
+      "majority_class": 510,
+      "majority_rate": 0.41255140648132915,
+      "n_classes_seen": 289,
+      "n_pairs": 60790
+     },
+     "train": {
+      "entropy_bits": 4.840176947600297,
+      "glue_class_rate": 0.41292983867496963,
+      "majority_class": 510,
+      "majority_rate": 0.41292983867496963,
+      "n_classes_seen": 346,
+      "n_pairs": 302061
+     },
+     "val": {
+      "entropy_bits": 4.911968745695187,
+      "glue_class_rate": 0.40352202524845554,
+      "majority_class": 510,
+      "majority_rate": 0.40352202524845554,
+      "n_classes_seen": 313,
+      "n_pairs": 59568
+     }
+    },
+    "offset_4": {
+     "test": {
+      "entropy_bits": 4.81928670974348,
+      "glue_class_rate": 0.4124194880264244,
+      "majority_class": 510,
+      "majority_rate": 0.4124194880264244,
+      "n_classes_seen": 289,
+      "n_pairs": 60550
+     },
+     "train": {
+      "entropy_bits": 4.841364036784881,
+      "glue_class_rate": 0.412602497498845,
+      "majority_class": 510,
+      "majority_rate": 0.412602497498845,
+      "n_classes_seen": 346,
+      "n_pairs": 300861
+     },
+     "val": {
+      "entropy_bits": 4.913332087359363,
+      "glue_class_rate": 0.4032328748651564,
+      "majority_class": 510,
+      "majority_rate": 0.4032328748651564,
+      "n_classes_seen": 313,
+      "n_pairs": 59328
+     }
+    }
+   }
+  }
+ },
+ "n_rows": 1680,
+ "n_tokens": 425779,
+ "note": "read-only pre-probe diagnostics; label rule (glue+unbucketed -> one merged class C) is the Phase-3 label convention",
+ "provenance": {
+  "git_commit": "0aa38dc0430592356030d4736417165c023d2bbf-dirty",
+  "loop_repeats": 4,
+  "ngram": 8,
+  "npz_sha256_verified": {
+   "shadow_s0.meta.json": "56edc5fd54f8d6b8e937d044d562ac2965944892c39c99c320a0f071d3bf4877",
+   "shadow_s1.meta.json": "dd36dfeead8d71a52e3a0d665c090feb27da410d7b21f4018c505eb8c37cd157",
+   "shadow_s2.meta.json": "af3a3cdd49fa98d52eb1e368c4d34442d305c7564d15b282b6fe871177f15578",
+   "shadow_s3.meta.json": "ed202b013984b44754328afc22b757f87a23b09b48ecac9934fbe64d97572fb5",
+   "shadow_s4.meta.json": "b9daed5f8e710b4fb6dece92031a9b64bc1bb5effcf02b974909580b801b0b99",
+   "shadow_s5.meta.json": "d84276d9ca85cb492037465388a631e7127a34e20536f6476e0f74ce0975d587",
+   "shadow_s6.meta.json": "820e4a248ecfb4867936b4dc3e11faa21d4859f144d5e36adc8f2352c14adb3a",
+   "shadow_s7.meta.json": "4cf0bce266d5e2359b7fd0e53ad743246e1cbfa78bf06701b52c2ba63b175e9c"
+  },
+  "space_files": [
+   [
+    "concept_k16",
+    "buckets_k16.json",
+    "glue_k16.json"
+   ],
+   [
+    "concept_k512",
+    "buckets_k512.json",
+    "glue_k512.json"
+   ]
+  ]
+ }
+}

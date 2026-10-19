@@ -1,0 +1,72 @@
+{
+  "_experiment": "p1_divergence",
+  "_written_unix": 1788010173,
+  "draft": "meta-llama/Llama-3.2-1B",
+  "dtype": "bf16",
+  "prompts_sha256": "d8a4e9e141ce459fe67b65aff923b9fb9a0daf16605055b5c726a422e29ae8ec",
+  "provenance": {
+    "draft": {
+      "cpu_threads": 16,
+      "cuda": "12.4",
+      "cudnn": 90100,
+      "deterministic_algorithms": false,
+      "envprobe_digest": "2d2a2e0c1d7795d5383d36bd22b9b51dfac7fde4171fa4f0db074f6de145bbbd",
+      "gpu": "NVIDIA GeForce RTX 3080 Ti",
+      "model_id": "meta-llama/Llama-3.2-1B",
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python": "3.11.9",
+      "snapshot": "4e20de362430cd3b72f300e6b0f18e50e7166e08",
+      "torch": "2.6.0+cu124",
+      "transformers": "4.57.3"
+    }
+  },
+  "regime": "48958 target-generated tokens (greedy, max_new per prompt) from sideband's 210-prompt set; draft teacher-forced replay in bf16 on one 3080 Ti; headers excluded; content coders on decoded UTF-8 text",
+  "row": {
+    "K2_kill_amber_loses_to_zstd": false,
+    "ac_under_draft_bits_per_token": 0.47229623794555664,
+    "amber_v0_bits_per_token": 0.4737938641284366,
+    "content_bytes_per_token": 4.72766452877977,
+    "divergence_by_family": {
+      "instruct": 0.05790153051816338,
+      "story": 0.07045781925220768,
+      "summarize": 0.07499102978112666
+    },
+    "divergence_by_position_bucket64": {
+      "0": 0.15151035900680057,
+      "128": 0.0349019932180961,
+      "192": 0.018267135914194738,
+      "64": 0.06226092618214373
+    },
+    "divergence_per_prompt_spread": {
+      "p10": 0.01171875,
+      "p50": 0.05078125,
+      "p90": 0.17445885894495414
+    },
+    "divergence_rate": 0.06783365333551207,
+    "ideal_rank_entropy_bits_per_token": 0.5069203751631963,
+    "ideal_regimeA_bits_per_token": 0.5341914656525542,
+    "lzma_bits_per_token": 3.6380571101760695,
+    "near_tie_mass": {
+      "0.142": 0.03494832305241227,
+      "0.465": 0.07518689488949712,
+      "0.93": 0.14132521753339597
+    },
+    "positions": 48958,
+    "rank_quantiles_at_corrections": {
+      "0.5": 2,
+      "0.9": 6,
+      "0.99": 26
+    },
+    "raw_bits_per_token": 16.968666793195208,
+    "target_selfconsistency": {
+      "mismatches": 164,
+      "positions": 48958,
+      "rate": 0.9966501899587401
+    },
+    "utf8_bits_per_token": 37.82131623023816,
+    "vocab": 128256,
+    "zlib9_bits_per_token": 4.316843008292823,
+    "zstd19_bits_per_token": 3.6181216552963766
+  },
+  "target": "meta-llama/Llama-3.2-3B"
+}

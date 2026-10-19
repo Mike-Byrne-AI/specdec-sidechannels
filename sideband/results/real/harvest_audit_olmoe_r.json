@@ -1,0 +1,278 @@
+{
+ "contamination": {
+  "ngram": 8,
+  "test_in_train": {
+   "distinct_frac": 0.0036789987622060237,
+   "n_distinct": 29084,
+   "occurrence_frac": 0.004721984602224123
+  },
+  "val_in_train": {
+   "distinct_frac": 0.0037659430845205528,
+   "n_distinct": 28147,
+   "occurrence_frac": 0.004309431296361709
+  }
+ },
+ "dir": "results/real/harvest_moe_r",
+ "duplication": {
+  "loop_rule": "some 8-gram repeats >= 4x within one row",
+  "loopy_row_fraction": 0.0,
+  "n_rows": 840,
+  "within_prompt_across_seed_distinct_8gram_ratio": {
+   "mean": 0.9939691695790389,
+   "min": 0.9146757679180887,
+   "p10": 0.981848147306206
+  }
+ },
+ "label_marginals": {
+  "olmoe_k16": {
+   "C_concept": 15,
+   "buckets_sha256": "1586195a89c8de6ed20f41f1e3155cfb8956ff66041b1adcd64367f38e74096c",
+   "glue_class_id": 15,
+   "n_classes": 16,
+   "per_offset": {
+    "offset_1": {
+     "test": {
+      "entropy_bits": 2.1910323264043647,
+      "glue_class_rate": 0.5859304839514385,
+      "majority_class": 15,
+      "majority_rate": 0.5859304839514385,
+      "n_classes_seen": 15,
+      "n_pairs": 30065
+     },
+     "train": {
+      "entropy_bits": 2.184369965581414,
+      "glue_class_rate": 0.5904376796797335,
+      "majority_class": 15,
+      "majority_rate": 0.5904376796797335,
+      "n_classes_seen": 15,
+      "n_pairs": 148876
+     },
+     "val": {
+      "entropy_bits": 2.1941331564853384,
+      "glue_class_rate": 0.5858662092624357,
+      "majority_class": 15,
+      "majority_rate": 0.5858662092624357,
+      "n_classes_seen": 15,
+      "n_pairs": 29150
+     }
+    },
+    "offset_2": {
+     "test": {
+      "entropy_bits": 2.188644136761197,
+      "glue_class_rate": 0.586508599098347,
+      "majority_class": 15,
+      "majority_rate": 0.586508599098347,
+      "n_classes_seen": 15,
+      "n_pairs": 29945
+     },
+     "train": {
+      "entropy_bits": 2.181116460193262,
+      "glue_class_rate": 0.5911745663492406,
+      "majority_class": 15,
+      "majority_rate": 0.5911745663492406,
+      "n_classes_seen": 15,
+      "n_pairs": 148276
+     },
+     "val": {
+      "entropy_bits": 2.1911465387993085,
+      "glue_class_rate": 0.5866345160179125,
+      "majority_class": 15,
+      "majority_rate": 0.5866345160179125,
+      "n_classes_seen": 15,
+      "n_pairs": 29030
+     }
+    },
+    "offset_3": {
+     "test": {
+      "entropy_bits": 2.186511113213034,
+      "glue_class_rate": 0.5871919530595139,
+      "majority_class": 15,
+      "majority_rate": 0.5871919530595139,
+      "n_classes_seen": 15,
+      "n_pairs": 29825
+     },
+     "train": {
+      "entropy_bits": 2.178320972982324,
+      "glue_class_rate": 0.5919309840461551,
+      "majority_class": 15,
+      "majority_rate": 0.5919309840461551,
+      "n_classes_seen": 15,
+      "n_pairs": 147676
+     },
+     "val": {
+      "entropy_bits": 2.1898365500241113,
+      "glue_class_rate": 0.5871324801106883,
+      "majority_class": 15,
+      "majority_rate": 0.5871324801106883,
+      "n_classes_seen": 15,
+      "n_pairs": 28910
+     }
+    },
+    "offset_4": {
+     "test": {
+      "entropy_bits": 2.1879982494322805,
+      "glue_class_rate": 0.5867699040565562,
+      "majority_class": 15,
+      "majority_rate": 0.5867699040565562,
+      "n_classes_seen": 15,
+      "n_pairs": 29705
+     },
+     "train": {
+      "entropy_bits": 2.1783627907578462,
+      "glue_class_rate": 0.5917824798063586,
+      "majority_class": 15,
+      "majority_rate": 0.5917824798063586,
+      "n_classes_seen": 15,
+      "n_pairs": 147076
+     },
+     "val": {
+      "entropy_bits": 2.190108091341131,
+      "glue_class_rate": 0.5870441125390761,
+      "majority_class": 15,
+      "majority_rate": 0.5870441125390761,
+      "n_classes_seen": 15,
+      "n_pairs": 28790
+     }
+    }
+   }
+  },
+  "olmoe_k512": {
+   "C_concept": 510,
+   "buckets_sha256": "4538c7ddee4772c259abccd92363873463a935dd0be9b3e891ddc2f4d67e3928",
+   "glue_class_id": 510,
+   "n_classes": 511,
+   "per_offset": {
+    "offset_1": {
+     "test": {
+      "entropy_bits": 5.121109250084848,
+      "glue_class_rate": 0.4258772659238317,
+      "majority_class": 510,
+      "majority_rate": 0.4258772659238317,
+      "n_classes_seen": 417,
+      "n_pairs": 30065
+     },
+     "train": {
+      "entropy_bits": 5.1269317452964085,
+      "glue_class_rate": 0.427348934683898,
+      "majority_class": 510,
+      "majority_rate": 0.427348934683898,
+      "n_classes_seen": 485,
+      "n_pairs": 148876
+     },
+     "val": {
+      "entropy_bits": 5.1489794019922694,
+      "glue_class_rate": 0.4217152658662093,
+      "majority_class": 510,
+      "majority_rate": 0.4217152658662093,
+      "n_classes_seen": 430,
+      "n_pairs": 29150
+     }
+    },
+    "offset_2": {
+     "test": {
+      "entropy_bits": 5.10963481372288,
+      "glue_class_rate": 0.4275839038236767,
+      "majority_class": 510,
+      "majority_rate": 0.4275839038236767,
+      "n_classes_seen": 417,
+      "n_pairs": 29945
+     },
+     "train": {
+      "entropy_bits": 5.1147492165314805,
+      "glue_class_rate": 0.4290714613288732,
+      "majority_class": 510,
+      "majority_rate": 0.4290714613288732,
+      "n_classes_seen": 485,
+      "n_pairs": 148276
+     },
+     "val": {
+      "entropy_bits": 5.137763625364353,
+      "glue_class_rate": 0.42345849121598345,
+      "majority_class": 510,
+      "majority_rate": 0.42345849121598345,
+      "n_classes_seen": 430,
+      "n_pairs": 29030
+     }
+    },
+    "offset_3": {
+     "test": {
+      "entropy_bits": 5.106229997579378,
+      "glue_class_rate": 0.42813076278290024,
+      "majority_class": 510,
+      "majority_rate": 0.42813076278290024,
+      "n_classes_seen": 417,
+      "n_pairs": 29825
+     },
+     "train": {
+      "entropy_bits": 5.109520667353098,
+      "glue_class_rate": 0.4297787047319808,
+      "majority_class": 510,
+      "majority_rate": 0.4297787047319808,
+      "n_classes_seen": 485,
+      "n_pairs": 147676
+     },
+     "val": {
+      "entropy_bits": 5.133477550429546,
+      "glue_class_rate": 0.42435143548945004,
+      "majority_class": 510,
+      "majority_rate": 0.42435143548945004,
+      "n_classes_seen": 430,
+      "n_pairs": 28910
+     }
+    },
+    "offset_4": {
+     "test": {
+      "entropy_bits": 5.108959709583074,
+      "glue_class_rate": 0.4278740952701565,
+      "majority_class": 510,
+      "majority_rate": 0.4278740952701565,
+      "n_classes_seen": 417,
+      "n_pairs": 29705
+     },
+     "train": {
+      "entropy_bits": 5.110401481760983,
+      "glue_class_rate": 0.4296214202181185,
+      "majority_class": 510,
+      "majority_rate": 0.4296214202181185,
+      "n_classes_seen": 485,
+      "n_pairs": 147076
+     },
+     "val": {
+      "entropy_bits": 5.134009111018228,
+      "glue_class_rate": 0.4242445293504689,
+      "majority_class": 510,
+      "majority_rate": 0.4242445293504689,
+      "n_classes_seen": 429,
+      "n_pairs": 28790
+     }
+    }
+   }
+  }
+ },
+ "n_rows": 840,
+ "n_tokens": 208091,
+ "note": "read-only pre-probe diagnostics; label rule (glue+unbucketed -> one merged class C) is the Phase-3 label convention",
+ "provenance": {
+  "git_commit": "d8cb7a05b0d860f706124a75111e6a34f3f3d23f-dirty",
+  "loop_repeats": 4,
+  "ngram": 8,
+  "npz_sha256_verified": {
+   "moe_s10.meta.json": "ec58591ab1a997448f106c804b1037a98cb5b0a77a2e17dc9041e9da4e2b98fb",
+   "moe_s11.meta.json": "8746a53521d8f74c711faac5b65debed56ab27cc27c2c26c2548d7197a1feac4",
+   "moe_s8.meta.json": "b68f213760ec8b0044f00bd2d78ba996aaf712c28ccaad9ef264ce57acc3d59a",
+   "moe_s9.meta.json": "f75296927539395583d4603501ca2b3295d397c477bb577f34e31cebbd2266e2"
+  },
+  "space_files": [
+   [
+    "olmoe_k16",
+    "buckets_olmoe_k16.json",
+    "glue_olmoe_k16.json"
+   ],
+   [
+    "olmoe_k512",
+    "buckets_olmoe_k512.json",
+    "glue_olmoe_k512.json"
+   ]
+  ]
+ }
+}

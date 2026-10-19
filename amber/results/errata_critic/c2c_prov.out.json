@@ -1,0 +1,65 @@
+{
+ "HEAD": "8515734bc5d97a45edb249f4d5505be64dc50981",
+ "payload_head": "05c3305e814bf5400516f55d9babda8190797a70",
+ "payload_cr_bytes": 0,
+ "payload_equals_HEAD_blob": true,
+ "payload_HEAD_blob_id": "09f389ad24ccfcae4d2397a89fa2df2821df15c4",
+ "tree_matches": true,
+ "clean_tracked_tree_selfreported": true,
+ "payload_written": "2026-10-10T23:12:46",
+ "inputs_n": 38,
+ "inputs_mismatch": {},
+ "script_blob_matches": true,
+ "script_sha256_lf_matches_at_05c3305": true,
+ "script_sha256_lf_matches_at_HEAD": true,
+ "lib_sha256_lf_matches_at_05c3305": true,
+ "lib_sha256_lf_matches_at_HEAD": true,
+ "protocol_table_n": 20,
+ "protocol_table_mismatch_at_509ad90": {},
+ "protocol_sources_moved_509ad90_to_payload_head": {
+  "results/errata_critic/REPORT.md": "7cf1eb31f7a1a5df368f3c504b1a743abd0845cc"
+ },
+ "protocol_blob_at_cfb9595": "09aba6888a01dfef6a8352e43945aef07537b834",
+ "protocol_blob_at_payload_head": "2ea030ea35ae42048df5f3477eb26e76c1432a08",
+ "results/errata_dryruns/dry_b2_pre.json": {
+  "cr_bytes": 0,
+  "head": "cfb9595",
+  "clean": false,
+  "written": "2026-10-10T22:01:57",
+  "script_sha256_lf": "44747d620c32",
+  "lib_sha256_lf": "bb2ad77d4943",
+  "statuses": {
+   "E15": "CORRECTED",
+   "E16": "CORRECTED"
+  },
+  "has_encoder_top2_gap_quantiles": false
+ },
+ "results/errata_dryruns/dry_b2.json": {
+  "cr_bytes": 0,
+  "head": "cfb9595",
+  "clean": false,
+  "written": "2026-10-10T22:03:29",
+  "script_sha256_lf": "81fbc002d3f9",
+  "lib_sha256_lf": "bb2ad77d4943",
+  "statuses": {
+   "E15": "CORRECTED",
+   "E16": "CORRECTED"
+  },
+  "has_encoder_top2_gap_quantiles": true
+ },
+ "log": [
+  "8515734 2026-10-10 23:13:48 -0400 Tests: two wrong expectations in the new errata text tests (corrective)",
+  "3cec4df 2026-10-10 23:12:47 -0400 Errata recompute payload, second batch, third landing: all-arm claim scope, by-class fail rates",
+  "05c3305 2026-10-10 23:12:27 -0400 Errata, second batch after the critic's second pass: amendment, all-arm claim scope, by-class fail rates, labelled text",
+  "6998aba 2026-10-10 23:07:56 -0400 Errata critic, second batch, second pass: report appended verbatim with its scripts",
+  "553ffb4 2026-10-10 22:51:55 -0400 Errata recompute payload, second batch, second landing: post-critic fields",
+  "9c325c4 2026-10-10 22:51:40 -0400 Errata recompute and text, second batch after the critic: by-class compensator, claim-scope statuses, drift fields",
+  "53053f2 2026-10-10 22:42:32 -0400 Errata protocol: post-critic amendment for the second batch; pre-amendment dry run preserved",
+  "93ea7de 2026-10-10 22:42:31 -0400 Errata critic, second batch, first pass: report appended verbatim with its scripts",
+  "a00c50c 2026-10-10 22:13:13 -0400 Errata text generator: per-row text functions, --payload/--finding, F-15 block",
+  "861c553 2026-10-10 22:04:23 -0400 Errata recompute payload, second batch: results/errata_recompute_2.json (E15, E16)",
+  "b35e126 2026-10-10 22:03:47 -0400 Errata recompute, second batch: rows E15 and E16, helpers, tests, dry-run evidence",
+  "cfb9595 2026-10-10 21:57:01 -0400 Errata protocol: second-batch amendment pinning E15 and E16 before any code",
+  "509ad90 2026-10-10 20:35:44 -0400 ERRATA_PLAN marked done; CLAUDE.md names the sibling path as laid out on this box"
+ ]
+}

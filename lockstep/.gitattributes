@@ -1,0 +1,5 @@
+# The two copies of the lsp0 conformance vectors are pinned by the sha256 of their LF bytes
+# (VECTORS_V0_SHA256 in src/lockstep/conformance.py). Without these lines a clone made with
+# core.autocrlf=true checks them out with CRLF and self-check fails (audit of 2026-10-18, item A1).
+src/lockstep/data/vectors_v0.json -text
+conformance/vectors_v0.json -text

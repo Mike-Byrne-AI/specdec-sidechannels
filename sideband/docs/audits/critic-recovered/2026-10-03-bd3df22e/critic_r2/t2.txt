@@ -1,0 +1,3 @@
+x = lambda nm, s, B=LB: D[f"{nm}|B={B}|{s}"]
+pt = lambda arm: conc["tables"][f"{arm}|B={LB}|all"]["all"]["point"]
+y = {"a": 1}

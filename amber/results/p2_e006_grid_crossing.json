@@ -1,0 +1,44 @@
+{
+  "P_gap_below": {
+    "0.142": 0.06671142578125,
+    "0.465": 0.19032796223958334,
+    "0.93": 0.3263142903645833
+  },
+  "gap_quantiles": {
+    "0.001": 0.0028380832672119144,
+    "0.01": 0.021825180053710938,
+    "0.05": 0.10440740585327149,
+    "0.1": 0.22394542694091799,
+    "0.5": 1.878570556640625
+  },
+  "grid_crossing_e006": {
+    "cuda_bf16_b1": {
+      "coverage": 0.9887997309366862,
+      "eps_max": 0.7838964462280273,
+      "eps_p50": 0.023807525634765625,
+      "eps_p99": 0.12849729537963883,
+      "pos_rate_any_crossing_k64_delta0.0001": 1.0,
+      "pos_rate_any_crossing_k64_delta0.001": 1.0,
+      "pos_rate_any_crossing_k64_delta0.01": 1.0
+    },
+    "cuda_fp16_b1": {
+      "coverage": 0.9983406066894531,
+      "eps_max": 0.19005584716796875,
+      "eps_p50": 0.003131866455078125,
+      "eps_p99": 0.017149925231933594,
+      "pos_rate_any_crossing_k64_delta0.0001": 1.0,
+      "pos_rate_any_crossing_k64_delta0.001": 1.0,
+      "pos_rate_any_crossing_k64_delta0.01": 1.0
+    },
+    "cuda_fp32_b1": {
+      "coverage": 0.9999977747599283,
+      "eps_max": 0.000125885009765625,
+      "eps_p50": 2.86102294921875e-06,
+      "eps_p99": 1.52587890625e-05,
+      "pos_rate_any_crossing_k64_delta0.0001": 0.908447265625,
+      "pos_rate_any_crossing_k64_delta0.001": 0.21854654947916666,
+      "pos_rate_any_crossing_k64_delta0.01": 0.02587890625
+    }
+  },
+  "regime": "TinyLlama-1.1B-Chat top-64 logits, CPU fp32 reference vs GPU arms, 49152 positions; crossing = any of the CPU top-64 tokens changes floor(logit/delta) or leaves the alt top-64"
+}

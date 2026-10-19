@@ -1,0 +1,62 @@
+2026-10-09 21:14:16 RUN git clone --quiet C:\Users\Michael\Desktop\Research\sideband C:\tmp\oq20_clone
+2026-10-09 21:14:20 EXIT 0
+2026-10-09 21:14:20 RUN git checkout --quiet --detach b6d3701347e28373677f20dff5c4d36539549b05  (cwd C:\tmp\oq20_clone)
+2026-10-09 21:14:20 EXIT 0
+2026-10-09 21:14:20 clone at b6d3701347e28373677f20dff5c4d36539549b05 (detached), clean, at C:\tmp\oq20_clone
+2026-10-09 21:14:21 PIP FREEZE before_replay: 0 lines, sha256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2026-10-09 21:14:21 RUN C:\Users\Michael\AppData\Local\Programs\Python\Python311\python.exe tools/run_k3_arms.py --arm 1 --prompts data/prompts_k3_verdict.jsonl --seed 1 --load-4bit --n-prompts 6 --out C:\Users\Michael\Desktop\Research\sideband\results\real\oq20_replay_k3_s1_arm1.jsonl  (cwd C:\tmp\oq20_clone)
+2026-10-09 21:16:37 EXIT 0
+2026-10-09 21:16:37 REPLAY RUN oq20_replay_k3_s1_arm1: exit 0 (137 s)
+2026-10-09 21:16:38 RUN C:\Users\Michael\AppData\Local\Programs\Python\Python311\python.exe tools/run_k3_arms.py --arm 4 --prompts data/prompts_k3_verdict.jsonl --thresholds results/real/k3_thresholds_arm4_v2.json --seed 1 --load-4bit --n-prompts 6 --out C:\Users\Michael\Desktop\Research\sideband\results\real\oq20_replay_k3_s1_arm4.jsonl  (cwd C:\tmp\oq20_clone)
+2026-10-09 21:18:52 EXIT 0
+2026-10-09 21:18:52 REPLAY RUN oq20_replay_k3_s1_arm4: exit 0 (134 s)
+2026-10-09 21:18:52 RUN C:\Users\Michael\AppData\Local\Programs\Python\Python311\python.exe tools/run_k3_arms.py --arm 3 --prompts data/prompts_k3_verdict.jsonl --thresholds results/real/k3_thresholds_arm3.json --seed 1 --load-4bit --n-prompts 6 --out C:\Users\Michael\Desktop\Research\sideband\results\real\oq20_replay_k3_s1_arm3.jsonl  (cwd C:\tmp\oq20_clone)
+2026-10-09 21:21:08 EXIT 0
+2026-10-09 21:21:08 REPLAY RUN oq20_replay_k3_s1_arm3: exit 0 (136 s)
+2026-10-09 21:21:08 RUN C:\Users\Michael\AppData\Local\Programs\Python\Python311\python.exe tools/run_k3_arms.py --arm 1 --prompts data/prompts_oq15_verdict.jsonl --seed 3 --load-4bit --n-prompts 1 --out C:\Users\Michael\Desktop\Research\sideband\results\real\oq20_replay_oq15c_s3_arm1.jsonl  (cwd C:\tmp\oq20_clone)
+2026-10-09 21:22:10 EXIT 0
+2026-10-09 21:22:10 REPLAY RUN oq20_replay_oq15c_s3_arm1: exit 0 (62 s)
+2026-10-09 21:22:10 RUN C:\Users\Michael\AppData\Local\Programs\Python\Python311\python.exe tools/run_k3_arms.py --arm 7 --prompts data/prompts_oq15_verdict.jsonl --thresholds results/real/oq15c_thresholds_arm7_v2.json --head-weights results/real/oq15_head_weights.npz --seed 3 --load-4bit --n-prompts 1 --out C:\Users\Michael\Desktop\Research\sideband\results\real\oq20_replay_oq15c_s3_arm7.jsonl  (cwd C:\tmp\oq20_clone)
+2026-10-09 21:23:12 EXIT 0
+2026-10-09 21:23:12 REPLAY RUN oq20_replay_oq15c_s3_arm7: exit 0 (62 s)
+2026-10-09 21:23:12 RUN C:\Users\Michael\AppData\Local\Programs\Python\Python311\python.exe tools/run_k3_arms.py --arm 6 --prompts data/prompts_oq15_verdict.jsonl --thresholds results/real/oq15c_thresholds_arm6.json --head-weights results/real/oq15_head_weights.npz --seed 3 --load-4bit --n-prompts 1 --out C:\Users\Michael\Desktop\Research\sideband\results\real\oq20_replay_oq15c_s3_arm6.jsonl  (cwd C:\tmp\oq20_clone)
+2026-10-09 21:24:11 EXIT 0
+2026-10-09 21:24:11 REPLAY RUN oq20_replay_oq15c_s3_arm6: exit 0 (60 s)
+2026-10-09 21:24:12 REPLAY CHECK stdout:
+REPLAY oq20_replay_k3_s1_arm1 vs k3_verdict_s1_arm1 (seed 1, 6 prompts): generated_ids 6/6 token-exact; stats rows 6/6 equal except run_id/seconds/peak_vram_gb; meta bound; git b6d3701347e28373677f20dff5c4d36539549b05; PASS
+REPLAY oq20_replay_k3_s1_arm4 vs k3_verdict_s1_arm4 (seed 1, 6 prompts): generated_ids 6/6 token-exact; stats rows 6/6 equal except run_id/seconds/peak_vram_gb; meta bound; git b6d3701347e28373677f20dff5c4d36539549b05; PASS
+REPLAY oq20_replay_k3_s1_arm3 vs k3_verdict_s1_arm3 (seed 1, 6 prompts): generated_ids 6/6 token-exact; stats rows 6/6 equal except run_id/seconds/peak_vram_gb; meta bound; git b6d3701347e28373677f20dff5c4d36539549b05; PASS
+REPLAY oq20_replay_oq15c_s3_arm1 vs oq15c_verdict_s3_arm1 (seed 3, 1 prompt): generated_ids 1/1 token-exact; stats rows 1/1 equal except run_id/seconds/peak_vram_gb; meta bound; git b6d3701347e28373677f20dff5c4d36539549b05; PASS
+REPLAY oq20_replay_oq15c_s3_arm7 vs oq15c_verdict_s3_arm7 (seed 3, 1 prompt): generated_ids 1/1 token-exact; stats rows 1/1 equal except run_id/seconds/peak_vram_gb; meta bound; git b6d3701347e28373677f20dff5c4d36539549b05; PASS
+REPLAY oq20_replay_oq15c_s3_arm6 vs oq15c_verdict_s3_arm6 (seed 3, 1 prompt): generated_ids 1/1 token-exact; stats rows 1/1 equal except run_id/seconds/peak_vram_gb; meta bound; git b6d3701347e28373677f20dff5c4d36539549b05; PASS
+REPLAY CHECK PASS
+2026-10-09 21:24:12 REPLAY CHECK exit 0 (PASS); pip freeze before replay sha256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+replay phase exit=0
+2026-10-09 21:25:40 ENV CAPTURE before_runs (importlib.metadata name==version): 201 distributions, sha256 f9bea69f380ea17f98223e838aa41428c5b60a4887ce12b161b31b6a8673fa0d
+2026-10-09 21:27:33 PRECHECK k3_seed6_arm1: clone clean at b6d3701347e28373677f20dff5c4d36539549b05, GPU free, RAM 7.8 GB
+2026-10-09 21:27:33 RUN C:\Users\Michael\AppData\Local\Programs\Python\Python311\python.exe tools/run_k3_arms.py --arm 1 --prompts data/prompts_k3_verdict.jsonl --seed 6 --load-4bit --out C:\Users\Michael\Desktop\Research\sideband\results\real\k3_seed6_arm1.jsonl  (cwd C:\tmp\oq20_clone)
+2026-10-09 22:26:53 EXIT 0
+2026-10-09 22:26:53 DONE k3_seed6_arm1: 59.3 min; git_commit b6d3701347e28373677f20dff5c4d36539549b05; seed 6; n 210; tokens/call 3.029028067995708; dpe 1.3205556073459495; bound OK
+2026-10-09 22:26:53 PRECHECK k3_seed6_arm4: clone clean at b6d3701347e28373677f20dff5c4d36539549b05, GPU free, RAM 7.0 GB
+2026-10-09 22:26:53 RUN C:\Users\Michael\AppData\Local\Programs\Python\Python311\python.exe tools/run_k3_arms.py --arm 4 --prompts data/prompts_k3_verdict.jsonl --thresholds results/real/k3_thresholds_arm4_v2.json --seed 6 --load-4bit --out C:\Users\Michael\Desktop\Research\sideband\results\real\k3_seed6_arm4.jsonl  (cwd C:\tmp\oq20_clone)
+2026-10-09 23:23:05 EXIT 0
+2026-10-09 23:23:05 DONE k3_seed6_arm4: 56.2 min; git_commit b6d3701347e28373677f20dff5c4d36539549b05; seed 6; n 210; tokens/call 3.03936783248702; dpe 1.3127780593568734; bound OK
+2026-10-09 23:23:05 PRECHECK k3_seed6_arm3: clone clean at b6d3701347e28373677f20dff5c4d36539549b05, GPU free, RAM 11.1 GB
+2026-10-09 23:23:05 RUN C:\Users\Michael\AppData\Local\Programs\Python\Python311\python.exe tools/run_k3_arms.py --arm 3 --prompts data/prompts_k3_verdict.jsonl --thresholds results/real/k3_thresholds_arm3.json --seed 6 --load-4bit --out C:\Users\Michael\Desktop\Research\sideband\results\real\k3_seed6_arm3.jsonl  (cwd C:\tmp\oq20_clone)
+2026-10-10 00:10:42 EXIT 0
+2026-10-10 00:10:42 DONE k3_seed6_arm3: 47.6 min; git_commit b6d3701347e28373677f20dff5c4d36539549b05; seed 6; n 210; tokens/call 3.029258924536828; dpe 1.3202871527130338; bound OK
+2026-10-10 00:10:42 PRECHECK oq15c_seed6_arm1: clone clean at b6d3701347e28373677f20dff5c4d36539549b05, GPU free, RAM 11.8 GB
+2026-10-10 00:10:42 RUN C:\Users\Michael\AppData\Local\Programs\Python\Python311\python.exe tools/run_k3_arms.py --arm 1 --prompts data/prompts_oq15_verdict.jsonl --seed 6 --load-4bit --out C:\Users\Michael\Desktop\Research\sideband\results\real\oq15c_seed6_arm1.jsonl  (cwd C:\tmp\oq20_clone)
+2026-10-10 00:59:40 EXIT 0
+2026-10-10 00:59:40 DONE oq15c_seed6_arm1: 49.0 min; git_commit b6d3701347e28373677f20dff5c4d36539549b05; seed 6; n 210; tokens/call 3.016400885307304; dpe 1.3260836845273931; bound OK
+2026-10-10 00:59:40 PRECHECK oq15c_seed6_arm7: clone clean at b6d3701347e28373677f20dff5c4d36539549b05, GPU free, RAM 7.3 GB
+2026-10-10 00:59:40 RUN C:\Users\Michael\AppData\Local\Programs\Python\Python311\python.exe tools/run_k3_arms.py --arm 7 --prompts data/prompts_oq15_verdict.jsonl --thresholds results/real/oq15c_thresholds_arm7_v2.json --head-weights results/real/oq15_head_weights.npz --seed 6 --load-4bit --out C:\Users\Michael\Desktop\Research\sideband\results\real\oq15c_seed6_arm7.jsonl  (cwd C:\tmp\oq20_clone)
+2026-10-10 01:45:09 EXIT 0
+2026-10-10 01:45:09 DONE oq15c_seed6_arm7: 45.5 min; git_commit b6d3701347e28373677f20dff5c4d36539549b05; seed 6; n 210; tokens/call 2.9983718841230633; dpe 1.27543205946786; bound OK
+2026-10-10 01:45:09 PRECHECK oq15c_seed6_arm6: clone clean at b6d3701347e28373677f20dff5c4d36539549b05, GPU free, RAM 9.9 GB
+2026-10-10 01:45:09 RUN C:\Users\Michael\AppData\Local\Programs\Python\Python311\python.exe tools/run_k3_arms.py --arm 6 --prompts data/prompts_oq15_verdict.jsonl --thresholds results/real/oq15c_thresholds_arm6.json --head-weights results/real/oq15_head_weights.npz --seed 6 --load-4bit --out C:\Users\Michael\Desktop\Research\sideband\results\real\oq15c_seed6_arm6.jsonl  (cwd C:\tmp\oq20_clone)
+2026-10-10 02:27:14 EXIT 0
+2026-10-10 02:27:14 DONE oq15c_seed6_arm6: 42.1 min; git_commit b6d3701347e28373677f20dff5c4d36539549b05; seed 6; n 210; tokens/call 3.051995163240629; dpe 1.3070145649384952; bound OK
+2026-10-10 02:27:15 ENV CAPTURE after_runs (importlib.metadata name==version): 201 distributions, sha256 f9bea69f380ea17f98223e838aa41428c5b60a4887ce12b161b31b6a8673fa0d
+2026-10-10 02:27:15 ALL SIX RUNS DONE
+runs phase exit=0

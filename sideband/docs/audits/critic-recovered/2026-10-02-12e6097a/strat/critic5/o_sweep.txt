@@ -1,0 +1,190 @@
+pairs 41 pair numbers 246 scalar tokens 309 unmatched 189
+  UNMATCHED '2026' :: - OUTCOME (2026-10-02; wr
+  UNMATCHED '10' :: - OUTCOME (2026-10-02; writt
+  UNMATCHED '02' :: - OUTCOME (2026-10-02; written 
+  UNMATCHED '39' ::  (git_status_tracked empty on both payloads; instrument sha 39a6cd587492
+  UNMATCHED '10599' :: hird pre-freeze smoke attested; the frozen twin asserted at 10599fa98c27 an
+  UNMATCHED '8529532' ::  the frozen twin asserted at 10599fa98c27 and its parent at 8529532d4d78; the
+  UNMATCHED '73' :: t 8529532d4d78; the committed twin payloads re-read by sha, 73a6df94c4cc
+  UNMATCHED '0' ::  the committed twin payloads re-read by sha, 73a6df94c4cc / 0f4d5d70a4d
+  UNMATCHED '972' :: read by sha, 73a6df94c4cc / 0f4d5d70a4db, their state files 972b0a8ba693 
+  UNMATCHED '18' :: ), the primary results/real/prefetch_strat_s3.json (started 18:46:11 loc
+  UNMATCHED '46' :: the primary results/real/prefetch_strat_s3.json (started 18:46:11 local,
+  UNMATCHED '11' ::  primary results/real/prefetch_strat_s3.json (started 18:46:11 local, 17
+  UNMATCHED '18' ::  state rows) then the replication prefetch_strat_s3_r.json (18:49:10, 91
+  UNMATCHED '49' :: ate rows) then the replication prefetch_strat_s3_r.json (18:49:10, 91.9 
+  UNMATCHED '10' ::  rows) then the replication prefetch_strat_s3_r.json (18:49:10, 91.9 s, 1
+  UNMATCHED '2.3' :: .9 s, 111,696 rows); --conclude-from reproduced both; numpy 2.3.5, python
+  UNMATCHED '3.11' :: rows); --conclude-from reproduced both; numpy 2.3.5, python 3.11.9, BLAS s
+  UNMATCHED '0.3' :: duced both; numpy 2.3.5, python 3.11.9, BLAS scipy-openblas 0.3.30 with n
+  UNMATCHED '0' :: RODUCE EXACT on both — 12,960 of 12,960 twin rows compared, 0 missing, 
+  UNMATCHED '0' :: T on both — 12,960 of 12,960 twin rows compared, 0 missing, 0 extra, 0 
+  UNMATCHED '0' ::  — 12,960 of 12,960 twin rows compared, 0 missing, 0 extra, 0 needed an
+  UNMATCHED '0' :: 12,960 twin rows compared, 0 missing, 0 extra, 0 needed and 0 hits mism
+  UNMATCHED '12' :: +0.0547, +0.0788] = s_cov x D_eq^COV + s_fb x D_eq^FB to 1e-12 on both).
+  UNMATCHED '0.0549' ::  / 0.0636 + 0.0113 / 0.0141 = the current-key-unseen shares 0.0549 / 0.0777 
+  UNMATCHED '0.0777' ::  + 0.0113 / 0.0141 = the current-key-unseen shares 0.0549 / 0.0777 within ro
+  UNMATCHED '2' :: 50] / +0.0683 [+0.0579, +0.0808] (SIGNAL / SIGNAL), covered-2-4 +0.0552
+  UNMATCHED '4' :: ] / +0.0683 [+0.0579, +0.0808] (SIGNAL / SIGNAL), covered-2-4 +0.0552 [
+  UNMATCHED '5' :: 45] / +0.0503 [+0.0417, +0.0610] (SIGNAL / SIGNAL), covered-5+ +0.0438 
+  UNMATCHED '12' :: ain samples behind the key rises, the direction prediction (12) pinned, 
+  UNMATCHED '20' :: ause is scored on the value quoted above). THE ASSISTANT'S, 20 of 22 cla
+  UNMATCHED '22' :: s scored on the value quoted above). THE ASSISTANT'S, 20 of 22 clauses H
+  UNMATCHED '0' :: ove). THE ASSISTANT'S, 20 of 22 clauses HELD: (1) REPRODUCE 0 mismatche
+  UNMATCHED '2' :: 20 of 22 clauses HELD: (1) REPRODUCE 0 mismatches -> HELD; (2) strata s
+  UNMATCHED '0.01' :: 1) REPRODUCE 0 mismatches -> HELD; (2) strata shares within 0.01 of covere
+  UNMATCHED '0.90' :: ismatches -> HELD; (2) strata shares within 0.01 of covered 0.90, cur-unse
+  UNMATCHED '0.044' :: ; (2) strata shares within 0.01 of covered 0.90, cur-unseen 0.044, prev-uns
+  UNMATCHED '0.044' ::  within 0.01 of covered 0.90, cur-unseen 0.044, prev-unseen 0.044, both-uns
+  UNMATCHED '0.011' :: ered 0.90, cur-unseen 0.044, prev-unseen 0.044, both-unseen 0.011 -> HELD; 
+  UNMATCHED '3' :: nseen 0.044, prev-unseen 0.044, both-unseen 0.011 -> HELD; (3) D_eq^COV
+  UNMATCHED '+0.035' ::  prev-unseen 0.044, both-unseen 0.011 -> HELD; (3) D_eq^COV +0.035..+0.055, 
+  UNMATCHED '0.055' :: een 0.044, both-unseen 0.011 -> HELD; (3) D_eq^COV +0.035..+0.055, NOT-SHOW
+  UNMATCHED '4' ::  +0.035..+0.055, NOT-SHOWN modal, straddle likely -> HELD; (4) D_eq^FB 
+  UNMATCHED '+0.12' :: OT-SHOWN modal, straddle likely -> HELD; (4) D_eq^FB SIGNAL +0.12..+0.28 ->
+  UNMATCHED '0.28' ::  modal, straddle likely -> HELD; (4) D_eq^FB SIGNAL +0.12..+0.28 -> HELD; 
+  UNMATCHED '4' :: e likely -> HELD; (4) D_eq^FB SIGNAL +0.12..+0.28 -> HELD; (4) cur-unse
+  UNMATCHED '+0.10' :: LD; (4) D_eq^FB SIGNAL +0.12..+0.28 -> HELD; (4) cur-unseen +0.10..+0.25 ->
+  UNMATCHED '0.25' :: D_eq^FB SIGNAL +0.12..+0.28 -> HELD; (4) cur-unseen +0.10..+0.25 -> HELD; 
+  UNMATCHED '4' :: +0.12..+0.28 -> HELD; (4) cur-unseen +0.10..+0.25 -> HELD; (4) prev-uns
+  UNMATCHED '+0.06' ::  HELD; (4) cur-unseen +0.10..+0.25 -> HELD; (4) prev-unseen +0.06..+0.18 ->
+  UNMATCHED '0.18' :: 4) cur-unseen +0.10..+0.25 -> HELD; (4) prev-unseen +0.06..+0.18 -> HELD; 
+  UNMATCHED '4' :: 0.10..+0.25 -> HELD; (4) prev-unseen +0.06..+0.18 -> HELD; (4) both-uns
+  UNMATCHED '+0.25' :: HELD; (4) prev-unseen +0.06..+0.18 -> HELD; (4) both-unseen +0.25..+0.55 ->
+  UNMATCHED '0.55' :: ) prev-unseen +0.06..+0.18 -> HELD; (4) both-unseen +0.25..+0.55 -> HELD; 
+  UNMATCHED '5' :: 0.06..+0.18 -> HELD; (4) both-unseen +0.25..+0.55 -> HELD; (5) Q1 modal
+  UNMATCHED '6' :: .25..+0.55 -> HELD; (5) Q1 modal FALLBACK-LOCATED -> HELD; (6) pt_only 
+  UNMATCHED '0.55' :: -> HELD; (5) Q1 modal FALLBACK-LOCATED -> HELD; (6) pt_only 0.55..0.75 -> 
+  UNMATCHED '7' ::  FALLBACK-LOCATED -> HELD; (6) pt_only 0.55..0.75 -> HELD; (7) PT GAIN 
+  UNMATCHED '+0.003' :: -> HELD; (6) pt_only 0.55..0.75 -> HELD; (7) PT GAIN on ALL +0.003..+0.025 N
+  UNMATCHED '0.025' :: (6) pt_only 0.55..0.75 -> HELD; (7) PT GAIN on ALL +0.003..+0.025 NOT-SHOWN
+  UNMATCHED '7' :: HELD; (7) PT GAIN on ALL +0.003..+0.025 NOT-SHOWN -> HELD; (7) PT GAIN 
+  UNMATCHED '+0.03' :: +0.003..+0.025 NOT-SHOWN -> HELD; (7) PT GAIN on CUR-UNSEEN +0.03..+0.15 ->
+  UNMATCHED '0.15' :: +0.025 NOT-SHOWN -> HELD; (7) PT GAIN on CUR-UNSEEN +0.03..+0.15 -> HELD; 
+  UNMATCHED '+0.040' :: PT GAIN on CUR-UNSEEN +0.03..+0.15 -> HELD; (8) D_pt on ALL +0.040..+0.058, 
+  UNMATCHED '0.058' :: n CUR-UNSEEN +0.03..+0.15 -> HELD; (8) D_pt on ALL +0.040..+0.058, SIGNAL w
+  UNMATCHED '9' :: 40..+0.058, SIGNAL with a straddle (reported now) -> HELD; (9) D_eq^PT 
+  UNMATCHED '0.004' ::  with a straddle (reported now) -> HELD; (9) D_eq^PT within 0.004 of D_pt -
+  UNMATCHED '9' :: ed now) -> HELD; (9) D_eq^PT within 0.004 of D_pt -> HELD; (9) history_
+  UNMATCHED '+0.000' :: hin 0.004 of D_pt -> HELD; (9) history_tok_pt - history_tok +0.000..+0.010 -
+  UNMATCHED '0.010' ::  of D_pt -> HELD; (9) history_tok_pt - history_tok +0.000..+0.010 -> HELD; 
+  UNMATCHED '10' :: ; (9) history_tok_pt - history_tok +0.000..+0.010 -> HELD; (10) every ne
+  UNMATCHED '11' :: 010 -> HELD; (10) every new-arm lambda interior -> FAILED; (11) the repl
+  UNMATCHED '+0.045' ::  the replication agrees on both labels -> HELD; (c) D_eq^PT +0.045..+0.066 S
+  UNMATCHED '0.066' :: ication agrees on both labels -> HELD; (c) D_eq^PT +0.045..+0.066 SIGNAL mo
+  UNMATCHED '+0.050' :: .+0.066 SIGNAL modal, straddle likely -> HELD; (c) D_add^PT +0.050..+0.072 S
+  UNMATCHED '0.072' :: IGNAL modal, straddle likely -> HELD; (c) D_add^PT +0.050..+0.072 SIGNAL ->
+  UNMATCHED '+0.003' :: D_add^PT +0.050..+0.072 SIGNAL -> HELD; (c) dilution anchor +0.003..+0.008 -
+  UNMATCHED '0.008' :: +0.050..+0.072 SIGNAL -> HELD; (c) dilution anchor +0.003..+0.008 -> HELD; 
+  UNMATCHED '12' ::  +0.003..+0.008 -> HELD; (c) Q2 modal PT-SURVIVES -> HELD; (12) covered-
+  UNMATCHED '2' ::  (c) Q2 modal PT-SURVIVES -> HELD; (12) covered-1 + covered-2-4 under 0
+  UNMATCHED '4' :: c) Q2 modal PT-SURVIVES -> HELD; (12) covered-1 + covered-2-4 under 0.0
+  UNMATCHED '0.08' :: dal PT-SURVIVES -> HELD; (12) covered-1 + covered-2-4 under 0.08 of test p
+  UNMATCHED '12' :: ed-1 + covered-2-4 under 0.08 of test positions -> FAILED; (12) D_eq on 
+  UNMATCHED '5' :: AILED; (12) D_eq on the sparse covered strata above covered-5+'s -> HEL
+  UNMATCHED '10' :: strata above covered-5+'s -> HELD. The two FAILED clauses: (10) the pt_o
+  UNMATCHED '12' ::  both harvests, the one grid edge, on a reported-only arm; (12)'s share 
+  UNMATCHED '0.1505' :: y arm; (12)'s share clause — the sparse covered strata hold 0.1505 of the te
+  UNMATCHED '0.08' :: hold 0.1505 of the test positions against the pinned 'under 0.08' (the twi
+  UNMATCHED '0.0196' ::  pinned 'under 0.08' (the twin's train singleton-key share, 0.0196, was the 
+  UNMATCHED '12' ::  the test positions whose keys are sparse in train), while (12)'s direct
+  UNMATCHED '18' :: n), while (12)'s direction clause HELD. THE CRITIC'S, 16 of 18 clauses H
+  UNMATCHED '2' :: 6 of 18 clauses HELD: (1) REPRODUCE EXACT on both -> HELD; (2) primary 
+  UNMATCHED '+0.041' :: : (1) REPRODUCE EXACT on both -> HELD; (2) primary D_eq^COV +0.041..+0.054, 
+  UNMATCHED '0.054' :: RODUCE EXACT on both -> HELD; (2) primary D_eq^COV +0.041..+0.054, NOT-SHOW
+  UNMATCHED '3' :: _eq^COV +0.041..+0.054, NOT-SHOWN with a straddle -> HELD; (3) D_eq^FB 
+  UNMATCHED '+0.13' :: 041..+0.054, NOT-SHOWN with a straddle -> HELD; (3) D_eq^FB +0.13..+0.24 SI
+  UNMATCHED '0.24' :: 054, NOT-SHOWN with a straddle -> HELD; (3) D_eq^FB +0.13..+0.24 SIGNAL ->
+  UNMATCHED '3' :: straddle -> HELD; (3) D_eq^FB +0.13..+0.24 SIGNAL -> HELD; (3) cur-unse
+  UNMATCHED '+0.13' :: LD; (3) D_eq^FB +0.13..+0.24 SIGNAL -> HELD; (3) cur-unseen +0.13..+0.23 ->
+  UNMATCHED '0.23' :: D_eq^FB +0.13..+0.24 SIGNAL -> HELD; (3) cur-unseen +0.13..+0.23 -> HELD; 
+  UNMATCHED '3' :: +0.24 SIGNAL -> HELD; (3) cur-unseen +0.13..+0.23 -> HELD; (3) prev-uns
+  UNMATCHED '+0.08' ::  HELD; (3) cur-unseen +0.13..+0.23 -> HELD; (3) prev-unseen +0.08..+0.16 ->
+  UNMATCHED '0.16' :: 3) cur-unseen +0.13..+0.23 -> HELD; (3) prev-unseen +0.08..+0.16 -> HELD; 
+  UNMATCHED '3' :: 0.13..+0.23 -> HELD; (3) prev-unseen +0.08..+0.16 -> HELD; (3) both-uns
+  UNMATCHED '+0.20' :: HELD; (3) prev-unseen +0.08..+0.16 -> HELD; (3) both-unseen +0.20..+0.50 ->
+  UNMATCHED '0.50' :: ) prev-unseen +0.08..+0.16 -> HELD; (3) both-unseen +0.20..+0.50 -> FAILED
+  UNMATCHED '4' :: 08..+0.16 -> HELD; (3) both-unseen +0.20..+0.50 -> FAILED; (4) Q1 modal
+  UNMATCHED '5' :: .+0.50 -> FAILED; (4) Q1 modal (FALLBACK-LOCATED) -> HELD; (5) PT GAIN 
+  UNMATCHED '+0.002' :: (4) Q1 modal (FALLBACK-LOCATED) -> HELD; (5) PT GAIN on ALL +0.002..+0.012 N
+  UNMATCHED '0.012' :: dal (FALLBACK-LOCATED) -> HELD; (5) PT GAIN on ALL +0.002..+0.012 NOT-SHOWN
+  UNMATCHED '5' :: HELD; (5) PT GAIN on ALL +0.002..+0.012 NOT-SHOWN -> HELD; (5) PT GAIN 
+  UNMATCHED '-0.002' :: LL +0.002..+0.012 NOT-SHOWN -> HELD; (5) PT GAIN on COVERED -0.002..+0.006 -
+  UNMATCHED '0.006' :: ..+0.012 NOT-SHOWN -> HELD; (5) PT GAIN on COVERED -0.002..+0.006 -> HELD; 
+  UNMATCHED '5' :: WN -> HELD; (5) PT GAIN on COVERED -0.002..+0.006 -> HELD; (5) PT GAIN 
+  UNMATCHED '+0.03' :: n COVERED -0.002..+0.006 -> HELD; (5) PT GAIN on CUR-UNSEEN +0.03..+0.10 ->
+  UNMATCHED '0.10' :: D -0.002..+0.006 -> HELD; (5) PT GAIN on CUR-UNSEEN +0.03..+0.10 -> FAILED
+  UNMATCHED '6' :: -> HELD; (5) PT GAIN on CUR-UNSEEN +0.03..+0.10 -> FAILED; (6) pt_only 
+  UNMATCHED '0.52' :: ) PT GAIN on CUR-UNSEEN +0.03..+0.10 -> FAILED; (6) pt_only 0.52..0.66 -> 
+  UNMATCHED '7' :: EN +0.03..+0.10 -> FAILED; (6) pt_only 0.52..0.66 -> HELD; (7) D_pt on 
+  UNMATCHED '+0.048' ::  -> FAILED; (6) pt_only 0.52..0.66 -> HELD; (7) D_pt on ALL +0.048..+0.059, 
+  UNMATCHED '0.059' :: D; (6) pt_only 0.52..0.66 -> HELD; (7) D_pt on ALL +0.048..+0.059, straddle
+  UNMATCHED '7' :: _pt on ALL +0.048..+0.059, straddle, SIGNAL modal -> HELD; (7) Q2 PT-SU
+  UNMATCHED '+0.000' :: PT-SURVIVES modal -> HELD; (8) history_tok_pt - history_tok +0.000..+0.006 -
+  UNMATCHED '0.006' :: ES modal -> HELD; (8) history_tok_pt - history_tok +0.000..+0.006 -> HELD; 
+  UNMATCHED '0.005' :: ry_tok +0.000..+0.006 -> HELD; (8) D_add^PT about D_eq^PT + 0.005, SIGNAL -
+  UNMATCHED '9' ::  HELD; (8) D_add^PT about D_eq^PT + 0.005, SIGNAL -> HELD; (9) replicat
+  UNMATCHED '+0.042' :: t D_eq^PT + 0.005, SIGNAL -> HELD; (9) replication D_eq^COV +0.042..+0.056 -
+  UNMATCHED '0.056' ::  + 0.005, SIGNAL -> HELD; (9) replication D_eq^COV +0.042..+0.056 -> HELD; 
+  UNMATCHED '9' ::  -> HELD; (9) replication D_eq^COV +0.042..+0.056 -> HELD; (9) replicat
+  UNMATCHED '+0.050' :: ation D_eq^COV +0.042..+0.056 -> HELD; (9) replication D_pt +0.050..+0.062 S
+  UNMATCHED '0.062' :: q^COV +0.042..+0.056 -> HELD; (9) replication D_pt +0.050..+0.062 SIGNAL ->
+  UNMATCHED '9' ::  HELD; (9) replication D_pt +0.050..+0.062 SIGNAL -> HELD; (9) replicat
+  UNMATCHED '+0.20' :: 2 -> HELD. The FAILED clauses: both-unseen +0.5068 against '+0.20..+0.50' (
+  UNMATCHED '0.50' :: D. The FAILED clauses: both-unseen +0.5068 against '+0.20..+0.50' (the rep
+  UNMATCHED '+0.03' :: 13 is inside it) and PT GAIN on CUR-UNSEEN +0.1118 against '+0.03..+0.10' —
+  UNMATCHED '0.10' :: side it) and PT GAIN on CUR-UNSEEN +0.1118 against '+0.03..+0.10' — both a
+  UNMATCHED '+0.038' :: SE LISTS (primary): the critic's — primary D_eq^COV outside +0.038..+0.058: 
+  UNMATCHED '0.058' :: (primary): the critic's — primary D_eq^COV outside +0.038..+0.058: no; D_eq
+  UNMATCHED '+0.26' :: ^COV outside +0.038..+0.058: no; D_eq^FB NOT-SHOWN or above +0.26: no; PT G
+  UNMATCHED '+0.015' :: 0.058: no; D_eq^FB NOT-SHOWN or above +0.26: no; PT GAIN >= +0.015 on ALL or
+  UNMATCHED '+0.010' :: OT-SHOWN or above +0.26: no; PT GAIN >= +0.015 on ALL or >= +0.010 on COVERE
+  UNMATCHED '0.48' :: >= +0.015 on ALL or >= +0.010 on COVERED: no; pt_only below 0.48 or above 
+  UNMATCHED '0.72' :: LL or >= +0.010 on COVERED: no; pt_only below 0.48 or above 0.72: no; D_pt
+  UNMATCHED '+0.045' :: VERED: no; pt_only below 0.48 or above 0.72: no; D_pt below +0.045 or above 
+  UNMATCHED '+0.065' :: ly below 0.48 or above 0.72: no; D_pt below +0.045 or above +0.065: no; hist
+  UNMATCHED '+0.010' :: 045 or above +0.065: no; history_tok_pt - history_tok above +0.010: no; any 
+  UNMATCHED '+0.06' :: etween harvests: no; the assistant's — D_eq^COV at or above +0.06 (amended;
+  UNMATCHED '+0.08' ::  no; the assistant's — D_eq^COV at or above +0.06 (amended; +0.08 as first 
+  UNMATCHED '26' :: s hit. CONSEQUENCES EXECUTED: the dated STATUS line under F-26 (FINDINGS
+  UNMATCHED '9' :: e the coverage caveat in the twin's OUTCOME above, under OQ-9 in OPEN_Q
+  UNMATCHED '6' :: UTURE_IDEAS.md, on the SP-MoE line of README.md and under K-6 in docs/W
+  UNMATCHED '6' :: line of README.md and under K-6 in docs/WHY_THIS_DIES.md (K-6 stays UNT
+  UNMATCHED '2' :: RED" and no "LOCATED" claim (both gates straddle), no stage-2 strike (P
+  UNMATCHED '9' :: xt; no wall-clock, bytes or latency sentence is licensed (D-9; K-5 / K-
+  UNMATCHED '5' :: o wall-clock, bytes or latency sentence is licensed (D-9; K-5 / K-6 sta
+  UNMATCHED '6' :: -clock, bytes or latency sentence is licensed (D-9; K-5 / K-6 stay UNTE
+  UNMATCHED '24' :: t the same address arms with its own pinned branches; and F-24's full-fr
+  UNMATCHED '23' :: 24's full-free block ((a) ++ TOK ++ z-scored h_a, stored, F-23) as the s
+  UNMATCHED '24' ::  next rung, so R2 is named (every Q1 branch names it) and F-24's full-fr
+  UNMATCHED '26' ::  line and the economics row), docs/FINDINGS_INDEX.md (the F-26 row, the 
+  UNMATCHED '9' :: conomics row), docs/FINDINGS_INDEX.md (the F-26 row, the OQ-9 arc secti
+  UNMATCHED '6' :: INGS_INDEX.md (the F-26 row, the OQ-9 arc section and the K-6 bullet) a
+  UNMATCHED '9' :: rc section and the K-6 bullet) and docs/GLOSSARY.md (the OQ-9 row), eac
+  UNMATCHED '2' ::  it, +0.0261 / +0.0287, so nothing is absorbed and no stage-2 sentence 
+  UNMATCHED '+0.4907' :: out, scratch and not evidence, moves that stratum's D_eq to +0.4907 / +0.3672
+  UNMATCHED '+0.3672' :: ch and not evidence, moves that stratum's D_eq to +0.4907 / +0.3672 and D_eq^
+  UNMATCHED '+0.1793' :: ves that stratum's D_eq to +0.4907 / +0.3672 and D_eq^FB to +0.1793 / +0.1530
+  UNMATCHED '+0.1530' :: tratum's D_eq to +0.4907 / +0.3672 and D_eq^FB to +0.1793 / +0.1530 without p
+  UNMATCHED '+0.0471' :: t prompt 13, and no single-prompt drop takes D_eq^COV above +0.0471 / +0.0489
+  UNMATCHED '+0.0538' :: D_eq^COV above +0.0471 / +0.0489 or D_eq^PT below +0.0509 / +0.0538); 'the re
+  UNMATCHED '2026' :: ing free p_t information on covered keys. CRITIC RECOMPUTE (2026-10-02, be
+  UNMATCHED '10' :: ree p_t information on covered keys. CRITIC RECOMPUTE (2026-10-02, befor
+  UNMATCHED '02' ::  p_t information on covered keys. CRITIC RECOMPUTE (2026-10-02, before an
+  UNMATCHED '351' :: state files with its own parser and bootstrap — per payload 351 tables (p
+  UNMATCHED '297' :: d bootstrap — per payload 351 tables (pooled and per gate), 297 deltas, 2
+  UNMATCHED '71' :: bles (pooled and per gate), 297 deltas, 27 scope fields and 71 label fie
+  UNMATCHED '26,558' :: per gate), 297 deltas, 27 scope fields and 71 label fields, 26,558 values, 5
+  UNMATCHED '53,116' :: deltas, 27 scope fields and 71 label fields, 26,558 values, 53,116 in all, a
+  UNMATCHED '0.0' :: ields, 26,558 values, 53,116 in all, at max abs discrepancy 0.0, every re
+  UNMATCHED '25,920' :: med over the six strata reproduce every committed twin row, 25,920 values pe
+  UNMATCHED '0' :: roduce every committed twin row, 25,920 values per harvest, 0 mismatche
+  UNMATCHED '0.0' ::  values per harvest, 0 mismatches) and the identity (|diff| 0.0 on delta,
+  UNMATCHED '1,377' :: nd the identity (|diff| 0.0 on delta, lo and hi; the twin's 1,377 table val
+  UNMATCHED '0' ::  the twin's 1,377 table values reproduced as well); pairing 0 violation
+  UNMATCHED '17' :: ard shas equal to the committed metas; the runs sequential, 17 s and 196
+  UNMATCHED '196' :: equal to the committed metas; the runs sequential, 17 s and 196 s after t
+  UNMATCHED '0.3' ::  sequential, 17 s and 196 s after the freeze, mtimes within 0.3 s of each
+  UNMATCHED '0' :: end-of-run and now, not continuously); --conclude-from exit 0 on both; 
+  UNMATCHED '87' :: ath reproduced the registered state file BYTE-FOR-BYTE (sha 87f6705bc5f2
+  UNMATCHED '93.3' ::  (sha 87f6705bc5f2 on both) and the conclusion identically (93.3 s of elap

@@ -1,0 +1,365 @@
+{
+  "R_max": 64,
+  "_experiment": "p3_rac_rate",
+  "_written_unix": 1788091134,
+  "band_question1_heldout_concatenated": "PASS",
+  "chosen": {
+    "increment": 64,
+    "rescale_limit": 4096
+  },
+  "draft": "meta-llama/Llama-3.2-1B",
+  "fp32_decode_time_penalty_vs_bf16": 3.6537496167328727,
+  "ms": [
+    2,
+    4
+  ],
+  "protocol": "experiments/P3_PROTOCOL.md",
+  "regime": "P1 stream (Llama-3.2-3B->1B base, greedy, 256-token continuations of sideband prompts); held-out rows >= 100; rates are real payload bytes x 8 per token, headers excluded; per_prompt includes range-coder flush/padding",
+  "split_at_row": 100,
+  "splits": {
+    "held_out": {
+      "ac_under_draft_bits_per_token": 0.4379813931659886,
+      "amber_v0_gamma_bits_per_token": 0.4213075060532688,
+      "amber_v0_gamma_per_prompt_bytepadded_bits_per_token": 0.39418886198547215,
+      "divergence_rate": 0.06097659402744148,
+      "escape_mass": {
+        "0.142": {
+          "2": 0.02586763518966909,
+          "4": 0.030064568200161422
+        },
+        "0.465": {
+          "2": 0.05613397901533495,
+          "4": 0.06517352703793382
+        },
+        "0.93": {
+          "2": 0.1112590799031477,
+          "4": 0.12473769168684423
+        }
+      },
+      "lzma_bits_per_token": 3.5396287328490716,
+      "modes": {
+        "concatenated": {
+          "rac1": {
+            "bits_per_token": 0.41711057304277643,
+            "escape_price_vs_rac1": 0.0,
+            "ideal_bits_per_token": 0.4169074046939997,
+            "vs_ac_bootstrap": {
+              "ci95": [
+                -0.04016788480682901,
+                -0.0012365256191119484
+              ],
+              "n_boot": 1000,
+              "point": -0.021073988471988936,
+              "seed": 0
+            }
+          },
+          "rac1_qctx_UNSAFE": {
+            "bits_per_token": 0.321226795803067,
+            "escape_price_vs_rac1": -0.09588377723970942,
+            "ideal_bits_per_token": 0.32113977344782896,
+            "vs_ac_bootstrap": {
+              "ci95": [
+                -0.13075618681990653,
+                -0.1016609780921213
+              ],
+              "n_boot": 1000,
+              "point": -0.1168416197181596,
+              "seed": 0
+            }
+          },
+          "rac1_tie0.142_m2": {
+            "bits_per_token": 0.5527037933817595,
+            "escape_price_vs_rac1": 0.13559322033898302,
+            "ideal_bits_per_token": 0.5525041347877915
+          },
+          "rac1_tie0.142_m4": {
+            "bits_per_token": 0.5785310734463277,
+            "escape_price_vs_rac1": 0.16142050040355127,
+            "ideal_bits_per_token": 0.5782493851796732
+          },
+          "rac1_tie0.465_m2": {
+            "bits_per_token": 0.6385794995964488,
+            "escape_price_vs_rac1": 0.22146892655367234,
+            "ideal_bits_per_token": 0.6384833426698271
+          },
+          "rac1_tie0.465_m4": {
+            "bits_per_token": 0.6828087167070218,
+            "escape_price_vs_rac1": 0.2656981436642454,
+            "ideal_bits_per_token": 0.6824907451670771
+          },
+          "rac1_tie0.93_m2": {
+            "bits_per_token": 0.7606133979015335,
+            "escape_price_vs_rac1": 0.34350282485875705,
+            "ideal_bits_per_token": 0.7602775159028965
+          },
+          "rac1_tie0.93_m4": {
+            "bits_per_token": 0.8348668280871671,
+            "escape_price_vs_rac1": 0.4177562550443906,
+            "ideal_bits_per_token": 0.8346854838814886
+          }
+        },
+        "per_prompt": {
+          "rac1": {
+            "bits_per_token": 0.5510895883777239,
+            "escape_price_vs_rac1": 0.0,
+            "ideal_bits_per_token": 0.53296073675488
+          },
+          "rac1_qctx_UNSAFE": {
+            "bits_per_token": 0.6443906376109766,
+            "escape_price_vs_rac1": 0.09330104923325266,
+            "ideal_bits_per_token": 0.6248380086231526
+          },
+          "rac1_tie0.142_m2": {
+            "bits_per_token": 0.7231638418079096,
+            "escape_price_vs_rac1": 0.17207425343018568,
+            "ideal_bits_per_token": 0.7051067682811963
+          },
+          "rac1_tie0.142_m4": {
+            "bits_per_token": 0.7480225988700565,
+            "escape_price_vs_rac1": 0.19693301049233258,
+            "ideal_bits_per_token": 0.7293416441841086
+          },
+          "rac1_tie0.465_m2": {
+            "bits_per_token": 0.825181598062954,
+            "escape_price_vs_rac1": 0.27409200968523006,
+            "ideal_bits_per_token": 0.8044707903899305
+          },
+          "rac1_tie0.465_m4": {
+            "bits_per_token": 0.853591606133979,
+            "escape_price_vs_rac1": 0.30250201775625507,
+            "ideal_bits_per_token": 0.8348137107762628
+          },
+          "rac1_tie0.93_m2": {
+            "bits_per_token": 0.9468926553672317,
+            "escape_price_vs_rac1": 0.39580306698950773,
+            "ideal_bits_per_token": 0.9270215061383077
+          },
+          "rac1_tie0.93_m4": {
+            "bits_per_token": 0.9866020984665053,
+            "escape_price_vs_rac1": 0.43551251008878133,
+            "ideal_bits_per_token": 0.9668046084713149
+          }
+        }
+      },
+      "n_prompts": 100,
+      "positions": 24780,
+      "rank_gt_R_rate": 4.0355125100887815e-05,
+      "raw_bits_per_token": 16.968666793195208,
+      "utf8_bits_per_token": 37.14447134786118,
+      "zlib9_bits_per_token": 3.9570621468926555,
+      "zstd19_bits_per_token": 3.469895076674738
+    },
+    "tuning": {
+      "ac_under_draft_bits_per_token": 0.5074654522442287,
+      "amber_v0_gamma_bits_per_token": 0.5274216229630242,
+      "amber_v0_gamma_per_prompt_bytepadded_bits_per_token": 0.50359831251551,
+      "divergence_rate": 0.07486144428819588,
+      "escape_mass": {
+        "0.142": {
+          "2": 0.02766978244685251,
+          "4": 0.033708329886673834
+        },
+        "0.465": {
+          "2": 0.062246670526925306,
+          "4": 0.07349656712714038
+        },
+        "0.93": {
+          "2": 0.12420382165605096,
+          "4": 0.14087186698651666
+        }
+      },
+      "lzma_bits_per_token": 4.255107949375465,
+      "modes": {
+        "concatenated": {
+          "rac1": {
+            "bits_per_token": 0.5204731574158326,
+            "escape_price_vs_rac1": 0.0,
+            "ideal_bits_per_token": 0.5201560675070146,
+            "vs_ac_bootstrap": {
+              "ci95": [
+                -0.008840523603493973,
+                0.03559766139054126
+              ],
+              "n_boot": 1000,
+              "point": 0.01269061526278592,
+              "seed": 0
+            }
+          },
+          "rac1_qctx_UNSAFE": {
+            "bits_per_token": 0.4020183638018033,
+            "escape_price_vs_rac1": -0.11845479361402927,
+            "ideal_bits_per_token": 0.4018629908597567,
+            "vs_ac_bootstrap": {
+              "ci95": [
+                -0.1205090835884895,
+                -0.0874012640693987
+              ],
+              "n_boot": 1000,
+              "point": -0.1056024613844721,
+              "seed": 0
+            }
+          },
+          "rac1_tie0.142_m2": {
+            "bits_per_token": 0.6630821407891472,
+            "escape_price_vs_rac1": 0.14260898337331462,
+            "ideal_bits_per_token": 0.6628498375840617
+          },
+          "rac1_tie0.142_m4": {
+            "bits_per_token": 0.692199520224998,
+            "escape_price_vs_rac1": 0.17172636280916542,
+            "ideal_bits_per_token": 0.6919750378649564
+          },
+          "rac1_tie0.465_m2": {
+            "bits_per_token": 0.7646620895028539,
+            "escape_price_vs_rac1": 0.2441889320870213,
+            "ideal_bits_per_token": 0.7645156237048032
+          },
+          "rac1_tie0.465_m4": {
+            "bits_per_token": 0.8133013483331955,
+            "escape_price_vs_rac1": 0.2928281909173629,
+            "ideal_bits_per_token": 0.8130197785006779
+          },
+          "rac1_tie0.93_m2": {
+            "bits_per_token": 0.8946976590288692,
+            "escape_price_vs_rac1": 0.37422450161303666,
+            "ideal_bits_per_token": 0.894594058997244
+          },
+          "rac1_tie0.93_m4": {
+            "bits_per_token": 0.9770866076598561,
+            "escape_price_vs_rac1": 0.45661345024402356,
+            "ideal_bits_per_token": 0.9769167868567171
+          }
+        },
+        "per_prompt": {
+          "rac1": {
+            "bits_per_token": 0.6746629167011332,
+            "escape_price_vs_rac1": 0.0,
+            "ideal_bits_per_token": 0.6581059489842185
+          },
+          "rac1_qctx_UNSAFE": {
+            "bits_per_token": 0.7633385722557697,
+            "escape_price_vs_rac1": 0.08867565555463652,
+            "ideal_bits_per_token": 0.7438094357553156
+          },
+          "rac1_tie0.142_m2": {
+            "bits_per_token": 0.8622714864753082,
+            "escape_price_vs_rac1": 0.18760856977417495,
+            "ideal_bits_per_token": 0.8429023428351461
+          },
+          "rac1_tie0.142_m4": {
+            "bits_per_token": 0.8943667797170982,
+            "escape_price_vs_rac1": 0.219703863015965,
+            "ideal_bits_per_token": 0.8747194579381614
+          },
+          "rac1_tie0.465_m2": {
+            "bits_per_token": 0.986351228389445,
+            "escape_price_vs_rac1": 0.3116883116883118,
+            "ideal_bits_per_token": 0.9662404354788033
+          },
+          "rac1_tie0.465_m4": {
+            "bits_per_token": 1.0201009181900902,
+            "escape_price_vs_rac1": 0.345438001488957,
+            "ideal_bits_per_token": 1.0005769511237077
+          },
+          "rac1_tie0.93_m2": {
+            "bits_per_token": 1.1157250392919182,
+            "escape_price_vs_rac1": 0.44106212259078503,
+            "ideal_bits_per_token": 1.0978335288642553
+          },
+          "rac1_tie0.93_m4": {
+            "bits_per_token": 1.1597319877574654,
+            "escape_price_vs_rac1": 0.48506907105633223,
+            "ideal_bits_per_token": 1.139062078972092
+          }
+        }
+      },
+      "n_prompts": 100,
+      "positions": 24178,
+      "rank_gt_R_rate": 0.00028951939779965256,
+      "raw_bits_per_token": 16.968666793195208,
+      "utf8_bits_per_token": 38.515013648771614,
+      "zlib9_bits_per_token": 4.775911986103069,
+      "zstd19_bits_per_token": 4.193564397386053
+    }
+  },
+  "target": "meta-llama/Llama-3.2-3B",
+  "thetas": [
+    0.142,
+    0.465,
+    0.93
+  ],
+  "tuning_grid": [
+    {
+      "bits_per_token": 0.5284142608983373,
+      "increment": 8,
+      "rescale_limit": 4096,
+      "roundtrip_ok": true
+    },
+    {
+      "bits_per_token": 0.5303995367689636,
+      "increment": 8,
+      "rescale_limit": 16384,
+      "roundtrip_ok": true
+    },
+    {
+      "bits_per_token": 0.5307304160807346,
+      "increment": 8,
+      "rescale_limit": 65536,
+      "roundtrip_ok": true
+    },
+    {
+      "bits_per_token": 0.5257672264041691,
+      "increment": 16,
+      "rescale_limit": 4096,
+      "roundtrip_ok": true
+    },
+    {
+      "bits_per_token": 0.5307304160807346,
+      "increment": 16,
+      "rescale_limit": 16384,
+      "roundtrip_ok": true
+    },
+    {
+      "bits_per_token": 0.5317230540160477,
+      "increment": 16,
+      "rescale_limit": 65536,
+      "roundtrip_ok": true
+    },
+    {
+      "bits_per_token": 0.5224584332864588,
+      "increment": 32,
+      "rescale_limit": 4096,
+      "roundtrip_ok": true
+    },
+    {
+      "bits_per_token": 0.5300686574571924,
+      "increment": 32,
+      "rescale_limit": 16384,
+      "roundtrip_ok": true
+    },
+    {
+      "bits_per_token": 0.5327156919513607,
+      "increment": 32,
+      "rescale_limit": 65536,
+      "roundtrip_ok": true
+    },
+    {
+      "bits_per_token": 0.5204731574158326,
+      "increment": 64,
+      "rescale_limit": 4096,
+      "roundtrip_ok": true
+    },
+    {
+      "bits_per_token": 0.5280833815865663,
+      "increment": 64,
+      "rescale_limit": 16384,
+      "roundtrip_ok": true
+    },
+    {
+      "bits_per_token": 0.5333774505749028,
+      "increment": 64,
+      "rescale_limit": 65536,
+      "roundtrip_ok": true
+    }
+  ]
+}

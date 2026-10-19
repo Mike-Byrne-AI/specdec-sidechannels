@@ -1,0 +1,400 @@
+{
+ "registered": "OQ-9 STAGE-1 STRATIFIED COVERAGE READ REGISTRATION (docs/BLUEPRINT.md, 2026-10-01 amendment; post-hoc diagnostic; NON-CRITERION)",
+ "git_commit": "fea243157df63bb88c54f123d43c94d42d42765a",
+ "git_status_tracked": [],
+ "instrument_sha256": "39a6cd587492e13d66da47ce75df0ec17ffe2ab57c3ee0ae760f4c574e110e0c",
+ "frozen_twin": {
+  "path": "tools/run_prefetch_bigram.py",
+  "sha256_lf": "10599fa98c276751f3296ecff6815aae07a701e35d13b5a2fb6ff8170ba7a11a"
+ },
+ "frozen_instrument": {
+  "path": "tools/run_prefetch_readouts.py",
+  "sha256_lf": "8529532d4d787833cfa667a11d406ffa928c9c079836401e4930d43a6fb0e69a"
+ },
+ "harvest_dir": "results/real/harvest_moe_r",
+ "harvest_npz_sha256": {
+  "moe_s10.npz": "ec58591ab1a997448f106c804b1037a98cb5b0a77a2e17dc9041e9da4e2b98fb",
+  "moe_s11.npz": "8746a53521d8f74c711faac5b65debed56ab27cc27c2c26c2548d7197a1feac4",
+  "moe_s8.npz": "b68f213760ec8b0044f00bd2d78ba996aaf712c28ccaad9ef264ce57acc3d59a",
+  "moe_s9.npz": "f75296927539395583d4603501ca2b3295d397c477bb577f34e31cebbd2266e2"
+ },
+ "seeds": [
+  10,
+  11,
+  8,
+  9
+ ],
+ "smoke": false,
+ "smoke_split_val": false,
+ "twin": {
+  "path": "results/real/prefetch_bigram_s3_r.json",
+  "sha256": "0f4d5d70a4dbe10332833f8d5f99a5e9718dbe14e0cdfaceec766e7c186079ff",
+  "state_path": "results/real/prefetch_bigram_s3_r.json.state.jsonl",
+  "state_sha256": "e1b58c38dd7bf2815740894c331039129445ea1fd1d449f8f8f2918437efb9cf",
+  "git_commit": "d55e62f15f610be6c9520a3555fe619b2291ddee",
+  "instrument_sha256": "10599fa98c276751f3296ecff6815aae07a701e35d13b5a2fb6ff8170ba7a11a",
+  "encoding": "prev_table",
+  "lambda_selected": {
+   "history": 1000.0,
+   "free_tok": 10.0,
+   "history_tok": 10.0,
+   "free_bigram_b": 10.0,
+   "free_bigram_a": 10.0,
+   "history_bigram_b": 10.0,
+   "history_bigram_a": 10.0,
+   "free_all": 10.0,
+   "history_all": 10.0
+  },
+  "n_state_rows": 12960,
+  "harvest_npz_sha256": {
+   "moe_s10.npz": "ec58591ab1a997448f106c804b1037a98cb5b0a77a2e17dc9041e9da4e2b98fb",
+   "moe_s11.npz": "8746a53521d8f74c711faac5b65debed56ab27cc27c2c26c2548d7197a1feac4",
+   "moe_s8.npz": "b68f213760ec8b0044f00bd2d78ba996aaf712c28ccaad9ef264ce57acc3d59a",
+   "moe_s9.npz": "f75296927539395583d4603501ca2b3295d397c477bb577f34e31cebbd2266e2"
+  },
+  "gate_eq": {
+   "delta": 0.06593985750209556,
+   "lo": 0.054679710311413686,
+   "hi": 0.07882978300590138,
+   "needed": 3817600
+  }
+ },
+ "label_space": {
+  "buckets": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\buckets_olmoe_k16.json",
+  "buckets_sha256": "1586195a89c8de6ed20f41f1e3155cfb8956ff66041b1adcd64367f38e74096c",
+  "glue": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\glue_olmoe_k16.json",
+  "glue_sha256": "f7f2dd393d42a71b3fd0bc080d6df01eb876a97a92ba6f9affbcc9339a24e645",
+  "n_classes": 16,
+  "n_tokens": 50304
+ },
+ "constants": {
+  "budgets": [
+   8,
+   16,
+   32
+  ],
+  "horizon": 1,
+  "lambdas": [
+   0.1,
+   1.0,
+   10.0,
+   100.0,
+   1000.0,
+   10000.0,
+   100000.0
+  ],
+  "label_budget": 16,
+  "material": 0.05,
+  "n_boot": 2000,
+  "boot_seed": 0,
+  "chunk": 4096,
+  "strata": [
+   "covered_1",
+   "covered_2_4",
+   "covered_5p",
+   "cur_unseen",
+   "prev_unseen",
+   "both_unseen"
+  ],
+  "unions": {
+   "covered": [
+    "covered_1",
+    "covered_2_4",
+    "covered_5p"
+   ],
+   "fallback": [
+    "cur_unseen",
+    "prev_unseen",
+    "both_unseen"
+   ],
+   "all": [
+    "covered_1",
+    "covered_2_4",
+    "covered_5p",
+    "cur_unseen",
+    "prev_unseen",
+    "both_unseen"
+   ]
+  },
+  "d_pt": 81,
+  "counts_per_occurrence": 128,
+  "entropy_scale_ln_v": 10.825839875788878,
+  "reproduce_near_share": 0.001,
+  "reproduce_near_hits": 1,
+  "arm_dims": {
+   "history": 1025,
+   "free_tok": 1025,
+   "history_tok": 2049,
+   "free_bigram_b": 2049,
+   "free_bigram_a": 2049,
+   "history_bigram_b": 3073,
+   "history_bigram_a": 3073,
+   "free_all": 3073,
+   "history_all": 4097,
+   "pt_only": 82,
+   "free_bigram_pt": 2130,
+   "history_tok_pt": 2130,
+   "history_bigram_pt": 3154
+  }
+ },
+ "n_positions": {
+  "horizon1/train": 148276,
+  "bigram/train": 147676,
+  "bigram/val": 28910,
+  "bigram/test": 29825
+ },
+ "n_test_prompts": 30,
+ "strata_counts": {
+  "train": {
+   "n": 147676,
+   "covered_1": {
+    "n": 10299,
+    "share": 0.06974051301497873
+   },
+   "covered_2_4": {
+    "n": 23195,
+    "share": 0.15706682196159158
+   },
+   "covered_5p": {
+    "n": 114182,
+    "share": 0.7731926650234296
+   },
+   "cur_unseen": {
+    "n": 0,
+    "share": 0.0
+   },
+   "prev_unseen": {
+    "n": 0,
+    "share": 0.0
+   },
+   "both_unseen": {
+    "n": 0,
+    "share": 0.0
+   },
+   "covered": {
+    "n": 147676,
+    "share": 1.0
+   },
+   "fallback": {
+    "n": 0,
+    "share": 0.0
+   },
+   "all": {
+    "n": 147676,
+    "share": 1.0
+   }
+  },
+  "val": {
+   "n": 28910,
+   "covered_1": {
+    "n": 2277,
+    "share": 0.0787616741611899
+   },
+   "covered_2_4": {
+    "n": 3949,
+    "share": 0.1365963334486337
+   },
+   "covered_5p": {
+    "n": 18734,
+    "share": 0.6480110688343134
+   },
+   "cur_unseen": {
+    "n": 1870,
+    "share": 0.0646835005188516
+   },
+   "prev_unseen": {
+    "n": 1875,
+    "share": 0.06485645105499827
+   },
+   "both_unseen": {
+    "n": 205,
+    "share": 0.007090971982013144
+   },
+   "covered": {
+    "n": 24960,
+    "share": 0.863369076444137
+   },
+   "fallback": {
+    "n": 3950,
+    "share": 0.136630923555863
+   },
+   "all": {
+    "n": 28910,
+    "share": 1.0
+   }
+  },
+  "test": {
+   "n": 29825,
+   "covered_1": {
+    "n": 1984,
+    "share": 0.06652137468566639
+   },
+   "covered_2_4": {
+    "n": 4014,
+    "share": 0.13458507963118188
+   },
+   "covered_5p": {
+    "n": 19598,
+    "share": 0.6570997485331098
+   },
+   "cur_unseen": {
+    "n": 1896,
+    "share": 0.06357082984073764
+   },
+   "prev_unseen": {
+    "n": 1911,
+    "share": 0.06407376362112321
+   },
+   "both_unseen": {
+    "n": 422,
+    "share": 0.014149203688181056
+   },
+   "covered": {
+    "n": 25596,
+    "share": 0.8582062028499581
+   },
+   "fallback": {
+    "n": 4229,
+    "share": 0.14179379715004192
+   },
+   "all": {
+    "n": 29825,
+    "share": 1.0
+   }
+  }
+ },
+ "table_coverage": {
+  "train": {
+   "n": 147676,
+   "zero_count_share_cur": 0.0,
+   "zero_count_share_prev": 0.0,
+   "zero_count_share_cur_at_prev": 0.0,
+   "singleton_key_share_cur": 0.036478507001814785,
+   "singleton_key_share_prev": 0.036525908069015955
+  },
+  "val": {
+   "n": 28910,
+   "zero_count_share_cur": 0.07177447250086476,
+   "zero_count_share_prev": 0.07194742303701142,
+   "zero_count_share_cur_at_prev": 0.07184365271532342
+  },
+  "test": {
+   "n": 29825,
+   "zero_count_share_cur": 0.0777200335289187,
+   "zero_count_share_prev": 0.07822296730930428,
+   "zero_count_share_cur_at_prev": 0.07815590947191953
+  }
+ },
+ "encoding_selected": "prev_table",
+ "encoding_source": "twin",
+ "lambda_selected": {
+  "history": 1000.0,
+  "free_tok": 10.0,
+  "history_tok": 10.0,
+  "free_bigram_b": 10.0,
+  "free_bigram_a": 10.0,
+  "history_bigram_b": 10.0,
+  "history_bigram_a": 10.0,
+  "free_all": 10.0,
+  "history_all": 10.0,
+  "pt_only": 0.1,
+  "free_bigram_pt": 10.0,
+  "history_tok_pt": 10.0,
+  "history_bigram_pt": 10.0
+ },
+ "lambda_source": {
+  "history": "twin",
+  "free_tok": "twin",
+  "history_tok": "twin",
+  "free_bigram_b": "twin",
+  "free_bigram_a": "twin",
+  "history_bigram_b": "twin",
+  "history_bigram_a": "twin",
+  "free_all": "twin",
+  "history_all": "twin",
+  "pt_only": "val",
+  "free_bigram_pt": "val",
+  "history_tok_pt": "val",
+  "history_bigram_pt": "val"
+ },
+ "lambda_grid_edge": {
+  "history": null,
+  "free_tok": null,
+  "history_tok": null,
+  "free_bigram_b": null,
+  "free_bigram_a": null,
+  "history_bigram_b": null,
+  "history_bigram_a": null,
+  "free_all": null,
+  "history_all": null,
+  "pt_only": true,
+  "free_bigram_pt": false,
+  "history_tok_pt": false,
+  "history_bigram_pt": false
+ },
+ "val_table": {
+  "pt_only": {
+   "0.1": 0.6093836475268073,
+   "1.0": 0.6093639203562781,
+   "10.0": 0.6092101565202352,
+   "100.0": 0.6074968652715323,
+   "1000.0": 0.5950998248875822,
+   "10000.0": 0.5659898175371844,
+   "100000.0": 0.5304628048253199
+  },
+  "free_bigram_pt": {
+   "0.1": 0.8583683738325839,
+   "1.0": 0.8595268721895538,
+   "10.0": 0.8613733893981321,
+   "100.0": 0.8561140716879972,
+   "1000.0": 0.8294153731407817,
+   "10000.0": 0.7609469582324455,
+   "100000.0": 0.6345033617260464
+  },
+  "history_tok_pt": {
+   "0.1": 0.9155098797993774,
+   "1.0": 0.9158876686267727,
+   "10.0": 0.9164856991525424,
+   "100.0": 0.9139462988585264,
+   "1000.0": 0.9016405979764788,
+   "10000.0": 0.8662297864060878,
+   "100000.0": 0.7881826141473539
+  },
+  "history_bigram_pt": {
+   "0.1": 0.9189810511068834,
+   "1.0": 0.9197701379280526,
+   "10.0": 0.9211921156174334,
+   "100.0": 0.9178103921653407,
+   "1000.0": 0.9030201487374611,
+   "10000.0": 0.8666978337945348,
+   "100000.0": 0.7884293388965756
+  }
+ },
+ "blas": {
+  "cpu_count": 24,
+  "OMP_NUM_THREADS": null,
+  "OPENBLAS_NUM_THREADS": null,
+  "MKL_NUM_THREADS": null,
+  "NUMEXPR_NUM_THREADS": null,
+  "blas": {
+   "name": "scipy-openblas",
+   "version": "0.3.30",
+   "lapack": "scipy-openblas"
+  }
+ },
+ "args": {
+  "harvest": "results/real/harvest_moe_r",
+  "out": "results/real/prefetch_strat_s3_r.json",
+  "buckets": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\buckets_olmoe_k16.json",
+  "glue": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\glue_olmoe_k16.json",
+  "twin": null,
+  "only_seeds": null,
+  "smoke_split_val": false,
+  "lambdas": null,
+  "conclude_from": null
+ },
+ "numpy_version": "2.3.5",
+ "python_version": "3.11.9",
+ "started_unix": 1790981350.119082,
+ "runtime_s": 91.90466785430908
+}

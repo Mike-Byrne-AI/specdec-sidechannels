@@ -1,0 +1,95 @@
+{
+ "HEAD": "1ac19bf",
+ "payload_head": "a90c107",
+ "cr_bytes": 0,
+ "equals_HEAD_blob": true,
+ "HEAD_blob": "79fa0e9edeb36fca6f05b521c46d156b82e5dce2",
+ "tree_ok": true,
+ "script_blob_ok": true,
+ "clean_selfreported": true,
+ "batch": 3,
+ "written": "2026-10-11T00:23:13",
+ "inputs_n": 49,
+ "inputs_mismatch": {},
+ "script_sha256_lf_ok": true,
+ "lib_sha256_lf_ok": true,
+ "protocol_table_n": 29,
+ "protocol_table_mismatch_at_168efb0": {},
+ "protocol_table_moved_168efb0_to_payload_head": {},
+ "protocol_table_missing_from_payload_inputs": [],
+ "harvest_files": {
+  "scratchpad/amber-audit/spot6.py": {
+   "pinned": "16287b93720382ed",
+   "actual_prefix": "16287b93720382ed"
+  },
+  "scratchpad/amber-audit/spot7.py": {
+   "pinned": "7193399480e8650f",
+   "actual_prefix": "7193399480e8650f"
+  },
+  "scratchpad/sb-late/zdict_sess.py": {
+   "pinned": "9f6b55072b409215",
+   "actual_prefix": "9f6b55072b409215"
+  }
+ },
+ "protocol_168efb0_prefix_of_head": true,
+ "protocol_head_prefix_of_HEAD": true,
+ "commits": {
+  "04dbf23": [
+   "04dbf23 2026-10-11 00:15:12 -0400 Errata protocol: third-batch entry pinning E17, E18 and E19 before any code",
+   "",
+   " experiments/ERRATA_PROTOCOL.md | 218 +++++++++++++++++++++++++++++++++++++++++",
+   " 1 file changed, 218 insertions(+)"
+  ],
+  "a90c107": [
+   "a90c107 2026-10-11 00:23:04 -0400 Errata recompute and text, third batch: rows E17, E18, E19, helpers, tests, dry-run evidence",
+   "",
+   " experiments/errata_lib.py          |  59 +++",
+   " experiments/errata_recompute.py    | 250 +++++++++++-",
+   " experiments/errata_text.py         | 137 ++++++-",
+   " results/errata_dryruns/dry_b3.err  |   4 +",
+   " results/errata_dryruns/dry_b3.json | 787 +++++++++++++++++++++++++++++++++++++",
+   " tests/test_errata_recompute.py     |  16 +",
+   " tests/test_errata_text.py          |  17 +-",
+   " 7 files changed, 1259 insertions(+), 11 deletions(-)"
+  ],
+  "5b5664f": [
+   "5b5664f 2026-10-11 00:23:13 -0400 Errata recompute payload, third batch: results/errata_recompute_3.json (E17, E18, E19)",
+   "",
+   " results/errata_recompute_3.json | 787 ++++++++++++++++++++++++++++++++++++++++",
+   " 1 file changed, 787 insertions(+)"
+  ],
+  "727338d": [
+   "727338d 2026-10-11 00:23:57 -0400 Errata text: F-16 caveats line without a literal pipe (corrective)",
+   "",
+   " experiments/errata_text.py | 2 +-",
+   " 1 file changed, 1 insertion(+), 1 deletion(-)"
+  ],
+  "1ac19bf": [
+   "1ac19bf 2026-10-11 00:24:26 -0400 Errata text: E18 prints each dictionary's actual byte length beside the requested size",
+   "",
+   " experiments/errata_text.py | 4 ++--",
+   " 1 file changed, 2 insertions(+), 2 deletions(-)"
+  ]
+ },
+ "dry_b3": {
+  "head": "04dbf23",
+  "clean": false,
+  "written": "2026-10-11T00:20:13",
+  "script_sha256_lf_equal": true,
+  "lib_sha256_lf_equal": true,
+  "statuses": {
+   "E17": "CORRECTED",
+   "E18": "CORRECTED",
+   "E19": "CONFIRMED"
+  },
+  "shared": 487,
+  "changed": [
+   "/E18/seconds",
+   "/E17/seconds",
+   "/E19/seconds"
+  ],
+  "only_dry": [],
+  "only_payload": [],
+  "cr_bytes": 0
+ }
+}

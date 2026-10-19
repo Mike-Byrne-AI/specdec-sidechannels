@@ -1,0 +1,1828 @@
+{
+ "registered": "READER-AND-LENS RE-TEST AT S3 REGISTRATION (docs/BLUEPRINT.md, 2026-10-05; pre-run; the frozen OQ-18 chain imported, never edited; CPU only)",
+ "stage": "s1",
+ "role": "replication",
+ "harvest": "results/real/harvest_shadow_r",
+ "tag": "concept",
+ "readers": {
+  "RN": {
+   "kind": "hz_rescaled",
+   "capacity": "mlp256",
+   "epochs": 30,
+   "lr": 0.003,
+   "what": "the hz block alone rescaled to the aligned slots block's mean squared norm over the train anchors (c_HZ = sqrt(m_SLOTS / m_HZ)); A, TOK and the slots blocks unscaled"
+  },
+  "RT": {
+   "kind": "two_tower",
+   "capacity": "mlp256",
+   "epochs": 30,
+   "lr": 0.003,
+   "tower_a": 256,
+   "tower_b": 64,
+   "what": "tower A over A ++ TOK ++ HZ, tower B over the slots block, head over the concatenation"
+  },
+  "RL": {
+   "kind": "plain",
+   "capacity": "mlp256",
+   "epochs": 60,
+   "lr": 0.001,
+   "what": "the registered model at twice the epochs and a third of the lr"
+  }
+ },
+ "spaces": [
+  "L1_concept_k16"
+ ],
+ "offsets": {
+  "L1_concept_k16": [
+   2
+  ]
+ },
+ "n_cells": 36,
+ "partial": false,
+ "smoke_cell": null,
+ "resumed_cells": 0,
+ "cells": [
+  {
+   "cell": "L1_concept_k16|off2|a|mlp256|s0",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": null,
+     "note": "no hz block: the cell is R0's"
+    }
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "a",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.6013849958779884,
+   "val_acc_best": 0.6069732154637815,
+   "best_epoch": 16,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 41.4
+  },
+  {
+   "cell": "L1_concept_k16|off2|a|mlp256|s1",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": null,
+     "note": "no hz block: the cell is R0's"
+    }
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "a",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.6021764220939818,
+   "val_acc_best": 0.6069072436996965,
+   "best_epoch": 13,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 38.1
+  },
+  {
+   "cell": "L1_concept_k16|off2|a|mlp256|s2",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": null,
+     "note": "no hz block: the cell is R0's"
+    }
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "a",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.6016158285243198,
+   "val_acc_best": 0.6074680036944188,
+   "best_epoch": 20,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 38.0
+  },
+  {
+   "cell": "L1_concept_k16|off2|fplus|mlp256|s0",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.17398203901297016,
+     "m_hz": 4097.187670190598,
+     "m_slots_aligned": 124.02084606638934,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "fplus",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.6420115416323166,
+   "val_acc_best": 0.6398931257421824,
+   "best_epoch": 2,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 322.7
+  },
+  {
+   "cell": "L1_concept_k16|off2|fplus_b|mlp256|s0",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.17398203901297016,
+     "m_hz": 4097.187670190598,
+     "m_slots_aligned": 124.02084606638934,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "fplus_b",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.6409563066776587,
+   "val_acc_best": 0.6369903681224436,
+   "best_epoch": 2,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 442.4
+  },
+  {
+   "cell": "L1_concept_k16|off2|fplus_r|mlp256|s0",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.17398203901297016,
+     "m_hz": 4097.187670190598,
+     "m_slots_aligned": 124.02084606638934,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.6384830997526794,
+   "val_acc_best": 0.6334608787438976,
+   "best_epoch": 2,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 457.0
+  },
+  {
+   "cell": "L1_concept_k16|off2|fplus|mlp256|s1",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.17398203901297016,
+     "m_hz": 4097.187670190598,
+     "m_slots_aligned": 124.02084606638934,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "fplus",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.6443198680956307,
+   "val_acc_best": 0.6401899986805647,
+   "best_epoch": 1,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 371.3
+  },
+  {
+   "cell": "L1_concept_k16|off2|fplus_b|mlp256|s1",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.17398203901297016,
+     "m_hz": 4097.187670190598,
+     "m_slots_aligned": 124.02084606638934,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "fplus_b",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.6379554822753504,
+   "val_acc_best": 0.6332299775696002,
+   "best_epoch": 0,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 420.9
+  },
+  {
+   "cell": "L1_concept_k16|off2|fplus_r|mlp256|s1",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.17398203901297016,
+     "m_hz": 4097.187670190598,
+     "m_slots_aligned": 124.02084606638934,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.636603462489695,
+   "val_acc_best": 0.6322074152262831,
+   "best_epoch": 0,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 423.3
+  },
+  {
+   "cell": "L1_concept_k16|off2|fplus|mlp256|s2",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.17398203901297016,
+     "m_hz": 4097.187670190598,
+     "m_slots_aligned": 124.02084606638934,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "fplus",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.6434295136026381,
+   "val_acc_best": 0.6404208998548622,
+   "best_epoch": 1,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 362.7
+  },
+  {
+   "cell": "L1_concept_k16|off2|fplus_b|mlp256|s2",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.17398203901297016,
+     "m_hz": 4097.187670190598,
+     "m_slots_aligned": 124.02084606638934,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "fplus_b",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.6424402308326463,
+   "val_acc_best": 0.6400580551523948,
+   "best_epoch": 1,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 446.2
+  },
+  {
+   "cell": "L1_concept_k16|off2|fplus_r|mlp256|s2",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.17398203901297016,
+     "m_hz": 4097.187670190598,
+     "m_slots_aligned": 124.02084606638934,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.6396372629843363,
+   "val_acc_best": 0.6357369046048291,
+   "best_epoch": 1,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 420.9
+  },
+  {
+   "cell": "L1_concept_k16|off2|a|mlp256|s0",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 657,
+     "b_dim": 0,
+     "width_a": 256,
+     "width_b": 0
+    }
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "a",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.6013849958779884,
+   "val_acc_best": 0.6069732154637815,
+   "best_epoch": 16,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 44.4
+  },
+  {
+   "cell": "L1_concept_k16|off2|a|mlp256|s1",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 657,
+     "b_dim": 0,
+     "width_a": 256,
+     "width_b": 0
+    }
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "a",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.6021764220939818,
+   "val_acc_best": 0.6069072436996965,
+   "best_epoch": 13,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 43.4
+  },
+  {
+   "cell": "L1_concept_k16|off2|a|mlp256|s2",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 657,
+     "b_dim": 0,
+     "width_a": 256,
+     "width_b": 0
+    }
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "a",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.6016158285243198,
+   "val_acc_best": 0.6074680036944188,
+   "best_epoch": 20,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 37.9
+  },
+  {
+   "cell": "L1_concept_k16|off2|fplus|mlp256|s0",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 6801,
+     "b_dim": 0,
+     "width_a": 256,
+     "width_b": 0
+    }
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "fplus",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.6296455070074196,
+   "val_acc_best": 0.6291727140783745,
+   "best_epoch": 2,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 293.1
+  },
+  {
+   "cell": "L1_concept_k16|off2|fplus_b|mlp256|s0",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 6801,
+     "b_dim": 2048,
+     "width_a": 256,
+     "width_b": 64
+    }
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "fplus_b",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.6409233305853257,
+   "val_acc_best": 0.6331310199234728,
+   "best_epoch": 0,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 335.6
+  },
+  {
+   "cell": "L1_concept_k16|off2|fplus_r|mlp256|s0",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 6801,
+     "b_dim": 2048,
+     "width_a": 256,
+     "width_b": 64
+    }
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.6395383347073372,
+   "val_acc_best": 0.6325702599287505,
+   "best_epoch": 0,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 349.7
+  },
+  {
+   "cell": "L1_concept_k16|off2|fplus|mlp256|s1",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 6801,
+     "b_dim": 0,
+     "width_a": 256,
+     "width_b": 0
+    }
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "fplus",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.6402308326463314,
+   "val_acc_best": 0.6356379469587017,
+   "best_epoch": 0,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 491.5
+  },
+  {
+   "cell": "L1_concept_k16|off2|fplus_b|mlp256|s1",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 6801,
+     "b_dim": 2048,
+     "width_a": 256,
+     "width_b": 64
+    }
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "fplus_b",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.6411541632316571,
+   "val_acc_best": 0.6374851563530809,
+   "best_epoch": 0,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 379.4
+  },
+  {
+   "cell": "L1_concept_k16|off2|fplus_r|mlp256|s1",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 6801,
+     "b_dim": 2048,
+     "width_a": 256,
+     "width_b": 64
+    }
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.6418466611706513,
+   "val_acc_best": 0.6366275234199763,
+   "best_epoch": 0,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 338.1
+  },
+  {
+   "cell": "L1_concept_k16|off2|fplus|mlp256|s2",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 6801,
+     "b_dim": 0,
+     "width_a": 256,
+     "width_b": 0
+    }
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "fplus",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.6350206100577082,
+   "val_acc_best": 0.6318775564058583,
+   "best_epoch": 1,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 302.5
+  },
+  {
+   "cell": "L1_concept_k16|off2|fplus_b|mlp256|s2",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 6801,
+     "b_dim": 2048,
+     "width_a": 256,
+     "width_b": 64
+    }
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "fplus_b",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.6406265457543281,
+   "val_acc_best": 0.6337247658002375,
+   "best_epoch": 1,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 357.0
+  },
+  {
+   "cell": "L1_concept_k16|off2|fplus_r|mlp256|s2",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 6801,
+     "b_dim": 2048,
+     "width_a": 256,
+     "width_b": 64
+    }
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.6380544105523496,
+   "val_acc_best": 0.6326692175748779,
+   "best_epoch": 1,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 407.5
+  },
+  {
+   "cell": "L1_concept_k16|off2|a|mlp256|s0",
+   "reader": "RL",
+   "reader_params": {
+    "kind": "plain",
+    "epochs": 60,
+    "lr": 0.001
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "a",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.6006595218466612,
+   "val_acc_best": 0.6067423142894841,
+   "best_epoch": 56,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 71.6
+  },
+  {
+   "cell": "L1_concept_k16|off2|a|mlp256|s1",
+   "reader": "RL",
+   "reader_params": {
+    "kind": "plain",
+    "epochs": 60,
+    "lr": 0.001
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "a",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.6019455894476504,
+   "val_acc_best": 0.6072371025201214,
+   "best_epoch": 50,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 72.8
+  },
+  {
+   "cell": "L1_concept_k16|off2|a|mlp256|s2",
+   "reader": "RL",
+   "reader_params": {
+    "kind": "plain",
+    "epochs": 60,
+    "lr": 0.001
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "a",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.6012530915086562,
+   "val_acc_best": 0.6062145401768043,
+   "best_epoch": 47,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 84.2
+  },
+  {
+   "cell": "L1_concept_k16|off2|fplus|mlp256|s0",
+   "reader": "RL",
+   "reader_params": {
+    "kind": "plain",
+    "epochs": 60,
+    "lr": 0.001
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "fplus",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.6383511953833471,
+   "val_acc_best": 0.6373202269428685,
+   "best_epoch": 2,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 633.6
+  },
+  {
+   "cell": "L1_concept_k16|off2|fplus_b|mlp256|s0",
+   "reader": "RL",
+   "reader_params": {
+    "kind": "plain",
+    "epochs": 60,
+    "lr": 0.001
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "fplus_b",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.6441220115416323,
+   "val_acc_best": 0.6408827022034569,
+   "best_epoch": 2,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 781.6
+  },
+  {
+   "cell": "L1_concept_k16|off2|fplus_r|mlp256|s0",
+   "reader": "RL",
+   "reader_params": {
+    "kind": "plain",
+    "epochs": 60,
+    "lr": 0.001
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.6421104699093158,
+   "val_acc_best": 0.6393323657474601,
+   "best_epoch": 2,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 832.7
+  },
+  {
+   "cell": "L1_concept_k16|off2|fplus|mlp256|s1",
+   "reader": "RL",
+   "reader_params": {
+    "kind": "plain",
+    "epochs": 60,
+    "lr": 0.001
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "fplus",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.6413520197856554,
+   "val_acc_best": 0.6351431587280644,
+   "best_epoch": 1,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 606.3
+  },
+  {
+   "cell": "L1_concept_k16|off2|fplus_b|mlp256|s1",
+   "reader": "RL",
+   "reader_params": {
+    "kind": "plain",
+    "epochs": 60,
+    "lr": 0.001
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "fplus_b",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.6415498763396538,
+   "val_acc_best": 0.637287241060826,
+   "best_epoch": 1,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 733.9
+  },
+  {
+   "cell": "L1_concept_k16|off2|fplus_r|mlp256|s1",
+   "reader": "RL",
+   "reader_params": {
+    "kind": "plain",
+    "epochs": 60,
+    "lr": 0.001
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.6414179719703215,
+   "val_acc_best": 0.6363636363636364,
+   "best_epoch": 1,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 846.7
+  },
+  {
+   "cell": "L1_concept_k16|off2|fplus|mlp256|s2",
+   "reader": "RL",
+   "reader_params": {
+    "kind": "plain",
+    "epochs": 60,
+    "lr": 0.001
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "fplus",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.6382192910140149,
+   "val_acc_best": 0.6366934951840613,
+   "best_epoch": 2,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 690.5
+  },
+  {
+   "cell": "L1_concept_k16|off2|fplus_b|mlp256|s2",
+   "reader": "RL",
+   "reader_params": {
+    "kind": "plain",
+    "epochs": 60,
+    "lr": 0.001
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "fplus_b",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.6390766694146743,
+   "val_acc_best": 0.6399920833883098,
+   "best_epoch": 2,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 775.6
+  },
+  {
+   "cell": "L1_concept_k16|off2|fplus_r|mlp256|s2",
+   "reader": "RL",
+   "reader_params": {
+    "kind": "plain",
+    "epochs": 60,
+    "lr": 0.001
+   },
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.6413520197856554,
+   "val_acc_best": 0.6376170998812508,
+   "best_epoch": 2,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 789.5
+  }
+ ],
+ "riders": {},
+ "per_reader_space": {
+  "RN|L1_concept_k16": {
+   "d_fplus_b_vs_fplus_r": [
+    {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus_r",
+     "margin": 0.002209398186314922,
+     "ci95": [
+      0.0004967209037992975,
+      0.0038886710773190177
+     ],
+     "per_seed_margin": {
+      "0": 0.00247320692497939,
+      "1": 0.0013520197856553998,
+      "2": 0.002802967848309975
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mt_fplus_b_vs_fplus": [
+    {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus",
+     "margin": -0.002802967848309975,
+     "ci95": [
+      -0.00578428704115592,
+      -0.00014210207827718678
+     ],
+     "per_seed_margin": {
+      "0": -0.001055234954657873,
+      "1": -0.006364385820280297,
+      "2": -0.000989282769991756
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mn_r_fplus_r_vs_fplus": [
+    {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_r-fplus",
+     "margin": -0.005012366034624897,
+     "ci95": [
+      -0.007292106393682284,
+      -0.0027509003987680955
+     ],
+     "per_seed_margin": {
+      "0": -0.003528441879637263,
+      "1": -0.0077164056059356965,
+      "2": -0.003792250618301731
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mf_fplus_vs_a": [
+    {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus-a",
+     "margin": 0.04152789227809838,
+     "ci95": [
+      0.031286517541058864,
+      0.05168264545512733
+     ],
+     "per_seed_margin": {
+      "0": 0.040626545754328114,
+      "1": 0.04214344600164881,
+      "2": 0.041813685078318216
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mfx_fplus_vs_linear_a": [
+    {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus-a_lin",
+     "margin": 0.04152789227809838,
+     "ci95": [
+      0.03166049220637289,
+      0.05149216934820191
+     ],
+     "per_seed_margin": {
+      "0": 0.039637262984336355,
+      "1": 0.042802967848309975,
+      "2": 0.04214344600164881
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mc_fplus_vs_c": [
+    {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus-c",
+     "margin": 0.021577356416597967,
+     "ci95": [
+      0.014603259956996415,
+      0.029001458257237912
+     ],
+     "per_seed_margin": {
+      "0": 0.019620774938169827,
+      "1": 0.022390766694146743,
+      "2": 0.02272052761747733
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "reader_valid": {
+    "ok": true,
+    "complete": true,
+    "floor_ok": true,
+    "mf_ok": true,
+    "mfx_ok": true,
+    "n_gate_probes": 12,
+    "min_acc_minus_floor": 0.011673536685902652,
+    "mf_gate_ci_upper": 0.05168264545512733,
+    "mfx_gate_ci_upper": 0.05149216934820191,
+    "mfx_gate_margin": 0.04152789227809838,
+    "acc_fplus_minus_floor_per_seed": [
+     0.0523,
+     0.053718,
+     0.054608
+    ],
+    "best_epochs_gate_cell": {
+     "fplus": [
+      1,
+      1,
+      2
+     ],
+     "fplus_b": [
+      0,
+      1,
+      2
+     ],
+     "fplus_r": [
+      0,
+      1,
+      2
+     ],
+     "a": [
+      13,
+      16,
+      20
+     ]
+    },
+    "tol": 0.001,
+    "rule": "all 12 gate-cell probes (3 arms + (a), 3 seeds) test_acc >= majority_rate_test - tol AND Mf(off2/mlp256, vs fresh (a)) CI95 upper >= 0 AND Mf_x(off2: fplus mlp256 vs the COMMITTED linear (a)) CI95 upper >= 0; else READER-INVALID"
+   },
+   "gate": {
+    "row": {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus_r",
+     "margin": 0.002209398186314922,
+     "ci95": [
+      0.0004967209037992975,
+      0.0038886710773190177
+     ],
+     "per_seed_margin": {
+      "0": 0.00247320692497939,
+      "1": 0.0013520197856553998,
+      "2": 0.002802967848309975
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    },
+    "fires": false
+   },
+   "best_epochs": {
+    "fplus": [
+     1,
+     1,
+     2
+    ],
+    "fplus_b": [
+     0,
+     1,
+     2
+    ],
+    "fplus_r": [
+     0,
+     1,
+     2
+    ],
+    "a": [
+     13,
+     16,
+     20
+    ]
+   },
+   "rescale": {
+    "L1_concept_k16|off2|a|mlp256|s0": {
+     "c_hz": null,
+     "note": "no hz block: the cell is R0's"
+    },
+    "L1_concept_k16|off2|a|mlp256|s1": {
+     "c_hz": null,
+     "note": "no hz block: the cell is R0's"
+    },
+    "L1_concept_k16|off2|a|mlp256|s2": {
+     "c_hz": null,
+     "note": "no hz block: the cell is R0's"
+    },
+    "L1_concept_k16|off2|fplus|mlp256|s0": {
+     "c_hz": 0.17398203901297016,
+     "m_hz": 4097.187670190598,
+     "m_slots_aligned": 124.02084606638934,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    },
+    "L1_concept_k16|off2|fplus_b|mlp256|s0": {
+     "c_hz": 0.17398203901297016,
+     "m_hz": 4097.187670190598,
+     "m_slots_aligned": 124.02084606638934,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    },
+    "L1_concept_k16|off2|fplus_r|mlp256|s0": {
+     "c_hz": 0.17398203901297016,
+     "m_hz": 4097.187670190598,
+     "m_slots_aligned": 124.02084606638934,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    },
+    "L1_concept_k16|off2|fplus|mlp256|s1": {
+     "c_hz": 0.17398203901297016,
+     "m_hz": 4097.187670190598,
+     "m_slots_aligned": 124.02084606638934,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    },
+    "L1_concept_k16|off2|fplus_b|mlp256|s1": {
+     "c_hz": 0.17398203901297016,
+     "m_hz": 4097.187670190598,
+     "m_slots_aligned": 124.02084606638934,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    },
+    "L1_concept_k16|off2|fplus_r|mlp256|s1": {
+     "c_hz": 0.17398203901297016,
+     "m_hz": 4097.187670190598,
+     "m_slots_aligned": 124.02084606638934,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    },
+    "L1_concept_k16|off2|fplus|mlp256|s2": {
+     "c_hz": 0.17398203901297016,
+     "m_hz": 4097.187670190598,
+     "m_slots_aligned": 124.02084606638934,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    },
+    "L1_concept_k16|off2|fplus_b|mlp256|s2": {
+     "c_hz": 0.17398203901297016,
+     "m_hz": 4097.187670190598,
+     "m_slots_aligned": 124.02084606638934,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    },
+    "L1_concept_k16|off2|fplus_r|mlp256|s2": {
+     "c_hz": 0.17398203901297016,
+     "m_hz": 4097.187670190598,
+     "m_slots_aligned": 124.02084606638934,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   }
+  },
+  "RT|L1_concept_k16": {
+   "d_fplus_b_vs_fplus_r": [
+    {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus_r",
+     "margin": 0.0010882110469909315,
+     "ci95": [
+      0.00036298357099926473,
+      0.001893691947022229
+     ],
+     "per_seed_margin": {
+      "0": 0.0013849958779884584,
+      "1": -0.0006924979389942292,
+      "2": 0.0025721352019785655
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mt_fplus_b_vs_fplus": [
+    {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus",
+     "margin": 0.005935696619950536,
+     "ci95": [
+      0.0038906119846212595,
+      0.007938055771223506
+     ],
+     "per_seed_margin": {
+      "0": 0.011277823577906017,
+      "1": 0.000923330585325639,
+      "2": 0.00560593569661995
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mn_r_fplus_r_vs_fplus": [
+    {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_r-fplus",
+     "margin": 0.004847485572959605,
+     "ci95": [
+      0.003011176539786896,
+      0.00668112241111483
+     ],
+     "per_seed_margin": {
+      "0": 0.00989282769991756,
+      "1": 0.001615828524319868,
+      "2": 0.003033800494641385
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mf_fplus_vs_a": [
+    {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus-a",
+     "margin": 0.033239901071723,
+     "ci95": [
+      0.022408189049792096,
+      0.04357576654498416
+     ],
+     "per_seed_margin": {
+      "0": 0.028260511129431162,
+      "1": 0.038054410552349545,
+      "2": 0.03340478153338829
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mfx_fplus_vs_linear_a": [
+    {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus-a_lin",
+     "margin": 0.033239901071723,
+     "ci95": [
+      0.02259350266565093,
+      0.043665214492698556
+     ],
+     "per_seed_margin": {
+      "0": 0.027271228359439407,
+      "1": 0.03871393239901072,
+      "2": 0.03373454245671888
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mc_fplus_vs_c": [
+    {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus-c",
+     "margin": 0.013289365210222589,
+     "ci95": [
+      0.005901355280716188,
+      0.020958014204816043
+     ],
+     "per_seed_margin": {
+      "0": 0.007254740313272877,
+      "1": 0.018301731244847484,
+      "2": 0.014311624072547402
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "reader_valid": {
+    "ok": true,
+    "complete": true,
+    "floor_ok": true,
+    "mf_ok": true,
+    "mfx_ok": true,
+    "n_gate_probes": 12,
+    "min_acc_minus_floor": 0.011673536685902652,
+    "mf_gate_ci_upper": 0.04357576654498416,
+    "mfx_gate_ci_upper": 0.043665214492698556,
+    "mfx_gate_margin": 0.033239901071723,
+    "acc_fplus_minus_floor_per_seed": [
+     0.039934,
+     0.045309,
+     0.050519
+    ],
+    "best_epochs_gate_cell": {
+     "fplus": [
+      0,
+      1,
+      2
+     ],
+     "fplus_b": [
+      0,
+      0,
+      1
+     ],
+     "fplus_r": [
+      0,
+      0,
+      1
+     ],
+     "a": [
+      13,
+      16,
+      20
+     ]
+    },
+    "tol": 0.001,
+    "rule": "all 12 gate-cell probes (3 arms + (a), 3 seeds) test_acc >= majority_rate_test - tol AND Mf(off2/mlp256, vs fresh (a)) CI95 upper >= 0 AND Mf_x(off2: fplus mlp256 vs the COMMITTED linear (a)) CI95 upper >= 0; else READER-INVALID"
+   },
+   "gate": {
+    "row": {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus_r",
+     "margin": 0.0010882110469909315,
+     "ci95": [
+      0.00036298357099926473,
+      0.001893691947022229
+     ],
+     "per_seed_margin": {
+      "0": 0.0013849958779884584,
+      "1": -0.0006924979389942292,
+      "2": 0.0025721352019785655
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    },
+    "fires": false
+   },
+   "best_epochs": {
+    "fplus": [
+     0,
+     1,
+     2
+    ],
+    "fplus_b": [
+     0,
+     0,
+     1
+    ],
+    "fplus_r": [
+     0,
+     0,
+     1
+    ],
+    "a": [
+     13,
+     16,
+     20
+    ]
+   }
+  },
+  "RL|L1_concept_k16": {
+   "d_fplus_b_vs_fplus_r": [
+    {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus_r",
+     "margin": -4.396812311074471e-05,
+     "ci95": [
+      -0.0013888458470079587,
+      0.0012988642570108217
+     ],
+     "per_seed_margin": {
+      "0": 0.0020115416323165706,
+      "1": 0.00013190436933223414,
+      "2": -0.0022753503709810386
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mt_fplus_b_vs_fplus": [
+    {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus",
+     "margin": 0.0022753503709810386,
+     "ci95": [
+      0.0006806321390836018,
+      0.0039132566010054645
+     ],
+     "per_seed_margin": {
+      "0": 0.005770816158285243,
+      "1": 0.0001978565539983512,
+      "2": 0.0008573784006595218
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mn_r_fplus_r_vs_fplus": [
+    {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_r-fplus",
+     "margin": 0.0023193184940917834,
+     "ci95": [
+      0.00041484683418401995,
+      0.004346070514370856
+     ],
+     "per_seed_margin": {
+      "0": 0.0037592745259686726,
+      "1": 6.595218466611707e-05,
+      "2": 0.0031327287716405605
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mf_fplus_vs_a": [
+    {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus-a",
+     "margin": 0.03802143446001649,
+     "ci95": [
+      0.026382676664000092,
+      0.04911534181719449
+     ],
+     "per_seed_margin": {
+      "0": 0.037691673536685906,
+      "1": 0.03940643033800495,
+      "2": 0.036966199505358614
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mfx_fplus_vs_linear_a": [
+    {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus-a_lin",
+     "margin": 0.03758175322890904,
+     "ci95": [
+      0.026409304314039966,
+      0.04837770614371734
+     ],
+     "per_seed_margin": {
+      "0": 0.03597691673536686,
+      "1": 0.039835119538334705,
+      "2": 0.03693322341302556
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mc_fplus_vs_c": [
+    {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus-c",
+     "margin": 0.01763121736740863,
+     "ci95": [
+      0.009694370653987898,
+      0.025978715794501624
+     ],
+     "per_seed_margin": {
+      "0": 0.01596042868920033,
+      "1": 0.019422918384171477,
+      "2": 0.01751030502885408
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "reader_valid": {
+    "ok": true,
+    "complete": true,
+    "floor_ok": true,
+    "mf_ok": true,
+    "mfx_ok": true,
+    "n_gate_probes": 12,
+    "min_acc_minus_floor": 0.010948062654575375,
+    "mf_gate_ci_upper": 0.04911534181719449,
+    "mfx_gate_ci_upper": 0.04837770614371734,
+    "mfx_gate_margin": 0.03758175322890904,
+    "acc_fplus_minus_floor_per_seed": [
+     0.048508,
+     0.04864,
+     0.051641
+    ],
+    "best_epochs_gate_cell": {
+     "fplus": [
+      1,
+      2,
+      2
+     ],
+     "fplus_b": [
+      1,
+      2,
+      2
+     ],
+     "fplus_r": [
+      1,
+      2,
+      2
+     ],
+     "a": [
+      47,
+      50,
+      56
+     ]
+    },
+    "tol": 0.001,
+    "rule": "all 12 gate-cell probes (3 arms + (a), 3 seeds) test_acc >= majority_rate_test - tol AND Mf(off2/mlp256, vs fresh (a)) CI95 upper >= 0 AND Mf_x(off2: fplus mlp256 vs the COMMITTED linear (a)) CI95 upper >= 0; else READER-INVALID"
+   },
+   "gate": {
+    "row": {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus_r",
+     "margin": -4.396812311074471e-05,
+     "ci95": [
+      -0.0013888458470079587,
+      0.0012988642570108217
+     ],
+     "per_seed_margin": {
+      "0": 0.0020115416323165706,
+      "1": 0.00013190436933223414,
+      "2": -0.0022753503709810386
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    },
+    "fires": false
+   },
+   "best_epochs": {
+    "fplus": [
+     1,
+     2,
+     2
+    ],
+    "fplus_b": [
+     1,
+     2,
+     2
+    ],
+    "fplus_r": [
+     1,
+     2,
+     2
+    ],
+    "a": [
+     47,
+     50,
+     56
+    ]
+   }
+  }
+ },
+ "proxy": null,
+ "shared_committed_ids": [
+  "L1_concept_k16|off2|a|mlp256|s0",
+  "L1_concept_k16|off2|a|mlp256|s1",
+  "L1_concept_k16|off2|a|mlp256|s2"
+ ],
+ "balanced_admission": null,
+ "standardization": {
+  "moments_sha256": "9a15cdb81ee575900e715fb882888dcf18fc3c6ca6cc4491b54866d1e31ac2cf",
+  "moments_sha_matches_committed_oq17": true
+ },
+ "twin": {
+  "arm": "fplus_r",
+  "seed_base": 1000,
+  "construction": "slots of row k of pi_seed(prompt) at anchor mod that row's length, where row k is the row's generation index within its prompt and pi_seed is a within-split derangement of PROMPT ids from default_rng(seed_base + train seed)",
+  "perm_sha256": {
+   "0": "e24dbaeb05b5bf3b8673fdbe4e6766940d57837f3c776a638444b1167be16e0a",
+   "1": "5321687fd3dba9e906e5e57b664e456718b568c07db3383780047deb130b231a",
+   "2": "7ca660c8e5f72756b90292cb3f81511ffc7094fdafa37c5aca2d96e305e37d43"
+  },
+  "geometry": {
+   "0": {
+    "off2": {
+     "n_anchors": 212804,
+     "corrected_twin_wrapped_frac": 0.006433149752824195,
+     "shift_twin_future_frac": 0.9368432924193154,
+     "shift": 17,
+     "corrected_twin_same_prompt_frac": 0.0
+    }
+   },
+   "1": {
+    "off2": {
+     "n_anchors": 212804,
+     "corrected_twin_wrapped_frac": 0.006310971598278228,
+     "shift_twin_future_frac": 0.9368432924193154,
+     "shift": 17,
+     "corrected_twin_same_prompt_frac": 0.0
+    }
+   },
+   "2": {
+    "off2": {
+     "n_anchors": 212804,
+     "corrected_twin_wrapped_frac": 0.006118306046878818,
+     "shift_twin_future_frac": 0.9368432924193154,
+     "shift": 17,
+     "corrected_twin_same_prompt_frac": 0.0
+    }
+   }
+  }
+ },
+ "provenance": {
+  "git_commit": "46a812fc309826c48e9e82ebe930ca9fce965075",
+  "git_status_tracked": [],
+  "instrument_sha256": "d1125670be056b4824ebfcd734379f40e44db994308c10accb731839d2a4a624",
+  "frozen_chain": {
+   "amended_sha256": "aafd3ae849984092ea81ce7ff5cd47f1b18e089e95cd960d86630162b5ad8612",
+   "coarse_sha256": "5efa7063767be062208eb3755cedf6a4e30f4c306927a1c3d2527098d69a5281"
+  },
+  "args": {
+   "stage": "s1",
+   "readers": "RN,RT,RL",
+   "harvest": "results/real/harvest_shadow_r",
+   "space_tag": "concept",
+   "n_slots": 512,
+   "buckets16": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\buckets_k16.json",
+   "glue16": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\glue_k16.json",
+   "buckets512": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\buckets_k512.json",
+   "glue512": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\glue_k512.json",
+   "groups": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\concept_groups_v1.json",
+   "balanced_groups": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\concept_groups_olmoe_balanced_v1.json",
+   "fidelity": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\harvest_fidelity_rider_r.json",
+   "phase3_state": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\probes_s1_replication.json.state.jsonl",
+   "phase3_payload": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\probes_s1_replication.json",
+   "lens_payloads": null,
+   "out": "results/real/readers_s1_r.json",
+   "device": "cpu",
+   "threads": 6,
+   "n_boot": 2000,
+   "only": null,
+   "smoke_cell": null,
+   "resume": false,
+   "conclude_from": null,
+   "long": null,
+   "s1": null,
+   "lens": null
+  },
+  "companion_files_filled": {
+   "space_tag": "concept",
+   "n_slots": 512,
+   "fidelity": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\harvest_fidelity_rider_r.json",
+   "phase3_state": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\probes_s1_replication.json.state.jsonl",
+   "phase3_payload": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\probes_s1_replication.json",
+   "buckets16": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\buckets_k16.json",
+   "glue16": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\glue_k16.json",
+   "buckets512": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\buckets_k512.json",
+   "glue512": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\glue_k512.json",
+   "groups": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\concept_groups_v1.json"
+  },
+  "harvest_npz_sha256": {
+   "shadow_s10.npz": "78ffa7dfbc01aa921ead973cd78be1867296bdc3558459e65a3df3f1e95242f7",
+   "shadow_s11.npz": "9d83279078ba91096dbbd849d8a5e8ff42495c053caecac46d49d87effc45bc5",
+   "shadow_s8.npz": "622485baff70b7af245d997aafa6b047946734af18bc8ee558bb0c44fb3db2bb",
+   "shadow_s9.npz": "2b0a5169323d4641bfaf43c2b16e63f2d2c690fbad99d9d792ff12440b18131f"
+  },
+  "label_space_sha256": {
+   "buckets_k16.json": "e31db51ef0f689d97372a831330082e3db5cad8911af9bab6a7849e742383999",
+   "glue_k16.json": "abeab44833ca63bc7ddcf6bc6e14ea650cf7ed066c86bf166e867b2a1bf15ac6",
+   "buckets_k512.json": "04390056c54803ce70a0837f85090cb5dfbaf71590491e97ce73e5349d45a995",
+   "glue_k512.json": "581ca512da67525d511871a54dc1f730d15263e7835f8298571d74458dd6d8e3",
+   "concept_groups_v1.json": "b0ec36d39ba4dc735a6fd9357b632fdc5a540e8634f85066638f3f4b9b6be1e9",
+   "concept_groups_olmoe_balanced_v1.json": "3186abb35e525e73d0c7e7aff74a290556f7a38ee2007ce484d0504ce860b8df"
+  },
+  "phase3_state_sha256": "d146772d52697e2837a296315dab39249a527619560a0086b8421fc7d9e2b5a7",
+  "phase3_payload_sha256": "4841706329531eafede6186f46606dfcd41448f3f73d5d984e843323c639994b",
+  "device": "cpu",
+  "threads": 6,
+  "cuda_visible_devices": "",
+  "torn_bytes_dropped_on_resume": 0,
+  "torch_version": "2.6.0+cu124",
+  "numpy_version": "2.3.5",
+  "python_version": "3.11.9",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "state_file": "readers_s1_r.json.state.jsonl",
+  "determinism_note": "CPU training; the landing condition re-runs one gate cell per reader from a clean clone, rows identical except runtime_s",
+  "state_sha256": "5aafc5c09d8c79c010bd58317c62ff0b502616db1ff1fd7917fa5bdd6592dd8e"
+ },
+ "runtime_s": 14085.9
+}

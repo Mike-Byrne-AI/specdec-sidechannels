@@ -1,0 +1,2 @@
+lens = ("LENS-SURVIVES" if a else "x")
+# Independent recompute of STAGE LENS from the raw state files by the critic: own parsing, pairing,

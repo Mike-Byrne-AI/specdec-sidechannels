@@ -1,0 +1,31 @@
+.venv/
+__pycache__/
+*.pyc
+outputs/
+.DS_Store
+.idea/
+.vscode/
+*.egg-info/
+.pytest_cache/
+
+# Claude Code session artifacts
+.claude/.session-state/
+.claude/logs/
+.claude/.cache/
+
+# Godfile is a derived projection. Some teams may prefer to commit it for
+# offline review — comment out the line below to track it.
+.claude/GODFILE.md
+
+# TODO: add project-specific patterns
+# Examples:
+# data/large_generated_*.jsonl
+# *.ckpt
+
+# Local Claude Code overrides are personal and should not be shared.
+.claude/settings.local.json
+
+# Trellis local session state
+.claude/trellis_plan.json
+.claude/blueprints/*.json
+!.claude/blueprints/.gitkeep

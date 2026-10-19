@@ -1,0 +1,136 @@
+{
+ "provenance": {
+  "HEAD": "70b6dcc",
+  "payload_head": "f492e68",
+  "cr_bytes": 0,
+  "equals_HEAD_blob": true,
+  "HEAD_blob": "80356a9e44523fe4c9eb10ce83cfa5e28c549211",
+  "inputs_n": 50,
+  "inputs_mismatch": {},
+  "tree_ok": true,
+  "script_blob_ok": true,
+  "clean_selfreported": true,
+  "protocol_append_only_2c5e06a_to_head": true,
+  "script_sha256_lf_ok": true,
+  "lib_sha256_lf_ok": true
+ },
+ "vs_bacc8f64": {
+  "shared": 623,
+  "changed": [
+   "/E17/seconds",
+   "/E18/seconds",
+   "/E19/seconds"
+  ],
+  "removed": [
+   "/E19/status_by_claim_site/FINDINGS.md:78 (F-10 caveat: the per-rank rates are what transfer; the rank-only rank-1 rate does not, E15)"
+  ],
+  "added": [
+   "/E18/prediction/rep_below_half_amber_v3_arch",
+   "/E18/prediction/rep_below_half_zstd_arch_16384",
+   "/E18/prediction/zstd_arch_16384",
+   "/E18/prediction/zstd_arch_4096",
+   "/E18/prediction/zstd_arch_65536",
+   "/E18/prediction/zstd_arch_none",
+   "/E18/value/prediction_sources/rep_below_half_amber_v3_arch",
+   "/E18/value/prediction_sources/rep_below_half_zstd_arch_16384",
+   "/E18/value/prediction_sources/zstd_arch_16384",
+   "/E18/value/prediction_sources/zstd_arch_4096",
+   "/E18/value/prediction_sources/zstd_arch_65536",
+   "/E18/value/prediction_sources/zstd_arch_none",
+   "/E19/status_by_claim_site/FINDINGS.md:78 (F-10 caveat: the per-rank rates are what transfer; the rank-only rank-1 rate does not, on E15's rank-only compensator z, a field added after the second batch's values were seen)"
+  ]
+ },
+ "entry_text_has_values": true,
+ "E18_prediction": {
+  "restored_equal_entry": true,
+  "score": {
+   "amber_v3_arch": {
+    "pred": 4.181,
+    "value": 4.181436642453591,
+    "hit": true
+   },
+   "harvest_def_rep_amber_v3_arch": {
+    "pred": 5.253,
+    "value": 5.253354380426203,
+    "hit": true
+   },
+   "harvest_def_rep_zstd_arch_16384": {
+    "pred": 10.33,
+    "value": 10.32991318074191,
+    "hit": true
+   },
+   "harvest_def_zstd_arch_16384": {
+    "pred": 4.446,
+    "value": 4.445843422114608,
+    "hit": true
+   },
+   "harvest_def_zstd_arch_4096": {
+    "pred": 4.737,
+    "value": 4.737368845843422,
+    "hit": true
+   },
+   "harvest_def_zstd_arch_65536": {
+    "pred": 4.408,
+    "value": 4.408071025020178,
+    "hit": true
+   },
+   "harvest_def_zstd_arch_none": {
+    "pred": 6.251,
+    "value": 6.251170298627926,
+    "hit": true
+   },
+   "rep_below_half_amber_v3_arch": {
+    "pred": 5.253,
+    "value": 5.100059916117436,
+    "hit": false
+   },
+   "rep_below_half_zstd_arch_16384": {
+    "pred": 10.33,
+    "value": 10.256041541841421,
+    "hit": false
+   },
+   "zstd_arch_16384": {
+    "pred": 4.446,
+    "value": 4.438740920096852,
+    "hit": false
+   },
+   "zstd_arch_4096": {
+    "pred": 4.737,
+    "value": 4.833575464083939,
+    "hit": false
+   },
+   "zstd_arch_65536": {
+    "pred": 4.408,
+    "value": 4.48135593220339,
+    "hit": false
+   },
+   "zstd_arch_none": {
+    "pred": 6.251,
+    "value": 6.7751412429378535,
+    "hit": false
+   }
+  },
+  "sources": {
+   "amber_v3_arch": "the review harvest (sideband harvest scratchpad/amber-audit/spot6.py, spot7.py; agent output)",
+   "harvest_def_rep_amber_v3_arch": "the review harvest (sideband harvest scratchpad/amber-audit/spot6.py, spot7.py; agent output)",
+   "harvest_def_rep_zstd_arch_16384": "the review harvest (sideband harvest scratchpad/amber-audit/spot6.py, spot7.py; agent output)",
+   "harvest_def_zstd_arch_16384": "the review harvest (sideband harvest scratchpad/amber-audit/spot6.py, spot7.py; agent output)",
+   "harvest_def_zstd_arch_4096": "the review harvest (sideband harvest scratchpad/amber-audit/spot6.py, spot7.py; agent output)",
+   "harvest_def_zstd_arch_65536": "the review harvest (sideband harvest scratchpad/amber-audit/spot6.py, spot7.py; agent output)",
+   "harvest_def_zstd_arch_none": "the review harvest (sideband harvest scratchpad/amber-audit/spot6.py, spot7.py; agent output)",
+   "rep_below_half_amber_v3_arch": "the review harvest (sideband harvest scratchpad/amber-audit/spot6.py, spot7.py; agent output)",
+   "rep_below_half_zstd_arch_16384": "the review harvest (sideband harvest scratchpad/amber-audit/spot6.py, spot7.py; agent output)",
+   "zstd_arch_16384": "the review harvest (sideband harvest scratchpad/amber-audit/spot6.py, spot7.py; agent output)",
+   "zstd_arch_4096": "the review harvest (sideband harvest scratchpad/amber-audit/spot6.py, spot7.py; agent output)",
+   "zstd_arch_65536": "the review harvest (sideband harvest scratchpad/amber-audit/spot6.py, spot7.py; agent output)",
+   "zstd_arch_none": "the review harvest (sideband harvest scratchpad/amber-audit/spot6.py, spot7.py; agent output)"
+  }
+ },
+ "text": {
+  "predictions": "- predictions scored (each labelled by its source where the payload names one, the harvest's or the critic's values, where a prediction key names a payload key): E17: counts_all_match hit, n_labels_2tau hit, n_labels_4tau hit; E18: amber_v3_arch hit (harvest), harvest_def_rep_amber_v3_arch hit (harvest), harvest_def_rep_zstd_arch_16384 hit (harvest), harvest_def_zstd_arch_16384 hit (harvest), harvest_def_zstd_arch_4096 hit (harvest), harvest_def_zstd_arch_65536 hit (harvest), harvest_def_zstd_arch_none hit (harvest), rep_below_half_amber_v3_arch miss (harvest), rep_below_half_zstd_arch_16384 miss (harvest), zstd_arch_16384 miss (harvest), zstd_arch_4096 miss (harvest), zstd_arch_65536 miss (harvest), zstd_arch_none miss (harvest); E19: not scored: the primary binning's values equal the second batch's critic's post-hoc p2_quantile20 values (results/errata_critic/c2_e15_gapsens.out.json, in the record before the entry) by construction.",
+  "caveats_mass_sentence": "its escape costs are near-tie masses over all census positions of each model's dumps, as the census counted them",
+  "source": "- source: results/errata_recompute_3.json, experiments/ERRATA_PROTOCOL.md, experiments/errata_recompute.py, experiments/errata_lib.py, experiments/errata_text.py, tests/test_errata_recompute.py, tests/test_errata_text.py, results/errata_dryruns/dry_b3.json, results/errata_dryruns/dry_b3b.json, results/p2_tinyllama_dumps.sha256, results/errata_critic/REPORT.md",
+  "e19_bracket": "CONFIRMED; post hoc: the status is decided by a rule written after its primary values were seen (the critic's second-batch p2_quantile20, committed before the third-batch entry); the six other binnings were not seen; CONFIRMED out of sample (the other binnings); by claim site: FINDINGS.md:136 (F-15's E15 bullet: the correction excess is not identified; stands, not conditioned here) CONFIRMED, FINDINGS.md:78 (F-10 caveat: the per-rank rates are what transfer; the rank-only rank-1 rate does not, on E15's rank-only compensator z, a field added after the second batch's values were seen) CORRECTED",
+  "kept_positions_mentioned": false
+ }
+}

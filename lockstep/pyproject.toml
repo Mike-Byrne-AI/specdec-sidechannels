@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=77"]   # 77 is the first release that reads the PEP 639 licence fields below (2026-10-18)
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lockstep-archive"
+dynamic = ["version"]
+description = "Deterministic arithmetic coding and model-pinned archive containers"
+readme = "README.md"
+license = "MIT"   # the whole public release is MIT (sideband's plan of record, 11.1); added 2026-10-18, audit item A2
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+dependencies = []
+keywords = ["compression", "determinism", "arithmetic-coding", "archives"]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Environment :: Console",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: System :: Archiving :: Compression",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+lockstep = "lockstep.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.dynamic]
+version = {attr = "lockstep.__version__"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"lockstep" = ["py.typed"]
+"lockstep.data" = ["vectors_v0.json"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests_project"]
