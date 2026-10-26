@@ -1,0 +1,171 @@
+{
+ "numpy": "2.3.5",
+ "arms": {
+  "vanilla": {
+   "corr": 1.2703537711414432,
+   "prop_per_emit": 0.9371717731616722,
+   "drafted_per_emit": 1.651663187941831,
+   "analytic_drafted_per_emit": 1.651663187941831,
+   "bonus_per_emit": 0.06282822683832776,
+   "bonus_bits_per_emit": 0.3479781800448333,
+   "mean_bonus_bits": 5.538348280416061,
+   "ind_per_emit": 0.39596557280211914,
+   "hint_paid": 0.0,
+   "hint_drafted": 0.0
+  },
+  "free_causal": {
+   "corr": 1.1706899526423853,
+   "prop_per_emit": 0.9345855731966495,
+   "drafted_per_emit": 1.6203275409426179,
+   "analytic_drafted_per_emit": 1.6203275409426179,
+   "bonus_per_emit": 0.06541442680335041,
+   "bonus_bits_per_emit": 0.36144373223414594,
+   "mean_bonus_bits": 5.524627925791831,
+   "ind_per_emit": 0.39337320017884037,
+   "hint_paid": 0.0,
+   "hint_drafted": 0.0
+  },
+  "hint_h1_fresh": {
+   "corr": 1.1082713670321018,
+   "prop_per_emit": 0.9316348859018443,
+   "drafted_per_emit": 1.5908721475461083,
+   "analytic_drafted_per_emit": 1.5908721475461083,
+   "bonus_per_emit": 0.06836511409815568,
+   "bonus_bits_per_emit": 0.3809998637166012,
+   "mean_bonus_bits": 5.570974722635005,
+   "ind_per_emit": 0.4010967197496813,
+   "hint_paid": 3.339876130321745,
+   "hint_drafted": 5.703216992394532
+  }
+ },
+ "derived": {
+  "free_causal": {
+   "saved_corr": 0.09966381849905792,
+   "d_bonus": 0.013465552189312668,
+   "d_ind": -0.0025923726232787714,
+   "saved_corr_plus_bonus": 0.08619826630974514,
+   "saved_full": 0.08879063893302375,
+   "hint_paid": 0.0,
+   "hint_drafted": 0.0
+  },
+  "hint_h1_fresh": {
+   "saved_corr": 0.16208240410934138,
+   "d_bonus": 0.03302168367176794,
+   "d_ind": 0.005131146947562171,
+   "saved_corr_plus_bonus": 0.12906072043757333,
+   "saved_full": 0.12392957349001099,
+   "hint_paid": 3.339876130321745,
+   "hint_drafted": 5.703216992394532
+  }
+ },
+ "committed_arms": {
+  "free_causal": {
+   "_summary": {
+    "breakeven_hint_budget_bits_per_emitted": 0.09966381849905792,
+    "correction_bits_saved_per_emitted": 0.09966381849905792,
+    "hint_bits_spent_per_emitted": 0.0,
+    "net_bits_per_emitted": 0.09966381849905792
+   },
+   "acceptance": {
+    "mean": 0.6366467761515759,
+    "n": 2,
+    "std": 0.000959782536940748
+   },
+   "correction_bits_per_emitted": {
+    "mean": 1.1706899526423853,
+    "n": 2,
+    "std": 0.00044826492606234186
+   },
+   "hint_bits_per_emitted": {
+    "mean": 0.0,
+    "n": 2,
+    "std": 0.0
+   },
+   "mean_bits_per_correction": {
+    "mean": 3.446582810035072,
+    "n": 2,
+    "std": 0.00585614481840288
+   },
+   "rejections_per_emitted": {
+    "mean": 0.33966745843230406,
+    "n": 2,
+    "std": 0.000707195180584127
+   },
+   "total_bits_per_emitted": {
+    "mean": 1.1706899526423853,
+    "n": 2,
+    "std": 0.00044826492606234186
+   }
+  },
+  "hint_h1_fresh": {
+   "_summary": {
+    "breakeven_hint_budget_bits_per_emitted": 0.16208240410934138,
+    "correction_bits_saved_per_emitted": 0.16208240410934138,
+    "hint_bits_spent_per_emitted": 3.339876130321745,
+    "net_bits_per_emitted": -3.1777937262124034
+   },
+   "acceptance": {
+    "mean": 0.6477832253711847,
+    "n": 2,
+    "std": 0.0005892056322367378
+   },
+   "correction_bits_per_emitted": {
+    "mean": 1.1082713670321018,
+    "n": 2,
+    "std": 0.012925765141280202
+   },
+   "hint_bits_per_emitted": {
+    "mean": 3.339876130321745,
+    "n": 2,
+    "std": 0.004913003446786117
+   },
+   "mean_bits_per_correction": {
+    "mean": 3.3649712110715218,
+    "n": 2,
+    "std": 0.0049190721971275105
+   },
+   "rejections_per_emitted": {
+    "mean": 0.32935292278837136,
+    "n": 2,
+    "std": 0.0033598071503706125
+   },
+   "total_bits_per_emitted": {
+    "mean": 4.448147497353846,
+    "n": 2,
+    "std": 0.017838768588066947
+   }
+  },
+  "vanilla": {
+   "acceptance": {
+    "mean": 0.6207847745352917,
+    "n": 2,
+    "std": 0.0004338460518766216
+   },
+   "correction_bits_per_emitted": {
+    "mean": 1.2703537711414432,
+    "n": 2,
+    "std": 0.0026157672284907317
+   },
+   "hint_bits_per_emitted": {
+    "mean": 0.0,
+    "n": 2,
+    "std": 0.0
+   },
+   "mean_bits_per_correction": {
+    "mean": 3.6287036079345443,
+    "n": 2,
+    "std": 0.018789197570209814
+   },
+   "rejections_per_emitted": {
+    "mean": 0.35008757014713,
+    "n": 2,
+    "std": 0.001091876802838046
+   },
+   "total_bits_per_emitted": {
+    "mean": 1.2703537711414432,
+    "n": 2,
+    "std": 0.0026157672284907317
+   }
+  }
+ }
+}

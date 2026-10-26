@@ -1,0 +1,297 @@
+{
+ "criteria": {
+  "argmax_gap": 0.08,
+  "entropy_abs_max": 0.1,
+  "long_anchor": 128,
+  "mass_linf_max": 0.08,
+  "min_long": 4,
+  "n_triples": 16,
+  "slot_overlap_min": 20
+ },
+ "n_long": 9,
+ "npz_sha256_validated": {
+  "shadow_s10.npz": "78ffa7dfbc01aa921ead973cd78be1867296bdc3558459e65a3df3f1e95242f7",
+  "shadow_s11.npz": "9d83279078ba91096dbbd849d8a5e8ff42495c053caecac46d49d87effc45bc5",
+  "shadow_s8.npz": "622485baff70b7af245d997aafa6b047946734af18bc8ee558bb0c44fb3db2bb",
+  "shadow_s9.npz": "2b0a5169323d4641bfaf43c2b16e63f2d2c690fbad99d9d792ff12440b18131f"
+ },
+ "regime": "teacher-forced full forward, no KV reuse, batch 1, NF4",
+ "rng_seed": 2,
+ "runtime_s": 3.7,
+ "topped_up_long": 0,
+ "triples": [
+  {
+   "anchor": 27,
+   "argmax_checked": true,
+   "argmax_gap": 0.998805820941925,
+   "argmax_ok": true,
+   "entropy_abs_delta": 0.0008924612775444984,
+   "mass512_linf": 0.0002174973487854004,
+   "pass": true,
+   "prompt_idx": 9,
+   "seed": 11,
+   "slot_overlaps": [
+    30,
+    32,
+    30,
+    30
+   ]
+  },
+  {
+   "anchor": 76,
+   "argmax_checked": false,
+   "argmax_gap": 0.03000164031982422,
+   "argmax_ok": true,
+   "entropy_abs_delta": 0.019797325134277344,
+   "mass512_linf": 0.01563151180744171,
+   "pass": true,
+   "prompt_idx": 54,
+   "seed": 9,
+   "slot_overlaps": [
+    30,
+    30,
+    31,
+    31
+   ]
+  },
+  {
+   "anchor": 85,
+   "argmax_checked": true,
+   "argmax_gap": 0.9999170303344727,
+   "argmax_ok": true,
+   "entropy_abs_delta": 6.873311940580606e-05,
+   "mass512_linf": 5.525350570678711e-05,
+   "pass": true,
+   "prompt_idx": 77,
+   "seed": 10,
+   "slot_overlaps": [
+    29,
+    30,
+    31,
+    31
+   ]
+  },
+  {
+   "anchor": 153,
+   "argmax_checked": true,
+   "argmax_gap": 0.39515161514282227,
+   "argmax_ok": true,
+   "entropy_abs_delta": 0.02367556095123291,
+   "mass512_linf": 0.0009059756994247437,
+   "pass": true,
+   "prompt_idx": 192,
+   "seed": 8,
+   "slot_overlaps": [
+    30,
+    31,
+    31,
+    31
+   ]
+  },
+  {
+   "anchor": 225,
+   "argmax_checked": false,
+   "argmax_gap": 0.013164907693862915,
+   "argmax_ok": true,
+   "entropy_abs_delta": 0.0072863101959228516,
+   "mass512_linf": 0.0050656795501708984,
+   "pass": true,
+   "prompt_idx": 157,
+   "seed": 10,
+   "slot_overlaps": [
+    29,
+    31,
+    30,
+    31
+   ]
+  },
+  {
+   "anchor": 14,
+   "argmax_checked": true,
+   "argmax_gap": 0.4571453332901001,
+   "argmax_ok": true,
+   "entropy_abs_delta": 0.07292747497558594,
+   "mass512_linf": 0.005251288414001465,
+   "pass": true,
+   "prompt_idx": 21,
+   "seed": 11,
+   "slot_overlaps": [
+    31,
+    31,
+    32,
+    31
+   ]
+  },
+  {
+   "anchor": 78,
+   "argmax_checked": true,
+   "argmax_gap": 0.5039723515510559,
+   "argmax_ok": true,
+   "entropy_abs_delta": 0.004142820835113525,
+   "mass512_linf": 0.0009682672098278999,
+   "pass": true,
+   "prompt_idx": 132,
+   "seed": 8,
+   "slot_overlaps": [
+    30,
+    32,
+    30,
+    29
+   ]
+  },
+  {
+   "anchor": 143,
+   "argmax_checked": true,
+   "argmax_gap": 0.9976360201835632,
+   "argmax_ok": true,
+   "entropy_abs_delta": 0.0010348791256546974,
+   "mass512_linf": 0.00027060508728027344,
+   "pass": true,
+   "prompt_idx": 125,
+   "seed": 10,
+   "slot_overlaps": [
+    31,
+    30,
+    31,
+    30
+   ]
+  },
+  {
+   "anchor": 173,
+   "argmax_checked": true,
+   "argmax_gap": 0.863459050655365,
+   "argmax_ok": true,
+   "entropy_abs_delta": 0.011784076690673828,
+   "mass512_linf": 0.003959473222494125,
+   "pass": true,
+   "prompt_idx": 153,
+   "seed": 11,
+   "slot_overlaps": [
+    29,
+    32,
+    31,
+    30
+   ]
+  },
+  {
+   "anchor": 171,
+   "argmax_checked": true,
+   "argmax_gap": 0.9995074272155762,
+   "argmax_ok": true,
+   "entropy_abs_delta": 0.0005884661804884672,
+   "mass512_linf": 0.00022989511489868164,
+   "pass": true,
+   "prompt_idx": 145,
+   "seed": 11,
+   "slot_overlaps": [
+    32,
+    31,
+    29,
+    31
+   ]
+  },
+  {
+   "anchor": 239,
+   "argmax_checked": false,
+   "argmax_gap": 0.0015284420223906636,
+   "argmax_ok": true,
+   "entropy_abs_delta": 0.0025348663330078125,
+   "mass512_linf": 0.0003065057098865509,
+   "pass": true,
+   "prompt_idx": 112,
+   "seed": 8,
+   "slot_overlaps": [
+    30,
+    30,
+    30,
+    31
+   ]
+  },
+  {
+   "anchor": 247,
+   "argmax_checked": true,
+   "argmax_gap": 0.9999607801437378,
+   "argmax_ok": true,
+   "entropy_abs_delta": 6.463570753112435e-05,
+   "mass512_linf": 2.2113323211669922e-05,
+   "pass": true,
+   "prompt_idx": 154,
+   "seed": 8,
+   "slot_overlaps": [
+    31,
+    27,
+    31,
+    31
+   ]
+  },
+  {
+   "anchor": 10,
+   "argmax_checked": true,
+   "argmax_gap": 0.21202287077903748,
+   "argmax_ok": true,
+   "entropy_abs_delta": 0.0010759830474853516,
+   "mass512_linf": 0.004591077566146851,
+   "pass": true,
+   "prompt_idx": 119,
+   "seed": 11,
+   "slot_overlaps": [
+    30,
+    31,
+    28,
+    31
+   ]
+  },
+  {
+   "anchor": 47,
+   "argmax_checked": true,
+   "argmax_gap": 0.10779169201850891,
+   "argmax_ok": true,
+   "entropy_abs_delta": 0.01656639575958252,
+   "mass512_linf": 0.0031882524490356445,
+   "pass": true,
+   "prompt_idx": 80,
+   "seed": 11,
+   "slot_overlaps": [
+    32,
+    32,
+    30,
+    32
+   ]
+  },
+  {
+   "anchor": 177,
+   "argmax_checked": true,
+   "argmax_gap": 0.9668136239051819,
+   "argmax_ok": true,
+   "entropy_abs_delta": 5.776435136795044e-05,
+   "mass512_linf": 7.778406143188477e-05,
+   "pass": true,
+   "prompt_idx": 10,
+   "seed": 8,
+   "slot_overlaps": [
+    30,
+    31,
+    30,
+    31
+   ]
+  },
+  {
+   "anchor": 228,
+   "argmax_checked": true,
+   "argmax_gap": 0.9998151659965515,
+   "argmax_ok": true,
+   "entropy_abs_delta": 6.848620250821114e-05,
+   "mass512_linf": 0.00012111663818359375,
+   "pass": true,
+   "prompt_idx": 21,
+   "seed": 9,
+   "slot_overlaps": [
+    31,
+    30,
+    31,
+    31
+   ]
+  }
+ ],
+ "verdict": "PASS"
+}

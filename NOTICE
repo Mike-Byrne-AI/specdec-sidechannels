@@ -1,0 +1,54 @@
+NOTICE
+
+Built with Llama.
+
+The real-model experiments recorded under sideband/ loaded Meta Llama
+checkpoints from the Hugging Face Hub: meta-llama/Llama-3.1-8B-Instruct as
+the verifier of the speculative-decoding pair and as the S1 harvest model,
+and meta-llama/Llama-3.2-1B-Instruct as the draft (sideband/docs/THIRD_PARTY.md
+names where each is pinned in the code). No checkpoint weights of those models
+are shipped. The sideband folder carries model-output files produced with them,
+among them token-id arrays and vocabulary strings under sideband/results/
+(sideband/docs/THIRD_PARTY.md and sideband/docs/RELEASE_NOTES.md section 5
+discuss them), and two small files of trained probe weights derived from the
+harvested activations, sideband/results/real/k3_probe_weights.npz and
+sideband/results/real/oq15_head_weights.npz; whether such a probe is "an AI
+model" under the licences' naming clause for models trained on Llama outputs
+is the owner's reading, not stated here. The amber folder's model use, stated by its survey of 2026-10-17:
+meta-llama/Llama-3.2-3B as the target and meta-llama/Llama-3.2-1B as the draft of
+the P1 corpus and of the P4 to P6 archives (both base checkpoints), and
+meta-llama/Llama-3.2-1B-Instruct and TinyLlama/TinyLlama-1.1B-Chat-v1.0
+(Apache-2.0 by its model card, read 2026-10-17) for the rank-stability census
+experiments (amber's F-5 to F-7 and F-10 name the checkpoint of each arm); the
+folder carries model-output files produced with them: the P1 generate shards
+(the target's generated token ids), the P1 rank and log-probability shards
+and the P4 to P6 archive and symbol files under amber/results/, and no
+checkpoint weights. The lockstep folder runs no neural model (its two
+reference models are byte models) and carries no model-output
+file and no checkpoint weights (its survey of 2026-10-18); its
+F-12 to F-18 restate or recompute amber's measurements of the checkpoints
+named above. The Llama 3.1 and 3.2 community
+licences list "outputs or results" separately from the Llama Materials they
+govern; this notice and the licence copies are included anyway. That is a
+reading of the licence text, not legal advice.
+
+Llama 3.1 is licensed under the Llama 3.1 Community License, Copyright © Meta
+Platforms, Inc. All Rights Reserved.
+
+Llama 3.2 is licensed under the Llama 3.2 Community License, Copyright © Meta
+Platforms, Inc. All Rights Reserved.
+
+Copies of both licences are in licenses/:
+  licenses/LLAMA_3_1_COMMUNITY_LICENSE.txt, the text published in the
+    meta-llama/llama-models repository at models/llama3_1/LICENSE, fetched
+    2026-10-12 (sha256 bf2eac60b81e5c5f... as copied);
+  licenses/LLAMA_3_2_COMMUNITY_LICENSE.txt, the LICENSE.txt distributed with
+    meta-llama/Llama-3.2-1B-Instruct, snapshot
+    9213176726f574b556790deb65791e0c5aa438b6, copied 2026-10-12 (sha256
+    0b4284c1f87029e6... as copied).
+
+The third checkpoint the sideband record uses, allenai/OLMoE-1B-7B-0125-Instruct
+(the S3 telemetry source), is Apache 2.0 by its model card at snapshot b89a7c4
+(sideband/docs/THIRD_PARTY.md, dated note 2026-10-11).
+
+The repository's own licence is the MIT text in LICENSE.

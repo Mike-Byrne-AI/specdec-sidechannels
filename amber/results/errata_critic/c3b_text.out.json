@@ -1,0 +1,446 @@
+{
+ "placement": {
+  "FINDINGS.md": [
+   {
+    "after_line": 41,
+    "prev_line": "- caveats: one model, one box, one corpus, one GPU architecture; cross-GPU-architecture dr",
+    "first_chars": "- erratum (2026-10-11): see F-16, row E17",
+    "next_line": ""
+   },
+   {
+    "after_line": 56,
+    "prev_line": "- caveats: one model, one box, one corpus, one GPU architecture; cross-GPU-architecture dr",
+    "first_chars": "- erratum (2026-10-11): see F-16, row E17",
+    "next_line": ""
+   },
+   {
+    "after_line": 64,
+    "prev_line": "- erratum (2026-10-10): see F-14, rows E2, E3, E4, E5, E10",
+    "first_chars": "- note (2026-10-11): see F-16, row E18",
+    "next_line": ""
+   },
+   {
+    "after_line": 96,
+    "prev_line": "- erratum (2026-10-11): see F-15, row E15",
+    "first_chars": "- erratum (2026-10-11): see F-16, row E18",
+    "next_line": ""
+   },
+   {
+    "after_line": 103,
+    "prev_line": "- erratum (2026-10-11): see F-15, row E15",
+    "first_chars": "- erratum (2026-10-11): see F-16, row E18",
+    "next_line": ""
+   },
+   {
+    "after_line": 89,
+    "prev_line": "- erratum (2026-10-11): see F-15, row E15",
+    "first_chars": "- erratum (2026-10-11): see F-16, row E18",
+    "next_line": ""
+   },
+   {
+    "after_line": 80,
+    "prev_line": "- note (2026-10-11): see F-15, rows E15, E16",
+    "first_chars": "- erratum (2026-10-11): see F-16, row E19",
+    "next_line": ""
+   },
+   {
+    "after_line": 139,
+    "prev_line": "- caveats: one box, one recompute; both pinned rules carry a protocol defect recorded in t",
+    "first_chars": "- note (2026-10-11): see F-16, row E19",
+    "next_line": "\n## F-16 \u2014 2026-10 errata pass, third batch (rows E17, E18, E19): 2 of"
+   },
+   {
+    "after_line": 139,
+    "prev_line": "- note (2026-10-11): see F-16, row E19",
+    "first_chars": "## F-16 \u2014 2026-10 errata pass, third batch (rows E17, E18, E19): 2 of ",
+    "next_line": ""
+   }
+  ],
+  "OPEN_QUESTIONS.md": [
+   {
+    "after_line": 16,
+    "prev_line": "Answered for one box, two models (F-5 TinyLlama, F-7 Llama-3.2-1B-Instruct): FREE within f",
+    "first_chars": "> Erratum (2026-10-11; F-16 row E17): E17: 6 of the 7 printed \"2tau\" t",
+    "next_line": "> Erratum (2026-10-11; F-15 row E16): E16: the top-64 order of cuda_fp"
+   },
+   {
+    "after_line": 32,
+    "prev_line": "F-12: binary v3 = 130 B mean (97 B floor); prompt coded with the draft at 11.3 bits/token;",
+    "first_chars": "> Erratum (2026-10-11; F-16 row E18): E18: on the held-out half (P1 ro",
+    "next_line": "At ~250 tokens per archive the per-archive constant dominates: JSON he"
+   }
+  ],
+  "DECISIONS.md": [
+   {
+    "after_line": 44,
+    "prev_line": "  strawmen is not a format.",
+    "first_chars": "- erratum (2026-10-11; F-16 row E18): E18: on the held-out half (P1 ro",
+    "next_line": ""
+   },
+   {
+    "after_line": 107,
+    "prev_line": "  strawmen is not a format.",
+    "first_chars": "- erratum (2026-10-11; F-16 row E18): E18: on the held-out half (P1 ro",
+    "next_line": ""
+   },
+   {
+    "after_line": 132,
+    "prev_line": "  strawmen is not a format.",
+    "first_chars": "- erratum (2026-10-11; F-16 row E18): E18: on the held-out half (P1 ro",
+    "next_line": ""
+   }
+  ],
+  "README.md": [
+   {
+    "after_line": 50,
+    "prev_line": "seeded-sampling archives (OQ-3).",
+    "first_chars": "> Erratum (2026-10-11; F-16 row E18): E18: on the held-out half (P1 ro",
+    "next_line": "> Erratum (2026-10-10; F-14 row E8a): E8a: at theta 0 (the shipped def"
+   },
+   {
+    "after_line": 17,
+    "prev_line": "> Second errata batch (2026-10-11): F-15 adds rows E15, E16 from a second pre-registered r",
+    "first_chars": "> Third errata batch (2026-10-11): F-16 adds rows E17, E18, E19 from a",
+    "next_line": "Working v0 codec on the sideband synthetic world: byte-exact roundtrip"
+   }
+  ],
+  "docs/BLUEPRINT.md": [
+   {
+    "after_line": 54,
+    "prev_line": "lose to zstd on target-generated text.",
+    "first_chars": "> Note (2026-10-11; F-16 row E18): E18: on the held-out half (P1 rows ",
+    "next_line": ""
+   },
+   {
+    "after_line": 86,
+    "prev_line": "lose to zstd on target-generated text.",
+    "first_chars": "> Note (2026-10-11; F-16 row E18): E18: on the held-out half (P1 rows ",
+    "next_line": ""
+   }
+  ]
+ },
+ "untraced": {
+  "FINDINGS.md": [
+   {
+    "numeral": "2026",
+    "context": "- erratum (2026-10-11): s"
+   },
+   {
+    "numeral": "-10",
+    "context": "- erratum (2026-10-11): see "
+   },
+   {
+    "numeral": "-11",
+    "context": "- erratum (2026-10-11): see F-1"
+   },
+   {
+    "numeral": "2026",
+    "context": "- erratum (2026-10-11): s"
+   },
+   {
+    "numeral": "-10",
+    "context": "- erratum (2026-10-11): see "
+   },
+   {
+    "numeral": "-11",
+    "context": "- erratum (2026-10-11): see F-1"
+   },
+   {
+    "numeral": "2026",
+    "context": "- note (2026-10-11): s"
+   },
+   {
+    "numeral": "-10",
+    "context": "- note (2026-10-11): see "
+   },
+   {
+    "numeral": "-11",
+    "context": "- note (2026-10-11): see F-1"
+   },
+   {
+    "numeral": "2026",
+    "context": "- erratum (2026-10-11): s"
+   },
+   {
+    "numeral": "-10",
+    "context": "- erratum (2026-10-11): see "
+   },
+   {
+    "numeral": "-11",
+    "context": "- erratum (2026-10-11): see F-1"
+   },
+   {
+    "numeral": "2026",
+    "context": "- erratum (2026-10-11): s"
+   },
+   {
+    "numeral": "-10",
+    "context": "- erratum (2026-10-11): see "
+   },
+   {
+    "numeral": "-11",
+    "context": "- erratum (2026-10-11): see F-1"
+   },
+   {
+    "numeral": "2026",
+    "context": "- erratum (2026-10-11): s"
+   },
+   {
+    "numeral": "-10",
+    "context": "- erratum (2026-10-11): see "
+   },
+   {
+    "numeral": "-11",
+    "context": "- erratum (2026-10-11): see F-1"
+   },
+   {
+    "numeral": "2026",
+    "context": "- erratum (2026-10-11): s"
+   },
+   {
+    "numeral": "-10",
+    "context": "- erratum (2026-10-11): see "
+   },
+   {
+    "numeral": "-11",
+    "context": "- erratum (2026-10-11): see F-1"
+   },
+   {
+    "numeral": "2026",
+    "context": "- note (2026-10-11): s"
+   },
+   {
+    "numeral": "-10",
+    "context": "- note (2026-10-11): see "
+   },
+   {
+    "numeral": "-11",
+    "context": "- note (2026-10-11): see F-1"
+   },
+   {
+    "numeral": "2026",
+    "context": " ## F-16 \u2014 2026-10 errata"
+   },
+   {
+    "numeral": "-10",
+    "context": " ## F-16 \u2014 2026-10 errata pa"
+   },
+   {
+    "numeral": "2026",
+    "context": "FIRMED at the others) - date: 2026-10-11 - r"
+   },
+   {
+    "numeral": "-10",
+    "context": "ED at the others) - date: 2026-10-11 - regi"
+   },
+   {
+    "numeral": "-11",
+    "context": "at the others) - date: 2026-10-11 - regime:"
+   },
+   {
+    "numeral": "121",
+    "context": "payload's head being d4473abb3121; E18's pr"
+   },
+   {
+    "numeral": "-199",
+    "context": "the held-out half (P1 rows 100-199, 24780 ge"
+   },
+   {
+    "numeral": "-99",
+    "context": "dictionaries trained on rows 0-99), per arc"
+   },
+   {
+    "numeral": "73%",
+    "context": " the dumps' by bf16 44%; fp16 73%; E15's pi"
+   },
+   {
+    "numeral": "6384",
+    "context": "), harvest_def_rep_zstd_arch_16384 hit (harv"
+   },
+   {
+    "numeral": "6384",
+    "context": "vest), harvest_def_zstd_arch_16384 hit (harv"
+   },
+   {
+    "numeral": "096",
+    "context": "vest), harvest_def_zstd_arch_4096 hit (harv"
+   },
+   {
+    "numeral": "5536",
+    "context": "vest), harvest_def_zstd_arch_65536 hit (harv"
+   }
+  ],
+  "OPEN_QUESTIONS.md": [
+   {
+    "numeral": "2026",
+    "context": "> Erratum (2026-10-11; F-"
+   },
+   {
+    "numeral": "-10",
+    "context": "> Erratum (2026-10-11; F-16 "
+   },
+   {
+    "numeral": "-11",
+    "context": "> Erratum (2026-10-11; F-16 row"
+   },
+   {
+    "numeral": "2026",
+    "context": "> Erratum (2026-10-11; F-"
+   },
+   {
+    "numeral": "-10",
+    "context": "> Erratum (2026-10-11; F-16 "
+   },
+   {
+    "numeral": "-11",
+    "context": "> Erratum (2026-10-11; F-16 row"
+   },
+   {
+    "numeral": "-199",
+    "context": "the held-out half (P1 rows 100-199, 24780 ge"
+   },
+   {
+    "numeral": "-99",
+    "context": "dictionaries trained on rows 0-99), per arc"
+   }
+  ],
+  "DECISIONS.md": [
+   {
+    "numeral": "2026",
+    "context": "- erratum (2026-10-11; F-"
+   },
+   {
+    "numeral": "-10",
+    "context": "- erratum (2026-10-11; F-16 "
+   },
+   {
+    "numeral": "-11",
+    "context": "- erratum (2026-10-11; F-16 row"
+   },
+   {
+    "numeral": "-199",
+    "context": "the held-out half (P1 rows 100-199, 24780 ge"
+   },
+   {
+    "numeral": "-99",
+    "context": "dictionaries trained on rows 0-99), per arc"
+   },
+   {
+    "numeral": "2026",
+    "context": "- erratum (2026-10-11; F-"
+   },
+   {
+    "numeral": "-10",
+    "context": "- erratum (2026-10-11; F-16 "
+   },
+   {
+    "numeral": "-11",
+    "context": "- erratum (2026-10-11; F-16 row"
+   },
+   {
+    "numeral": "-199",
+    "context": "the held-out half (P1 rows 100-199, 24780 ge"
+   },
+   {
+    "numeral": "-99",
+    "context": "dictionaries trained on rows 0-99), per arc"
+   },
+   {
+    "numeral": "2026",
+    "context": "- erratum (2026-10-11; F-"
+   },
+   {
+    "numeral": "-10",
+    "context": "- erratum (2026-10-11; F-16 "
+   },
+   {
+    "numeral": "-11",
+    "context": "- erratum (2026-10-11; F-16 row"
+   },
+   {
+    "numeral": "-199",
+    "context": "the held-out half (P1 rows 100-199, 24780 ge"
+   },
+   {
+    "numeral": "-99",
+    "context": "dictionaries trained on rows 0-99), per arc"
+   }
+  ],
+  "README.md": [
+   {
+    "numeral": "2026",
+    "context": "> Erratum (2026-10-11; F-"
+   },
+   {
+    "numeral": "-10",
+    "context": "> Erratum (2026-10-11; F-16 "
+   },
+   {
+    "numeral": "-11",
+    "context": "> Erratum (2026-10-11; F-16 row"
+   },
+   {
+    "numeral": "-199",
+    "context": "the held-out half (P1 rows 100-199, 24780 ge"
+   },
+   {
+    "numeral": "-99",
+    "context": "dictionaries trained on rows 0-99), per arc"
+   },
+   {
+    "numeral": "2026",
+    "context": "> Third errata batch (2026-10-11): F"
+   },
+   {
+    "numeral": "-10",
+    "context": "> Third errata batch (2026-10-11): F-16"
+   },
+   {
+    "numeral": "-11",
+    "context": "> Third errata batch (2026-10-11): F-16 ad"
+   }
+  ],
+  "docs/BLUEPRINT.md": [
+   {
+    "numeral": "2026",
+    "context": "> Note (2026-10-11; F-"
+   },
+   {
+    "numeral": "-10",
+    "context": "> Note (2026-10-11; F-16 "
+   },
+   {
+    "numeral": "-11",
+    "context": "> Note (2026-10-11; F-16 row"
+   },
+   {
+    "numeral": "-199",
+    "context": "the held-out half (P1 rows 100-199, 24780 ge"
+   },
+   {
+    "numeral": "-99",
+    "context": "dictionaries trained on rows 0-99), per arc"
+   },
+   {
+    "numeral": "2026",
+    "context": "> Note (2026-10-11; F-"
+   },
+   {
+    "numeral": "-10",
+    "context": "> Note (2026-10-11; F-16 "
+   },
+   {
+    "numeral": "-11",
+    "context": "> Note (2026-10-11; F-16 row"
+   },
+   {
+    "numeral": "-199",
+    "context": "the held-out half (P1 rows 100-199, 24780 ge"
+   },
+   {
+    "numeral": "-99",
+    "context": "dictionaries trained on rows 0-99), per arc"
+   }
+  ]
+ }
+}

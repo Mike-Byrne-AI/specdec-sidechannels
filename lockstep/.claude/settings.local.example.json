@@ -1,0 +1,12 @@
+{
+  "_comment": "Local-only examples. Copy to .claude/settings.local.json only for operator-reviewed host edits; do not commit local settings. Keep broad shell readers, git staging, and package installation as explicit prompts unless your project deliberately opts in.",
+  "permissions": {
+    "allow": [
+      "Bash(python tools/trellis_inventory.py --json:*)",
+      "Edit(CLAUDE.md)",
+      "Write(CLAUDE.md)",
+      "Edit(.gitignore)",
+      "Write(.gitignore)"
+    ]
+  }
+}

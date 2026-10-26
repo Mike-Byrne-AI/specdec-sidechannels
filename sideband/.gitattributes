@@ -1,0 +1,69 @@
+# results/ files are committed evidence cited by sha256 in run metas and
+# findings — line-ending smudging on checkout would break every provenance
+# chain. Store and check out byte-exact.
+results/** -text
+
+# Sha-cited files outside results/ (forward-ledger row EVID-1, closed 2026-10-03):
+# stored and checked out byte for byte, so the sha256 that a payload, an
+# instrument or a test cites reproduces on every checkout whatever
+# core.autocrlf says. A new sha-cited file gets its line here in its freeze commit;
+# tests/test_evidence_bytes.py derives the set from the full-sha256 citations in
+# tracked text files (the payloads' provenance first of all) and goes red when one
+# is missing, so the line is enforced from the landing on.
+data/prompts.jsonl -text
+data/prompts_k3_verdict.jsonl -text
+data/prompts_oq15_val.jsonl -text
+data/prompts_oq15_verdict.jsonl -text
+docs/OQ18_RIDER_DIAGNOSTIC.md -text
+docs/OQ18_RIDER_POSCONTROL.md -text
+tools/run_fullfree_coarse.py -text
+tools/run_fullfree_coarse_amended.py -text
+tools/run_fullfree_twin.py -text
+tools/run_oq18_rider_diag.py -text
+tools/run_oq18_rider_poscontrol.py -text
+tools/run_prefetch_bigram.py -text
+tools/run_prefetch_r2.py -text
+tools/run_prefetch_readouts.py -text
+tools/run_prefetch_strat.py -text
+# A 12-hex freeze pin in prose, outside check 4's 64-hex scan: docs/BLUEPRINT.md's R2
+# freeze record pins this file by its raw LF bytes; the test's HAND_PINNED lists it.
+tests/test_prefetch_r2.py -text
+# The horizon read (registered 2026-10-04): the instrument attests its raw bytes once a
+# payload cites it; the test file is pinned 12-hex in the freeze record (HAND_PINNED).
+tools/run_prefetch_horizon.py -text
+tests/test_prefetch_horizon.py -text
+# The seed-noise floor readouts (registered 2026-10-04): the instrument attests its raw
+# bytes once a payload cites it; the test file is pinned 12-hex in the freeze record.
+tools/run_noise_floor.py -text
+tests/test_noise_floor.py -text
+# The reader-and-lens re-test at S3 (registered 2026-10-05): the instrument attests its raw bytes once a
+# payload cites it; the test file and the lens builder are pinned 12-hex in the freeze record; the
+# builder's artifact is under results/ (already -text).
+tools/run_reader_lens.py -text
+tests/test_reader_lens.py -text
+tools/build_balanced_groups.py -text
+# The OQ-20 seed replay (registered 2026-10-09): the instrument attests its raw bytes once a payload
+# cites it; the test file is pinned 12-hex in the freeze record.
+tools/run_seed_replay.py -text
+tests/test_seed_replay.py -text
+# Lane C of the 2026-10-15 image audit (2026-10-16): tests/test_balanced_groups.py pins the concept-groups
+# builder by its full sha256 beside the balanced builder (whose line is above), so check 4 of
+# tests/test_evidence_bytes.py holds it to the same attribute.
+tools/build_concept_groups.py -text
+# tests/test_fullfree_landing.py (lane C, 2026-10-16) attests the OQ-17 instrument by its full sha256 (no payload
+# cited it before; the twin payloads cite the fullfree payload and state digests), so the same attribute holds it.
+tools/run_fullfree.py -text
+# tests/test_frozen_imports_pinned.py (2026-10-18, after the cold read of that date) attests the two frozen modules the
+# later instruments import by bare name, by their full LF sha256 (no payload cites either), so the same attribute holds them.
+tools/run_probes.py -text
+tools/run_posthoc_topic.py -text
+# S1 READER RE-TEST (registered 2026-10-16): the word instrument attests its raw bytes once the word payload cites it,
+# and the registration's freeze line cites the test file by a 12-hex digest (hand-pinned in tests/test_evidence_bytes.py).
+tools/run_reader_s1.py -text
+tests/test_reader_s1.py -text
+# The recovered critic folder (2026-10-17, the public-cut plan 14.2 item 3): the 308 recovered files and their two
+# manifests (pinned by sha256 in the manifests), with recover.py, gen_readme.py and the README beside them, stored
+# and checked out byte for byte; one glob line, which the
+# export test's real-tree frozen oracle mirrors by prefix (it reads literal lines only) and whose files the
+# evidence-bytes checks never read as citers (RECOVERED_PREFIXES).
+docs/audits/critic-recovered/** -text

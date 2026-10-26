@@ -1,0 +1,82 @@
+{
+  "cases": [
+    {
+      "input": {
+        "kind": "literal-utf8",
+        "text": ""
+      },
+      "model": "adaptive-order1",
+      "n_bytes": 0,
+      "name": "empty",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "payload_sha256": "c3641f8544d7c02f3580b07c0f9887f0c6a27ff5ab1d4a3e29caf197cfc299ae",
+      "payload_size": 1
+    },
+    {
+      "input": {
+        "kind": "literal-utf8",
+        "text": "Deterministic decode, forever. Deterministic decode, forever. Deterministic decode, forever. Deterministic decode, forever. Deterministic decode, forever. Deterministic decode, forever. Deterministic decode, forever. Deterministic decode, forever. Deterministic decode, forever. Deterministic decode, forever. Deterministic decode, forever. Deterministic decode, forever. Deterministic decode, forever. Deterministic decode, forever. Deterministic decode, forever. Deterministic decode, forever. Deterministic decode, forever. Deterministic decode, forever. Deterministic decode, forever. Deterministic decode, forever. Deterministic decode, forever. Deterministic decode, forever. Deterministic decode, forever. Deterministic decode, forever. "
+      },
+      "model": "adaptive-order1",
+      "n_bytes": 744,
+      "name": "hello",
+      "original_sha256": "51a0b2da6128708f4eba541bc2907491235711a719d0602dcc69a02890e47643",
+      "payload_sha256": "76c0cc0879bbfa3653d862abf2f3343fd32f4b9ac1432497fb85ee687c8df5e5",
+      "payload_size": 195
+    },
+    {
+      "input": {
+        "kind": "byte-ramp",
+        "repeat": 4
+      },
+      "model": "adaptive-order1",
+      "n_bytes": 1024,
+      "name": "byte_ramp_x4",
+      "original_sha256": "785b0751fc2c53dc14a4ce3d800e69ef9ce1009eb327ccf458afe09c242c26c9",
+      "payload_sha256": "a57db6f84a8f62bec30b95c4a14affeb92fcccf680cd008dfffdeb092c037dcf",
+      "payload_size": 522
+    },
+    {
+      "input": {
+        "kind": "drbg",
+        "n": 1024,
+        "seed": "lockstep-lsp0-1k"
+      },
+      "model": "adaptive-order1",
+      "n_bytes": 1024,
+      "name": "drbg_1k",
+      "original_sha256": "f3849f0b8b866d370a2613c9995e823b54653f61200000fb44a9dd3897740b08",
+      "payload_sha256": "4aa7727214ae647874dd06fe7bab44df95b26440a42db1096233c3eb479dc78f",
+      "payload_size": 1047
+    },
+    {
+      "input": {
+        "kind": "drbg",
+        "n": 4096,
+        "seed": "lockstep-lsp0-4k"
+      },
+      "model": "adaptive-order1",
+      "n_bytes": 4096,
+      "name": "drbg_4k",
+      "original_sha256": "b5a124eb3f58c62e9f407ab3cdb8d725c04f78d321091345a762eb79942f7ab5",
+      "payload_sha256": "ba80f1c91c0ec867d47dc830d75715f248e8977e5c99a43eda35ae1835c9ef62",
+      "payload_size": 4417
+    },
+    {
+      "input": {
+        "kind": "drbg",
+        "n": 1024,
+        "seed": "lockstep-lsp0-uni"
+      },
+      "model": "uniform",
+      "n_bytes": 1024,
+      "name": "uniform_1k",
+      "original_sha256": "599a3be7108a01a3cce4057ce821f2c711494ef70aa962272f85fb4bb716f778",
+      "payload_sha256": "06709aa6eb786f46746bae424f368443644f5261cda130e1526d471b45b4a3ab",
+      "payload_size": 1025
+    }
+  ],
+  "format": "lockstep-conformance",
+  "profile": "lsp0",
+  "version": 0
+}

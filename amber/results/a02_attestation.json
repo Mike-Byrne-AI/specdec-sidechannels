@@ -1,0 +1,32 @@
+{
+  "T": 8000,
+  "_experiment": "a02_attestation",
+  "_written_unix": 1787993605,
+  "forged_token_attestation": {
+    "attested": false,
+    "recomputed_divergences": 2346,
+    "recorded_corrections": 2346,
+    "token_mismatches_vs_target": 1
+  },
+  "honest_attestation": {
+    "attested": true,
+    "recomputed_divergences": 2346,
+    "recorded_corrections": 2346,
+    "token_mismatches_vs_target": 0
+  },
+  "regime": "amber v0 rank codec on sideband synthetic world; L0=fingerprint, L1=target divergence-set equality",
+  "silent_substitutions_L0_bypassed": [
+    {
+      "substitution": "temperature_1.6->2.4 (monotone recalibration)",
+      "token_change_rate_vs_true": 0.0
+    },
+    {
+      "substitution": "draft_alpha_0.7->0.6",
+      "token_change_rate_vs_true": 0.49325
+    },
+    {
+      "substitution": "zipf_s_1.1->1.2",
+      "token_change_rate_vs_true": 0.0
+    }
+  ]
+}

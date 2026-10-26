@@ -1,0 +1,72 @@
+{
+  "_experiment": "e02_crossbucket_audit.json",
+  "_written_unix": 1787965352,
+  "gamma": 4,
+  "interpretation": "residual_mass is the variance-free estimator of the same estimand as the sampled fraction (F-8). cross_bucket_fraction is the ceiling on the SHARE of rejections concept-steering can address, not on acceptance itself (within-bucket token choice still has to match).",
+  "n_positions": 24000,
+  "regime": "synthetic concept-HMM v0, default WorldConfig except draft_alpha; state-observed target; buckets = ground-truth blocks",
+  "rows": [
+    {
+      "acceptance_rate": {
+        "mean": 0.5464271952493543,
+        "n": 3,
+        "std": 0.0018614159251656027
+      },
+      "cross_bucket_fraction_of_rejections": {
+        "mean": 0.8933424174407149,
+        "n": 3,
+        "std": 0.00105578058984609
+      },
+      "cross_bucket_residual_mass": {
+        "mean": 0.8923677309734361,
+        "n": 3,
+        "std": 0.0004760150804740899
+      },
+      "draft_alpha": 0.5,
+      "n_rejections_total": 31258
+    },
+    {
+      "acceptance_rate": {
+        "mean": 0.6181887610612148,
+        "n": 3,
+        "std": 0.002669884976023216
+      },
+      "cross_bucket_fraction_of_rejections": {
+        "mean": 0.8314858430753075,
+        "n": 3,
+        "std": 0.0005172853308313117
+      },
+      "cross_bucket_residual_mass": {
+        "mean": 0.8357790029954151,
+        "n": 3,
+        "std": 0.0015325204515765332
+      },
+      "draft_alpha": 0.7,
+      "n_rejections_total": 25802
+    },
+    {
+      "acceptance_rate": {
+        "mean": 0.6938598707623093,
+        "n": 3,
+        "std": 0.003297439628865238
+      },
+      "cross_bucket_fraction_of_rejections": {
+        "mean": 0.7611016953995725,
+        "n": 3,
+        "std": 0.00037019590644271486
+      },
+      "cross_bucket_residual_mass": {
+        "mean": 0.7623734075473214,
+        "n": 3,
+        "std": 0.0004507269430076501
+      },
+      "draft_alpha": 0.9,
+      "n_rejections_total": 20172
+    }
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ]
+}

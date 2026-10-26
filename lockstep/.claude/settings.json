@@ -1,0 +1,134 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pytest:*)",
+      "Bash(python -m pytest:*)",
+      "Bash(python -m compileall:*)",
+      "Bash(python tools/trellis_check_env.py:*)",
+      "Bash(python tools/trellis_verify_finding.py:*)",
+      "Bash(python tools/trellis_extract_godfile.py:*)",
+      "Bash(python tools/trellis_inventory.py:*)",
+      "Bash(python tools/trellis_memory_lint.py:*)",
+      "Bash(python tools/trellis_repair_gate.py:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git branch:*)",
+      "Bash(pip show:*)",
+      "Bash(pip list:*)",
+      "Read(**)",
+      "Edit(src/**)",
+      "Edit(tests/**)",
+      "Edit(tools/**)",
+      "Edit(task-packs/**)",
+      "Edit(trellis-docs/trellis-findings.md)",
+      "Edit(trellis-docs/trellis-decisions.md)",
+      "Edit(trellis-docs/trellis-harness.md)",
+      "Edit(trellis-docs/trellis-runs.md)",
+      "Edit(requirements.txt)",
+      "Write(src/**)",
+      "Write(tests/**)",
+      "Write(tools/**)",
+      "Write(task-packs/**)",
+      "Bash(python tools/trellis_status.py:*)",
+      "Bash(python tools/trellis_refs.py:*)",
+      "Edit(.claude/rules/**)",
+      "Write(.claude/rules/**)",
+      "Bash(python tools/trellis_blueprint.py:*)",
+      "Bash(python tools/trellis_plan.py:*)",
+      "Bash(python tools/trellis_pack_lint.py:*)",
+      "Bash(python tools/trellis_reflect.py:*)",
+      "Edit(.claude/commands/**)",
+      "Write(.claude/commands/**)",
+      "Edit(trellis-docs/**)",
+      "Write(trellis-docs/**)",
+      "Bash(python tools/trellis_bootstrap.py:*)",
+      "Edit(.claude/trellis_install_manifest.json)",
+      "Write(.claude/trellis_install_manifest.json)"
+    ],
+    "deny": [
+      "Bash(rm -rf:*)",
+      "Bash(git push:*)",
+      "Bash(git reset --hard:*)",
+      "Bash(git clean:*)",
+      "Bash(git restore:*)",
+      "Bash(curl:*)",
+      "Bash(wget:*)",
+      "Read(.env*)",
+      "Read(secrets/**)",
+      "Read(config/credentials.json)",
+      "Edit(data/**)",
+      "Write(data/**)",
+      "Edit(outputs/**)",
+      "Write(outputs/**)",
+      "Edit(.claude/GODFILE.md)",
+      "Write(.claude/GODFILE.md)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Read",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python",
+            "args": [
+              "${CLAUDE_PROJECT_DIR}/.claude/hooks/track_reads.py"
+            ],
+            "timeout": 10
+          }
+        ]
+      },
+      {
+        "matcher": "Edit|Write|str_replace",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python",
+            "args": [
+              "${CLAUDE_PROJECT_DIR}/.claude/hooks/check_context_loaded.py"
+            ],
+            "timeout": 10
+          },
+          {
+            "type": "command",
+            "command": "python",
+            "args": [
+              "${CLAUDE_PROJECT_DIR}/.claude/hooks/check_godfile_fresh.py"
+            ],
+            "timeout": 10
+          },
+          {
+            "type": "command",
+            "command": "python",
+            "args": [
+              "${CLAUDE_PROJECT_DIR}/.claude/hooks/check_confidence_promotion.py"
+            ],
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|str_replace",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python",
+            "args": [
+              "${CLAUDE_PROJECT_DIR}/.claude/hooks/flag_finding_citations.py"
+            ],
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "python tools/trellis_status.py",
+    "padding": 1
+  }
+}

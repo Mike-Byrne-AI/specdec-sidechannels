@@ -1,0 +1,3 @@
+# Evidence bytes are cited by blob id; every checkout must write exactly the
+# committed bytes (no CRLF conversion), so on-disk sha256 == blob content.
+results/** -text

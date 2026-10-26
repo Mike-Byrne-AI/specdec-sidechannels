@@ -1,0 +1,327 @@
+{
+  "buckets_file": "results/real/buckets_k1024.json",
+  "buckets_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "buckets_sha256": "a1092c94e486b2ce6745ff3368ca9857d4dde07b8082a2743df0bd925f38736b",
+  "created": "2026-08-29T23:21:00Z",
+  "diagnostics": {
+    "concentration_flag": false,
+    "count_rule_ge5_buckets": [
+      269,
+      380,
+      403,
+      850,
+      855,
+      1010
+    ],
+    "covered_mass_share": 0.8004538959401529,
+    "n_top_tokens_in_glue": 55,
+    "n_top_tokens_unbucketed": 0,
+    "per_bucket": [
+      {
+        "bucket": 269,
+        "n_top_tokens": 6,
+        "top_mass_share": 0.029713373119273766
+      },
+      {
+        "bucket": 403,
+        "n_top_tokens": 35,
+        "top_mass_share": 0.47511977809531813
+      },
+      {
+        "bucket": 850,
+        "n_top_tokens": 6,
+        "top_mass_share": 0.17563251239808356
+      },
+      {
+        "bucket": 855,
+        "n_top_tokens": 8,
+        "top_mass_share": 0.11998823232747752
+      }
+    ]
+  },
+  "freq_file": "results/real/gen_freq.json",
+  "freq_sha256": "46370167957a8b867f00b138653ff0926ef00a53ed7f8757430234c76898c963",
+  "git_commit": "db9df6b6e6678ca97d37c9a55c9947a378b5d568-dirty",
+  "glue_bucket_ids": [
+    269,
+    403,
+    850,
+    855
+  ],
+  "k": 1024,
+  "rule": {
+    "mass_cover": 0.8,
+    "name": "top_n-frequency-mass-cover",
+    "top_n": 100
+  },
+  "sensitivity": {
+    "0.70": [
+      403,
+      850,
+      855
+    ],
+    "0.90": [
+      196,
+      269,
+      380,
+      403,
+      582,
+      850,
+      855,
+      893,
+      1010
+    ]
+  },
+  "top_glue_tokens_decoded": [
+    {
+      "count": 2685,
+      "id": 11,
+      "text": ","
+    },
+    {
+      "count": 2533,
+      "id": 279,
+      "text": " the"
+    },
+    {
+      "count": 1445,
+      "id": 13,
+      "text": "."
+    },
+    {
+      "count": 1229,
+      "id": 264,
+      "text": " a"
+    },
+    {
+      "count": 1220,
+      "id": 323,
+      "text": " and"
+    },
+    {
+      "count": 1102,
+      "id": 315,
+      "text": " of"
+    },
+    {
+      "count": 848,
+      "id": 311,
+      "text": " to"
+    },
+    {
+      "count": 500,
+      "id": 304,
+      "text": " in"
+    },
+    {
+      "count": 492,
+      "id": 596,
+      "text": "'s"
+    },
+    {
+      "count": 378,
+      "id": 320,
+      "text": " ("
+    },
+    {
+      "count": 369,
+      "id": 3146,
+      "text": " **"
+    },
+    {
+      "count": 365,
+      "id": 220,
+      "text": " "
+    },
+    {
+      "count": 323,
+      "id": 334,
+      "text": "**"
+    },
+    {
+      "count": 282,
+      "id": 449,
+      "text": " with"
+    },
+    {
+      "count": 281,
+      "id": 430,
+      "text": " that"
+    },
+    {
+      "count": 276,
+      "id": 374,
+      "text": " is"
+    },
+    {
+      "count": 253,
+      "id": 574,
+      "text": " was"
+    },
+    {
+      "count": 248,
+      "id": 439,
+      "text": " as"
+    },
+    {
+      "count": 247,
+      "id": 627,
+      "text": ".\n"
+    },
+    {
+      "count": 235,
+      "id": 433,
+      "text": " it"
+    },
+    {
+      "count": 211,
+      "id": 25,
+      "text": ":"
+    },
+    {
+      "count": 196,
+      "id": 555,
+      "text": " by"
+    },
+    {
+      "count": 185,
+      "id": 369,
+      "text": " for"
+    },
+    {
+      "count": 184,
+      "id": 389,
+      "text": " on"
+    },
+    {
+      "count": 177,
+      "id": 16,
+      "text": "1"
+    },
+    {
+      "count": 173,
+      "id": 505,
+      "text": " from"
+    },
+    {
+      "count": 163,
+      "id": 477,
+      "text": " or"
+    },
+    {
+      "count": 155,
+      "id": 17,
+      "text": "2"
+    },
+    {
+      "count": 136,
+      "id": 12,
+      "text": "-"
+    },
+    {
+      "count": 135,
+      "id": 330,
+      "text": " \""
+    },
+    {
+      "count": 122,
+      "id": 902,
+      "text": " which"
+    },
+    {
+      "count": 121,
+      "id": 15,
+      "text": "0"
+    },
+    {
+      "count": 120,
+      "id": 527,
+      "text": " are"
+    },
+    {
+      "count": 108,
+      "id": 18,
+      "text": "3"
+    },
+    {
+      "count": 107,
+      "id": 520,
+      "text": " at"
+    },
+    {
+      "count": 106,
+      "id": 8,
+      "text": ")"
+    },
+    {
+      "count": 98,
+      "id": 1555,
+      "text": " through"
+    },
+    {
+      "count": 95,
+      "id": 499,
+      "text": " you"
+    },
+    {
+      "count": 94,
+      "id": 719,
+      "text": " but"
+    },
+    {
+      "count": 92,
+      "id": 1093,
+      "text": " like"
+    },
+    {
+      "count": 90,
+      "id": 9,
+      "text": "*"
+    },
+    {
+      "count": 87,
+      "id": 19,
+      "text": "4"
+    },
+    {
+      "count": 73,
+      "id": 1268,
+      "text": " how"
+    },
+    {
+      "count": 65,
+      "id": 420,
+      "text": " this"
+    },
+    {
+      "count": 64,
+      "id": 927,
+      "text": " over"
+    },
+    {
+      "count": 64,
+      "id": 1070,
+      "text": " there"
+    },
+    {
+      "count": 63,
+      "id": 649,
+      "text": " can"
+    },
+    {
+      "count": 62,
+      "id": 1176,
+      "text": " first"
+    },
+    {
+      "count": 59,
+      "id": 20,
+      "text": "5"
+    },
+    {
+      "count": 58,
+      "id": 832,
+      "text": " one"
+    }
+  ]
+}

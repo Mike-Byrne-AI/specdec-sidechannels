@@ -1,0 +1,395 @@
+{
+  "arms": {
+    "phase0c_k16_sharp_b3": {
+      "acceptance_ci95_cluster": [
+        0.7424843389979383,
+        0.7587539904640088
+      ],
+      "acceptance_mean_of_rates": 0.7513288594370319,
+      "acceptance_pooled": 0.7503756887627316,
+      "analytic_acceptance_drafted_pooled": 0.7325010720519611,
+      "analytic_drafted_by_offset": {
+        "1": 0.7344193120293909,
+        "2": 0.7351025868509946,
+        "3": 0.729301711663027,
+        "4": 0.7311806776644326
+      },
+      "buckets_k": 16,
+      "buckets_sha256": "e31db51ef0f689d97372a831330082e3db5cad8911af9bab6a7849e742383999",
+      "delta_vs_vanilla": {
+        "acceptance_mean_of_rates": -0.011859738070492409,
+        "acceptance_pooled": {
+          "boot_mean": -0.012416032849613547,
+          "ci95": [
+            -0.01858271285481107,
+            -0.006142737527573018
+          ],
+          "plugin": -0.012387831425594631
+        },
+        "analytic_drafted_pooled": {
+          "boot_mean": -0.014198659022910159,
+          "ci95": [
+            -0.018885963579789614,
+            -0.009460912268985992
+          ],
+          "plugin": -0.014181252088218299
+        },
+        "tokens_per_target_call_pooled": {
+          "boot_mean": -0.07613988631349546,
+          "ci95": [
+            -0.11353578913242773,
+            -0.037997276887320554
+          ],
+          "plugin": -0.07601723798262494
+        }
+      },
+      "gate_open_rate": 0.5519499085086916,
+      "gate_space_exemption": true,
+      "glue_sha256": "abeab44833ca63bc7ddcf6bc6e14ea650cf7ed066c86bf166e867b2a1bf15ac6",
+      "n_gate_open": 38610,
+      "n_prompts": 210,
+      "n_steerable": 69952,
+      "status": "OK",
+      "steer": {
+        "beta": 3.0,
+        "bucket_source": "free_lastp_sharp",
+        "steer": "bucket",
+        "steer_gate": "disagree",
+        "steer_mech": "posterior"
+      },
+      "tokens_per_target_call_pooled": 3.03141597920669
+    },
+    "phase0c_k16_soft_b3": {
+      "acceptance_ci95_cluster": [
+        0.7527135480093106,
+        0.7674584722864525
+      ],
+      "acceptance_mean_of_rates": 0.7610679342373624,
+      "acceptance_pooled": 0.7598385049218539,
+      "analytic_acceptance_drafted_pooled": 0.7404304874717759,
+      "analytic_drafted_by_offset": {
+        "1": 0.7435573452499779,
+        "2": 0.7423553674930707,
+        "3": 0.7378061777921368,
+        "4": 0.7380030593519156
+      },
+      "buckets_k": 16,
+      "buckets_sha256": "e31db51ef0f689d97372a831330082e3db5cad8911af9bab6a7849e742383999",
+      "delta_vs_vanilla": {
+        "acceptance_mean_of_rates": -0.0021206632701618582,
+        "acceptance_pooled": {
+          "boot_mean": -0.0029459824740090054,
+          "ci95": [
+            -0.008752655078360866,
+            0.002932411220496935
+          ],
+          "plugin": -0.002925015266472375
+        },
+        "analytic_drafted_pooled": {
+          "boot_mean": -0.00626166025803164,
+          "ci95": [
+            -0.010837676207035884,
+            -0.0015714250387220035
+          ],
+          "plugin": -0.0062518366684041204
+        },
+        "tokens_per_target_call_pooled": {
+          "boot_mean": -0.0182473076151064,
+          "ci95": [
+            -0.053903034893848734,
+            0.01806448945907461
+          ],
+          "plugin": -0.018105606316639822
+        }
+      },
+      "gate_open_rate": 0.5590501013611352,
+      "gate_space_exemption": true,
+      "glue_sha256": "abeab44833ca63bc7ddcf6bc6e14ea650cf7ed066c86bf166e867b2a1bf15ac6",
+      "n_gate_open": 38608,
+      "n_prompts": 210,
+      "n_steerable": 69060,
+      "status": "OK",
+      "steer": {
+        "beta": 3.0,
+        "bucket_source": "free_lastp",
+        "steer": "bucket",
+        "steer_gate": "disagree",
+        "steer_mech": "posterior"
+      },
+      "tokens_per_target_call_pooled": 3.089327610872675
+    },
+    "phase0c_k32_sharp_b3": {
+      "acceptance_ci95_cluster": [
+        0.7366594829687113,
+        0.7521888699163285
+      ],
+      "acceptance_mean_of_rates": 0.7458591019288763,
+      "acceptance_pooled": 0.7444202221530156,
+      "analytic_acceptance_drafted_pooled": 0.7253912135707219,
+      "analytic_drafted_by_offset": {
+        "1": 0.7284930473249699,
+        "2": 0.7259372746569841,
+        "3": 0.7211204254968689,
+        "4": 0.7260141068040632
+      },
+      "buckets_k": 32,
+      "buckets_sha256": "076fe00aaaf51ae3418732e7eb3ff1a2a1b8cd6453d4c091085b667f7f74c360",
+      "delta_vs_vanilla": {
+        "acceptance_mean_of_rates": -0.017329495578647984,
+        "acceptance_pooled": {
+          "boot_mean": -0.01833015973640774,
+          "ci95": [
+            -0.024643841646001773,
+            -0.012127338033913781
+          ],
+          "plugin": -0.01834329803531065
+        },
+        "analytic_drafted_pooled": {
+          "boot_mean": -0.02128304593216286,
+          "ci95": [
+            -0.026115576510435546,
+            -0.016536132047334395
+          ],
+          "plugin": -0.02129111056945776
+        },
+        "tokens_per_target_call_pooled": {
+          "boot_mean": -0.10818833693814645,
+          "ci95": [
+            -0.14626926891234934,
+            -0.07029191490327973
+          ],
+          "plugin": -0.10826957068806031
+        }
+      },
+      "gate_open_rate": 0.6680112834978843,
+      "gate_space_exemption": true,
+      "glue_sha256": "5087cddd3573bdcdd3e32fe49bde77db1c63f0c6b461c652a8622abc972fa4b7",
+      "n_gate_open": 47362,
+      "n_prompts": 210,
+      "n_steerable": 70900,
+      "status": "OK",
+      "steer": {
+        "beta": 3.0,
+        "bucket_source": "free_lastp_sharp",
+        "steer": "bucket",
+        "steer_gate": "disagree",
+        "steer_mech": "posterior"
+      },
+      "tokens_per_target_call_pooled": 2.9991636465012546
+    },
+    "phase0c_k32_soft_b3": {
+      "acceptance_ci95_cluster": [
+        0.7430463410814697,
+        0.7574717081874656
+      ],
+      "acceptance_mean_of_rates": 0.7510678107392902,
+      "acceptance_pooled": 0.7501773863683793,
+      "analytic_acceptance_drafted_pooled": 0.7333866842092948,
+      "analytic_drafted_by_offset": {
+        "1": 0.7340478832292867,
+        "2": 0.7331346009407224,
+        "3": 0.7333357188292113,
+        "4": 0.7330285338379582
+      },
+      "buckets_k": 32,
+      "buckets_sha256": "076fe00aaaf51ae3418732e7eb3ff1a2a1b8cd6453d4c091085b667f7f74c360",
+      "delta_vs_vanilla": {
+        "acceptance_mean_of_rates": -0.012120786768234042,
+        "acceptance_pooled": {
+          "boot_mean": -0.012585356337149052,
+          "ci95": [
+            -0.0184278551582257,
+            -0.006772372517596248
+          ],
+          "plugin": -0.012586133819946999
+        },
+        "analytic_drafted_pooled": {
+          "boot_mean": -0.013295822160873496,
+          "ci95": [
+            -0.018103648947574463,
+            -0.00859366192245721
+          ],
+          "plugin": -0.013295639930885006
+        },
+        "tokens_per_target_call_pooled": {
+          "boot_mean": -0.07608299203515645,
+          "ci95": [
+            -0.11212208211115132,
+            -0.04036093825861632
+          ],
+          "plugin": -0.07607019729781417
+        }
+      },
+      "gate_open_rate": 0.6661900949330893,
+      "gate_space_exemption": true,
+      "glue_sha256": "5087cddd3573bdcdd3e32fe49bde77db1c63f0c6b461c652a8622abc972fa4b7",
+      "n_gate_open": 46596,
+      "n_prompts": 210,
+      "n_steerable": 69944,
+      "status": "OK",
+      "steer": {
+        "beta": 3.0,
+        "bucket_source": "free_lastp",
+        "steer": "bucket",
+        "steer_gate": "disagree",
+        "steer_mech": "posterior"
+      },
+      "tokens_per_target_call_pooled": 3.0313630198915007
+    },
+    "phase0c_k64_sharp_b3": {
+      "acceptance_ci95_cluster": [
+        0.7293995273763509,
+        0.7456765232858805
+      ],
+      "acceptance_mean_of_rates": 0.73896745608437,
+      "acceptance_pooled": 0.7376059541037834,
+      "analytic_acceptance_drafted_pooled": 0.7199046379951213,
+      "analytic_drafted_by_offset": {
+        "1": 0.7225740999727984,
+        "2": 0.7215220120728514,
+        "3": 0.7185210203396241,
+        "4": 0.7170014195952148
+      },
+      "buckets_k": 64,
+      "buckets_sha256": "ba6e05aeeb23a1da85ba172f13c2cb5acd5da9c602a10b7e94917916c5a06172",
+      "delta_vs_vanilla": {
+        "acceptance_mean_of_rates": -0.02422114142315437,
+        "acceptance_pooled": {
+          "boot_mean": -0.02517900156099907,
+          "ci95": [
+            -0.03165602481705186,
+            -0.018583684627233414
+          ],
+          "plugin": -0.025157566084542893
+        },
+        "analytic_drafted_pooled": {
+          "boot_mean": -0.026789516800116105,
+          "ci95": [
+            -0.03163574780365741,
+            -0.02177626877196491
+          ],
+          "plugin": -0.02677768614505749
+        },
+        "tokens_per_target_call_pooled": {
+          "boot_mean": -0.14564957186535282,
+          "ci95": [
+            -0.1843619350733419,
+            -0.10536209652884071
+          ],
+          "plugin": -0.14559444010804357
+        }
+      },
+      "gate_open_rate": 0.8017495549621718,
+      "gate_space_exemption": true,
+      "glue_sha256": "6a1705b050396e1cfa6cee995c4e8839a7bd54579133959b6891c127c087ae4f",
+      "n_gate_open": 57649,
+      "n_prompts": 210,
+      "n_steerable": 71904,
+      "status": "OK",
+      "steer": {
+        "beta": 3.0,
+        "bucket_source": "free_lastp_sharp",
+        "steer": "bucket",
+        "steer_gate": "disagree",
+        "steer_mech": "posterior"
+      },
+      "tokens_per_target_call_pooled": 2.9618387770812715
+    },
+    "phase0c_k64_soft_b3": {
+      "acceptance_ci95_cluster": [
+        0.7473787581637903,
+        0.7621136405279437
+      ],
+      "acceptance_mean_of_rates": 0.7554680068536198,
+      "acceptance_pooled": 0.7544330111215051,
+      "analytic_acceptance_drafted_pooled": 0.7349688886256854,
+      "analytic_drafted_by_offset": {
+        "1": 0.7387511900716394,
+        "2": 0.7361282998088429,
+        "3": 0.7328294682155609,
+        "4": 0.7321665964066977
+      },
+      "buckets_k": 64,
+      "buckets_sha256": "ba6e05aeeb23a1da85ba172f13c2cb5acd5da9c602a10b7e94917916c5a06172",
+      "delta_vs_vanilla": {
+        "acceptance_mean_of_rates": -0.007720590653904468,
+        "acceptance_pooled": {
+          "boot_mean": -0.008351690994392572,
+          "ci95": [
+            -0.014130343260305215,
+            -0.0024770686509622223
+          ],
+          "plugin": -0.008330509066821201
+        },
+        "analytic_drafted_pooled": {
+          "boot_mean": -0.011738599585663468,
+          "ci95": [
+            -0.01604159617463293,
+            -0.007362327126025603
+          ],
+          "plugin": -0.01171343551449433
+        },
+        "tokens_per_target_call_pooled": {
+          "boot_mean": -0.04426461734652868,
+          "ci95": [
+            -0.08080420506472788,
+            -0.007260343770539374
+          ],
+          "plugin": -0.04409817824452
+        }
+      },
+      "gate_open_rate": 0.8071810806145348,
+      "gate_space_exemption": true,
+      "glue_sha256": "6a1705b050396e1cfa6cee995c4e8839a7bd54579133959b6891c127c087ae4f",
+      "n_gate_open": 56112,
+      "n_prompts": 210,
+      "n_steerable": 69516,
+      "status": "OK",
+      "steer": {
+        "beta": 3.0,
+        "bucket_source": "free_lastp",
+        "steer": "bucket",
+        "steer_gate": "disagree",
+        "steer_mech": "posterior"
+      },
+      "tokens_per_target_call_pooled": 3.063335038944795
+    }
+  },
+  "boot_seed": 0,
+  "kv_spot_rider": {
+    "status": "SKIPPED \u2014 steered results quarantined"
+  },
+  "n_boot_cluster": 2000,
+  "n_boot_paired": 20000,
+  "vanilla": {
+    "acceptance_ci95_cluster": [
+      0.7561881061968625,
+      0.7696782057920667
+    ],
+    "acceptance_mean_of_rates": 0.7631885975075244,
+    "acceptance_pooled": 0.7627635201883263,
+    "analytic_acceptance_drafted_pooled": 0.7466823241401789,
+    "analytic_drafted_by_offset": {
+      "1": 0.7486868188441568,
+      "2": 0.7480400233611805,
+      "3": 0.7442661725062633,
+      "4": 0.7457362818491183
+    },
+    "gate_open_rate": null,
+    "n_gate_open": 0,
+    "n_prompts": 210,
+    "n_steerable": 0,
+    "stem": "phase0b_vanilla_k512",
+    "tokens_per_target_call_pooled": 3.107433217189315
+  },
+  "vanilla_rerun_rider": {
+    "audit_k512_acceptance_pooled": 0.7627635201883263,
+    "audit_k512_ci95_cluster": [
+      0.7561881061968625,
+      0.7696782057920667
+    ],
+    "point_in_ci": true,
+    "vanilla_rerun_point": 0.7627635201883263
+  },
+  "verdict": "ISSUES: ['KV spot rider skipped']"
+}

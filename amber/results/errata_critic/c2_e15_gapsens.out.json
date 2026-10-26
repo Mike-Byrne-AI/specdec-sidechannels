@@ -1,0 +1,107 @@
+{
+ "manifest_files_checked": 43,
+ "cuda_bf16_b1": {
+  "measured_one_in": 65.10119047619047,
+  "measured_fail_rate": 0.84,
+  "measured_A_first": 28,
+  "by_binning": {
+   "log8": {
+    "bins": 9,
+    "p4_A_mass_in_empty_p2_bins": 0,
+    "one_in": 104.29822333910955,
+    "fail_exact": 0.7400903866575573,
+    "compensator_A": 30.652776753447878,
+    "rate_measured_gt_predicted": 1.0,
+    "fail_measured_gt_predicted": 1.0
+   },
+   "log16": {
+    "bins": 17,
+    "p4_A_mass_in_empty_p2_bins": 0,
+    "one_in": 104.99866635771117,
+    "fail_exact": 0.7405328951422422,
+    "compensator_A": 30.3080879133541,
+    "rate_measured_gt_predicted": 1.0,
+    "fail_measured_gt_predicted": 1.0
+   },
+   "log31": {
+    "bins": 32,
+    "p4_A_mass_in_empty_p2_bins": 0,
+    "one_in": 105.02300638993025,
+    "fail_exact": 0.740741299687196,
+    "compensator_A": 30.03121398434787,
+    "rate_measured_gt_predicted": 1.0,
+    "fail_measured_gt_predicted": 1.0
+   },
+   "log61": {
+    "bins": 62,
+    "p4_A_mass_in_empty_p2_bins": 2,
+    "one_in": 104.44305400809935,
+    "fail_exact": 0.7393033639071731,
+    "compensator_A": 30.772107519243512,
+    "rate_measured_gt_predicted": 1.0,
+    "fail_measured_gt_predicted": 1.0
+   },
+   "p2_quantile20": {
+    "bins": 20,
+    "p4_A_mass_in_empty_p2_bins": 0,
+    "one_in": 103.21404535498503,
+    "fail_exact": 0.7466950835701788,
+    "compensator_A": 33.281990521326975,
+    "rate_measured_gt_predicted": 1.0,
+    "fail_measured_gt_predicted": 1.0
+   }
+  }
+ },
+ "cuda_fp16_b1": {
+  "measured_one_in": 670.5087719298245,
+  "measured_fail_rate": 0.285,
+  "measured_A_first": 9,
+  "by_binning": {
+   "log8": {
+    "bins": 9,
+    "p4_A_mass_in_empty_p2_bins": 0,
+    "one_in": 720.7870544989238,
+    "fail_exact": 0.2613186311257176,
+    "compensator_A": 11.170366546205484,
+    "rate_measured_gt_predicted": 1.0,
+    "fail_measured_gt_predicted": 1.0
+   },
+   "log16": {
+    "bins": 17,
+    "p4_A_mass_in_empty_p2_bins": 0,
+    "one_in": 725.3112843372629,
+    "fail_exact": 0.2593423955308265,
+    "compensator_A": 11.265259740259744,
+    "rate_measured_gt_predicted": 1.0,
+    "fail_measured_gt_predicted": 1.0
+   },
+   "log31": {
+    "bins": 32,
+    "p4_A_mass_in_empty_p2_bins": 0,
+    "one_in": 718.3142317623906,
+    "fail_exact": 0.2608970361571127,
+    "compensator_A": 11.430086023086538,
+    "rate_measured_gt_predicted": 1.0,
+    "fail_measured_gt_predicted": 1.0
+   },
+   "log61": {
+    "bins": 62,
+    "p4_A_mass_in_empty_p2_bins": 2,
+    "one_in": 698.3547802543648,
+    "fail_exact": 0.26480254192855346,
+    "compensator_A": 12.965034965034963,
+    "rate_measured_gt_predicted": 1.0,
+    "fail_measured_gt_predicted": 1.0
+   },
+   "p2_quantile20": {
+    "bins": 20,
+    "p4_A_mass_in_empty_p2_bins": 0,
+    "one_in": 681.7188370672702,
+    "fail_exact": 0.2743004142463592,
+    "compensator_A": 15.027646129541841,
+    "rate_measured_gt_predicted": 1.0,
+    "fail_measured_gt_predicted": 1.0
+   }
+  }
+ }
+}

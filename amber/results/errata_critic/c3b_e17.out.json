@@ -1,0 +1,65 @@
+{
+ "compare_value": {
+  "n": 178,
+  "max_abs_diff": 0.0,
+  "nonnumeric_unequal": [],
+  "only_in_payload": [],
+  "only_in_mine": []
+ },
+ "status_mine": {
+  "status": "CORRECTED",
+  "status_by_count": "CONFIRMED",
+  "status_by_claim_site": {
+   "F-5 (FINDINGS.md:40), labels": "CORRECTED",
+   "F-7 (FINDINGS.md:54), labels": "CORRECTED",
+   "F-5 (FINDINGS.md:40), escape cost at 2 tau": "CORRECTED",
+   "F-7 (FINDINGS.md:54), escape cost at 2 tau": "CORRECTED",
+   "OPEN_QUESTIONS.md:16 (escape cost at 2 tau)": "CORRECTED"
+  },
+  "status_under_pinned_tolerance": {
+   "F-5 (FINDINGS.md:40), labels": "CORRECTED",
+   "F-7 (FINDINGS.md:54), labels": "CORRECTED",
+   "F-5 (FINDINGS.md:40), escape cost at 2 tau": "CORRECTED",
+   "F-7 (FINDINGS.md:54), escape cost at 2 tau": "UNRECOMPUTABLE",
+   "OPEN_QUESTIONS.md:16 (escape cost at 2 tau)": "UNRECOMPUTABLE"
+  }
+ },
+ "status_payload": {
+  "status": "CORRECTED",
+  "status_by_count": "CONFIRMED",
+  "status_by_claim_site": {
+   "F-5 (FINDINGS.md:40), escape cost at 2 tau": "CORRECTED",
+   "F-5 (FINDINGS.md:40), labels": "CORRECTED",
+   "F-7 (FINDINGS.md:54), escape cost at 2 tau": "CORRECTED",
+   "F-7 (FINDINGS.md:54), labels": "CORRECTED",
+   "OPEN_QUESTIONS.md:16 (escape cost at 2 tau)": "CORRECTED"
+  },
+  "status_under_pinned_tolerance": {
+   "F-5 (FINDINGS.md:40), escape cost at 2 tau": "CORRECTED",
+   "F-5 (FINDINGS.md:40), labels": "CORRECTED",
+   "F-7 (FINDINGS.md:54), escape cost at 2 tau": "UNRECOMPUTABLE",
+   "F-7 (FINDINGS.md:54), labels": "CORRECTED",
+   "OPEN_QUESTIONS.md:16 (escape cost at 2 tau)": "UNRECOMPUTABLE"
+  }
+ },
+ "status_equal": true,
+ "manifests": {
+  "tinyllama_manifest_entries": 144,
+  "identical_to_original_pins": true
+ },
+ "printed_figures_in_claim_text": {
+  "F-5": true,
+  "F-7": true,
+  "OQ-2:16": true
+ },
+ "where": [
+  "FINDINGS.md:40",
+  "FINDINGS.md:54",
+  "OPEN_QUESTIONS.md:16"
+ ],
+ "prediction": {
+  "counts_all_match": true,
+  "n_labels_2tau": 1,
+  "n_labels_4tau": 6
+ }
+}

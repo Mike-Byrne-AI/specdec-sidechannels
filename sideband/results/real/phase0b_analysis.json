@@ -1,0 +1,650 @@
+{
+  "arms": {
+    "phase0b_sharp_b1": {
+      "acceptance_ci95_cluster": [
+        0.7567575378746695,
+        0.7712028729507154
+      ],
+      "acceptance_mean_of_rates": 0.7648763966325242,
+      "acceptance_pooled": 0.7637010676156584,
+      "analytic_acceptance_drafted_pooled": 0.7482886918755105,
+      "analytic_drafted_by_offset": {
+        "1": 0.7515741425737333,
+        "2": 0.7507453245722439,
+        "3": 0.7448013359739206,
+        "4": 0.7460339643821455
+      },
+      "delta_vs_vanilla": {
+        "acceptance_mean_of_rates": 0.0016877991249998727,
+        "acceptance_pooled": {
+          "boot_mean": 0.0009199988836721396,
+          "ci95": [
+            -0.004418464813217285,
+            0.0063722407074933846
+          ],
+          "plugin": 0.0009375474273320972
+        },
+        "analytic_drafted_pooled": {
+          "boot_mean": 0.0015970038873837182,
+          "ci95": [
+            -0.0025383330309273117,
+            0.005780374211070495
+          ],
+          "plugin": 0.0016063677353312933
+        },
+        "tokens_per_target_call_pooled": {
+          "boot_mean": 0.004900532416689042,
+          "ci95": [
+            -0.02963664079571804,
+            0.04018542780715403
+          ],
+          "plugin": 0.005016116916070068
+        }
+      },
+      "gate_open_rate": 0.9363862837045721,
+      "glue_sha256": null,
+      "glue_sha256_exemption": null,
+      "n_gate_open": 63899,
+      "n_prompts": 210,
+      "n_steerable": 68240,
+      "status": "OK",
+      "steer": {
+        "beta": 1.0,
+        "bucket_source": "free_lastp_sharp",
+        "steer": "bucket",
+        "steer_gate": "disagree",
+        "steer_mech": "posterior"
+      },
+      "tokens_per_target_call_pooled": 3.112449334105385
+    },
+    "phase0b_sharp_b2": {
+      "acceptance_ci95_cluster": [
+        0.7517328339858551,
+        0.7663751269581035
+      ],
+      "acceptance_mean_of_rates": 0.7599535005181948,
+      "acceptance_pooled": 0.758779709116708,
+      "analytic_acceptance_drafted_pooled": 0.7437511289513683,
+      "analytic_drafted_by_offset": {
+        "1": 0.7442782128359028,
+        "2": 0.7421955144462318,
+        "3": 0.7425448150005898,
+        "4": 0.7459859735227475
+      },
+      "delta_vs_vanilla": {
+        "acceptance_mean_of_rates": -0.0032350969893294476,
+        "acceptance_pooled": {
+          "boot_mean": -0.003978550327061491,
+          "ci95": [
+            -0.009745704962648363,
+            0.001780325885146616
+          ],
+          "plugin": -0.003983811071618271
+        },
+        "analytic_drafted_pooled": {
+          "boot_mean": -0.002946466377648236,
+          "ci95": [
+            -0.007434090593350579,
+            0.0015159419686393129
+          ],
+          "plugin": -0.002931195188811242
+        },
+        "tokens_per_target_call_pooled": {
+          "boot_mean": -0.025944750616254657,
+          "ci95": [
+            -0.06184643845149597,
+            0.010436653071664
+          ],
+          "plugin": -0.025979296181873668
+        }
+      },
+      "gate_open_rate": 0.939252607184241,
+      "glue_sha256": null,
+      "glue_sha256_exemption": null,
+      "n_gate_open": 64846,
+      "n_prompts": 210,
+      "n_steerable": 69040,
+      "status": "OK",
+      "steer": {
+        "beta": 2.0,
+        "bucket_source": "free_lastp_sharp",
+        "steer": "bucket",
+        "steer_gate": "disagree",
+        "steer_mech": "posterior"
+      },
+      "tokens_per_target_call_pooled": 3.081453921007441
+    },
+    "phase0b_sharp_b3": {
+      "acceptance_ci95_cluster": [
+        0.7460997385205458,
+        0.7605154888819639
+      ],
+      "acceptance_mean_of_rates": 0.7536154828780415,
+      "acceptance_pooled": 0.752985884907709,
+      "analytic_acceptance_drafted_pooled": 0.7350022724419811,
+      "analytic_drafted_by_offset": {
+        "1": 0.7344617213669198,
+        "2": 0.7389580519308744,
+        "3": 0.7324409506370037,
+        "4": 0.7341483658331271
+      },
+      "delta_vs_vanilla": {
+        "acceptance_mean_of_rates": -0.009573114629482713,
+        "acceptance_pooled": {
+          "boot_mean": -0.009762540601415204,
+          "ci95": [
+            -0.01547397031911483,
+            -0.00389928820748124
+          ],
+          "plugin": -0.009777635280617258
+        },
+        "analytic_drafted_pooled": {
+          "boot_mean": -0.011686780711244163,
+          "ci95": [
+            -0.01643722057395181,
+            -0.006824993755900559
+          ],
+          "plugin": -0.01168005169819819
+        },
+        "tokens_per_target_call_pooled": {
+          "boot_mean": -0.059304559032827504,
+          "ci95": [
+            -0.0953024507257864,
+            -0.02253724127554896
+          ],
+          "plugin": -0.05938687461775638
+        }
+      },
+      "gate_open_rate": 0.939260259799977,
+      "glue_sha256": null,
+      "glue_sha256_exemption": null,
+      "n_gate_open": 65365,
+      "n_prompts": 210,
+      "n_steerable": 69592,
+      "status": "OK",
+      "steer": {
+        "beta": 3.0,
+        "bucket_source": "free_lastp_sharp",
+        "steer": "bucket",
+        "steer_gate": "disagree",
+        "steer_mech": "posterior"
+      },
+      "tokens_per_target_call_pooled": 3.0480463425715585
+    },
+    "phase0b_sharp_b3_always": {
+      "acceptance_ci95_cluster": [
+        0.7378594813817463,
+        0.753977045071078
+      ],
+      "acceptance_mean_of_rates": 0.7469644255699867,
+      "acceptance_pooled": 0.745957659609935,
+      "analytic_acceptance_drafted_pooled": 0.7274035344582201,
+      "analytic_drafted_by_offset": {
+        "1": 0.725746144419442,
+        "2": 0.7288192014079158,
+        "3": 0.7278204868221275,
+        "4": 0.7272283051833964
+      },
+      "delta_vs_vanilla": {
+        "acceptance_mean_of_rates": -0.01622417193753756,
+        "acceptance_pooled": {
+          "boot_mean": -0.01682732873371171,
+          "ci95": [
+            -0.023216069030963127,
+            -0.01039214980429143
+          ],
+          "plugin": -0.016805860578391285
+        },
+        "analytic_drafted_pooled": {
+          "boot_mean": -0.019289981496842756,
+          "ci95": [
+            -0.024858455044237664,
+            -0.01370550129418337
+          ],
+          "plugin": -0.019278789681959063
+        },
+        "tokens_per_target_call_pooled": {
+          "boot_mean": -0.10394938681117329,
+          "ci95": [
+            -0.14251100137778594,
+            -0.06430033552191221
+          ],
+          "plugin": -0.10385139493724393
+        }
+      },
+      "gate_open_rate": 1.0,
+      "glue_sha256": null,
+      "glue_sha256_exemption": null,
+      "n_gate_open": 70632,
+      "n_prompts": 210,
+      "n_steerable": 70632,
+      "status": "OK",
+      "steer": {
+        "beta": 3.0,
+        "bucket_source": "free_lastp_sharp",
+        "steer": "bucket",
+        "steer_gate": "always",
+        "steer_mech": "posterior"
+      },
+      "tokens_per_target_call_pooled": 3.003581822252071
+    },
+    "phase0b_sharp_b3_cover90": {
+      "acceptance_ci95_cluster": [
+        0.7501907285088748,
+        0.765199687776259
+      ],
+      "acceptance_mean_of_rates": 0.7586242719971747,
+      "acceptance_pooled": 0.7576645390813017,
+      "analytic_acceptance_drafted_pooled": 0.7388473516813034,
+      "analytic_drafted_by_offset": {
+        "1": 0.7393854840225786,
+        "2": 0.7411288721163308,
+        "3": 0.7381538999365512,
+        "4": 0.736721150649755
+      },
+      "delta_vs_vanilla": {
+        "acceptance_mean_of_rates": -0.004564325510349544,
+        "acceptance_pooled": {
+          "boot_mean": -0.005065300009826456,
+          "ci95": [
+            -0.010805928348060087,
+            0.0007137902281253306
+          ],
+          "plugin": -0.005098981107024558
+        },
+        "analytic_drafted_pooled": {
+          "boot_mean": -0.007818266412305666,
+          "ci95": [
+            -0.012468084136660961,
+            -0.0031771264050798587
+          ],
+          "plugin": -0.007834972458875766
+        },
+        "tokens_per_target_call_pooled": {
+          "boot_mean": -0.03527135599880335,
+          "ci95": [
+            -0.07166844709746796,
+            0.0013619143675579542
+          ],
+          "plugin": -0.03549777023956091
+        }
+      },
+      "gate_open_rate": 0.9360663809082483,
+      "glue_sha256": "9831b2323a0748be32730c842f722c0a50a962cb35bbafceb61d2a348d19382c",
+      "glue_sha256_exemption": true,
+      "n_gate_open": 64641,
+      "n_prompts": 210,
+      "n_steerable": 69056,
+      "status": "OK",
+      "steer": {
+        "beta": 3.0,
+        "bucket_source": "free_lastp_sharp",
+        "steer": "bucket",
+        "steer_gate": "disagree",
+        "steer_mech": "posterior"
+      },
+      "tokens_per_target_call_pooled": 3.071935446949754
+    },
+    "phase0b_sharp_b4": {
+      "acceptance_ci95_cluster": [
+        0.7304464542557798,
+        0.74790590721806
+      ],
+      "acceptance_mean_of_rates": 0.7401177434424074,
+      "acceptance_pooled": 0.7390249968909339,
+      "analytic_acceptance_drafted_pooled": 0.7192624049913569,
+      "analytic_drafted_by_offset": {
+        "1": 0.7208052622917067,
+        "2": 0.720383657445288,
+        "3": 0.7169850250918394,
+        "4": 0.7188756751365918
+      },
+      "delta_vs_vanilla": {
+        "acceptance_mean_of_rates": -0.023070854065116903,
+        "acceptance_pooled": {
+          "boot_mean": -0.023722119795840223,
+          "ci95": [
+            -0.03023454208382752,
+            -0.01723786582245727
+          ],
+          "plugin": -0.023738523297392344
+        },
+        "analytic_drafted_pooled": {
+          "boot_mean": -0.027409704648226143,
+          "ci95": [
+            -0.03283671013486048,
+            -0.022111774465549294
+          ],
+          "plugin": -0.027419919148822913
+        },
+        "tokens_per_target_call_pooled": {
+          "boot_mean": -0.14571882353875348,
+          "ci95": [
+            -0.18546236743974204,
+            -0.10553505317606823
+          ],
+          "plugin": -0.1458884078148306
+        }
+      },
+      "gate_open_rate": 0.938220070128569,
+      "glue_sha256": null,
+      "glue_sha256_exemption": null,
+      "n_gate_open": 67428,
+      "n_prompts": 210,
+      "n_steerable": 71868,
+      "status": "OK",
+      "steer": {
+        "beta": 4.0,
+        "bucket_source": "free_lastp_sharp",
+        "steer": "bucket",
+        "steer_gate": "disagree",
+        "steer_mech": "posterior"
+      },
+      "tokens_per_target_call_pooled": 2.9615448093744843
+    },
+    "phase0b_soft_b1": {
+      "acceptance_ci95_cluster": [
+        0.7582869382420825,
+        0.7724461648107205
+      ],
+      "acceptance_mean_of_rates": 0.7660858252140772,
+      "acceptance_pooled": 0.7653123487701727,
+      "analytic_acceptance_drafted_pooled": 0.7498732790873083,
+      "analytic_drafted_by_offset": {
+        "1": 0.7536530405580865,
+        "2": 0.750642549815526,
+        "3": 0.7472595711541669,
+        "4": 0.7479379548214515
+      },
+      "delta_vs_vanilla": {
+        "acceptance_mean_of_rates": 0.002897227706552875,
+        "acceptance_pooled": {
+          "boot_mean": 0.0025404712824929183,
+          "ci95": [
+            -0.002841008819494181,
+            0.007853662773663457
+          ],
+          "plugin": 0.002548828581846463
+        },
+        "analytic_drafted_pooled": {
+          "boot_mean": 0.0031797460844998383,
+          "ci95": [
+            -0.0005842994101847769,
+            0.007020578551103653
+          ],
+          "plugin": 0.0031909549471282883
+        },
+        "tokens_per_target_call_pooled": {
+          "boot_mean": 0.018089023249881955,
+          "ci95": [
+            -0.016365368029806815,
+            0.05246605057558607
+          ],
+          "plugin": 0.018151168037426668
+        }
+      },
+      "gate_open_rate": 0.9402289669861554,
+      "glue_sha256": null,
+      "glue_sha256_exemption": null,
+      "n_gate_open": 63567,
+      "n_prompts": 210,
+      "n_steerable": 67608,
+      "status": "OK",
+      "steer": {
+        "beta": 1.0,
+        "bucket_source": "free_lastp",
+        "steer": "bucket",
+        "steer_gate": "disagree",
+        "steer_mech": "posterior"
+      },
+      "tokens_per_target_call_pooled": 3.1255843852267415
+    },
+    "phase0b_soft_b2": {
+      "acceptance_ci95_cluster": [
+        0.7559223817113362,
+        0.7707214467887735
+      ],
+      "acceptance_mean_of_rates": 0.7640145380021774,
+      "acceptance_pooled": 0.7629190745415476,
+      "analytic_acceptance_drafted_pooled": 0.7469113909759834,
+      "analytic_drafted_by_offset": {
+        "1": 0.7480578512162248,
+        "2": 0.7479961488641985,
+        "3": 0.7464113341843078,
+        "4": 0.7451802296392022
+      },
+      "delta_vs_vanilla": {
+        "acceptance_mean_of_rates": 0.0008259404946531488,
+        "acceptance_pooled": {
+          "boot_mean": 0.00017668289763138667,
+          "ci95": [
+            -0.005854724838389308,
+            0.006176008553911444
+          ],
+          "plugin": 0.00015555435322134326
+        },
+        "analytic_drafted_pooled": {
+          "boot_mean": 0.00021214834101192297,
+          "ci95": [
+            -0.004084725179182203,
+            0.004555518861179733
+          ],
+          "plugin": 0.00022906683580392606
+        },
+        "tokens_per_target_call_pooled": {
+          "boot_mean": 0.0003455467913405372,
+          "ci95": [
+            -0.03780897910775477,
+            0.03826324829669109
+          ],
+          "plugin": 0.00016865013821654173
+        }
+      },
+      "gate_open_rate": 0.9385975147307625,
+      "glue_sha256": null,
+      "glue_sha256_exemption": null,
+      "n_gate_open": 64354,
+      "n_prompts": 210,
+      "n_steerable": 68564,
+      "status": "OK",
+      "steer": {
+        "beta": 2.0,
+        "bucket_source": "free_lastp",
+        "steer": "bucket",
+        "steer_gate": "disagree",
+        "steer_mech": "posterior"
+      },
+      "tokens_per_target_call_pooled": 3.1076018673275314
+    },
+    "phase0b_soft_b3": {
+      "acceptance_ci95_cluster": [
+        0.7501089569272595,
+        0.7653754527619971
+      ],
+      "acceptance_mean_of_rates": 0.7590609332092526,
+      "acceptance_pooled": 0.7576797522390558,
+      "analytic_acceptance_drafted_pooled": 0.7426649464777209,
+      "analytic_drafted_by_offset": {
+        "1": 0.7441916946332139,
+        "2": 0.7442449038658834,
+        "3": 0.741841859454625,
+        "4": 0.740381327957163
+      },
+      "delta_vs_vanilla": {
+        "acceptance_mean_of_rates": -0.004127664298271502,
+        "acceptance_pooled": {
+          "boot_mean": -0.0050679596741039015,
+          "ci95": [
+            -0.01089223504763612,
+            0.0007722279740976074
+          ],
+          "plugin": -0.005083767949270457
+        },
+        "analytic_drafted_pooled": {
+          "boot_mean": -0.004022735964255403,
+          "ci95": [
+            -0.008297465490715217,
+            0.00024623257805281957
+          ],
+          "plugin": -0.0040173776624579105
+        },
+        "tokens_per_target_call_pooled": {
+          "boot_mean": -0.028797136102080945,
+          "ci95": [
+            -0.06490249577643317,
+            0.007351155178499733
+          ],
+          "plugin": -0.02890279239023341
+        }
+      },
+      "gate_open_rate": 0.9388872748402092,
+      "glue_sha256": null,
+      "glue_sha256_exemption": null,
+      "n_gate_open": 64633,
+      "n_prompts": 210,
+      "n_steerable": 68840,
+      "status": "OK",
+      "steer": {
+        "beta": 3.0,
+        "bucket_source": "free_lastp",
+        "steer": "bucket",
+        "steer_gate": "disagree",
+        "steer_mech": "posterior"
+      },
+      "tokens_per_target_call_pooled": 3.0785304247990815
+    },
+    "phase0b_soft_b4": {
+      "acceptance_ci95_cluster": [
+        0.7519431216956919,
+        0.7667464503082967
+      ],
+      "acceptance_mean_of_rates": 0.7606953765737583,
+      "acceptance_pooled": 0.7595069389124146,
+      "analytic_acceptance_drafted_pooled": 0.7394693565074284,
+      "analytic_drafted_by_offset": {
+        "1": 0.7428779037788852,
+        "2": 0.7407369465569852,
+        "3": 0.7373210795837813,
+        "4": 0.7369414961100629
+      },
+      "delta_vs_vanilla": {
+        "acceptance_mean_of_rates": -0.0024932209337658533,
+        "acceptance_pooled": {
+          "boot_mean": -0.00325261034107302,
+          "ci95": [
+            -0.008769750160730724,
+            0.0021769568350580694
+          ],
+          "plugin": -0.003256581275911663
+        },
+        "analytic_drafted_pooled": {
+          "boot_mean": -0.007210568460591187,
+          "ci95": [
+            -0.011655568223831033,
+            -0.0027573453341015906
+          ],
+          "plugin": -0.007212967632750922
+        },
+        "tokens_per_target_call_pooled": {
+          "boot_mean": -0.018608129537672637,
+          "ci95": [
+            -0.05333031228214893,
+            0.015799691856163183
+          ],
+          "plugin": -0.018646823415893188
+        }
+      },
+      "gate_open_rate": 0.9375838926174497,
+      "glue_sha256": null,
+      "glue_sha256_exemption": null,
+      "n_gate_open": 64262,
+      "n_prompts": 210,
+      "n_steerable": 68540,
+      "status": "OK",
+      "steer": {
+        "beta": 4.0,
+        "bucket_source": "free_lastp",
+        "steer": "bucket",
+        "steer_gate": "disagree",
+        "steer_mech": "posterior"
+      },
+      "tokens_per_target_call_pooled": 3.0887863937734217
+    }
+  },
+  "boot_seed": 0,
+  "kv_spot_rider": {
+    "cached": {
+      "acc": {
+        "ci_pooled_cluster": [
+          0.7441006317634682,
+          0.8015821482674111
+        ],
+        "mean_of_rates": 0.769589466779953,
+        "pooled": 0.7718978102189781
+      },
+      "mass": 0.8415152314854237,
+      "mass_ci": [
+        0.8196995842515219,
+        0.862639398697104
+      ]
+    },
+    "checks": {
+      "acc_mor_cached_in_uncached_ci": true,
+      "acc_mor_uncached_in_cached_ci": true,
+      "acc_pooled_cached_in_uncached_ci": true,
+      "acc_pooled_uncached_in_cached_ci": true,
+      "mass_cached_in_uncached_ci": true,
+      "mass_uncached_in_cached_ci": true
+    },
+    "n_prompts": 20,
+    "status": "PASS",
+    "uncached": {
+      "acc": {
+        "ci_pooled_cluster": [
+          0.7267511742199093,
+          0.7945090198596251
+        ],
+        "mean_of_rates": 0.766240341194844,
+        "pooled": 0.7617256637168142
+      },
+      "mass": 0.8481035861103781,
+      "mass_ci": [
+        0.8253683798497293,
+        0.8673731137242812
+      ]
+    }
+  },
+  "n_boot_cluster": 2000,
+  "n_boot_paired": 20000,
+  "vanilla": {
+    "acceptance_ci95_cluster": [
+      0.7561881061968625,
+      0.7696782057920667
+    ],
+    "acceptance_mean_of_rates": 0.7631885975075244,
+    "acceptance_pooled": 0.7627635201883263,
+    "analytic_acceptance_drafted_pooled": 0.7466823241401789,
+    "analytic_drafted_by_offset": {
+      "1": 0.7486868188441568,
+      "2": 0.7480400233611805,
+      "3": 0.7442661725062633,
+      "4": 0.7457362818491183
+    },
+    "gate_open_rate": null,
+    "n_gate_open": 0,
+    "n_prompts": 210,
+    "n_steerable": 0,
+    "stem": "phase0b_vanilla_k512",
+    "tokens_per_target_call_pooled": 3.107433217189315
+  },
+  "vanilla_rerun_rider": {
+    "audit_k512_acceptance_pooled": 0.7627635201883263,
+    "audit_k512_ci95_cluster": [
+      0.7561881061968625,
+      0.7696782057920667
+    ],
+    "point_in_ci": true,
+    "vanilla_rerun_point": 0.7627635201883263
+  },
+  "verdict": "OK"
+}

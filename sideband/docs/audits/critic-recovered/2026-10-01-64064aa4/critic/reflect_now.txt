@@ -1,0 +1,28 @@
+REFLECT PASS 1
+========================================
+Files analyzed:      80
+Cross-references:    258
+Cross-ref density:   3.23 refs/file
+Gaps:                0
+Orphans:             0
+Placeholders:        1
+
+[QUALITY_SIGNAL]
+  [high] 15 placeholder patterns in docs/BLUEPRINT.md
+   8 empty sections in docs/CHEAT-SHEET.md (content ratio: 4.0 lines/heading)
+   1 empty section in docs/DATA.md (content ratio: 6.6 lines/heading)
+   12 empty sections in docs/FAILURE_MODES.md (content ratio: 29.8 lines/heading)
+   1 empty section in docs/FINDINGS_INDEX.md (content ratio: 23.5 lines/heading)
+   7 empty sections in docs/FRESHNESS.md (content ratio: 9.9 lines/heading)
+   1 empty section in docs/GLOSSARY.md (content ratio: 11.2 lines/heading)
+   1 empty section in docs/HOOKS.md (content ratio: 44.9 lines/heading)
+   1 empty section in docs/IDEAS.md (content ratio: 11.2 lines/heading)
+   4 empty sections in docs/METHOD.md (content ratio: 17.4 lines/heading)
+   2 empty sections in docs/PACK_AUTHORING.md (content ratio: 7.8 lines/heading)
+   1 empty section in docs/RELEASE_NOTES.md (content ratio: 18.7 lines/heading)
+   2 empty sections in docs/REPORT.md (content ratio: 11.0 lines/heading)
+   1 empty section in docs/sharp-edges/README.md (content ratio: 5.2 lines/heading)
+   7 empty sections in docs/TASK_RECIPES.md (content ratio: 5.8 lines/heading)
+   4 empty sections in docs/WORKFLOW.md (content ratio: 11.9 lines/heading)
+
+Recorded pass 1 in blueprint 20261001-074707-049f6e

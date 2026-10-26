@@ -1,0 +1,117 @@
+conclude-from: state file reproduces the payload exactly
+LABEL: FALLBACK-LOCATED / PT-SURVIVES   (smoke=False; encoding=prev_table from twin; void=False)
+  REPRODUCE: EXACT (rows EXACT)  twin rows 12960  compared 12960  missing 0  extra 0  needed mismatches 0  hits mismatches 0  max |gap| 0  identity (all D_eq = twin's): True
+  scope covered_1    positions    1984  share 0.0665  prompts 30
+  scope covered_2_4  positions    4014  share 0.1346  prompts 30
+  scope covered_5p   positions   19598  share 0.6571  prompts 30
+  scope cur_unseen   positions    1896  share 0.0636  prompts 30
+  scope prev_unseen  positions    1911  share 0.0641  prompts 30
+  scope both_unseen  positions     422  share 0.0141  prompts 29
+  scope covered      positions   25596  share 0.8582  prompts 30
+  scope fallback     positions    4229  share 0.1418  prompts 30
+  scope all          positions   29825  share 1.0000  prompts 30
+  Q1 FALLBACK-LOCATED: D_eq covered NOT-SHOWN  +0.0481 [+0.0411, +0.0564]  straddle=True  negative=False
+     D_eq fallback SIGNAL     +0.1741 [+0.1390, +0.2154]  straddle=False
+  Q2 PT-SURVIVES: D_eq^PT all SIGNAL     +0.0565 [+0.0480, +0.0664]  straddle=True
+     D_add^PT all SIGNAL     +0.0609 [+0.0525, +0.0709]  straddle=False  (Q2 straddle=True)  anchor hb_pt-ht_pt +0.0044 [+0.0041, +0.0047]  inconsistent cause=None
+     D_pt all (asymmetric, reported) SIGNAL     +0.0539 [+0.0455, +0.0636]
+  sentence: the address block's equal-dims margin on the positions whose token keys the train tables saw reads NOT-SHOWN by the rule with a CI95 that straddles the +0.05 floor, while a material margin is shown on the positions with at least one unseen key (the current-token table blind in both arms, the free previous-token table blind, or both): the location is indicated, not settled, at this power, at this reader (B = 16, j = 1); with the forward's own output-distribution summaries (mass16, mass64, entropy) in both arms, both Q2 readings are SIGNAL by the rule while at least one CI95 straddles the +0.05 floor: the twin's verdict with p_t is not settled at this power, at this reader (B = 16, j = 1)
+  B= 8 covered_1    address_beyond_token +0.1121 [+0.1012, +0.1242] | gate_eq +0.0743 [+0.0639, +0.0861] | address_beyond_bigram +0.0795 [+0.0694, +0.0907] | bigram_gain +0.0379 [+0.0349, +0.0407] | pt_gain +0.0027 [+0.0015, +0.0039] | d_pt +0.0716 [+0.0612, +0.0836]
+                   d_eq_pt +0.0724 [+0.0623, +0.0840] | d_add_pt +0.0777 [+0.0678, +0.0891] | pt_only-free_tok -0.1927 [-0.2054, -0.1805] | history_tok_pt-history_tok +0.0008 [+0.0002, +0.0015] | history_bigram_pt-history_tok_pt +0.0053 [+0.0040, +0.0065]
+  B= 8 covered_2_4  address_beyond_token +0.1095 [+0.1005, +0.1203] | gate_eq +0.0619 [+0.0536, +0.0724] | address_beyond_bigram +0.0700 [+0.0619, +0.0804] | bigram_gain +0.0476 [+0.0450, +0.0502] | pt_gain +0.0017 [+0.0009, +0.0025] | d_pt +0.0602 [+0.0523, +0.0700]
+                   d_eq_pt +0.0607 [+0.0525, +0.0705] | d_add_pt +0.0689 [+0.0610, +0.0789] | pt_only-free_tok -0.2096 [-0.2186, -0.2004] | history_tok_pt-history_tok +0.0004 [-0.0001, +0.0009] | history_bigram_pt-history_tok_pt +0.0082 [+0.0073, +0.0090]
+  B= 8 covered_5p   address_beyond_token +0.1217 [+0.1158, +0.1287] | gate_eq +0.0676 [+0.0619, +0.0744] | address_beyond_bigram +0.0755 [+0.0699, +0.0823] | bigram_gain +0.0541 [+0.0530, +0.0553] | pt_gain +0.0015 [+0.0012, +0.0019] | d_pt +0.0661 [+0.0605, +0.0728]
+                   d_eq_pt +0.0662 [+0.0606, +0.0729] | d_add_pt +0.0742 [+0.0687, +0.0808] | pt_only-free_tok -0.2761 [-0.2817, -0.2710] | history_tok_pt-history_tok +0.0001 [-0.0000, +0.0003] | history_bigram_pt-history_tok_pt +0.0080 [+0.0076, +0.0084]
+  B= 8 cur_unseen   address_beyond_token +0.2426 [+0.2199, +0.2648] | gate_eq +0.1598 [+0.1403, +0.1794] | address_beyond_bigram +0.1653 [+0.1452, +0.1852] | bigram_gain +0.0828 [+0.0738, +0.0916] | pt_gain +0.0986 [+0.0836, +0.1130] | d_pt +0.0612 [+0.0421, +0.0812]
+                   d_eq_pt +0.0983 [+0.0821, +0.1148] | d_add_pt +0.1040 [+0.0876, +0.1207] | pt_only-free_tok +0.1584 [+0.1381, +0.1780] | history_tok_pt-history_tok +0.0372 [+0.0309, +0.0432] | history_bigram_pt-history_tok_pt +0.0056 [+0.0044, +0.0068]
+  B= 8 prev_unseen  address_beyond_token +0.1315 [+0.1211, +0.1424] | gate_eq +0.1310 [+0.1204, +0.1420] | address_beyond_bigram +0.1288 [+0.1181, +0.1402] | bigram_gain +0.0004 [-0.0007, +0.0016] | pt_gain +0.0022 [+0.0011, +0.0032] | d_pt +0.1288 [+0.1185, +0.1395]
+                   d_eq_pt +0.1291 [+0.1188, +0.1399] | d_add_pt +0.1269 [+0.1165, +0.1378] | pt_only-free_tok -0.2030 [-0.2140, -0.1926] | history_tok_pt-history_tok +0.0003 [-0.0002, +0.0007] | history_bigram_pt-history_tok_pt -0.0022 [-0.0028, -0.0015]
+  B= 8 both_unseen  address_beyond_token +0.3901 [+0.2890, +0.4292] | gate_eq +0.3897 [+0.2878, +0.4293] | address_beyond_bigram +0.3899 [+0.2881, +0.4291] | bigram_gain +0.0003 [-0.0002, +0.0018] | pt_gain +0.2171 [+0.1463, +0.2442] | d_pt +0.1726 [+0.1303, +0.1877]
+                   d_eq_pt +0.1758 [+0.1507, +0.1883] | d_add_pt +0.1736 [+0.1501, +0.1869] | pt_only-free_tok +0.2331 [+0.1559, +0.2637] | history_tok_pt-history_tok +0.0032 [-0.0060, +0.0263] | history_bigram_pt-history_tok_pt -0.0022 [-0.0033, +0.0005]
+  B= 8 covered      address_beyond_token +0.1190 [+0.1126, +0.1267] | gate_eq +0.0672 [+0.0612, +0.0747] | address_beyond_bigram +0.0750 [+0.0690, +0.0823] | bigram_gain +0.0518 [+0.0506, +0.0531] | pt_gain +0.0016 [+0.0013, +0.0020] | d_pt +0.0656 [+0.0597, +0.0729]
+                   d_eq_pt +0.0658 [+0.0600, +0.0731] | d_add_pt +0.0736 [+0.0678, +0.0809] | pt_only-free_tok -0.2592 [-0.2644, -0.2543] | history_tok_pt-history_tok +0.0002 [+0.0000, +0.0004] | history_bigram_pt-history_tok_pt +0.0078 [+0.0074, +0.0082]
+  B= 8 fallback     address_beyond_token +0.2071 [+0.1803, +0.2365] | gate_eq +0.1697 [+0.1412, +0.2026] | address_beyond_bigram +0.1712 [+0.1426, +0.2039] | bigram_gain +0.0374 [+0.0320, +0.0427] | pt_gain +0.0669 [+0.0493, +0.0883] | d_pt +0.1029 [+0.0866, +0.1188]
+                   d_eq_pt +0.1200 [+0.1060, +0.1332] | d_add_pt +0.1213 [+0.1073, +0.1347] | pt_only-free_tok +0.0025 [-0.0237, +0.0341] | history_tok_pt-history_tok +0.0171 [+0.0125, +0.0212] | history_bigram_pt-history_tok_pt +0.0013 [+0.0004, +0.0022]
+  B= 8 all          address_beyond_token +0.1315 [+0.1221, +0.1421] | gate_eq +0.0817 [+0.0722, +0.0926] | address_beyond_bigram +0.0886 [+0.0793, +0.0993] | bigram_gain +0.0498 [+0.0482, +0.0513] | pt_gain +0.0109 [+0.0075, +0.0157] | d_pt +0.0709 [+0.0637, +0.0794]
+                   d_eq_pt +0.0735 [+0.0662, +0.0822] | d_add_pt +0.0804 [+0.0733, +0.0888] | pt_only-free_tok -0.2221 [-0.2317, -0.2106] | history_tok_pt-history_tok +0.0026 [+0.0020, +0.0033] | history_bigram_pt-history_tok_pt +0.0069 [+0.0064, +0.0073]
+  B=16 covered_1    address_beyond_token +0.0975 [+0.0841, +0.1132] | gate_eq +0.0683 [+0.0579, +0.0808] | address_beyond_bigram +0.0707 [+0.0602, +0.0832] | bigram_gain +0.0292 [+0.0253, +0.0331] | pt_gain +0.0026 [+0.0013, +0.0038] | d_pt +0.0657 [+0.0552, +0.0781]
+                   d_eq_pt +0.0658 [+0.0554, +0.0780] | d_add_pt +0.0683 [+0.0578, +0.0809] | pt_only-free_tok -0.1712 [-0.1893, -0.1561] | history_tok_pt-history_tok +0.0001 [-0.0007, +0.0008] | history_bigram_pt-history_tok_pt +0.0025 [+0.0017, +0.0033]
+  B=16 covered_2_4  address_beyond_token +0.0858 [+0.0753, +0.0991] | gate_eq +0.0503 [+0.0417, +0.0610] | address_beyond_bigram +0.0552 [+0.0465, +0.0664] | bigram_gain +0.0355 [+0.0319, +0.0392] | pt_gain +0.0019 [+0.0012, +0.0027] | d_pt +0.0484 [+0.0401, +0.0586]
+                   d_eq_pt +0.0489 [+0.0404, +0.0594] | d_add_pt +0.0537 [+0.0453, +0.0641] | pt_only-free_tok -0.1892 [-0.1996, -0.1791] | history_tok_pt-history_tok +0.0004 [+0.0000, +0.0008] | history_bigram_pt-history_tok_pt +0.0048 [+0.0040, +0.0056]
+  B=16 covered_5p   address_beyond_token +0.0856 [+0.0787, +0.0940] | gate_eq +0.0456 [+0.0390, +0.0536] | address_beyond_bigram +0.0509 [+0.0443, +0.0590] | bigram_gain +0.0401 [+0.0390, +0.0410] | pt_gain +0.0003 [-0.0000, +0.0007] | d_pt +0.0452 [+0.0388, +0.0532]
+                   d_eq_pt +0.0454 [+0.0389, +0.0533] | d_add_pt +0.0506 [+0.0441, +0.0586] | pt_only-free_tok -0.2537 [-0.2605, -0.2472] | history_tok_pt-history_tok +0.0002 [+0.0000, +0.0003] | history_bigram_pt-history_tok_pt +0.0053 [+0.0050, +0.0055]
+  B=16 cur_unseen   address_beyond_token +0.3060 [+0.2827, +0.3283] | gate_eq +0.1736 [+0.1533, +0.1936] | address_beyond_bigram +0.1781 [+0.1574, +0.1987] | bigram_gain +0.1324 [+0.1230, +0.1414] | pt_gain +0.1110 [+0.0930, +0.1277] | d_pt +0.0626 [+0.0435, +0.0838]
+                   d_eq_pt +0.0986 [+0.0830, +0.1154] | d_add_pt +0.1020 [+0.0865, +0.1189] | pt_only-free_tok +0.2242 [+0.2009, +0.2458] | history_tok_pt-history_tok +0.0360 [+0.0304, +0.0421] | history_bigram_pt-history_tok_pt +0.0034 [+0.0020, +0.0045]
+  B=16 prev_unseen  address_beyond_token +0.1097 [+0.0971, +0.1235] | gate_eq +0.1113 [+0.0979, +0.1258] | address_beyond_bigram +0.1104 [+0.0970, +0.1251] | bigram_gain -0.0016 [-0.0033, -0.0001] | pt_gain +0.0022 [+0.0010, +0.0033] | d_pt +0.1090 [+0.0960, +0.1233]
+                   d_eq_pt +0.1097 [+0.0966, +0.1239] | d_add_pt +0.1086 [+0.0953, +0.1226] | pt_only-free_tok -0.1917 [-0.2039, -0.1801] | history_tok_pt-history_tok +0.0007 [+0.0001, +0.0010] | history_bigram_pt-history_tok_pt -0.0011 [-0.0015, -0.0007]
+  B=16 both_unseen  address_beyond_token +0.4658 [+0.3416, +0.5150] | gate_eq +0.4613 [+0.3354, +0.5115] | address_beyond_bigram +0.4630 [+0.3358, +0.5134] | bigram_gain +0.0045 [+0.0034, +0.0076] | pt_gain +0.2982 [+0.2089, +0.3311] | d_pt +0.1632 [+0.1101, +0.1832]
+                   d_eq_pt +0.1727 [+0.1353, +0.1860] | d_add_pt +0.1717 [+0.1371, +0.1841] | pt_only-free_tok +0.3252 [+0.2321, +0.3592] | history_tok_pt-history_tok +0.0096 [+0.0013, +0.0292] | history_bigram_pt-history_tok_pt -0.0011 [-0.0025, +0.0029]
+  B=16 covered      address_beyond_token +0.0866 [+0.0791, +0.0958] | gate_eq +0.0481 [+0.0411, +0.0564] | address_beyond_bigram +0.0531 [+0.0462, +0.0616] | bigram_gain +0.0385 [+0.0372, +0.0398] | pt_gain +0.0008 [+0.0004, +0.0011] | d_pt +0.0473 [+0.0405, +0.0556]
+                   d_eq_pt +0.0475 [+0.0407, +0.0557] | d_add_pt +0.0525 [+0.0457, +0.0608] | pt_only-free_tok -0.2372 [-0.2438, -0.2310] | history_tok_pt-history_tok +0.0002 [+0.0000, +0.0003] | history_bigram_pt-history_tok_pt +0.0050 [+0.0047, +0.0053]
+  B=16 fallback     address_beyond_token +0.2332 [+0.2004, +0.2698] | gate_eq +0.1741 [+0.1390, +0.2154] | address_beyond_bigram +0.1759 [+0.1404, +0.2172] | bigram_gain +0.0591 [+0.0523, +0.0652] | pt_gain +0.0805 [+0.0572, +0.1106] | d_pt +0.0936 [+0.0751, +0.1114]
+                   d_eq_pt +0.1110 [+0.0950, +0.1261] | d_add_pt +0.1119 [+0.0960, +0.1271] | pt_only-free_tok +0.0464 [+0.0145, +0.0841] | history_tok_pt-history_tok +0.0174 [+0.0137, +0.0210] | history_bigram_pt-history_tok_pt +0.0009 [+0.0001, +0.0016]
+  B=16 all          address_beyond_token +0.1074 [+0.0953, +0.1207] | gate_eq +0.0659 [+0.0547, +0.0788] | address_beyond_bigram +0.0705 [+0.0592, +0.0834] | bigram_gain +0.0414 [+0.0398, +0.0430] | pt_gain +0.0121 [+0.0077, +0.0183] | d_pt +0.0539 [+0.0455, +0.0636]
+                   d_eq_pt +0.0565 [+0.0480, +0.0664] | d_add_pt +0.0609 [+0.0525, +0.0709] | pt_only-free_tok -0.1970 [-0.2080, -0.1840] | history_tok_pt-history_tok +0.0026 [+0.0021, +0.0032] | history_bigram_pt-history_tok_pt +0.0044 [+0.0041, +0.0047]
+  B=32 covered_1    address_beyond_token +0.0386 [+0.0309, +0.0480] | gate_eq +0.0319 [+0.0262, +0.0384] | address_beyond_bigram +0.0317 [+0.0262, +0.0381] | bigram_gain +0.0067 [+0.0036, +0.0105] | pt_gain +0.0012 [+0.0003, +0.0022] | d_pt +0.0306 [+0.0251, +0.0370]
+                   d_eq_pt +0.0308 [+0.0255, +0.0368] | d_add_pt +0.0306 [+0.0253, +0.0369] | pt_only-free_tok -0.0810 [-0.0988, -0.0672] | history_tok_pt-history_tok +0.0001 [-0.0004, +0.0006] | history_bigram_pt-history_tok_pt -0.0002 [-0.0007, +0.0003]
+  B=32 covered_2_4  address_beyond_token +0.0282 [+0.0231, +0.0350] | gate_eq +0.0191 [+0.0149, +0.0242] | address_beyond_bigram +0.0202 [+0.0160, +0.0257] | bigram_gain +0.0091 [+0.0075, +0.0110] | pt_gain +0.0003 [-0.0001, +0.0008] | d_pt +0.0187 [+0.0148, +0.0238]
+                   d_eq_pt +0.0189 [+0.0149, +0.0239] | d_add_pt +0.0199 [+0.0158, +0.0253] | pt_only-free_tok -0.0865 [-0.1008, -0.0755] | history_tok_pt-history_tok +0.0002 [-0.0000, +0.0003] | history_bigram_pt-history_tok_pt +0.0010 [+0.0005, +0.0015]
+  B=32 covered_5p   address_beyond_token +0.0223 [+0.0193, +0.0261] | gate_eq +0.0118 [+0.0092, +0.0151] | address_beyond_bigram +0.0135 [+0.0108, +0.0169] | bigram_gain +0.0106 [+0.0097, +0.0114] | pt_gain +0.0001 [-0.0001, +0.0003] | d_pt +0.0116 [+0.0091, +0.0148]
+                   d_eq_pt +0.0117 [+0.0092, +0.0149] | d_add_pt +0.0134 [+0.0108, +0.0167] | pt_only-free_tok -0.1137 [-0.1216, -0.1067] | history_tok_pt-history_tok +0.0001 [+0.0000, +0.0002] | history_bigram_pt-history_tok_pt +0.0017 [+0.0015, +0.0018]
+  B=32 cur_unseen   address_beyond_token +0.2175 [+0.1961, +0.2382] | gate_eq +0.1180 [+0.1031, +0.1315] | address_beyond_bigram +0.1187 [+0.1038, +0.1326] | bigram_gain +0.0995 [+0.0886, +0.1106] | pt_gain +0.0823 [+0.0699, +0.0938] | d_pt +0.0357 [+0.0234, +0.0494]
+                   d_eq_pt +0.0548 [+0.0446, +0.0666] | d_add_pt +0.0560 [+0.0457, +0.0681] | pt_only-free_tok +0.1801 [+0.1586, +0.2025] | history_tok_pt-history_tok +0.0191 [+0.0156, +0.0229] | history_bigram_pt-history_tok_pt +0.0012 [+0.0006, +0.0018]
+  B=32 prev_unseen  address_beyond_token +0.0385 [+0.0318, +0.0464] | gate_eq +0.0439 [+0.0367, +0.0515] | address_beyond_bigram +0.0438 [+0.0367, +0.0515] | bigram_gain -0.0053 [-0.0068, -0.0039] | pt_gain +0.0014 [+0.0001, +0.0027] | d_pt +0.0425 [+0.0354, +0.0508]
+                   d_eq_pt +0.0424 [+0.0353, +0.0507] | d_add_pt +0.0425 [+0.0354, +0.0507] | pt_only-free_tok -0.0992 [-0.1133, -0.0870] | history_tok_pt-history_tok -0.0001 [-0.0005, +0.0003] | history_bigram_pt-history_tok_pt +0.0001 [-0.0003, +0.0004]
+  B=32 both_unseen  address_beyond_token +0.4229 [+0.2320, +0.5048] | gate_eq +0.4211 [+0.2215, +0.5073] | address_beyond_bigram +0.4244 [+0.2241, +0.5104] | bigram_gain +0.0018 [-0.0027, +0.0118] | pt_gain +0.3201 [+0.1524, +0.3914] | d_pt +0.1010 [+0.0584, +0.1171]
+                   d_eq_pt +0.1075 [+0.0734, +0.1194] | d_add_pt +0.1084 [+0.0763, +0.1195] | pt_only-free_tok +0.3552 [+0.2003, +0.4203] | history_tok_pt-history_tok +0.0065 [+0.0020, +0.0180] | history_bigram_pt-history_tok_pt +0.0009 [-0.0001, +0.0038]
+  B=32 covered      address_beyond_token +0.0245 [+0.0209, +0.0291] | gate_eq +0.0145 [+0.0115, +0.0182] | address_beyond_bigram +0.0159 [+0.0130, +0.0198] | bigram_gain +0.0100 [+0.0091, +0.0111] | pt_gain +0.0003 [+0.0001, +0.0005] | d_pt +0.0142 [+0.0114, +0.0179]
+                   d_eq_pt +0.0143 [+0.0115, +0.0180] | d_add_pt +0.0157 [+0.0128, +0.0196] | pt_only-free_tok -0.1069 [-0.1156, -0.0995] | history_tok_pt-history_tok +0.0001 [+0.0000, +0.0002] | history_bigram_pt-history_tok_pt +0.0014 [+0.0012, +0.0016]
+  B=32 fallback     address_beyond_token +0.1571 [+0.1225, +0.2030] | gate_eq +0.1147 [+0.0796, +0.1629] | address_beyond_bigram +0.1153 [+0.0802, +0.1634] | bigram_gain +0.0424 [+0.0367, +0.0483] | pt_gain +0.0695 [+0.0424, +0.1096] | d_pt +0.0453 [+0.0327, +0.0581]
+                   d_eq_pt +0.0545 [+0.0435, +0.0657] | d_add_pt +0.0551 [+0.0441, +0.0664] | pt_only-free_tok +0.0714 [+0.0369, +0.1172] | history_tok_pt-history_tok +0.0092 [+0.0071, +0.0114] | history_bigram_pt-history_tok_pt +0.0006 [+0.0003, +0.0010]
+  B=32 all          address_beyond_token +0.0433 [+0.0347, +0.0540] | gate_eq +0.0287 [+0.0208, +0.0390] | address_beyond_bigram +0.0300 [+0.0221, +0.0404] | bigram_gain +0.0146 [+0.0133, +0.0160] | pt_gain +0.0101 [+0.0054, +0.0175] | d_pt +0.0186 [+0.0144, +0.0238]
+                   d_eq_pt +0.0200 [+0.0159, +0.0251] | d_add_pt +0.0213 [+0.0171, +0.0264] | pt_only-free_tok -0.0816 [-0.0922, -0.0696] | history_tok_pt-history_tok +0.0014 [+0.0011, +0.0017] | history_bigram_pt-history_tok_pt +0.0013 [+0.0011, +0.0015]
+  B= 8 history            all 0.5929 [0.5873, 0.5988]
+  B= 8 free_tok           all 0.6099 [0.5925, 0.6249]
+  B= 8 history_tok        all 0.7414 [0.7337, 0.7484]
+  B= 8 free_bigram_b      all 0.6596 [0.6414, 0.6752]
+  B= 8 free_bigram_a      all 0.6580 [0.6400, 0.6735]
+  B= 8 history_bigram_b   all 0.7483 [0.7404, 0.7554]
+  B= 8 history_bigram_a   all 0.7453 [0.7375, 0.7524]
+  B= 8 free_all           all 0.6622 [0.6441, 0.6778]
+  B= 8 history_all        all 0.7490 [0.7411, 0.7562]
+  B= 8 pt_only            all 0.3877 [0.3737, 0.3998]
+  B= 8 free_bigram_pt     all 0.6705 [0.6555, 0.6838]
+  B= 8 history_tok_pt     all 0.7440 [0.7363, 0.7509]
+  B= 8 history_bigram_pt  all 0.7509 [0.7432, 0.7580]
+  B=16 history            all 0.8060 [0.8009, 0.8111]
+  B=16 free_tok           all 0.8035 [0.7841, 0.8204]
+  B=16 history_tok        all 0.9109 [0.9044, 0.9167]
+  B=16 free_bigram_b      all 0.8449 [0.8258, 0.8612]
+  B=16 free_bigram_a      all 0.8442 [0.8250, 0.8605]
+  B=16 history_bigram_b   all 0.9155 [0.9090, 0.9212]
+  B=16 history_bigram_a   all 0.9137 [0.9072, 0.9194]
+  B=16 free_all           all 0.8466 [0.8275, 0.8627]
+  B=16 history_all        all 0.9157 [0.9092, 0.9214]
+  B=16 pt_only            all 0.6066 [0.5887, 0.6214]
+  B=16 free_bigram_pt     all 0.8570 [0.8418, 0.8702]
+  B=16 history_tok_pt     all 0.9135 [0.9069, 0.9191]
+  B=16 history_bigram_pt  all 0.9179 [0.9112, 0.9236]
+  B=32 history            all 0.9438 [0.9412, 0.9462]
+  B=32 free_tok           all 0.9325 [0.9187, 0.9435]
+  B=32 history_tok        all 0.9758 [0.9727, 0.9784]
+  B=32 free_bigram_b      all 0.9471 [0.9335, 0.9573]
+  B=32 free_bigram_a      all 0.9473 [0.9335, 0.9575]
+  B=32 history_bigram_b   all 0.9772 [0.9740, 0.9797]
+  B=32 history_bigram_a   all 0.9766 [0.9735, 0.9791]
+  B=32 free_all           all 0.9476 [0.9339, 0.9578]
+  B=32 history_all        all 0.9771 [0.9739, 0.9796]
+  B=32 pt_only            all 0.8509 [0.8364, 0.8629]
+  B=32 free_bigram_pt     all 0.9572 [0.9495, 0.9635]
+  B=32 history_tok_pt     all 0.9772 [0.9740, 0.9797]
+  B=32 history_bigram_pt  all 0.9785 [0.9753, 0.9810]
+  lambda: {'history': 1000.0, 'free_tok': 10.0, 'history_tok': 10.0, 'free_bigram_b': 10.0, 'free_bigram_a': 10.0, 'history_bigram_b': 10.0, 'history_bigram_a': 10.0, 'free_all': 10.0, 'history_all': 10.0, 'pt_only': 0.1, 'free_bigram_pt': 10.0, 'history_tok_pt': 10.0, 'history_bigram_pt': 10.0}
+  lambda source: {'history': 'twin', 'free_tok': 'twin', 'history_tok': 'twin', 'free_bigram_b': 'twin', 'free_bigram_a': 'twin', 'history_bigram_b': 'twin', 'history_bigram_a': 'twin', 'free_all': 'twin', 'history_all': 'twin', 'pt_only': 'val', 'free_bigram_pt': 'val', 'history_tok_pt': 'val', 'history_bigram_pt': 'val'}
+  grid-edge: {'history': None, 'free_tok': None, 'history_tok': None, 'free_bigram_b': None, 'free_bigram_a': None, 'history_bigram_b': None, 'history_bigram_a': None, 'free_all': None, 'history_all': None, 'pt_only': True, 'free_bigram_pt': False, 'history_tok_pt': False, 'history_bigram_pt': False}
+  strata (test): {'n': 29825, 'covered_1': {'n': 1984, 'share': 0.06652137468566639}, 'covered_2_4': {'n': 4014, 'share': 0.13458507963118188}, 'covered_5p': {'n': 19598, 'share': 0.6570997485331098}, 'cur_unseen': {'n': 1896, 'share': 0.06357082984073764}, 'prev_unseen': {'n': 1911, 'share': 0.06407376362112321}, 'both_unseen': {'n': 422, 'share': 0.014149203688181056}, 'covered': {'n': 25596, 'share': 0.8582062028499581}, 'fallback': {'n': 4229, 'share': 0.14179379715004192}, 'all': {'n': 29825, 'share': 1.0}}
+  blas: {'cpu_count': 24, 'OMP_NUM_THREADS': None, 'OPENBLAS_NUM_THREADS': None, 'MKL_NUM_THREADS': None, 'NUMEXPR_NUM_THREADS': None, 'blas': {'name': 'scipy-openblas', 'version': '0.3.30', 'lapack': 'scipy-openblas'}}
+exit 0

@@ -1,0 +1,113 @@
+{
+  "_experiment": "e06_posterior_mechanism.json",
+  "_written_unix": 1787966222,
+  "beta": 2.5,
+  "gamma": 4,
+  "gate": "disagree",
+  "part_a_default_world": {
+    "free_lastp": {
+      "argmax": {
+        "delta_vs_vanilla": 0.012363445187381972,
+        "mean": 0.6320461273820763,
+        "n": 2,
+        "std": 8.324059480699003e-05
+      },
+      "posterior": {
+        "delta_vs_vanilla": 0.015203395589719282,
+        "mean": 0.6348860777844136,
+        "n": 2,
+        "std": 0.00019331732108788567
+      }
+    },
+    "oracle_concept_now": {
+      "argmax": {
+        "delta_vs_vanilla": 0.025466245076056993,
+        "mean": 0.6451489272707513,
+        "n": 2,
+        "std": 0.00024399389634316264
+      },
+      "posterior": {
+        "delta_vs_vanilla": 0.02724809390101668,
+        "mean": 0.646930776095711,
+        "n": 2,
+        "std": 0.000904709895918211
+      }
+    },
+    "oracle_concept_stale": {
+      "argmax": {
+        "delta_vs_vanilla": 0.012363445187381972,
+        "mean": 0.6320461273820763,
+        "n": 2,
+        "std": 8.324059480699003e-05
+      },
+      "posterior": {
+        "delta_vs_vanilla": 0.016484694505503494,
+        "mean": 0.6361673767001979,
+        "n": 2,
+        "std": 0.0006088453609809849
+      }
+    },
+    "vanilla": {
+      "mean": 0.6196826821946944,
+      "n": 2,
+      "std": 0.0020766136168610242
+    }
+  },
+  "part_b_hardened": [
+    {
+      "n_slots": 16,
+      "oracle_argmax": 0.6342971487903459,
+      "oracle_posterior": 0.6365233626985853,
+      "recovery_vs_argmax_oracle": {
+        "argmax_tau0": -1.2158955609384692,
+        "argmax_tau05": -0.015280969207495044,
+        "posterior": 0.1689853412287889
+      },
+      "recovery_vs_posterior_oracle": {
+        "posterior": 0.14467838121823523
+      },
+      "sidecar_argmax_tau0": 0.6049349095098526,
+      "sidecar_argmax_tau05": 0.6208439322758563,
+      "sidecar_holdout_acc": 0.3516666666666667,
+      "sidecar_posterior": 0.6232855958604309,
+      "vanilla": 0.6210464163108522
+    },
+    {
+      "n_slots": 64,
+      "oracle_argmax": 0.6342971487903459,
+      "oracle_posterior": 0.6365233626985853,
+      "recovery_vs_argmax_oracle": {
+        "argmax_tau0": 0.4528187647039057,
+        "argmax_tau05": 0.49894074811162026,
+        "posterior": 0.7822726900185759
+      },
+      "recovery_vs_posterior_oracle": {
+        "posterior": 0.6697500838838472
+      },
+      "sidecar_argmax_tau0": 0.6270465966236385,
+      "sidecar_argmax_tau05": 0.6276577466871978,
+      "sidecar_holdout_acc": 0.8429166666666666,
+      "sidecar_posterior": 0.6314121024523023,
+      "vanilla": 0.6210464163108522
+    },
+    {
+      "n_slots": 256,
+      "oracle_argmax": 0.6342971487903459,
+      "oracle_posterior": 0.6365233626985853,
+      "recovery_vs_argmax_oracle": {
+        "argmax_tau0": 0.9596353057771307,
+        "argmax_tau05": 0.9465022036224253,
+        "posterior": 1.1093076207696393
+      },
+      "recovery_vs_posterior_oracle": {
+        "posterior": 0.9497441001625846
+      },
+      "sidecar_argmax_tau0": 0.6337622870255821,
+      "sidecar_argmax_tau05": 0.6335882638023043,
+      "sidecar_holdout_acc": 0.97625,
+      "sidecar_posterior": 0.6357455548311344,
+      "vanilla": 0.6210464163108522
+    }
+  ],
+  "regime": "part A: synthetic concept-HMM v0, default WorldConfig, n=12000, seeds [400, 401]; part B: hardened telemetry (support_gain=0.5, support_noise=0.5, background_noise=0.25, top_n=16), n=8000, seeds [401, 402]"
+}

@@ -1,0 +1,156 @@
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+Fetching 7 files:  29%|██▊       | 2/7 [00:00<00:01,  3.95it/s]Fetching 7 files:  43%|████▎     | 3/7 [44:57<1:14:55, 1123.89s/it]Fetching 7 files: 100%|██████████| 7/7 [44:57<00:00, 385.35s/it]   
+DOWNLOAD OK meta-llama/Llama-3.2-1B-Instruct C:\Users\Michael\.cache\huggingface\hub\models--meta-llama--Llama-3.2-1B-Instruct\snapshots\9213176726f574b556790deb65791e0c5aa438b6
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+Fetching 9 files:  22%|██▏       | 2/9 [00:00<00:01,  4.30it/s]Fetching 9 files:  33%|███▎      | 3/9 [1:07:17<2:48:14, 1682.39s/it]Fetching 9 files: 100%|██████████| 9/9 [1:07:17<00:00, 448.65s/it]   
+DOWNLOAD OK meta-llama/Llama-3.2-3B C:\Users\Michael\.cache\huggingface\hub\models--meta-llama--Llama-3.2-3B\snapshots\13afe5124825b4f3751f836b40dafda64c1ed062
+Token indices sequence length is longer than the specified maximum sequence length for this model (1015839 > 131072). Running this sequence through the model will result in indexing errors
+[corpus] wrote results\p2_llama32\corpus.npz (96 x 512 tokens)
+`torch_dtype` is deprecated! Use `dtype` instead!
+[cpu_fp32] model loaded in 6.4s
+[cpu_fp32] shard 1/12 rows 0-7 14.1s (291 pos/s)
+[cpu_fp32] shard 2/12 rows 8-15 14.0s (292 pos/s)
+[cpu_fp32] shard 3/12 rows 16-23 14.0s (292 pos/s)
+[cpu_fp32] shard 4/12 rows 24-31 14.2s (287 pos/s)
+[cpu_fp32] shard 5/12 rows 32-39 13.9s (294 pos/s)
+[cpu_fp32] shard 6/12 rows 40-47 14.2s (289 pos/s)
+[cpu_fp32] shard 7/12 rows 48-55 14.2s (288 pos/s)
+[cpu_fp32] shard 8/12 rows 56-63 14.1s (291 pos/s)
+[cpu_fp32] shard 9/12 rows 64-71 14.1s (291 pos/s)
+[cpu_fp32] shard 10/12 rows 72-79 14.1s (290 pos/s)
+[cpu_fp32] shard 11/12 rows 80-87 14.0s (292 pos/s)
+[cpu_fp32] shard 12/12 rows 88-95 14.2s (289 pos/s)
+[cpu_fp32_rep] model loaded in 1.3s
+[cpu_fp32_rep] shard 1/12 rows 0-7 14.4s (285 pos/s)
+[cpu_fp32_rep] shard 2/12 rows 8-15 14.5s (282 pos/s)
+[cpu_fp32_rep] shard 3/12 rows 16-23 14.4s (285 pos/s)
+[cpu_fp32_rep] shard 4/12 rows 24-31 14.4s (285 pos/s)
+[cpu_fp32_rep] shard 5/12 rows 32-39 14.6s (281 pos/s)
+[cpu_fp32_rep] shard 6/12 rows 40-47 14.6s (281 pos/s)
+[cpu_fp32_rep] shard 7/12 rows 48-55 14.6s (281 pos/s)
+[cpu_fp32_rep] shard 8/12 rows 56-63 14.6s (281 pos/s)
+[cpu_fp32_rep] shard 9/12 rows 64-71 14.5s (282 pos/s)
+[cpu_fp32_rep] shard 10/12 rows 72-79 14.7s (279 pos/s)
+[cpu_fp32_rep] shard 11/12 rows 80-87 14.8s (277 pos/s)
+[cpu_fp32_rep] shard 12/12 rows 88-95 14.9s (276 pos/s)
+[cuda_fp32_b1] model loaded in 4.2s
+[cuda_fp32_b1] shard 1/12 rows 0-7 9.0s (454 pos/s)
+[cuda_fp32_b1] shard 2/12 rows 8-15 2.6s (1550 pos/s)
+[cuda_fp32_b1] shard 3/12 rows 16-23 0.7s (5497 pos/s)
+[cuda_fp32_b1] shard 4/12 rows 24-31 2.6s (1576 pos/s)
+[cuda_fp32_b1] shard 5/12 rows 32-39 2.7s (1545 pos/s)
+[cuda_fp32_b1] shard 6/12 rows 40-47 2.7s (1522 pos/s)
+[cuda_fp32_b1] shard 7/12 rows 48-55 2.5s (1643 pos/s)
+[cuda_fp32_b1] shard 8/12 rows 56-63 1.0s (4299 pos/s)
+[cuda_fp32_b1] shard 9/12 rows 64-71 2.6s (1577 pos/s)
+[cuda_fp32_b1] shard 10/12 rows 72-79 2.9s (1436 pos/s)
+[cuda_fp32_b1] shard 11/12 rows 80-87 2.7s (1507 pos/s)
+[cuda_fp32_b1] shard 12/12 rows 88-95 2.6s (1570 pos/s)
+[cuda_fp32_b8] model loaded in 2.6s
+[cuda_fp32_b8] shard 1/12 rows 0-7 8.0s (514 pos/s)
+[cuda_fp32_b8] shard 2/12 rows 8-15 4.2s (975 pos/s)
+[cuda_fp32_b8] shard 3/12 rows 16-23 3.6s (1133 pos/s)
+[cuda_fp32_b8] shard 4/12 rows 24-31 0.7s (6273 pos/s)
+[cuda_fp32_b8] shard 5/12 rows 32-39 3.6s (1137 pos/s)
+[cuda_fp32_b8] shard 6/12 rows 40-47 3.6s (1142 pos/s)
+[cuda_fp32_b8] shard 7/12 rows 48-55 3.4s (1190 pos/s)
+[cuda_fp32_b8] shard 8/12 rows 56-63 0.7s (5583 pos/s)
+[cuda_fp32_b8] shard 9/12 rows 64-71 3.5s (1156 pos/s)
+[cuda_fp32_b8] shard 10/12 rows 72-79 3.4s (1193 pos/s)
+[cuda_fp32_b8] shard 11/12 rows 80-87 0.7s (6032 pos/s)
+[cuda_fp32_b8] shard 12/12 rows 88-95 3.6s (1144 pos/s)
+[cuda_bf16_b1] model loaded in 1.8s
+[cuda_bf16_b1] shard 1/12 rows 0-7 0.6s (6499 pos/s)
+[cuda_bf16_b1] shard 2/12 rows 8-15 0.5s (7512 pos/s)
+[cuda_bf16_b1] shard 3/12 rows 16-23 0.5s (7548 pos/s)
+[cuda_bf16_b1] shard 4/12 rows 24-31 0.6s (7299 pos/s)
+[cuda_bf16_b1] shard 5/12 rows 32-39 0.6s (7368 pos/s)
+[cuda_bf16_b1] shard 6/12 rows 40-47 0.5s (7462 pos/s)
+[cuda_bf16_b1] shard 7/12 rows 48-55 0.5s (7638 pos/s)
+[cuda_bf16_b1] shard 8/12 rows 56-63 0.5s (7688 pos/s)
+[cuda_bf16_b1] shard 9/12 rows 64-71 0.6s (7433 pos/s)
+[cuda_bf16_b1] shard 10/12 rows 72-79 0.6s (7311 pos/s)
+[cuda_bf16_b1] shard 11/12 rows 80-87 0.6s (7274 pos/s)
+[cuda_bf16_b1] shard 12/12 rows 88-95 0.6s (7299 pos/s)
+[cuda_bf16_b1_rep] model loaded in 1.1s
+[cuda_bf16_b1_rep] shard 1/12 rows 0-7 0.6s (7312 pos/s)
+[cuda_bf16_b1_rep] shard 2/12 rows 8-15 0.6s (7345 pos/s)
+[cuda_bf16_b1_rep] shard 3/12 rows 16-23 0.6s (7373 pos/s)
+[cuda_bf16_b1_rep] shard 4/12 rows 24-31 0.5s (7566 pos/s)
+[cuda_bf16_b1_rep] shard 5/12 rows 32-39 0.5s (7731 pos/s)
+[cuda_bf16_b1_rep] shard 6/12 rows 40-47 0.5s (7570 pos/s)
+[cuda_bf16_b1_rep] shard 7/12 rows 48-55 0.6s (7341 pos/s)
+[cuda_bf16_b1_rep] shard 8/12 rows 56-63 0.6s (7312 pos/s)
+[cuda_bf16_b1_rep] shard 9/12 rows 64-71 0.6s (7445 pos/s)
+[cuda_bf16_b1_rep] shard 10/12 rows 72-79 0.5s (7650 pos/s)
+[cuda_bf16_b1_rep] shard 11/12 rows 80-87 0.5s (7581 pos/s)
+[cuda_bf16_b1_rep] shard 12/12 rows 88-95 0.6s (7408 pos/s)
+[cuda_bf16_b8] model loaded in 1.2s
+[cuda_bf16_b8] shard 1/12 rows 0-7 0.5s (8102 pos/s)
+[cuda_bf16_b8] shard 2/12 rows 8-15 2.8s (1486 pos/s)
+[cuda_bf16_b8] shard 3/12 rows 16-23 0.3s (15680 pos/s)
+[cuda_bf16_b8] shard 4/12 rows 24-31 0.2s (18052 pos/s)
+[cuda_bf16_b8] shard 5/12 rows 32-39 0.2s (18147 pos/s)
+[cuda_bf16_b8] shard 6/12 rows 40-47 2.5s (1662 pos/s)
+[cuda_bf16_b8] shard 7/12 rows 48-55 0.3s (15570 pos/s)
+[cuda_bf16_b8] shard 8/12 rows 56-63 0.2s (17975 pos/s)
+[cuda_bf16_b8] shard 9/12 rows 64-71 0.2s (17883 pos/s)
+[cuda_bf16_b8] shard 10/12 rows 72-79 0.2s (18127 pos/s)
+[cuda_bf16_b8] shard 11/12 rows 80-87 2.5s (1667 pos/s)
+[cuda_bf16_b8] shard 12/12 rows 88-95 0.2s (17200 pos/s)
+[cuda_fp16_b1] model loaded in 1.2s
+[cuda_fp16_b1] shard 1/12 rows 0-7 2.1s (1973 pos/s)
+[cuda_fp16_b1] shard 2/12 rows 8-15 0.7s (6250 pos/s)
+[cuda_fp16_b1] shard 3/12 rows 16-23 0.6s (7099 pos/s)
+[cuda_fp16_b1] shard 4/12 rows 24-31 0.6s (7444 pos/s)
+[cuda_fp16_b1] shard 5/12 rows 32-39 0.5s (7540 pos/s)
+[cuda_fp16_b1] shard 6/12 rows 40-47 0.6s (7335 pos/s)
+[cuda_fp16_b1] shard 7/12 rows 48-55 0.6s (7193 pos/s)
+[cuda_fp16_b1] shard 8/12 rows 56-63 0.6s (7193 pos/s)
+[cuda_fp16_b1] shard 9/12 rows 64-71 0.6s (7191 pos/s)
+[cuda_fp16_b1] shard 10/12 rows 72-79 0.6s (7226 pos/s)
+[cuda_fp16_b1] shard 11/12 rows 80-87 0.6s (7335 pos/s)
+[cuda_fp16_b1] shard 12/12 rows 88-95 0.5s (7506 pos/s)
+[cuda_int8_b1] model loaded in 5.0s
+[cuda_int8_b1] shard 1/12 rows 0-7 1.5s (2736 pos/s)
+[cuda_int8_b1] shard 2/12 rows 8-15 1.4s (2883 pos/s)
+[cuda_int8_b1] shard 3/12 rows 16-23 1.4s (2857 pos/s)
+[cuda_int8_b1] shard 4/12 rows 24-31 1.5s (2763 pos/s)
+[cuda_int8_b1] shard 5/12 rows 32-39 1.5s (2811 pos/s)
+[cuda_int8_b1] shard 6/12 rows 40-47 1.4s (2899 pos/s)
+[cuda_int8_b1] shard 7/12 rows 48-55 1.5s (2776 pos/s)
+[cuda_int8_b1] shard 8/12 rows 56-63 1.4s (2890 pos/s)
+[cuda_int8_b1] shard 9/12 rows 64-71 1.4s (2866 pos/s)
+[cuda_int8_b1] shard 10/12 rows 72-79 1.5s (2739 pos/s)
+[cuda_int8_b1] shard 11/12 rows 80-87 1.5s (2779 pos/s)
+[cuda_int8_b1] shard 12/12 rows 88-95 1.5s (2749 pos/s)
+[cuda_nf4_b1] model loaded in 1.8s
+[cuda_nf4_b1] shard 1/12 rows 0-7 0.7s (6285 pos/s)
+[cuda_nf4_b1] shard 2/12 rows 8-15 0.7s (6296 pos/s)
+[cuda_nf4_b1] shard 3/12 rows 16-23 0.6s (6307 pos/s)
+[cuda_nf4_b1] shard 4/12 rows 24-31 0.7s (6142 pos/s)
+[cuda_nf4_b1] shard 5/12 rows 32-39 0.7s (6155 pos/s)
+[cuda_nf4_b1] shard 6/12 rows 40-47 0.7s (6224 pos/s)
+[cuda_nf4_b1] shard 7/12 rows 48-55 0.7s (6183 pos/s)
+[cuda_nf4_b1] shard 8/12 rows 56-63 0.7s (6243 pos/s)
+[cuda_nf4_b1] shard 9/12 rows 64-71 0.7s (6244 pos/s)
+[cuda_nf4_b1] shard 10/12 rows 72-79 0.7s (6222 pos/s)
+[cuda_nf4_b1] shard 11/12 rows 80-87 0.6s (6317 pos/s)
+[cuda_nf4_b1] shard 12/12 rows 88-95 0.7s (6135 pos/s)
+cuda_bf16_b1       tau=0.2327 top1 0.02002 (984) beyond2tau=0 set8 0.1378 p99d=0.14 disp=1.782798459563543 halves=[0.015909830729166668, 0.024129231770833332]
+cuda_bf16_b8       tau=0.226 top1 0.01697 (834) beyond2tau=0 set8 0.1332 p99d=0.135 disp=2.1962892843619843 halves=[0.012736002604166666, 0.021199544270833332]
+cuda_fp16_b1       tau=0.03312 top1 0.00423 (208) beyond2tau=0 set8 0.0186 p99d=0.019 disp=0.6574898785425101 halves=[0.0037841796875, 0.004679361979166667]
+cuda_fp32_b1       tau=4.292e-05 top1 0.00002 (1) beyond2tau=0 set8 0.0001 p99d=2.86e-05 disp=1.0 halves=[4.0690104166666664e-05, 0.0]
+cuda_fp32_b8       tau=4.864e-05 top1 0.00000 (0) beyond2tau=0 set8 0.0000 p99d=3.24e-05 disp=None halves=[0.0, 0.0]
+cuda_int8_b1       tau=1.649 top1 0.05640 (2772) beyond2tau=2 set8 0.5220 p99d=0.97 disp=2.3303713830029618 halves=[0.048299153645833336, 0.06449381510416667]
+cuda_nf4_b1        tau=3.941 top1 0.16024 (7876) beyond2tau=0 set8 0.8753 p99d=2.5 disp=5.00616396247093 halves=[0.13631184895833334, 0.18416341145833334]
+determinism run_to_run:cpu_fp32: {'top1_flips': 0, 'top1_flip_rate': 0.0, 'max_abs_logit_delta': 0.0, 'bit_identical': True}
+determinism run_to_run:cuda_bf16_b1: {'top1_flips': 0, 'top1_flip_rate': 0.0, 'max_abs_logit_delta': 0.0, 'bit_identical': True}
+determinism batch_invariance:cuda_bf16_b1_vs_b8: {'top1_flips': 752, 'top1_flip_rate': 0.015299479166666666, 'max_abs_logit_delta': 0.9375, 'bit_identical': False}
+determinism batch_invariance:cuda_fp32_b1_vs_b8: {'top1_flips': 1, 'top1_flip_rate': 2.0345052083333332e-05, 'max_abs_logit_delta': 0.0005064010620117188, 'bit_identical': False}
+investigation batch_invariance:cuda_bf16_b1_vs_b8: beyond2tau=0 gap_max=0.25 by_row=[0.328000009059906, 0.35899999737739563, 0.375, 0.375, 0.36500000953674316, 0.4009999930858612, 0.3799999952316284, 0.3490000069141388]
+investigation batch_invariance:cuda_fp32_b1_vs_b8: beyond2tau=0 gap_max=0.0 by_row=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+band: c:pipeline-bug-first
+[saved] results/p2_rank_census.json
+exit 0

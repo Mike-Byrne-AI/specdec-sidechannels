@@ -1,0 +1,29 @@
+{
+  "concept_run_length": {
+    "max": 8,
+    "mean": 1.0149421233206144,
+    "n_runs": 31187,
+    "p50": 1.0,
+    "p90": 1.0
+  },
+  "f4_hold_rule": {
+    "expected_run_length": 1.0149421233206144,
+    "gamma": 4,
+    "rule": "hold a bucket only while expected run length >> gamma",
+    "verdict": "FAILS \u2014 holding a fine-bucket prediction for a block is unjustified"
+  },
+  "gamma": 4,
+  "gen_file": "phase0b_vanilla_k512.gen.jsonl",
+  "glue_token_share": 0.4084657073444216,
+  "k": 512,
+  "n_generated_tokens": 53510,
+  "n_prompts": 210,
+  "persistence_concept_concept": {
+    "n_pairs": 17218,
+    "p_same_bucket": 0.02706469973283773
+  },
+  "persistence_with_glue_frame": {
+    "n_pairs": 53300,
+    "p_same_bucket": 0.09382739212007504
+  }
+}

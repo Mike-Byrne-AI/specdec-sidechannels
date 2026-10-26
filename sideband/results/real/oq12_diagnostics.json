@@ -1,0 +1,61 @@
+{
+  "internal": "PASS",
+  "n_rejections": 11287,
+  "per_k": {
+    "16": {
+      "C_concept": 15,
+      "VIABLE": true,
+      "bucket_level_cross_fraction": 0.47585718082750067,
+      "concept_cross_fraction": 0.314166740497918,
+      "concept_cross_fraction_ci95_prompt_bootstrap": [
+        0.30323442706855835,
+        0.3248568954722929
+      ],
+      "concept_run_length_mean": 1.140784192652053,
+      "glue_concentration_flag": false,
+      "glue_generated_share": 0.5856849187067837,
+      "glue_involved_fraction": 0.7075396473819439,
+      "glue_vocab_share": 0.01664639471057884,
+      "n_glue_buckets": 1,
+      "n_negative_bucket_records": 0,
+      "persistence_concept_concept": 0.29533678756476683
+    },
+    "32": {
+      "C_concept": 31,
+      "VIABLE": true,
+      "bucket_level_cross_fraction": 0.563302914857801,
+      "concept_cross_fraction": 0.4206609373615664,
+      "concept_cross_fraction_ci95_prompt_bootstrap": [
+        0.41030417938296004,
+        0.43161235497384637
+      ],
+      "concept_run_length_mean": 1.114459025492606,
+      "glue_concentration_flag": false,
+      "glue_generated_share": 0.4746776303494674,
+      "glue_involved_fraction": 0.5444316470275539,
+      "glue_vocab_share": 0.004748315868263473,
+      "n_glue_buckets": 1,
+      "n_negative_bucket_records": 0,
+      "persistence_concept_concept": 0.2131099136340149
+    },
+    "64": {
+      "C_concept": 62,
+      "VIABLE": true,
+      "bucket_level_cross_fraction": 0.6870736245237884,
+      "concept_cross_fraction": 0.5333569593337468,
+      "concept_cross_fraction_ci95_prompt_bootstrap": [
+        0.5222638758088781,
+        0.5448838978598808
+      ],
+      "concept_run_length_mean": 1.073992673992674,
+      "glue_concentration_flag": false,
+      "glue_generated_share": 0.45206503457297703,
+      "glue_involved_fraction": 0.4872862585275095,
+      "glue_vocab_share": 0.005434443612774451,
+      "n_glue_buckets": 2,
+      "n_negative_bucket_records": 0,
+      "persistence_concept_concept": 0.1415061295971979
+    }
+  },
+  "viability_bar": 0.25
+}

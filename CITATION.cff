@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: >-
+  If you use this repository, cite it as below. The raw harvests the
+  repository leaves out have their own citation on the Zenodo record
+  README.md names (DOI 10.5281/zenodo.23462826).
+title: "specdec-sidechannels: three research records on what a speculative-decoding system gives away for free"
+version: "v1.0.2"
+date-released: "2026-10-26"
+repository-code: "https://github.com/Mike-Byrne-AI/specdec-sidechannels"
+license: MIT
+authors:
+  - name: "Michael Byrne"
+  - name: "Claude (AI collaborator)"
+    email: "claudes.email.address@gmail.com"
+keywords:
+  - speculative decoding
+  - drafter steering
+  - side channel
+  - pre-registration
+  - negative results
+  - archive codec
+  - arithmetic coding
+abstract: >-
+  Three research records published as they stood at their pinned commits.
+  sideband asked whether the memory-access address stream a weight-serving
+  device sees for free can steer a speculative-decoding drafter enough to
+  matter; its registered real-model runs were gated by kill criteria written
+  in advance and their labels recomputed by an adversarial reviewer from
+  committed evidence, the record names its own exceptions, and the headline
+  result is negative. amber codes
+  archives of model-generated text as a draft model's rank corrections,
+  decoded with the draft alone, byte-exact under a measured contract.
+  lockstep is a pure-integer arithmetic coder with conformance vectors and a
+  proposed model-pinned archive profile that was never built. Every record
+  is corrected by dated errata, never rewrites.

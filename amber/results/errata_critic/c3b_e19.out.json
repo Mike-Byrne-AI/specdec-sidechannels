@@ -1,0 +1,115 @@
+{
+ "compare_value": {
+  "n": 215,
+  "max_abs_diff": 4.440892098500626e-16,
+  "worst": "/arms/cuda_fp16_b1/oe_interval_primary/low",
+  "nonnumeric_unequal": [],
+  "only_in_payload": [],
+  "only_in_mine": []
+ },
+ "status_mine": {
+  "status": "CONFIRMED",
+  "status_e15_rule_gap_conditioned": "CONFIRMED",
+  "status_out_of_sample": "CONFIRMED",
+  "status_by_claim_site": {
+   "FINDINGS.md:78 (F-10 caveat: the per-rank rates are what transfer; the rank-only rank-1 rate does not, E15)": "CORRECTED",
+   "FINDINGS.md:136 (F-15's E15 bullet: the correction excess is not identified; stands, not conditioned here)": "CONFIRMED"
+  }
+ },
+ "status_payload": {
+  "status": "CONFIRMED",
+  "status_e15_rule_gap_conditioned": "CONFIRMED",
+  "status_out_of_sample": "CONFIRMED",
+  "status_by_claim_site": {
+   "FINDINGS.md:136 (F-15's E15 bullet: the correction excess is not identified; stands, not conditioned here)": "CONFIRMED",
+   "FINDINGS.md:78 (F-10 caveat: the per-rank rates are what transfer; the rank-only rank-1 rate does not, E15)": "CORRECTED"
+  }
+ },
+ "status_equal": true,
+ "audit": {
+  "cuda_bf16_b1": {
+   "O_over_E_primary": 0.8412958348166617,
+   "O_poisson95": [
+    18.605796655857525,
+    40.467795943268186
+   ],
+   "O_over_E_95": [
+    0.5590349725006681,
+    1.215906720402933
+   ],
+   "e15_rule_by_binning": {
+    "quantile20": true,
+    "quantile10": true,
+    "quantile50": true,
+    "log8": true,
+    "log16": true,
+    "log32": true,
+    "log64": true
+   },
+   "z_range": [
+    -1.3255986081491722,
+    -0.40206510229453113
+   ]
+  },
+  "cuda_fp16_b1": {
+   "O_over_E_primary": 0.5988961892247052,
+   "O_poisson95": [
+    4.115373097378328,
+    17.08480345141917
+   ],
+   "O_over_E_95": [
+    0.273853473917528,
+    1.1368915200786702
+   ],
+   "e15_rule_by_binning": {
+    "quantile20": true,
+    "quantile10": false,
+    "quantile50": true,
+    "log8": true,
+    "log16": true,
+    "log32": true,
+    "log64": true
+   },
+   "z_range": [
+    -1.7899235402007458,
+    -0.5257566259007563
+   ]
+  },
+  "primary_equals_critic_p2_quantile20": {
+   "cuda_bf16_b1": {
+    "E_A": [
+     33.281990521326975,
+     33.281990521326975
+    ],
+    "fail": [
+     0.7466950835701788,
+     0.7466950835701788
+    ],
+    "one_in": [
+     103.21404535498503,
+     103.21404535498503
+    ]
+   },
+   "cuda_fp16_b1": {
+    "E_A": [
+     15.027646129541841,
+     15.027646129541841
+    ],
+    "fail": [
+     0.2743004142463592,
+     0.2743004142463592
+    ],
+    "one_in": [
+     681.7188370672703,
+     681.7188370672702
+    ]
+   }
+  }
+ },
+ "prediction": {},
+ "post_hoc": "the status is decided by a rule written after its primary values were seen (the critic's second-batch p2_quantile20, committed before the third-batch entry); the six other binnings were not seen",
+ "where": [
+  "FINDINGS.md:78",
+  "FINDINGS.md:136"
+ ]
+}

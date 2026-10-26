@@ -1,0 +1,22 @@
+{
+ "arm": 7,
+ "extend": 0.301154537587004,
+ "extend_level": 0.75,
+ "kind": "head",
+ "provenance": {
+  "b_ref_original": 1.3255813953488371,
+  "materialized_grids_sha256": "3b5cf4ca940b285189078a2be02043003c9822838c60f393d860159cd894e08b",
+  "search_payload": "oq15c_search_arm7.json",
+  "search_payload_sha256": "50bb4d1b15dc5ba54dedef6878c0bd07e958430d2fe00c894c52e884de4e90a7",
+  "supersedes": "oq15c_thresholds_arm7.json",
+  "val_run": "results/real/oq15c_val_arm1.jsonl",
+  "void_cap": 1.2858072916666667,
+  "void_cap_rule": "arm 6's SELECTED val budget (BLUEPRINT Stage-C void execution 2026-09-03)"
+ },
+ "selection_label": "VOID_REFREEZE",
+ "stop": [
+  0.5404841213563928,
+  0.3435865072842257
+ ],
+ "stop_level": 0.15
+}

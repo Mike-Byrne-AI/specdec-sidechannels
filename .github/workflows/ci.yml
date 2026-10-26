@@ -1,0 +1,62 @@
+# Root workflow of the public specdec-sidechannels repository (plan 10.7: one job per
+# folder). The sideband job runs the private tree's own CI steps from inside the
+# sideband/ folder, with the analysis extra so the four Fiedler-order tests of
+# tests/test_balanced_groups.py run rather than skip (plan 12); the amber job runs amber's
+# own two CI steps from inside amber/ after installing its two sibling folders (plan 15.5,
+# 2026-10-17; it needs the lockstep folder, which lockstep's survey of 2026-10-18 added); the
+# lockstep job runs lockstep's five validation commands from inside lockstep/ (plan 15.7; its
+# own workflow, a sub-folder file that would never run, is withheld). Emitted by the export tool to
+# .github/workflows/ci.yml at the export root. One-line `run:` steps only, and only checkout and
+# setup-python as actions: the export tool's `prove` reads this file and runs each sibling folder's
+# job from it (plan 15.9), so a block scalar, another action or a shell operator fails the proof.
+name: ci
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  sideband:
+    runs-on: ubuntu-latest
+    env:
+      SIDEBAND_REQUIRE_ANALYSIS: "1"   # the four Fiedler tests fail loudly rather than skip if scipy is missing
+    defaults:
+      run:
+        working-directory: sideband
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[dev,analysis]"
+      - run: pytest -q
+      - run: python tools/lint_findings.py
+      - run: python experiments/run_all.py --smoke
+  amber:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: amber
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ../sideband -e ../lockstep   # amber's D-1 and D-7: the sibling folders of this repository
+      - run: pip install -e ".[dev]"
+      - run: pytest -q   # 160 tests, no model and no GPU needed (2026-10-17, 2.46 s on the author's box)
+      - run: python tools/lint_findings.py
+  lockstep:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: lockstep
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[test]"   # no runtime dependencies; the test extra is pytest
+      - run: python -m pytest -q tests_project   # 82 tests (2026-10-18)
+      - run: python tools/lockstep_gen_vectors.py --check
+      - run: python -m lockstep self-check   # the six lsp0 vectors
+      - run: python -m pytest -q .claude/trellis-tests   # the agent harness's own tests (115 passed, 4 skipped, 2026-10-18)
+      - run: python tools/trellis_repair_gate.py

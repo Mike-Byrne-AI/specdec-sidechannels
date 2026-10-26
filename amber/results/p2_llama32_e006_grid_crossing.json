@@ -1,0 +1,41 @@
+{
+  "P_gap_below": {
+    "0.142": 0.08251953125,
+    "0.465": 0.232421875,
+    "0.93": 0.3910929361979167
+  },
+  "gap_quantiles": {
+    "0.001": 0.0013213796615600586,
+    "0.01": 0.012375965118408203,
+    "0.05": 0.08195996284484863,
+    "0.1": 0.17575273513793946,
+    "0.5": 1.3533878326416016
+  },
+  "grid_crossing_e006": {
+    "cuda_bf16_b1": {
+      "eps_max": 1.5969743728637695,
+      "eps_p50": 0.028135299682617188,
+      "eps_p99": 0.14022521972656254,
+      "pos_rate_any_crossing_k64_delta0.0001": 1.0,
+      "pos_rate_any_crossing_k64_delta0.001": 1.0,
+      "pos_rate_any_crossing_k64_delta0.01": 1.0
+    },
+    "cuda_fp16_b1": {
+      "eps_max": 0.8000993728637695,
+      "eps_p50": 0.003604888916015625,
+      "eps_p99": 0.019018173217773438,
+      "pos_rate_any_crossing_k64_delta0.0001": 1.0,
+      "pos_rate_any_crossing_k64_delta0.001": 1.0,
+      "pos_rate_any_crossing_k64_delta0.01": 1.0
+    },
+    "cuda_fp32_b1": {
+      "eps_max": 0.00044918060302734375,
+      "eps_p50": 6.67572021484375e-06,
+      "eps_p99": 2.86102294921875e-05,
+      "pos_rate_any_crossing_k64_delta0.0001": 0.99432373046875,
+      "pos_rate_any_crossing_k64_delta0.001": 0.4082234700520833,
+      "pos_rate_any_crossing_k64_delta0.01": 0.050435384114583336
+    }
+  },
+  "regime": "Llama-3.2-1B-Instruct top-64 logits, CPU fp32 vs GPU arms, 49152 positions"
+}

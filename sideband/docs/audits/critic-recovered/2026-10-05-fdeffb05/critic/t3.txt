@@ -1,0 +1,3 @@
+def f(r):
+    return "%+.4f [%+.4f, %+.4f] seeds %s" % (r["m"], r["ci"][0])
+print("  %-16s %s" % (k, f(o["R"][k])))

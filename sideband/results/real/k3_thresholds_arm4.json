@@ -1,0 +1,19 @@
+{
+ "arm": 4,
+ "extend": 0.32316824346780776,
+ "extend_level": 0.05,
+ "kind": "probe",
+ "provenance": {
+  "b_ref": 1.2770393536617148,
+  "materialized_grids_sha256": "5fdabc6679c2d18abe8b40e459771a27c9e482755590f37727f702eb7925646a",
+  "search_payload": "k3_threshold_search_arm4.json",
+  "search_payload_sha256": "03e872125958a8940d7b14652a733d9b000c416fccb4971a4b86357620480d29",
+  "val_run": "C:\\Users\\Michael\\Desktop\\sideband\\results\\real\\k3_val_arm1.jsonl"
+ },
+ "selection_label": "SELECTED",
+ "stop": [
+  0.6381566643714904,
+  0.5907076835632324
+ ],
+ "stop_level": 0.4
+}

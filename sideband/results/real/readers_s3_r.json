@@ -1,0 +1,3697 @@
+{
+ "registered": "READER-AND-LENS RE-TEST AT S3 REGISTRATION (docs/BLUEPRINT.md, 2026-10-05; pre-run; the frozen OQ-18 chain imported, never edited; CPU only)",
+ "stage": "readers",
+ "role": "replication",
+ "harvest": "results/real/harvest_moe_r",
+ "tag": "olmoe",
+ "readers": {
+  "RN": {
+   "kind": "hz_rescaled",
+   "capacity": "mlp256",
+   "epochs": 30,
+   "lr": 0.003,
+   "what": "the hz block alone rescaled to the aligned slots block's mean squared norm over the train anchors (c_HZ = sqrt(m_SLOTS / m_HZ)); A, TOK and the slots blocks unscaled"
+  },
+  "RT": {
+   "kind": "two_tower",
+   "capacity": "mlp256",
+   "epochs": 30,
+   "lr": 0.003,
+   "tower_a": 256,
+   "tower_b": 64,
+   "what": "tower A over A ++ TOK ++ HZ, tower B over the slots block, head over the concatenation"
+  }
+ },
+ "spaces": [
+  "L1_olmoe_k16",
+  "L3_olmoe_groups_v1",
+  "L3_olmoe_balanced_v1"
+ ],
+ "offsets": {
+  "L1_olmoe_k16": [
+   2
+  ],
+  "L3_olmoe_groups_v1": [
+   2
+  ],
+  "L3_olmoe_balanced_v1": [
+   2
+  ]
+ },
+ "n_cells": 75,
+ "partial": false,
+ "smoke_cell": null,
+ "resumed_cells": 0,
+ "cells": [
+  {
+   "cell": "L1_olmoe_k16|off2|a|mlp256|s0",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": null,
+     "note": "no hz block: the cell is R0's"
+    }
+   },
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "features": "a",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.5909500751377526,
+   "val_acc_best": 0.5906648294867378,
+   "best_epoch": 23,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.586508599098347,
+   "runtime_s": 37.5
+  },
+  {
+   "cell": "L1_olmoe_k16|off2|a|mlp256|s1",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": null,
+     "note": "no hz block: the cell is R0's"
+    }
+   },
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "features": "a",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.5916179662714978,
+   "val_acc_best": 0.5913537719600414,
+   "best_epoch": 14,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.586508599098347,
+   "runtime_s": 36.0
+  },
+  {
+   "cell": "L1_olmoe_k16|off2|a|mlp256|s2",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": null,
+     "note": "no hz block: the cell is R0's"
+    }
+   },
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "features": "a",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.5910168642511271,
+   "val_acc_best": 0.5908370651050637,
+   "best_epoch": 15,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.586508599098347,
+   "runtime_s": 36.7
+  },
+  {
+   "cell": "L1_olmoe_k16|off2|fplus|mlp256|s0",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "features": "fplus",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.6081148772750041,
+   "val_acc_best": 0.6079572855666552,
+   "best_epoch": 0,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.586508599098347,
+   "runtime_s": 191.6
+  },
+  {
+   "cell": "L1_olmoe_k16|off2|fplus_b|mlp256|s0",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "features": "fplus_b",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.613357822674904,
+   "val_acc_best": 0.6050292800551154,
+   "best_epoch": 2,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.586508599098347,
+   "runtime_s": 225.7
+  },
+  {
+   "cell": "L1_olmoe_k16|off2|fplus_r|mlp256|s0",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.6080146936049424,
+   "val_acc_best": 0.6034447123665174,
+   "best_epoch": 1,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.586508599098347,
+   "runtime_s": 225.1
+  },
+  {
+   "cell": "L1_olmoe_k16|off2|fplus|mlp256|s1",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "features": "fplus",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.6156286525296377,
+   "val_acc_best": 0.6113675508095074,
+   "best_epoch": 1,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.586508599098347,
+   "runtime_s": 198.2
+  },
+  {
+   "cell": "L1_olmoe_k16|off2|fplus_b|mlp256|s1",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "features": "fplus_b",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.6128902988812823,
+   "val_acc_best": 0.6088529107819497,
+   "best_epoch": 1,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.586508599098347,
+   "runtime_s": 224.6
+  },
+  {
+   "cell": "L1_olmoe_k16|off2|fplus_r|mlp256|s1",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.6104524962431124,
+   "val_acc_best": 0.6062349293833965,
+   "best_epoch": 1,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.586508599098347,
+   "runtime_s": 224.4
+  },
+  {
+   "cell": "L1_olmoe_k16|off2|fplus|mlp256|s2",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "features": "fplus",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.6137919519118383,
+   "val_acc_best": 0.6096796417499138,
+   "best_epoch": 1,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.586508599098347,
+   "runtime_s": 194.1
+  },
+  {
+   "cell": "L1_olmoe_k16|off2|fplus_b|mlp256|s2",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "features": "fplus_b",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.6098513942227417,
+   "val_acc_best": 0.6080606269376507,
+   "best_epoch": 1,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.586508599098347,
+   "runtime_s": 222.3
+  },
+  {
+   "cell": "L1_olmoe_k16|off2|fplus_r|mlp256|s2",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.6080146936049424,
+   "val_acc_best": 0.6048570444367896,
+   "best_epoch": 1,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.586508599098347,
+   "runtime_s": 221.8
+  },
+  {
+   "cell": "L3_olmoe_groups_v1|off2|a|mlp256|s0",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": null,
+     "note": "no hz block: the cell is R0's"
+    }
+   },
+   "space": "L3_olmoe_groups_v1",
+   "offset": 2,
+   "features": "a",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.5320086825847387,
+   "val_acc_best": 0.5298656562177059,
+   "best_epoch": 23,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 38.1
+  },
+  {
+   "cell": "L3_olmoe_groups_v1|off2|a|mlp256|s1",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": null,
+     "note": "no hz block: the cell is R0's"
+    }
+   },
+   "space": "L3_olmoe_groups_v1",
+   "offset": 2,
+   "features": "a",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.5292369343796961,
+   "val_acc_best": 0.5260075783672064,
+   "best_epoch": 29,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 38.0
+  },
+  {
+   "cell": "L3_olmoe_groups_v1|off2|a|mlp256|s2",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": null,
+     "note": "no hz block: the cell is R0's"
+    }
+   },
+   "space": "L3_olmoe_groups_v1",
+   "offset": 2,
+   "features": "a",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.535515111036901,
+   "val_acc_best": 0.5294178436100586,
+   "best_epoch": 21,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 38.0
+  },
+  {
+   "cell": "L3_olmoe_groups_v1|off2|fplus|mlp256|s0",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L3_olmoe_groups_v1",
+   "offset": 2,
+   "features": "fplus",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.6269160126899316,
+   "val_acc_best": 0.6217705821563899,
+   "best_epoch": 3,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 195.3
+  },
+  {
+   "cell": "L3_olmoe_groups_v1|off2|fplus_b|mlp256|s0",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L3_olmoe_groups_v1",
+   "offset": 2,
+   "features": "fplus_b",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.6221071965269661,
+   "val_acc_best": 0.6225284188770238,
+   "best_epoch": 3,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 223.0
+  },
+  {
+   "cell": "L3_olmoe_groups_v1|off2|fplus_r|mlp256|s0",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L3_olmoe_groups_v1",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.6111871764902321,
+   "val_acc_best": 0.6027213227695487,
+   "best_epoch": 4,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 224.0
+  },
+  {
+   "cell": "L3_olmoe_groups_v1|off2|fplus|mlp256|s1",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L3_olmoe_groups_v1",
+   "offset": 2,
+   "features": "fplus",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.6228418767740859,
+   "val_acc_best": 0.6192903892524975,
+   "best_epoch": 3,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 195.3
+  },
+  {
+   "cell": "L3_olmoe_groups_v1|off2|fplus_b|mlp256|s1",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L3_olmoe_groups_v1",
+   "offset": 2,
+   "features": "fplus_b",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.6244114209383871,
+   "val_acc_best": 0.6197726489838099,
+   "best_epoch": 3,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 223.5
+  },
+  {
+   "cell": "L3_olmoe_groups_v1|off2|fplus_r|mlp256|s1",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L3_olmoe_groups_v1",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.6098179996660544,
+   "val_acc_best": 0.6032035825008611,
+   "best_epoch": 3,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 223.5
+  },
+  {
+   "cell": "L3_olmoe_groups_v1|off2|fplus|mlp256|s2",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L3_olmoe_groups_v1",
+   "offset": 2,
+   "features": "fplus",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.6240440808148272,
+   "val_acc_best": 0.622562866000689,
+   "best_epoch": 2,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 196.6
+  },
+  {
+   "cell": "L3_olmoe_groups_v1|off2|fplus_b|mlp256|s2",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L3_olmoe_groups_v1",
+   "offset": 2,
+   "features": "fplus_b",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.6228752713307731,
+   "val_acc_best": 0.6174302445745781,
+   "best_epoch": 3,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 224.3
+  },
+  {
+   "cell": "L3_olmoe_groups_v1|off2|fplus_r|mlp256|s2",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L3_olmoe_groups_v1",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.6094840540991818,
+   "val_acc_best": 0.6042025490871512,
+   "best_epoch": 4,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 223.5
+  },
+  {
+   "cell": "L3_olmoe_balanced_v1|off2|a|mlp256|s0",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": null,
+     "note": "no hz block: the cell is R0's"
+    }
+   },
+   "space": "L3_olmoe_balanced_v1",
+   "offset": 2,
+   "features": "a",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.4293872098847888,
+   "val_acc_best": 0.43010678608336206,
+   "best_epoch": 21,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 36.4
+  },
+  {
+   "cell": "L3_olmoe_balanced_v1|off2|a|mlp256|s1",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": null,
+     "note": "no hz block: the cell is R0's"
+    }
+   },
+   "space": "L3_olmoe_balanced_v1",
+   "offset": 2,
+   "features": "a",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.4306562030389047,
+   "val_acc_best": 0.4297623148467103,
+   "best_epoch": 12,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 36.1
+  },
+  {
+   "cell": "L3_olmoe_balanced_v1|off2|a|mlp256|s2",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": null,
+     "note": "no hz block: the cell is R0's"
+    }
+   },
+   "space": "L3_olmoe_balanced_v1",
+   "offset": 2,
+   "features": "a",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.430823175822341,
+   "val_acc_best": 0.429900103341371,
+   "best_epoch": 16,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 36.3
+  },
+  {
+   "cell": "L3_olmoe_balanced_v1|off2|fplus|mlp256|s0",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L3_olmoe_balanced_v1",
+   "offset": 2,
+   "features": "fplus",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.4727333444648522,
+   "val_acc_best": 0.4669996555287633,
+   "best_epoch": 2,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 192.4
+  },
+  {
+   "cell": "L3_olmoe_balanced_v1|off2|fplus_b|mlp256|s0",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L3_olmoe_balanced_v1",
+   "offset": 2,
+   "features": "fplus_b",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.4686592085490065,
+   "val_acc_best": 0.4657251119531519,
+   "best_epoch": 2,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 223.6
+  },
+  {
+   "cell": "L3_olmoe_balanced_v1|off2|fplus_r|mlp256|s0",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L3_olmoe_balanced_v1",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.46288195024211054,
+   "val_acc_best": 0.46069583189803653,
+   "best_epoch": 2,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 222.6
+  },
+  {
+   "cell": "L3_olmoe_balanced_v1|off2|fplus|mlp256|s1",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L3_olmoe_balanced_v1",
+   "offset": 2,
+   "features": "fplus",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.4705626982801803,
+   "val_acc_best": 0.46558732345849124,
+   "best_epoch": 1,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 196.3
+  },
+  {
+   "cell": "L3_olmoe_balanced_v1|off2|fplus_b|mlp256|s1",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L3_olmoe_balanced_v1",
+   "offset": 2,
+   "features": "fplus_b",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.4680915010853231,
+   "val_acc_best": 0.46651739579745094,
+   "best_epoch": 2,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 224.8
+  },
+  {
+   "cell": "L3_olmoe_balanced_v1|off2|fplus_r|mlp256|s1",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L3_olmoe_balanced_v1",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.4632492903656704,
+   "val_acc_best": 0.46076472614536684,
+   "best_epoch": 2,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 225.8
+  },
+  {
+   "cell": "L3_olmoe_balanced_v1|off2|fplus|mlp256|s2",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L3_olmoe_balanced_v1",
+   "offset": 2,
+   "features": "fplus",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.4686592085490065,
+   "val_acc_best": 0.4633138132965897,
+   "best_epoch": 1,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 196.5
+  },
+  {
+   "cell": "L3_olmoe_balanced_v1|off2|fplus_b|mlp256|s2",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L3_olmoe_balanced_v1",
+   "offset": 2,
+   "features": "fplus_b",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.46735682083820335,
+   "val_acc_best": 0.4640027557698932,
+   "best_epoch": 2,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 224.6
+  },
+  {
+   "cell": "L3_olmoe_balanced_v1|off2|fplus_r|mlp256|s2",
+   "reader": "RN",
+   "reader_params": {
+    "kind": "hz_rescaled",
+    "epochs": 30,
+    "lr": 0.003,
+    "rescale": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   },
+   "space": "L3_olmoe_balanced_v1",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.46461846718984806,
+   "val_acc_best": 0.45976575955907684,
+   "best_epoch": 2,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 222.9
+  },
+  {
+   "cell": "L1_olmoe_k16|off2|a|mlp256|s0",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 657,
+     "b_dim": 0,
+     "width_a": 256,
+     "width_b": 0
+    }
+   },
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "features": "a",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.5909500751377526,
+   "val_acc_best": 0.5906648294867378,
+   "best_epoch": 23,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.586508599098347,
+   "runtime_s": 37.9
+  },
+  {
+   "cell": "L1_olmoe_k16|off2|a|mlp256|s1",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 657,
+     "b_dim": 0,
+     "width_a": 256,
+     "width_b": 0
+    }
+   },
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "features": "a",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.5916179662714978,
+   "val_acc_best": 0.5913537719600414,
+   "best_epoch": 14,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.586508599098347,
+   "runtime_s": 37.8
+  },
+  {
+   "cell": "L1_olmoe_k16|off2|a|mlp256|s2",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 657,
+     "b_dim": 0,
+     "width_a": 256,
+     "width_b": 0
+    }
+   },
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "features": "a",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.5910168642511271,
+   "val_acc_best": 0.5908370651050637,
+   "best_epoch": 15,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.586508599098347,
+   "runtime_s": 37.9
+  },
+  {
+   "cell": "L1_olmoe_k16|off2|fplus|mlp256|s0",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 4753,
+     "b_dim": 0,
+     "width_a": 256,
+     "width_b": 0
+    }
+   },
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "features": "fplus",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.6075137752546335,
+   "val_acc_best": 0.6042714433344816,
+   "best_epoch": 0,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.586508599098347,
+   "runtime_s": 182.1
+  },
+  {
+   "cell": "L1_olmoe_k16|off2|fplus_b|mlp256|s0",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 4753,
+     "b_dim": 1024,
+     "width_a": 256,
+     "width_b": 64
+    }
+   },
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "features": "fplus_b",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.6098179996660544,
+   "val_acc_best": 0.6049948329314502,
+   "best_epoch": 0,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.586508599098347,
+   "runtime_s": 200.7
+  },
+  {
+   "cell": "L1_olmoe_k16|off2|fplus_r|mlp256|s0",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 4753,
+     "b_dim": 1024,
+     "width_a": 256,
+     "width_b": 64
+    }
+   },
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.6080146936049424,
+   "val_acc_best": 0.6045814674474681,
+   "best_epoch": 0,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.586508599098347,
+   "runtime_s": 200.7
+  },
+  {
+   "cell": "L1_olmoe_k16|off2|fplus|mlp256|s1",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 4753,
+     "b_dim": 0,
+     "width_a": 256,
+     "width_b": 0
+    }
+   },
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "features": "fplus",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.6113875438303557,
+   "val_acc_best": 0.6050981743024457,
+   "best_epoch": 1,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.586508599098347,
+   "runtime_s": 183.3
+  },
+  {
+   "cell": "L1_olmoe_k16|off2|fplus_b|mlp256|s1",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 4753,
+     "b_dim": 1024,
+     "width_a": 256,
+     "width_b": 64
+    }
+   },
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "features": "fplus_b",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.6116547002838537,
+   "val_acc_best": 0.6073716844643472,
+   "best_epoch": 1,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.586508599098347,
+   "runtime_s": 199.7
+  },
+  {
+   "cell": "L1_olmoe_k16|off2|fplus_r|mlp256|s1",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 4753,
+     "b_dim": 1024,
+     "width_a": 256,
+     "width_b": 64
+    }
+   },
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.6112539656036066,
+   "val_acc_best": 0.6066482948673786,
+   "best_epoch": 1,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.586508599098347,
+   "runtime_s": 200.6
+  },
+  {
+   "cell": "L1_olmoe_k16|off2|fplus|mlp256|s2",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 4753,
+     "b_dim": 0,
+     "width_a": 256,
+     "width_b": 0
+    }
+   },
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "features": "fplus",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.6081148772750041,
+   "val_acc_best": 0.603548053737513,
+   "best_epoch": 0,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.586508599098347,
+   "runtime_s": 182.4
+  },
+  {
+   "cell": "L1_olmoe_k16|off2|fplus_b|mlp256|s2",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 4753,
+     "b_dim": 1024,
+     "width_a": 256,
+     "width_b": 64
+    }
+   },
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "features": "fplus_b",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.6081816663883787,
+   "val_acc_best": 0.6034102652428522,
+   "best_epoch": 0,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.586508599098347,
+   "runtime_s": 201.2
+  },
+  {
+   "cell": "L1_olmoe_k16|off2|fplus_r|mlp256|s2",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 4753,
+     "b_dim": 1024,
+     "width_a": 256,
+     "width_b": 64
+    }
+   },
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.6083820337285023,
+   "val_acc_best": 0.602962452635205,
+   "best_epoch": 0,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.586508599098347,
+   "runtime_s": 201.0
+  },
+  {
+   "cell": "L3_olmoe_groups_v1|off2|a|mlp256|s0",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 657,
+     "b_dim": 0,
+     "width_a": 256,
+     "width_b": 0
+    }
+   },
+   "space": "L3_olmoe_groups_v1",
+   "offset": 2,
+   "features": "a",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.5320086825847387,
+   "val_acc_best": 0.5298656562177059,
+   "best_epoch": 23,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 38.2
+  },
+  {
+   "cell": "L3_olmoe_groups_v1|off2|a|mlp256|s1",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 657,
+     "b_dim": 0,
+     "width_a": 256,
+     "width_b": 0
+    }
+   },
+   "space": "L3_olmoe_groups_v1",
+   "offset": 2,
+   "features": "a",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.5292369343796961,
+   "val_acc_best": 0.5260075783672064,
+   "best_epoch": 29,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 38.1
+  },
+  {
+   "cell": "L3_olmoe_groups_v1|off2|a|mlp256|s2",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 657,
+     "b_dim": 0,
+     "width_a": 256,
+     "width_b": 0
+    }
+   },
+   "space": "L3_olmoe_groups_v1",
+   "offset": 2,
+   "features": "a",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.535515111036901,
+   "val_acc_best": 0.5294178436100586,
+   "best_epoch": 21,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 38.2
+  },
+  {
+   "cell": "L3_olmoe_groups_v1|off2|fplus|mlp256|s0",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 4753,
+     "b_dim": 0,
+     "width_a": 256,
+     "width_b": 0
+    }
+   },
+   "space": "L3_olmoe_groups_v1",
+   "offset": 2,
+   "features": "fplus",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.6203372850225414,
+   "val_acc_best": 0.6173957974509129,
+   "best_epoch": 1,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 176.4
+  },
+  {
+   "cell": "L3_olmoe_groups_v1|off2|fplus_b|mlp256|s0",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 4753,
+     "b_dim": 1024,
+     "width_a": 256,
+     "width_b": 64
+    }
+   },
+   "space": "L3_olmoe_groups_v1",
+   "offset": 2,
+   "features": "fplus_b",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.6186007680748038,
+   "val_acc_best": 0.617223561832587,
+   "best_epoch": 1,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 196.6
+  },
+  {
+   "cell": "L3_olmoe_groups_v1|off2|fplus_r|mlp256|s0",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 4753,
+     "b_dim": 1024,
+     "width_a": 256,
+     "width_b": 64
+    }
+   },
+   "space": "L3_olmoe_groups_v1",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.6161629654366338,
+   "val_acc_best": 0.6162245952462969,
+   "best_epoch": 1,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 199.9
+  },
+  {
+   "cell": "L3_olmoe_groups_v1|off2|fplus|mlp256|s1",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 4753,
+     "b_dim": 0,
+     "width_a": 256,
+     "width_b": 0
+    }
+   },
+   "space": "L3_olmoe_groups_v1",
+   "offset": 2,
+   "features": "fplus",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.6170646184671899,
+   "val_acc_best": 0.6156734412676541,
+   "best_epoch": 1,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 182.9
+  },
+  {
+   "cell": "L3_olmoe_groups_v1|off2|fplus_b|mlp256|s1",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 4753,
+     "b_dim": 1024,
+     "width_a": 256,
+     "width_b": 64
+    }
+   },
+   "space": "L3_olmoe_groups_v1",
+   "offset": 2,
+   "features": "fplus_b",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.6168976456837535,
+   "val_acc_best": 0.6159490182569756,
+   "best_epoch": 1,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 200.7
+  },
+  {
+   "cell": "L3_olmoe_groups_v1|off2|fplus_r|mlp256|s1",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 4753,
+     "b_dim": 1024,
+     "width_a": 256,
+     "width_b": 64
+    }
+   },
+   "space": "L3_olmoe_groups_v1",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.6165303055601937,
+   "val_acc_best": 0.6136410609714089,
+   "best_epoch": 1,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 200.5
+  },
+  {
+   "cell": "L3_olmoe_groups_v1|off2|fplus|mlp256|s2",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 4753,
+     "b_dim": 0,
+     "width_a": 256,
+     "width_b": 0
+    }
+   },
+   "space": "L3_olmoe_groups_v1",
+   "offset": 2,
+   "features": "fplus",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.615795625313074,
+   "val_acc_best": 0.6167413021012745,
+   "best_epoch": 2,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 182.4
+  },
+  {
+   "cell": "L3_olmoe_groups_v1|off2|fplus_b|mlp256|s2",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 4753,
+     "b_dim": 1024,
+     "width_a": 256,
+     "width_b": 64
+    }
+   },
+   "space": "L3_olmoe_groups_v1",
+   "offset": 2,
+   "features": "fplus_b",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.6119886458507263,
+   "val_acc_best": 0.6163623837409576,
+   "best_epoch": 2,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 200.6
+  },
+  {
+   "cell": "L3_olmoe_groups_v1|off2|fplus_r|mlp256|s2",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 4753,
+     "b_dim": 1024,
+     "width_a": 256,
+     "width_b": 64
+    }
+   },
+   "space": "L3_olmoe_groups_v1",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.6123225914175989,
+   "val_acc_best": 0.6166724078539442,
+   "best_epoch": 2,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 200.2
+  },
+  {
+   "cell": "L3_olmoe_balanced_v1|off2|a|mlp256|s0",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 657,
+     "b_dim": 0,
+     "width_a": 256,
+     "width_b": 0
+    }
+   },
+   "space": "L3_olmoe_balanced_v1",
+   "offset": 2,
+   "features": "a",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.4293872098847888,
+   "val_acc_best": 0.43010678608336206,
+   "best_epoch": 21,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 38.2
+  },
+  {
+   "cell": "L3_olmoe_balanced_v1|off2|a|mlp256|s1",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 657,
+     "b_dim": 0,
+     "width_a": 256,
+     "width_b": 0
+    }
+   },
+   "space": "L3_olmoe_balanced_v1",
+   "offset": 2,
+   "features": "a",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.4306562030389047,
+   "val_acc_best": 0.4297623148467103,
+   "best_epoch": 12,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 38.1
+  },
+  {
+   "cell": "L3_olmoe_balanced_v1|off2|a|mlp256|s2",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 657,
+     "b_dim": 0,
+     "width_a": 256,
+     "width_b": 0
+    }
+   },
+   "space": "L3_olmoe_balanced_v1",
+   "offset": 2,
+   "features": "a",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.430823175822341,
+   "val_acc_best": 0.429900103341371,
+   "best_epoch": 16,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 38.2
+  },
+  {
+   "cell": "L3_olmoe_balanced_v1|off2|fplus|mlp256|s0",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 4753,
+     "b_dim": 0,
+     "width_a": 256,
+     "width_b": 0
+    }
+   },
+   "space": "L3_olmoe_balanced_v1",
+   "offset": 2,
+   "features": "fplus",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.46735682083820335,
+   "val_acc_best": 0.45973131243541165,
+   "best_epoch": 1,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 182.7
+  },
+  {
+   "cell": "L3_olmoe_balanced_v1|off2|fplus_b|mlp256|s0",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 4753,
+     "b_dim": 1024,
+     "width_a": 256,
+     "width_b": 64
+    }
+   },
+   "space": "L3_olmoe_balanced_v1",
+   "offset": 2,
+   "features": "fplus_b",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.46735682083820335,
+   "val_acc_best": 0.46131588012400965,
+   "best_epoch": 1,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 200.2
+  },
+  {
+   "cell": "L3_olmoe_balanced_v1|off2|fplus_r|mlp256|s0",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 4753,
+     "b_dim": 1024,
+     "width_a": 256,
+     "width_b": 64
+    }
+   },
+   "space": "L3_olmoe_balanced_v1",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.4665219569210219,
+   "val_acc_best": 0.46073027902170166,
+   "best_epoch": 1,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 200.5
+  },
+  {
+   "cell": "L3_olmoe_balanced_v1|off2|fplus|mlp256|s1",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 4753,
+     "b_dim": 0,
+     "width_a": 256,
+     "width_b": 0
+    }
+   },
+   "space": "L3_olmoe_balanced_v1",
+   "offset": 2,
+   "features": "fplus",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.46361663048923024,
+   "val_acc_best": 0.4579400620048226,
+   "best_epoch": 0,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 182.6
+  },
+  {
+   "cell": "L3_olmoe_balanced_v1|off2|fplus_b|mlp256|s1",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 4753,
+     "b_dim": 1024,
+     "width_a": 256,
+     "width_b": 64
+    }
+   },
+   "space": "L3_olmoe_balanced_v1",
+   "offset": 2,
+   "features": "fplus_b",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.46568709300384037,
+   "val_acc_best": 0.4576644850155012,
+   "best_epoch": 0,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 200.0
+  },
+  {
+   "cell": "L3_olmoe_balanced_v1|off2|fplus_r|mlp256|s1",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 4753,
+     "b_dim": 1024,
+     "width_a": 256,
+     "width_b": 64
+    }
+   },
+   "space": "L3_olmoe_balanced_v1",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.46311571213892133,
+   "val_acc_best": 0.4571477781605236,
+   "best_epoch": 1,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 199.7
+  },
+  {
+   "cell": "L3_olmoe_balanced_v1|off2|fplus|mlp256|s2",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 4753,
+     "b_dim": 0,
+     "width_a": 256,
+     "width_b": 0
+    }
+   },
+   "space": "L3_olmoe_balanced_v1",
+   "offset": 2,
+   "features": "fplus",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.46628819502421104,
+   "val_acc_best": 0.4595590768170858,
+   "best_epoch": 1,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 183.3
+  },
+  {
+   "cell": "L3_olmoe_balanced_v1|off2|fplus_b|mlp256|s2",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 4753,
+     "b_dim": 1024,
+     "width_a": 256,
+     "width_b": 64
+    }
+   },
+   "space": "L3_olmoe_balanced_v1",
+   "offset": 2,
+   "features": "fplus_b",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.4670896643847053,
+   "val_acc_best": 0.46066138477437135,
+   "best_epoch": 1,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 200.7
+  },
+  {
+   "cell": "L3_olmoe_balanced_v1|off2|fplus_r|mlp256|s2",
+   "reader": "RT",
+   "reader_params": {
+    "kind": "two_tower",
+    "epochs": 30,
+    "lr": 0.003,
+    "towers": {
+     "a_dim": 4753,
+     "b_dim": 1024,
+     "width_a": 256,
+     "width_b": 64
+    }
+   },
+   "space": "L3_olmoe_balanced_v1",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.46655535147770916,
+   "val_acc_best": 0.4595590768170858,
+   "best_epoch": 1,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 201.6
+  },
+  {
+   "cell": "L3_olmoe_balanced_v1|off2|a|linear|s0",
+   "reader": "R0",
+   "reader_params": {
+    "kind": "plain",
+    "epochs": 30,
+    "lr": 0.003
+   },
+   "space": "L3_olmoe_balanced_v1",
+   "offset": 2,
+   "features": "a",
+   "capacity": "linear",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.4300884955752212,
+   "val_acc_best": 0.4272132276954874,
+   "best_epoch": 28,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 30.4
+  },
+  {
+   "cell": "L3_olmoe_balanced_v1|off2|a|linear|s1",
+   "reader": "R0",
+   "reader_params": {
+    "kind": "plain",
+    "epochs": 30,
+    "lr": 0.003
+   },
+   "space": "L3_olmoe_balanced_v1",
+   "offset": 2,
+   "features": "a",
+   "capacity": "linear",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.43055601936884286,
+   "val_acc_best": 0.4268687564588357,
+   "best_epoch": 29,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 30.5
+  },
+  {
+   "cell": "L3_olmoe_balanced_v1|off2|a|linear|s2",
+   "reader": "R0",
+   "reader_params": {
+    "kind": "plain",
+    "epochs": 30,
+    "lr": 0.003
+   },
+   "space": "L3_olmoe_balanced_v1",
+   "offset": 2,
+   "features": "a",
+   "capacity": "linear",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.43038904658540655,
+   "val_acc_best": 0.42731656906648297,
+   "best_epoch": 27,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.4275839038236767,
+   "runtime_s": 30.2
+  }
+ ],
+ "riders": {},
+ "per_reader_space": {
+  "RN|L1_olmoe_k16": {
+   "d_fplus_b_vs_fplus_r": [
+    {
+     "space": "L1_olmoe_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus_r",
+     "margin": 0.003205877441976958,
+     "ci95": [
+      0.0015631662425406043,
+      0.004950524886512184
+     ],
+     "per_seed_margin": {
+      "0": 0.005343129069961597,
+      "1": 0.0024378026381699784,
+      "2": 0.0018367006177992986
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mt_fplus_b_vs_fplus": [
+    {
+     "space": "L1_olmoe_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus",
+     "margin": -0.000478655312517393,
+     "ci95": [
+      -0.00219854605998831,
+      0.0013553558028179139
+     ],
+     "per_seed_margin": {
+      "0": 0.005242945399899816,
+      "1": -0.002738353648355318,
+      "2": -0.003940557689096677
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mn_r_fplus_r_vs_fplus": [
+    {
+     "space": "L1_olmoe_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_r-fplus",
+     "margin": -0.0036845327544943506,
+     "ci95": [
+      -0.005218939168470329,
+      -0.0019699832684726658
+     ],
+     "per_seed_margin": {
+      "0": -0.00010018367006177993,
+      "1": -0.005176156286525296,
+      "2": -0.005777258306895976
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mf_fplus_vs_a": [
+    {
+     "space": "L1_olmoe_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus-a",
+     "margin": 0.021316858685367618,
+     "ci95": [
+      0.014150288150270463,
+      0.02744144563654639
+     ],
+     "per_seed_margin": {
+      "0": 0.017164802137251627,
+      "1": 0.024010686258139922,
+      "2": 0.022775087660711305
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mfx_fplus_vs_linear_a": [
+    {
+     "space": "L1_olmoe_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus-a_lin",
+     "margin": 0.025246284855568544,
+     "ci95": [
+      0.02000205199262071,
+      0.031028835720951106
+     ],
+     "per_seed_margin": {
+      "0": 0.020537652362664884,
+      "1": 0.028285189514109202,
+      "2": 0.026916012689931542
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mc_fplus_vs_c": [
+    {
+     "space": "L1_olmoe_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus-c",
+     "margin": 0.004396949963822563,
+     "ci95": [
+      -0.0009399845036232942,
+      0.008720281080302022
+     ],
+     "per_seed_margin": {
+      "0": 0.00010018367006177993,
+      "1": 0.006678911337451995,
+      "2": 0.006411754883953916
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "reader_valid": {
+    "ok": true,
+    "complete": true,
+    "floor_ok": true,
+    "mf_ok": true,
+    "mfx_ok": true,
+    "n_gate_probes": 12,
+    "min_acc_minus_floor": 0.00444147603940559,
+    "mf_gate_ci_upper": 0.02744144563654639,
+    "mfx_gate_ci_upper": 0.031028835720951106,
+    "mfx_gate_margin": 0.025246284855568544,
+    "acc_fplus_minus_floor_per_seed": [
+     0.021606,
+     0.027283,
+     0.02912
+    ],
+    "best_epochs_gate_cell": {
+     "fplus": [
+      0,
+      1,
+      1
+     ],
+     "fplus_b": [
+      1,
+      1,
+      2
+     ],
+     "fplus_r": [
+      1,
+      1,
+      1
+     ],
+     "a": [
+      14,
+      15,
+      23
+     ]
+    },
+    "tol": 0.001,
+    "rule": "all 12 gate-cell probes (3 arms + (a), 3 seeds) test_acc >= majority_rate_test - tol AND Mf(off2/mlp256, vs fresh (a)) CI95 upper >= 0 AND Mf_x(off2: fplus mlp256 vs the COMMITTED linear (a)) CI95 upper >= 0; else READER-INVALID"
+   },
+   "gate": {
+    "row": {
+     "space": "L1_olmoe_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus_r",
+     "margin": 0.003205877441976958,
+     "ci95": [
+      0.0015631662425406043,
+      0.004950524886512184
+     ],
+     "per_seed_margin": {
+      "0": 0.005343129069961597,
+      "1": 0.0024378026381699784,
+      "2": 0.0018367006177992986
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    },
+    "fires": false
+   },
+   "best_epochs": {
+    "fplus": [
+     0,
+     1,
+     1
+    ],
+    "fplus_b": [
+     1,
+     1,
+     2
+    ],
+    "fplus_r": [
+     1,
+     1,
+     1
+    ],
+    "a": [
+     14,
+     15,
+     23
+    ]
+   },
+   "rescale": {
+    "L1_olmoe_k16|off2|a|mlp256|s0": {
+     "c_hz": null,
+     "note": "no hz block: the cell is R0's"
+    },
+    "L1_olmoe_k16|off2|a|mlp256|s1": {
+     "c_hz": null,
+     "note": "no hz block: the cell is R0's"
+    },
+    "L1_olmoe_k16|off2|a|mlp256|s2": {
+     "c_hz": null,
+     "note": "no hz block: the cell is R0's"
+    },
+    "L1_olmoe_k16|off2|fplus|mlp256|s0": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    },
+    "L1_olmoe_k16|off2|fplus_b|mlp256|s0": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    },
+    "L1_olmoe_k16|off2|fplus_r|mlp256|s0": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    },
+    "L1_olmoe_k16|off2|fplus|mlp256|s1": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    },
+    "L1_olmoe_k16|off2|fplus_b|mlp256|s1": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    },
+    "L1_olmoe_k16|off2|fplus_r|mlp256|s1": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    },
+    "L1_olmoe_k16|off2|fplus|mlp256|s2": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    },
+    "L1_olmoe_k16|off2|fplus_b|mlp256|s2": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    },
+    "L1_olmoe_k16|off2|fplus_r|mlp256|s2": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   }
+  },
+  "RN|L3_olmoe_groups_v1": {
+   "d_fplus_b_vs_fplus_r": [
+    {
+     "space": "L3_olmoe_groups_v1",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus_r",
+     "margin": 0.012968219513552624,
+     "ci95": [
+      0.009456321730665058,
+      0.01687761966832962
+     ],
+     "per_seed_margin": {
+      "0": 0.010920020036734012,
+      "1": 0.01459342127233261,
+      "2": 0.01339121723159125
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mt_fplus_b_vs_fplus": [
+    {
+     "space": "L3_olmoe_groups_v1",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus",
+     "margin": -0.001469360494239439,
+     "ci95": [
+      -0.005524128111637974,
+      0.002859513121194165
+     ],
+     "per_seed_margin": {
+      "0": -0.004808816162965437,
+      "1": 0.0015695441643012189,
+      "2": -0.0011688094840540991
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mn_r_fplus_r_vs_fplus": [
+    {
+     "space": "L3_olmoe_groups_v1",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_r-fplus",
+     "margin": -0.014437580007792064,
+     "ci95": [
+      -0.017299408605010665,
+      -0.011611287555203804
+     ],
+     "per_seed_margin": {
+      "0": -0.015728836199699447,
+      "1": -0.01302387710803139,
+      "2": -0.01456002671564535
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mf_fplus_vs_a": [
+    {
+     "space": "L3_olmoe_groups_v1",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus-a",
+     "margin": 0.09234708075916959,
+     "ci95": [
+      0.08340509248263336,
+      0.1011545410574581
+     ],
+     "per_seed_margin": {
+      "0": 0.09490733010519285,
+      "1": 0.09360494239438971,
+      "2": 0.0885289697779262
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mfx_fplus_vs_linear_a": [
+    {
+     "space": "L3_olmoe_groups_v1",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus-a_lin",
+     "margin": 0.10922246340513163,
+     "ci95": [
+      0.0997080471465145,
+      0.11865019597380426
+     ],
+     "per_seed_margin": {
+      "0": 0.11117047921188847,
+      "1": 0.10756386708966438,
+      "2": 0.10893304391384204
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mc_fplus_vs_c": [],
+   "reader_valid": {
+    "ok": true,
+    "complete": true,
+    "floor_ok": true,
+    "mf_ok": true,
+    "mfx_ok": true,
+    "n_gate_probes": 12,
+    "min_acc_minus_floor": 0.10165303055601937,
+    "mf_gate_ci_upper": 0.1011545410574581,
+    "mfx_gate_ci_upper": 0.11865019597380426,
+    "mfx_gate_margin": 0.10922246340513163,
+    "acc_fplus_minus_floor_per_seed": [
+     0.195258,
+     0.19646,
+     0.199332
+    ],
+    "best_epochs_gate_cell": {
+     "fplus": [
+      2,
+      3,
+      3
+     ],
+     "fplus_b": [
+      3,
+      3,
+      3
+     ],
+     "fplus_r": [
+      3,
+      4,
+      4
+     ],
+     "a": [
+      21,
+      23,
+      29
+     ]
+    },
+    "tol": 0.001,
+    "rule": "all 12 gate-cell probes (3 arms + (a), 3 seeds) test_acc >= majority_rate_test - tol AND Mf(off2/mlp256, vs fresh (a)) CI95 upper >= 0 AND Mf_x(off2: fplus mlp256 vs the COMMITTED linear (a)) CI95 upper >= 0; else READER-INVALID"
+   },
+   "gate": {
+    "row": {
+     "space": "L3_olmoe_groups_v1",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus_r",
+     "margin": 0.012968219513552624,
+     "ci95": [
+      0.009456321730665058,
+      0.01687761966832962
+     ],
+     "per_seed_margin": {
+      "0": 0.010920020036734012,
+      "1": 0.01459342127233261,
+      "2": 0.01339121723159125
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    },
+    "fires": true
+   },
+   "best_epochs": {
+    "fplus": [
+     2,
+     3,
+     3
+    ],
+    "fplus_b": [
+     3,
+     3,
+     3
+    ],
+    "fplus_r": [
+     3,
+     4,
+     4
+    ],
+    "a": [
+     21,
+     23,
+     29
+    ]
+   },
+   "rescale": {
+    "L3_olmoe_groups_v1|off2|a|mlp256|s0": {
+     "c_hz": null,
+     "note": "no hz block: the cell is R0's"
+    },
+    "L3_olmoe_groups_v1|off2|a|mlp256|s1": {
+     "c_hz": null,
+     "note": "no hz block: the cell is R0's"
+    },
+    "L3_olmoe_groups_v1|off2|a|mlp256|s2": {
+     "c_hz": null,
+     "note": "no hz block: the cell is R0's"
+    },
+    "L3_olmoe_groups_v1|off2|fplus|mlp256|s0": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    },
+    "L3_olmoe_groups_v1|off2|fplus_b|mlp256|s0": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    },
+    "L3_olmoe_groups_v1|off2|fplus_r|mlp256|s0": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    },
+    "L3_olmoe_groups_v1|off2|fplus|mlp256|s1": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    },
+    "L3_olmoe_groups_v1|off2|fplus_b|mlp256|s1": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    },
+    "L3_olmoe_groups_v1|off2|fplus_r|mlp256|s1": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    },
+    "L3_olmoe_groups_v1|off2|fplus|mlp256|s2": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    },
+    "L3_olmoe_groups_v1|off2|fplus_b|mlp256|s2": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    },
+    "L3_olmoe_groups_v1|off2|fplus_r|mlp256|s2": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   }
+  },
+  "RN|L3_olmoe_balanced_v1": {
+   "d_fplus_b_vs_fplus_r": [
+    {
+     "space": "L3_olmoe_balanced_v1",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus_r",
+     "margin": 0.00445260755830133,
+     "ci95": [
+      0.0026968603710442064,
+      0.006148754921280301
+     ],
+     "per_seed_margin": {
+      "0": 0.005777258306895976,
+      "1": 0.004842210719652696,
+      "2": 0.002738353648355318
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mt_fplus_b_vs_fplus": [
+    {
+     "space": "L3_olmoe_balanced_v1",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus",
+     "margin": -0.0026159069405020316,
+     "ci95": [
+      -0.004709091776037916,
+      -0.0006517756666550168
+     ],
+     "per_seed_margin": {
+      "0": -0.004074135915845717,
+      "1": -0.0024711971948572385,
+      "2": -0.0013023877108031391
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mn_r_fplus_r_vs_fplus": [
+    {
+     "space": "L3_olmoe_balanced_v1",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_r-fplus",
+     "margin": -0.007068514498803362,
+     "ci95": [
+      -0.008683310695514831,
+      -0.005559594869192548
+     ],
+     "per_seed_margin": {
+      "0": -0.009851394222741693,
+      "1": -0.007313407914509935,
+      "2": -0.004040741359158457
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mf_fplus_vs_a": [
+    {
+     "space": "L3_olmoe_balanced_v1",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus-a",
+     "margin": 0.04036288751600156,
+     "ci95": [
+      0.03439159582391085,
+      0.046514207181161275
+     ],
+     "per_seed_margin": {
+      "0": 0.04334613458006345,
+      "1": 0.03990649524127567,
+      "2": 0.03783603272666555
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mfx_fplus_vs_linear_a": [
+    {
+     "space": "L3_olmoe_balanced_v1",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus-a_lin",
+     "margin": 0.04030722992152279,
+     "ci95": [
+      0.03441375277062043,
+      0.0465569906062411
+     ],
+     "per_seed_margin": {
+      "0": 0.04264484888963099,
+      "1": 0.040006678911337454,
+      "2": 0.03827016196359993
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mc_fplus_vs_c": [],
+   "reader_valid": {
+    "ok": true,
+    "complete": true,
+    "floor_ok": true,
+    "mf_ok": true,
+    "mfx_ok": true,
+    "n_gate_probes": 12,
+    "min_acc_minus_floor": 0.0018033060611120644,
+    "mf_gate_ci_upper": 0.046514207181161275,
+    "mfx_gate_ci_upper": 0.0465569906062411,
+    "mfx_gate_margin": 0.04030722992152279,
+    "acc_fplus_minus_floor_per_seed": [
+     0.041075,
+     0.042979,
+     0.045149
+    ],
+    "best_epochs_gate_cell": {
+     "fplus": [
+      1,
+      1,
+      2
+     ],
+     "fplus_b": [
+      2,
+      2,
+      2
+     ],
+     "fplus_r": [
+      2,
+      2,
+      2
+     ],
+     "a": [
+      12,
+      16,
+      21
+     ]
+    },
+    "tol": 0.001,
+    "rule": "all 12 gate-cell probes (3 arms + (a), 3 seeds) test_acc >= majority_rate_test - tol AND Mf(off2/mlp256, vs fresh (a)) CI95 upper >= 0 AND Mf_x(off2: fplus mlp256 vs the COMMITTED linear (a)) CI95 upper >= 0; else READER-INVALID"
+   },
+   "gate": {
+    "row": {
+     "space": "L3_olmoe_balanced_v1",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus_r",
+     "margin": 0.00445260755830133,
+     "ci95": [
+      0.0026968603710442064,
+      0.006148754921280301
+     ],
+     "per_seed_margin": {
+      "0": 0.005777258306895976,
+      "1": 0.004842210719652696,
+      "2": 0.002738353648355318
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    },
+    "fires": false
+   },
+   "best_epochs": {
+    "fplus": [
+     1,
+     1,
+     2
+    ],
+    "fplus_b": [
+     2,
+     2,
+     2
+    ],
+    "fplus_r": [
+     2,
+     2,
+     2
+    ],
+    "a": [
+     12,
+     16,
+     21
+    ]
+   },
+   "rescale": {
+    "L3_olmoe_balanced_v1|off2|a|mlp256|s0": {
+     "c_hz": null,
+     "note": "no hz block: the cell is R0's"
+    },
+    "L3_olmoe_balanced_v1|off2|a|mlp256|s1": {
+     "c_hz": null,
+     "note": "no hz block: the cell is R0's"
+    },
+    "L3_olmoe_balanced_v1|off2|a|mlp256|s2": {
+     "c_hz": null,
+     "note": "no hz block: the cell is R0's"
+    },
+    "L3_olmoe_balanced_v1|off2|fplus|mlp256|s0": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    },
+    "L3_olmoe_balanced_v1|off2|fplus_b|mlp256|s0": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    },
+    "L3_olmoe_balanced_v1|off2|fplus_r|mlp256|s0": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    },
+    "L3_olmoe_balanced_v1|off2|fplus|mlp256|s1": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    },
+    "L3_olmoe_balanced_v1|off2|fplus_b|mlp256|s1": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    },
+    "L3_olmoe_balanced_v1|off2|fplus_r|mlp256|s1": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    },
+    "L3_olmoe_balanced_v1|off2|fplus|mlp256|s2": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    },
+    "L3_olmoe_balanced_v1|off2|fplus_b|mlp256|s2": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    },
+    "L3_olmoe_balanced_v1|off2|fplus_r|mlp256|s2": {
+     "c_hz": 0.2499949003377983,
+     "m_hz": 2048.0835554221303,
+     "m_slots_aligned": 128.0,
+     "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+    }
+   }
+  },
+  "RT|L1_olmoe_k16": {
+   "d_fplus_b_vs_fplus_r": [
+    {
+     "space": "L1_olmoe_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus_r",
+     "margin": 0.0006678911337451996,
+     "ci95": [
+      -0.0001908768740416357,
+      0.0014628306374214882
+     ],
+     "per_seed_margin": {
+      "0": 0.0018033060611120388,
+      "1": 0.00040073468024711973,
+      "2": -0.00020036734012355987
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mt_fplus_b_vs_fplus": [
+    {
+     "space": "L1_olmoe_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus",
+     "margin": 0.0008793899927645127,
+     "ci95": [
+      -0.0005842339121697707,
+      0.002356118707031721
+     ],
+     "per_seed_margin": {
+      "0": 0.0023042244114209382,
+      "1": 0.0002671564534980798,
+      "2": 6.678911337451995e-05
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mn_r_fplus_r_vs_fplus": [
+    {
+     "space": "L1_olmoe_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_r-fplus",
+     "margin": 0.0002114988590193132,
+     "ci95": [
+      -0.0009222079251479113,
+      0.0013562145454665627
+     ],
+     "per_seed_margin": {
+      "0": 0.0005009183503088997,
+      "1": -0.0001335782267490399,
+      "2": 0.0002671564534980798
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mf_fplus_vs_a": [
+    {
+     "space": "L1_olmoe_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus-a",
+     "margin": 0.01781043023320532,
+     "ci95": [
+      0.010710878330393353,
+      0.024050243355224942
+     ],
+     "per_seed_margin": {
+      "0": 0.01656370011688095,
+      "1": 0.019769577558857908,
+      "2": 0.017098013023877107
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mfx_fplus_vs_linear_a": [
+    {
+     "space": "L1_olmoe_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus-a_lin",
+     "margin": 0.021739856403406244,
+     "ci95": [
+      0.016495090920221243,
+      0.027377160488614362
+     ],
+     "per_seed_margin": {
+      "0": 0.019936550342294208,
+      "1": 0.024044080814827184,
+      "2": 0.021238938053097345
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mc_fplus_vs_c": [
+    {
+     "space": "L1_olmoe_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus-c",
+     "margin": 0.000890521511660266,
+     "ci95": [
+      -0.004445809209116939,
+      0.00552242670403062
+     ],
+     "per_seed_margin": {
+      "0": -0.0005009183503088997,
+      "1": 0.0024378026381699784,
+      "2": 0.0007346802471197195
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "reader_valid": {
+    "ok": true,
+    "complete": true,
+    "floor_ok": true,
+    "mf_ok": true,
+    "mfx_ok": true,
+    "n_gate_probes": 12,
+    "min_acc_minus_floor": 0.00444147603940559,
+    "mf_gate_ci_upper": 0.024050243355224942,
+    "mfx_gate_ci_upper": 0.027377160488614362,
+    "mfx_gate_margin": 0.021739856403406244,
+    "acc_fplus_minus_floor_per_seed": [
+     0.021005,
+     0.021606,
+     0.024879
+    ],
+    "best_epochs_gate_cell": {
+     "fplus": [
+      0,
+      0,
+      1
+     ],
+     "fplus_b": [
+      0,
+      0,
+      1
+     ],
+     "fplus_r": [
+      0,
+      0,
+      1
+     ],
+     "a": [
+      14,
+      15,
+      23
+     ]
+    },
+    "tol": 0.001,
+    "rule": "all 12 gate-cell probes (3 arms + (a), 3 seeds) test_acc >= majority_rate_test - tol AND Mf(off2/mlp256, vs fresh (a)) CI95 upper >= 0 AND Mf_x(off2: fplus mlp256 vs the COMMITTED linear (a)) CI95 upper >= 0; else READER-INVALID"
+   },
+   "gate": {
+    "row": {
+     "space": "L1_olmoe_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus_r",
+     "margin": 0.0006678911337451996,
+     "ci95": [
+      -0.0001908768740416357,
+      0.0014628306374214882
+     ],
+     "per_seed_margin": {
+      "0": 0.0018033060611120388,
+      "1": 0.00040073468024711973,
+      "2": -0.00020036734012355987
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    },
+    "fires": false
+   },
+   "best_epochs": {
+    "fplus": [
+     0,
+     0,
+     1
+    ],
+    "fplus_b": [
+     0,
+     0,
+     1
+    ],
+    "fplus_r": [
+     0,
+     0,
+     1
+    ],
+    "a": [
+     14,
+     15,
+     23
+    ]
+   }
+  },
+  "RT|L3_olmoe_groups_v1": {
+   "d_fplus_b_vs_fplus_r": [
+    {
+     "space": "L3_olmoe_groups_v1",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus_r",
+     "margin": 0.000823732398285746,
+     "ci95": [
+      -0.0006094253020713341,
+      0.002300480159803197
+     ],
+     "per_seed_margin": {
+      "0": 0.0024378026381699784,
+      "1": 0.00036734012355985973,
+      "2": -0.0003339455668725998
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mt_fplus_b_vs_fplus": [
+    {
+     "space": "L3_olmoe_groups_v1",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus",
+     "margin": -0.0019034897311738187,
+     "ci95": [
+      -0.0033635621678894338,
+      -0.00038730534028051444
+     ],
+     "per_seed_margin": {
+      "0": -0.0017365169477375187,
+      "1": -0.0001669727834362999,
+      "2": -0.0038069794623476374
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mn_r_fplus_r_vs_fplus": [
+    {
+     "space": "L3_olmoe_groups_v1",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_r-fplus",
+     "margin": -0.0027272221294595647,
+     "ci95": [
+      -0.004462608438444127,
+      -0.0009245412199662754
+     ],
+     "per_seed_margin": {
+      "0": -0.004174319585907497,
+      "1": -0.0005343129069961596,
+      "2": -0.0034730338954750374
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mf_fplus_vs_a": [
+    {
+     "space": "L3_olmoe_groups_v1",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus-a",
+     "margin": 0.08547893360048979,
+     "ci95": [
+      0.07583264527976591,
+      0.09496824952073875
+     ],
+     "per_seed_margin": {
+      "0": 0.08832860243780263,
+      "1": 0.08782768408749374,
+      "2": 0.08028051427617298
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mfx_fplus_vs_linear_a": [
+    {
+     "space": "L3_olmoe_groups_v1",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus-a_lin",
+     "margin": 0.10235431624645183,
+     "ci95": [
+      0.09223562503348247,
+      0.1121403098016376
+     ],
+     "per_seed_margin": {
+      "0": 0.10459175154449825,
+      "1": 0.1017866087827684,
+      "2": 0.10068458841208883
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mc_fplus_vs_c": [],
+   "reader_valid": {
+    "ok": true,
+    "complete": true,
+    "floor_ok": true,
+    "mf_ok": true,
+    "mfx_ok": true,
+    "n_gate_probes": 12,
+    "min_acc_minus_floor": 0.10165303055601937,
+    "mf_gate_ci_upper": 0.09496824952073875,
+    "mfx_gate_ci_upper": 0.1121403098016376,
+    "mfx_gate_margin": 0.10235431624645183,
+    "acc_fplus_minus_floor_per_seed": [
+     0.188212,
+     0.189481,
+     0.192753
+    ],
+    "best_epochs_gate_cell": {
+     "fplus": [
+      1,
+      1,
+      2
+     ],
+     "fplus_b": [
+      1,
+      1,
+      2
+     ],
+     "fplus_r": [
+      1,
+      1,
+      2
+     ],
+     "a": [
+      21,
+      23,
+      29
+     ]
+    },
+    "tol": 0.001,
+    "rule": "all 12 gate-cell probes (3 arms + (a), 3 seeds) test_acc >= majority_rate_test - tol AND Mf(off2/mlp256, vs fresh (a)) CI95 upper >= 0 AND Mf_x(off2: fplus mlp256 vs the COMMITTED linear (a)) CI95 upper >= 0; else READER-INVALID"
+   },
+   "gate": {
+    "row": {
+     "space": "L3_olmoe_groups_v1",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus_r",
+     "margin": 0.000823732398285746,
+     "ci95": [
+      -0.0006094253020713341,
+      0.002300480159803197
+     ],
+     "per_seed_margin": {
+      "0": 0.0024378026381699784,
+      "1": 0.00036734012355985973,
+      "2": -0.0003339455668725998
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    },
+    "fires": false
+   },
+   "best_epochs": {
+    "fplus": [
+     1,
+     1,
+     2
+    ],
+    "fplus_b": [
+     1,
+     1,
+     2
+    ],
+    "fplus_r": [
+     1,
+     1,
+     2
+    ],
+    "a": [
+     21,
+     23,
+     29
+    ]
+   }
+  },
+  "RT|L3_olmoe_balanced_v1": {
+   "d_fplus_b_vs_fplus_r": [
+    {
+     "space": "L3_olmoe_balanced_v1",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus_r",
+     "margin": 0.0013135192296988925,
+     "ci95": [
+      -0.00016658449538783088,
+      0.002767172288887609
+     ],
+     "per_seed_margin": {
+      "0": 0.0008348639171814994,
+      "1": 0.002571380864919018,
+      "2": 0.0005343129069961596
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mt_fplus_b_vs_fplus": [
+    {
+     "space": "L3_olmoe_balanced_v1",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus",
+     "margin": 0.000957310625034786,
+     "ci95": [
+      -0.000606009517790619,
+      0.0024685364809070237
+     ],
+     "per_seed_margin": {
+      "0": 0.0,
+      "1": 0.0020704625146101188,
+      "2": 0.0008014693604942395
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mn_r_fplus_r_vs_fplus": [
+    {
+     "space": "L3_olmoe_balanced_v1",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_r-fplus",
+     "margin": -0.00035620860466410644,
+     "ci95": [
+      -0.0021992771298370117,
+      0.001410508250097013
+     ],
+     "per_seed_margin": {
+      "0": -0.0008348639171814994,
+      "1": -0.0005009183503088997,
+      "2": 0.0002671564534980798
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mf_fplus_vs_a": [
+    {
+     "space": "L3_olmoe_balanced_v1",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus-a",
+     "margin": 0.0354650192018701,
+     "ci95": [
+      0.029600859022478755,
+      0.04123286554493457
+     ],
+     "per_seed_margin": {
+      "0": 0.03796961095341459,
+      "1": 0.0329604274503256,
+      "2": 0.0354650192018701
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mfx_fplus_vs_linear_a": [
+    {
+     "space": "L3_olmoe_balanced_v1",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus-a_lin",
+     "margin": 0.03540936160739133,
+     "ci95": [
+      0.029701282225040836,
+      0.04121935723751993
+     ],
+     "per_seed_margin": {
+      "0": 0.037268325262982134,
+      "1": 0.03306061112038738,
+      "2": 0.03589914843880448
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   ],
+   "mc_fplus_vs_c": [],
+   "reader_valid": {
+    "ok": true,
+    "complete": true,
+    "floor_ok": true,
+    "mf_ok": true,
+    "mfx_ok": true,
+    "n_gate_probes": 12,
+    "min_acc_minus_floor": 0.0018033060611120644,
+    "mf_gate_ci_upper": 0.04123286554493457,
+    "mfx_gate_ci_upper": 0.04121935723751993,
+    "mfx_gate_margin": 0.03540936160739133,
+    "acc_fplus_minus_floor_per_seed": [
+     0.036033,
+     0.038704,
+     0.039773
+    ],
+    "best_epochs_gate_cell": {
+     "fplus": [
+      0,
+      1,
+      1
+     ],
+     "fplus_b": [
+      0,
+      1,
+      1
+     ],
+     "fplus_r": [
+      1,
+      1,
+      1
+     ],
+     "a": [
+      12,
+      16,
+      21
+     ]
+    },
+    "tol": 0.001,
+    "rule": "all 12 gate-cell probes (3 arms + (a), 3 seeds) test_acc >= majority_rate_test - tol AND Mf(off2/mlp256, vs fresh (a)) CI95 upper >= 0 AND Mf_x(off2: fplus mlp256 vs the COMMITTED linear (a)) CI95 upper >= 0; else READER-INVALID"
+   },
+   "gate": {
+    "row": {
+     "space": "L3_olmoe_balanced_v1",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus_r",
+     "margin": 0.0013135192296988925,
+     "ci95": [
+      -0.00016658449538783088,
+      0.002767172288887609
+     ],
+     "per_seed_margin": {
+      "0": 0.0008348639171814994,
+      "1": 0.002571380864919018,
+      "2": 0.0005343129069961596
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    },
+    "fires": false
+   },
+   "best_epochs": {
+    "fplus": [
+     0,
+     1,
+     1
+    ],
+    "fplus_b": [
+     0,
+     1,
+     1
+    ],
+    "fplus_r": [
+     1,
+     1,
+     1
+    ],
+    "a": [
+     12,
+     16,
+     21
+    ]
+   }
+  }
+ },
+ "proxy": null,
+ "shared_committed_ids": [
+  "L1_olmoe_k16|off2|a|mlp256|s0",
+  "L1_olmoe_k16|off2|a|mlp256|s1",
+  "L1_olmoe_k16|off2|a|mlp256|s2"
+ ],
+ "balanced_admission": {
+  "ok": true,
+  "payloads": {
+   "lens_s3.json": {
+    "sha256": "d98d5e6639a01047ad79d36d1fa68427b16b8118bc0c875f6f54a0b4b6b9831d",
+    "rider_pass": true,
+    "ok": true
+   },
+   "lens_s3_r.json": {
+    "sha256": "ae73d65495eb7263b5a0e2c42689f5e9c24d84b64afc446cd23c4109831b4366",
+    "rider_pass": true,
+    "ok": true
+   }
+  }
+ },
+ "standardization": {
+  "moments_sha256": "6fe8c00b4a3a47185c9a3f8e577c6636a2aaefaca5cc1a6a1a7942346a9786cc",
+  "moments_sha_matches_committed_oq17": true
+ },
+ "twin": {
+  "arm": "fplus_r",
+  "seed_base": 1000,
+  "construction": "slots of row k of pi_seed(prompt) at anchor mod that row's length, where row k is the row's generation index within its prompt and pi_seed is a within-split derangement of PROMPT ids from default_rng(seed_base + train seed)",
+  "perm_sha256": {
+   "0": "e24dbaeb05b5bf3b8673fdbe4e6766940d57837f3c776a638444b1167be16e0a",
+   "1": "5321687fd3dba9e906e5e57b664e456718b568c07db3383780047deb130b231a",
+   "2": "7ca660c8e5f72756b90292cb3f81511ffc7094fdafa37c5aca2d96e305e37d43"
+  },
+  "geometry": {
+   "0": {
+    "off2": {
+     "n_anchors": 207251,
+     "corrected_twin_wrapped_frac": 0.03229899976357171,
+     "shift_twin_future_frac": 0.9351510969790254,
+     "shift": 17,
+     "corrected_twin_same_prompt_frac": 0.0
+    }
+   },
+   "1": {
+    "off2": {
+     "n_anchors": 207251,
+     "corrected_twin_wrapped_frac": 0.03149321354299859,
+     "shift_twin_future_frac": 0.9351510969790254,
+     "shift": 17,
+     "corrected_twin_same_prompt_frac": 0.0
+    }
+   },
+   "2": {
+    "off2": {
+     "n_anchors": 207251,
+     "corrected_twin_wrapped_frac": 0.030282121678544372,
+     "shift_twin_future_frac": 0.9351510969790254,
+     "shift": 17,
+     "corrected_twin_same_prompt_frac": 0.0
+    }
+   }
+  }
+ },
+ "provenance": {
+  "git_commit": "790b2fc65e5e2833fef96c4ab6511cc779217de8",
+  "git_status_tracked": [],
+  "instrument_sha256": "d1125670be056b4824ebfcd734379f40e44db994308c10accb731839d2a4a624",
+  "frozen_chain": {
+   "amended_sha256": "aafd3ae849984092ea81ce7ff5cd47f1b18e089e95cd960d86630162b5ad8612",
+   "coarse_sha256": "5efa7063767be062208eb3755cedf6a4e30f4c306927a1c3d2527098d69a5281"
+  },
+  "args": {
+   "stage": "readers",
+   "readers": null,
+   "harvest": "results/real/harvest_moe_r",
+   "space_tag": "olmoe",
+   "n_slots": 64,
+   "buckets16": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\buckets_olmoe_k16.json",
+   "glue16": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\glue_olmoe_k16.json",
+   "buckets512": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\buckets_olmoe_k512.json",
+   "glue512": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\glue_olmoe_k512.json",
+   "groups": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\concept_groups_olmoe_v1.json",
+   "balanced_groups": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\concept_groups_olmoe_balanced_v1.json",
+   "fidelity": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\harvest_fidelity_rider_olmoe_r.json",
+   "phase3_state": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\probes_s3_replication.json.state.jsonl",
+   "phase3_payload": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\probes_s3_replication.json",
+   "lens_payloads": [
+    "results/real/lens_s3.json",
+    "results/real/lens_s3_r.json"
+   ],
+   "out": "results/real/readers_s3_r.json",
+   "device": "cpu",
+   "threads": 6,
+   "n_boot": 2000,
+   "only": null,
+   "smoke_cell": null,
+   "resume": false,
+   "conclude_from": null,
+   "long": null,
+   "s1": null,
+   "lens": null
+  },
+  "companion_files_filled": {
+   "space_tag": "olmoe",
+   "n_slots": 64,
+   "fidelity": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\harvest_fidelity_rider_olmoe_r.json",
+   "phase3_state": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\probes_s3_replication.json.state.jsonl",
+   "phase3_payload": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\probes_s3_replication.json",
+   "buckets16": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\buckets_olmoe_k16.json",
+   "glue16": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\glue_olmoe_k16.json",
+   "buckets512": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\buckets_olmoe_k512.json",
+   "glue512": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\glue_olmoe_k512.json",
+   "groups": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\concept_groups_olmoe_v1.json"
+  },
+  "harvest_npz_sha256": {
+   "moe_s10.npz": "ec58591ab1a997448f106c804b1037a98cb5b0a77a2e17dc9041e9da4e2b98fb",
+   "moe_s11.npz": "8746a53521d8f74c711faac5b65debed56ab27cc27c2c26c2548d7197a1feac4",
+   "moe_s8.npz": "b68f213760ec8b0044f00bd2d78ba996aaf712c28ccaad9ef264ce57acc3d59a",
+   "moe_s9.npz": "f75296927539395583d4603501ca2b3295d397c477bb577f34e31cebbd2266e2"
+  },
+  "label_space_sha256": {
+   "buckets_olmoe_k16.json": "1586195a89c8de6ed20f41f1e3155cfb8956ff66041b1adcd64367f38e74096c",
+   "glue_olmoe_k16.json": "f7f2dd393d42a71b3fd0bc080d6df01eb876a97a92ba6f9affbcc9339a24e645",
+   "buckets_olmoe_k512.json": "4538c7ddee4772c259abccd92363873463a935dd0be9b3e891ddc2f4d67e3928",
+   "glue_olmoe_k512.json": "2ff98c2eb63944c401409a04dce53376c3e1c54fcc8fb793cd05ea46a12185b5",
+   "concept_groups_olmoe_v1.json": "5593a379136eeff0196b6bbd89303e01391b2367a573e450c7d7fdf6c5babe6b",
+   "concept_groups_olmoe_balanced_v1.json": "3186abb35e525e73d0c7e7aff74a290556f7a38ee2007ce484d0504ce860b8df"
+  },
+  "phase3_state_sha256": "d760d52993ebe37d691a00b0449a890e0b556c054971faf0f22de0c779d2d376",
+  "phase3_payload_sha256": "2a0b71a21fa48e3a5cc271f2b7d7292020fd69304913c37b73e7e1fd0e9e91fa",
+  "device": "cpu",
+  "threads": 6,
+  "cuda_visible_devices": "",
+  "torn_bytes_dropped_on_resume": 0,
+  "torch_version": "2.6.0+cu124",
+  "numpy_version": "2.3.5",
+  "python_version": "3.11.9",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "state_file": "readers_s3_r.json.state.jsonl",
+  "determinism_note": "CPU training; the landing condition re-runs one gate cell per reader from a clean clone, rows identical except runtime_s",
+  "state_sha256": "fe63ab2c03652938acc85cd6ce7aa293796ff85876692a6bac39fe786827c8c6"
+ },
+ "runtime_s": 11799.0
+}

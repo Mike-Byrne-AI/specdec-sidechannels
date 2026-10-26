@@ -1,0 +1,32 @@
+{
+  "registration": "OQ-15 STAGE-C FREEZE (BLUEPRINT 2026-09-03)",
+  "git_commit": "44b08fa-dirty",
+  "npz_sha256": "35754b8a2b05be2bc9d82f02a39a7d3b8646ea5c2aa646e8dd202ba752c52ceb",
+  "binding": {
+    "oq15_stage1_sha256": "9db58fc763603d8681f0285b2c8588013f18b0c36fd48b4cd5d7e10f753de78c",
+    "bound_fields": [
+      "delta_noise",
+      "delta_free",
+      "per_offset",
+      "test_mse",
+      "per_head_test_mse",
+      "chosen_lambda"
+    ]
+  },
+  "offset5_evidence": "oq15_offset5.json",
+  "offset5_summary_sha256": "d1edb7b0c73eda48b554510a1f90d6dd61d55d632f7278ce5153c0717cc8e66e",
+  "chosen_lambda": {
+    "free_off1": 10.0,
+    "free_off2": 10.0,
+    "free_off3": 10.0,
+    "free_off4": 10.0,
+    "tel_off1": 10.0,
+    "tel_off2": 10.0,
+    "tel_off3": 10.0,
+    "tel_off4": 10.0,
+    "free_off5": 10.0,
+    "tel_off5": 10.0
+  },
+  "self_check_blocks": 1050,
+  "self_check_max_batch_deviation": 6.772360450213455e-15
+}

@@ -1,0 +1,108 @@
+{
+ "branch_armed": "bit-identity",
+ "branch_rule": "OFF/OFF2 bit-identical -> ON/OFF must be bit-identical; else |mean acc delta(ON,OFF)| <= max |delta(OFF,OFF2)| + 0.005 (both branches pinned 2026-09-02 pre-run)",
+ "detail": {
+  "first_divergence_on_off": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "on_off_identical": true
+ },
+ "n_prompts": 10,
+ "off_off2_identical": true,
+ "per_prompt": [
+  {
+   "acc_off": 0.6825396825396826,
+   "acc_off2": 0.6825396825396826,
+   "acc_on": 0.6825396825396826,
+   "len_off": 208,
+   "len_on": 208
+  },
+  {
+   "acc_off": 0.8430493273542601,
+   "acc_off2": 0.8430493273542601,
+   "acc_on": 0.8430493273542601,
+   "len_off": 259,
+   "len_on": 259
+  },
+  {
+   "acc_off": 0.654320987654321,
+   "acc_off2": 0.654320987654321,
+   "acc_on": 0.654320987654321,
+   "len_off": 256,
+   "len_on": 256
+  },
+  {
+   "acc_off": 0.7577092511013216,
+   "acc_off2": 0.7577092511013216,
+   "acc_on": 0.7577092511013216,
+   "len_off": 257,
+   "len_on": 257
+  },
+  {
+   "acc_off": 0.748898678414097,
+   "acc_off2": 0.748898678414097,
+   "acc_on": 0.748898678414097,
+   "len_off": 258,
+   "len_on": 258
+  },
+  {
+   "acc_off": 0.6866952789699571,
+   "acc_off2": 0.6866952789699571,
+   "acc_on": 0.6866952789699571,
+   "len_off": 256,
+   "len_on": 256
+  },
+  {
+   "acc_off": 0.8185840707964602,
+   "acc_off2": 0.8185840707964602,
+   "acc_on": 0.8185840707964602,
+   "len_off": 257,
+   "len_on": 257
+  },
+  {
+   "acc_off": 0.7510729613733905,
+   "acc_off2": 0.7510729613733905,
+   "acc_on": 0.7510729613733905,
+   "len_off": 258,
+   "len_on": 258
+  },
+  {
+   "acc_off": 0.7248908296943232,
+   "acc_off2": 0.7248908296943232,
+   "acc_on": 0.7248908296943232,
+   "len_off": 256,
+   "len_on": 256
+  },
+  {
+   "acc_off": 0.7972972972972973,
+   "acc_off2": 0.7972972972972973,
+   "acc_on": 0.7972972972972973,
+   "len_off": 257,
+   "len_on": 257
+  }
+ ],
+ "preflight": {
+  "disk_free_gb": 173.8,
+  "forced": false,
+  "median_util_pct": 1.0,
+  "os_reboot_pending": false,
+  "problems": [],
+  "vram_free_gb": 10.34,
+  "vram_total_gb": 12.0
+ },
+ "probe_weights_sha256": "8374da6b8f60b164ae4812d09e026378b9de73f3f92c964070d66d7fc2055d11",
+ "purpose": "K-3 containment rider (E10): live instruments are read-only",
+ "rng_seed": 100,
+ "runtime_s": 344.1,
+ "target_load": "nf4-double-quant-bf16compute",
+ "verdict": "PASS"
+}

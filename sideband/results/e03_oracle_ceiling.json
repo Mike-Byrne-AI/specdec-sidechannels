@@ -1,0 +1,433 @@
+{
+  "_experiment": "e03_oracle_ceiling.json",
+  "_written_unix": 1787965437,
+  "betas": [
+    0.0,
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    3.0,
+    4.0,
+    6.0
+  ],
+  "gamma": 4,
+  "n_positions": 16000,
+  "regime": "synthetic concept-HMM v0, default WorldConfig (lambda_function=0.45, rho=0.92, draft_alpha=0.70, draft_temperature=1.6)",
+  "rows": {
+    "free_lastp": {
+      "always": {
+        "best": {
+          "analytic_acceptance": 0.6293834379857756,
+          "beta": 0.5,
+          "empirical_acceptance": 0.6337123745819399,
+          "steered_positions": 26084,
+          "tokens_per_target_call": 2.4528446557276493
+        },
+        "curve": [
+          {
+            "analytic_acceptance": 0.6194399309459379,
+            "beta": 0.0,
+            "empirical_acceptance": 0.618645195634815,
+            "steered_positions": 0,
+            "tokens_per_target_call": 2.3874048649455304
+          },
+          {
+            "analytic_acceptance": 0.6293834379857756,
+            "beta": 0.5,
+            "empirical_acceptance": 0.6337123745819399,
+            "steered_positions": 26084,
+            "tokens_per_target_call": 2.4528446557276493
+          },
+          {
+            "analytic_acceptance": 0.6228267023889146,
+            "beta": 1.0,
+            "empirical_acceptance": 0.6267582161189255,
+            "steered_positions": 26380,
+            "tokens_per_target_call": 2.425625473843821
+          },
+          {
+            "analytic_acceptance": 0.6002872551115339,
+            "beta": 1.5,
+            "empirical_acceptance": 0.6058655696370513,
+            "steered_positions": 27464,
+            "tokens_per_target_call": 2.3298863967375474
+          },
+          {
+            "analytic_acceptance": 0.5773496480910295,
+            "beta": 2.0,
+            "empirical_acceptance": 0.583141105911817,
+            "steered_positions": 28604,
+            "tokens_per_target_call": 2.2373094672073837
+          },
+          {
+            "analytic_acceptance": 0.551035765445689,
+            "beta": 3.0,
+            "empirical_acceptance": 0.5535002287731224,
+            "steered_positions": 30108,
+            "tokens_per_target_call": 2.125016606881892
+          },
+          {
+            "analytic_acceptance": 0.5261009486109008,
+            "beta": 4.0,
+            "empirical_acceptance": 0.529304743339831,
+            "steered_positions": 31408,
+            "tokens_per_target_call": 2.0374426897605704
+          },
+          {
+            "analytic_acceptance": 0.437609676744514,
+            "beta": 6.0,
+            "empirical_acceptance": 0.4722079589216945,
+            "steered_positions": 34556,
+            "tokens_per_target_call": 1.8516031948142146
+          }
+        ]
+      },
+      "disagree": {
+        "best": {
+          "analytic_acceptance": 0.6388962398907351,
+          "beta": 3.0,
+          "empirical_acceptance": 0.6443907675791734,
+          "steered_positions": 10696,
+          "tokens_per_target_call": 2.502738225629792
+        },
+        "curve": [
+          {
+            "analytic_acceptance": 0.6194399309459379,
+            "beta": 0.0,
+            "empirical_acceptance": 0.618645195634815,
+            "steered_positions": 0,
+            "tokens_per_target_call": 2.3874048649455304
+          },
+          {
+            "analytic_acceptance": 0.6207952572575991,
+            "beta": 0.5,
+            "empirical_acceptance": 0.625358883621553,
+            "steered_positions": 11243,
+            "tokens_per_target_call": 2.412882787750792
+          },
+          {
+            "analytic_acceptance": 0.6221705330469127,
+            "beta": 1.0,
+            "empirical_acceptance": 0.6271061781224927,
+            "steered_positions": 11183,
+            "tokens_per_target_call": 2.4176239419588876
+          },
+          {
+            "analytic_acceptance": 0.6255388310587665,
+            "beta": 1.5,
+            "empirical_acceptance": 0.6260173448965978,
+            "steered_positions": 10976,
+            "tokens_per_target_call": 2.4194524277718954
+          },
+          {
+            "analytic_acceptance": 0.6288402555096289,
+            "beta": 2.0,
+            "empirical_acceptance": 0.6263347570742125,
+            "steered_positions": 11040,
+            "tokens_per_target_call": 2.4193889897156686
+          },
+          {
+            "analytic_acceptance": 0.6388962398907351,
+            "beta": 3.0,
+            "empirical_acceptance": 0.6443907675791734,
+            "steered_positions": 10696,
+            "tokens_per_target_call": 2.502738225629792
+          },
+          {
+            "analytic_acceptance": 0.6323991487367111,
+            "beta": 4.0,
+            "empirical_acceptance": 0.6439292414902171,
+            "steered_positions": 10712,
+            "tokens_per_target_call": 2.504854368932039
+          },
+          {
+            "analytic_acceptance": 0.5552998410919489,
+            "beta": 6.0,
+            "empirical_acceptance": 0.5999735257131511,
+            "steered_positions": 11601,
+            "tokens_per_target_call": 2.308080808080808
+          }
+        ]
+      }
+    },
+    "none": {
+      "analytic_acceptance": 0.6194399309459379,
+      "beta": null,
+      "empirical_acceptance": 0.618645195634815,
+      "tokens_per_target_call": 2.3874048649455304
+    },
+    "oracle_concept_now": {
+      "always": {
+        "best": {
+          "analytic_acceptance": 0.6323996150866179,
+          "beta": 0.5,
+          "empirical_acceptance": 0.6314910111608635,
+          "steered_positions": 26184,
+          "tokens_per_target_call": 2.443476932477849
+        },
+        "curve": [
+          {
+            "analytic_acceptance": 0.6194399309459379,
+            "beta": 0.0,
+            "empirical_acceptance": 0.618645195634815,
+            "steered_positions": 0,
+            "tokens_per_target_call": 2.3874048649455304
+          },
+          {
+            "analytic_acceptance": 0.6323996150866179,
+            "beta": 0.5,
+            "empirical_acceptance": 0.6314910111608635,
+            "steered_positions": 26184,
+            "tokens_per_target_call": 2.443476932477849
+          },
+          {
+            "analytic_acceptance": 0.6241333285088454,
+            "beta": 1.0,
+            "empirical_acceptance": 0.6311036789297659,
+            "steered_positions": 26252,
+            "tokens_per_target_call": 2.4376047539235106
+          },
+          {
+            "analytic_acceptance": 0.5989295981169114,
+            "beta": 1.5,
+            "empirical_acceptance": 0.6029890401859848,
+            "steered_positions": 27684,
+            "tokens_per_target_call": 2.3116601647160815
+          },
+          {
+            "analytic_acceptance": 0.573033239687395,
+            "beta": 2.0,
+            "empirical_acceptance": 0.5787326446009081,
+            "steered_positions": 28800,
+            "tokens_per_target_call": 2.2215277777777778
+          },
+          {
+            "analytic_acceptance": 0.5495760350365293,
+            "beta": 3.0,
+            "empirical_acceptance": 0.5508989865969272,
+            "steered_positions": 30280,
+            "tokens_per_target_call": 2.1130779392338175
+          },
+          {
+            "analytic_acceptance": 0.5373112173963158,
+            "beta": 4.0,
+            "empirical_acceptance": 0.5430550111067555,
+            "steered_positions": 30732,
+            "tokens_per_target_call": 2.0818690615644933
+          },
+          {
+            "analytic_acceptance": 0.49803810079834443,
+            "beta": 6.0,
+            "empirical_acceptance": 0.4991934963546035,
+            "steered_positions": 33036,
+            "tokens_per_target_call": 1.9367962223029422
+          }
+        ]
+      },
+      "disagree": {
+        "best": {
+          "analytic_acceptance": 0.6653110921456928,
+          "beta": 4.0,
+          "empirical_acceptance": 0.6665765095679221,
+          "steered_positions": 7384,
+          "tokens_per_target_call": 2.6055374592833878
+        },
+        "curve": [
+          {
+            "analytic_acceptance": 0.6194399309459379,
+            "beta": 0.0,
+            "empirical_acceptance": 0.618645195634815,
+            "steered_positions": 0,
+            "tokens_per_target_call": 2.3874048649455304
+          },
+          {
+            "analytic_acceptance": 0.6218299233605274,
+            "beta": 0.5,
+            "empirical_acceptance": 0.6222074024674892,
+            "steered_positions": 8006,
+            "tokens_per_target_call": 2.3996399639963997
+          },
+          {
+            "analytic_acceptance": 0.6241059247228435,
+            "beta": 1.0,
+            "empirical_acceptance": 0.6267450404114622,
+            "steered_positions": 7965,
+            "tokens_per_target_call": 2.4190865093768905
+          },
+          {
+            "analytic_acceptance": 0.6282932926349846,
+            "beta": 1.5,
+            "empirical_acceptance": 0.6322899946495452,
+            "steered_positions": 7876,
+            "tokens_per_target_call": 2.4451238153469887
+          },
+          {
+            "analytic_acceptance": 0.6347185994933426,
+            "beta": 2.0,
+            "empirical_acceptance": 0.637532650190878,
+            "steered_positions": 7803,
+            "tokens_per_target_call": 2.4698888202594196
+          },
+          {
+            "analytic_acceptance": 0.6541886800044567,
+            "beta": 3.0,
+            "empirical_acceptance": 0.6533719598463923,
+            "steered_positions": 7604,
+            "tokens_per_target_call": 2.539853921879962
+          },
+          {
+            "analytic_acceptance": 0.6653110921456928,
+            "beta": 4.0,
+            "empirical_acceptance": 0.6665765095679221,
+            "steered_positions": 7384,
+            "tokens_per_target_call": 2.6055374592833878
+          },
+          {
+            "analytic_acceptance": 0.6384211469999614,
+            "beta": 6.0,
+            "empirical_acceptance": 0.6404953145917002,
+            "steered_positions": 7740,
+            "tokens_per_target_call": 2.4891067538126364
+          }
+        ]
+      }
+    },
+    "oracle_concept_stale": {
+      "always": {
+        "best": {
+          "analytic_acceptance": 0.6293834379857756,
+          "beta": 0.5,
+          "empirical_acceptance": 0.6337123745819399,
+          "steered_positions": 26084,
+          "tokens_per_target_call": 2.4528446557276493
+        },
+        "curve": [
+          {
+            "analytic_acceptance": 0.6194399309459379,
+            "beta": 0.0,
+            "empirical_acceptance": 0.618645195634815,
+            "steered_positions": 0,
+            "tokens_per_target_call": 2.3874048649455304
+          },
+          {
+            "analytic_acceptance": 0.6293834379857756,
+            "beta": 0.5,
+            "empirical_acceptance": 0.6337123745819399,
+            "steered_positions": 26084,
+            "tokens_per_target_call": 2.4528446557276493
+          },
+          {
+            "analytic_acceptance": 0.6228267023889146,
+            "beta": 1.0,
+            "empirical_acceptance": 0.6267582161189255,
+            "steered_positions": 26380,
+            "tokens_per_target_call": 2.425625473843821
+          },
+          {
+            "analytic_acceptance": 0.6002872551115339,
+            "beta": 1.5,
+            "empirical_acceptance": 0.6058655696370513,
+            "steered_positions": 27464,
+            "tokens_per_target_call": 2.3298863967375474
+          },
+          {
+            "analytic_acceptance": 0.5773496480910295,
+            "beta": 2.0,
+            "empirical_acceptance": 0.583141105911817,
+            "steered_positions": 28604,
+            "tokens_per_target_call": 2.2373094672073837
+          },
+          {
+            "analytic_acceptance": 0.551035765445689,
+            "beta": 3.0,
+            "empirical_acceptance": 0.5535002287731224,
+            "steered_positions": 30108,
+            "tokens_per_target_call": 2.125016606881892
+          },
+          {
+            "analytic_acceptance": 0.5261009486109008,
+            "beta": 4.0,
+            "empirical_acceptance": 0.529304743339831,
+            "steered_positions": 31408,
+            "tokens_per_target_call": 2.0374426897605704
+          },
+          {
+            "analytic_acceptance": 0.437609676744514,
+            "beta": 6.0,
+            "empirical_acceptance": 0.4722079589216945,
+            "steered_positions": 34556,
+            "tokens_per_target_call": 1.8516031948142146
+          }
+        ]
+      },
+      "disagree": {
+        "best": {
+          "analytic_acceptance": 0.6388962398907351,
+          "beta": 3.0,
+          "empirical_acceptance": 0.6443907675791734,
+          "steered_positions": 10696,
+          "tokens_per_target_call": 2.502738225629792
+        },
+        "curve": [
+          {
+            "analytic_acceptance": 0.6194399309459379,
+            "beta": 0.0,
+            "empirical_acceptance": 0.618645195634815,
+            "steered_positions": 0,
+            "tokens_per_target_call": 2.3874048649455304
+          },
+          {
+            "analytic_acceptance": 0.6207952572575991,
+            "beta": 0.5,
+            "empirical_acceptance": 0.625358883621553,
+            "steered_positions": 11243,
+            "tokens_per_target_call": 2.412882787750792
+          },
+          {
+            "analytic_acceptance": 0.6221705330469127,
+            "beta": 1.0,
+            "empirical_acceptance": 0.6271061781224927,
+            "steered_positions": 11183,
+            "tokens_per_target_call": 2.4176239419588876
+          },
+          {
+            "analytic_acceptance": 0.6255388310587665,
+            "beta": 1.5,
+            "empirical_acceptance": 0.6260173448965978,
+            "steered_positions": 10976,
+            "tokens_per_target_call": 2.4194524277718954
+          },
+          {
+            "analytic_acceptance": 0.6288402555096289,
+            "beta": 2.0,
+            "empirical_acceptance": 0.6263347570742125,
+            "steered_positions": 11040,
+            "tokens_per_target_call": 2.4193889897156686
+          },
+          {
+            "analytic_acceptance": 0.6388962398907351,
+            "beta": 3.0,
+            "empirical_acceptance": 0.6443907675791734,
+            "steered_positions": 10696,
+            "tokens_per_target_call": 2.502738225629792
+          },
+          {
+            "analytic_acceptance": 0.6323991487367111,
+            "beta": 4.0,
+            "empirical_acceptance": 0.6439292414902171,
+            "steered_positions": 10712,
+            "tokens_per_target_call": 2.504854368932039
+          },
+          {
+            "analytic_acceptance": 0.5552998410919489,
+            "beta": 6.0,
+            "empirical_acceptance": 0.5999735257131511,
+            "steered_positions": 11601,
+            "tokens_per_target_call": 2.308080808080808
+          }
+        ]
+      }
+    }
+  }
+}

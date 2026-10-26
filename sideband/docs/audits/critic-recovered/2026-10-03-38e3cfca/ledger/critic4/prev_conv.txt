@@ -1,0 +1,19 @@
+- Straddle wording and the said-in-words list belong in the registration block, before the first critic round
+  (a lesson adopted 2026-10-02 from the stratified coverage read's lane; no lane has used it yet, so not a
+  convention by this file's own rule): every label-bearing readout gets its floor-straddle sentence variants and
+  the list of reported cells that must be said in words at landing, written before the design round rather than in
+  answer to it. In that lane the straddle sentences arrived as the design round's fourth blocker and several
+  said-in-words items as design and confirmation advisories (the PRE-FREEZE ROUND records of the amendment block in
+  docs/BLUEPRINT.md); across its six critic rounds (three before the freeze, one recompute, a landing round and its
+  confirmation) no blocker was a number: most were sentences (a claim beyond a gate, an unmarked edit to a pinned
+  prediction, a misstatement of what the record stores) and two changed the design (the Q2 gate's shape; the
+  stage-2 strike rule under a straddle). The landing generator quotes the pinned sentences verbatim, so those are words the critic has already
+  read; the generated prose around them is new, and that is where the landing round's three blockers were.
+- The critic's "what would change my mind" check is run when it is cheap: a standing practice (DR-1, DR-3 and
+  DR-4, registered 2026-09-04 as the critic's "what would change my mind" diagnostics, docs/BLUEPRINT.md;
+  clean-worktree reruns go back to F-10, docs/METHOD.md), recorded here on 2026-10-02 after the stratified
+  coverage read: its
+  recompute round named a clean-clone rerun of the replication as the check that would move its verdict; the rerun
+  took 93.3 s of elapsed time against the registered run's 91.9 s and reproduced the committed state file byte for
+  byte (sha 87f6705bc5f2 on both; the amendment block's OUTCOME in docs/BLUEPRINT.md). A check the critic names and
+  the lane can afford is run and its result recorded in the OUTCOME, not argued about.

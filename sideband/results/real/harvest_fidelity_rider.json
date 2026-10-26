@@ -1,0 +1,301 @@
+{
+ "criteria": {
+  "argmax_gap": 0.08,
+  "entropy_abs_max": 0.1,
+  "long_anchor": 128,
+  "mass_linf_max": 0.08,
+  "min_long": 4,
+  "n_triples": 16,
+  "slot_overlap_min": 20
+ },
+ "n_long": 7,
+ "npz_sha256_validated": {
+  "shadow_s0.npz": "56edc5fd54f8d6b8e937d044d562ac2965944892c39c99c320a0f071d3bf4877",
+  "shadow_s1.npz": "dd36dfeead8d71a52e3a0d665c090feb27da410d7b21f4018c505eb8c37cd157",
+  "shadow_s2.npz": "af3a3cdd49fa98d52eb1e368c4d34442d305c7564d15b282b6fe871177f15578",
+  "shadow_s3.npz": "ed202b013984b44754328afc22b757f87a23b09b48ecac9934fbe64d97572fb5",
+  "shadow_s4.npz": "b9daed5f8e710b4fb6dece92031a9b64bc1bb5effcf02b974909580b801b0b99",
+  "shadow_s5.npz": "d84276d9ca85cb492037465388a631e7127a34e20536f6476e0f74ce0975d587",
+  "shadow_s6.npz": "820e4a248ecfb4867936b4dc3e11faa21d4859f144d5e36adc8f2352c14adb3a",
+  "shadow_s7.npz": "4cf0bce266d5e2359b7fd0e53ad743246e1cbfa78bf06701b52c2ba63b175e9c"
+ },
+ "regime": "teacher-forced full forward, no KV reuse, batch 1, NF4",
+ "rng_seed": 1,
+ "runtime_s": 3.3,
+ "topped_up_long": 0,
+ "triples": [
+  {
+   "anchor": 193,
+   "argmax_checked": false,
+   "argmax_gap": 0.002719639567658305,
+   "argmax_ok": true,
+   "entropy_abs_delta": 0.0009937286376953125,
+   "mass512_linf": 0.0003342926502227783,
+   "pass": true,
+   "prompt_idx": 19,
+   "seed": 4,
+   "slot_overlaps": [
+    29,
+    31,
+    32,
+    32
+   ]
+  },
+  {
+   "anchor": 243,
+   "argmax_checked": true,
+   "argmax_gap": 0.9999914765357971,
+   "argmax_ok": true,
+   "entropy_abs_delta": 1.2063028407283127e-06,
+   "mass512_linf": 2.384185791015625e-07,
+   "pass": true,
+   "prompt_idx": 33,
+   "seed": 1,
+   "slot_overlaps": [
+    32,
+    32,
+    31,
+    30
+   ]
+  },
+  {
+   "anchor": 63,
+   "argmax_checked": true,
+   "argmax_gap": 0.9982422590255737,
+   "argmax_ok": true,
+   "entropy_abs_delta": 0.00017428211867809296,
+   "mass512_linf": 4.661083221435547e-05,
+   "pass": true,
+   "prompt_idx": 122,
+   "seed": 7,
+   "slot_overlaps": [
+    32,
+    31,
+    32,
+    29
+   ]
+  },
+  {
+   "anchor": 79,
+   "argmax_checked": true,
+   "argmax_gap": 0.6847909092903137,
+   "argmax_ok": true,
+   "entropy_abs_delta": 0.07733196020126343,
+   "mass512_linf": 0.01321399211883545,
+   "pass": true,
+   "prompt_idx": 80,
+   "seed": 3,
+   "slot_overlaps": [
+    31,
+    32,
+    29,
+    31
+   ]
+  },
+  {
+   "anchor": 65,
+   "argmax_checked": true,
+   "argmax_gap": 0.8695215582847595,
+   "argmax_ok": true,
+   "entropy_abs_delta": 0.006384551525115967,
+   "mass512_linf": 0.00166243314743042,
+   "pass": true,
+   "prompt_idx": 128,
+   "seed": 6,
+   "slot_overlaps": [
+    31,
+    31,
+    31,
+    27
+   ]
+  },
+  {
+   "anchor": 104,
+   "argmax_checked": true,
+   "argmax_gap": 0.09550854563713074,
+   "argmax_ok": true,
+   "entropy_abs_delta": 0.06264877319335938,
+   "mass512_linf": 0.025826990604400635,
+   "pass": true,
+   "prompt_idx": 82,
+   "seed": 4,
+   "slot_overlaps": [
+    31,
+    31,
+    32,
+    31
+   ]
+  },
+  {
+   "anchor": 221,
+   "argmax_checked": false,
+   "argmax_gap": 0.021114930510520935,
+   "argmax_ok": true,
+   "entropy_abs_delta": 0.011798858642578125,
+   "mass512_linf": 0.008895426988601685,
+   "pass": true,
+   "prompt_idx": 46,
+   "seed": 0,
+   "slot_overlaps": [
+    32,
+    30,
+    32,
+    29
+   ]
+  },
+  {
+   "anchor": 192,
+   "argmax_checked": true,
+   "argmax_gap": 0.198588564991951,
+   "argmax_ok": true,
+   "entropy_abs_delta": 0.0009504556655883789,
+   "mass512_linf": 0.021083146333694458,
+   "pass": true,
+   "prompt_idx": 63,
+   "seed": 4,
+   "slot_overlaps": [
+    32,
+    31,
+    31,
+    31
+   ]
+  },
+  {
+   "anchor": 115,
+   "argmax_checked": true,
+   "argmax_gap": 0.670840322971344,
+   "argmax_ok": true,
+   "entropy_abs_delta": 0.0010359883308410645,
+   "mass512_linf": 0.0003027692437171936,
+   "pass": true,
+   "prompt_idx": 133,
+   "seed": 2,
+   "slot_overlaps": [
+    31,
+    30,
+    31,
+    31
+   ]
+  },
+  {
+   "anchor": 201,
+   "argmax_checked": true,
+   "argmax_gap": 0.43058860301971436,
+   "argmax_ok": true,
+   "entropy_abs_delta": 0.011884808540344238,
+   "mass512_linf": 0.017187312245368958,
+   "pass": true,
+   "prompt_idx": 89,
+   "seed": 2,
+   "slot_overlaps": [
+    31,
+    31,
+    32,
+    30
+   ]
+  },
+  {
+   "anchor": 250,
+   "argmax_checked": true,
+   "argmax_gap": 0.1025063544511795,
+   "argmax_ok": true,
+   "entropy_abs_delta": 0.06756281852722168,
+   "mass512_linf": 0.009734570980072021,
+   "pass": true,
+   "prompt_idx": 130,
+   "seed": 3,
+   "slot_overlaps": [
+    32,
+    32,
+    32,
+    31
+   ]
+  },
+  {
+   "anchor": 34,
+   "argmax_checked": true,
+   "argmax_gap": 0.990567147731781,
+   "argmax_ok": true,
+   "entropy_abs_delta": 2.7939677238464355e-06,
+   "mass512_linf": 0.00012189149856567383,
+   "pass": true,
+   "prompt_idx": 47,
+   "seed": 3,
+   "slot_overlaps": [
+    32,
+    32,
+    31,
+    32
+   ]
+  },
+  {
+   "anchor": 128,
+   "argmax_checked": true,
+   "argmax_gap": 0.871626615524292,
+   "argmax_ok": true,
+   "entropy_abs_delta": 0.02723759412765503,
+   "mass512_linf": 0.0077689290046691895,
+   "pass": true,
+   "prompt_idx": 132,
+   "seed": 1,
+   "slot_overlaps": [
+    32,
+    29,
+    29,
+    31
+   ]
+  },
+  {
+   "anchor": 67,
+   "argmax_checked": true,
+   "argmax_gap": 0.7646747827529907,
+   "argmax_ok": true,
+   "entropy_abs_delta": 0.0206758975982666,
+   "mass512_linf": 0.005728498101234436,
+   "pass": true,
+   "prompt_idx": 209,
+   "seed": 5,
+   "slot_overlaps": [
+    30,
+    30,
+    31,
+    30
+   ]
+  },
+  {
+   "anchor": 127,
+   "argmax_checked": true,
+   "argmax_gap": 0.5344763994216919,
+   "argmax_ok": true,
+   "entropy_abs_delta": 0.016716837882995605,
+   "mass512_linf": 0.010253965854644775,
+   "pass": true,
+   "prompt_idx": 51,
+   "seed": 2,
+   "slot_overlaps": [
+    31,
+    32,
+    29,
+    32
+   ]
+  },
+  {
+   "anchor": 124,
+   "argmax_checked": true,
+   "argmax_gap": 0.2871701419353485,
+   "argmax_ok": true,
+   "entropy_abs_delta": 0.013319194316864014,
+   "mass512_linf": 3.802776336669922e-05,
+   "pass": true,
+   "prompt_idx": 176,
+   "seed": 7,
+   "slot_overlaps": [
+    31,
+    30,
+    30,
+    31
+   ]
+  }
+ ],
+ "verdict": "PASS"
+}

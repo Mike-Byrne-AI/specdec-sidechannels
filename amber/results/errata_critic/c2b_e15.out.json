@@ -1,0 +1,51 @@
+{
+ "compare_value": {
+  "n_compared": 450,
+  "only_in_payload": [],
+  "only_in_mine": [],
+  "max_abs_diff": 0.0,
+  "worst_key": null,
+  "nonnumeric_unequal": []
+ },
+ "compare_status": {
+  "n_compared": 9,
+  "only_in_payload": [],
+  "only_in_mine": [],
+  "max_abs_diff": 0.0,
+  "worst_key": null,
+  "nonnumeric_unequal": []
+ },
+ "status_mine": {
+  "status": "CORRECTED",
+  "status_in_claim_regime": "CONFIRMED",
+  "status_by_class": {
+   "A": "CORRECTED",
+   "C": "CONFIRMED",
+   "all": "CORRECTED"
+  },
+  "status_by_claim_site": {
+   "FINDINGS.md:72 (F-10 headline, in its own regime)": "CONFIRMED",
+   "FINDINGS.md:76 (item (4), in its own regime)": "CONFIRMED",
+   "docs/BLUEPRINT.md:57 (in its own regime)": "CONFIRMED",
+   "FINDINGS.md:85 (F-11, corrections more fragile: class C over the decoded positions)": "CONFIRMED"
+  }
+ },
+ "dump_meta_snapshot_equals_census_snapshot": true,
+ "gap_share_manifest_bad": [],
+ "prediction": {
+  "bf16_all_theta0_one_in_h1": 77,
+  "bf16_claim_regime_one_in": 170,
+  "bf16_fail_poisson_claim_regime_pct": 76,
+  "bf16_measured_one_in": 65,
+  "fp16_all_theta0_one_in_h1": 502,
+  "fp16_claim_regime_one_in": 1070,
+  "fp16_fail_poisson_claim_regime_pct": 20,
+  "fp16_measured_one_in": 670
+ },
+ "where": [
+  "FINDINGS.md:72",
+  "FINDINGS.md:76",
+  "FINDINGS.md:85",
+  "docs/BLUEPRINT.md:57"
+ ]
+}

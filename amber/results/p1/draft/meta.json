@@ -1,0 +1,123 @@
+{
+  "done": true,
+  "dtype": "bf16",
+  "model": "meta-llama/Llama-3.2-1B",
+  "n_prompts": 200,
+  "provenance": {
+    "cpu_threads": 16,
+    "cuda": "12.4",
+    "cudnn": 90100,
+    "deterministic_algorithms": false,
+    "envprobe_digest": "2d2a2e0c1d7795d5383d36bd22b9b51dfac7fde4171fa4f0db074f6de145bbbd",
+    "gpu": "NVIDIA GeForce RTX 3080 Ti",
+    "model_id": "meta-llama/Llama-3.2-1B",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "snapshot": "4e20de362430cd3b72f300e6b0f18e50e7166e08",
+    "torch": "2.6.0+cu124",
+    "transformers": "4.57.3"
+  },
+  "shard_size": 8,
+  "shards": {
+    "0": {
+      "positions": 1971,
+      "seconds": 0.4018208999186754
+    },
+    "1": {
+      "positions": 1833,
+      "seconds": 0.19630080019123852
+    },
+    "10": {
+      "positions": 2048,
+      "seconds": 0.21676219999790192
+    },
+    "11": {
+      "positions": 1937,
+      "seconds": 0.19362120004370809
+    },
+    "12": {
+      "positions": 1831,
+      "seconds": 0.19788660015910864
+    },
+    "13": {
+      "positions": 1971,
+      "seconds": 0.20349849993363023
+    },
+    "14": {
+      "positions": 2048,
+      "seconds": 0.20344810001552105
+    },
+    "15": {
+      "positions": 2048,
+      "seconds": 0.20479909982532263
+    },
+    "16": {
+      "positions": 2048,
+      "seconds": 0.20435429993085563
+    },
+    "17": {
+      "positions": 2048,
+      "seconds": 0.21151569997891784
+    },
+    "18": {
+      "positions": 2048,
+      "seconds": 0.21272250008769333
+    },
+    "19": {
+      "positions": 2048,
+      "seconds": 0.203628099989146
+    },
+    "2": {
+      "positions": 2048,
+      "seconds": 0.21353719988837838
+    },
+    "20": {
+      "positions": 1841,
+      "seconds": 0.19456660002470016
+    },
+    "21": {
+      "positions": 2048,
+      "seconds": 0.20438809995539486
+    },
+    "22": {
+      "positions": 2048,
+      "seconds": 0.21346190012991428
+    },
+    "23": {
+      "positions": 1853,
+      "seconds": 0.1979099998716265
+    },
+    "24": {
+      "positions": 1924,
+      "seconds": 0.21304799988865852
+    },
+    "3": {
+      "positions": 2048,
+      "seconds": 0.20601529977284372
+    },
+    "4": {
+      "positions": 2048,
+      "seconds": 0.20106610003858805
+    },
+    "5": {
+      "positions": 1675,
+      "seconds": 0.20101219997741282
+    },
+    "6": {
+      "positions": 1813,
+      "seconds": 0.18842999986372888
+    },
+    "7": {
+      "positions": 2048,
+      "seconds": 0.20746969990432262
+    },
+    "8": {
+      "positions": 1818,
+      "seconds": 0.22006099997088313
+    },
+    "9": {
+      "positions": 1867,
+      "seconds": 0.19115440011955798
+    }
+  }
+}

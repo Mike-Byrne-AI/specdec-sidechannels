@@ -1,0 +1,42 @@
+[tune] best on rows<100: inc=64 limit=4096 0.5205 b/t (4.1s)
+
+== tuning: 100 prompts, 24178 tokens, div 0.0749
+  gamma 0.5274  AC 0.5075  zstd19 4.193564397386053  raw 16.97
+  concatenated  rac1                   0.5205  (++0.0000 vs rac1)  CI [-0.008840523603493973, 0.03559766139054126]
+  concatenated  rac1_tie0.142_m2       0.6631  (++0.1426 vs rac1)
+  concatenated  rac1_tie0.142_m4       0.6922  (++0.1717 vs rac1)
+  concatenated  rac1_tie0.465_m2       0.7647  (++0.2442 vs rac1)
+  concatenated  rac1_tie0.465_m4       0.8133  (++0.2928 vs rac1)
+  concatenated  rac1_tie0.93_m2        0.8947  (++0.3742 vs rac1)
+  concatenated  rac1_tie0.93_m4        0.9771  (++0.4566 vs rac1)
+  concatenated  rac1_qctx_UNSAFE       0.4020  (+-0.1185 vs rac1)  CI [-0.1205090835884895, -0.0874012640693987]
+  per_prompt    rac1                   0.6747  (++0.0000 vs rac1)
+  per_prompt    rac1_tie0.142_m2       0.8623  (++0.1876 vs rac1)
+  per_prompt    rac1_tie0.142_m4       0.8944  (++0.2197 vs rac1)
+  per_prompt    rac1_tie0.465_m2       0.9864  (++0.3117 vs rac1)
+  per_prompt    rac1_tie0.465_m4       1.0201  (++0.3454 vs rac1)
+  per_prompt    rac1_tie0.93_m2        1.1157  (++0.4411 vs rac1)
+  per_prompt    rac1_tie0.93_m4        1.1597  (++0.4851 vs rac1)
+  per_prompt    rac1_qctx_UNSAFE       0.7633  (++0.0887 vs rac1)
+
+== held_out: 100 prompts, 24780 tokens, div 0.0610
+  gamma 0.4213  AC 0.4380  zstd19 3.469895076674738  raw 16.97
+  concatenated  rac1                   0.4171  (++0.0000 vs rac1)  CI [-0.04016788480682901, -0.0012365256191119484]
+  concatenated  rac1_tie0.142_m2       0.5527  (++0.1356 vs rac1)
+  concatenated  rac1_tie0.142_m4       0.5785  (++0.1614 vs rac1)
+  concatenated  rac1_tie0.465_m2       0.6386  (++0.2215 vs rac1)
+  concatenated  rac1_tie0.465_m4       0.6828  (++0.2657 vs rac1)
+  concatenated  rac1_tie0.93_m2        0.7606  (++0.3435 vs rac1)
+  concatenated  rac1_tie0.93_m4        0.8349  (++0.4178 vs rac1)
+  concatenated  rac1_qctx_UNSAFE       0.3212  (+-0.0959 vs rac1)  CI [-0.13075618681990653, -0.1016609780921213]
+  per_prompt    rac1                   0.5511  (++0.0000 vs rac1)
+  per_prompt    rac1_tie0.142_m2       0.7232  (++0.1721 vs rac1)
+  per_prompt    rac1_tie0.142_m4       0.7480  (++0.1969 vs rac1)
+  per_prompt    rac1_tie0.465_m2       0.8252  (++0.2741 vs rac1)
+  per_prompt    rac1_tie0.465_m4       0.8536  (++0.3025 vs rac1)
+  per_prompt    rac1_tie0.93_m2        0.9469  (++0.3958 vs rac1)
+  per_prompt    rac1_tie0.93_m4        0.9866  (++0.4355 vs rac1)
+  per_prompt    rac1_qctx_UNSAFE       0.6444  (++0.0933 vs rac1)
+
+BAND (held-out, concatenated, rac1 vs AC): PASS   CI [-0.04016788480682901, -0.0012365256191119484]
+[saved] results/p3_rac_rate.json

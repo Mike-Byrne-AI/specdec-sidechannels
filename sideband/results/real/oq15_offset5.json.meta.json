@@ -1,0 +1,23 @@
+{
+  "tool": "train_outcome_head --stage-c-freeze offset5",
+  "registration": "OQ-15 STAGE-C FREEZE (BLUEPRINT 2026-09-03)",
+  "git_commit": "44b08fa-dirty",
+  "started_unix": 1788428363.7592802,
+  "runs": [
+    "k3_verdict_arm5",
+    "k3_verdict_s1_arm5"
+  ],
+  "summary_sha256": {
+    "k3_verdict_arm5": "ab47a0bf5e8946dfef43b7bbc53fff22c8a81a0151ab554f228ff739c2f117e4",
+    "k3_verdict_s1_arm5": "55dde82bdd6f491656e80fb779633e9ebdd14a209725dd8069be5021a959d71f"
+  },
+  "off_policy_disclosure": "fixed gamma-6 schedule, off-policy w.r.t. gamma-4; the seed-0 run is the VOIDED seed-0 verdict run (arm 5 scheduler-inert; void resolved at F-19) \u2014 disclosed per the STAGE-C FREEZE",
+  "lambda_grid": [
+    0.0001,
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ]
+}
