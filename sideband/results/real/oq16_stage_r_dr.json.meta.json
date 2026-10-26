@@ -1,0 +1,64 @@
+{
+  "tool": "train_recon",
+  "registration": "OQ-16 FOLD-BACK #2 (BLUEPRINT 2026-09-04)",
+  "git_commit": "bd71358-dirty",
+  "started_unix": 1788559373.7065294,
+  "runs": [
+    "k3_verdict_arm1",
+    "k3_verdict_s1_arm1",
+    "oq15c_verdict_arm1",
+    "oq15c_verdict_s3_arm1"
+  ],
+  "populations": {
+    "k3": 210,
+    "oq15": 210
+  },
+  "split_sizes": {
+    "k3": {
+      "train": 126,
+      "val": 42,
+      "test": 42
+    },
+    "oq15": {
+      "train": 126,
+      "val": 42,
+      "test": 42
+    }
+  },
+  "summary_sha256": {
+    "k3_verdict_arm1": "e1ffa17c1a88114460b6402a510dd23d3ee5c5a8e5dd1f524dc07e16859eeefa",
+    "k3_verdict_s1_arm1": "214944a5978f2519994bf1102977801c1d9d5033423551c2f61938e0ce45e99b",
+    "oq15c_verdict_arm1": "9277912939deb136699f235b84ef5e97bddb95aa6ee154fb87e9bbed47ccafa7",
+    "oq15c_verdict_s3_arm1": "e80d78ef1cd2f2c8a48d01e908dcddf20986475365c658258781d39b665a9613"
+  },
+  "lambda_grid": [
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0,
+    1000.0,
+    10000.0,
+    100000.0
+  ],
+  "n_slots": 512,
+  "stale_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "sizing_overrides": {},
+  "modes": {
+    "feature_clip": true,
+    "freetok": 2048
+  },
+  "arms": [
+    "free",
+    "tel",
+    "noise",
+    "freetok"
+  ],
+  "numpy_version": "2.3.5"
+}

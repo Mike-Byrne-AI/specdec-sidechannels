@@ -1,0 +1,38 @@
+{
+  "tool": "train_outcome_head",
+  "registration": "OQ-15 FOLD-BACK #1 (BLUEPRINT 2026-09-03)",
+  "git_commit": "89b38ef-dirty",
+  "started_unix": 1788422247.675427,
+  "n_prompts": 210,
+  "split_sizes": {
+    "train": 126,
+    "val": 42,
+    "test": 42
+  },
+  "gate_runs": [
+    "k3_verdict_arm1",
+    "k3_verdict_s1_arm1"
+  ],
+  "train_only_runs": [
+    "k3_val_arm1",
+    "k3_tapcal_arm1"
+  ],
+  "summary_sha256": {
+    "k3_verdict_arm1": "e1ffa17c1a88114460b6402a510dd23d3ee5c5a8e5dd1f524dc07e16859eeefa",
+    "k3_verdict_s1_arm1": "214944a5978f2519994bf1102977801c1d9d5033423551c2f61938e0ce45e99b",
+    "k3_val_arm1": "a2f6ad482f51fa81ba6a4847bf18cd8198f3fa3eae65df00097afcf61ef5fb24",
+    "k3_tapcal_arm1": "9fc5306384a13980a84009f53f81a439c16483e6f22b7a8fbd0f9d49527da461"
+  },
+  "lambda_grid": [
+    0.0001,
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "n_slots": 512,
+  "sizing_overrides": {
+    "stale_target_perm_seed": 1
+  }
+}

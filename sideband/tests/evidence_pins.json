@@ -1,0 +1,1291 @@
+{
+ "n_digests": 160,
+ "n_files": 161,
+ "pins": {
+  "00094cc4c082933890fc7fe1c16a4aa52581787a5597de5acc0b7fa28a808782": {
+   "paths": [
+    [
+     "results/real/fullfree_s3_r.json.state.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "0237fb6285fceac1b7230b51e6ef59fccc909990a948ebd08808192391117f18": {
+   "paths": [
+    [
+     "data/prompts.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "03e872125958a8940d7b14652a733d9b000c416fccb4971a4b86357620480d29": {
+   "paths": [
+    [
+     "results/real/k3_threshold_search_arm4.json",
+     "disk"
+    ]
+   ]
+  },
+  "04390056c54803ce70a0837f85090cb5dfbaf71590491e97ce73e5349d45a995": {
+   "paths": [
+    [
+     "results/real/buckets_k512.json",
+     "disk"
+    ]
+   ]
+  },
+  "0490e80aa028ce8af98ec73e0beb78d3ed3c9231067bfddbd167f3b751ff9c19": {
+   "paths": [
+    [
+     "results/real/probes_s3.json.state.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "059892b4c064ac19c054f1d8203418858510766664906b9e65bd2f5a32ec202a": {
+   "paths": [
+    [
+     "tools/run_fullfree.py",
+     "disk"
+    ]
+   ]
+  },
+  "066d7c4e537001139c1182f4c837bf6c37fd31a6cbbd327b80bf4f035ee42bda": {
+   "paths": [
+    [
+     "results/real/k3_seed6_arm4.summary.json",
+     "disk"
+    ]
+   ]
+  },
+  "070c4614841fd0eb17f4950f1efb7d1177924b79eae8f347bfe3d650f83dd5c4": {
+   "paths": [
+    [
+     "results/real/k3_verdict_s1_arm4.summary.json",
+     "disk"
+    ]
+   ]
+  },
+  "076fe00aaaf51ae3418732e7eb3ff1a2a1b8cd6453d4c091085b667f7f74c360": {
+   "paths": [
+    [
+     "results/real/buckets_k32.json",
+     "disk"
+    ]
+   ]
+  },
+  "0b00f8dfd4cf2d879486ce289168ac7feb9c7879ee5b92fac1b427ef66c1adcb": {
+   "paths": [
+    [
+     "tools/run_seed_replay.py",
+     "disk"
+    ]
+   ]
+  },
+  "0bbe55e9941b9b9025e015519c1f34c61dc802bcef01c658767b1f84d137a836": {
+   "paths": [
+    [
+     "results/real/prefetch_horizon_s3_r.json.state.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "0e89a857f6ce9e90f9e224ba3d9540498693deb74a7900fc140c34453a296938": {
+   "paths": [
+    [
+     "results/real/readers_s1.json.state.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "0f4d5d70a4dbe10332833f8d5f99a5e9718dbe14e0cdfaceec766e7c186079ff": {
+   "paths": [
+    [
+     "results/real/prefetch_bigram_s3_r.json",
+     "disk"
+    ]
+   ]
+  },
+  "10599fa98c276751f3296ecff6815aae07a701e35d13b5a2fb6ff8170ba7a11a": {
+   "paths": [
+    [
+     "tools/run_prefetch_bigram.py",
+     "disk"
+    ]
+   ]
+  },
+  "120e000139809649b5c985183eed1dbd14b697fd289c958fd2ed6cece351dc20": {
+   "paths": [
+    [
+     "results/real/prefetch_r2_s3_r.json.state.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "129c6c38a805e689a825915035b007b89c3be2671a7b7d838a9a207ab7f98f61": {
+   "paths": [
+    [
+     "results/real/k3_seed6_arm3.meta.json",
+     "disk"
+    ]
+   ]
+  },
+  "14817bffbeaa8e1c4a5facbd8e3761dcb14daf4eaed727f2585513f56658f7e7": {
+   "paths": [
+    [
+     "tools/run_probes.py",
+     "lf"
+    ]
+   ]
+  },
+  "1586195a89c8de6ed20f41f1e3155cfb8956ff66041b1adcd64367f38e74096c": {
+   "paths": [
+    [
+     "results/real/buckets_olmoe_k16.json",
+     "disk"
+    ]
+   ]
+  },
+  "16c5b68c2854609d6aa8e793de42d26ac9cbdb8e4f3d3e0a5e851d286085b5cc": {
+   "paths": [
+    [
+     "results/real/readers_s1.json",
+     "disk"
+    ]
+   ]
+  },
+  "1f60e2711184892f81904d9cb4520b0b9a8bfb140cf2be41c29aa716fc25b742": {
+   "paths": [
+    [
+     "results/real/buckets_olmoe_k64.json",
+     "disk"
+    ]
+   ]
+  },
+  "2030f33a4f60285930b5cbfb23ab06cebaa4b447f1f120debb10b34c3ec56104": {
+   "paths": [
+    [
+     "results/real/noise_floor_k3.json",
+     "disk"
+    ]
+   ]
+  },
+  "214944a5978f2519994bf1102977801c1d9d5033423551c2f61938e0ce45e99b": {
+   "paths": [
+    [
+     "results/real/k3_verdict_s1_arm1.summary.json",
+     "disk"
+    ]
+   ]
+  },
+  "215e145389db9b9efa8ba91a53130d92badb1abbc41c4bba088bb182f2ab6872": {
+   "paths": [
+    [
+     "results/real/probes_s3.json",
+     "disk"
+    ]
+   ]
+  },
+  "25b9c94fc8af02b16d55101e2776d2e46280a1576fec9cf5edf971a309f1b798": {
+   "paths": [
+    [
+     "results/real/oq15c_seed6_arm1.summary.json",
+     "disk"
+    ]
+   ]
+  },
+  "272451b941ed480a5697cd8956d6f95a531ffe314226518a76ff47133d37d1b0": {
+   "paths": [
+    [
+     "results/real/oq15c_verdict_s3_arm6.summary.json",
+     "disk"
+    ]
+   ]
+  },
+  "2920f8b5a4b418c6b012119e77d182a49372e2bb3ec01a18585301a1a29b79f1": {
+   "paths": [
+    [
+     "results/real/k3_verdict_arm1.meta.json",
+     "disk"
+    ]
+   ]
+  },
+  "2a0b71a21fa48e3a5cc271f2b7d7292020fd69304913c37b73e7e1fd0e9e91fa": {
+   "paths": [
+    [
+     "results/real/probes_s3_replication.json",
+     "disk"
+    ]
+   ]
+  },
+  "2a9d1ccc08514a0e63b3170cd2cb486a2b199377d637ce43bbc54fd3a36eb77e": {
+   "paths": [
+    [
+     "results/real/noise_floor_oq15.json",
+     "disk"
+    ]
+   ]
+  },
+  "2bb4fa20bc7f8c96b4f752e472356c1bc49751222b85f99f4d9134c58d96c0c9": {
+   "paths": [
+    [
+     "results/real/lens_s3_r.json.state.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "2c1174267c4cb996f9a0dabd4a248ac90e9836ecb8b653a9840fcc1ff070a558": {
+   "paths": [
+    [
+     "results/real/oq15c_search_arm2.json",
+     "disk"
+    ]
+   ]
+  },
+  "2f447eeca940b34177fd111792cd5a9a209f3a565fa88e98ed75e949a639dadb": {
+   "paths": [
+    [
+     "tools/run_posthoc_topic.py",
+     "lf"
+    ]
+   ]
+  },
+  "2ff98c2eb63944c401409a04dce53376c3e1c54fcc8fb793cd05ea46a12185b5": {
+   "paths": [
+    [
+     "results/real/glue_olmoe_k512.json",
+     "disk"
+    ]
+   ]
+  },
+  "3186abb35e525e73d0c7e7aff74a290556f7a38ee2007ce484d0504ce860b8df": {
+   "paths": [
+    [
+     "results/real/concept_groups_olmoe_balanced_v1.json",
+     "disk"
+    ]
+   ]
+  },
+  "31da672d8093a3e0327798b68d85a587966d1e894519299e3da31f19a6a67382": {
+   "paths": [
+    [
+     "results/real/fullfree_s1_r.json",
+     "disk"
+    ]
+   ]
+  },
+  "33e73c080f9487db0e929b388d41196e0e20714e93fab6a1f6e464bb7c2bd243": {
+   "paths": [
+    [
+     "results/real/fullfree_coarse_s3_r.rider_v1.json",
+     "disk"
+    ]
+   ]
+  },
+  "345dd13e96e23e5d6105887eb212142b2eb0b15f963059ca82d6dffd36382305": {
+   "paths": [
+    [
+     "results/real/oq15c_seed6_arm1.meta.json",
+     "disk"
+    ]
+   ]
+  },
+  "35754b8a2b05be2bc9d82f02a39a7d3b8646ea5c2aa646e8dd202ba752c52ceb": {
+   "paths": [
+    [
+     "results/real/oq15_head_weights.npz",
+     "disk"
+    ]
+   ]
+  },
+  "35d321acbbdd9b90d7c5f392d1d0838155169d80c8efbbc5bcae019e1550368e": {
+   "paths": [
+    [
+     "results/real/k3_verdict_s1_arm3.summary.json",
+     "disk"
+    ]
+   ]
+  },
+  "35da72428d8a31d1c41e407834867902890a3995975ba202a94c1b62f6474abf": {
+   "paths": [
+    [
+     "results/real/k3_verdict_s1_arm3.meta.json",
+     "disk"
+    ]
+   ]
+  },
+  "39a6cd587492e13d66da47ce75df0ec17ffe2ab57c3ee0ae760f4c574e110e0c": {
+   "paths": [
+    [
+     "tools/run_prefetch_strat.py",
+     "disk"
+    ]
+   ]
+  },
+  "3a21e9469805615f9fb1b6746a8b00e183e3330929722241807fd4c98b692a18": {
+   "paths": [
+    [
+     "results/real/readers_s1_r.json",
+     "disk"
+    ]
+   ]
+  },
+  "3e3d4441f8c70cdd486e2852323702a729a486d7e35c619ce27bb7000ffd495c": {
+   "paths": [
+    [
+     "results/real/k3_probe_weights.meta.json",
+     "disk"
+    ]
+   ]
+  },
+  "400ab2ac94692b6471c3e1e8cb2a2c1081492d27fded7300abc191b4168ebfa0": {
+   "paths": [
+    [
+     "results/real/readers_long_s3.json",
+     "disk"
+    ]
+   ]
+  },
+  "4032925543a3926f00cf90e5e30970548cd24183b63cc0210a1886958459aceb": {
+   "paths": [
+    [
+     "results/real/noise_floor_k3.json.state.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "4113851956e133bf47267573a73b6e0455065f54132d0aa549402623b40ccf4d": {
+   "paths": [
+    [
+     "results/real/readers_s3.json",
+     "disk"
+    ]
+   ]
+  },
+  "4197e064067081a6c6fdb331018e345d09f12316fa8f572aa32cb76e7723885d": {
+   "paths": [
+    [
+     "results/real/oq15c_thresholds_arm7_v2.json",
+     "disk"
+    ]
+   ]
+  },
+  "4237acc371a6f8915ab65c44a26834c9625b94cfc85acffd9b0efab77d86a619": {
+   "paths": [
+    [
+     "results/real/k3_thresholds_arm4_v2.json",
+     "disk"
+    ]
+   ]
+  },
+  "4538c7ddee4772c259abccd92363873463a935dd0be9b3e891ddc2f4d67e3928": {
+   "paths": [
+    [
+     "results/real/buckets_olmoe_k512.json",
+     "disk"
+    ]
+   ]
+  },
+  "459c54de816a5e1640b249ff9b2a9d362af2bf690cefe0dbe00ca56c099ce0a8": {
+   "paths": [
+    [
+     "tools/run_fullfree_twin.py",
+     "disk"
+    ]
+   ]
+  },
+  "46370167957a8b867f00b138653ff0926ef00a53ed7f8757430234c76898c963": {
+   "paths": [
+    [
+     "results/real/gen_freq.json",
+     "disk"
+    ]
+   ]
+  },
+  "469cc1dbd3c0308e39cd1853a6161a21e281b9f7b4cdb46a32bfa61dfce8a3a9": {
+   "paths": [
+    [
+     "results/real/oq15c_verdict_s3_arm1.meta.json",
+     "disk"
+    ]
+   ]
+  },
+  "4841706329531eafede6186f46606dfcd41448f3f73d5d984e843323c639994b": {
+   "paths": [
+    [
+     "results/real/probes_s1_replication.json",
+     "disk"
+    ]
+   ]
+  },
+  "4a49944a4750c96a5552ab22b04a5b673ff04b6ddc33fd51e18ba151f8583c26": {
+   "paths": [
+    [
+     "results/real/oq15c_thresholds_arm7.json",
+     "disk"
+    ]
+   ]
+  },
+  "4dd1c70926fb8c01470c0b73510374f65de1863fa4f67f193bb1b1e963e4af09": {
+   "paths": [
+    [
+     "results/real/buckets_k256.json",
+     "disk"
+    ]
+   ]
+  },
+  "4e6539cd7f1e5e1e24fbc4916ea6a52ca24c381f8b105798cf01e598b14f8118": {
+   "paths": [
+    [
+     "results/real/k3_verdict_s1_arm4.meta.json",
+     "disk"
+    ]
+   ]
+  },
+  "4f7d3feb1cbbbd5f30e6c6c99c9bf0d2d9a04869299e2567221733e09e9711d1": {
+   "paths": [
+    [
+     "docs/OQ18_RIDER_DIAGNOSTIC.md",
+     "disk"
+    ]
+   ]
+  },
+  "5087cddd3573bdcdd3e32fe49bde77db1c63f0c6b461c652a8622abc972fa4b7": {
+   "paths": [
+    [
+     "results/real/glue_k32.json",
+     "disk"
+    ]
+   ]
+  },
+  "50bb4d1b15dc5ba54dedef6878c0bd07e958430d2fe00c894c52e884de4e90a7": {
+   "paths": [
+    [
+     "results/real/oq15c_search_arm7.json",
+     "disk"
+    ]
+   ]
+  },
+  "536011beb25aa732c3025b9ecbc63fd15f3e44af1b1d6ee846230bfaaa2ced78": {
+   "paths": [
+    [
+     "results/real/k3_thresholds_arm4.json",
+     "disk"
+    ]
+   ]
+  },
+  "5593a379136eeff0196b6bbd89303e01391b2367a573e450c7d7fdf6c5babe6b": {
+   "paths": [
+    [
+     "results/real/concept_groups_olmoe_v1.json",
+     "disk"
+    ]
+   ]
+  },
+  "55dde82bdd6f491656e80fb779633e9ebdd14a209725dd8069be5021a959d71f": {
+   "paths": [
+    [
+     "results/real/k3_verdict_s1_arm5.summary.json",
+     "disk"
+    ]
+   ]
+  },
+  "562f1219ab5d2c19026f4cd479b46ae266932ec2d93cebeacae9c436d35bfe7c": {
+   "paths": [
+    [
+     "results/real/seed_replay_k3.json.state.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "568c8ec96b6fd1bd5fb68a982b3f5a174f8dd43818c97e72cdfab0fb8e8c26c6": {
+   "paths": [
+    [
+     "results/real/fullfree_s1.json.state.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "581ca512da67525d511871a54dc1f730d15263e7835f8298571d74458dd6d8e3": {
+   "paths": [
+    [
+     "results/real/glue_k512.json",
+     "disk"
+    ]
+   ]
+  },
+  "5aafc5c09d8c79c010bd58317c62ff0b502616db1ff1fd7917fa5bdd6592dd8e": {
+   "paths": [
+    [
+     "results/real/readers_s1_r.json.state.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "5efa7063767be062208eb3755cedf6a4e30f4c306927a1c3d2527098d69a5281": {
+   "paths": [
+    [
+     "tools/run_fullfree_coarse.py",
+     "disk"
+    ]
+   ]
+  },
+  "6055e3a6032cecbf8bcce3fe030831c9f43d1be59d8d80572d372a8233178dc4": {
+   "paths": [
+    [
+     "results/real/fullfree_s3.json",
+     "disk"
+    ]
+   ]
+  },
+  "6161d21894f190e533ab31e6ac3d82dc7f4331294aa536a781c299fcdd557404": {
+   "paths": [
+    [
+     "tools/run_oq18_rider_diag.py",
+     "disk"
+    ]
+   ]
+  },
+  "61f7f85d0fa206c8d8d56c37fe721143be8e42f54a82bddb1d9d1153e0fc8df3": {
+   "paths": [
+    [
+     "results/real/gen_freq_olmoe.json",
+     "disk"
+    ]
+   ]
+  },
+  "678182a80f5c1344cb5f64da7517d9ac4688aed1aa08bda52dd5e0235c5aac73": {
+   "paths": [
+    [
+     "results/real/oq18_rider_diag_s1.json.state.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "6949f301aaec2c9c6619df2f11fdee93793ba64d4873f5abde5fe567ef1f17f8": {
+   "paths": [
+    [
+     "results/real/fullfree_s1_r.json.state.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "6a1705b050396e1cfa6cee995c4e8839a7bd54579133959b6891c127c087ae4f": {
+   "paths": [
+    [
+     "results/real/glue_k64.json",
+     "disk"
+    ]
+   ]
+  },
+  "6c4c8de6d0f3870ef417ab57ead870d347c288f820c0b49e794869f8933e5bd1": {
+   "paths": [
+    [
+     "results/real/readers_long_s3_r.json.state.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "6ec42bc3ab96131e95b80883a496a6423bf208e1a1b0c32946a3d2b757954574": {
+   "paths": [
+    [
+     "results/real/prefetch_strat_s3.json",
+     "disk"
+    ]
+   ]
+  },
+  "71fc9995151e306d211bae0ac9013e5a67965c8a025d8ad8f2b98796009cf6d3": {
+   "paths": [
+    [
+     "data/prompts_oq15_verdict.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "72d621b17e99c8a0587a6b0f9a2dc388f0d560081e5e5401301a857d3539de97": {
+   "paths": [
+    [
+     "tools/build_concept_groups.py",
+     "disk"
+    ]
+   ]
+  },
+  "73a6df94c4cc701b50893c53e2bea87c226beaf46e4159f6fa88c29335921ddb": {
+   "paths": [
+    [
+     "results/real/prefetch_bigram_s3.json",
+     "disk"
+    ]
+   ]
+  },
+  "73d5b432122ae4ed70e5132350535293328197dc6477455bdab58ce8490e705e": {
+   "paths": [
+    [
+     "results/real/k3_thresholds_arm3.json",
+     "disk"
+    ]
+   ]
+  },
+  "7815547ef556ecf9a55221b2ffbf9488902d9894982a06c5e116e66e7bbce193": {
+   "paths": [
+    [
+     "results/real/readers_s1_word.json",
+     "disk"
+    ]
+   ]
+  },
+  "785e43ca6fbb6b99d7798bea4353ac4a7f36d728979f19011ac10b9858f1347b": {
+   "paths": [
+    [
+     "results/real/prefetch_s3_r.json",
+     "disk"
+    ]
+   ]
+  },
+  "79e2afb91b6ae167d9ae039c41b7184a8238e5b6f038d2a97b2d1a855374f191": {
+   "paths": [
+    [
+     "results/real/k3_seed6_arm4.meta.json",
+     "disk"
+    ]
+   ]
+  },
+  "7c08c09ecd15c0a9b65e77246fee0b7221f6cd320dc66ac1bf3e9ec32b2dff7d": {
+   "paths": [
+    [
+     "results/real/probes_s1.json.state.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "7d43c9678090180ae5a968aa2ebcdcf166b0cf1fd173949f5a7b59d4b5b55e2b": {
+   "paths": [
+    [
+     "results/real/prefetch_r2_s3.json.state.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "8374da6b8f60b164ae4812d09e026378b9de73f3f92c964070d66d7fc2055d11": {
+   "paths": [
+    [
+     "results/real/k3_probe_weights.npz",
+     "disk"
+    ]
+   ]
+  },
+  "8529532d4d787833cfa667a11d406ffa928c9c079836401e4930d43a6fb0e69a": {
+   "paths": [
+    [
+     "tools/run_prefetch_readouts.py",
+     "disk"
+    ]
+   ]
+  },
+  "85881fd89d3b7f859c81101a73a1e3c103207e55caa3c40af94203b17af61ea2": {
+   "paths": [
+    [
+     "results/real/k3_verdict_s1_arm1.meta.json",
+     "disk"
+    ]
+   ]
+  },
+  "87f6705bc5f28ab9c11717e1b8b4cc3573658db607924de8d5b2a783d9a572dd": {
+   "paths": [
+    [
+     "results/real/prefetch_strat_s3_r.json.state.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "89f060ed44830f4b153568be7e5b03459e151e0424aeea5819cf01bae794fcb0": {
+   "paths": [
+    [
+     "results/real/readers_s3.json.state.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "8b6185475704d4088c90d7daf1940c951f08956897188d51b85d1bfbdba92849": {
+   "paths": [
+    [
+     "results/real/prefetch_r2_s3.json",
+     "disk"
+    ]
+   ]
+  },
+  "8ed2d6529df863be86465a2f332d0474cbc8824f7251e88ce561722eb9d64ccd": {
+   "paths": [
+    [
+     "results/real/k3_seed6_arm1.summary.json",
+     "disk"
+    ]
+   ]
+  },
+  "8fc04f277c72937af997744fbcb61eaf7a71de3c10528f6563b5f7c2080ec9fd": {
+   "paths": [
+    [
+     "results/real/fullfree_coarse_s3.rider_v1.json",
+     "disk"
+    ]
+   ]
+  },
+  "90bb9e52ee50cf6e428b7c14081aec8bf58297a7eebe902f1306b2c66019c665": {
+   "paths": [
+    [
+     "results/real/oq18_rider_diag_s1.json",
+     "disk"
+    ]
+   ]
+  },
+  "911c2c0d2988c1df5454b8c00e3c69d8b04305613ee77148a4c6be86e27fb1ef": {
+   "paths": [
+    [
+     "results/real/k3_seed6_arm1.meta.json",
+     "disk"
+    ]
+   ]
+  },
+  "9277912939deb136699f235b84ef5e97bddb95aa6ee154fb87e9bbed47ccafa7": {
+   "paths": [
+    [
+     "results/real/oq15c_verdict_arm1.summary.json",
+     "disk"
+    ]
+   ]
+  },
+  "94640a09cbebbadf9eff91dec5249be89880f1d298a3aa3819e2c51acc624c11": {
+   "paths": [
+    [
+     "tools/run_reader_s1.py",
+     "disk"
+    ]
+   ]
+  },
+  "972b0a8ba693b2fe65869d2b3037563039371b6549a6dbb4651afd665a2c12a5": {
+   "paths": [
+    [
+     "results/real/prefetch_bigram_s3.json.state.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "97bac9839eb06c06f303b9e3454a0c3a39883c8b8c08e8acc5c470ec2d6d087c": {
+   "paths": [
+    [
+     "results/real/prefetch_r2_s3_r.json",
+     "disk"
+    ]
+   ]
+  },
+  "9831b2323a0748be32730c842f722c0a50a962cb35bbafceb61d2a348d19382c": {
+   "paths": [
+    [
+     "results/real/glue_k512_cover90.json",
+     "disk"
+    ]
+   ]
+  },
+  "9c90af67c94294ca935273bb7810512ad519041363ef0c8b0b2bfe5fe09711fd": {
+   "paths": [
+    [
+     "results/real/oq15c_verdict_arm1.meta.json",
+     "disk"
+    ]
+   ]
+  },
+  "9db58fc763603d8681f0285b2c8588013f18b0c36fd48b4cd5d7e10f753de78c": {
+   "paths": [
+    [
+     "results/real/oq15_stage1.json",
+     "disk"
+    ]
+   ]
+  },
+  "9f5d5d07e92c5a9cec3b1244fd3fd505372280da759412f08037b92ee6adf8e2": {
+   "paths": [
+    [
+     "results/real/k3_seed6_arm3.summary.json",
+     "disk"
+    ]
+   ]
+  },
+  "9fc5306384a13980a84009f53f81a439c16483e6f22b7a8fbd0f9d49527da461": {
+   "paths": [
+    [
+     "results/real/k3_tapcal_arm1.summary.json",
+     "disk"
+    ]
+   ]
+  },
+  "a1092c94e486b2ce6745ff3368ca9857d4dde07b8082a2743df0bd925f38736b": {
+   "paths": [
+    [
+     "results/real/buckets_k1024.json",
+     "disk"
+    ]
+   ]
+  },
+  "a1ab3011d112f37b119a481c1290fc767c59694a9d50ac9f366e428df0fd84bb": {
+   "paths": [
+    [
+     "results/real/fullfree_s1.json",
+     "disk"
+    ]
+   ]
+  },
+  "a1ef30730baae4b53ca551b6c6a17f2f65f3730840b7e722adc35c0d45ab6b62": {
+   "paths": [
+    [
+     "results/real/seed_replay_oq15.json",
+     "disk"
+    ]
+   ]
+  },
+  "a2f6ad482f51fa81ba6a4847bf18cd8198f3fa3eae65df00097afcf61ef5fb24": {
+   "paths": [
+    [
+     "results/real/k3_val_arm1.summary.json",
+     "disk"
+    ]
+   ]
+  },
+  "a3cd39d88b14d35d546611a13c78c7890335cbfdf254ad5bf5c6bafce2e2f17a": {
+   "paths": [
+    [
+     "data/prompts_k3_verdict.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "a5e9024259500c37fc51ff62357127362eb65bff4425e17dc5365f34c06000f5": {
+   "paths": [
+    [
+     "results/real/oq15c_search_arm6.json",
+     "disk"
+    ]
+   ]
+  },
+  "a6045bc0d1ba0cc82a7f2fcd5ec10ff08d86793e087b4c6ffa6eae885e33ba6f": {
+   "paths": [
+    [
+     "results/real/prefetch_strat_s3.json.state.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "aafd3ae849984092ea81ce7ff5cd47f1b18e089e95cd960d86630162b5ad8612": {
+   "paths": [
+    [
+     "tools/run_fullfree_coarse_amended.py",
+     "disk"
+    ]
+   ]
+  },
+  "ab47a0bf5e8946dfef43b7bbc53fff22c8a81a0151ab554f228ff739c2f117e4": {
+   "paths": [
+    [
+     "results/real/k3_verdict_arm5.summary.json",
+     "disk"
+    ]
+   ]
+  },
+  "abb0bec95a22f30c9a9e70c9592d335ee9f0a7ff0efa7e1d5d3c9a8b03e7522a": {
+   "paths": [
+    [
+     "tools/run_noise_floor.py",
+     "disk"
+    ]
+   ]
+  },
+  "abeab44833ca63bc7ddcf6bc6e14ea650cf7ed066c86bf166e867b2a1bf15ac6": {
+   "paths": [
+    [
+     "results/real/glue_k16.json",
+     "disk"
+    ]
+   ]
+  },
+  "ad9f018aa4051b34ca4574ee467b00c9602f88bf855bd223f4f46a277a496853": {
+   "paths": [
+    [
+     "docs/OQ18_RIDER_POSCONTROL.md",
+     "disk"
+    ]
+   ]
+  },
+  "ae73d65495eb7263b5a0e2c42689f5e9c24d84b64afc446cd23c4109831b4366": {
+   "paths": [
+    [
+     "results/real/lens_s3_r.json",
+     "disk"
+    ]
+   ]
+  },
+  "b0282246c709cb446d27cf25305991353227651c253072865a61068b5bd2ce57": {
+   "paths": [
+    [
+     "results/real/oq15c_seed6_arm7.summary.json",
+     "disk"
+    ]
+   ]
+  },
+  "b09741897f7a9055f56921a684859ea6a7e9937c56f227183db394d34296ee4c": {
+   "paths": [
+    [
+     "results/real/readers_long_s3.json.state.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "b0ec36d39ba4dc735a6fd9357b632fdc5a540e8634f85066638f3f4b9b6be1e9": {
+   "paths": [
+    [
+     "results/real/concept_groups_v1.json",
+     "disk"
+    ]
+   ]
+  },
+  "b3c6defe8d1edaea0fb99cf065935e4830a924584574b0e0bd66f151b00c00ce": {
+   "paths": [
+    [
+     "results/real/readers_long_s3_r.json",
+     "disk"
+    ]
+   ]
+  },
+  "b6c42d89a6adec69980ac7985656ffd82791833c9f5b6d528cfd1406e267b12d": {
+   "paths": [
+    [
+     "results/real/lens_s3.json.state.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "b853aca6952193505107364e897791e8976dd0769108c1ba51c829deba25dde7": {
+   "paths": [
+    [
+     "results/real/oq15c_seed6_arm7.meta.json",
+     "disk"
+    ]
+   ]
+  },
+  "b8fcaa1667d9ecaea42624d831857a8f91af820da2a87a3192ca862bc3a8733a": {
+   "paths": [
+    [
+     "results/real/oq15c_thresholds_arm2.json",
+     "disk"
+    ]
+   ]
+  },
+  "ba6e05aeeb23a1da85ba172f13c2cb5acd5da9c602a10b7e94917916c5a06172": {
+   "paths": [
+    [
+     "results/real/buckets_k64.json",
+     "disk"
+    ]
+   ]
+  },
+  "bdc4a34521562871597e16eab35d04bd0eb89cf3c4367e21ecdd27479cef347a": {
+   "paths": [
+    [
+     "results/real/k3_thresholds_arm2.json",
+     "disk"
+    ]
+   ]
+  },
+  "c0abad0de759b49ebeba47bedbccdc7c0b382687153652d90bc1c6ef6ff85f1d": {
+   "paths": [
+    [
+     "results/real/seed_replay_k3.json",
+     "disk"
+    ]
+   ]
+  },
+  "c1faabbd9be4c07df7d2df4f3a5ee7c7f34d663b882cddc1217963928a9bda63": {
+   "paths": [
+    [
+     "data/prompts_oq15_val.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "c22b02c472d6cbd24f7543f090fe9de60ceaa21e489468448c59bc6ccde4fde7": {
+   "paths": [
+    [
+     "results/real/prefetch_s3.json",
+     "disk"
+    ]
+   ]
+  },
+  "c2dfa659a4a57cbad5ba5b558973e2f4ee381d10e7208e936db958d61c78854c": {
+   "paths": [
+    [
+     "results/real/probes_s1.json",
+     "disk"
+    ]
+   ]
+  },
+  "c473aa33b0114f33c61c88bbb8d1ae1e0d91ddb65741531b9ec37532d89c1814": {
+   "paths": [
+    [
+     "results/real/fullfree_s3.json.state.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "c6d2dee548b5b5fc5e8c027ee7294ef65d0369798677bb5336fe9fe91c624871": {
+   "paths": [
+    [
+     "results/real/oq15c_verdict_s3_arm7.summary.json",
+     "disk"
+    ]
+   ]
+  },
+  "c970d84f1a00515a18eb3481c0dcb57d1acc490ffa8c2be8d55078e56d820b50": {
+   "paths": [
+    [
+     "results/real/readers_s3_r.json",
+     "disk"
+    ]
+   ]
+  },
+  "ca8c8a9285b6139e1f516220d21ad3c526056e7349301626eaa600671b3f03ac": {
+   "paths": [
+    [
+     "results/real/seed_replay_oq15.json.state.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "cc6a7fb0bc505fe0f439e4dc6ba99366c7446d58b114a5636f12905d0df4db55": {
+   "paths": [
+    [
+     "tools/run_prefetch_horizon.py",
+     "disk"
+    ]
+   ]
+  },
+  "cd030384ce304e45575e488a19d61ed679b2036265d43ec1e96ab15ce5773f23": {
+   "paths": [
+    [
+     "results/real/oq15c_thresholds_arm6.json",
+     "disk"
+    ]
+   ]
+  },
+  "cf85d1a030c72557c02e7102920413232231d066ce0bde14eff4b562451ef2bb": {
+   "paths": [
+    [
+     "results/real/prefetch_strat_s3_r.json",
+     "disk"
+    ]
+   ]
+  },
+  "d090183a85eb6ddb6da30aaf5385c0ceaa05402923f26f867a20a441521e1f3c": {
+   "paths": [
+    [
+     "results/real/oq15c_seed6_arm6.summary.json",
+     "disk"
+    ]
+   ]
+  },
+  "d1125670be056b4824ebfcd734379f40e44db994308c10accb731839d2a4a624": {
+   "paths": [
+    [
+     "tools/run_reader_lens.py",
+     "disk"
+    ]
+   ]
+  },
+  "d146772d52697e2837a296315dab39249a527619560a0086b8421fc7d9e2b5a7": {
+   "paths": [
+    [
+     "results/real/probes_s1_replication.json.state.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "d1edb7b0c73eda48b554510a1f90d6dd61d55d632f7278ce5153c0717cc8e66e": {
+   "paths": [
+    [
+     "results/real/oq15_offset5.json",
+     "disk"
+    ]
+   ]
+  },
+  "d271650df468674ef6c4809abc65276068f7a87c1b3d7d73c16dd06070c470fe": {
+   "paths": [
+    [
+     "results/real/noise_floor_oq15.json.state.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "d422819e531b60ccb8502859c11f0fbe571014c2b8fe55e26508732f9d0311ae": {
+   "paths": [
+    [
+     "results/real/fullfree_s3_r.json",
+     "disk"
+    ]
+   ]
+  },
+  "d6fda8997c6516e35ae047c722ad979540052a12dca7d0de3b1ef96d518257b0": {
+   "paths": [
+    [
+     "tools/build_balanced_groups.py",
+     "disk"
+    ]
+   ]
+  },
+  "d760d52993ebe37d691a00b0449a890e0b556c054971faf0f22de0c779d2d376": {
+   "paths": [
+    [
+     "results/real/probes_s3_replication.json.state.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "d98d5e6639a01047ad79d36d1fa68427b16b8118bc0c875f6f54a0b4b6b9831d": {
+   "paths": [
+    [
+     "results/real/lens_s3.json",
+     "disk"
+    ]
+   ]
+  },
+  "d9caf1d1b5d89cc26ddafca7b50e54648ffdca3fcf542f4a88c6c15732186802": {
+   "paths": [
+    [
+     "tools/run_oq18_rider_poscontrol.py",
+     "disk"
+    ]
+   ]
+  },
+  "dab45e19a8f4d1f7fb8463e0c7c5099716652b41bbbb8dc4f0693018f6432452": {
+   "paths": [
+    [
+     "results/real/buckets_olmoe_k32.json",
+     "disk"
+    ]
+   ]
+  },
+  "dad8814356df6104fab5379a2f75a4e7d736b9081b4b77104c433cea85c263bd": {
+   "paths": [
+    [
+     "results/real/oq15c_verdict_s3_arm6.meta.json",
+     "disk"
+    ]
+   ]
+  },
+  "e1b58c38dd7bf2815740894c331039129445ea1fd1d449f8f8f2918437efb9cf": {
+   "paths": [
+    [
+     "results/real/prefetch_bigram_s3_r.json.state.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "e1ffa17c1a88114460b6402a510dd23d3ee5c5a8e5dd1f524dc07e16859eeefa": {
+   "paths": [
+    [
+     "results/real/k3_verdict_arm1.summary.json",
+     "disk"
+    ]
+   ]
+  },
+  "e31db51ef0f689d97372a831330082e3db5cad8911af9bab6a7849e742383999": {
+   "paths": [
+    [
+     "results/real/buckets_k16.json",
+     "disk"
+    ]
+   ]
+  },
+  "e768ca7a68db5ccecbd8013ce3c6e78a63e76a493e592b1b10c50d5bd1811759": {
+   "paths": [
+    [
+     "results/real/prefetch_horizon_s3.json.state.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "e80d78ef1cd2f2c8a48d01e908dcddf20986475365c658258781d39b665a9613": {
+   "paths": [
+    [
+     "results/real/oq15c_verdict_s3_arm1.summary.json",
+     "disk"
+    ]
+   ]
+  },
+  "e82017cfcd66381e854139e63fc2eaa9a2bbf1b6ec161b1e5816cc6ddccddd85": {
+   "paths": [
+    [
+     "results/real/oq15c_verdict_s3_arm7.meta.json",
+     "disk"
+    ]
+   ]
+  },
+  "eaf671fdb9d637624c012b5555a06d1a7ff82072d09829c1d31c3aa492231a84": {
+   "paths": [
+    [
+     "tools/run_prefetch_r2.py",
+     "disk"
+    ]
+   ]
+  },
+  "f3f393ad9ad3a9a0589e2473634d5f7d1ca0f3f71d57cb169c0e3dbf24b1870f": {
+   "paths": [
+    [
+     "results/real/k3_threshold_search_arm2.json",
+     "disk"
+    ]
+   ]
+  },
+  "f7f2dd393d42a71b3fd0bc080d6df01eb876a97a92ba6f9affbcc9339a24e645": {
+   "paths": [
+    [
+     "results/real/glue_olmoe_k16.json",
+     "disk"
+    ]
+   ]
+  },
+  "f9bea69f380ea17f98223e838aa41428c5b60a4887ce12b161b31b6a8673fa0d": {
+   "paths": [
+    [
+     "results/real/oq20_env_capture_after_runs.txt",
+     "disk"
+    ],
+    [
+     "results/real/oq20_env_capture_before_runs.txt",
+     "disk"
+    ]
+   ]
+  },
+  "fd1e50c109f6aa3c59b0716f453c39422ec1449d52cb92714483880c92db55f0": {
+   "paths": [
+    [
+     "results/real/k3_threshold_search_arm3.json",
+     "disk"
+    ]
+   ]
+  },
+  "fe63ab2c03652938acc85cd6ce7aa293796ff85876692a6bac39fe786827c8c6": {
+   "paths": [
+    [
+     "results/real/readers_s3_r.json.state.jsonl",
+     "disk"
+    ]
+   ]
+  },
+  "fe868ac3b6db3587dae3fd0675f0e04fa1f917904ed4e5c6b748523ec2edc9ce": {
+   "paths": [
+    [
+     "results/real/oq15c_seed6_arm6.meta.json",
+     "disk"
+    ]
+   ]
+  }
+ },
+ "written": "2026-10-18"
+}

@@ -1,0 +1,155 @@
+{
+  "check": "OQ-16 anchor-state identity (dated erratum 2026-09-05)",
+  "lm_head": {
+    "model": "meta-llama/Llama-3.1-8B-Instruct",
+    "snapshot": "0e9e39f249a16976918f6564b8830bc894c89659",
+    "shard": "model-00004-of-00004.safetensors",
+    "shard_sha256": "92ecfe1a2414458b4821ac8c13cf8cb70aed66b5eea8dc5ad9eeb4ff309d6d7b",
+    "tie_word_embeddings": false,
+    "vocab": 128256,
+    "d": 4096
+  },
+  "n_rows": 48,
+  "rows_per_prompt": 4,
+  "n_prompts_per_run": 3,
+  "provenance": [
+    {
+      "stem": "k3_verdict_arm1",
+      "file": "p000.npz",
+      "rows": 4,
+      "sha256": "1b4ed8f7f6dc292b2d1388583a67b650538b939d83f9c20d62649711af4f3c82"
+    },
+    {
+      "stem": "k3_verdict_arm1",
+      "file": "p001.npz",
+      "rows": 4,
+      "sha256": "01cfb81d1f9d01365c152a18d47506fbf3c18c02682d2096d1c07a0c5a66b24b"
+    },
+    {
+      "stem": "k3_verdict_arm1",
+      "file": "p002.npz",
+      "rows": 4,
+      "sha256": "a3d51af1101c759b11eec5c42e8096554775e743c870fcca6fd1ca7d1384c410"
+    },
+    {
+      "stem": "k3_verdict_s1_arm1",
+      "file": "p000.npz",
+      "rows": 4,
+      "sha256": "3f617a23d780c1fe89a575c09fdc7aab9feba0cd5e141eac0c64f4c3659dec4a"
+    },
+    {
+      "stem": "k3_verdict_s1_arm1",
+      "file": "p001.npz",
+      "rows": 4,
+      "sha256": "6fa9fdc8596388fc2efe53afdf19cd46558006c861359b481cf070f6e181e542"
+    },
+    {
+      "stem": "k3_verdict_s1_arm1",
+      "file": "p002.npz",
+      "rows": 4,
+      "sha256": "16f12fb9e1064d2a3c5980ced153c89bba42d8d600b9647933d7798169045522"
+    },
+    {
+      "stem": "oq15c_verdict_arm1",
+      "file": "p000.npz",
+      "rows": 4,
+      "sha256": "48480f0149e6b14a74cdc8605a29984e1805bc5a9adda5d55bcc302b7adfe88f"
+    },
+    {
+      "stem": "oq15c_verdict_arm1",
+      "file": "p001.npz",
+      "rows": 4,
+      "sha256": "776274d956ca528bf08ce9e2b5b8c59d80e5619e22f7100bf615eb8006ff6867"
+    },
+    {
+      "stem": "oq15c_verdict_arm1",
+      "file": "p002.npz",
+      "rows": 4,
+      "sha256": "2c56f6e759c05b345715f67922fcad61d59e5631ab28c921c5365145d2fd8d36"
+    },
+    {
+      "stem": "oq15c_verdict_s3_arm1",
+      "file": "p000.npz",
+      "rows": 4,
+      "sha256": "d12a7f6a744122c0e791e1d1758e8a3011fb966989829a30812dd9e7c141158d"
+    },
+    {
+      "stem": "oq15c_verdict_s3_arm1",
+      "file": "p001.npz",
+      "rows": 4,
+      "sha256": "09852fa7897865882955aae266ec7b49e4c42494f450d66695be56614f260fe0"
+    },
+    {
+      "stem": "oq15c_verdict_s3_arm1",
+      "file": "p002.npz",
+      "rows": 4,
+      "sha256": "909713c5783dd7158939f728fc71722b679a14b9bafd7547bb773b3470a7ced7"
+    }
+  ],
+  "forward": {
+    "argmax_match_rate": 1.0,
+    "top32_overlap_mean": 0.9947916666666666,
+    "top32_overlap_min": 0.96875,
+    "top1_p_max_abs_gap": 0.020611196756362915
+  },
+  "inverse_full_logits": {
+    "rel_err_median": 2.5466336418369672e-08,
+    "rel_err_max": 3.187969695837148e-08,
+    "f64_logits_rel_err_median": 1.8876400008463154e-14,
+    "f64_logits_rel_err_max": 3.238549731189075e-14
+  },
+  "conditioning": {
+    "sigma_max": 94.52626691746065,
+    "sigma_min": 1.4527196285725883,
+    "cond": 65.06848607142464,
+    "numerical_rank": 4096,
+    "ones_vector_fraction_in_col": 0.9916343756072399,
+    "ones_vector_residual_rel": 0.12907852305492226,
+    "sigma_min_augmented_W_minus_ones": 1.4505923216568344,
+    "h_cos_with_ones_direction_median": 0.045717132791836694,
+    "h_cos_with_ones_direction_max": 0.39944931394945493
+  },
+  "precision": {
+    "from_bf16_logits_rel_err_median": 0.0004160544087786762,
+    "from_bf16_logits_rel_err_max": 0.0005379205743157334,
+    "from_bf16_logprobs_logZ_unknown_rel_err_median": 0.003507394812363945,
+    "from_bf16_logprobs_logZ_unknown_rel_err_max": 0.0069279060501502435,
+    "h_norm_median": 147.45738296311697
+  },
+  "topk_closed_form": {
+    "4097": {
+      "r2_median": 0.9999999982658083,
+      "r2_min": 0.9999998314109328,
+      "r2_max": 0.9999999999122494,
+      "cosine_median": 0.9999999991334847
+    },
+    "2048": {
+      "r2_median": 0.505921200867939,
+      "r2_min": 0.2954595336482627,
+      "r2_max": 0.5880688906710441,
+      "cosine_median": 0.7114392854082205
+    },
+    "512": {
+      "r2_median": 0.21564164312052253,
+      "r2_min": 0.07761020888253178,
+      "r2_max": 0.31444764896359234,
+      "cosine_median": 0.4649736701818157
+    },
+    "128": {
+      "r2_median": 0.07783808934376946,
+      "r2_min": 0.012123943329649833,
+      "r2_max": 0.18070100143196777,
+      "cosine_median": 0.28038897646501665
+    },
+    "32": {
+      "r2_median": 0.013507650311683717,
+      "r2_min": -0.0031223238578068635,
+      "r2_max": 0.10270357086796034,
+      "cosine_median": 0.12286708731495447
+    }
+  },
+  "git_commit": "8542ef5-dirty",
+  "numpy_version": "2.3.5",
+  "seconds": 846.0,
+  "note": "forward gaps reflect the live bf16 lm_head of the NF4-loaded verifier vs this bf16->f32 lm_head on the float16-logged h; the inverse is the identity logits = W_U h_a with W_U of full column rank, solved by float64 normal equations (rel_err from float32 logits is the float32 rounding floor; f64_logits_* shows the identity itself); top-k recovery uses the RECOMPUTED logits' top-k (id, log-prob) pairs, SVD least squares over [h, logZ] with no ridge (minimum-norm when k < d + 1); r2_* are per-row R^2 about the row's own mean in raw h space, NOT Stage-R's standardized pooled-MSE R^2; bf16 rounding is round-to-nearest-even emulated on float32"
+}

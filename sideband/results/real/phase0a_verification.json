@@ -1,0 +1,72 @@
+{
+  "boot_seed": 0,
+  "clean_vs_dirty_overlap": {
+    "masses_bitwise_equal": true,
+    "n_prompts": 20,
+    "per_prompt_counts_equal": true,
+    "rejection_tuples_equal": true
+  },
+  "cross_k_identity": {
+    "n_rejections": 11287,
+    "per_prompt_counts_equal": true,
+    "rejection_tuples_equal": true
+  },
+  "kv_rider": {
+    "cached": {
+      "acc": {
+        "ci_pooled_cluster": [
+          0.7573561094133361,
+          0.8077662464911283
+        ],
+        "mean_of_rates": 0.7849839216763439,
+        "pooled": 0.783303730017762
+      },
+      "mass": 0.8182172752260661,
+      "mass_ci": [
+        0.786798144485573,
+        0.8503116777791415
+      ]
+    },
+    "checks": {
+      "acc_mor_cached_in_uncached_ci": true,
+      "acc_mor_uncached_in_cached_ci": true,
+      "acc_pooled_cached_in_uncached_ci": true,
+      "acc_pooled_uncached_in_cached_ci": true,
+      "mass_cached_in_uncached_ci": true,
+      "mass_uncached_in_cached_ci": true
+    },
+    "uncached": {
+      "acc": {
+        "ci_pooled_cluster": [
+          0.7701688296988464,
+          0.8145450699648831
+        ],
+        "mean_of_rates": 0.7941257423168981,
+        "pooled": 0.7919463087248322
+      },
+      "mass": 0.819088277459144,
+      "mass_ci": [
+        0.7992019509925403,
+        0.8399615987267383
+      ]
+    },
+    "verdict": "PASS"
+  },
+  "n_boot": 20000,
+  "nf4_vs_bf16": {
+    "acc_delta_ci95": [
+      -0.021274285426180123,
+      0.01806999657400273
+    ],
+    "acc_delta_mean_of_rates": 0.0011185337359496117,
+    "acc_delta_pooled": -0.0022364685794741828,
+    "mass_delta_ci95": [
+      0.0034872550737491403,
+      0.05956336553239214
+    ],
+    "mass_delta_per_prompt_mean_frame": 0.03313896852574805,
+    "mass_delta_pooled": 0.031056556383081226,
+    "note": "paired at prompt granularity via per-prompt RNG streams; within-prompt trajectories diverge after the first differing acceptance"
+  },
+  "verdict": "PASS"
+}

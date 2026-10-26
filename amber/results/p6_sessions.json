@@ -1,0 +1,223 @@
+{
+  "_experiment": "p6_sessions",
+  "_written_unix": 1788131569,
+  "coder": "gamma",
+  "draft": "meta-llama/Llama-3.2-1B",
+  "ks": [
+    2,
+    4,
+    8,
+    16
+  ],
+  "protocol": "experiments/P6_PROTOCOL.md",
+  "regime": "P1 turns grouped in row order into k-turn sessions; ctx_mode 0 reset per turn (CPU repack of P5 fp32 scores), ctx_mode 1 shared history (fp32 KV-chunked rescoring); turns were generated INDEPENDENTLY by the target, so shared-context conditioning is biased against amber by construction; one 3080 Ti",
+  "report": {
+    "by_k_mode": {
+      "k16_m0": {
+        "bits_per_all_tokens": 1.3720274083031037,
+        "bits_per_gen_token": 1.4474635370157758,
+        "breakdown_per_gen_token": {
+          "content_payload": 0.4358974358974359,
+          "fixed+table": 0.39035591274397247,
+          "prompt_payload": 0.574690649317515
+        },
+        "gen_tokens": 47034,
+        "sessions": 12,
+        "vs_k_separate_v3_files": 0.34025028987245615,
+        "zstd19_per_session_bits_per_gen_token": 4.926988986690479
+      },
+      "k16_m1": {
+        "bits_per_all_tokens": 1.4619911326078194,
+        "bits_per_gen_token": 1.5423736020750947,
+        "breakdown_per_gen_token": {
+          "content_payload": 0.6078794063868691,
+          "fixed+table": 0.29850746268656714,
+          "prompt_payload": 0.5861717055746907
+        },
+        "gen_tokens": 47034,
+        "sessions": 12,
+        "vs_k_separate_v3_files": 0.36256047339170766,
+        "zstd19_per_session_bits_per_gen_token": 4.926988986690479
+      },
+      "k2_m0": {
+        "bits_per_all_tokens": 2.6465827686350436,
+        "bits_per_gen_token": 2.7921075207320563,
+        "breakdown_per_gen_token": {
+          "content_payload": 0.43992810163813884,
+          "fixed+table": 1.7469667878589812,
+          "prompt_payload": 0.5747171044568814
+        },
+        "gen_tokens": 48958,
+        "sessions": 100,
+        "vs_k_separate_v3_files": 0.6553522801365397,
+        "zstd19_per_session_bits_per_gen_token": 6.556313574900935
+      },
+      "k2_m1": {
+        "bits_per_all_tokens": 2.6928944820909972,
+        "bits_per_gen_token": 2.84096572572409,
+        "breakdown_per_gen_token": {
+          "content_payload": 0.47777686997017854,
+          "fixed+table": 1.6979451774990808,
+          "prompt_payload": 0.6312757874096164
+        },
+        "gen_tokens": 48958,
+        "sessions": 100,
+        "vs_k_separate_v3_files": 0.6668200820772446,
+        "zstd19_per_session_bits_per_gen_token": 6.556313574900935
+      },
+      "k4_m0": {
+        "bits_per_all_tokens": 1.9215488867376573,
+        "bits_per_gen_token": 2.027206993749745,
+        "breakdown_per_gen_token": {
+          "content_payload": 0.43992810163813884,
+          "fixed+table": 0.9725887495404224,
+          "prompt_payload": 0.5747171044568814
+        },
+        "gen_tokens": 48958,
+        "sessions": 50,
+        "vs_k_separate_v3_files": 0.4758178959076439,
+        "zstd19_per_session_bits_per_gen_token": 6.0241022917602844
+      },
+      "k4_m1": {
+        "bits_per_all_tokens": 1.9800968054211037,
+        "bits_per_gen_token": 2.088974222803219,
+        "breakdown_per_gen_token": {
+          "content_payload": 0.5079251603415172,
+          "fixed+table": 0.8997099554720372,
+          "prompt_payload": 0.6384247722537686
+        },
+        "gen_tokens": 48958,
+        "sessions": 50,
+        "vs_k_separate_v3_files": 0.4903156522072642,
+        "zstd19_per_session_bits_per_gen_token": 6.0241022917602844
+      },
+      "k8_m0": {
+        "bits_per_all_tokens": 1.5595740561471443,
+        "bits_per_gen_token": 1.6453286490461212,
+        "breakdown_per_gen_token": {
+          "content_payload": 0.43992810163813884,
+          "fixed+table": 0.5866252706401406,
+          "prompt_payload": 0.5747171044568814
+        },
+        "gen_tokens": 48958,
+        "sessions": 25,
+        "vs_k_separate_v3_files": 0.38618494227745176,
+        "zstd19_per_session_bits_per_gen_token": 5.485518199272846
+      },
+      "k8_m1": {
+        "bits_per_all_tokens": 1.6333010648596322,
+        "bits_per_gen_token": 1.7231096041504963,
+        "breakdown_per_gen_token": {
+          "content_payload": 0.5534539809632747,
+          "fixed+table": 0.5010008578781813,
+          "prompt_payload": 0.621451039666653
+        },
+        "gen_tokens": 48958,
+        "sessions": 25,
+        "vs_k_separate_v3_files": 0.4044413761362329,
+        "zstd19_per_session_bits_per_gen_token": 5.485518199272846
+      }
+    },
+    "decode": {
+      "k8_m0": {
+        "byte_exact": 8,
+        "desync_positions": [],
+        "sessions": 8,
+        "tok_per_s": 75.76057462076426
+      },
+      "k8_m1": {
+        "byte_exact": 25,
+        "desync_positions": [],
+        "sessions": 25,
+        "tok_per_s": 76.50528300259057
+      }
+    },
+    "fixed_header_bytes": 97,
+    "per_turn_index_k8": {
+      "m0": {
+        "0": {
+          "content_bits_per_token": 0.37099161322150964,
+          "divergence": 0.05476073014306857,
+          "prompt_bits_per_token": 11.52861952861953
+        },
+        "1": {
+          "content_bits_per_token": 0.43103989946591265,
+          "divergence": 0.06817467797675149,
+          "prompt_bits_per_token": 11.104615384615384
+        },
+        "2": {
+          "content_bits_per_token": 0.3340719277313789,
+          "divergence": 0.05420146582580535,
+          "prompt_bits_per_token": 11.168316831683168
+        },
+        "3": {
+          "content_bits_per_token": 0.51,
+          "divergence": 0.076875,
+          "prompt_bits_per_token": 11.14723926380368
+        },
+        "4": {
+          "content_bits_per_token": 0.38633377135348224,
+          "divergence": 0.059954007884362684,
+          "prompt_bits_per_token": 11.281967213114754
+        },
+        "5": {
+          "content_bits_per_token": 0.4846875,
+          "divergence": 0.07765625,
+          "prompt_bits_per_token": 11.346625766871165
+        },
+        "6": {
+          "content_bits_per_token": 0.45247012662743,
+          "divergence": 0.0697342607454967,
+          "prompt_bits_per_token": 11.494736842105263
+        },
+        "7": {
+          "content_bits_per_token": 0.5404130752967963,
+          "divergence": 0.08407871198568873,
+          "prompt_bits_per_token": 11.292307692307693
+        }
+      },
+      "m1": {
+        "0": {
+          "content_bits_per_token": 0.37099161322150964,
+          "divergence": 0.05476073014306857,
+          "prompt_bits_per_token": 11.52861952861953
+        },
+        "1": {
+          "content_bits_per_token": 0.49811498586239394,
+          "divergence": 0.07885642475651901,
+          "prompt_bits_per_token": 12.762857142857143
+        },
+        "2": {
+          "content_bits_per_token": 0.3942389636952446,
+          "divergence": 0.06323504346343958,
+          "prompt_bits_per_token": 11.817073170731707
+        },
+        "3": {
+          "content_bits_per_token": 0.63609375,
+          "divergence": 0.09703125,
+          "prompt_bits_per_token": 11.418803418803419
+        },
+        "4": {
+          "content_bits_per_token": 0.507227332457293,
+          "divergence": 0.0795006570302234,
+          "prompt_bits_per_token": 11.596969696969698
+        },
+        "5": {
+          "content_bits_per_token": 0.654375,
+          "divergence": 0.1003125,
+          "prompt_bits_per_token": 11.903133903133902
+        },
+        "6": {
+          "content_bits_per_token": 0.6046013911182451,
+          "divergence": 0.08828250401284109,
+          "prompt_bits_per_token": 10.535483870967742
+        },
+        "7": {
+          "content_bits_per_token": 0.7511790535046349,
+          "divergence": 0.1167669539762563,
+          "prompt_bits_per_token": 9.654285714285715
+        }
+      }
+    }
+  }
+}

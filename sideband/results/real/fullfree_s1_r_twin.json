@@ -1,0 +1,315 @@
+{
+ "registered": "OQ-17 POST-HOC TWIN-INERTNESS DIAGNOSTIC (docs/BLUEPRINT.md, 2026-09-06, registered before any registered twin cell ran; NON-CRITERION)",
+ "space": "L1_concept_k16",
+ "harvest": "results/real/harvest_shadow_r",
+ "n_cells": 3,
+ "partial": false,
+ "resumed_cells": 0,
+ "cells": [
+  {
+   "cell": "L1_concept_k16|off2|fplus_r|mlp256|s0",
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.6303050288540808,
+   "val_acc_best": 0.6312508246470511,
+   "best_epoch": 2,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 293.0
+  },
+  {
+   "cell": "L1_concept_k16|off2|fplus_r|mlp256|s1",
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.6408903544929926,
+   "val_acc_best": 0.6373861987069535,
+   "best_epoch": 0,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 294.3
+  },
+  {
+   "cell": "L1_concept_k16|off2|fplus_r|mlp256|s2",
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.6387469084913437,
+   "val_acc_best": 0.637155297532656,
+   "best_epoch": 1,
+   "n_train": 152163,
+   "n_val": 30316,
+   "n_test": 30325,
+   "majority_rate_test": 0.5897114591920858,
+   "runtime_s": 298.6
+  }
+ ],
+ "committed_cells_used": [
+  "L1_concept_k16|off2|fplus_b|mlp256|s0",
+  "L1_concept_k16|off2|fplus_b|mlp256|s1",
+  "L1_concept_k16|off2|fplus_b|mlp256|s2",
+  "L1_concept_k16|off2|fplus_n|mlp256|s0",
+  "L1_concept_k16|off2|fplus_n|mlp256|s1",
+  "L1_concept_k16|off2|fplus_n|mlp256|s2",
+  "L1_concept_k16|off2|fplus|mlp256|s0",
+  "L1_concept_k16|off2|fplus|mlp256|s1",
+  "L1_concept_k16|off2|fplus|mlp256|s2"
+ ],
+ "reproduced_registered_gate_rows": true,
+ "registered_gate_rows": {
+  "D": {
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "capacity": "mlp256",
+   "pair": "fplus_b-fplus_n",
+   "margin": 0.0012201154163231657,
+   "ci95": [
+    -0.00030778727886949777,
+    0.002783411283089185
+   ],
+   "per_seed_margin": {
+    "0": 0.001615828524319868,
+    "1": 0.0013190436933223414,
+    "2": 0.0007254740313272877
+   },
+   "n_seeds": 3,
+   "n_clusters": 30
+  },
+  "Mt": {
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "capacity": "mlp256",
+   "pair": "fplus_b-fplus",
+   "margin": 0.003264633140972795,
+   "ci95": [
+    0.0012301631785109402,
+    0.00522076213120105
+   ],
+   "per_seed_margin": {
+    "0": 0.004253915910964551,
+    "1": 0.001549876339653751,
+    "2": 0.003990107172300083
+   },
+   "n_seeds": 3,
+   "n_clusters": 30
+  },
+  "Mn": {
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "capacity": "mlp256",
+   "pair": "fplus_n-fplus",
+   "margin": 0.002044517724649629,
+   "ci95": [
+    -4.4461950293723574e-05,
+    0.004100462782948541
+   ],
+   "per_seed_margin": {
+    "0": 0.0026380873866446827,
+    "1": 0.00023083264633140974,
+    "2": 0.003264633140972795
+   },
+   "n_seeds": 3,
+   "n_clusters": 30
+  }
+ },
+ "d_r_fplus_b_vs_fplus_r": [
+  {
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "capacity": "mlp256",
+   "pair": "fplus_b-fplus_r",
+   "margin": 0.0012640835394339103,
+   "ci95": [
+    -0.00023000291630636895,
+    0.0027844145089445495
+   ],
+   "per_seed_margin": {
+    "0": 0.002934872217642209,
+    "1": 0.000923330585325639,
+    "2": -6.595218466611707e-05
+   },
+   "n_seeds": 3,
+   "n_clusters": 30
+  }
+ ],
+ "mn_r_fplus_r_vs_fplus": [
+  {
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "capacity": "mlp256",
+   "pair": "fplus_r-fplus",
+   "margin": 0.002000549601538884,
+   "ci95": [
+    0.00022067039528764855,
+    0.00371294098452512
+   ],
+   "per_seed_margin": {
+    "0": 0.0013190436933223414,
+    "1": 0.0006265457543281121,
+    "2": 0.0040560593569661995
+   },
+   "n_seeds": 3,
+   "n_clusters": 30
+  }
+ ],
+ "t_fplus_n_vs_fplus_r": [
+  {
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "capacity": "mlp256",
+   "pair": "fplus_n-fplus_r",
+   "margin": 4.396812311074471e-05,
+   "ci95": [
+    -0.0015830197778561083,
+    0.001883815083709071
+   ],
+   "per_seed_margin": {
+    "0": 0.0013190436933223414,
+    "1": -0.0003957131079967024,
+    "2": -0.0007914262159934048
+   },
+   "n_seeds": 3,
+   "n_clusters": 30
+  }
+ ],
+ "gate": {
+  "space": "L1_concept_k16",
+  "offset": 2,
+  "capacity": "mlp256",
+  "d_r_row": {
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "capacity": "mlp256",
+   "pair": "fplus_b-fplus_r",
+   "margin": 0.0012640835394339103,
+   "ci95": [
+    -0.00023000291630636895,
+    0.0027844145089445495
+   ],
+   "per_seed_margin": {
+    "0": 0.002934872217642209,
+    "1": 0.000923330585325639,
+    "2": -6.595218466611707e-05
+   },
+   "n_seeds": 3,
+   "n_clusters": 30
+  },
+  "d_r_fires_raw": false,
+  "d_r_fires_clean": false
+ },
+ "per_cluster_corr": {
+  "mt_vs_mn": {
+   "pearson": 0.6993429785496046,
+   "n_clusters": 30,
+   "pairs": [
+    "fplus_b-fplus",
+    "fplus_n-fplus"
+   ]
+  },
+  "mt_vs_mn_r": {
+   "pearson": 0.665111944794159,
+   "n_clusters": 30,
+   "pairs": [
+    "fplus_b-fplus",
+    "fplus_r-fplus"
+   ]
+  }
+ },
+ "twin": {
+  "arm": "fplus_r",
+  "seed_base": 1000,
+  "construction": "slots of row k of pi_seed(prompt) at anchor mod that row's length, where row k is the row's generation index within its prompt and pi_seed is a within-split derangement of PROMPT ids from default_rng(seed_base + train seed)",
+  "perm_sha256": {
+   "0": "e24dbaeb05b5bf3b8673fdbe4e6766940d57837f3c776a638444b1167be16e0a",
+   "1": "5321687fd3dba9e906e5e57b664e456718b568c07db3383780047deb130b231a",
+   "2": "7ca660c8e5f72756b90292cb3f81511ffc7094fdafa37c5aca2d96e305e37d43"
+  },
+  "geometry_at_gate_offset": {
+   "0": {
+    "n_anchors": 212804,
+    "corrected_twin_wrapped_frac": 0.006433149752824195,
+    "shift_twin_future_frac": 0.9368432924193154,
+    "shift": 17,
+    "corrected_twin_same_prompt_frac": 0.0
+   },
+   "1": {
+    "n_anchors": 212804,
+    "corrected_twin_wrapped_frac": 0.006310971598278228,
+    "shift_twin_future_frac": 0.9368432924193154,
+    "shift": 17,
+    "corrected_twin_same_prompt_frac": 0.0
+   },
+   "2": {
+    "n_anchors": 212804,
+    "corrected_twin_wrapped_frac": 0.006118306046878818,
+    "shift_twin_future_frac": 0.9368432924193154,
+    "shift": 17,
+    "corrected_twin_same_prompt_frac": 0.0
+   }
+  }
+ },
+ "standardization": {
+  "moments_sha256": "9a15cdb81ee575900e715fb882888dcf18fc3c6ca6cc4491b54866d1e31ac2cf",
+  "matches_registered": true
+ },
+ "provenance": {
+  "git_commit": "675a8f6b7b92d1599e2d5319487a8336a6029c4a",
+  "git_status_tracked": [],
+  "instrument_sha256": "459c54de816a5e1640b249ff9b2a9d362af2bf690cefe0dbe00ca56c099ce0a8",
+  "args": {
+   "harvest": "results/real/harvest_shadow_r",
+   "fidelity": "results/real/harvest_fidelity_rider_r.json",
+   "fullfree_payload": "results/real/fullfree_s1_r.json",
+   "out": "results/real/fullfree_s1_r_twin.json",
+   "device": "cuda",
+   "only": null,
+   "resume": false,
+   "space_tag": "concept",
+   "n_slots": 512,
+   "buckets16": "C:\\Users\\Michael\\Desktop\\sideband\\results\\real\\buckets_k16.json",
+   "glue16": "C:\\Users\\Michael\\Desktop\\sideband\\results\\real\\glue_k16.json",
+   "buckets512": "C:\\Users\\Michael\\Desktop\\sideband\\results\\real\\buckets_k512.json",
+   "glue512": "C:\\Users\\Michael\\Desktop\\sideband\\results\\real\\glue_k512.json",
+   "groups": "C:\\Users\\Michael\\Desktop\\sideband\\results\\real\\concept_groups_v1.json",
+   "conclude_from": null
+  },
+  "harvest_npz_sha256": {
+   "shadow_s10.npz": "78ffa7dfbc01aa921ead973cd78be1867296bdc3558459e65a3df3f1e95242f7",
+   "shadow_s11.npz": "9d83279078ba91096dbbd849d8a5e8ff42495c053caecac46d49d87effc45bc5",
+   "shadow_s8.npz": "622485baff70b7af245d997aafa6b047946734af18bc8ee558bb0c44fb3db2bb",
+   "shadow_s9.npz": "2b0a5169323d4641bfaf43c2b16e63f2d2c690fbad99d9d792ff12440b18131f"
+  },
+  "fullfree_payload_sha256": "31da672d8093a3e0327798b68d85a587966d1e894519299e3da31f19a6a67382",
+  "fullfree_state_sha256": "6949f301aaec2c9c6619df2f11fdee93793ba64d4873f5abde5fe567ef1f17f8",
+  "fullfree_git_commit": "1d1a7f81219bdeb35cd0f2b3579489409a3625f1",
+  "arm_dims_total": {
+   "fplus_r": 8849,
+   "fplus_b": 8849
+  },
+  "feature_dims_recorded": {
+   "fplus_r": [
+    2048,
+    4096,
+    2048
+   ]
+  },
+  "torch_version": "2.6.0+cu124",
+  "device": "cuda",
+  "determinism_note": "CUDA probe training uses atomics; per-cell results are evidenced by the recorded state file, not rerun-exactness"
+ },
+ "runtime_s": 886.0
+}

@@ -1,0 +1,99 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 117.72it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[generate] target loaded in 7.7s
+[generate] shard 1/25 1971 new tokens 172.9s (11.4 tok/s)
+[generate] shard 2/25 1833 new tokens 156.2s (11.7 tok/s)
+[generate] shard 3/25 2048 new tokens 177.8s (11.5 tok/s)
+[generate] shard 4/25 2048 new tokens 173.7s (11.8 tok/s)
+[generate] shard 5/25 2048 new tokens 174.3s (11.7 tok/s)
+[generate] shard 6/25 1675 new tokens 140.6s (11.9 tok/s)
+[generate] shard 7/25 1813 new tokens 87.0s (20.8 tok/s)
+[generate] shard 8/25 2048 new tokens 50.6s (40.4 tok/s)
+[generate] shard 9/25 1818 new tokens 44.3s (41.0 tok/s)
+[generate] shard 10/25 1867 new tokens 47.0s (39.7 tok/s)
+[generate] shard 11/25 2048 new tokens 49.8s (41.1 tok/s)
+[generate] shard 12/25 1937 new tokens 49.6s (39.1 tok/s)
+[generate] shard 13/25 1831 new tokens 44.8s (40.9 tok/s)
+[generate] shard 14/25 1971 new tokens 48.1s (40.9 tok/s)
+[generate] shard 15/25 2048 new tokens 50.4s (40.6 tok/s)
+[generate] shard 16/25 2048 new tokens 50.1s (40.9 tok/s)
+[generate] shard 17/25 2048 new tokens 52.4s (39.1 tok/s)
+[generate] shard 18/25 2048 new tokens 50.1s (40.9 tok/s)
+[generate] shard 19/25 2048 new tokens 50.7s (40.4 tok/s)
+[generate] shard 20/25 2048 new tokens 50.5s (40.6 tok/s)
+[generate] shard 21/25 1841 new tokens 45.0s (40.9 tok/s)
+[generate] shard 22/25 2048 new tokens 50.3s (40.7 tok/s)
+[generate] shard 23/25 2048 new tokens 50.0s (41.0 tok/s)
+[generate] shard 24/25 1853 new tokens 45.4s (40.8 tok/s)
+[generate] shard 25/25 1924 new tokens 47.2s (40.8 tok/s)
+[draft] meta-llama/Llama-3.2-1B loaded in 1.8s
+[draft] shard 1/25 1971 positions 0.4s
+[draft] shard 2/25 1833 positions 0.2s
+[draft] shard 3/25 2048 positions 0.2s
+[draft] shard 4/25 2048 positions 0.2s
+[draft] shard 5/25 2048 positions 0.2s
+[draft] shard 6/25 1675 positions 0.2s
+[draft] shard 7/25 1813 positions 0.2s
+[draft] shard 8/25 2048 positions 0.2s
+[draft] shard 9/25 1818 positions 0.2s
+[draft] shard 10/25 1867 positions 0.2s
+[draft] shard 11/25 2048 positions 0.2s
+[draft] shard 12/25 1937 positions 0.2s
+[draft] shard 13/25 1831 positions 0.2s
+[draft] shard 14/25 1971 positions 0.2s
+[draft] shard 15/25 2048 positions 0.2s
+[draft] shard 16/25 2048 positions 0.2s
+[draft] shard 17/25 2048 positions 0.2s
+[draft] shard 18/25 2048 positions 0.2s
+[draft] shard 19/25 2048 positions 0.2s
+[draft] shard 20/25 2048 positions 0.2s
+[draft] shard 21/25 1841 positions 0.2s
+[draft] shard 22/25 2048 positions 0.2s
+[draft] shard 23/25 2048 positions 0.2s
+[draft] shard 24/25 1853 positions 0.2s
+[draft] shard 25/25 1924 positions 0.2s
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 85.59it/s]
+[target_selfcheck] meta-llama/Llama-3.2-3B loaded in 3.6s
+[target_selfcheck] shard 1/25 1971 positions 0.6s
+[target_selfcheck] shard 2/25 1833 positions 0.4s
+[target_selfcheck] shard 3/25 2048 positions 0.4s
+[target_selfcheck] shard 4/25 2048 positions 0.4s
+[target_selfcheck] shard 5/25 2048 positions 0.4s
+[target_selfcheck] shard 6/25 1675 positions 0.4s
+[target_selfcheck] shard 7/25 1813 positions 0.4s
+[target_selfcheck] shard 8/25 2048 positions 0.4s
+[target_selfcheck] shard 9/25 1818 positions 0.4s
+[target_selfcheck] shard 10/25 1867 positions 0.4s
+[target_selfcheck] shard 11/25 2048 positions 0.4s
+[target_selfcheck] shard 12/25 1937 positions 0.4s
+[target_selfcheck] shard 13/25 1831 positions 0.4s
+[target_selfcheck] shard 14/25 1971 positions 0.4s
+[target_selfcheck] shard 15/25 2048 positions 0.4s
+[target_selfcheck] shard 16/25 2048 positions 0.4s
+[target_selfcheck] shard 17/25 2048 positions 0.4s
+[target_selfcheck] shard 18/25 2048 positions 0.4s
+[target_selfcheck] shard 19/25 2048 positions 0.4s
+[target_selfcheck] shard 20/25 2048 positions 0.4s
+[target_selfcheck] shard 21/25 1841 positions 0.4s
+[target_selfcheck] shard 22/25 2048 positions 0.4s
+[target_selfcheck] shard 23/25 2048 positions 0.4s
+[target_selfcheck] shard 24/25 1853 positions 0.4s
+[target_selfcheck] shard 25/25 1924 positions 0.4s
+positions: 48958
+divergence_rate: 0.06783365333551207
+amber_v0_bits_per_token: 0.4737938641284366
+ideal_regimeA_bits_per_token: 0.5341914656525542
+ac_under_draft_bits_per_token: 0.47229623794555664
+zstd19_bits_per_token: 3.6181216552963766
+lzma_bits_per_token: 3.6380571101760695
+zlib9_bits_per_token: 4.316843008292823
+raw_bits_per_token: 16.968666793195208
+target_selfconsistency: {'rate': 0.9966501899587401, 'mismatches': 164, 'positions': 48958}
+divergence_by_family: {'instruct': 0.05790153051816338, 'story': 0.07045781925220768, 'summarize': 0.07499102978112666}
+divergence_per_prompt_spread: {'p10': 0.01171875, 'p50': 0.05078125, 'p90': 0.17445885894495414}
+near_tie_mass: {0.142: 0.03494832305241227, 0.465: 0.07518689488949712, 0.93: 0.14132521753339597}
+K2_kill_amber_loses_to_zstd: False
+[saved] results/p1_divergence.json
+exit 0

@@ -1,0 +1,315 @@
+{
+ "registered": "OQ-17 POST-HOC TWIN-INERTNESS DIAGNOSTIC (docs/BLUEPRINT.md, 2026-09-06, registered before any registered twin cell ran; NON-CRITERION)",
+ "space": "L1_olmoe_k16",
+ "harvest": "results/real/harvest_moe_r",
+ "n_cells": 3,
+ "partial": false,
+ "resumed_cells": 0,
+ "cells": [
+  {
+   "cell": "L1_olmoe_k16|off2|fplus_r|mlp256|s0",
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 0,
+   "shuffled": false,
+   "test_acc": 0.6078811153781933,
+   "val_acc_best": 0.6052704099207716,
+   "best_epoch": 0,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.586508599098347,
+   "runtime_s": 178.3
+  },
+  {
+   "cell": "L1_olmoe_k16|off2|fplus_r|mlp256|s1",
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 1,
+   "shuffled": false,
+   "test_acc": 0.6127233260978461,
+   "val_acc_best": 0.6086806751636238,
+   "best_epoch": 1,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.586508599098347,
+   "runtime_s": 175.9
+  },
+  {
+   "cell": "L1_olmoe_k16|off2|fplus_r|mlp256|s2",
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "features": "fplus_r",
+   "capacity": "mlp256",
+   "seed": 2,
+   "shuffled": false,
+   "test_acc": 0.6080146936049424,
+   "val_acc_best": 0.6040647605924905,
+   "best_epoch": 1,
+   "n_train": 148276,
+   "n_val": 29030,
+   "n_test": 29945,
+   "majority_rate_test": 0.586508599098347,
+   "runtime_s": 174.1
+  }
+ ],
+ "committed_cells_used": [
+  "L1_olmoe_k16|off2|fplus_b|mlp256|s0",
+  "L1_olmoe_k16|off2|fplus_b|mlp256|s1",
+  "L1_olmoe_k16|off2|fplus_b|mlp256|s2",
+  "L1_olmoe_k16|off2|fplus_n|mlp256|s0",
+  "L1_olmoe_k16|off2|fplus_n|mlp256|s1",
+  "L1_olmoe_k16|off2|fplus_n|mlp256|s2",
+  "L1_olmoe_k16|off2|fplus|mlp256|s0",
+  "L1_olmoe_k16|off2|fplus|mlp256|s1",
+  "L1_olmoe_k16|off2|fplus|mlp256|s2"
+ ],
+ "reproduced_registered_gate_rows": true,
+ "registered_gate_rows": {
+  "D": {
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "capacity": "mlp256",
+   "pair": "fplus_b-fplus_n",
+   "margin": 8.905215116602661e-05,
+   "ci95": [
+    -0.0019025921290838897,
+    0.002097901077380469
+   ],
+   "per_seed_margin": {
+    "0": 0.0010018367006177993,
+    "1": 0.0001669727834362999,
+    "2": -0.0009016530305560194
+   },
+   "n_seeds": 3,
+   "n_clusters": 30
+  },
+  "Mt": {
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "capacity": "mlp256",
+   "pair": "fplus_b-fplus",
+   "margin": 0.0013023877108031391,
+   "ci95": [
+    -0.0008284249663889894,
+    0.0035489043014602867
+   ],
+   "per_seed_margin": {
+    "0": 0.0026047754216062782,
+    "1": 0.0023376189681081983,
+    "2": -0.0010352312573050594
+   },
+   "n_seeds": 3,
+   "n_clusters": 30
+  },
+  "Mn": {
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "capacity": "mlp256",
+   "pair": "fplus_n-fplus",
+   "margin": 0.0012133355596371125,
+   "ci95": [
+    -0.0003640886969533184,
+    0.0025645741041264267
+   ],
+   "per_seed_margin": {
+    "0": 0.001602938720988479,
+    "1": 0.0021706461846718985,
+    "2": -0.0001335782267490399
+   },
+   "n_seeds": 3,
+   "n_clusters": 30
+  }
+ },
+ "d_r_fplus_b_vs_fplus_r": [
+  {
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "capacity": "mlp256",
+   "pair": "fplus_b-fplus_r",
+   "margin": 0.0007569432849112262,
+   "ci95": [
+    -0.0014291405440347038,
+    0.0029063003751158916
+   ],
+   "per_seed_margin": {
+    "0": 0.0019368842878610786,
+    "1": 0.0009350475872432793,
+    "2": -0.0006011020203706796
+   },
+   "n_seeds": 3,
+   "n_clusters": 30
+  }
+ ],
+ "mn_r_fplus_r_vs_fplus": [
+  {
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "capacity": "mlp256",
+   "pair": "fplus_r-fplus",
+   "margin": 0.000545444425891913,
+   "ci95": [
+    -0.0012253989960299614,
+    0.0022364034502655302
+   ],
+   "per_seed_margin": {
+    "0": 0.0006678911337451996,
+    "1": 0.001402571380864919,
+    "2": -0.00043412923693437967
+   },
+   "n_seeds": 3,
+   "n_clusters": 30
+  }
+ ],
+ "t_fplus_n_vs_fplus_r": [
+  {
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "capacity": "mlp256",
+   "pair": "fplus_n-fplus_r",
+   "margin": 0.0006678911337451996,
+   "ci95": [
+    -0.0005262924693608944,
+    0.0017990887926785154
+   ],
+   "per_seed_margin": {
+    "0": 0.0009350475872432793,
+    "1": 0.0007680748038069794,
+    "2": 0.0003005510101853398
+   },
+   "n_seeds": 3,
+   "n_clusters": 30
+  }
+ ],
+ "gate": {
+  "space": "L1_olmoe_k16",
+  "offset": 2,
+  "capacity": "mlp256",
+  "d_r_row": {
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "capacity": "mlp256",
+   "pair": "fplus_b-fplus_r",
+   "margin": 0.0007569432849112262,
+   "ci95": [
+    -0.0014291405440347038,
+    0.0029063003751158916
+   ],
+   "per_seed_margin": {
+    "0": 0.0019368842878610786,
+    "1": 0.0009350475872432793,
+    "2": -0.0006011020203706796
+   },
+   "n_seeds": 3,
+   "n_clusters": 30
+  },
+  "d_r_fires_raw": false,
+  "d_r_fires_clean": false
+ },
+ "per_cluster_corr": {
+  "mt_vs_mn": {
+   "pearson": 0.4499731482180149,
+   "n_clusters": 30,
+   "pairs": [
+    "fplus_b-fplus",
+    "fplus_n-fplus"
+   ]
+  },
+  "mt_vs_mn_r": {
+   "pearson": 0.4061584042115163,
+   "n_clusters": 30,
+   "pairs": [
+    "fplus_b-fplus",
+    "fplus_r-fplus"
+   ]
+  }
+ },
+ "twin": {
+  "arm": "fplus_r",
+  "seed_base": 1000,
+  "construction": "slots of row k of pi_seed(prompt) at anchor mod that row's length, where row k is the row's generation index within its prompt and pi_seed is a within-split derangement of PROMPT ids from default_rng(seed_base + train seed)",
+  "perm_sha256": {
+   "0": "e24dbaeb05b5bf3b8673fdbe4e6766940d57837f3c776a638444b1167be16e0a",
+   "1": "5321687fd3dba9e906e5e57b664e456718b568c07db3383780047deb130b231a",
+   "2": "7ca660c8e5f72756b90292cb3f81511ffc7094fdafa37c5aca2d96e305e37d43"
+  },
+  "geometry_at_gate_offset": {
+   "0": {
+    "n_anchors": 207251,
+    "corrected_twin_wrapped_frac": 0.03229899976357171,
+    "shift_twin_future_frac": 0.9351510969790254,
+    "shift": 17,
+    "corrected_twin_same_prompt_frac": 0.0
+   },
+   "1": {
+    "n_anchors": 207251,
+    "corrected_twin_wrapped_frac": 0.03149321354299859,
+    "shift_twin_future_frac": 0.9351510969790254,
+    "shift": 17,
+    "corrected_twin_same_prompt_frac": 0.0
+   },
+   "2": {
+    "n_anchors": 207251,
+    "corrected_twin_wrapped_frac": 0.030282121678544372,
+    "shift_twin_future_frac": 0.9351510969790254,
+    "shift": 17,
+    "corrected_twin_same_prompt_frac": 0.0
+   }
+  }
+ },
+ "standardization": {
+  "moments_sha256": "6fe8c00b4a3a47185c9a3f8e577c6636a2aaefaca5cc1a6a1a7942346a9786cc",
+  "matches_registered": true
+ },
+ "provenance": {
+  "git_commit": "675a8f6b7b92d1599e2d5319487a8336a6029c4a",
+  "git_status_tracked": [],
+  "instrument_sha256": "459c54de816a5e1640b249ff9b2a9d362af2bf690cefe0dbe00ca56c099ce0a8",
+  "args": {
+   "harvest": "results/real/harvest_moe_r",
+   "fidelity": "results/real/harvest_fidelity_rider_olmoe_r.json",
+   "fullfree_payload": "results/real/fullfree_s3_r.json",
+   "out": "results/real/fullfree_s3_r_twin.json",
+   "device": "cuda",
+   "only": null,
+   "resume": false,
+   "space_tag": "olmoe",
+   "n_slots": 64,
+   "buckets16": "results/real/buckets_olmoe_k16.json",
+   "glue16": "results/real/glue_olmoe_k16.json",
+   "buckets512": "results/real/buckets_olmoe_k512.json",
+   "glue512": "results/real/glue_olmoe_k512.json",
+   "groups": "results/real/concept_groups_olmoe_v1.json",
+   "conclude_from": null
+  },
+  "harvest_npz_sha256": {
+   "moe_s10.npz": "ec58591ab1a997448f106c804b1037a98cb5b0a77a2e17dc9041e9da4e2b98fb",
+   "moe_s11.npz": "8746a53521d8f74c711faac5b65debed56ab27cc27c2c26c2548d7197a1feac4",
+   "moe_s8.npz": "b68f213760ec8b0044f00bd2d78ba996aaf712c28ccaad9ef264ce57acc3d59a",
+   "moe_s9.npz": "f75296927539395583d4603501ca2b3295d397c477bb577f34e31cebbd2266e2"
+  },
+  "fullfree_payload_sha256": "d422819e531b60ccb8502859c11f0fbe571014c2b8fe55e26508732f9d0311ae",
+  "fullfree_state_sha256": "00094cc4c082933890fc7fe1c16a4aa52581787a5597de5acc0b7fa28a808782",
+  "fullfree_git_commit": "1d1a7f81219bdeb35cd0f2b3579489409a3625f1-dirty",
+  "arm_dims_total": {
+   "fplus_r": 5777,
+   "fplus_b": 5777
+  },
+  "feature_dims_recorded": {
+   "fplus_r": [
+    2048,
+    2048,
+    1024
+   ]
+  },
+  "torch_version": "2.6.0+cu124",
+  "device": "cuda",
+  "determinism_note": "CUDA probe training uses atomics; per-cell results are evidenced by the recorded state file, not rerun-exactness"
+ },
+ "runtime_s": 528.5
+}

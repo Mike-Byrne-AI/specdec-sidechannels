@@ -1,0 +1,21 @@
+{
+ "arm": 4,
+ "extend": 0.32316824346780776,
+ "extend_level": 0.05,
+ "kind": "probe",
+ "provenance": {
+  "b_ref_original": 1.2770393536617148,
+  "materialized_grids_sha256": "5fdabc6679c2d18abe8b40e459771a27c9e482755590f37727f702eb7925646a",
+  "search_payload": "k3_threshold_search_arm4.json",
+  "search_payload_sha256": "03e872125958a8940d7b14652a733d9b000c416fccb4971a4b86357620480d29",
+  "supersedes": "k3_thresholds_arm4.json",
+  "void_cap": 1.248526908471913,
+  "void_cap_rule": "min committed eval budget (BLUEPRINT void execution 2026-09-02)"
+ },
+ "selection_label": "VOID_REFREEZE",
+ "stop": [
+  0.6072001665830612,
+  0.5738569110631943
+ ],
+ "stop_level": 0.35
+}

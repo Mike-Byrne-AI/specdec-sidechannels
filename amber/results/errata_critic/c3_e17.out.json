@@ -1,0 +1,35 @@
+{
+ "compare_value": {
+  "n": 113,
+  "max_abs_diff": 0.0,
+  "nonnumeric_unequal": [],
+  "only_in_payload": [],
+  "only_in_mine": []
+ },
+ "status_mine": {
+  "status": "CORRECTED",
+  "status_by_count": "CONFIRMED",
+  "status_by_claim_site": {
+   "F-5 (FINDINGS.md:40)": "CORRECTED",
+   "F-7 (FINDINGS.md:54)": "CORRECTED"
+  }
+ },
+ "status_payload": {
+  "status": "CORRECTED",
+  "status_by_count": "CONFIRMED",
+  "status_by_claim_site": {
+   "F-5 (FINDINGS.md:40)": "CORRECTED",
+   "F-7 (FINDINGS.md:54)": "CORRECTED"
+  }
+ },
+ "code_semantics_read": {
+  "census_row_passes_2tau": true,
+  "core_counts_gt_tau": true,
+  "row_tau_field_overridden_by_census_dict": true
+ },
+ "prediction": {
+  "counts_all_match": true,
+  "n_labels_2tau": 1,
+  "n_labels_4tau": 6
+ }
+}

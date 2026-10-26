@@ -1,0 +1,371 @@
+CLAUDE.md:+  (eight on 2026-10-02, the stratified coverage read's the eighth) or any tools/ module such an instrument imports
+CLAUDE.md:+  (run_fullfree.py, run_posthoc_topic.py, run_probes.py), eleven files in all.
+CLAUDE.md:+  `ruff` excludes those eleven outright (`force-exclude`) and is otherwise
+CLAUDE.md:+  names; `tests/test_harness_doc_claims.py` derives the eleven from the
+FINDINGS.md:+- status (2026-10-02; STRATIFIED COVERAGE READ, the post-hoc diagnostic registered as the dated amendment "OQ-9 STAGE-1 STRATIFIED COVERAGE READ REGISTRATION" in docs/BLUEPRINT.md before any readout of it ran, both runs from the clean freeze commit fea2431; evidence results/real/prefetch_strat_s3.json (primary) and results/real/prefetch_strat_s3_r.json (replication), each with .meta.json and .state.jsonl; instrument tools/run_prefetch_strat.py, which imports the frozen twin tools/run_prefetch_bigram.py and refuses a modified one; tests/test_prefetch_strat.py, tests/test_prefetch_strat_landing.py): LABEL FALLBACK-LOCATED / PT-SURVIVES on the primary; the replication AGREES on both questions (a SEED replication on the same prompts; the primary's label is the label). PRECONDITION REPRODUCE EXACT on both: the stratified rows summed over the six coverage strata reproduce every one of the twin's 12,960 committed state rows to the integer, and the pooled D_eq equals the twin's committed D_eq (+0.0609 [+0.0514, +0.0712] / +0.0659 [+0.0547, +0.0788]), CI included. Both gates STRADDLE the +0.05 floor on both harvests, so the pinned straddle sentences apply and neither branch is claimed. On the twin's bigram positions at B = 16, j = 1, PRIMARY / REPLICATION — Q1 (COVERAGE): on the COVERED positions (both token keys seen in train; 0.9013 / 0.8582 of the test positions) D_eq^COV +0.0463 [+0.0398, +0.0541] / +0.0481 [+0.0411, +0.0564] (NOT-SHOWN / NOT-SHOWN: CI-positive below the floor, the CI95 containing it); on the FALLBACK positions (at least one key unseen; 0.0987 / 0.1418) D_eq^FB +0.1940 [+0.1596, +0.2280] / +0.1741 [+0.1390, +0.2154] (SIGNAL / SIGNAL); per unseen stratum, current key unseen (0.0436 / 0.0636) +0.1861 [+0.1662, +0.2033] / +0.1736 [+0.1533, +0.1936], previous key unseen (0.0438 / 0.0641) +0.1209 [+0.1071, +0.1340] / +0.1113 [+0.0979, +0.1258], both unseen (0.0113 / 0.0141) +0.5068 [+0.4069, +0.5300] / +0.4613 [+0.3354, +0.5115]; PT GAIN on the unseen-key positions +0.0805 [+0.0657, +0.0959] / +0.0805 [+0.0572, +0.1106]. Q2 (p_t), with the forward's stored output-distribution summaries (mass16 ++ mass64 ++ entropy / ln V, 81 coordinates) in BOTH arms, on ALL positions: D_eq^PT = history_tok_pt - free_bigram_pt +0.0532 [+0.0455, +0.0619] / +0.0565 [+0.0480, +0.0664] (SIGNAL / SIGNAL, the CI95 containing the floor), D_add^PT = history_bigram_pt - free_bigram_pt +0.0583 [+0.0506, +0.0669] / +0.0609 [+0.0525, +0.0709] (SIGNAL / SIGNAL), the dilution anchor history_bigram_pt - history_tok_pt +0.0051 [+0.0048, +0.0054] / +0.0044 [+0.0041, +0.0047]; PT GAIN on ALL +0.0089 [+0.0066, +0.0118] / +0.0121 [+0.0077, +0.0183] (NOT-SHOWN / NOT-SHOWN), on COVERED +0.0011 [+0.0008, +0.0014] / +0.0008 [+0.0004, +0.0011], on the current-key-unseen positions +0.1118 [+0.0956, +0.1276] / +0.1110 [+0.0930, +0.1277]; the asymmetric replacement read D_pt = history_tok - free_bigram_pt +0.0520 [+0.0442, +0.0608] / +0.0539 [+0.0455, +0.0636] (reported); pt_only 0.6032 / 0.6066, free_bigram_pt 0.8623 / 0.8570, history_tok_pt 0.9155 / 0.9135, history_bigram_pt 0.9205 / 0.9179 against history_tok 0.9143 / 0.9109 and FREE_BIGRAM 0.8534 / 0.8449. Q2 BY SCOPE (reported): on COVERED D_eq^PT +0.0455 [+0.0390, +0.0532] / +0.0475 [+0.0407, +0.0557] (NOT-SHOWN / NOT-SHOWN, the floor inside the CI) and D_add^PT +0.0512 [+0.0447, +0.0589] / +0.0525 [+0.0457, +0.0608]; on FALLBACK D_eq^PT +0.1231 [+0.1058, +0.1382] / +0.1110 [+0.0950, +0.1261] and D_add^PT +0.1229 [+0.1060, +0.1371] / +0.1119 [+0.0960, +0.1271] — on COVERED D_eq^PT reads NOT-SHOWN / NOT-SHOWN and D_add^PT SIGNAL / SIGNAL by the rule, both with the floor inside the CI (the twin's D_add on covered likewise SIGNAL / SIGNAL, +0.0520 / +0.0531); the equal-dims margin is indicated on the unseen-key positions, the union's is not; PT-SURVIVES inherits the coverage caveat and is never read as 'the address block beats free p_t information' on the covered positions. IN THE PINNED WORDS (the straddle variants, both harvests): Q1 — "the address block's equal-dims margin on the positions whose token keys the train tables saw reads NOT-SHOWN by the rule with a CI95 that straddles the +0.05 floor, while a material margin is shown on the positions with at least one unseen key (the current-token table blind in both arms, the free previous-token table blind, or both): the location is indicated, not settled, at this power, at this reader (B = 16, j = 1)"; Q2 — "with the forward's own output-distribution summaries (mass16, mass64, entropy) in both arms, both Q2 readings are SIGNAL by the rule while at least one CI95 straddles the +0.05 floor: the twin's verdict with p_t is not settled at this power, at this reader (B = 16, j = 1)". So the coverage caveat is neither retired nor confirmed at this power: its location is INDICATED on the unseen-key positions, where at least one free table is blind and the address block's margin is large, while on the covered positions the equal-dims margin sits just below the floor with the floor inside its CI; and with p_t's summaries in the baseline on both sides the twin's two readings both read SIGNAL, the equal-dims one with the floor inside its CI, so the twin's verdict with p_t is not settled at this power either. SAID IN WORDS, as pinned: the pt_only arm's lambda sits at the grid's lower edge (0.1) on both harvests (a reported-only arm; its 81-coordinate design is the smallest and its hit rate is far below free_tok); the covered split by the smaller key's train occurrences — one occurrence (0.0529 / 0.0665 of positions) D_eq +0.0658 [+0.0573, +0.0750] / +0.0683 [+0.0579, +0.0808] (SIGNAL / SIGNAL), two to four (0.0976 / 0.1346) +0.0552 [+0.0472, +0.0645] / +0.0503 [+0.0417, +0.0610] (SIGNAL / SIGNAL), five or more (0.7508 / 0.6571) +0.0438 [+0.0374, +0.0514] / +0.0456 [+0.0390, +0.0536] (NOT-SHOWN / NOT-SHOWN) — reported readouts whose readings differ from the covered union's: the union's reading is the well-covered keys', and the sparse-key strata read at or above the floor; the union stands as the gate; the both-unseen stratum (0.0113 / 0.0141; 27 / 29 of the 30 prompts) draws 0.3482 / 0.5379 of its positions from one test prompt (prompt 13), so its +0.5-sized margin is one prompt's as much as a stratum's; the reported budgets DISAGREE with the label budget's readings and are said so: at B = 8 D_eq^COV +0.0642 [+0.0585, +0.0708] / +0.0672 [+0.0612, +0.0747] (SIGNAL / SIGNAL, no straddle), where Q1 would read COVERED-MATERIAL, and at B = 32 D_eq^COV +0.0136 [+0.0109, +0.0169] / +0.0145 [+0.0115, +0.0182] with D_eq^PT +0.0184 [+0.0147, +0.0225] / +0.0200 [+0.0159, +0.0251] and D_add^PT +0.0197 [+0.0160, +0.0239] / +0.0213 [+0.0171, +0.0264] all CI-positive below the floor, where Q2 would read PT-ABSORBS — on positions where the twin's own pooled margin was already CI-positive below the floor (+0.0261 / +0.0287; no material margin is shown there); the stage-2 strike is pinned to the label budget, which reads PT-SURVIVES, so no stage-2 sentence follows; where the margin sits is budget-dependent, and 'indicated, not settled' is the honest wording. D_eq^PT and D_pt agree on every scope's reading on both harvests; both match D_eq's per-scope readings except on the replication's two-to-four stratum, where D_eq reads SIGNAL (+0.0503) and D_eq^PT / D_pt read NOT-SHOWN (+0.0489 / +0.0484). 'The replication agrees' is seed robustness only: both harvests read the same 30 test prompts, and prompt 13 dominates both-unseen on both. NON-CRITERION: F-26's labels and the twin's SURVIVES stand as computed; F-26's sentence 'nothing in this landing reads ADDRESS-BEYOND-TOKEN as context information in the address stream beyond free information or as support for the sideband premise' STANDS; no kill status or regime moves; no wall-clock, bytes or latency sentence (D-9; K-5 / K-6 stay UNTESTED). NEXT RUNG (unrun, unregistered): a free baseline whose encoding handles unseen and sparse keys (smoothed, hashed or embedding tables, the R2 of the plan of record), so the margin is read against a free arm that is never at the marginal and never a single train sample; and F-24's full-free block ((a) ++ TOK ++ z-scored h_a, stored in these harvests, F-23) as the stronger free arm for the p_t question — PT-SURVIVES says nothing about it. Runtimes 175.7 / 91.9 s of elapsed time; 110,448 / 111,696 state rows; critic recompute: see the block's OUTCOME.)
+OPEN_QUESTIONS.md:+(2026-10-02, STRATIFIED COVERAGE READ of the twin's margin, both runs
+OPEN_QUESTIONS.md:+from the clean freeze commit fea2431; label FALLBACK-LOCATED /
+OPEN_QUESTIONS.md:+PT-SURVIVES on both harvests, REPRODUCE EXACT, both gates straddling the
+OPEN_QUESTIONS.md:+floor: on the covered positions (0.9013 / 0.8582) D_eq +0.0463 /
+OPEN_QUESTIONS.md:++0.0481, CI-positive below the floor with the floor inside the CI; on
+OPEN_QUESTIONS.md:+the unseen-key positions (0.0987 / 0.1418) +0.1940 / +0.1741 (SIGNAL);
+OPEN_QUESTIONS.md:+with p_t's stored summaries in both arms D_eq^PT +0.0532 / +0.0565 and
+OPEN_QUESTIONS.md:+D_add^PT +0.0583 / +0.0609 (SIGNAL, the equal-dims CI containing the
+OPEN_QUESTIONS.md:+floor); the caveat is neither retired nor confirmed at this power — its
+OPEN_QUESTIONS.md:+location is indicated, not settled; the sparse covered keys (one to four
+OPEN_QUESTIONS.md:+train occurrences) read at or above the floor while the well-covered
+OPEN_QUESTIONS.md:+keys do not; next rung R2, a free baseline whose encoding handles unseen
+OPEN_QUESTIONS.md:+and sparse keys; see F-26's second dated status line and the block's
+OPEN_QUESTIONS.md:+OUTCOME.)
+OPEN_QUESTIONS.md:+
+README.md:+  (2026-10-02, STRATIFIED COVERAGE READ of the twin's margin, both runs from
+README.md:+  the clean freeze commit fea2431; label FALLBACK-LOCATED / PT-SURVIVES on
+README.md:+  both harvests, REPRODUCE EXACT, both gates straddling the floor: on the
+README.md:+  covered positions (0.9013 / 0.8582) D_eq +0.0463 / +0.0481, CI-positive
+README.md:+  below the floor with the floor inside the CI; on the unseen-key positions
+README.md:+  (0.0987 / 0.1418) +0.1940 / +0.1741 (SIGNAL); with p_t's stored summaries
+README.md:+  in both arms D_eq^PT +0.0532 / +0.0565 and D_add^PT +0.0583 / +0.0609
+README.md:+  (SIGNAL, the equal-dims CI containing the floor); the caveat is neither
+README.md:+  retired nor confirmed at this power — its location is indicated, not
+README.md:+  settled; the sparse covered keys (one to four train occurrences) read at
+README.md:+  or above the floor while the well-covered keys do not; next rung R2, a
+README.md:+  free baseline whose encoding handles unseen and sparse keys; see F-26's
+README.md:+  second dated status line and the block's OUTCOME.)
+docs/BLUEPRINT.md:+  keys. (2026-10-02: that rung RAN as the dated amendment block below; its
+docs/BLUEPRINT.md:+  OUTCOME and F-26's second dated status line carry the result —
+docs/BLUEPRINT.md:+  FALLBACK-LOCATED / PT-SURVIVES on both harvests with both gates straddling
+docs/BLUEPRINT.md:+  the floor, so this caveat is neither retired nor confirmed at this power:
+docs/BLUEPRINT.md:+  its location is indicated, not settled.)
+docs/BLUEPRINT.md:+  REPLICATION: the same diagnostic on the replication:
+docs/BLUEPRINT.md:+- OUTCOME (2026-10-02; written after both registered runs landed and were
+docs/BLUEPRINT.md:+  read through --conclude-from; the critic's recompute round preceded every
+docs/BLUEPRINT.md:+  landing edit). RUNS: one chained CPU job from the clean tree at fea2431
+docs/BLUEPRINT.md:+  (git_status_tracked empty on both payloads; instrument sha
+docs/BLUEPRINT.md:+  39a6cd587492..., the same on both and the sha the third pre-freeze smoke
+docs/BLUEPRINT.md:+  attested; the frozen twin asserted at 10599fa98c27 and its parent at
+docs/BLUEPRINT.md:+  8529532d4d78; the committed twin payloads re-read by sha, 73a6df94c4cc /
+docs/BLUEPRINT.md:+  0f4d5d70a4db, their state files 972b0a8ba693 / e1b58c38dd7b), the primary
+docs/BLUEPRINT.md:+  results/real/prefetch_strat_s3.json (started 18:46:11 local, 175.7 s of
+docs/BLUEPRINT.md:+  elapsed time, 110,448 state rows) then the replication
+docs/BLUEPRINT.md:+  prefetch_strat_s3_r.json (18:49:10, 91.9 s, 111,696 rows); --conclude-from
+docs/BLUEPRINT.md:+  reproduced both; numpy 2.3.5, python 3.11.9, BLAS scipy-openblas 0.3.30
+docs/BLUEPRINT.md:+  with no thread caps set. PRECONDITION: REPRODUCE EXACT on both — 12,960 of
+docs/BLUEPRINT.md:+  12,960 twin rows compared, 0 missing, 0 extra, 0 needed and 0 hits
+docs/BLUEPRINT.md:+  mismatches on each; IDENTITY held (the ALL scope's D_eq +0.0609 [+0.0514,
+docs/BLUEPRINT.md:+  +0.0712] / +0.0659 [+0.0547, +0.0788] equals the twin's committed D_eq, CI
+docs/BLUEPRINT.md:+  included, |diff| 0.0 on delta, lo and hi on both; the point decomposition
+docs/BLUEPRINT.md:+  pooled = s_cov x D_eq^COV + s_fb x D_eq^FB holds to about 1e-17 on both
+docs/BLUEPRINT.md:+  (points only; CIs do not decompose)). LABEL (primary): FALLBACK-LOCATED /
+docs/BLUEPRINT.md:+  PT-SURVIVES; the replication AGREES on both questions (a SEED replication
+docs/BLUEPRINT.md:+  on the same prompts; the primary's label is the label). STRADDLES:
+docs/BLUEPRINT.md:+  D_eq^COV and D_eq^PT straddle the floor on both harvests; D_eq^FB and
+docs/BLUEPRINT.md:+  D_add^PT do not; the covered reading is not NEGATIVE; so both questions
+docs/BLUEPRINT.md:+  take the pinned straddle sentence and neither branch is claimed. STRATA
+docs/BLUEPRINT.md:+  (test positions; primary / replication; every stratum populated on all 30
+docs/BLUEPRINT.md:+  prompts except both-unseen on 27 / 29): covered 0.9013 / 0.8582 (53,434 /
+docs/BLUEPRINT.md:+  25,596 positions: one train occurrence 0.0529 / 0.0665, two to four 0.0976
+docs/BLUEPRINT.md:+  / 0.1346, five or more 0.7508 / 0.6571); fallback 0.0987 / 0.1418 (current
+docs/BLUEPRINT.md:+  key unseen 0.0436 / 0.0636, previous key unseen 0.0438 / 0.0641, both
+docs/BLUEPRINT.md:+  0.0113 / 0.0141); the twin's committed token-only coverage reproduced
+docs/BLUEPRINT.md:+  (0.0436 / 0.0636 + 0.0113 / 0.0141 = the current-key-unseen shares 0.0549
+docs/BLUEPRINT.md:+  / 0.0777 within rounding). Q1 at B = 16 (primary / replication): D_eq^COV
+docs/BLUEPRINT.md:+  +0.0463 [+0.0398, +0.0541] / +0.0481 [+0.0411, +0.0564] (NOT-SHOWN /
+docs/BLUEPRINT.md:+  NOT-SHOWN; CI-positive below the floor with the floor inside the CI95 —
+docs/BLUEPRINT.md:+  FLOOR STRADDLE); D_eq^FB +0.1940 [+0.1596, +0.2280] / +0.1741 [+0.1390,
+docs/BLUEPRINT.md:+  +0.2154] (SIGNAL / SIGNAL); per stratum: covered-1 +0.0658 [+0.0573,
+docs/BLUEPRINT.md:+  +0.0750] / +0.0683 [+0.0579, +0.0808] (SIGNAL / SIGNAL), covered-2-4
+docs/BLUEPRINT.md:+  +0.0552 [+0.0472, +0.0645] / +0.0503 [+0.0417, +0.0610] (SIGNAL / SIGNAL),
+docs/BLUEPRINT.md:+  covered-5+ +0.0438 [+0.0374, +0.0514] / +0.0456 [+0.0390, +0.0536]
+docs/BLUEPRINT.md:+  (NOT-SHOWN / NOT-SHOWN), cur-unseen +0.1861 [+0.1662, +0.2033] / +0.1736
+docs/BLUEPRINT.md:+  [+0.1533, +0.1936], prev-unseen +0.1209 [+0.1071, +0.1340] / +0.1113
+docs/BLUEPRINT.md:+  [+0.0979, +0.1258], both-unseen +0.5068 [+0.4069, +0.5300] / +0.4613
+docs/BLUEPRINT.md:+  [+0.3354, +0.5115]; ADDRESS-BEYOND-TOKEN on covered +0.0861 [+0.0788,
+docs/BLUEPRINT.md:+  +0.0949] / +0.0866 [+0.0791, +0.0958] and on fallback +0.2606 [+0.2266,
+docs/BLUEPRINT.md:+  +0.2934] / +0.2332 [+0.2004, +0.2698]; BIGRAM GAIN on covered +0.0397
+docs/BLUEPRINT.md:+  [+0.0384, +0.0411] / +0.0385 [+0.0372, +0.0398] and on fallback +0.0666
+docs/BLUEPRINT.md:+  [+0.0602, +0.0729] / +0.0591 [+0.0523, +0.0652]; D_add on covered +0.0520
+docs/BLUEPRINT.md:+  [+0.0455, +0.0598] / +0.0531 [+0.0462, +0.0616] (SIGNAL / SIGNAL, the
+docs/BLUEPRINT.md:+  floor inside the CI); PT GAIN on fallback +0.0805 [+0.0657, +0.0959] /
+docs/BLUEPRINT.md:+  +0.0805 [+0.0572, +0.1106]. At B = 8 D_eq^COV +0.0642 [+0.0585, +0.0708] /
+docs/BLUEPRINT.md:+  +0.0672 [+0.0612, +0.0747] (SIGNAL / SIGNAL) and D_eq^FB +0.1784 [+0.1558,
+docs/BLUEPRINT.md:+  +0.1999] / +0.1697 [+0.1412, +0.2026]; at B = 32 D_eq^COV +0.0136
+docs/BLUEPRINT.md:+  [+0.0109, +0.0169] / +0.0145 [+0.0115, +0.0182] (CI-positive below the
+docs/BLUEPRINT.md:+  floor) and D_eq^FB +0.1407 [+0.0970, +0.1874] / +0.1147 [+0.0796,
+docs/BLUEPRINT.md:+  +0.1629]. Q2 at B = 16 on ALL (primary / replication): D_eq^PT +0.0532
+docs/BLUEPRINT.md:+  [+0.0455, +0.0619] / +0.0565 [+0.0480, +0.0664] (SIGNAL / SIGNAL; the CI95
+docs/BLUEPRINT.md:+  contains the floor — FLOOR STRADDLE); D_add^PT +0.0583 [+0.0506, +0.0669]
+docs/BLUEPRINT.md:+  / +0.0609 [+0.0525, +0.0709] (SIGNAL / SIGNAL; no straddle); the dilution
+docs/BLUEPRINT.md:+  anchor history_bigram_pt - history_tok_pt +0.0051 [+0.0048, +0.0054] /
+docs/BLUEPRINT.md:+  +0.0044 [+0.0041, +0.0047]; D_pt (the asymmetric replacement read,
+docs/BLUEPRINT.md:+  reported) +0.0520 [+0.0442, +0.0608] / +0.0539 [+0.0455, +0.0636] (SIGNAL
+docs/BLUEPRINT.md:+  / SIGNAL); PT GAIN on ALL +0.0089 [+0.0066, +0.0118] / +0.0121 [+0.0077,
+docs/BLUEPRINT.md:+  +0.0183] (NOT-SHOWN / NOT-SHOWN), on COVERED +0.0011 [+0.0008, +0.0014] /
+docs/BLUEPRINT.md:+  +0.0008 [+0.0004, +0.0011], on CUR-UNSEEN +0.1118 [+0.0956, +0.1276] /
+docs/BLUEPRINT.md:+  +0.1110 [+0.0930, +0.1277], on BOTH-UNSEEN +0.2568 [+0.2323, +0.2665] /
+docs/BLUEPRINT.md:+  +0.2982 [+0.2089, +0.3311]; history_tok_pt - history_tok +0.0012 [+0.0004,
+docs/BLUEPRINT.md:+  +0.0019] / +0.0026 [+0.0021, +0.0032]; pt_only - free_tok -0.2078
+docs/BLUEPRINT.md:+  [-0.2164, -0.1983] / -0.1970 [-0.2080, -0.1840]; per scope D_eq^PT:
+docs/BLUEPRINT.md:+  covered +0.0455 [+0.0390, +0.0532] / +0.0475 [+0.0407, +0.0557] (NOT-SHOWN
+docs/BLUEPRINT.md:+  / NOT-SHOWN), fallback +0.1231 [+0.1058, +0.1382] / +0.1110 [+0.0950,
+docs/BLUEPRINT.md:+  +0.1261], cur-unseen +0.1030 [+0.0862, +0.1191] / +0.0986 [+0.0830,
+docs/BLUEPRINT.md:+  +0.1154]; per scope D_add^PT: covered +0.0512 [+0.0447, +0.0589] / +0.0525
+docs/BLUEPRINT.md:+  [+0.0457, +0.0608] (SIGNAL / SIGNAL, the floor inside the CI), fallback
+docs/BLUEPRINT.md:+  +0.1229 [+0.1060, +0.1371] / +0.1119 [+0.0960, +0.1271]; at B = 8 D_eq^PT
+docs/BLUEPRINT.md:+  +0.0696 [+0.0629, +0.0770] / +0.0735 [+0.0662, +0.0822] and D_add^PT
+docs/BLUEPRINT.md:+  +0.0778 [+0.0712, +0.0848] / +0.0804 [+0.0733, +0.0888]; at B = 32 +0.0184
+docs/BLUEPRINT.md:+  [+0.0147, +0.0225] / +0.0200 [+0.0159, +0.0251] and +0.0197 [+0.0160,
+docs/BLUEPRINT.md:+  +0.0239] / +0.0213 [+0.0171, +0.0264] (CI-positive below the floor). ARMS
+docs/BLUEPRINT.md:+  at B = 16 on ALL (primary / replication): history 0.8068 / 0.8060,
+docs/BLUEPRINT.md:+  free_tok 0.8110 / 0.8035, history_tok 0.9143 / 0.9109, free_bigram_b
+docs/BLUEPRINT.md:+  0.8534 / 0.8449, history_bigram_b 0.9194 / 0.9155, pt_only 0.6032 /
+docs/BLUEPRINT.md:+  0.6066, free_bigram_pt 0.8623 / 0.8570, history_tok_pt 0.9155 / 0.9135,
+docs/BLUEPRINT.md:+  history_bigram_pt 0.9205 / 0.9179. LAMBDAS: the twin's nine taken verbatim
+docs/BLUEPRINT.md:+  from the committed twin payloads; the new arms selected on val — pt_only
+docs/BLUEPRINT.md:+  0.1, free_bigram_pt 10.0, history_tok_pt 10.0, history_bigram_pt 10.0 on
+docs/BLUEPRINT.md:+  both harvests; GRID EDGE on pt_only on both (the grid's lower end; a
+docs/BLUEPRINT.md:+  reported-only arm, said in those words), none on the three label-bearing
+docs/BLUEPRINT.md:+  new arms. PINNED SENTENCES (the straddle variants; identical on both
+docs/BLUEPRINT.md:+  harvests): Q1 "the address block's equal-dims margin on the positions
+docs/BLUEPRINT.md:+  whose token keys the train tables saw reads NOT-SHOWN by the rule with a
+docs/BLUEPRINT.md:+  CI95 that straddles the +0.05 floor, while a material margin is shown on
+docs/BLUEPRINT.md:+  the positions with at least one unseen key (the current-token table blind
+docs/BLUEPRINT.md:+  in both arms, the free previous-token table blind, or both): the location
+docs/BLUEPRINT.md:+  is indicated, not settled, at this power, at this reader (B = 16, j = 1)";
+docs/BLUEPRINT.md:+  Q2 "with the forward's own output-distribution summaries (mass16, mass64,
+docs/BLUEPRINT.md:+  entropy) in both arms, both Q2 readings are SIGNAL by the rule while at
+docs/BLUEPRINT.md:+  least one CI95 straddles the +0.05 floor: the twin's verdict with p_t is
+docs/BLUEPRINT.md:+  not settled at this power, at this reader (B = 16, j = 1)". READING,
+docs/BLUEPRINT.md:+  within the pinned words: the caveat is neither retired nor confirmed at
+docs/BLUEPRINT.md:+  this power. Its location is indicated — on the positions with at least one
+docs/BLUEPRINT.md:+  unseen key, where at least one free table is blind, the address block's
+docs/BLUEPRINT.md:+  margin over the equal-dims free bigram block is large and clear (+0.1940 /
+docs/BLUEPRINT.md:+  +0.1741), while on the covered positions it sits just below the floor with
+docs/BLUEPRINT.md:+  the floor inside its CI (+0.0463 / +0.0481). With p_t's summaries on both
+docs/BLUEPRINT.md:+  sides the twin's two readings both read SIGNAL but the equal-dims one
+docs/BLUEPRINT.md:+  holds the floor inside its CI, so the twin's verdict with p_t is not
+docs/BLUEPRINT.md:+  settled at this power; the summaries add +0.0089 / +0.0121 to the free
+docs/BLUEPRINT.md:+  bigram pooled and +0.1118 / +0.1110 where the current key is unseen, and
+docs/BLUEPRINT.md:+  move the address arm by +0.0012 / +0.0026. POST-HOC READING (written after
+docs/BLUEPRINT.md:+  the labels; a reading of REPORTED cells, not a label; changes nothing):
+docs/BLUEPRINT.md:+  the covered union's reading is the well-covered keys' — on keys seen five
+docs/BLUEPRINT.md:+  or more times in train (0.7508 / 0.6571 of positions) D_eq reads +0.0438 /
+docs/BLUEPRINT.md:+  +0.0456, below the floor, while on keys seen once (0.0529 / 0.0665) it
+docs/BLUEPRINT.md:+  reads +0.0658 / +0.0683 and on keys seen two to four times (0.0976 /
+docs/BLUEPRINT.md:+  0.1346) +0.0552 / +0.0503, both at or above the floor on both harvests;
+docs/BLUEPRINT.md:+  the margin over the free tables falls as the number of train samples
+docs/BLUEPRINT.md:+  behind the key rises, the direction prediction (12) pinned, with the
+docs/BLUEPRINT.md:+  one-occurrence and five-plus CIs disjoint on both harvests (unpaired
+docs/BLUEPRINT.md:+  across strata). This is consistent with an undertrained free baseline (a
+docs/BLUEPRINT.md:+  table row estimated from one or a few samples) as well as with address
+docs/BLUEPRINT.md:+  information beyond the tokens; the two are not separated here, and a free
+docs/BLUEPRINT.md:+  encoding that generalises across keys is the rung that could separate them
+docs/BLUEPRINT.md:+  (R2, unregistered). PREDICTIONS SCORED on the primary (the pinned numbers
+docs/BLUEPRINT.md:+  in parentheses are the registration's; each clause is scored on the value
+docs/BLUEPRINT.md:+  quoted above). THE ASSISTANT'S, 20 of 23 clauses HELD — a count with the
+docs/BLUEPRINT.md:+  registration's own caveats: (2) carries no weight and (3) and (4) are one
+docs/BLUEPRINT.md:+  prediction bound by the identity, so the independent clauses are fewer
+docs/BLUEPRINT.md:+  than 23: (1) REPRODUCE 0 mismatches -> HELD; (2) strata shares within 0.01
+docs/BLUEPRINT.md:+  of covered 0.90, cur-unseen 0.044, prev-unseen 0.044, both-unseen 0.011 ->
+docs/BLUEPRINT.md:+  HELD; (3) D_eq^COV +0.035..+0.055, NOT-SHOWN modal, straddle likely ->
+docs/BLUEPRINT.md:+  HELD; (3) 'CI half-width about 0.010' -> FAILED; (4) D_eq^FB SIGNAL
+docs/BLUEPRINT.md:+  +0.12..+0.28 -> HELD; (4) cur-unseen +0.10..+0.25 -> HELD; (4) prev-unseen
+docs/BLUEPRINT.md:+  +0.06..+0.18 -> HELD; (4) both-unseen +0.25..+0.55 -> HELD; (5) Q1 modal
+docs/BLUEPRINT.md:+  FALLBACK-LOCATED -> HELD; (6) pt_only 0.55..0.75 -> HELD; (7) PT GAIN on
+docs/BLUEPRINT.md:+  ALL +0.003..+0.025 NOT-SHOWN -> HELD; (7) PT GAIN on CUR-UNSEEN
+docs/BLUEPRINT.md:+  +0.03..+0.15 -> HELD; (8) D_pt on ALL +0.040..+0.058, SIGNAL with a
+docs/BLUEPRINT.md:+  straddle (reported now) -> HELD; (9) D_eq^PT within 0.004 of D_pt -> HELD;
+docs/BLUEPRINT.md:+  (9) history_tok_pt - history_tok +0.000..+0.010 -> HELD; (10) every
+docs/BLUEPRINT.md:+  new-arm lambda interior -> FAILED; (11) the replication agrees on both
+docs/BLUEPRINT.md:+  labels -> HELD; (c) D_eq^PT +0.045..+0.066 SIGNAL modal, straddle likely
+docs/BLUEPRINT.md:+  -> HELD; (c) D_add^PT +0.050..+0.072 SIGNAL -> HELD; (c) dilution anchor
+docs/BLUEPRINT.md:+  +0.003..+0.008 -> HELD; (c) Q2 modal PT-SURVIVES -> HELD; (12) covered-1 +
+docs/BLUEPRINT.md:+  covered-2-4 under 0.08 of test positions -> FAILED; (12) D_eq on the
+docs/BLUEPRINT.md:+  sparse covered strata above covered-5+'s -> HELD. The FAILED clauses:
+docs/BLUEPRINT.md:+  (3)'s half-width sub-clause — the covered CI half-width is 0.0072 / 0.0077
+docs/BLUEPRINT.md:+  against 'about 0.010' (a soft miss; the reading and the straddle it
+docs/BLUEPRINT.md:+  anticipated HELD); (10) the pt_only lambda sits at the grid's lower edge
+docs/BLUEPRINT.md:+  (0.1) on both harvests, the one grid edge, on a reported-only arm; (12)'s
+docs/BLUEPRINT.md:+  share clause — the sparse covered strata hold 0.1505 of the test positions
+docs/BLUEPRINT.md:+  against the pinned 'under 0.08' (the twin's train singleton-key share,
+docs/BLUEPRINT.md:+  0.0196, was the wrong anchor: it counts train positions, not the test
+docs/BLUEPRINT.md:+  positions whose keys are sparse in train), while (12)'s direction clause
+docs/BLUEPRINT.md:+  HELD. THE CRITIC'S, 16 of 18 clauses HELD: (1) REPRODUCE EXACT on both ->
+docs/BLUEPRINT.md:+  HELD; (2) primary D_eq^COV +0.041..+0.054, NOT-SHOWN with a straddle ->
+docs/BLUEPRINT.md:+  HELD; (3) D_eq^FB +0.13..+0.24 SIGNAL -> HELD; (3) cur-unseen +0.13..+0.23
+docs/BLUEPRINT.md:+  -> HELD; (3) prev-unseen +0.08..+0.16 -> HELD; (3) both-unseen
+docs/BLUEPRINT.md:+  +0.20..+0.50 -> FAILED; (4) Q1 modal (FALLBACK-LOCATED) -> HELD; (5) PT
+docs/BLUEPRINT.md:+  GAIN on ALL +0.002..+0.012 NOT-SHOWN -> HELD; (5) PT GAIN on COVERED
+docs/BLUEPRINT.md:+  -0.002..+0.006 -> HELD; (5) PT GAIN on CUR-UNSEEN +0.03..+0.10 -> FAILED;
+docs/BLUEPRINT.md:+  (6) pt_only 0.52..0.66 -> HELD; (7) D_pt on ALL +0.048..+0.059, straddle,
+docs/BLUEPRINT.md:+  SIGNAL modal -> HELD; (7) Q2 PT-SURVIVES modal -> HELD; (8) history_tok_pt
+docs/BLUEPRINT.md:+  - history_tok +0.000..+0.006 -> HELD; (8) D_add^PT about D_eq^PT + 0.005,
+docs/BLUEPRINT.md:+  SIGNAL -> HELD; (9) replication D_eq^COV +0.042..+0.056 -> HELD; (9)
+docs/BLUEPRINT.md:+  replication D_pt +0.050..+0.062 SIGNAL -> HELD; (9) replication agrees on
+docs/BLUEPRINT.md:+  Q2 -> HELD. The FAILED clauses: both-unseen +0.5068 against '+0.20..+0.50'
+docs/BLUEPRINT.md:+  (the replication's +0.4613 is inside it) and PT GAIN on CUR-UNSEEN +0.1118
+docs/BLUEPRINT.md:+  against '+0.03..+0.10' — both above the pinned range, both on the strata
+docs/BLUEPRINT.md:+  where at least one free table is blind. WOULD-SURPRISE LISTS (primary): the
+docs/BLUEPRINT.md:+  critic's — primary D_eq^COV outside +0.038..+0.058: no; D_eq^FB NOT-SHOWN
+docs/BLUEPRINT.md:+  or above +0.26: no; PT GAIN >= +0.015 on ALL or >= +0.010 on COVERED: no;
+docs/BLUEPRINT.md:+  pt_only below 0.48 or above 0.72: no; D_pt below +0.045 or above +0.065:
+docs/BLUEPRINT.md:+  no; history_tok_pt - history_tok above +0.010: no; any REPRODUCE mismatch:
+docs/BLUEPRINT.md:+  no; a Q2 disagreement between harvests: no; the assistant's — D_eq^COV at
+docs/BLUEPRINT.md:+  or above +0.06 (amended; +0.08 as first written) or NEGATIVE: no; D_eq^FB
+docs/BLUEPRINT.md:+  NOT-SHOWN: no; PT GAIN SIGNAL on ALL: no; pt_only at or above free_tok:
+docs/BLUEPRINT.md:+  no; D_eq^PT or D_add^PT NEGATIVE (amended; D_pt NEGATIVE as first
+docs/BLUEPRINT.md:+  written): no; any REPRODUCE mismatch: no; a label disagreement between the
+docs/BLUEPRINT.md:+  harvests (either question): no. Neither list was hit. CONSEQUENCES
+docs/BLUEPRINT.md:+  EXECUTED: the dated STATUS line under F-26 (FINDINGS.md) quoting D_eq^COV,
+docs/BLUEPRINT.md:+  D_eq^FB, D_eq^PT, D_add^PT, D_pt and PT GAIN with CIs at B = 16, j = 1 and
+docs/BLUEPRINT.md:+  the strata shares, naming both labels, carrying the two straddle sentences
+docs/BLUEPRINT.md:+  and the grid-edge, covered-split and B = 8 / 32 statements in words; dated
+docs/BLUEPRINT.md:+  pointers beside the coverage caveat in the twin's OUTCOME above, under
+docs/BLUEPRINT.md:+  OQ-9 in OPEN_QUESTIONS.md, under P1 in docs/FUTURE_IDEAS.md, on the SP-MoE
+docs/BLUEPRINT.md:+  line of README.md and under K-6 in docs/WHY_THIS_DIES.md (K-6 stays
+docs/BLUEPRINT.md:+  UNTESTED); tests/test_prefetch_strat_landing.py (both payloads reproduce
+docs/BLUEPRINT.md:+  their conclusion incl. REPRODUCE against the committed twin files; the
+docs/BLUEPRINT.md:+  instrument on disk is the one both payloads attest; the twin and its
+docs/BLUEPRINT.md:+  parent still frozen; missing evidence fails, never skips); the new
+docs/BLUEPRINT.md:+  instrument joins the frozen closure (ruff force-exclude; CLAUDE.md's count
+docs/BLUEPRINT.md:+  eight attested of eleven). NOT executed, by the pinned rules: no "RETIRED"
+docs/BLUEPRINT.md:+  and no "LOCATED" claim (both gates straddle), no stage-2 strike
+docs/BLUEPRINT.md:+  (PT-SURVIVES), no disagreement sentence (the replication agrees on both
+docs/BLUEPRINT.md:+  questions). Nothing here moves a mechanical label, a kill status or a
+docs/BLUEPRINT.md:+  finding's regime; no margin is called context; no wall-clock, bytes or
+docs/BLUEPRINT.md:+  latency sentence is licensed (D-9; K-5 / K-6 stay UNTESTED). NEXT RUNG
+docs/BLUEPRINT.md:+  (unrun, unregistered): a free baseline whose encoding handles unseen and
+docs/BLUEPRINT.md:+  sparse keys (smoothed, hashed or embedding tables; the plan of record's
+docs/BLUEPRINT.md:+  R2), read against the same address arms with its own pinned branches; and
+docs/BLUEPRINT.md:+  F-24's full-free block ((a) ++ TOK ++ z-scored h_a, stored, F-23) as the
+docs/BLUEPRINT.md:+  stronger free arm for the p_t question. CHOICES THE REGISTRATION LEFT
+docs/BLUEPRINT.md:+  OPEN, as made here: the straddle sentence replaces the branch's claim but
+docs/BLUEPRINT.md:+  not the branch's next rung, so R2 is named (every Q1 branch names it) and
+docs/BLUEPRINT.md:+  F-24's full-free block is kept as a limitation on PT-SURVIVES rather than
+docs/BLUEPRINT.md:+  a claim; PT GAIN is quoted on ALL and on FALLBACK (and on COVERED and
+docs/BLUEPRINT.md:+  CUR-UNSEEN beside them). POINTERS beyond the five named sites: the caveat
+docs/BLUEPRINT.md:+  is also carried by docs/REPORT.md (the record-boundary line and the
+docs/BLUEPRINT.md:+  economics row), docs/FINDINGS_INDEX.md (the F-26 row, the OQ-9 arc section
+docs/BLUEPRINT.md:+  and the K-6 bullet) and docs/GLOSSARY.md (the OQ-9 row), each given a
+docs/BLUEPRINT.md:+  dated pointer in the same landing; FINDINGS.md's twin status line is
+docs/BLUEPRINT.md:+  followed directly by this read's. SAID IN WORDS, as pinned: the pt_only
+docs/BLUEPRINT.md:+  lambda at the grid's lower edge on both harvests (a reported-only arm);
+docs/BLUEPRINT.md:+  the covered split's readings against the union's; the B = 8 reading (Q1
+docs/BLUEPRINT.md:+  would read COVERED-MATERIAL: D_eq^COV +0.0642 [+0.0585, +0.0708] / +0.0672
+docs/BLUEPRINT.md:+  [+0.0612, +0.0747], no straddle) and the B = 32 readings (Q2 would read
+docs/BLUEPRINT.md:+  PT-ABSORBS: D_eq^PT +0.0184 [+0.0147, +0.0225] / +0.0200 [+0.0159,
+docs/BLUEPRINT.md:+  +0.0251], D_add^PT +0.0197 [+0.0160, +0.0239] / +0.0213 [+0.0171,
+docs/BLUEPRINT.md:+  +0.0264], CI-positive below the floor, on positions where the twin's own
+docs/BLUEPRINT.md:+  pooled D_eq was already CI-positive below it, +0.0261 / +0.0287, so no
+docs/BLUEPRINT.md:+  material margin is shown there either; the stage-2 strike is pinned to the
+docs/BLUEPRINT.md:+  label budget, which reads PT-SURVIVES, so no stage-2 sentence follows);
+docs/BLUEPRINT.md:+  the both-unseen stratum's dependence on one prompt (prompt 13 holds 0.3482
+docs/BLUEPRINT.md:+  / 0.5379 of its positions; the critic's unregistered leave-one-prompt-out,
+docs/BLUEPRINT.md:+  scratch and not evidence, moves that stratum's D_eq to +0.4907 / +0.3672
+docs/BLUEPRINT.md:+  and D_eq^FB to +0.1793 / +0.1530 without prompt 13, and no single-prompt
+docs/BLUEPRINT.md:+  drop takes D_eq^COV above +0.0471 / +0.0489 or D_eq^PT below +0.0509 /
+docs/BLUEPRINT.md:+  +0.0538); 'the replication agrees' is seed robustness on the same 30
+docs/BLUEPRINT.md:+  prompts. Q2 BY SCOPE: on COVERED D_eq^PT +0.0455 [+0.0390, +0.0532] /
+docs/BLUEPRINT.md:+  +0.0475 [+0.0407, +0.0557] reads NOT-SHOWN / NOT-SHOWN and D_add^PT
+docs/BLUEPRINT.md:+  +0.0512 [+0.0447, +0.0589] / +0.0525 [+0.0457, +0.0608] reads SIGNAL /
+docs/BLUEPRINT.md:+  SIGNAL by the rule, both with the floor inside the CI (the twin's D_add on
+docs/BLUEPRINT.md:+  covered likewise SIGNAL / SIGNAL, +0.0520 / +0.0531); on FALLBACK D_eq^PT
+docs/BLUEPRINT.md:+  +0.1231 [+0.1058, +0.1382] / +0.1110 [+0.0950, +0.1261] and D_add^PT
+docs/BLUEPRINT.md:+  +0.1229 [+0.1060, +0.1371] / +0.1119 [+0.0960, +0.1271]; so the equal-dims
+docs/BLUEPRINT.md:+  margin is indicated on the unseen-key positions and the union's is not;
+docs/BLUEPRINT.md:+  PT-SURVIVES inherits the coverage caveat and is never read as the address
+docs/BLUEPRINT.md:+  block beating free p_t information on covered keys. CRITIC RECOMPUTE
+docs/BLUEPRINT.md:+  (2026-10-02, before any landing edit): the sideband-critic recomputed both
+docs/BLUEPRINT.md:+  payloads from their state files with its own parser and bootstrap — per
+docs/BLUEPRINT.md:+  payload 351 tables (pooled and per gate), 297 deltas, 27 scope fields and
+docs/BLUEPRINT.md:+  71 label fields, 26,558 values, 53,116 in all, at max abs discrepancy 0.0,
+docs/BLUEPRINT.md:+  every reading, label, straddle flag and sentence included; REPRODUCE
+docs/BLUEPRINT.md:+  confirmed independently (the nine twin arms summed over the six strata
+docs/BLUEPRINT.md:+  reproduce every committed twin row, 25,920 values per harvest, 0
+docs/BLUEPRINT.md:+  mismatches) and the identity (|diff| 0.0 on delta, lo and hi; the twin's
+docs/BLUEPRINT.md:+  1,377 table values reproduced as well); pairing 0 violations; the six
+docs/BLUEPRINT.md:+  strata sum to ALL and covered + fallback = ALL per (gate, prompt); the
+docs/BLUEPRINT.md:+  current- and previous-key-unseen shares equal the twin's committed
+docs/BLUEPRINT.md:+  table_coverage to six decimals; the header's twin record matches the twin
+docs/BLUEPRINT.md:+  files on every field and both twin files are byte-equal to their HEAD
+docs/BLUEPRINT.md:+  blobs; provenance clean (git_commit the freeze commit with an empty
+docs/BLUEPRINT.md:+  tracked status, instrument sha equal to the disk bytes and the blob at the
+docs/BLUEPRINT.md:+  freeze, shard shas equal to the committed metas; the runs sequential, 17 s
+docs/BLUEPRINT.md:+  and 196 s after the freeze, mtimes within 0.3 s of each run's end; the
+docs/BLUEPRINT.md:+  attestation is taken at the END of a run, so 'no tracked file changed
+docs/BLUEPRINT.md:+  during the runs' is verified at end-of-run and now, not continuously);
+docs/BLUEPRINT.md:+  --conclude-from exit 0 on both; NOT RECOMPUTED, since the npz was not
+docs/BLUEPRINT.md:+  read: each position's stratum, the PT arms' hits and the val tables —
+docs/BLUEPRINT.md:+  stratum membership checked through the marginal identities only; no
+docs/BLUEPRINT.md:+  leakage path; VERDICT GO on the runs as evidence, no BLOCKING item, eight
+docs/BLUEPRINT.md:+  advisories, every one applied in this landing (the grid-edge lambda, the
+docs/BLUEPRINT.md:+  frozen-closure bookkeeping that keeps the suite green, the B = 8 / 32
+docs/BLUEPRINT.md:+  readings in words, Q2 by scope, the prompt-13 share, seed-robustness
+docs/BLUEPRINT.md:+  wording, the two open choices decided and said, the derived-ledger
+docs/BLUEPRINT.md:+  pointers). CLEAN-CLONE RERUN (the critic's named check): the replication
+docs/BLUEPRINT.md:+  rerun from a fresh clone of the freeze commit (core.autocrlf=false; the
+docs/BLUEPRINT.md:+  harvest directory pointed at the main tree's shards, the twin files the
+docs/BLUEPRINT.md:+  clone's own) to a scratch path reproduced the registered state file
+docs/BLUEPRINT.md:+  BYTE-FOR-BYTE (sha 87f6705bc5f2 on both) and the conclusion identically
+docs/BLUEPRINT.md:+  (93.3 s of elapsed time), so the PT arms' hits — the one set of
+docs/BLUEPRINT.md:+  label-bearing numbers the recompute could take only from the state file —
+docs/BLUEPRINT.md:+  are reproducible on this box and BLAS.
+docs/CONVENTIONS.md:+  (`select = ["F"]`); `tools/cc` and the eleven frozen-instrument files (nine until the free-bigram twin landed on
+docs/CONVENTIONS.md:+  2026-10-01, ten until the stratified coverage read landed on 2026-10-02) are excluded outright with `force-exclude = true` (`tests/test_harness_doc_claims.py` derives the
+docs/FINDINGS_INDEX.md:+F-26's post-hoc line of 2026-09-15 and its status lines of 2026-10-01 and 2026-10-02; the
+docs/FINDINGS_INDEX.md:+| F-26 | 2026-09-15 (dated status lines 2026-10-01, 2026-10-02) | OQ-9 stage 1, prefetch | REAL: CPU-only readouts on the two committed S3 harvests of OLMoE-1B-7B-0125-Instruct (NF4, bf16 routers; 210 prompts x 256 tokens; primary seeds 0..7, replication 8..11 on the same prompts); the sorted top-8 expert ids at 16 gates, no router weights; estimand = hit rate of the next forward's expert sets at residency budget B of 64 per gate; linear ridge readers, 30 test prompts, prompt-cluster bootstrap CI95; registration frozen at c4c4511; NON-CRITERION, a K-6 datum | The router address stream is a prefetch source with headroom over a recency cache and a material margin over the free input token at B = 16, j = 1 (stage PREFETCH-HEADROOM, the seed replication agrees on every label); the margin is below the +0.05 floor at B = 32 at j = 1 and above it at j = 2 / 3 / 4 (+0.0545 / +0.0534 at j = 2; CI lower above the floor at j = 3 / 4 only); the critic's scope objection (the equally free previous token is not in the one-token baseline and gate 0 routes on it; F-26's GATE-0 NOTE records an unresolved alternative, that the stored gate-0 slot lags one forward) was answered by the equal-dims free-bigram twin on 2026-10-01: SURVIVES at that encoding, with a coverage caveat (the material part of the surviving margin sits on positions whose token key the train tables never saw); nothing reads it as context information or as support for the sideband premise | B = 16, j = 1: recency 0.5197 / 0.5155, free one-token table 0.8111 / 0.8036, history 0.8064 / 0.8056, history ++ token 0.9143 / 0.9108; HISTORY +0.2867 [+0.2784, +0.2939] / +0.2901 [+0.2808, +0.2978]; ADDRESS-BEYOND-TOKEN +0.1032 [+0.0926, +0.1146] / +0.1072 [+0.0952, +0.1206] (B = 32, j = 1: +0.0405 / +0.0434; B = 32, j = 3 / 4: +0.0683 / +0.0654, +0.0698 / +0.0669); INTRA-FORWARD +0.4861 [+0.4710, +0.5009] / +0.4816 [+0.4663, +0.4975]; DRAFT ceiling (horizon 2) +0.1556 [+0.1512, +0.1599] / +0.1545 [+0.1495, +0.1594]; twin (2026-10-01): D_eq +0.0609 [+0.0514, +0.0712] / +0.0659 [+0.0547, +0.0788], D_add +0.0661 [+0.0569, +0.0762] / +0.0705 [+0.0592, +0.0834], at B = 32 (j = 1, the twin's only horizon; the j = 2..4 margins are over the one-token table and were never tested against the bigram twin) D_eq +0.0261 / +0.0287; covered-key D_eq +0.0454 / +0.0472 on val (unregistered diagnostic, not evidence) | stands (NON-CRITERION; dated status line 2026-10-01: SURVIVES at this encoding with the coverage caveat; K-5 / K-6 stay UNTESTED; prior art occupies every cell; the stratified covered-vs-fallback test read ran on 2026-10-02 (FALLBACK-LOCATED / PT-SURVIVES on both harvests, both gates straddling the floor: the caveat indicated, not settled; next rung R2, a free baseline whose encoding handles unseen and sparse keys)) | results/real/prefetch_s3.json; results/real/prefetch_s3_r.json; results/real/prefetch_bigram_s3.json; results/real/prefetch_bigram_s3_r.json; results/real/prefetch_strat_s3.json; results/real/prefetch_strat_s3_r.json (each with .meta.json and .state.jsonl); tools/run_prefetch_readouts.py; tools/run_prefetch_bigram.py; tools/run_prefetch_strat.py |
+docs/FINDINGS_INDEX.md:+(2026-10-02: the stratified read ran — FALLBACK-LOCATED / PT-SURVIVES on
+docs/FINDINGS_INDEX.md:+both harvests, both gates straddling the floor: covered-position D_eq
+docs/FINDINGS_INDEX.md:++0.0463 / +0.0481 below the floor with the floor inside the CI, unseen-key
+docs/FINDINGS_INDEX.md:++0.1940 / +0.1741; the caveat indicated, not settled; next rung R2, a free
+docs/FINDINGS_INDEX.md:+baseline whose encoding handles unseen and sparse keys; F-26's second dated
+docs/FINDINGS_INDEX.md:+status line)
+docs/FINDINGS_INDEX.md:+argument; K-6 stays UNTESTED by its dated STATUS lines of 2026-09-15,
+docs/FINDINGS_INDEX.md:+2026-10-01 and 2026-10-02, K-5 by the 2026-09-05 one). Prior art occupies every cell as pinned. The steer half of OQ-9
+docs/FINDINGS_INDEX.md:+is PARKED (no actuator in the record converts). The stratified covered-vs-fallback
+docs/FINDINGS_INDEX.md:+read of D_eq on the TEST split, with a free arm from the harvest's stored p_t
+docs/FINDINGS_INDEX.md:+summaries, ran on 2026-10-02 (FALLBACK-LOCATED / PT-SURVIVES on both harvests,
+docs/FINDINGS_INDEX.md:+both gates straddling the floor: the caveat indicated, not settled); the next rung
+docs/FINDINGS_INDEX.md:+is R2, a free baseline whose encoding handles unseen and sparse keys; stage 2 (a real
+docs/FINDINGS_INDEX.md:+  dated addenda are the free-bigram twin's status line of 2026-10-01 (and, from
+docs/FINDINGS_INDEX.md:+  2026-10-02, the stratified read's status line beside it),
+docs/FINDINGS_INDEX.md:+  carries the coverage caveat (left indicated, not settled, by the
+docs/FINDINGS_INDEX.md:+  2026-10-02 stratified read); the K-6 STATUS lines of 2026-09-15,
+docs/FINDINGS_INDEX.md:+  2026-10-01 and 2026-10-02 record it as a count, never as economics.
+docs/FUTURE_IDEAS.md:+  (2026-10-02, STRATIFIED COVERAGE READ of the twin's margin, both runs from
+docs/FUTURE_IDEAS.md:+  the clean freeze commit fea2431; label FALLBACK-LOCATED / PT-SURVIVES on
+docs/FUTURE_IDEAS.md:+  both harvests, REPRODUCE EXACT, both gates straddling the floor: on the
+docs/FUTURE_IDEAS.md:+  covered positions (0.9013 / 0.8582) D_eq +0.0463 / +0.0481, CI-positive
+docs/FUTURE_IDEAS.md:+  below the floor with the floor inside the CI; on the unseen-key positions
+docs/FUTURE_IDEAS.md:+  (0.0987 / 0.1418) +0.1940 / +0.1741 (SIGNAL); with p_t's stored summaries
+docs/FUTURE_IDEAS.md:+  in both arms D_eq^PT +0.0532 / +0.0565 and D_add^PT +0.0583 / +0.0609
+docs/FUTURE_IDEAS.md:+  (SIGNAL, the equal-dims CI containing the floor); the caveat is neither
+docs/FUTURE_IDEAS.md:+  retired nor confirmed at this power — its location is indicated, not
+docs/FUTURE_IDEAS.md:+  settled; the sparse covered keys (one to four train occurrences) read at
+docs/FUTURE_IDEAS.md:+  or above the floor while the well-covered keys do not; next rung R2, a
+docs/FUTURE_IDEAS.md:+  free baseline whose encoding handles unseen and sparse keys; see F-26's
+docs/FUTURE_IDEAS.md:+  second dated status line and the block's OUTCOME.)
+docs/GLOSSARY.md:+| OQ-9 | bidirectional sidecar (steer + prefetch) | the STEER half PARKED by the 2026-09-14 note (no actuator in the record converts); the PREFETCH half ran as stage 1 on the OLMoE harvests (registered 2026-09-14, landed 2026-09-15 as F-26: PREFETCH-HEADROOM, NON-CRITERION, a K-6 datum) and as its free-bigram twin (2026-10-01: SURVIVES at that encoding, with a coverage caveat); the stratified covered-vs-fallback test read ran on 2026-10-02 (FALLBACK-LOCATED / PT-SURVIVES on both harvests, both gates straddling the floor: the caveat indicated, not settled; next rung R2, a free baseline whose encoding handles unseen and sparse keys); stage 2 (a real draft partner for OLMoE) is an option, not a plan | F-26 and its dated status lines |
+docs/REPORT.md:+- Record boundary (2026-09-05, revised the same day): every number and label here is taken from the committed record (FINDINGS.md F-0..F-23; docs/BLUEPRINT.md through the OQ-16 DATED ERRATUM + LANE CLOSURE block; results/). DATED NOTE (2026-09-06, F-24): the existence statements below that read "beyond the strongest free baseline" are superseded in the qualified sense of F-24 — at the registered reader the F-15 / F-17 margins are ABSORBED by the full free baseline ((a) ++ hashed token ids ++ z-scored h_a) at the pinned L1 offset-2 cells on both harvests of both sources (every equal-dims D CI95 upper below +0.005; Mt beside it about +0.003, CI-clear on three of four harvests); they stand against the 657-summary PROXY; the corrected-twin diagnostic read TWIN-ROBUST at both sources, so the null does not depend on the registered control. The abstract, the scorecard row and section 5 are left as written with this note; see FINDINGS.md F-24 and the K-2 STATUS line of 2026-09-06. F-23 registered, with a critic recompute round, what an earlier draft of this report could only disclose as an uncommitted check: the anchor state h_a that the reconstruction lane targeted is an exact linear function of the verifier's own next-token distribution (results/real/oq16_ha_identity.json; tools/ha_identity_check.py). Sections 4.6, 4.7, 5 and 8 carry the consequence; every registered Stage-R and DR readout is kept as it landed. DATED NOTE (2026-10-01, F-26 and its free-bigram twin): the record now runs to F-26 (2026-09-15), OQ-9 stage 1 - a prefetch hit-rate datum on the OLMoE router harvests, NON-CRITERION for every layer of this report and registered as a K-6 datum: at 16 of 64 experts resident per gate a linear reader on the routing history plus the free input token covers 0.9143 / 0.9108 of the next forward's expert sets against 0.5197 / 0.5155 for a recency cache and 0.8111 / 0.8036 for a one-token table (ADDRESS-BEYOND-TOKEN +0.1032 [+0.0926, +0.1146] / +0.1072 [+0.0952, +0.1206]; below the +0.05 floor at B = 32, j = 1). The equal-dims free-bigram twin (F-26's status line of 2026-10-01) reads SURVIVES at that encoding, +0.0609 [+0.0514, +0.0712] / +0.0659 [+0.0547, +0.0788], with the coverage caveat that the material part of the surviving margin sits on positions whose token key the train tables never saw (covered-key D_eq +0.0454 / +0.0472 on val in an unregistered diagnostic), so nothing in it reads as context information or as support for the sideband premise; the economics row of the scorecard stays untested. The F-24 note above and the F-25 scorecard row of 2026-09-14 are unchanged. See FINDINGS.md F-26 and docs/FINDINGS_INDEX.md. (2026-10-02: the stratified read ran — FALLBACK-LOCATED / PT-SURVIVES on both harvests, both gates straddling the floor: covered-position D_eq +0.0463 / +0.0481 below the floor with the floor inside the CI, unseen-key +0.1940 / +0.1741; the caveat indicated, not settled; next rung R2, a free baseline whose encoding handles unseen and sparse keys; F-26's second dated status line)
+docs/REPORT.md:+| Economics (K-5/K-6) | Wall-clock cost; a boundary where SD^2's vector cannot cross | untested (dated note 2026-10-01: still untested; the first K-6 datum is a hit-rate COUNT, not bytes, latency or a boundary argument) | none exists (dated note 2026-10-01, F-26: next-forward expert-set hit rate at 16 of 64 resident on the OLMoE router harvests, 0.9143 / 0.9108 for routing history plus the free token against 0.5197 / 0.5155 for a recency cache; the address block over the equal-dims free bigram +0.0609 / +0.0659, below the floor at B = 32, j = 1, with the coverage caveat: the material part of that margin sits on positions whose token key the train tables never saw) (2026-10-02: the stratified read ran — FALLBACK-LOCATED / PT-SURVIVES on both harvests, both gates straddling the floor: covered-position D_eq +0.0463 / +0.0481 below the floor with the floor inside the CI, unseen-key +0.1940 / +0.1741; the caveat indicated, not settled; next rung R2, a free baseline whose encoding handles unseen and sparse keys; F-26's second dated status line) | docs/ECONOMICS.md section 6; F-26 and its 2026-10-01 and 2026-10-02 status lines; docs/WHY_THIS_DIES.md K-6 STATUS lines of 2026-09-15, 2026-10-01 and 2026-10-02 |
+docs/SHARP_EDGES.md:+**Update 2026-10-02:** an eighth attested instrument, `tools/run_prefetch_strat.py` (the stratified coverage read of the twin's margin), joined the closure at its landing. It pins the twin `run_prefetch_bigram.py` by LF-normalised sha in code (`:152`, asserted at import by `:164`) and is itself pinned by `tests/test_prefetch_strat_landing.py`; the twin's own import-time assertion covers the stage-1 parent. A byte edit to the stage-1 parent aborts the whole suite's collection (measured 2026-10-01: INTERNALERROR SystemExit, exit code 3, no tests run); an edit to the twin would do the same through this file's import-time assertion (an inference from the same mechanism, not measured). The ruff list has eleven tool entries beside `tools/cc`.
+docs/SHARP_EDGES.md:+by its own `!results/real/<out>.json.state.jsonl` line (47 such lines = the 47 tracked state files after the stratified-read landing, 2026-10-02; 45 after the free-bigram landing, 2026-10-01; 43 before). The payload
+docs/WHY_THIS_DIES.md:+STATUS (2026-10-02, appended; the stratified coverage read of the twin's
+docs/WHY_THIS_DIES.md:+margin): K-6 stays UNTESTED. 2026-10-02, STRATIFIED COVERAGE READ of the
+docs/WHY_THIS_DIES.md:+twin's margin, both runs from the clean freeze commit fea2431; label
+docs/WHY_THIS_DIES.md:+FALLBACK-LOCATED / PT-SURVIVES on both harvests, REPRODUCE EXACT, both
+docs/WHY_THIS_DIES.md:+gates straddling the floor: on the covered positions (0.9013 / 0.8582)
+docs/WHY_THIS_DIES.md:+D_eq +0.0463 / +0.0481, CI-positive below the floor with the floor
+docs/WHY_THIS_DIES.md:+inside the CI; on the unseen-key positions (0.0987 / 0.1418) +0.1940 /
+docs/WHY_THIS_DIES.md:++0.1741 (SIGNAL); with p_t's stored summaries in both arms D_eq^PT
+docs/WHY_THIS_DIES.md:++0.0532 / +0.0565 and D_add^PT +0.0583 / +0.0609 (SIGNAL, the equal-dims
+docs/WHY_THIS_DIES.md:+CI containing the floor); the caveat is neither retired nor confirmed at
+docs/WHY_THIS_DIES.md:+this power — its location is indicated, not settled; the sparse covered
+docs/WHY_THIS_DIES.md:+keys (one to four train occurrences) read at or above the floor while
+docs/WHY_THIS_DIES.md:+the well-covered keys do not; next rung R2, a free baseline whose
+docs/WHY_THIS_DIES.md:+encoding handles unseen and sparse keys; see F-26's second dated status
+docs/WHY_THIS_DIES.md:+line and the block's OUTCOME. Still a hit-rate COUNT on a harvest: no
+docs/WHY_THIS_DIES.md:+bytes, latency or boundary; prior art occupies the cells. No finding
+docs/WHY_THIS_DIES.md:+rules on K-6.
+docs/WHY_THIS_DIES.md:+
+pyproject.toml:+# eleven tools below are the frozen instruments: eight whose bytes are attested by
+pyproject.toml:+    "tools/run_prefetch_strat.py",

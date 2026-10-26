@@ -1,0 +1,101 @@
+{
+ "pinned_on": "2026-10-16, before the rerun; the pins are F-24's figures, the construction this file's",
+ "pins": {
+  "floor_reproduces:S1": {
+   "value": 0.0,
+   "pin": "<= 1e-12",
+   "ok": true
+  },
+  "gain_over_floor:S1": {
+   "value": 0.0,
+   "pin": "<= +0.002 (F-24: gains nothing over the floor)",
+   "ok": true
+  },
+  "floor_reproduces:S3": {
+   "value": 0.0,
+   "pin": "<= 1e-12",
+   "ok": true
+  },
+  "gain_over_floor:S3": {
+   "value": 0.0,
+   "pin": "<= +0.002 (F-24: gains nothing over the floor)",
+   "ok": true
+  }
+ },
+ "all_pins_hold": true,
+ "results": {
+  "S1": {
+   "harvest": "harvest_shadow",
+   "space": "L1_concept_k16",
+   "offset": 2,
+   "n_classes": 16,
+   "n_train": 303261,
+   "n_test": 61030,
+   "n_test_clusters": 30,
+   "train_majority_class": 15,
+   "floor": {
+    "majority_rate_test": 0.591381287891201,
+    "committed": 0.591381287891201,
+    "abs_diff": 0.0
+   },
+   "position_only": {
+    "test_acc": 0.591381287891201,
+    "gain_over_floor": 0.0,
+    "paired_delta_ci95": {
+     "delta": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "n_positions_with_train_anchors": 255,
+    "table_length": 255,
+    "n_positions_predicting_non_majority": 0
+   },
+   "binned_by_8": {
+    "test_acc": 0.591381287891201,
+    "gain_over_floor": 0.0,
+    "paired_delta_ci95": {
+     "delta": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    }
+   }
+  },
+  "S3": {
+   "harvest": "harvest_moe",
+   "space": "L1_olmoe_k16",
+   "offset": 2,
+   "n_classes": 16,
+   "n_train": 294146,
+   "n_test": 59525,
+   "n_test_clusters": 30,
+   "train_majority_class": 15,
+   "floor": {
+    "majority_rate_test": 0.5803107937841243,
+    "committed": 0.5803107937841243,
+    "abs_diff": 0.0
+   },
+   "position_only": {
+    "test_acc": 0.5803107937841243,
+    "gain_over_floor": 0.0,
+    "paired_delta_ci95": {
+     "delta": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    },
+    "n_positions_with_train_anchors": 255,
+    "table_length": 255,
+    "n_positions_predicting_non_majority": 0
+   },
+   "binned_by_8": {
+    "test_acc": 0.5803107937841243,
+    "gain_over_floor": 0.0,
+    "paired_delta_ci95": {
+     "delta": 0.0,
+     "lo": 0.0,
+     "hi": 0.0
+    }
+   }
+  }
+ },
+ "numpy_version": "2.3.5"
+}

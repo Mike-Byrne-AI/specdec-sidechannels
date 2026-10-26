@@ -1,0 +1,665 @@
+{
+  "_experiment": "p4_real_archive",
+  "_written_unix": 1788097387,
+  "coder": "gamma",
+  "draft": "meta-llama/Llama-3.2-1B",
+  "encoder_provenance": {
+    "cpu_threads": 16,
+    "cuda": "12.4",
+    "cudnn": 90100,
+    "deterministic_algorithms": false,
+    "envprobe_digest": "2d2a2e0c1d7795d5383d36bd22b9b51dfac7fde4171fa4f0db074f6de145bbbd",
+    "gpu": "NVIDIA GeForce RTX 3080 Ti",
+    "model_id": "meta-llama/Llama-3.2-1B",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "snapshot": "4e20de362430cd3b72f300e6b0f18e50e7166e08",
+    "torch": "2.6.0+cu124",
+    "transformers": "4.57.3"
+  },
+  "max_rank": 64,
+  "model": {
+    "dtype": "fp32",
+    "id": "meta-llama/Llama-3.2-1B",
+    "snapshot": "4e20de362430cd3b72f300e6b0f18e50e7166e08"
+  },
+  "protocol": "experiments/P4_PROTOCOL.md",
+  "regime": "P1 content (Llama-3.2-3B greedy, 200 prompts) archived with Llama-3.2-1B base cuda fp32 teacher-forced; decoded draft-only, incremental KV, batch 1, per arm; one 3080 Ti",
+  "report": {
+    "archives": 200,
+    "arms": {
+      "cpu_fp32": {
+        "archives": 24,
+        "byte_exact": 24,
+        "content_tokens": 5852,
+        "decode_tok_per_s": 8.65553107616321,
+        "desyncs_per_token": 0.0,
+        "fail_rate": 0.0,
+        "first_desync_class_counts": {},
+        "first_desync_examples": {},
+        "first_desync_pos": null,
+        "in_band": true,
+        "predicted_fail_band": [
+          0.0,
+          0.01
+        ],
+        "tokens_before_first_desync_mean": 243.83333333333334,
+        "wide_gap_A_desyncs_gt_1e-3": 0
+      },
+      "cuda_bf16": {
+        "archives": 200,
+        "byte_exact": 32,
+        "content_tokens": 48958,
+        "decode_tok_per_s": 17.37352899775701,
+        "desyncs_per_token": 0.015360702203529305,
+        "fail_rate": 0.84,
+        "first_desync_class_counts": {
+          "A": 28,
+          "C11": 3,
+          "C12": 1,
+          "C13": 3,
+          "C14": 2,
+          "C15": 1,
+          "C16": 2,
+          "C18": 1,
+          "C2": 53,
+          "C3": 27,
+          "C4": 16,
+          "C49": 1,
+          "C5": 13,
+          "C6": 8,
+          "C7": 4,
+          "C8": 4,
+          "C9": 1
+        },
+        "first_desync_examples": {
+          "A": [
+            {
+              "gap": 0.028650283813476562,
+              "pos": 9,
+              "row": 10
+            },
+            {
+              "gap": 0.044300079345703125,
+              "pos": 18,
+              "row": 11
+            },
+            {
+              "gap": 0.026983261108398438,
+              "pos": 41,
+              "row": 20
+            },
+            {
+              "gap": 0.02618408203125,
+              "pos": 17,
+              "row": 28
+            },
+            {
+              "gap": 0.0002384185791015625,
+              "pos": 8,
+              "row": 31
+            }
+          ],
+          "C11": [
+            {
+              "gap": 0.4155750274658203,
+              "pos": 0,
+              "row": 159
+            },
+            {
+              "gap": 0.26941490173339844,
+              "pos": 0,
+              "row": 183
+            },
+            {
+              "gap": 0.09653663635253906,
+              "pos": 18,
+              "row": 190
+            }
+          ],
+          "C12": [
+            {
+              "gap": 0.14932632446289062,
+              "pos": 0,
+              "row": 51
+            }
+          ],
+          "C13": [
+            {
+              "gap": 1.0712852478027344,
+              "pos": 22,
+              "row": 73
+            },
+            {
+              "gap": 0.17027759552001953,
+              "pos": 6,
+              "row": 104
+            },
+            {
+              "gap": 0.3887615203857422,
+              "pos": 0,
+              "row": 153
+            }
+          ],
+          "C14": [
+            {
+              "gap": 0.7033271789550781,
+              "pos": 0,
+              "row": 33
+            },
+            {
+              "gap": 0.1484365463256836,
+              "pos": 114,
+              "row": 139
+            }
+          ],
+          "C15": [
+            {
+              "gap": 0.32422828674316406,
+              "pos": 20,
+              "row": 30
+            }
+          ],
+          "C16": [
+            {
+              "gap": 0.07257461547851562,
+              "pos": 49,
+              "row": 91
+            },
+            {
+              "gap": 0.464202880859375,
+              "pos": 0,
+              "row": 195
+            }
+          ],
+          "C18": [
+            {
+              "gap": 0.2433013916015625,
+              "pos": 19,
+              "row": 68
+            }
+          ],
+          "C2": [
+            {
+              "gap": 0.1901721954345703,
+              "pos": 0,
+              "row": 0
+            },
+            {
+              "gap": 0.0045986175537109375,
+              "pos": 1,
+              "row": 4
+            },
+            {
+              "gap": 0.04876518249511719,
+              "pos": 24,
+              "row": 5
+            },
+            {
+              "gap": 0.10153388977050781,
+              "pos": 4,
+              "row": 7
+            },
+            {
+              "gap": 0.03076171875,
+              "pos": 1,
+              "row": 9
+            }
+          ],
+          "C3": [
+            {
+              "gap": 0.5949211120605469,
+              "pos": 24,
+              "row": 1
+            },
+            {
+              "gap": 0.3837013244628906,
+              "pos": 10,
+              "row": 18
+            },
+            {
+              "gap": 0.38457298278808594,
+              "pos": 8,
+              "row": 19
+            },
+            {
+              "gap": 1.3422603607177734,
+              "pos": 17,
+              "row": 21
+            },
+            {
+              "gap": 0.10846519470214844,
+              "pos": 17,
+              "row": 32
+            }
+          ],
+          "C4": [
+            {
+              "gap": 1.0144004821777344,
+              "pos": 9,
+              "row": 3
+            },
+            {
+              "gap": 0.6103973388671875,
+              "pos": 36,
+              "row": 8
+            },
+            {
+              "gap": 0.4865760803222656,
+              "pos": 39,
+              "row": 36
+            },
+            {
+              "gap": 0.6051006317138672,
+              "pos": 3,
+              "row": 41
+            },
+            {
+              "gap": 0.46021270751953125,
+              "pos": 3,
+              "row": 45
+            }
+          ],
+          "C49": [
+            {
+              "gap": 0.32190704345703125,
+              "pos": 4,
+              "row": 82
+            }
+          ],
+          "C5": [
+            {
+              "gap": 0.9492301940917969,
+              "pos": 4,
+              "row": 13
+            },
+            {
+              "gap": 0.2496166229248047,
+              "pos": 58,
+              "row": 17
+            },
+            {
+              "gap": 0.9212322235107422,
+              "pos": 4,
+              "row": 35
+            },
+            {
+              "gap": 0.07410240173339844,
+              "pos": 9,
+              "row": 39
+            },
+            {
+              "gap": 0.024950027465820312,
+              "pos": 113,
+              "row": 67
+            }
+          ],
+          "C6": [
+            {
+              "gap": 0.4163780212402344,
+              "pos": 9,
+              "row": 6
+            },
+            {
+              "gap": 0.4474811553955078,
+              "pos": 0,
+              "row": 27
+            },
+            {
+              "gap": 0.9605541229248047,
+              "pos": 3,
+              "row": 44
+            },
+            {
+              "gap": 0.2715167999267578,
+              "pos": 25,
+              "row": 54
+            },
+            {
+              "gap": 0.08408737182617188,
+              "pos": 2,
+              "row": 63
+            }
+          ],
+          "C7": [
+            {
+              "gap": 0.6316013336181641,
+              "pos": 3,
+              "row": 53
+            },
+            {
+              "gap": 0.12540054321289062,
+              "pos": 0,
+              "row": 147
+            },
+            {
+              "gap": 0.21131324768066406,
+              "pos": 4,
+              "row": 161
+            },
+            {
+              "gap": 0.041591644287109375,
+              "pos": 5,
+              "row": 194
+            }
+          ],
+          "C8": [
+            {
+              "gap": 0.1180877685546875,
+              "pos": 72,
+              "row": 15
+            },
+            {
+              "gap": 0.6365642547607422,
+              "pos": 20,
+              "row": 25
+            },
+            {
+              "gap": 0.3279285430908203,
+              "pos": 5,
+              "row": 85
+            },
+            {
+              "gap": 0.2517280578613281,
+              "pos": 55,
+              "row": 175
+            }
+          ],
+          "C9": [
+            {
+              "gap": 0.13279342651367188,
+              "pos": 0,
+              "row": 129
+            }
+          ]
+        },
+        "first_desync_pos": {
+          "p10": 0.0,
+          "p50": 8.0,
+          "p90": 36.30000000000001
+        },
+        "in_band": true,
+        "predicted_fail_band": [
+          0.5,
+          0.9
+        ],
+        "tokens_before_first_desync_mean": 53.845,
+        "wide_gap_A_desyncs_gt_1e-3": 27
+      },
+      "cuda_fp16": {
+        "archives": 200,
+        "byte_exact": 143,
+        "content_tokens": 48958,
+        "decode_tok_per_s": 24.250706889827693,
+        "desyncs_per_token": 0.0014914047986603523,
+        "fail_rate": 0.285,
+        "first_desync_class_counts": {
+          "A": 9,
+          "C10": 2,
+          "C15": 2,
+          "C16": 2,
+          "C2": 17,
+          "C3": 8,
+          "C4": 6,
+          "C49": 1,
+          "C5": 5,
+          "C52": 1,
+          "C6": 1,
+          "C8": 3
+        },
+        "first_desync_examples": {
+          "A": [
+            {
+              "gap": 0.0077037811279296875,
+              "pos": 49,
+              "row": 42
+            },
+            {
+              "gap": 0.0034332275390625,
+              "pos": 59,
+              "row": 43
+            },
+            {
+              "gap": 0.013210296630859375,
+              "pos": 204,
+              "row": 79
+            },
+            {
+              "gap": 0.00299072265625,
+              "pos": 111,
+              "row": 92
+            },
+            {
+              "gap": 0.0022525787353515625,
+              "pos": 133,
+              "row": 103
+            }
+          ],
+          "C10": [
+            {
+              "gap": 0.11114120483398438,
+              "pos": 129,
+              "row": 20
+            },
+            {
+              "gap": 0.4541893005371094,
+              "pos": 138,
+              "row": 121
+            }
+          ],
+          "C15": [
+            {
+              "gap": 0.16988563537597656,
+              "pos": 30,
+              "row": 63
+            },
+            {
+              "gap": 0.7011947631835938,
+              "pos": 81,
+              "row": 116
+            }
+          ],
+          "C16": [
+            {
+              "gap": 0.07257461547851562,
+              "pos": 49,
+              "row": 91
+            },
+            {
+              "gap": 0.464202880859375,
+              "pos": 0,
+              "row": 195
+            }
+          ],
+          "C2": [
+            {
+              "gap": 0.0007476806640625,
+              "pos": 68,
+              "row": 3
+            },
+            {
+              "gap": 0.0045986175537109375,
+              "pos": 1,
+              "row": 4
+            },
+            {
+              "gap": 0.0027952194213867188,
+              "pos": 213,
+              "row": 5
+            },
+            {
+              "gap": 0.00072479248046875,
+              "pos": 19,
+              "row": 21
+            },
+            {
+              "gap": 0.006938934326171875,
+              "pos": 6,
+              "row": 29
+            }
+          ],
+          "C3": [
+            {
+              "gap": 0.6323261260986328,
+              "pos": 59,
+              "row": 40
+            },
+            {
+              "gap": 0.5494251251220703,
+              "pos": 18,
+              "row": 64
+            },
+            {
+              "gap": 0.07472419738769531,
+              "pos": 1,
+              "row": 87
+            },
+            {
+              "gap": 0.45711326599121094,
+              "pos": 61,
+              "row": 90
+            },
+            {
+              "gap": 2.0813045501708984,
+              "pos": 3,
+              "row": 96
+            }
+          ],
+          "C4": [
+            {
+              "gap": 0.4116849899291992,
+              "pos": 104,
+              "row": 15
+            },
+            {
+              "gap": 0.6051006317138672,
+              "pos": 3,
+              "row": 41
+            },
+            {
+              "gap": 1.4921417236328125,
+              "pos": 109,
+              "row": 110
+            },
+            {
+              "gap": 0.10399627685546875,
+              "pos": 4,
+              "row": 157
+            },
+            {
+              "gap": 0.011919021606445312,
+              "pos": 0,
+              "row": 177
+            }
+          ],
+          "C49": [
+            {
+              "gap": 0.32190704345703125,
+              "pos": 4,
+              "row": 82
+            }
+          ],
+          "C5": [
+            {
+              "gap": 0.2519397735595703,
+              "pos": 237,
+              "row": 19
+            },
+            {
+              "gap": 0.31744384765625,
+              "pos": 50,
+              "row": 101
+            },
+            {
+              "gap": 0.8397121429443359,
+              "pos": 19,
+              "row": 111
+            },
+            {
+              "gap": 0.3037128448486328,
+              "pos": 175,
+              "row": 134
+            },
+            {
+              "gap": 0.07271766662597656,
+              "pos": 37,
+              "row": 192
+            }
+          ],
+          "C52": [
+            {
+              "gap": 0.19148921966552734,
+              "pos": 48,
+              "row": 74
+            }
+          ],
+          "C6": [
+            {
+              "gap": 0.2715167999267578,
+              "pos": 25,
+              "row": 54
+            }
+          ],
+          "C8": [
+            {
+              "gap": 0.09864425659179688,
+              "pos": 174,
+              "row": 86
+            },
+            {
+              "gap": 0.5237045288085938,
+              "pos": 23,
+              "row": 147
+            },
+            {
+              "gap": 0.4255504608154297,
+              "pos": 20,
+              "row": 154
+            }
+          ]
+        },
+        "first_desync_pos": {
+          "p10": 1.0,
+          "p50": 30.0,
+          "p90": 135.0
+        },
+        "in_band": true,
+        "predicted_fail_band": [
+          0.08,
+          0.35
+        ],
+        "tokens_before_first_desync_mean": 190.81,
+        "wide_gap_A_desyncs_gt_1e-3": 8
+      },
+      "cuda_fp32": {
+        "archives": 200,
+        "byte_exact": 200,
+        "content_tokens": 48958,
+        "decode_tok_per_s": 26.306108666916472,
+        "desyncs_per_token": 0.0,
+        "fail_rate": 0.0,
+        "first_desync_class_counts": {},
+        "first_desync_examples": {},
+        "first_desync_pos": null,
+        "in_band": true,
+        "predicted_fail_band": [
+          0.0,
+          0.01
+        ],
+        "tokens_before_first_desync_mean": 244.79,
+        "wide_gap_A_desyncs_gt_1e-3": 0
+      }
+    },
+    "binary_header_estimate_bits_per_token": 3.280567016626496,
+    "content_tokens": 48958,
+    "encode_teacher_forced_fp32_pos_per_s": 990.7656264617082,
+    "header_bytes_mean": 551.43875,
+    "payload_bits_per_token": 0.43992810163813884,
+    "prompt_tokens": 2692,
+    "prompt_tokens_mean": 13.46,
+    "total_archive_bits_per_token_incl_header": 18.46153846153846,
+    "zstd19_full_text_concatenated_bits_per_generated_token": 3.9372523387393277,
+    "zstd19_full_text_per_archive_bits_per_generated_token": 7.280526165284529,
+    "zstd19_generated_text_bits_per_token": 3.6181216552963766
+  }
+}

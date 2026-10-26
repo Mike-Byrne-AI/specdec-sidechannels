@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+# the top-256 logit dumps (~1 GB each) stay local; results/p2_dumps.sha256 pins them
+results/p2/
+results/p2_llama32/
+results/p7/

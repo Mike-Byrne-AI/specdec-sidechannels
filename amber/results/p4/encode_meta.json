@@ -1,0 +1,1428 @@
+{
+  "coder": "gamma",
+  "draft": "meta-llama/Llama-3.2-1B",
+  "encode_pos_per_s": 990.7656264617082,
+  "max_rank": 64,
+  "model": {
+    "dtype": "fp32",
+    "id": "meta-llama/Llama-3.2-1B",
+    "snapshot": "4e20de362430cd3b72f300e6b0f18e50e7166e08"
+  },
+  "per_row": {
+    "0": {
+      "bytes": 531,
+      "length": 256,
+      "n_corrections": 2,
+      "payload_bits": 8,
+      "score_seconds": 3.5715999000240117
+    },
+    "1": {
+      "bytes": 612,
+      "length": 256,
+      "n_corrections": 50,
+      "payload_bits": 318,
+      "score_seconds": 0.3726546000689268
+    },
+    "10": {
+      "bytes": 587,
+      "length": 41,
+      "n_corrections": 11,
+      "payload_bits": 64,
+      "score_seconds": 0.024427599972113967
+    },
+    "100": {
+      "bytes": 594,
+      "length": 256,
+      "n_corrections": 9,
+      "payload_bits": 58,
+      "score_seconds": 0.0600834998767823
+    },
+    "101": {
+      "bytes": 550,
+      "length": 256,
+      "n_corrections": 11,
+      "payload_bits": 90,
+      "score_seconds": 0.0594760999083519
+    },
+    "102": {
+      "bytes": 543,
+      "length": 39,
+      "n_corrections": 7,
+      "payload_bits": 44,
+      "score_seconds": 0.022918100003153086
+    },
+    "103": {
+      "bytes": 603,
+      "length": 256,
+      "n_corrections": 67,
+      "payload_bits": 372,
+      "score_seconds": 2.3528829999268055
+    },
+    "104": {
+      "bytes": 549,
+      "length": 256,
+      "n_corrections": 21,
+      "payload_bits": 134,
+      "score_seconds": 0.07812569988891482
+    },
+    "105": {
+      "bytes": 551,
+      "length": 256,
+      "n_corrections": 17,
+      "payload_bits": 76,
+      "score_seconds": 0.05815940001048148
+    },
+    "106": {
+      "bytes": 593,
+      "length": 256,
+      "n_corrections": 6,
+      "payload_bits": 26,
+      "score_seconds": 0.060323400190100074
+    },
+    "107": {
+      "bytes": 552,
+      "length": 256,
+      "n_corrections": 6,
+      "payload_bits": 36,
+      "score_seconds": 0.060682599898427725
+    },
+    "108": {
+      "bytes": 535,
+      "length": 256,
+      "n_corrections": 2,
+      "payload_bits": 20,
+      "score_seconds": 0.060488199815154076
+    },
+    "109": {
+      "bytes": 586,
+      "length": 256,
+      "n_corrections": 7,
+      "payload_bits": 36,
+      "score_seconds": 0.06003789999522269
+    },
+    "11": {
+      "bytes": 538,
+      "length": 256,
+      "n_corrections": 5,
+      "payload_bits": 54,
+      "score_seconds": 0.05924560013227165
+    },
+    "110": {
+      "bytes": 573,
+      "length": 256,
+      "n_corrections": 48,
+      "payload_bits": 286,
+      "score_seconds": 0.060870000161230564
+    },
+    "111": {
+      "bytes": 567,
+      "length": 179,
+      "n_corrections": 17,
+      "payload_bits": 124,
+      "score_seconds": 0.04094429989345372
+    },
+    "112": {
+      "bytes": 568,
+      "length": 256,
+      "n_corrections": 2,
+      "payload_bits": 16,
+      "score_seconds": 0.06054139998741448
+    },
+    "113": {
+      "bytes": 546,
+      "length": 256,
+      "n_corrections": 6,
+      "payload_bits": 38,
+      "score_seconds": 0.06053349981084466
+    },
+    "114": {
+      "bytes": 526,
+      "length": 256,
+      "n_corrections": 2,
+      "payload_bits": 8,
+      "score_seconds": 0.06282590003684163
+    },
+    "115": {
+      "bytes": 573,
+      "length": 256,
+      "n_corrections": 4,
+      "payload_bits": 32,
+      "score_seconds": 0.06417999998666346
+    },
+    "116": {
+      "bytes": 558,
+      "length": 256,
+      "n_corrections": 26,
+      "payload_bits": 180,
+      "score_seconds": 0.06015679985284805
+    },
+    "117": {
+      "bytes": 548,
+      "length": 256,
+      "n_corrections": 7,
+      "payload_bits": 38,
+      "score_seconds": 2.3053878999780864
+    },
+    "118": {
+      "bytes": 589,
+      "length": 256,
+      "n_corrections": 6,
+      "payload_bits": 26,
+      "score_seconds": 0.15113520016893744
+    },
+    "119": {
+      "bytes": 558,
+      "length": 256,
+      "n_corrections": 3,
+      "payload_bits": 24,
+      "score_seconds": 0.07160130003467202
+    },
+    "12": {
+      "bytes": 531,
+      "length": 256,
+      "n_corrections": 1,
+      "payload_bits": 8,
+      "score_seconds": 0.0609593999106437
+    },
+    "120": {
+      "bytes": 530,
+      "length": 256,
+      "n_corrections": 0,
+      "payload_bits": 0,
+      "score_seconds": 0.06009260006248951
+    },
+    "121": {
+      "bytes": 593,
+      "length": 256,
+      "n_corrections": 40,
+      "payload_bits": 278,
+      "score_seconds": 0.0594996998552233
+    },
+    "122": {
+      "bytes": 550,
+      "length": 256,
+      "n_corrections": 3,
+      "payload_bits": 12,
+      "score_seconds": 0.06240619998425245
+    },
+    "123": {
+      "bytes": 550,
+      "length": 256,
+      "n_corrections": 5,
+      "payload_bits": 20,
+      "score_seconds": 0.06078439997509122
+    },
+    "124": {
+      "bytes": 595,
+      "length": 256,
+      "n_corrections": 13,
+      "payload_bits": 72,
+      "score_seconds": 0.06219770014286041
+    },
+    "125": {
+      "bytes": 568,
+      "length": 256,
+      "n_corrections": 3,
+      "payload_bits": 18,
+      "score_seconds": 0.059765900019556284
+    },
+    "126": {
+      "bytes": 540,
+      "length": 256,
+      "n_corrections": 5,
+      "payload_bits": 30,
+      "score_seconds": 0.05974390008486807
+    },
+    "127": {
+      "bytes": 575,
+      "length": 256,
+      "n_corrections": 12,
+      "payload_bits": 76,
+      "score_seconds": 0.059557000175118446
+    },
+    "128": {
+      "bytes": 540,
+      "length": 256,
+      "n_corrections": 7,
+      "payload_bits": 44,
+      "score_seconds": 0.060354200191795826
+    },
+    "129": {
+      "bytes": 564,
+      "length": 256,
+      "n_corrections": 12,
+      "payload_bits": 72,
+      "score_seconds": 0.06057150010019541
+    },
+    "13": {
+      "bytes": 563,
+      "length": 256,
+      "n_corrections": 7,
+      "payload_bits": 34,
+      "score_seconds": 0.059956299839541316
+    },
+    "130": {
+      "bytes": 589,
+      "length": 256,
+      "n_corrections": 7,
+      "payload_bits": 32,
+      "score_seconds": 0.06102519994601607
+    },
+    "131": {
+      "bytes": 545,
+      "length": 256,
+      "n_corrections": 5,
+      "payload_bits": 28,
+      "score_seconds": 2.3070482998155057
+    },
+    "132": {
+      "bytes": 526,
+      "length": 256,
+      "n_corrections": 2,
+      "payload_bits": 12,
+      "score_seconds": 0.11491810018196702
+    },
+    "133": {
+      "bytes": 592,
+      "length": 256,
+      "n_corrections": 33,
+      "payload_bits": 242,
+      "score_seconds": 0.07331729982979596
+    },
+    "134": {
+      "bytes": 581,
+      "length": 256,
+      "n_corrections": 59,
+      "payload_bits": 354,
+      "score_seconds": 0.05870030005462468
+    },
+    "135": {
+      "bytes": 566,
+      "length": 256,
+      "n_corrections": 19,
+      "payload_bits": 108,
+      "score_seconds": 0.05950079998001456
+    },
+    "136": {
+      "bytes": 565,
+      "length": 256,
+      "n_corrections": 1,
+      "payload_bits": 6,
+      "score_seconds": 0.059260900132358074
+    },
+    "137": {
+      "bytes": 551,
+      "length": 256,
+      "n_corrections": 3,
+      "payload_bits": 24,
+      "score_seconds": 0.06036909995600581
+    },
+    "138": {
+      "bytes": 552,
+      "length": 256,
+      "n_corrections": 37,
+      "payload_bits": 196,
+      "score_seconds": 0.06010569981299341
+    },
+    "139": {
+      "bytes": 603,
+      "length": 256,
+      "n_corrections": 40,
+      "payload_bits": 270,
+      "score_seconds": 0.06011439999565482
+    },
+    "14": {
+      "bytes": 539,
+      "length": 256,
+      "n_corrections": 7,
+      "payload_bits": 42,
+      "score_seconds": 0.061351400101557374
+    },
+    "140": {
+      "bytes": 537,
+      "length": 256,
+      "n_corrections": 10,
+      "payload_bits": 66,
+      "score_seconds": 0.059721099911257625
+    },
+    "141": {
+      "bytes": 574,
+      "length": 256,
+      "n_corrections": 16,
+      "payload_bits": 124,
+      "score_seconds": 0.05959259998053312
+    },
+    "142": {
+      "bytes": 568,
+      "length": 256,
+      "n_corrections": 5,
+      "payload_bits": 30,
+      "score_seconds": 0.06027849996462464
+    },
+    "143": {
+      "bytes": 574,
+      "length": 256,
+      "n_corrections": 27,
+      "payload_bits": 218,
+      "score_seconds": 0.05988819990307093
+    },
+    "144": {
+      "bytes": 562,
+      "length": 256,
+      "n_corrections": 36,
+      "payload_bits": 224,
+      "score_seconds": 0.06213059998117387
+    },
+    "145": {
+      "bytes": 569,
+      "length": 256,
+      "n_corrections": 5,
+      "payload_bits": 30,
+      "score_seconds": 2.283912400016561
+    },
+    "146": {
+      "bytes": 553,
+      "length": 256,
+      "n_corrections": 24,
+      "payload_bits": 140,
+      "score_seconds": 0.16719490010291338
+    },
+    "147": {
+      "bytes": 573,
+      "length": 256,
+      "n_corrections": 21,
+      "payload_bits": 148,
+      "score_seconds": 0.07333000004291534
+    },
+    "148": {
+      "bytes": 580,
+      "length": 256,
+      "n_corrections": 1,
+      "payload_bits": 6,
+      "score_seconds": 0.060485499911010265
+    },
+    "149": {
+      "bytes": 538,
+      "length": 256,
+      "n_corrections": 2,
+      "payload_bits": 16,
+      "score_seconds": 0.061472800094634295
+    },
+    "15": {
+      "bytes": 584,
+      "length": 256,
+      "n_corrections": 45,
+      "payload_bits": 288,
+      "score_seconds": 2.3819101999979466
+    },
+    "150": {
+      "bytes": 527,
+      "length": 256,
+      "n_corrections": 2,
+      "payload_bits": 12,
+      "score_seconds": 0.05958430003374815
+    },
+    "151": {
+      "bytes": 572,
+      "length": 256,
+      "n_corrections": 2,
+      "payload_bits": 12,
+      "score_seconds": 0.06028069998137653
+    },
+    "152": {
+      "bytes": 553,
+      "length": 256,
+      "n_corrections": 12,
+      "payload_bits": 76,
+      "score_seconds": 0.0595339999999851
+    },
+    "153": {
+      "bytes": 558,
+      "length": 256,
+      "n_corrections": 4,
+      "payload_bits": 28,
+      "score_seconds": 0.059887400129809976
+    },
+    "154": {
+      "bytes": 590,
+      "length": 256,
+      "n_corrections": 7,
+      "payload_bits": 46,
+      "score_seconds": 0.06091169989667833
+    },
+    "155": {
+      "bytes": 599,
+      "length": 256,
+      "n_corrections": 35,
+      "payload_bits": 222,
+      "score_seconds": 0.06080029997974634
+    },
+    "156": {
+      "bytes": 563,
+      "length": 256,
+      "n_corrections": 28,
+      "payload_bits": 154,
+      "score_seconds": 0.05983150005340576
+    },
+    "157": {
+      "bytes": 563,
+      "length": 256,
+      "n_corrections": 15,
+      "payload_bits": 100,
+      "score_seconds": 0.05934890010394156
+    },
+    "158": {
+      "bytes": 547,
+      "length": 256,
+      "n_corrections": 22,
+      "payload_bits": 134,
+      "score_seconds": 0.05963469995185733
+    },
+    "159": {
+      "bytes": 560,
+      "length": 256,
+      "n_corrections": 15,
+      "payload_bits": 80,
+      "score_seconds": 2.292863800190389
+    },
+    "16": {
+      "bytes": 584,
+      "length": 256,
+      "n_corrections": 6,
+      "payload_bits": 34,
+      "score_seconds": 0.11777679994702339
+    },
+    "160": {
+      "bytes": 612,
+      "length": 256,
+      "n_corrections": 15,
+      "payload_bits": 104,
+      "score_seconds": 0.18109430000185966
+    },
+    "161": {
+      "bytes": 546,
+      "length": 256,
+      "n_corrections": 4,
+      "payload_bits": 38,
+      "score_seconds": 0.08065239991992712
+    },
+    "162": {
+      "bytes": 537,
+      "length": 49,
+      "n_corrections": 8,
+      "payload_bits": 50,
+      "score_seconds": 0.021452500019222498
+    },
+    "163": {
+      "bytes": 593,
+      "length": 256,
+      "n_corrections": 22,
+      "payload_bits": 116,
+      "score_seconds": 0.058950399979949
+    },
+    "164": {
+      "bytes": 536,
+      "length": 256,
+      "n_corrections": 10,
+      "payload_bits": 74,
+      "score_seconds": 0.05963149992749095
+    },
+    "165": {
+      "bytes": 573,
+      "length": 256,
+      "n_corrections": 23,
+      "payload_bits": 116,
+      "score_seconds": 0.0599930000025779
+    },
+    "166": {
+      "bytes": 583,
+      "length": 256,
+      "n_corrections": 11,
+      "payload_bits": 62,
+      "score_seconds": 0.05991470022127032
+    },
+    "167": {
+      "bytes": 544,
+      "length": 256,
+      "n_corrections": 3,
+      "payload_bits": 20,
+      "score_seconds": 0.05997729999944568
+    },
+    "168": {
+      "bytes": 534,
+      "length": 256,
+      "n_corrections": 2,
+      "payload_bits": 10,
+      "score_seconds": 0.06017310009337962
+    },
+    "169": {
+      "bytes": 575,
+      "length": 256,
+      "n_corrections": 8,
+      "payload_bits": 50,
+      "score_seconds": 0.06096939998678863
+    },
+    "17": {
+      "bytes": 574,
+      "length": 256,
+      "n_corrections": 35,
+      "payload_bits": 284,
+      "score_seconds": 0.0745284000877291
+    },
+    "170": {
+      "bytes": 538,
+      "length": 256,
+      "n_corrections": 11,
+      "payload_bits": 78,
+      "score_seconds": 0.06020039995200932
+    },
+    "171": {
+      "bytes": 569,
+      "length": 256,
+      "n_corrections": 14,
+      "payload_bits": 163,
+      "score_seconds": 0.05972739984281361
+    },
+    "172": {
+      "bytes": 584,
+      "length": 256,
+      "n_corrections": 5,
+      "payload_bits": 28,
+      "score_seconds": 0.060071999905630946
+    },
+    "173": {
+      "bytes": 580,
+      "length": 256,
+      "n_corrections": 38,
+      "payload_bits": 234,
+      "score_seconds": 0.059990699868649244
+    },
+    "174": {
+      "bytes": 545,
+      "length": 256,
+      "n_corrections": 7,
+      "payload_bits": 48,
+      "score_seconds": 2.3681820000056177
+    },
+    "175": {
+      "bytes": 591,
+      "length": 256,
+      "n_corrections": 22,
+      "payload_bits": 132,
+      "score_seconds": 0.16089010005816817
+    },
+    "176": {
+      "bytes": 539,
+      "length": 256,
+      "n_corrections": 18,
+      "payload_bits": 76,
+      "score_seconds": 0.07562109990976751
+    },
+    "177": {
+      "bytes": 544,
+      "length": 256,
+      "n_corrections": 8,
+      "payload_bits": 44,
+      "score_seconds": 0.05995350005105138
+    },
+    "178": {
+      "bytes": 591,
+      "length": 256,
+      "n_corrections": 2,
+      "payload_bits": 12,
+      "score_seconds": 0.06021989998407662
+    },
+    "179": {
+      "bytes": 570,
+      "length": 256,
+      "n_corrections": 30,
+      "payload_bits": 206,
+      "score_seconds": 0.0601029999088496
+    },
+    "18": {
+      "bytes": 554,
+      "length": 256,
+      "n_corrections": 26,
+      "payload_bits": 162,
+      "score_seconds": 0.06102979998104274
+    },
+    "180": {
+      "bytes": 533,
+      "length": 256,
+      "n_corrections": 2,
+      "payload_bits": 12,
+      "score_seconds": 0.06057800003327429
+    },
+    "181": {
+      "bytes": 590,
+      "length": 256,
+      "n_corrections": 38,
+      "payload_bits": 236,
+      "score_seconds": 0.05967910005711019
+    },
+    "182": {
+      "bytes": 529,
+      "length": 256,
+      "n_corrections": 3,
+      "payload_bits": 16,
+      "score_seconds": 0.060220800107344985
+    },
+    "183": {
+      "bytes": 549,
+      "length": 256,
+      "n_corrections": 4,
+      "payload_bits": 32,
+      "score_seconds": 0.05987239978276193
+    },
+    "184": {
+      "bytes": 584,
+      "length": 61,
+      "n_corrections": 7,
+      "payload_bits": 42,
+      "score_seconds": 0.02845699992030859
+    },
+    "185": {
+      "bytes": 582,
+      "length": 256,
+      "n_corrections": 53,
+      "payload_bits": 302,
+      "score_seconds": 0.05871030013076961
+    },
+    "186": {
+      "bytes": 541,
+      "length": 256,
+      "n_corrections": 6,
+      "payload_bits": 42,
+      "score_seconds": 0.06090579996816814
+    },
+    "187": {
+      "bytes": 601,
+      "length": 256,
+      "n_corrections": 44,
+      "payload_bits": 268,
+      "score_seconds": 0.06055449997074902
+    },
+    "188": {
+      "bytes": 539,
+      "length": 256,
+      "n_corrections": 16,
+      "payload_bits": 104,
+      "score_seconds": 0.060415899846702814
+    },
+    "189": {
+      "bytes": 563,
+      "length": 256,
+      "n_corrections": 12,
+      "payload_bits": 68,
+      "score_seconds": 2.4395802000071853
+    },
+    "19": {
+      "bytes": 603,
+      "length": 256,
+      "n_corrections": 44,
+      "payload_bits": 296,
+      "score_seconds": 0.060196799924597144
+    },
+    "190": {
+      "bytes": 580,
+      "length": 256,
+      "n_corrections": 7,
+      "payload_bits": 56,
+      "score_seconds": 0.07811460015363991
+    },
+    "191": {
+      "bytes": 573,
+      "length": 256,
+      "n_corrections": 33,
+      "payload_bits": 240,
+      "score_seconds": 0.06050699995830655
+    },
+    "192": {
+      "bytes": 540,
+      "length": 132,
+      "n_corrections": 28,
+      "payload_bits": 150,
+      "score_seconds": 0.03996780002489686
+    },
+    "193": {
+      "bytes": 564,
+      "length": 256,
+      "n_corrections": 4,
+      "payload_bits": 28,
+      "score_seconds": 0.06072729988954961
+    },
+    "194": {
+      "bytes": 537,
+      "length": 256,
+      "n_corrections": 3,
+      "payload_bits": 20,
+      "score_seconds": 0.060143399983644485
+    },
+    "195": {
+      "bytes": 565,
+      "length": 256,
+      "n_corrections": 15,
+      "payload_bits": 98,
+      "score_seconds": 0.060332899913191795
+    },
+    "196": {
+      "bytes": 585,
+      "length": 256,
+      "n_corrections": 15,
+      "payload_bits": 88,
+      "score_seconds": 0.060817700112238526
+    },
+    "197": {
+      "bytes": 584,
+      "length": 256,
+      "n_corrections": 55,
+      "payload_bits": 310,
+      "score_seconds": 0.059675300028175116
+    },
+    "198": {
+      "bytes": 556,
+      "length": 256,
+      "n_corrections": 25,
+      "payload_bits": 150,
+      "score_seconds": 0.059624499874189496
+    },
+    "199": {
+      "bytes": 602,
+      "length": 256,
+      "n_corrections": 29,
+      "payload_bits": 192,
+      "score_seconds": 0.06059889984317124
+    },
+    "2": {
+      "bytes": 537,
+      "length": 256,
+      "n_corrections": 3,
+      "payload_bits": 18,
+      "score_seconds": 0.21419509989209473
+    },
+    "20": {
+      "bytes": 576,
+      "length": 256,
+      "n_corrections": 49,
+      "payload_bits": 316,
+      "score_seconds": 0.060704899951815605
+    },
+    "21": {
+      "bytes": 537,
+      "length": 256,
+      "n_corrections": 7,
+      "payload_bits": 34,
+      "score_seconds": 0.05970000009983778
+    },
+    "22": {
+      "bytes": 570,
+      "length": 256,
+      "n_corrections": 5,
+      "payload_bits": 32,
+      "score_seconds": 0.06157339992932975
+    },
+    "23": {
+      "bytes": 562,
+      "length": 256,
+      "n_corrections": 6,
+      "payload_bits": 26,
+      "score_seconds": 0.060503199929371476
+    },
+    "24": {
+      "bytes": 543,
+      "length": 256,
+      "n_corrections": 16,
+      "payload_bits": 108,
+      "score_seconds": 0.06242979993112385
+    },
+    "25": {
+      "bytes": 596,
+      "length": 256,
+      "n_corrections": 21,
+      "payload_bits": 124,
+      "score_seconds": 0.06298779998905957
+    },
+    "26": {
+      "bytes": 547,
+      "length": 256,
+      "n_corrections": 2,
+      "payload_bits": 16,
+      "score_seconds": 0.06352610001340508
+    },
+    "27": {
+      "bytes": 556,
+      "length": 256,
+      "n_corrections": 6,
+      "payload_bits": 63,
+      "score_seconds": 0.06167490012012422
+    },
+    "28": {
+      "bytes": 593,
+      "length": 256,
+      "n_corrections": 3,
+      "payload_bits": 16,
+      "score_seconds": 0.06032630009576678
+    },
+    "29": {
+      "bytes": 559,
+      "length": 256,
+      "n_corrections": 6,
+      "payload_bits": 36,
+      "score_seconds": 0.06155869993381202
+    },
+    "3": {
+      "bytes": 565,
+      "length": 256,
+      "n_corrections": 19,
+      "payload_bits": 116,
+      "score_seconds": 0.2083648000843823
+    },
+    "30": {
+      "bytes": 526,
+      "length": 256,
+      "n_corrections": 5,
+      "payload_bits": 36,
+      "score_seconds": 2.3332776001188904
+    },
+    "31": {
+      "bytes": 585,
+      "length": 256,
+      "n_corrections": 19,
+      "payload_bits": 116,
+      "score_seconds": 0.10463680000975728
+    },
+    "32": {
+      "bytes": 571,
+      "length": 256,
+      "n_corrections": 39,
+      "payload_bits": 280,
+      "score_seconds": 0.08237980003468692
+    },
+    "33": {
+      "bytes": 568,
+      "length": 256,
+      "n_corrections": 10,
+      "payload_bits": 84,
+      "score_seconds": 0.06340500013902783
+    },
+    "34": {
+      "bytes": 569,
+      "length": 256,
+      "n_corrections": 6,
+      "payload_bits": 30,
+      "score_seconds": 0.06169590004719794
+    },
+    "35": {
+      "bytes": 538,
+      "length": 256,
+      "n_corrections": 2,
+      "payload_bits": 16,
+      "score_seconds": 0.06276670005172491
+    },
+    "36": {
+      "bytes": 548,
+      "length": 256,
+      "n_corrections": 19,
+      "payload_bits": 160,
+      "score_seconds": 0.061348099960014224
+    },
+    "37": {
+      "bytes": 580,
+      "length": 256,
+      "n_corrections": 21,
+      "payload_bits": 124,
+      "score_seconds": 0.06197890010662377
+    },
+    "38": {
+      "bytes": 539,
+      "length": 256,
+      "n_corrections": 4,
+      "payload_bits": 28,
+      "score_seconds": 0.06257040007039905
+    },
+    "39": {
+      "bytes": 546,
+      "length": 256,
+      "n_corrections": 9,
+      "payload_bits": 60,
+      "score_seconds": 0.06107080006040633
+    },
+    "4": {
+      "bytes": 603,
+      "length": 179,
+      "n_corrections": 18,
+      "payload_bits": 134,
+      "score_seconds": 2.313403300009668
+    },
+    "40": {
+      "bytes": 622,
+      "length": 256,
+      "n_corrections": 30,
+      "payload_bits": 342,
+      "score_seconds": 0.061910999938845634
+    },
+    "41": {
+      "bytes": 546,
+      "length": 256,
+      "n_corrections": 5,
+      "payload_bits": 26,
+      "score_seconds": 0.06331199989654124
+    },
+    "42": {
+      "bytes": 533,
+      "length": 256,
+      "n_corrections": 15,
+      "payload_bits": 94,
+      "score_seconds": 0.06207050010561943
+    },
+    "43": {
+      "bytes": 598,
+      "length": 256,
+      "n_corrections": 32,
+      "payload_bits": 190,
+      "score_seconds": 0.06337779993191361
+    },
+    "44": {
+      "bytes": 572,
+      "length": 256,
+      "n_corrections": 47,
+      "payload_bits": 288,
+      "score_seconds": 2.4110384001396596
+    },
+    "45": {
+      "bytes": 555,
+      "length": 256,
+      "n_corrections": 20,
+      "payload_bits": 118,
+      "score_seconds": 0.10872779996134341
+    },
+    "46": {
+      "bytes": 594,
+      "length": 57,
+      "n_corrections": 17,
+      "payload_bits": 98,
+      "score_seconds": 0.02851319988258183
+    },
+    "47": {
+      "bytes": 562,
+      "length": 82,
+      "n_corrections": 10,
+      "payload_bits": 54,
+      "score_seconds": 0.04673719988204539
+    },
+    "48": {
+      "bytes": 518,
+      "length": 256,
+      "n_corrections": 2,
+      "payload_bits": 8,
+      "score_seconds": 0.0653326001483947
+    },
+    "49": {
+      "bytes": 577,
+      "length": 256,
+      "n_corrections": 16,
+      "payload_bits": 92,
+      "score_seconds": 0.06343180011026561
+    },
+    "5": {
+      "bytes": 596,
+      "length": 256,
+      "n_corrections": 54,
+      "payload_bits": 296,
+      "score_seconds": 0.21425569988787174
+    },
+    "50": {
+      "bytes": 532,
+      "length": 256,
+      "n_corrections": 5,
+      "payload_bits": 22,
+      "score_seconds": 0.08382529998198152
+    },
+    "51": {
+      "bytes": 553,
+      "length": 256,
+      "n_corrections": 10,
+      "payload_bits": 64,
+      "score_seconds": 0.0590465001296252
+    },
+    "52": {
+      "bytes": 576,
+      "length": 21,
+      "n_corrections": 6,
+      "payload_bits": 32,
+      "score_seconds": 0.02164759999141097
+    },
+    "53": {
+      "bytes": 571,
+      "length": 256,
+      "n_corrections": 26,
+      "payload_bits": 166,
+      "score_seconds": 0.058463399996981025
+    },
+    "54": {
+      "bytes": 552,
+      "length": 256,
+      "n_corrections": 27,
+      "payload_bits": 230,
+      "score_seconds": 0.06015449995175004
+    },
+    "55": {
+      "bytes": 604,
+      "length": 256,
+      "n_corrections": 45,
+      "payload_bits": 306,
+      "score_seconds": 0.061963999876752496
+    },
+    "56": {
+      "bytes": 549,
+      "length": 256,
+      "n_corrections": 13,
+      "payload_bits": 100,
+      "score_seconds": 0.0618072000797838
+    },
+    "57": {
+      "bytes": 554,
+      "length": 256,
+      "n_corrections": 15,
+      "payload_bits": 74,
+      "score_seconds": 0.059616400161758065
+    },
+    "58": {
+      "bytes": 571,
+      "length": 256,
+      "n_corrections": 4,
+      "payload_bits": 28,
+      "score_seconds": 2.383414799813181
+    },
+    "59": {
+      "bytes": 567,
+      "length": 256,
+      "n_corrections": 16,
+      "payload_bits": 98,
+      "score_seconds": 0.1682800999842584
+    },
+    "6": {
+      "bytes": 578,
+      "length": 256,
+      "n_corrections": 56,
+      "payload_bits": 353,
+      "score_seconds": 0.23837769986130297
+    },
+    "60": {
+      "bytes": 527,
+      "length": 256,
+      "n_corrections": 3,
+      "payload_bits": 12,
+      "score_seconds": 0.07306229998357594
+    },
+    "61": {
+      "bytes": 578,
+      "length": 256,
+      "n_corrections": 4,
+      "payload_bits": 18,
+      "score_seconds": 0.05971199995838106
+    },
+    "62": {
+      "bytes": 541,
+      "length": 256,
+      "n_corrections": 13,
+      "payload_bits": 94,
+      "score_seconds": 0.05957299983128905
+    },
+    "63": {
+      "bytes": 550,
+      "length": 256,
+      "n_corrections": 12,
+      "payload_bits": 80,
+      "score_seconds": 0.060021799989044666
+    },
+    "64": {
+      "bytes": 603,
+      "length": 256,
+      "n_corrections": 16,
+      "payload_bits": 118,
+      "score_seconds": 0.06020680000074208
+    },
+    "65": {
+      "bytes": 569,
+      "length": 256,
+      "n_corrections": 21,
+      "payload_bits": 154,
+      "score_seconds": 0.06004659994505346
+    },
+    "66": {
+      "bytes": 528,
+      "length": 256,
+      "n_corrections": 1,
+      "payload_bits": 2,
+      "score_seconds": 0.060381999937817454
+    },
+    "67": {
+      "bytes": 595,
+      "length": 256,
+      "n_corrections": 39,
+      "payload_bits": 252,
+      "score_seconds": 0.059500700095668435
+    },
+    "68": {
+      "bytes": 548,
+      "length": 256,
+      "n_corrections": 22,
+      "payload_bits": 144,
+      "score_seconds": 0.05967800016514957
+    },
+    "69": {
+      "bytes": 567,
+      "length": 256,
+      "n_corrections": 23,
+      "payload_bits": 146,
+      "score_seconds": 0.05962259997613728
+    },
+    "7": {
+      "bytes": 573,
+      "length": 256,
+      "n_corrections": 10,
+      "payload_bits": 62,
+      "score_seconds": 0.1949138999916613
+    },
+    "70": {
+      "bytes": 581,
+      "length": 26,
+      "n_corrections": 7,
+      "payload_bits": 48,
+      "score_seconds": 0.021325599867850542
+    },
+    "71": {
+      "bytes": 575,
+      "length": 256,
+      "n_corrections": 18,
+      "payload_bits": 151,
+      "score_seconds": 0.0582651998847723
+    },
+    "72": {
+      "bytes": 531,
+      "length": 256,
+      "n_corrections": 2,
+      "payload_bits": 10,
+      "score_seconds": 0.06081610010005534
+    },
+    "73": {
+      "bytes": 609,
+      "length": 222,
+      "n_corrections": 31,
+      "payload_bits": 174,
+      "score_seconds": 2.300634799990803
+    },
+    "74": {
+      "bytes": 569,
+      "length": 256,
+      "n_corrections": 52,
+      "payload_bits": 310,
+      "score_seconds": 0.11516849999316037
+    },
+    "75": {
+      "bytes": 559,
+      "length": 256,
+      "n_corrections": 20,
+      "payload_bits": 100,
+      "score_seconds": 0.07397240004502237
+    },
+    "76": {
+      "bytes": 584,
+      "length": 256,
+      "n_corrections": 9,
+      "payload_bits": 52,
+      "score_seconds": 0.060619099996984005
+    },
+    "77": {
+      "bytes": 608,
+      "length": 256,
+      "n_corrections": 32,
+      "payload_bits": 210,
+      "score_seconds": 0.06064169993624091
+    },
+    "78": {
+      "bytes": 535,
+      "length": 109,
+      "n_corrections": 19,
+      "payload_bits": 112,
+      "score_seconds": 0.03309309994801879
+    },
+    "79": {
+      "bytes": 593,
+      "length": 256,
+      "n_corrections": 51,
+      "payload_bits": 298,
+      "score_seconds": 0.059664899948984385
+    },
+    "8": {
+      "bytes": 565,
+      "length": 256,
+      "n_corrections": 34,
+      "payload_bits": 220,
+      "score_seconds": 0.11117870011366904
+    },
+    "80": {
+      "bytes": 529,
+      "length": 256,
+      "n_corrections": 3,
+      "payload_bits": 16,
+      "score_seconds": 0.06078099994920194
+    },
+    "81": {
+      "bytes": 582,
+      "length": 256,
+      "n_corrections": 44,
+      "payload_bits": 274,
+      "score_seconds": 0.06025219988077879
+    },
+    "82": {
+      "bytes": 627,
+      "length": 256,
+      "n_corrections": 31,
+      "payload_bits": 230,
+      "score_seconds": 0.06000189995393157
+    },
+    "83": {
+      "bytes": 571,
+      "length": 256,
+      "n_corrections": 4,
+      "payload_bits": 22,
+      "score_seconds": 0.061118399957194924
+    },
+    "84": {
+      "bytes": 536,
+      "length": 256,
+      "n_corrections": 8,
+      "payload_bits": 58,
+      "score_seconds": 0.0629445998929441
+    },
+    "85": {
+      "bytes": 571,
+      "length": 256,
+      "n_corrections": 9,
+      "payload_bits": 62,
+      "score_seconds": 0.06272829999215901
+    },
+    "86": {
+      "bytes": 549,
+      "length": 256,
+      "n_corrections": 19,
+      "payload_bits": 184,
+      "score_seconds": 0.06005089986138046
+    },
+    "87": {
+      "bytes": 562,
+      "length": 256,
+      "n_corrections": 13,
+      "payload_bits": 90,
+      "score_seconds": 2.207577000139281
+    },
+    "88": {
+      "bytes": 623,
+      "length": 256,
+      "n_corrections": 17,
+      "payload_bits": 110,
+      "score_seconds": 0.19216000009328127
+    },
+    "89": {
+      "bytes": 549,
+      "length": 256,
+      "n_corrections": 9,
+      "payload_bits": 58,
+      "score_seconds": 0.1434291999321431
+    },
+    "9": {
+      "bytes": 557,
+      "length": 256,
+      "n_corrections": 6,
+      "payload_bits": 30,
+      "score_seconds": 0.058120999950915575
+    },
+    "90": {
+      "bytes": 555,
+      "length": 145,
+      "n_corrections": 36,
+      "payload_bits": 220,
+      "score_seconds": 0.03718809993006289
+    },
+    "91": {
+      "bytes": 592,
+      "length": 256,
+      "n_corrections": 29,
+      "payload_bits": 180,
+      "score_seconds": 0.05977539997547865
+    },
+    "92": {
+      "bytes": 562,
+      "length": 256,
+      "n_corrections": 41,
+      "payload_bits": 258,
+      "score_seconds": 0.059922599932178855
+    },
+    "93": {
+      "bytes": 583,
+      "length": 256,
+      "n_corrections": 28,
+      "payload_bits": 230,
+      "score_seconds": 0.05946959997527301
+    },
+    "94": {
+      "bytes": 576,
+      "length": 256,
+      "n_corrections": 5,
+      "payload_bits": 32,
+      "score_seconds": 0.05995999998413026
+    },
+    "95": {
+      "bytes": 570,
+      "length": 256,
+      "n_corrections": 26,
+      "payload_bits": 162,
+      "score_seconds": 0.05946839996613562
+    },
+    "96": {
+      "bytes": 536,
+      "length": 256,
+      "n_corrections": 4,
+      "payload_bits": 20,
+      "score_seconds": 0.05995319993235171
+    },
+    "97": {
+      "bytes": 576,
+      "length": 256,
+      "n_corrections": 7,
+      "payload_bits": 44,
+      "score_seconds": 0.0601409999653697
+    },
+    "98": {
+      "bytes": 543,
+      "length": 256,
+      "n_corrections": 10,
+      "payload_bits": 102,
+      "score_seconds": 0.06112860003486276
+    },
+    "99": {
+      "bytes": 571,
+      "length": 256,
+      "n_corrections": 25,
+      "payload_bits": 206,
+      "score_seconds": 0.06039500003680587
+    }
+  },
+  "provenance": {
+    "cpu_threads": 16,
+    "cuda": "12.4",
+    "cudnn": 90100,
+    "deterministic_algorithms": false,
+    "envprobe_digest": "2d2a2e0c1d7795d5383d36bd22b9b51dfac7fde4171fa4f0db074f6de145bbbd",
+    "gpu": "NVIDIA GeForce RTX 3080 Ti",
+    "model_id": "meta-llama/Llama-3.2-1B",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "snapshot": "4e20de362430cd3b72f300e6b0f18e50e7166e08",
+    "torch": "2.6.0+cu124",
+    "transformers": "4.57.3"
+  },
+  "vocab_size": 128256
+}

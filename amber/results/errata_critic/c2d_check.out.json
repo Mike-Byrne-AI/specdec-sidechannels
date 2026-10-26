@@ -1,0 +1,99 @@
+{
+ "provenance": {
+  "HEAD": "980597b",
+  "payload_head": "8211329",
+  "cr_bytes": 0,
+  "equals_HEAD_blob": true,
+  "HEAD_blob": "5ff5b67e6d24b7e89a94a99a2871e1bb97c0319d",
+  "inputs_mismatch": {},
+  "inputs_n": 38,
+  "tree_ok": true,
+  "script_blob_ok": true,
+  "clean_selfreported": true,
+  "script_sha256_lf_ok": true,
+  "lib_sha256_lf_ok": true,
+  "protocol_append_only_05c3305_to_head": true
+ },
+ "vs_3cec4df": {
+  "shared": 896,
+  "changed": [
+   "/E15/seconds",
+   "/E16/seconds"
+  ],
+  "removed": [],
+  "added": [
+   "/E16/value/prediction_sources/b1_count_above_budget",
+   "/E16/value/prediction_sources/b1_max_g",
+   "/E16/value/prediction_sources/b1_n_diff",
+   "/E16/value/prediction_sources/b1_n_nonadjacent",
+   "/E16/value/prediction_sources/b8_count_above_budget",
+   "/E16/value/prediction_sources/b8_max_g",
+   "/E16/value/prediction_sources/b8_n_diff"
+  ]
+ },
+ "E16_prediction_sources": {
+  "b1_count_above_budget": "the critic (results/errata_critic/REPORT.md, first pass items 5 and 13; third pass item 2)",
+  "b1_max_g": "the critic (results/errata_critic/REPORT.md, first pass items 5 and 13; third pass item 2)",
+  "b1_n_diff": "the critic (results/errata_critic/REPORT.md, first pass items 5 and 13; third pass item 2)",
+  "b1_n_nonadjacent": "the critic (results/errata_critic/REPORT.md, first pass items 5 and 13; third pass item 2)",
+  "b8_count_above_budget": "the critic (results/errata_critic/REPORT.md, first pass items 5 and 13; third pass item 2)",
+  "b8_max_g": "the critic (results/errata_critic/REPORT.md, first pass items 5 and 13; third pass item 2)",
+  "b8_n_diff": "the critic (results/errata_critic/REPORT.md, first pass items 5 and 13; third pass item 2)"
+ },
+ "failure_metric": {
+  "cuda_bf16_b1": {
+   "O": 140,
+   "n": 200,
+   "rate": 0.7,
+   "p": 0.6580861386587953,
+   "k": 1.2496055479176773,
+   "payload_p": 0.6580861386587953,
+   "payload_O": 140.0,
+   "abs_diff_p": 0.0
+  },
+  "cuda_fp16_b1": {
+   "O": 48,
+   "n": 200,
+   "rate": 0.24,
+   "p": 0.21274518924090358,
+   "k": 0.9418259080726415,
+   "payload_p": 0.21274518924090358,
+   "payload_O": 48.0,
+   "abs_diff_p": 0.0
+  }
+ },
+ "text": {
+  "failure_sentence": "on the failure metric, C-caused failures are 70.0% and 24.0% (140 and 48 of 200) against 65.8% and 21.3% with correction hazards alone: the same direction, by 1.2 and 0.9 binomial sd of the predicted rate, within noise.",
+  "expected_fragment": "70.0% and 24.0% (140 and 48 of 200) against 65.8% and 21.3% with correction hazards alone: the same direction, by 1.2 and 0.9 binomial sd",
+  "old_overstatement_present": false,
+  "claim_site_statuses_in_title_and_readme": [
+   false,
+   true,
+   true
+  ],
+  "pointer_labels": {
+   "FINDINGS.md": [
+    "- note (2026-10-11)",
+    "- erratum (2026-10-11)",
+    "- note (2026-10-11)",
+    "- erratum (2026-10-11)"
+   ],
+   "docs/BLUEPRINT.md": [
+    "> Note (2026-10-11; F-15 row E15)"
+   ],
+   "OPEN_QUESTIONS.md": [
+    "> Erratum (2026-10-11; F-15 row E16)"
+   ],
+   "README.md": [
+    "> Erratum (2026-10-11; F-15 row E16)",
+    "> Second errata batch (2026-10-11)"
+   ]
+  },
+  "title": "## F-15 \u2014 2026-10 errata pass, second batch (rows E15, E16): 2 of 2 rows corrected under their pinned rules, 0 confirmed, 0 unrecomputable, both rules carrying a recorded defect, 7 of 8 claim-site statuses standing at their own scope; F-11's comparison of its failure rates with F-10's prediction crossed escape regimes while corrections stay more fragile than predicted, and F-14's \"every one a near-tie\" gets the threshold the record's own instrument uses while the top-1 claims it was read from stand",
+  "regime": "- regime: recompute of printed claims from evidence committed at amber 8211329 (tree cd75c4e), CPU only (torch blocked: true), python 3.11.9, numpy 2.3.5; both rows pre-registered as the dated \"second batch\" entry of experiments/ERRATA_PROTOCOL.md, committed before the first code for them (the history shows that order; the order of writing is self-reported); the file's blob at this payload's head (861afe70f1c6) holds that entry, a post-dry-run entry (one informational field) and the post-critic entries that added the by-class, claim-scope and claim-site statuses in the brackets below and corrected the generated text; both rows were proposed by F-14's critic, whose values are this batch's scored predictions, never citations; every numeral in this entry is generated from results/errata_recompute_2.json by experiments/errata_text.py",
+  "predictions": "- predictions scored (each labelled by its source, the critic's values or this protocol's own, where a prediction key names a payload key): E15: bf16_all_theta0_one_in_h1 hit (critic), bf16_claim_regime_one_in hit (protocol), bf16_fail_poisson_claim_regime_pct hit (protocol), fp16_all_theta0_one_in_h1 hit (critic), fp16_claim_regime_one_in hit (protocol), fp16_fail_poisson_claim_regime_pct hit (protocol); E16: b1_count_above_budget hit (critic), b1_max_g hit (critic), b1_n_diff hit (critic), b1_n_nonadjacent hit (critic), b8_count_above_budget hit (critic), b8_max_g hit (critic), b8_n_diff hit (critic).",
+  "caveats_label_rule": "labelled erratum where a site there is corrected or is the site a pinned rule scores, and note where every site there stands.",
+  "readme_note": "> Second errata batch (2026-10-11): F-15 adds rows E15, E16 from a second pre-registered recompute (experiments/ERRATA_PROTOCOL.md amendment log, results/errata_recompute_2.json): 2 of 2 rows corrected under their pinned rules, 7 of 8 claim-site statuses standing at their own scope; the lines below stand as written.",
+  "finding_line": "- finding: one bullet per row (claim as printed; recomputed value; status under the pinned rule, with the status in the claim's own regime, by symbol class, per decoder arm and per claim site where the protocol defines one). Values are addressable as rows.<id>.value.<key> in the payload; the critic's independent recompute (results/errata_critic/REPORT.md, second batch) reproduced every value."
+ }
+}

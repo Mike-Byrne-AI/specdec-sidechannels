@@ -1,0 +1,68 @@
+{
+ "arm": 1,
+ "arm_kind": "fixed",
+ "byproduct_sha256": {
+  "p000.npz": "d12a7f6a744122c0e791e1d1758e8a3011fb966989829a30812dd9e7c141158d"
+ },
+ "drafted_per_emitted": 1.2140077821011672,
+ "mean_acceptance_rate": 0.7850877192982456,
+ "n_prompts_completed": 1,
+ "per_prompt_stats": [
+  {
+   "acceptance_rate": 0.7850877192982456,
+   "analytic_acc_drafted_by_offset": {
+    "1": [
+     62.04938504748902,
+     78
+    ],
+    "2": [
+     59.80711406874455,
+     78
+    ],
+    "3": [
+     61.556120061257495,
+     78
+    ],
+    "4": [
+     59.82529302743422,
+     78
+    ]
+   },
+   "analytic_acc_drafted_n": 312,
+   "analytic_acc_drafted_sum": 243.2379122049253,
+   "analytic_acc_verified_n": 228,
+   "analytic_acc_verified_sum": 180.5294537961518,
+   "analytic_acceptance_drafted": 0.7796086929645042,
+   "drafted_per_emitted": 1.2140077821011672,
+   "n_accepted": 179,
+   "n_blocks": 78,
+   "n_drafted": 312,
+   "n_emitted": 257,
+   "n_extend_blocks": 0,
+   "n_gate_open": 0,
+   "n_proposed": 228,
+   "n_steerable": 0,
+   "n_stop_blocks": 0,
+   "orig_prompt_idx": 0,
+   "peak_vram_gb": 7.8,
+   "prompt_idx": 0,
+   "run_id": "20261010T012154Z",
+   "seconds": 15.15,
+   "tokens_per_call": 3.2948717948717947
+  }
+ ],
+ "run_id": "20261010T012154Z",
+ "run_ids": [
+  "20261010T012154Z"
+ ],
+ "tokens_per_call": 3.2948717948717947,
+ "totals": {
+  "n_accepted": 179,
+  "n_blocks": 78,
+  "n_drafted": 312,
+  "n_emitted": 257,
+  "n_extend_blocks": 0,
+  "n_proposed": 228,
+  "n_stop_blocks": 0
+ }
+}

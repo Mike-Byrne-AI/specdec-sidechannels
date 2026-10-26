@@ -1,0 +1,29 @@
+{
+  "_experiment": "summary.json",
+  "_written_unix": 1787966266,
+  "note": "v0.2.0 assembly: e01-e05 regenerated under run_all (v0.1 numbers reproduced bit-exact); e06 executed via its --part chunking, e07 standalone, after run_all outlived the session wall clock. Per-run seconds not recorded for this assembly.",
+  "runs": {
+    "e01_verifier_exactness": {
+      "seconds": null
+    },
+    "e02_crossbucket_audit": {
+      "seconds": null
+    },
+    "e03_oracle_ceiling": {
+      "seconds": null
+    },
+    "e04_staleness_decay": {
+      "seconds": null
+    },
+    "e05_sidecar_recovery": {
+      "seconds": null
+    },
+    "e06_posterior_mechanism": {
+      "seconds": null
+    },
+    "e07_hint_rate": {
+      "seconds": null
+    }
+  },
+  "smoke": false
+}

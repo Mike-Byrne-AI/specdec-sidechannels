@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: >-
+  This file describes the sideband folder as its v0.3.0 documentation pass
+  of 2026-09-05 left it; the abstract below is that pass's wording, and
+  F-24 (2026-09-06) later read the existence layer as NOT SHOWN at the
+  registered reader (FINDINGS.md is the record). The repository's citation
+  is CITATION.cff at its root.
+title: "sideband: can the memory-access address stream steer a speculative-decoding drafter?"
+version: 0.3.0
+date-released: "2026-09-05"
+repository-code: "https://github.com/Mike-Byrne-AI/specdec-sidechannels"
+license: MIT
+authors:
+  - name: "Michael Byrne"
+  - name: "Claude (AI collaborator)"
+    email: "claudes.email.address@gmail.com"
+keywords:
+  - speculative decoding
+  - drafter steering
+  - side channel
+  - pre-registration
+  - negative results
+abstract: >-
+  A pre-registered, kill-criteria-gated test of whether the address stream a
+  weight-serving device sees for free can steer a speculative-decoding draft
+  model. Outcome at v0.3.0: existence shown at two sources (F-15, F-17);
+  conversion not shown in two registered attempts (F-19, F-21); the
+  reconstruction target proved to be free information (F-23). No wall-clock
+  claim exists.
+  Dated note 2026-10-16: this abstract keeps the v0.3.0 wording of 2026-09-05.
+  F-24 (2026-09-06) then read the existence layer as NOT SHOWN at the registered
+  reader at both sources, and K-2 fired at the probe level at the pinned L1
+  cells (and at L2 under F-25's rider amendment); L3 stays open at both sources
+  (F-25), and F-28 carries S3's final K-2 word, K-2-ISOLATED, with S1 not run.
+  Dated 2026-10-17: a new registration, F-29, ran the same three readers at
+  the S1 gate cell, each ABSORBED, the S1 word K-2-NOT-OVERTURNED-AT-S1; the
+  registered-reader kill stands at both sources and L3 stays open at both.
+  FINDINGS.md and README.md carry the record and docs/REPORT.md the reading.

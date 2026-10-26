@@ -1,0 +1,375 @@
+{
+ "aligned": {
+  "ent_abs": {
+   "max": 0.1675553321838379,
+   "min": 1.7320271581411362e-06,
+   "p50": 0.020777881145477295,
+   "p90": 0.1180320143699646,
+   "p99": 0.15478312015533452
+  },
+  "mass_linf": {
+   "max": 0.06662297248840332,
+   "min": 9.179115295410156e-06,
+   "p50": 0.012508891522884369,
+   "p90": 0.05009485483169556,
+   "p99": 0.06363055914640428
+  },
+  "min_overlap": {
+   "max": 8.0,
+   "min": 7.0,
+   "p50": 8.0,
+   "p90": 8.0,
+   "p99": 8.0
+  }
+ },
+ "misaligned_control": {
+  "ent_abs": {
+   "max": 2.1515032947063446,
+   "min": 0.0018936522537842393,
+   "p50": 0.7655086256563663,
+   "p90": 1.6573433674871922,
+   "p99": 2.0813025532104077
+  },
+  "mass_linf": {
+   "max": 0.9999698400497437,
+   "min": 0.008131623268127441,
+   "p50": 0.8871723711490631,
+   "p90": 0.9994409084320068,
+   "p99": 0.9999507051706314
+  },
+  "min_overlap": {
+   "max": 2.0,
+   "min": 0.0,
+   "p50": 0.0,
+   "p90": 2.0,
+   "p99": 2.0
+  }
+ },
+ "overlap_denominator": 8,
+ "purpose": "R1-S3 tolerance calibration evidence (S3 registration 2026-08-31; non-audit anchors; tolerances pinned by dated amendment from this file BEFORE the rider runs)",
+ "raw": {
+  "aligned": [
+   {
+    "ent_abs": 0.03662264347076416,
+    "mass_linf": 0.004790663719177246,
+    "min_overlap": 8
+   },
+   {
+    "ent_abs": 0.001860491931438446,
+    "mass_linf": 6.42538070678711e-05,
+    "min_overlap": 8
+   },
+   {
+    "ent_abs": 0.1675553321838379,
+    "mass_linf": 0.06662297248840332,
+    "min_overlap": 7
+   },
+   {
+    "ent_abs": 1.544598489999771e-05,
+    "mass_linf": 8.219480514526367e-05,
+    "min_overlap": 8
+   },
+   {
+    "ent_abs": 0.058829545974731445,
+    "mass_linf": 0.026421844959259033,
+    "min_overlap": 8
+   },
+   {
+    "ent_abs": 0.03311455249786377,
+    "mass_linf": 0.02601015567779541,
+    "min_overlap": 8
+   },
+   {
+    "ent_abs": 0.016009576618671417,
+    "mass_linf": 0.0012230873107910156,
+    "min_overlap": 7
+   },
+   {
+    "ent_abs": 0.04222559928894043,
+    "mass_linf": 0.025059908628463745,
+    "min_overlap": 7
+   },
+   {
+    "ent_abs": 0.0021239444613456726,
+    "mass_linf": 0.0006389617919921875,
+    "min_overlap": 7
+   },
+   {
+    "ent_abs": 0.12351322174072266,
+    "mass_linf": 0.04253816604614258,
+    "min_overlap": 7
+   },
+   {
+    "ent_abs": 0.07367181777954102,
+    "mass_linf": 0.05630430579185486,
+    "min_overlap": 7
+   },
+   {
+    "ent_abs": 0.027013301849365234,
+    "mass_linf": 0.0266302227973938,
+    "min_overlap": 8
+   },
+   {
+    "ent_abs": 0.11999249458312988,
+    "mass_linf": 0.050687193870544434,
+    "min_overlap": 7
+   },
+   {
+    "ent_abs": 0.11781418323516846,
+    "mass_linf": 0.032429516315460205,
+    "min_overlap": 7
+   },
+   {
+    "ent_abs": 3.7204474210739136e-05,
+    "mass_linf": 0.00023180246353149414,
+    "min_overlap": 8
+   },
+   {
+    "ent_abs": 0.01818680763244629,
+    "mass_linf": 0.02841871976852417,
+    "min_overlap": 8
+   },
+   {
+    "ent_abs": 0.10452628135681152,
+    "mass_linf": 0.02143263816833496,
+    "min_overlap": 7
+   },
+   {
+    "ent_abs": 0.009088754653930664,
+    "mass_linf": 0.0011457204818725586,
+    "min_overlap": 8
+   },
+   {
+    "ent_abs": 0.00561070442199707,
+    "mass_linf": 0.0006673336029052734,
+    "min_overlap": 8
+   },
+   {
+    "ent_abs": 0.05635976791381836,
+    "mass_linf": 0.05002903938293457,
+    "min_overlap": 7
+   },
+   {
+    "ent_abs": 0.00039482442662119865,
+    "mass_linf": 9.042024612426758e-05,
+    "min_overlap": 7
+   },
+   {
+    "ent_abs": 0.00513303279876709,
+    "mass_linf": 0.019239649176597595,
+    "min_overlap": 8
+   },
+   {
+    "ent_abs": 0.026663541793823242,
+    "mass_linf": 0.024335354566574097,
+    "min_overlap": 7
+   },
+   {
+    "ent_abs": 2.3472239263355732e-05,
+    "mass_linf": 1.9788742065429688e-05,
+    "min_overlap": 8
+   },
+   {
+    "ent_abs": 1.7320271581411362e-06,
+    "mass_linf": 9.179115295410156e-06,
+    "min_overlap": 8
+   },
+   {
+    "ent_abs": 0.0017889607697725296,
+    "mass_linf": 0.0004114508628845215,
+    "min_overlap": 8
+   },
+   {
+    "ent_abs": 0.004752159118652344,
+    "mass_linf": 0.004891321063041687,
+    "min_overlap": 8
+   },
+   {
+    "ent_abs": 0.0037859752774238586,
+    "mass_linf": 0.00027865171432495117,
+    "min_overlap": 7
+   },
+   {
+    "ent_abs": 0.07531321048736572,
+    "mass_linf": 0.016539394855499268,
+    "min_overlap": 8
+   },
+   {
+    "ent_abs": 0.0233689546585083,
+    "mass_linf": 0.00847838819026947,
+    "min_overlap": 8
+   }
+  ],
+  "misaligned": [
+   {
+    "ent_abs": 0.30663782358169556,
+    "mass_linf": 0.9653767943382263,
+    "min_overlap": 2
+   },
+   {
+    "ent_abs": 0.020559893921017647,
+    "mass_linf": 0.9976629614830017,
+    "min_overlap": 0
+   },
+   {
+    "ent_abs": 1.238453984260559,
+    "mass_linf": 0.9818132519721985,
+    "min_overlap": 0
+   },
+   {
+    "ent_abs": 0.06879299506545067,
+    "mass_linf": 0.008131623268127441,
+    "min_overlap": 2
+   },
+   {
+    "ent_abs": 1.0328752994537354,
+    "mass_linf": 0.3032127022743225,
+    "min_overlap": 2
+   },
+   {
+    "ent_abs": 1.1388123035430908,
+    "mass_linf": 0.4359223246574402,
+    "min_overlap": 0
+   },
+   {
+    "ent_abs": 0.82886703312397,
+    "mass_linf": 0.08823812007904053,
+    "min_overlap": 0
+   },
+   {
+    "ent_abs": 0.6292511224746704,
+    "mass_linf": 0.614051878452301,
+    "min_overlap": 0
+   },
+   {
+    "ent_abs": 0.27102844417095184,
+    "mass_linf": 0.9832107424736023,
+    "min_overlap": 1
+   },
+   {
+    "ent_abs": 1.6569930911064148,
+    "mass_linf": 0.9490561485290527,
+    "min_overlap": 2
+   },
+   {
+    "ent_abs": 0.10271346569061279,
+    "mass_linf": 0.18554583191871643,
+    "min_overlap": 0
+   },
+   {
+    "ent_abs": 0.1490427851676941,
+    "mass_linf": 0.8534957766532898,
+    "min_overlap": 0
+   },
+   {
+    "ent_abs": 0.9331446886062622,
+    "mass_linf": 0.7983450293540955,
+    "min_overlap": 2
+   },
+   {
+    "ent_abs": 1.6604958549141884,
+    "mass_linf": 0.9957529902458191,
+    "min_overlap": 1
+   },
+   {
+    "ent_abs": 0.044095476157963276,
+    "mass_linf": 0.9994249939918518,
+    "min_overlap": 1
+   },
+   {
+    "ent_abs": 1.3003462553024292,
+    "mass_linf": 0.9751871228218079,
+    "min_overlap": 0
+   },
+   {
+    "ent_abs": 1.0334963202476501,
+    "mass_linf": 0.8565223217010498,
+    "min_overlap": 0
+   },
+   {
+    "ent_abs": 0.7021502181887627,
+    "mass_linf": 0.04042178392410278,
+    "min_overlap": 0
+   },
+   {
+    "ent_abs": 0.8929670453071594,
+    "mass_linf": 0.8319671750068665,
+    "min_overlap": 1
+   },
+   {
+    "ent_abs": 2.1515032947063446,
+    "mass_linf": 0.8632634878158569,
+    "min_overlap": 0
+   },
+   {
+    "ent_abs": 1.3198864264413714,
+    "mass_linf": 0.1369113326072693,
+    "min_overlap": 2
+   },
+   {
+    "ent_abs": 0.09472620487213135,
+    "mass_linf": 0.672694742679596,
+    "min_overlap": 1
+   },
+   {
+    "ent_abs": 1.497987061738968,
+    "mass_linf": 0.9928098917007446,
+    "min_overlap": 0
+   },
+   {
+    "ent_abs": 0.0018936522537842393,
+    "mass_linf": 0.9999038577079773,
+    "min_overlap": 0
+   },
+   {
+    "ent_abs": 0.9400478999014013,
+    "mass_linf": 0.9995841383934021,
+    "min_overlap": 0
+   },
+   {
+    "ent_abs": 0.02739448210923001,
+    "mass_linf": 0.9999698400497437,
+    "min_overlap": 1
+   },
+   {
+    "ent_abs": 1.9094317723065615,
+    "mass_linf": 0.9968238472938538,
+    "min_overlap": 0
+   },
+   {
+    "ent_abs": 0.02266288548707962,
+    "mass_linf": 0.9985328912734985,
+    "min_overlap": 0
+   },
+   {
+    "ent_abs": 0.22975564002990723,
+    "mass_linf": 0.19023291766643524,
+    "min_overlap": 2
+   },
+   {
+    "ent_abs": 0.12248790264129639,
+    "mass_linf": 0.9110812544822693,
+    "min_overlap": 0
+   }
+  ]
+ },
+ "regime": {
+  "cal_seed": 100,
+  "generation": "harvest_batch batch-10 nf4-double-quant-bf16compute+bf16-routers KV-cached (exact harvest code, RouterTap)",
+  "load_regime_verified": {
+   "bf16_routers": true,
+   "gate_weight_class": "Parameter",
+   "gates_verified_unquantized": 16,
+   "lm_head_weight_class": "Parameter",
+   "load_4bit": true
+  },
+  "max_new": 64,
+  "model": "allenai/OLMoE-1B-7B-0125-Instruct",
+  "n_anchors_compared": 30,
+  "n_prompts": 10,
+  "non_audit_note": "seed 100 continuations; dataset seeds are 0..7",
+  "recompute": "batch-1 full forward, no KV reuse (exact rider regime)",
+  "top_k": 8
+ },
+ "runtime_s": 80.5
+}

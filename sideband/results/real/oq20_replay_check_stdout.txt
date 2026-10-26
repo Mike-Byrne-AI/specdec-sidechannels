@@ -1,0 +1,7 @@
+REPLAY oq20_replay_k3_s1_arm1 vs k3_verdict_s1_arm1 (seed 1, 6 prompts): generated_ids 6/6 token-exact; stats rows 6/6 equal except run_id/seconds/peak_vram_gb; meta bound; git b6d3701347e28373677f20dff5c4d36539549b05; PASS
+REPLAY oq20_replay_k3_s1_arm4 vs k3_verdict_s1_arm4 (seed 1, 6 prompts): generated_ids 6/6 token-exact; stats rows 6/6 equal except run_id/seconds/peak_vram_gb; meta bound; git b6d3701347e28373677f20dff5c4d36539549b05; PASS
+REPLAY oq20_replay_k3_s1_arm3 vs k3_verdict_s1_arm3 (seed 1, 6 prompts): generated_ids 6/6 token-exact; stats rows 6/6 equal except run_id/seconds/peak_vram_gb; meta bound; git b6d3701347e28373677f20dff5c4d36539549b05; PASS
+REPLAY oq20_replay_oq15c_s3_arm1 vs oq15c_verdict_s3_arm1 (seed 3, 1 prompt): generated_ids 1/1 token-exact; stats rows 1/1 equal except run_id/seconds/peak_vram_gb; meta bound; git b6d3701347e28373677f20dff5c4d36539549b05; PASS
+REPLAY oq20_replay_oq15c_s3_arm7 vs oq15c_verdict_s3_arm7 (seed 3, 1 prompt): generated_ids 1/1 token-exact; stats rows 1/1 equal except run_id/seconds/peak_vram_gb; meta bound; git b6d3701347e28373677f20dff5c4d36539549b05; PASS
+REPLAY oq20_replay_oq15c_s3_arm6 vs oq15c_verdict_s3_arm6 (seed 3, 1 prompt): generated_ids 1/1 token-exact; stats rows 1/1 equal except run_id/seconds/peak_vram_gb; meta bound; git b6d3701347e28373677f20dff5c4d36539549b05; PASS
+REPLAY CHECK PASS

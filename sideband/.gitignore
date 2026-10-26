@@ -1,0 +1,131 @@
+__pycache__/
+*.pyc
+# Phase-2 raw harvest arrays: bound by sha256 in committed .meta.json files
+# (BLUEPRINT Phase 2 protocol); the metas + summary are the evidence.
+results/real/harvest_shadow/*.npz
+results/real/harvest_shadow_r/*.npz
+results/real/harvest_moe/*.npz
+results/real/harvest_moe_r/*.npz
+# Probe-runner state files: scratch for smoke runs, but the registered runs'
+# state files are EVIDENCE (per-prompt cluster counts reproduce the bootstrap
+# — critic gate 2026-08-31) and are negated back in:
+results/real/*.state.jsonl
+!results/real/probes_s1.json.state.jsonl
+!results/real/probes_s1_replication.json.state.jsonl
+!results/real/posthoc_topic_s1.json.state.jsonl
+!results/real/posthoc_topic_s1_r.json.state.jsonl
+!results/real/probes_s3.json.state.jsonl
+!results/real/probes_s3_replication.json.state.jsonl
+!results/real/posthoc_topic_s3.json.state.jsonl
+!results/real/posthoc_topic_s3_r.json.state.jsonl
+# OQ-17 full-free existence re-test (registered 2026-09-06): state files are evidence
+!results/real/fullfree_s1.json.state.jsonl
+!results/real/fullfree_s1_r.json.state.jsonl
+!results/real/fullfree_s3.json.state.jsonl
+!results/real/fullfree_s3_r.json.state.jsonl
+!results/real/fullfree_s1_twin.json.state.jsonl
+!results/real/fullfree_s1_r_twin.json.state.jsonl
+!results/real/fullfree_s3_twin.json.state.jsonl
+!results/real/fullfree_s3_r_twin.json.state.jsonl
+!results/real/fullfree_coarse_s1.json.state.jsonl
+!results/real/fullfree_coarse_s1_r.json.state.jsonl
+!results/real/fullfree_coarse_s3.json.state.jsonl
+!results/real/fullfree_coarse_s3_r.json.state.jsonl
+# OQ-18 leak-rider diagnostic (registered 2026-09-07): its state file is evidence
+!results/real/oq18_rider_diag_s1.json.state.jsonl
+# OQ-18 leak-rider positive control (registered 2026-09-13)
+!results/real/oq18_rider_poscontrol_s1.json.state.jsonl
+# OQ-9 stage-1 prefetch readouts (registered 2026-09-14): state files are evidence
+!results/real/prefetch_s3.json.state.jsonl
+!results/real/prefetch_s3_r.json.state.jsonl
+# OQ-9 stage-1 free-bigram twin (registered 2026-10-01 amendment): state files are evidence
+!results/real/prefetch_bigram_s3.json.state.jsonl
+!results/real/prefetch_bigram_s3_r.json.state.jsonl
+# OQ-9 stage-1 stratified coverage read (registered 2026-10-01): state files are evidence
+!results/real/prefetch_strat_s3.json.state.jsonl
+!results/real/prefetch_strat_s3_r.json.state.jsonl
+# OQ-9 stage-1 generalising free baseline R2 (registered 2026-10-02): state files are evidence
+!results/real/prefetch_r2_s3.json.state.jsonl
+!results/real/prefetch_r2_s3_r.json.state.jsonl
+# OQ-9 stage-1 horizon read at the R2 encoding (registered 2026-10-04): state files are evidence
+!results/real/prefetch_horizon_s3.json.state.jsonl
+!results/real/prefetch_horizon_s3_r.json.state.jsonl
+# SEED-NOISE FLOOR READOUTS (registered 2026-10-04): state files are evidence
+!results/real/noise_floor_k3.json.state.jsonl
+!results/real/noise_floor_oq15.json.state.jsonl
+# READER-AND-LENS RE-TEST AT S3 (registered 2026-10-05): state files are evidence, one per stage and harvest
+!results/real/lens_s3.json.state.jsonl
+!results/real/lens_s3_r.json.state.jsonl
+!results/real/readers_s3.json.state.jsonl
+!results/real/readers_s3_r.json.state.jsonl
+!results/real/readers_long_s3.json.state.jsonl
+!results/real/readers_long_s3_r.json.state.jsonl
+!results/real/readers_s1.json.state.jsonl
+!results/real/readers_s1_r.json.state.jsonl
+# OQ-20 SEED-REPLAY of the conversion-verdict legs (registered 2026-10-09): state files are evidence, one per population
+!results/real/seed_replay_k3.json.state.jsonl
+!results/real/seed_replay_oq15.json.state.jsonl
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+.venv/
+!results/real/error_predictor_s1.json.state.jsonl
+# K-3 stage-E byproduct raw arrays (E8): gitignored like harvest npzs; the
+# run summary records per-file sha256s and is the committed binding.
+results/real/*.byproduct/
+# Threshold-search eval logs are committed evidence (registration
+# 2026-09-02): negate the registered arms' state files back in.
+!results/real/k3_threshold_search_arm2.json.state.jsonl
+!results/real/k3_threshold_search_arm3.json.state.jsonl
+!results/real/k3_threshold_search_arm4.json.state.jsonl
+# OQ-15 Stage-I state files are committed evidence (registration
+# 2026-09-03; critic recompute-surface blocker): negate back in.
+!results/real/oq15_stage1.json.state.jsonl
+!results/real/oq15_stage1_rotcheck.json.state.jsonl
+!results/real/oq15_stage1_rotcheck_r.json.state.jsonl
+!results/real/oq15_stage1_rotcheck_s2.json.state.jsonl
+!results/real/oq15_stage1_rotcheck_s3.json.state.jsonl
+!results/real/oq15_stage1_rotcheck_s4.json.state.jsonl
+# OQ-15 STAGE-C FREEZE evidence (registration 2026-09-03)
+!results/real/oq15_offset5.json.state.jsonl
+!results/real/oq15c_search_arm2.json.state.jsonl
+!results/real/oq15c_search_arm6.json.state.jsonl
+!results/real/oq15c_search_arm7.json.state.jsonl
+# OQ-16 Stage-R evidence (registration 2026-09-04) + DR-1/DR-2 diagnostics
+!results/real/oq16_stage_r.json.state.jsonl
+!results/real/oq16_stage_r_inv.json.state.jsonl
+!results/real/oq16_stage_r_dr.json.state.jsonl
+!results/real/oq16_stage_r_dr3.json.state.jsonl
+!results/real/oq16_stage_r_dr4.json.state.jsonl
+# OQ-16 STAGE-A FREEZE: reconstruction weights + cross-fitted h_hat are
+# large; their shas live in the committed results/real/oq16_stage_a_export.json
+results/real/oq16_recon_weights.npz
+results/real/oq16_recon_hhat/
+results/real/oq16_inject_*.pt
+
+# operator-local session log (referenced by registered text; never published)
+HANDOFF.md
+# CI/smoke experiment outputs (the committed results/*.json are the full runs)
+results/smoke/
+
+# Espalier-Harness runtime -- generated, never committed
+.claude/settings.json
+.espalier/
+.espalier-state/
+/reports/
+cc/blueprints/
+cc/_cold/
+cc/_working_summary.md
+cc/GOAL.md
+cc/execution_plan.json
+cc/execution_plan.json.lock
+cc/discard_snapshots.log
+.claude/*.new
+.claude/*.bak
+.claude/*.bak.*
+/task-packs/*
+!/task-packs/CLAUDE.md
+!/task-packs/FORWARD_LEDGER.md
+!/task-packs/LEDGER_PROBES.json
+# end Espalier-Harness runtime

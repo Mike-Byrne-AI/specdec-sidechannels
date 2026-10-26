@@ -1,0 +1,1215 @@
+{
+ "registration": "S1 READER RE-TEST REGISTRATION (docs/BLUEPRINT.md, 2026-10-16; pre-run; the frozen run_reader_lens s1 stage trains the cells; this file issues the S1 word)",
+ "stage": "s1",
+ "readers": [
+  "RN",
+  "RT",
+  "RL"
+ ],
+ "space": "L1_concept_k16",
+ "materiality_floor": 0.005,
+ "labels": {
+  "RN|L1_concept_k16": {
+   "label": "ABSORBED",
+   "licence": null,
+   "licence_reason": null,
+   "gate": {
+    "primary": {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus_r",
+     "margin": 0.0025888907094871374,
+     "ci95": [
+      0.0007794447991173212,
+      0.004331380932736971
+     ],
+     "per_seed_margin": {
+      "0": 0.0031296083893167293,
+      "1": 0.0014910699655906932,
+      "2": 0.0031459937735539897
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    },
+    "replication": {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus_r",
+     "margin": 0.002209398186314922,
+     "ci95": [
+      0.0004967209037992975,
+      0.0038886710773190177
+     ],
+     "per_seed_margin": {
+      "0": 0.00247320692497939,
+      "1": 0.0013520197856553998,
+      "2": 0.002802967848309975
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   },
+   "mt": {
+    "primary": {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus",
+     "margin": -0.0011579004860997324,
+     "ci95": [
+      -0.0027899950395229825,
+      0.0004585702757533597
+     ],
+     "per_seed_margin": {
+      "0": -0.00032770768474520726,
+      "1": -0.001261674586269048,
+      "2": -0.0018843191872849419
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    },
+    "replication": {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus",
+     "margin": -0.002802967848309975,
+     "ci95": [
+      -0.00578428704115592,
+      -0.00014210207827718678
+     ],
+     "per_seed_margin": {
+      "0": -0.001055234954657873,
+      "1": -0.006364385820280297,
+      "2": -0.000989282769991756
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   },
+   "mn_r": {
+    "primary": {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_r-fplus",
+     "margin": -0.00374679119558687,
+     "ci95": [
+      -0.005437350628021496,
+      -0.002134007616941364
+     ],
+     "per_seed_margin": {
+      "0": -0.003457316074061937,
+      "1": -0.002752744551859741,
+      "2": -0.005030312960838931
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    },
+    "replication": {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_r-fplus",
+     "margin": -0.005012366034624897,
+     "ci95": [
+      -0.007292106393682284,
+      -0.0027509003987680955
+     ],
+     "per_seed_margin": {
+      "0": -0.003528441879637263,
+      "1": -0.0077164056059356965,
+      "2": -0.003792250618301731
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   },
+   "mt_fires_triple": {
+    "primary": false,
+    "replication": false
+   },
+   "mn_r_fires_triple": {
+    "primary": false,
+    "replication": false
+   },
+   "reader_valid": {
+    "primary": true,
+    "replication": true
+   },
+   "best_epochs": {
+    "primary": {
+     "fplus": [
+      0,
+      1,
+      2
+     ],
+     "fplus_b": [
+      0,
+      1,
+      2
+     ],
+     "fplus_r": [
+      0,
+      1,
+      2
+     ],
+     "a": [
+      20,
+      22,
+      29
+     ]
+    },
+    "replication": {
+     "fplus": [
+      1,
+      1,
+      2
+     ],
+     "fplus_b": [
+      0,
+      1,
+      2
+     ],
+     "fplus_r": [
+      0,
+      1,
+      2
+     ],
+     "a": [
+      13,
+      16,
+      20
+     ]
+    }
+   },
+   "horizons": {}
+  },
+  "RT|L1_concept_k16": {
+   "label": "ABSORBED",
+   "licence": null,
+   "licence_reason": null,
+   "gate": {
+    "primary": {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus_r",
+     "margin": 0.00033863127423671417,
+     "ci95": [
+      -0.0003770463620081546,
+      0.001058644668244622
+     ],
+     "per_seed_margin": {
+      "0": -0.00011469768966082254,
+      "1": 0.00134360150745535,
+      "2": -0.00021300999508438472
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    },
+    "replication": {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus_r",
+     "margin": 0.0010882110469909315,
+     "ci95": [
+      0.00036298357099926473,
+      0.001893691947022229
+     ],
+     "per_seed_margin": {
+      "0": 0.0013849958779884584,
+      "1": -0.0006924979389942292,
+      "2": 0.0025721352019785655
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   },
+   "mt": {
+    "primary": {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus",
+     "margin": 0.0,
+     "ci95": [
+      -0.0013156663350092693,
+      0.0014325326990632214
+     ],
+     "per_seed_margin": {
+      "0": 0.0005079469113550713,
+      "1": 0.00022939537932164508,
+      "2": -0.0007373422906767164
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    },
+    "replication": {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus",
+     "margin": 0.005935696619950536,
+     "ci95": [
+      0.0038906119846212595,
+      0.007938055771223506
+     ],
+     "per_seed_margin": {
+      "0": 0.011277823577906017,
+      "1": 0.000923330585325639,
+      "2": 0.00560593569661995
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   },
+   "mn_r": {
+    "primary": {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_r-fplus",
+     "margin": -0.00033863127423671417,
+     "ci95": [
+      -0.001680430690768361,
+      0.0010232172340123031
+     ],
+     "per_seed_margin": {
+      "0": 0.0006226446010158938,
+      "1": -0.0011142061281337048,
+      "2": -0.0005243322955923316
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    },
+    "replication": {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_r-fplus",
+     "margin": 0.004847485572959605,
+     "ci95": [
+      0.003011176539786896,
+      0.00668112241111483
+     ],
+     "per_seed_margin": {
+      "0": 0.00989282769991756,
+      "1": 0.001615828524319868,
+      "2": 0.003033800494641385
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   },
+   "mt_fires_triple": {
+    "primary": false,
+    "replication": true
+   },
+   "mn_r_fires_triple": {
+    "primary": false,
+    "replication": false
+   },
+   "reader_valid": {
+    "primary": true,
+    "replication": true
+   },
+   "best_epochs": {
+    "primary": {
+     "fplus": [
+      0,
+      1,
+      2
+     ],
+     "fplus_b": [
+      0,
+      1,
+      2
+     ],
+     "fplus_r": [
+      0,
+      1,
+      2
+     ],
+     "a": [
+      20,
+      22,
+      29
+     ]
+    },
+    "replication": {
+     "fplus": [
+      0,
+      1,
+      2
+     ],
+     "fplus_b": [
+      0,
+      0,
+      1
+     ],
+     "fplus_r": [
+      0,
+      0,
+      1
+     ],
+     "a": [
+      13,
+      16,
+      20
+     ]
+    }
+   },
+   "horizons": {}
+  },
+  "RL|L1_concept_k16": {
+   "label": "ABSORBED",
+   "licence": null,
+   "licence_reason": null,
+   "gate": {
+    "primary": {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus_r",
+     "margin": 0.0003823256322027418,
+     "ci95": [
+      -0.0008524714710255963,
+      0.001560465390286049
+     ],
+     "per_seed_margin": {
+      "0": 0.0010814353596591841,
+      "1": -0.0006062592167786335,
+      "2": 0.000671800753727675
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    },
+    "replication": {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus_r",
+     "margin": -4.396812311074471e-05,
+     "ci95": [
+      -0.0013888458470079587,
+      0.0012988642570108217
+     ],
+     "per_seed_margin": {
+      "0": 0.0020115416323165706,
+      "1": 0.00013190436933223414,
+      "2": -0.0022753503709810386
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   },
+   "mt": {
+    "primary": {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus",
+     "margin": 0.0030586050576219344,
+     "ci95": [
+      0.0018567076498442654,
+      0.004270099246145527
+     ],
+     "per_seed_margin": {
+      "0": 0.002523349172538096,
+      "1": 0.004784532197280026,
+      "2": 0.0018679338030476815
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    },
+    "replication": {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_b-fplus",
+     "margin": 0.0022753503709810386,
+     "ci95": [
+      0.0006806321390836018,
+      0.0039132566010054645
+     ],
+     "per_seed_margin": {
+      "0": 0.005770816158285243,
+      "1": 0.0001978565539983512,
+      "2": 0.0008573784006595218
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   },
+   "mn_r": {
+    "primary": {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_r-fplus",
+     "margin": 0.0026762794254191927,
+     "ci95": [
+      0.001096658909898248,
+      0.0041765799052539436
+     ],
+     "per_seed_margin": {
+      "0": 0.001441913812878912,
+      "1": 0.00539079141405866,
+      "2": 0.0011961330493200065
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    },
+    "replication": {
+     "space": "L1_concept_k16",
+     "offset": 2,
+     "capacity": "mlp256",
+     "pair": "fplus_r-fplus",
+     "margin": 0.0023193184940917834,
+     "ci95": [
+      0.00041484683418401995,
+      0.004346070514370856
+     ],
+     "per_seed_margin": {
+      "0": 0.0037592745259686726,
+      "1": 6.595218466611707e-05,
+      "2": 0.0031327287716405605
+     },
+     "n_seeds": 3,
+     "n_clusters": 30
+    }
+   },
+   "mt_fires_triple": {
+    "primary": false,
+    "replication": false
+   },
+   "mn_r_fires_triple": {
+    "primary": false,
+    "replication": false
+   },
+   "reader_valid": {
+    "primary": true,
+    "replication": true
+   },
+   "best_epochs": {
+    "primary": {
+     "fplus": [
+      0,
+      1,
+      2
+     ],
+     "fplus_b": [
+      0,
+      1,
+      2
+     ],
+     "fplus_r": [
+      0,
+      1,
+      2
+     ],
+     "a": [
+      22,
+      26,
+      34
+     ]
+    },
+    "replication": {
+     "fplus": [
+      1,
+      2,
+      2
+     ],
+     "fplus_b": [
+      1,
+      2,
+      2
+     ],
+     "fplus_r": [
+      1,
+      2,
+      2
+     ],
+     "a": [
+      47,
+      50,
+      56
+     ]
+    }
+   },
+   "horizons": {}
+  }
+ },
+ "diagnostics": {
+  "RN|L1_concept_k16": {
+   "reader_valid": {
+    "primary": {
+     "ok": true,
+     "complete": true,
+     "floor_ok": true,
+     "mf_ok": true,
+     "mfx_ok": true,
+     "n_gate_probes": 12,
+     "min_acc_minus_floor": 0.015140095035228618,
+     "mf_gate_ci_upper": 0.055545452935641046,
+     "mfx_gate_ci_upper": 0.05700198653758227,
+     "mfx_gate_margin": 0.04600469714348135,
+     "acc_fplus_minus_floor_per_seed": [
+      0.057791,
+      0.060249,
+      0.063575
+     ],
+     "best_epochs_gate_cell": {
+      "fplus": [
+       0,
+       1,
+       2
+      ],
+      "fplus_b": [
+       0,
+       1,
+       2
+      ],
+      "fplus_r": [
+       0,
+       1,
+       2
+      ],
+      "a": [
+       20,
+       22,
+       29
+      ]
+     },
+     "tol": 0.001,
+     "rule": "all 12 gate-cell probes (3 arms + (a), 3 seeds) test_acc >= majority_rate_test - tol AND Mf(off2/mlp256, vs fresh (a)) CI95 upper >= 0 AND Mf_x(off2: fplus mlp256 vs the COMMITTED linear (a)) CI95 upper >= 0; else READER-INVALID"
+    },
+    "replication": {
+     "ok": true,
+     "complete": true,
+     "floor_ok": true,
+     "mf_ok": true,
+     "mfx_ok": true,
+     "n_gate_probes": 12,
+     "min_acc_minus_floor": 0.011673536685902652,
+     "mf_gate_ci_upper": 0.05168264545512733,
+     "mfx_gate_ci_upper": 0.05149216934820191,
+     "mfx_gate_margin": 0.04152789227809838,
+     "acc_fplus_minus_floor_per_seed": [
+      0.0523,
+      0.053718,
+      0.054608
+     ],
+     "best_epochs_gate_cell": {
+      "fplus": [
+       1,
+       1,
+       2
+      ],
+      "fplus_b": [
+       0,
+       1,
+       2
+      ],
+      "fplus_r": [
+       0,
+       1,
+       2
+      ],
+      "a": [
+       13,
+       16,
+       20
+      ]
+     },
+     "tol": 0.001,
+     "rule": "all 12 gate-cell probes (3 arms + (a), 3 seeds) test_acc >= majority_rate_test - tol AND Mf(off2/mlp256, vs fresh (a)) CI95 upper >= 0 AND Mf_x(off2: fplus mlp256 vs the COMMITTED linear (a)) CI95 upper >= 0; else READER-INVALID"
+    }
+   },
+   "best_epochs": {
+    "primary": {
+     "fplus": [
+      0,
+      1,
+      2
+     ],
+     "fplus_b": [
+      0,
+      1,
+      2
+     ],
+     "fplus_r": [
+      0,
+      1,
+      2
+     ],
+     "a": [
+      20,
+      22,
+      29
+     ]
+    },
+    "replication": {
+     "fplus": [
+      1,
+      1,
+      2
+     ],
+     "fplus_b": [
+      0,
+      1,
+      2
+     ],
+     "fplus_r": [
+      0,
+      1,
+      2
+     ],
+     "a": [
+      13,
+      16,
+      20
+     ]
+    }
+   },
+   "rescale": {
+    "primary": {
+     "L1_concept_k16|off2|a|mlp256|s0": {
+      "c_hz": null,
+      "note": "no hz block: the cell is R0's"
+     },
+     "L1_concept_k16|off2|a|mlp256|s1": {
+      "c_hz": null,
+      "note": "no hz block: the cell is R0's"
+     },
+     "L1_concept_k16|off2|a|mlp256|s2": {
+      "c_hz": null,
+      "note": "no hz block: the cell is R0's"
+     },
+     "L1_concept_k16|off2|fplus|mlp256|s0": {
+      "c_hz": 0.17397613982967106,
+      "m_hz": 4097.296470325392,
+      "m_slots_aligned": 124.01572902549289,
+      "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+     },
+     "L1_concept_k16|off2|fplus_b|mlp256|s0": {
+      "c_hz": 0.17397613982967106,
+      "m_hz": 4097.296470325392,
+      "m_slots_aligned": 124.01572902549289,
+      "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+     },
+     "L1_concept_k16|off2|fplus_r|mlp256|s0": {
+      "c_hz": 0.17397613982967106,
+      "m_hz": 4097.296470325392,
+      "m_slots_aligned": 124.01572902549289,
+      "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+     },
+     "L1_concept_k16|off2|fplus|mlp256|s1": {
+      "c_hz": 0.17397613982967106,
+      "m_hz": 4097.296470325392,
+      "m_slots_aligned": 124.01572902549289,
+      "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+     },
+     "L1_concept_k16|off2|fplus_b|mlp256|s1": {
+      "c_hz": 0.17397613982967106,
+      "m_hz": 4097.296470325392,
+      "m_slots_aligned": 124.01572902549289,
+      "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+     },
+     "L1_concept_k16|off2|fplus_r|mlp256|s1": {
+      "c_hz": 0.17397613982967106,
+      "m_hz": 4097.296470325392,
+      "m_slots_aligned": 124.01572902549289,
+      "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+     },
+     "L1_concept_k16|off2|fplus|mlp256|s2": {
+      "c_hz": 0.17397613982967106,
+      "m_hz": 4097.296470325392,
+      "m_slots_aligned": 124.01572902549289,
+      "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+     },
+     "L1_concept_k16|off2|fplus_b|mlp256|s2": {
+      "c_hz": 0.17397613982967106,
+      "m_hz": 4097.296470325392,
+      "m_slots_aligned": 124.01572902549289,
+      "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+     },
+     "L1_concept_k16|off2|fplus_r|mlp256|s2": {
+      "c_hz": 0.17397613982967106,
+      "m_hz": 4097.296470325392,
+      "m_slots_aligned": 124.01572902549289,
+      "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+     }
+    },
+    "replication": {
+     "L1_concept_k16|off2|a|mlp256|s0": {
+      "c_hz": null,
+      "note": "no hz block: the cell is R0's"
+     },
+     "L1_concept_k16|off2|a|mlp256|s1": {
+      "c_hz": null,
+      "note": "no hz block: the cell is R0's"
+     },
+     "L1_concept_k16|off2|a|mlp256|s2": {
+      "c_hz": null,
+      "note": "no hz block: the cell is R0's"
+     },
+     "L1_concept_k16|off2|fplus|mlp256|s0": {
+      "c_hz": 0.17398203901297016,
+      "m_hz": 4097.187670190598,
+      "m_slots_aligned": 124.02084606638934,
+      "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+     },
+     "L1_concept_k16|off2|fplus_b|mlp256|s0": {
+      "c_hz": 0.17398203901297016,
+      "m_hz": 4097.187670190598,
+      "m_slots_aligned": 124.02084606638934,
+      "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+     },
+     "L1_concept_k16|off2|fplus_r|mlp256|s0": {
+      "c_hz": 0.17398203901297016,
+      "m_hz": 4097.187670190598,
+      "m_slots_aligned": 124.02084606638934,
+      "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+     },
+     "L1_concept_k16|off2|fplus|mlp256|s1": {
+      "c_hz": 0.17398203901297016,
+      "m_hz": 4097.187670190598,
+      "m_slots_aligned": 124.02084606638934,
+      "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+     },
+     "L1_concept_k16|off2|fplus_b|mlp256|s1": {
+      "c_hz": 0.17398203901297016,
+      "m_hz": 4097.187670190598,
+      "m_slots_aligned": 124.02084606638934,
+      "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+     },
+     "L1_concept_k16|off2|fplus_r|mlp256|s1": {
+      "c_hz": 0.17398203901297016,
+      "m_hz": 4097.187670190598,
+      "m_slots_aligned": 124.02084606638934,
+      "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+     },
+     "L1_concept_k16|off2|fplus|mlp256|s2": {
+      "c_hz": 0.17398203901297016,
+      "m_hz": 4097.187670190598,
+      "m_slots_aligned": 124.02084606638934,
+      "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+     },
+     "L1_concept_k16|off2|fplus_b|mlp256|s2": {
+      "c_hz": 0.17398203901297016,
+      "m_hz": 4097.187670190598,
+      "m_slots_aligned": 124.02084606638934,
+      "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+     },
+     "L1_concept_k16|off2|fplus_r|mlp256|s2": {
+      "c_hz": 0.17398203901297016,
+      "m_hz": 4097.187670190598,
+      "m_slots_aligned": 124.02084606638934,
+      "adam_equivalence": "under AdamW the rescale equals init x c_hz and lr x c_hz on the hz first-layer weights"
+     }
+    }
+   }
+  },
+  "RT|L1_concept_k16": {
+   "reader_valid": {
+    "primary": {
+     "ok": true,
+     "complete": true,
+     "floor_ok": true,
+     "mf_ok": true,
+     "mfx_ok": true,
+     "n_gate_probes": 12,
+     "min_acc_minus_floor": 0.015140095035228618,
+     "mf_gate_ci_upper": 0.048530596983495766,
+     "mfx_gate_ci_upper": 0.04993983940403743,
+     "mfx_gate_margin": 0.039084603200611724,
+     "acc_fplus_minus_floor_per_seed": [
+      0.05068,
+      0.054137,
+      0.056038
+     ],
+     "best_epochs_gate_cell": {
+      "fplus": [
+       0,
+       1,
+       2
+      ],
+      "fplus_b": [
+       0,
+       1,
+       2
+      ],
+      "fplus_r": [
+       0,
+       1,
+       2
+      ],
+      "a": [
+       20,
+       22,
+       29
+      ]
+     },
+     "tol": 0.001,
+     "rule": "all 12 gate-cell probes (3 arms + (a), 3 seeds) test_acc >= majority_rate_test - tol AND Mf(off2/mlp256, vs fresh (a)) CI95 upper >= 0 AND Mf_x(off2: fplus mlp256 vs the COMMITTED linear (a)) CI95 upper >= 0; else READER-INVALID"
+    },
+    "replication": {
+     "ok": true,
+     "complete": true,
+     "floor_ok": true,
+     "mf_ok": true,
+     "mfx_ok": true,
+     "n_gate_probes": 12,
+     "min_acc_minus_floor": 0.011673536685902652,
+     "mf_gate_ci_upper": 0.04357576654498416,
+     "mfx_gate_ci_upper": 0.043665214492698556,
+     "mfx_gate_margin": 0.033239901071723,
+     "acc_fplus_minus_floor_per_seed": [
+      0.039934,
+      0.045309,
+      0.050519
+     ],
+     "best_epochs_gate_cell": {
+      "fplus": [
+       0,
+       1,
+       2
+      ],
+      "fplus_b": [
+       0,
+       0,
+       1
+      ],
+      "fplus_r": [
+       0,
+       0,
+       1
+      ],
+      "a": [
+       13,
+       16,
+       20
+      ]
+     },
+     "tol": 0.001,
+     "rule": "all 12 gate-cell probes (3 arms + (a), 3 seeds) test_acc >= majority_rate_test - tol AND Mf(off2/mlp256, vs fresh (a)) CI95 upper >= 0 AND Mf_x(off2: fplus mlp256 vs the COMMITTED linear (a)) CI95 upper >= 0; else READER-INVALID"
+    }
+   },
+   "best_epochs": {
+    "primary": {
+     "fplus": [
+      0,
+      1,
+      2
+     ],
+     "fplus_b": [
+      0,
+      1,
+      2
+     ],
+     "fplus_r": [
+      0,
+      1,
+      2
+     ],
+     "a": [
+      20,
+      22,
+      29
+     ]
+    },
+    "replication": {
+     "fplus": [
+      0,
+      1,
+      2
+     ],
+     "fplus_b": [
+      0,
+      0,
+      1
+     ],
+     "fplus_r": [
+      0,
+      0,
+      1
+     ],
+     "a": [
+      13,
+      16,
+      20
+     ]
+    }
+   },
+   "rescale": {
+    "primary": null,
+    "replication": null
+   }
+  },
+  "RL|L1_concept_k16": {
+   "reader_valid": {
+    "primary": {
+     "ok": true,
+     "complete": true,
+     "floor_ok": true,
+     "mf_ok": true,
+     "mfx_ok": true,
+     "n_gate_probes": 12,
+     "min_acc_minus_floor": 0.015582500409634603,
+     "mf_gate_ci_upper": 0.05006710740002647,
+     "mfx_gate_ci_upper": 0.05120151774061007,
+     "mfx_gate_margin": 0.04025342727620296,
+     "acc_fplus_minus_floor_per_seed": [
+      0.05245,
+      0.053171,
+      0.058742
+     ],
+     "best_epochs_gate_cell": {
+      "fplus": [
+       0,
+       1,
+       2
+      ],
+      "fplus_b": [
+       0,
+       1,
+       2
+      ],
+      "fplus_r": [
+       0,
+       1,
+       2
+      ],
+      "a": [
+       22,
+       26,
+       34
+      ]
+     },
+     "tol": 0.001,
+     "rule": "all 12 gate-cell probes (3 arms + (a), 3 seeds) test_acc >= majority_rate_test - tol AND Mf(off2/mlp256, vs fresh (a)) CI95 upper >= 0 AND Mf_x(off2: fplus mlp256 vs the COMMITTED linear (a)) CI95 upper >= 0; else READER-INVALID"
+    },
+    "replication": {
+     "ok": true,
+     "complete": true,
+     "floor_ok": true,
+     "mf_ok": true,
+     "mfx_ok": true,
+     "n_gate_probes": 12,
+     "min_acc_minus_floor": 0.010948062654575375,
+     "mf_gate_ci_upper": 0.04911534181719449,
+     "mfx_gate_ci_upper": 0.04837770614371734,
+     "mfx_gate_margin": 0.03758175322890904,
+     "acc_fplus_minus_floor_per_seed": [
+      0.048508,
+      0.04864,
+      0.051641
+     ],
+     "best_epochs_gate_cell": {
+      "fplus": [
+       1,
+       2,
+       2
+      ],
+      "fplus_b": [
+       1,
+       2,
+       2
+      ],
+      "fplus_r": [
+       1,
+       2,
+       2
+      ],
+      "a": [
+       47,
+       50,
+       56
+      ]
+     },
+     "tol": 0.001,
+     "rule": "all 12 gate-cell probes (3 arms + (a), 3 seeds) test_acc >= majority_rate_test - tol AND Mf(off2/mlp256, vs fresh (a)) CI95 upper >= 0 AND Mf_x(off2: fplus mlp256 vs the COMMITTED linear (a)) CI95 upper >= 0; else READER-INVALID"
+    }
+   },
+   "best_epochs": {
+    "primary": {
+     "fplus": [
+      0,
+      1,
+      2
+     ],
+     "fplus_b": [
+      0,
+      1,
+      2
+     ],
+     "fplus_r": [
+      0,
+      1,
+      2
+     ],
+     "a": [
+      22,
+      26,
+      34
+     ]
+    },
+    "replication": {
+     "fplus": [
+      1,
+      2,
+      2
+     ],
+     "fplus_b": [
+      1,
+      2,
+      2
+     ],
+     "fplus_r": [
+      1,
+      2,
+      2
+     ],
+     "a": [
+      47,
+      50,
+      56
+     ]
+    }
+   },
+   "rescale": {
+    "primary": null,
+    "replication": null
+   }
+  }
+ },
+ "word": {
+  "word": "K-2-NOT-OVERTURNED-AT-S1",
+  "per_source": "S1; no S3 condition attaches and the S3 word (K-2-ISOLATED, final) does not move",
+  "over_valid_cells_only": false,
+  "void_cells": [],
+  "reopened": [],
+  "provisional": false,
+  "reader_matched_rider_rule": null,
+  "survives_stronger": {},
+  "split": [],
+  "narrowed_cells": [
+   "RL|L1_concept_k16",
+   "RN|L1_concept_k16",
+   "RT|L1_concept_k16"
+  ],
+  "not_narrowed_cells": [],
+  "rule": "over the valid readers at S1 L1 (READER-INVALID readers VOID, named): INCOMPLETE iff no valid reader; REOPENED iff some valid reader is reopen-grade (SURVIVES-STRONGER, FULL licence, Mt firing the triple rule on both harvests), per source, PROVISIONAL until the reader-matched rider passes; ISOLATED iff some SURVIVES-STRONGER and no reopen-grade reader; UNSETTLED iff some SPLIT and no SURVIVES-STRONGER; NOT-OVERTURNED iff every valid reader reads ABSORBED or NOT-SHOWN (narrowed where ABSORBED, not where NOT-SHOWN); precedence INCOMPLETE, REOPENED, ISOLATED, UNSETTLED, NOT-OVERTURNED; the S3 word does not move"
+ },
+ "pairing": {
+  "primary": {
+   "twin_perm_sha256_equal_to_committed": true,
+   "committed_twin_payload": "fullfree_s1_twin.json",
+   "perm_sha256_here": {
+    "0": "722266fc0ba17da04a51dfa3d56abc85eec7e6c23a078e12c9a3969b39d29cee",
+    "1": "178fb3866e5fc5a54aba35fd240125dbb7576c9447c5cab08984f003cfb1f39e",
+    "2": "e885d28b1f9145d329751f742df4d0aa6d82ded317b674569f295760444fb880"
+   },
+   "perm_sha256_committed": {
+    "0": "722266fc0ba17da04a51dfa3d56abc85eec7e6c23a078e12c9a3969b39d29cee",
+    "1": "178fb3866e5fc5a54aba35fd240125dbb7576c9447c5cab08984f003cfb1f39e",
+    "2": "e885d28b1f9145d329751f742df4d0aa6d82ded317b674569f295760444fb880"
+   },
+   "rn_rt_fresh_a_rows": {
+    "0": {
+     "identical_except_runtime": true,
+     "differing_fields": []
+    },
+    "1": {
+     "identical_except_runtime": true,
+     "differing_fields": []
+    },
+    "2": {
+     "identical_except_runtime": true,
+     "differing_fields": []
+    }
+   },
+   "rn_rt_fresh_a_rows_all_identical": true
+  },
+  "replication": {
+   "twin_perm_sha256_equal_to_committed": true,
+   "committed_twin_payload": "fullfree_s1_r_twin.json",
+   "perm_sha256_here": {
+    "0": "e24dbaeb05b5bf3b8673fdbe4e6766940d57837f3c776a638444b1167be16e0a",
+    "1": "5321687fd3dba9e906e5e57b664e456718b568c07db3383780047deb130b231a",
+    "2": "7ca660c8e5f72756b90292cb3f81511ffc7094fdafa37c5aca2d96e305e37d43"
+   },
+   "perm_sha256_committed": {
+    "0": "e24dbaeb05b5bf3b8673fdbe4e6766940d57837f3c776a638444b1167be16e0a",
+    "1": "5321687fd3dba9e906e5e57b664e456718b568c07db3383780047deb130b231a",
+    "2": "7ca660c8e5f72756b90292cb3f81511ffc7094fdafa37c5aca2d96e305e37d43"
+   },
+   "rn_rt_fresh_a_rows": {
+    "0": {
+     "identical_except_runtime": true,
+     "differing_fields": []
+    },
+    "1": {
+     "identical_except_runtime": true,
+     "differing_fields": []
+    },
+    "2": {
+     "identical_except_runtime": true,
+     "differing_fields": []
+    }
+   },
+   "rn_rt_fresh_a_rows_all_identical": true
+  }
+ },
+ "rule": "over the valid readers at S1 L1 (READER-INVALID readers VOID, named): INCOMPLETE iff no valid reader; REOPENED iff some valid reader is reopen-grade (SURVIVES-STRONGER, FULL licence, Mt firing the triple rule on both harvests), per source, PROVISIONAL until the reader-matched rider passes; ISOLATED iff some SURVIVES-STRONGER and no reopen-grade reader; UNSETTLED iff some SPLIT and no SURVIVES-STRONGER; NOT-OVERTURNED iff every valid reader reads ABSORBED or NOT-SHOWN (narrowed where ABSORBED, not where NOT-SHOWN); precedence INCOMPLETE, REOPENED, ISOLATED, UNSETTLED, NOT-OVERTURNED; the S3 word does not move",
+ "inputs": {
+  "data_root": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real",
+  "primary": {
+   "payload": "readers_s1.json",
+   "payload_sha256": "16c5b68c2854609d6aa8e793de42d26ac9cbdb8e4f3d3e0a5e851d286085b5cc",
+   "state_file": "readers_s1.json.state.jsonl",
+   "state_sha256": "0e89a857f6ce9e90f9e224ba3d9540498693deb74a7900fc140c34453a296938",
+   "harvest": "results/real/harvest_shadow",
+   "git_commit": "46a812fc309826c48e9e82ebe930ca9fce965075",
+   "instrument_sha256": "d1125670be056b4824ebfcd734379f40e44db994308c10accb731839d2a4a624",
+   "n_rows": 36,
+   "resumed_cells": 0,
+   "runtime_s": 27521.0,
+   "torn_bytes_dropped_on_resume": 0
+  },
+  "replication": {
+   "payload": "readers_s1_r.json",
+   "payload_sha256": "3a21e9469805615f9fb1b6746a8b00e183e3330929722241807fd4c98b692a18",
+   "state_file": "readers_s1_r.json.state.jsonl",
+   "state_sha256": "5aafc5c09d8c79c010bd58317c62ff0b502616db1ff1fd7917fa5bdd6592dd8e",
+   "harvest": "results/real/harvest_shadow_r",
+   "git_commit": "46a812fc309826c48e9e82ebe930ca9fce965075",
+   "instrument_sha256": "d1125670be056b4824ebfcd734379f40e44db994308c10accb731839d2a4a624",
+   "n_rows": 36,
+   "resumed_cells": 0,
+   "runtime_s": 14085.9,
+   "torn_bytes_dropped_on_resume": 0
+  }
+ },
+ "frozen_chain": {
+  "amended_sha256": "aafd3ae849984092ea81ce7ff5cd47f1b18e089e95cd960d86630162b5ad8612",
+  "coarse_sha256": "5efa7063767be062208eb3755cedf6a4e30f4c306927a1c3d2527098d69a5281",
+  "reader_lens_sha256": "d1125670be056b4824ebfcd734379f40e44db994308c10accb731839d2a4a624"
+ },
+ "registered": true,
+ "provenance": {
+  "instrument_sha256": "94640a09cbebbadf9eff91dec5249be89880f1d298a3aa3819e2c51acc624c11",
+  "reader_lens_sha256": "d1125670be056b4824ebfcd734379f40e44db994308c10accb731839d2a4a624",
+  "git_commit": "46a812fc309826c48e9e82ebe930ca9fce965075",
+  "git_status_tracked": [],
+  "numpy_version": "2.3.5",
+  "python_version": "3.11.9",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "out": "readers_s1_word.json"
+ }
+}

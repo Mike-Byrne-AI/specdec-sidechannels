@@ -1,0 +1,27 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+[decode] loaded in 5.9s; 25 shards
+[decode] shard 1/25: exact 8/8, 74 tok/s
+[decode] shard 2/25: exact 8/8, 74 tok/s
+[decode] shard 3/25: exact 8/8, 72 tok/s
+[decode] shard 4/25: exact 8/8, 73 tok/s
+[decode] shard 5/25: exact 8/8, 73 tok/s
+[decode] shard 6/25: exact 8/8, 75 tok/s
+[decode] shard 7/25: exact 8/8, 76 tok/s
+[decode] shard 8/25: exact 8/8, 76 tok/s
+[decode] shard 9/25: exact 8/8, 76 tok/s
+[decode] shard 10/25: exact 8/8, 74 tok/s
+[decode] shard 11/25: exact 8/8, 74 tok/s
+[decode] shard 12/25: exact 8/8, 78 tok/s
+[decode] shard 13/25: exact 8/8, 79 tok/s
+[decode] shard 14/25: exact 8/8, 79 tok/s
+[decode] shard 15/25: exact 8/8, 79 tok/s
+[decode] shard 16/25: exact 8/8, 75 tok/s
+[decode] shard 17/25: exact 8/8, 74 tok/s
+[decode] shard 18/25: exact 8/8, 71 tok/s
+[decode] shard 19/25: exact 8/8, 71 tok/s
+[decode] shard 20/25: exact 8/8, 67 tok/s
+[decode] shard 21/25: exact 8/8, 69 tok/s
+[decode] shard 22/25: exact 8/8, 55 tok/s
+[decode] shard 23/25: exact 8/8, 67 tok/s
+[decode] shard 24/25: exact 8/8, 70 tok/s
+[decode] shard 25/25: exact 8/8, 71 tok/s

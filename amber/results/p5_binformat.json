@@ -1,0 +1,63 @@
+{
+  "_experiment": "p5_binformat",
+  "_written_unix": 1788127550,
+  "coder": "gamma",
+  "draft": "meta-llama/Llama-3.2-1B",
+  "model": {
+    "dtype": "fp32",
+    "id": "meta-llama/Llama-3.2-1B",
+    "snapshot": "4e20de362430cd3b72f300e6b0f18e50e7166e08"
+  },
+  "protocol": "experiments/P5_PROTOCOL.md",
+  "regime": "P1 content re-archived in v3 binary format (prompt coded with the draft from the first token on), Llama-3.2-1B cuda fp32; decode cuda fp32 incremental KV from first token; one 3080 Ti",
+  "report": {
+    "amber_v3_bits_per_generated_token_vs_L_curve": {
+      "1024": 1.35,
+      "128": 7.616,
+      "2048": 0.902,
+      "245": 4.196,
+      "4096": 0.679,
+      "512": 2.245,
+      "64": 14.778,
+      "8192": 0.567
+    },
+    "archives": 200,
+    "breakdown_bits_per_generated_token": {
+      "content_payload": 0.45473671310102537,
+      "fixed_header": 3.1700641366068876,
+      "prompt_payload": 0.5747171044568814
+    },
+    "curve_model": {
+      "note": "const/L + rate; assumes P1-like divergence and this prompt mix",
+      "payload_gen_rate": 0.45473671310102537,
+      "per_archive_const_bits": 916.685
+    },
+    "decode_cuda_fp32": {
+      "archives": 200,
+      "byte_exact": 200,
+      "decode_tok_per_s": 72.41612744062928,
+      "first_desync_positions": []
+    },
+    "fixed_header_bytes": 97,
+    "generated_tokens": 48958,
+    "prompt_coding": {
+      "bits_per_prompt_token": 11.290930979133226,
+      "prompt_rank_gt_max_rank_rate": 0.27247191011235955,
+      "prompt_rank_quantiles": {
+        "0.5": 5,
+        "0.9": 1330,
+        "0.99": 4761
+      },
+      "raw17_bits_per_prompt_token": 17.0,
+      "varint_raw_bits_per_prompt_token": 17.274478330658106
+    },
+    "prompt_tokens_incl_first": 2692,
+    "raw_bits_per_token": 16.97,
+    "v2_json_total_bits_per_generated_token": 18.46153846153846,
+    "v3_over_v2_size_ratio": 0.23077535847052574,
+    "v3_total_bits_per_all_tokens": 4.038412391093901,
+    "v3_total_bits_per_generated_token": 4.260468156378937,
+    "zstd19_full_text_concatenated_bits_per_generated_token": 3.9372523387393277,
+    "zstd19_full_text_per_archive_bits_per_generated_token": 7.280526165284529
+  }
+}

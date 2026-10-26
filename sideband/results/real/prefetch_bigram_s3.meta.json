@@ -1,0 +1,238 @@
+{
+ "registered": "OQ-9 STAGE-1 FREE-BIGRAM TWIN REGISTRATION (docs/BLUEPRINT.md, 2026-10-01 amendment; post-hoc diagnostic; NON-CRITERION)",
+ "git_commit": "d55e62f15f610be6c9520a3555fe619b2291ddee",
+ "git_status_tracked": [],
+ "instrument_sha256": "10599fa98c276751f3296ecff6815aae07a701e35d13b5a2fb6ff8170ba7a11a",
+ "frozen_instrument": {
+  "path": "tools/run_prefetch_readouts.py",
+  "sha256_lf": "8529532d4d787833cfa667a11d406ffa928c9c079836401e4930d43a6fb0e69a"
+ },
+ "harvest_dir": "results/real/harvest_moe",
+ "harvest_npz_sha256": {
+  "moe_s0.npz": "f5b47375362ec160510ca2a91b29b62cc01941a99deb1d0da9fcbaa182539556",
+  "moe_s1.npz": "b32b6d57d47327bdbd9ebca738ed1115123cca5d07ebedd535049247f4e425fa",
+  "moe_s2.npz": "8a875c0f53cec289de1ba2271e52b88ffe762f113340b1618efcee03d8f13342",
+  "moe_s3.npz": "9f73e6b37146ecb0a7f38c4c8c1e445df00e5d935270195daf691d073ce377d9",
+  "moe_s4.npz": "d44c9cb0652c397ce73e963588c8481ba800507d6c5068ac31f81d1a875038d3",
+  "moe_s5.npz": "55be1320f201223b2459e6ae2701a7e0a7163bc61b42487fe89dd381339bf2af",
+  "moe_s6.npz": "3b261f070a8a7bb6a9e900ad2a0f9c86e04bfdd0dc12e4017a53509a1dd1fe76",
+  "moe_s7.npz": "61880b9a779e0bb9b3f6a0cbf63f3dcf691c64f538fde051e70ba52086cf8c35"
+ },
+ "seeds": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+ ],
+ "smoke": false,
+ "smoke_split_val": false,
+ "committed_cell": {
+  "path": "results/real/prefetch_s3.json",
+  "sha256": "c22b02c472d6cbd24f7543f090fe9de60ceaa21e489468448c59bc6ccde4fde7",
+  "git_commit": "c4c4511a5746969024077ee59d2413664c50a836",
+  "instrument_sha256": "8529532d4d787833cfa667a11d406ffa928c9c079836401e4930d43a6fb0e69a",
+  "key": "history_tok-free_tok|B=16|j=1",
+  "delta": 0.10323039164216716,
+  "lo": 0.09264453610194122,
+  "hi": 0.11456267738634517
+ },
+ "label_space": {
+  "buckets": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\buckets_olmoe_k16.json",
+  "buckets_sha256": "1586195a89c8de6ed20f41f1e3155cfb8956ff66041b1adcd64367f38e74096c",
+  "glue": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\glue_olmoe_k16.json",
+  "glue_sha256": "f7f2dd393d42a71b3fd0bc080d6df01eb876a97a92ba6f9affbcc9339a24e645",
+  "n_classes": 16
+ },
+ "constants": {
+  "budgets": [
+   8,
+   16,
+   32
+  ],
+  "horizon": 1,
+  "lambdas": [
+   0.1,
+   1.0,
+   10.0,
+   100.0,
+   1000.0,
+   10000.0,
+   100000.0
+  ],
+  "label_budget": 16,
+  "material": 0.05,
+  "remeasure_tolerance": 0.01,
+  "n_boot": 2000,
+  "boot_seed": 0,
+  "chunk": 4096,
+  "encodings": [
+   "prev_table",
+   "cur_table_at_prev"
+  ],
+  "arm_dims": {
+   "history": 1025,
+   "free_tok": 1025,
+   "history_tok": 2049,
+   "free_bigram_b": 2049,
+   "free_bigram_a": 2049,
+   "history_bigram_b": 3073,
+   "history_bigram_a": 3073,
+   "free_all": 3073,
+   "history_all": 4097
+  }
+ },
+ "n_positions": {
+  "horizon1/train": 294146,
+  "bigram/train": 292946,
+  "bigram/val": 58745,
+  "bigram/test": 59285
+ },
+ "n_test_prompts": 30,
+ "table_coverage": {
+  "train": {
+   "n": 292946,
+   "zero_count_share_cur": 0.0,
+   "zero_count_share_prev": 0.0,
+   "zero_count_share_cur_at_prev": 0.0,
+   "singleton_key_share_cur": 0.019563332491312393,
+   "singleton_key_share_prev": 0.019652086049988735
+  },
+  "val": {
+   "n": 58745,
+   "zero_count_share_cur": 0.04619967656821857,
+   "zero_count_share_prev": 0.046301812920248535,
+   "zero_count_share_cur_at_prev": 0.04625074474423355
+  },
+  "test": {
+   "n": 59285,
+   "zero_count_share_cur": 0.05490427595513199,
+   "zero_count_share_prev": 0.05512355570549043,
+   "zero_count_share_cur_at_prev": 0.05503921733996795
+  }
+ },
+ "encoding_selected": "prev_table",
+ "lambda_selected": {
+  "history": 1000.0,
+  "free_tok": 10.0,
+  "history_tok": 10.0,
+  "free_bigram_b": 10.0,
+  "free_bigram_a": 10.0,
+  "history_bigram_b": 10.0,
+  "history_bigram_a": 10.0,
+  "free_all": 10.0,
+  "history_all": 10.0
+ },
+ "lambda_grid_edge": {
+  "history": false,
+  "free_tok": false,
+  "history_tok": false,
+  "free_bigram_b": false,
+  "free_bigram_a": false,
+  "history_bigram_b": false,
+  "history_bigram_a": false,
+  "free_all": false,
+  "history_all": false
+ },
+ "val_table": {
+  "history": {
+   "0.1": 0.809891001361818,
+   "1.0": 0.809892863222402,
+   "10.0": 0.8098968529236531,
+   "100.0": 0.8099512458507107,
+   "1000.0": 0.8101638969273981,
+   "10000.0": 0.8065516214145885,
+   "100000.0": 0.7791088603285385
+  },
+  "free_tok": {
+   "0.1": 0.8205263479870627,
+   "1.0": 0.8208862190399183,
+   "10.0": 0.8215106072857264,
+   "100.0": 0.8183437154225891,
+   "1000.0": 0.8031037215933271,
+   "10000.0": 0.7632303813090475,
+   "100000.0": 0.666065994978296
+  },
+  "history_tok": {
+   "0.1": 0.9187579794025024,
+   "1.0": 0.9189255468550515,
+   "10.0": 0.9193311664822538,
+   "100.0": 0.9177955304706783,
+   "1000.0": 0.9084121520980509,
+   "10000.0": 0.8814029385479615,
+   "100000.0": 0.8103754840837518
+  },
+  "free_bigram_b": {
+   "0.1": 0.8617222742361051,
+   "1.0": 0.8621970486849945,
+   "10.0": 0.8633609775300025,
+   "100.0": 0.8605820176185207,
+   "1000.0": 0.8412483243254745,
+   "10000.0": 0.7890355030215338,
+   "100000.0": 0.6794271054983403
+  },
+  "free_bigram_a": {
+   "0.1": 0.8605729742956847,
+   "1.0": 0.8609692846199677,
+   "10.0": 0.8618462209549749,
+   "100.0": 0.8586701527789599,
+   "1000.0": 0.8408299376542685,
+   "10000.0": 0.7947113850114903,
+   "100000.0": 0.6896895480466423
+  },
+  "history_bigram_b": {
+   "0.1": 0.9235186239254405,
+   "1.0": 0.9238372680653673,
+   "10.0": 0.9246507681504809,
+   "100.0": 0.9226859732743212,
+   "1000.0": 0.9107732572984935,
+   "10000.0": 0.8820822516809941,
+   "100000.0": 0.8107142097199762
+  },
+  "history_bigram_a": {
+   "0.1": 0.9217828379010979,
+   "1.0": 0.9220621169886799,
+   "10.0": 0.9226710783896502,
+   "100.0": 0.9203256660141289,
+   "1000.0": 0.9095210230657929,
+   "10000.0": 0.8817544312281896,
+   "100000.0": 0.8104981009022044
+  },
+  "free_all": {
+   "0.1": 0.8622297642352541,
+   "1.0": 0.8629862115924759,
+   "10.0": 0.8646193293046217,
+   "100.0": 0.8624030502595965,
+   "1000.0": 0.8452825772406162,
+   "10000.0": 0.7992301206485658,
+   "100000.0": 0.69276135202996
+  },
+  "history_all": {
+   "0.1": 0.9233718029193974,
+   "1.0": 0.9238589454421653,
+   "10.0": 0.9250340454506767,
+   "100.0": 0.9233574399948932,
+   "1000.0": 0.911355487701081,
+   "10000.0": 0.8823691112009533,
+   "100000.0": 0.8108386883990126
+  }
+ },
+ "args": {
+  "harvest": "results/real/harvest_moe",
+  "out": "results/real/prefetch_bigram_s3.json",
+  "buckets": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\buckets_olmoe_k16.json",
+  "glue": "C:\\Users\\Michael\\Desktop\\Research\\sideband\\results\\real\\glue_olmoe_k16.json",
+  "committed": null,
+  "only_seeds": null,
+  "smoke_split_val": false,
+  "lambdas": null,
+  "conclude_from": null
+ },
+ "numpy_version": "2.3.5",
+ "python_version": "3.11.9",
+ "started_unix": 1790876058.6414492,
+ "runtime_s": 259.1328806877136
+}

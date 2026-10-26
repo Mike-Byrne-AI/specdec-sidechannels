@@ -1,0 +1,9 @@
+# espalier.toml -- adopter configuration for the espalier harness.
+# Flat top-level keys only: a key under any [table] is not read.
+#
+# plan_exempt_prefixes (decided 2026-10-01, onboarding row ONB-6): keep the
+# plan gate everywhere it applies. On this repository an unplanned edit under
+# src/, tools/ (outside tools/cc), experiments/, results/ or data/ is exactly
+# what the /implement-task lane exists to prevent, so the friction is the
+# point. To loosen it, name a prefix here; each entry must end with "/".
+plan_exempt_prefixes = []

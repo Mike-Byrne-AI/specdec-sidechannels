@@ -1,0 +1,355 @@
+#################### FINDINGS.md
+@@ -54 +54 @@ Reading this file (index header added 2026-09-05; every entry below is unchanged
+-| F-17 | 2026-09-01 | K-2 survived at S3: MoE router expert ids beat the free baseline at offset 2, pinned replication +0.0173 [+0.0133, +0.0221] | stands against the 657-summary PROXY; DATED ERRATUM 2026-09-06 (F-24):
+ABSORBED by the full free baseline at the registered reader at the pinned cells L1 offset 2, TWIN-ROBUST at the corrected twin; mechanism qualified by F-18; DATED 2026-09-14 (F-25, OQ-18 at the registered reader): L2
+ABSORBED (F-25); L3 SPLIT at the L3 group lens (replication fired; F-25) |
++| F-17 | 2026-09-01 | K-2 survived at S3: MoE router expert ids beat the free baseline at offset 2, pinned replication +0.0173 [+0.0133, +0.0221] | stands against the 657-summary PROXY; DATED ERRATUM 2026-09-06 (F-24):
+ABSORBED by the full free baseline at the registered reader at the pinned cells L1 offset 2, TWIN-ROBUST at the corrected twin; mechanism qualified by F-18; DATED 2026-09-14 (F-25, OQ-18 at the registered reader): L2
+ABSORBED (F-25); L3 SPLIT at the L3 group lens (replication fired; F-25); DATED LENS NOTE 2026-10-05 (F-28, STAGE LENS; OQ-13 (ii)): through the BALANCED L3 lens (16 groups of 31 or 32,
+results/real/concept_groups_olmoe_balanced_v1.json) the (c) - (a) linear off2 margin reads +0.0221 [+0.0187, +0.0258] / +0.0195 [+0.0160, +0.0232], 0.307 / 0.267 of the recorded +0.0721 / +0.0730 — LENS-SURVIVES (the
+margin exists under a size-capped partition); against the committed L1 (+0.0147 / +0.0173) and L2 (+0.0206 / +0.0207) margins the growth over L2 is NOT-SETTLED on both harvests (combined L3-GROWTH-NOT-SETTLED; P's CI
+contains L2's margin; not like-for-like across label spaces), so the "coarser claim" sentence is not written; off3 (+0.0419 / +0.0364) and off4 (+0.0207 / +0.0227) are not re-read at the balanced lens; the recorded-lens
+number stands regardless |
+@@ -62 +62 @@ Reading this file (index header added 2026-09-05; every entry below is unchanged
+-| F-25 | 2026-09-14 | [read under the 2026-09-07 rider amendment after the registered rider fired at S1 L3 (raw leg 2 +0.0132 against the 0.01 band); diagnostic branch AMENDABLE, mechanism TWIN-MATCHED; a post-hoc
+reroute around a fired kill condition: the leg that fired was replaced after the fire by a twin-referenced dependence-excess leg whose S1 seed-0 values at both spaces were known from the diagnostic payload when the
+amendment was written; it is a fresh test only at the other three harvests; the E leg sees every non-causal block the raw leg sees (the twin lacks it) and is sharper under a drifted reader; what it drops (prediction-
+marginal drift and twin-shared position information) are non-leaks; S1 diagnostic X_raw at seed 0 +0.0006, the registered statistic, twin-referenced, would also have passed] OQ-18 COARSE-LABEL FULL-FREE RE-TEST at L2 /
+L3, both sources, both harvests: S1 L2 ABSORBED; S1 L3 NOT-SHOWN; S3 L2 ABSORBED; S3 L3 SPLIT (every L3 label read at the L3 group lens (S1: one mega-group of 455/510 concepts including all 165 zero-degree concepts, the
+next group 10; S3: two mega-groups of 268 and 193 = 461/510 including all 20 zero-degree concepts)) at the registered reader with the corrected twin; prediction 3/4 held | stands; registered-reader scope; consequences
+executed on F-15 / F-17 / F-16 / F-18 / K-2 as pinned |
++| F-25 | 2026-09-14 | [read under the 2026-09-07 rider amendment after the registered rider fired at S1 L3 (raw leg 2 +0.0132 against the 0.01 band); diagnostic branch AMENDABLE, mechanism TWIN-MATCHED; a post-hoc
+reroute around a fired kill condition: the leg that fired was replaced after the fire by a twin-referenced dependence-excess leg whose S1 seed-0 values at both spaces were known from the diagnostic payload when the
+amendment was written; it is a fresh test only at the other three harvests; the E leg sees every non-causal block the raw leg sees (the twin lacks it) and is sharper under a drifted reader; what it drops (prediction-
+marginal drift and twin-shared position information) are non-leaks; S1 diagnostic X_raw at seed 0 +0.0006, the registered statistic, twin-referenced, would also have passed] OQ-18 COARSE-LABEL FULL-FREE RE-TEST at L2 /
+L3, both sources, both harvests: S1 L2 ABSORBED; S1 L3 NOT-SHOWN; S3 L2 ABSORBED; S3 L3 SPLIT (every L3 label read at the L3 group lens (S1: one mega-group of 455/510 concepts including all 165 zero-degree concepts, the
+next group 10; S3: two mega-groups of 268 and 193 = 461/510 including all 20 zero-degree concepts)) at the registered reader with the corrected twin; prediction 3/4 held | stands; registered-reader scope; consequences
+executed on F-15 / F-17 / F-16 / F-18 / K-2 as pinned; DATED NOTE 2026-10-05 (F-28, STAGE LENS): through a balanced lens at S3 L3 the same cell reads ABSORBED with D +0.0019 [+0.0006, +0.0032] / +0.0004 [-0.0011,
++0.0018], Mt +0.0042 [+0.0025, +0.0061] / +0.0021 [+0.0002, +0.0041] and Mn_r +0.0023 [+0.0010, +0.0038] / +0.0017 [-0.0000, +0.0035] (OFF3-ABSORBED, OFF4-ABSORBED) — the corrected twin GAINS at this lens where it cost
+-0.0031 / -0.0067 at the lopsided one; the SPLIT at the lopsided lens stands as registered |
+@@ -64,0 +65 @@ Reading this file (index header added 2026-09-05; every entry below is unchanged
++| F-28 | 2026-10-05 | READER-AND-LENS RE-TEST AT S3, STAGE LENS (the lane's entry): through a size-capped balanced lens at S3 L3 the full-free re-test reads ABSORBED at the registered reader (gate D +0.0019 [+0.0006,
++0.0032] / +0.0004 [-0.0011, +0.0018]; every D upper below +0.005 at off2 / off3 / off4 on both harvests; OFF3-ABSORBED, OFF4-ABSORBED; Mn_r +0.0023 [+0.0010, +0.0038] / +0.0017 [-0.0000, +0.0035], the corrected twin
+GAINING where it cost at the lopsided lens) where the lopsided lens read SPLIT; F-17's (c) - (a) proxy margin survives the lens at +0.0221 [+0.0187, +0.0258] / +0.0195 [+0.0160, +0.0232] (0.307 / 0.267 of +0.0721 /
++0.0730), its growth over L2 (+0.0206 / +0.0207) NOT-SETTLED on both (LENS-SURVIVES; combined L3-GROWTH-NOT-SETTLED) | stands (STAGE LENS landed 2026-10-05; the K-2 word waits for STAGE READERS; F-25's S3 L3 SPLIT at the
+lopsided lens stands as registered) |
+@@ -298,0 +300,141 @@ Reading this file (index header added 2026-09-05; every entry below is unchanged
++
++## F-28 — READER-AND-LENS RE-TEST AT S3, STAGE LENS (the lane's entry; later stages add dated lines): through a size-capped BALANCED lens at S3 L3 the full-free re-test reads ABSORBED at the registered reader — gate D
++0.0019 [+0.0006, +0.0032] / +0.0004 [-0.0011, +0.0018], every D CI95 upper below +0.005 at off2 / off3 / off4 on both harvests (OFF3-ABSORBED, OFF4-ABSORBED) — where the lopsided lens read SPLIT (F-25); F-17's (c) - (a)
+proxy margin SURVIVES the lens at +0.0221 [+0.0187, +0.0258] / +0.0195 [+0.0160, +0.0232] (0.307 / 0.267 of the recorded +0.0721 / +0.0730) with its growth over L2 NOT-SETTLED on both harvests (LENS-SURVIVES; combined
+L3-GROWTH-NOT-SETTLED)
++- date: 2026-10-05
++- regime: F-25's — the two committed OLMoE S3 harvests (NF4 double-quant
++  with bf16 routers at harvest time, target-only generations at temperature
++  1.0, 256 new tokens, 210 prompts, split prompt_idx % 7, 30 test clusters;
++  the sorted top-8 id stream as the 1024-dim slots block) at the REGISTERED
++  reader R-0 (mlp256, 30 epochs, lr 3e-3) and, for the proxy, linear; probe
++  training only on CPU (six torch threads, CUDA hidden), no model forward,
++  no acceptance, no wall clock; the frozen OQ-18 chain imported by bare
++  name; every label read through the BALANCED L3 lens L3_olmoe_balanced_v1
++  (16 groups of 31 or 32 concepts; cap 32 against the lopsided lens's 268).
++- source: results/real/lens_s3.json, results/real/lens_s3.json.state.jsonl
++  (PRIMARY, harvest_moe), results/real/lens_s3_r.json,
++  results/real/lens_s3_r.json.state.jsonl (REPLICATION, harvest_moe_r), each
++  with 49 rows (45 unshuffled cells, 4 amended-rider cells with histograms);
++  results/real/concept_groups_olmoe_balanced_v1.json (the lens);
++  tools/run_reader_lens.py (the instrument, d1125670be05 as frozen),
++  tools/build_balanced_groups.py, tests/test_reader_lens.py,
++  tests/test_balanced_groups.py, tests/test_reader_lens_landing.py;
++  docs/BLUEPRINT.md ("READER-AND-LENS RE-TEST AT S3 REGISTRATION", frozen at
++  b128fda, both runs from the clean tree at d3504b2, the OUTCOME bullet for
++  this stage).
++- finding: MECHANICAL LABELS (the frozen OQ-18 rules per (reader, space),
++  the primary harvest the label harvest, the replication computed
++  identically; both needed). (i) FULL-FREE AT THE BALANCED LENS: ABSORBED —
++  gate D (acc(fplus_b) - acc(fplus_r), equal dims, off2 / mlp256) +0.0019
++  [+0.0006, +0.0032] / +0.0004 [-0.0011, +0.0018] (per seed +0.0015,
++  +0.0021, +0.0021 / +0.0007, +0.0015, -0.0010); the triple rule does not
++  fire on either harvest (the primary's CI95 is clear of zero but the point
++  sits below the +0.005 floor); at the linear capacity +0.0018 [+0.0008,
++  +0.0028] / -0.0002 [-0.0023, +0.0021]; off3 +0.0003 [-0.0005, +0.0011] /
++  +0.0002 [-0.0008, +0.0015], off4 +0.0001 [-0.0005, +0.0007] / +0.0007
++  [-0.0001, +0.0015] — every D upper below +0.005 on both harvests at every
++  offset, so ABSORBED with OFF3-ABSORBED and OFF4-ABSORBED; Mt (fplus_b -
++  fplus) +0.0042 [+0.0025, +0.0061] / +0.0021 [+0.0002, +0.0041]; Mn_r
++  (fplus_r - fplus) +0.0023 [+0.0010, +0.0038] / +0.0017 [-0.0000, +0.0035]:
++  the CORRECTED TWIN GAINS at this lens on both harvests (the pre-registered
++  surprise), where it COST -0.0031 / -0.0067 at the lopsided lens (F-25,
++  whose S3 L3 SPLIT stands as registered). (ii) PROXY-LENS: LENS-SURVIVES —
++  P = acc((c), linear) - acc((a), linear) at off2 on the fresh cells +0.0221
++  [+0.0187, +0.0258] / +0.0195 [+0.0160, +0.0232] (per seed +0.0230,
++  +0.0225, +0.0208 / +0.0199, +0.0200, +0.0185; the Phase-3 triple rule
++  fires on both), the ratio to F-17's recorded lopsided margin +0.0721 /
++  +0.0730 0.307 / 0.267; against the same harvest's committed L2 (c) - (a)
++  linear off2 margin +0.0206 / +0.0207 the growth over L2 is
++  L3-GROWTH-NOT-SETTLED on both harvests (each CI95 straddles L2's margin;
++  cross-space margins are not like-for-like), combined
++  L3-GROWTH-NOT-SETTLED: the (c) - (a) margin EXISTS under a size-capped
++  partition; whether F-17's L3 headline's SIZE (the growth from about +0.02
++  at L2 to about +0.07 at L3) survives the size cap is NOT settled at this
++  power, so OQ-13 (ii)'s "coarser claim" sentence is NOT written. WHAT P
++  MEASURES HERE: the majority floor is the same at both lenses (0.4214 /
++  0.4276; the glue class is the majority in both), so accuracy over the
++  floor compares directly across lenses — the 657-summary proxy (a) reads
++  only +0.0029, +0.0031, +0.0035 / +0.0025, +0.0028, +0.0030 above it at
++  this lens per seed (against +0.0866..+0.0870 / +0.0875..+0.0882 at the
++  lopsided lens) and the (c) arm +0.0239, +0.0260, +0.0260 / +0.0213,
++  +0.0224, +0.0230, so P is essentially acc((c)) minus the floor and
++  LENS-SURVIVES measures the slots block against a baseline that barely
++  clears the constant predictor; it says nothing about the SIZE of F-17's
++  headline, which is the growth word's question. The lens itself is NOT
++  unpredictable: the full free baseline reads +0.0411, +0.0425, +0.0431 /
++  +0.0360, +0.0387, +0.0398 over the floor at mlp256 per seed, Mf at linear
++  (+0.0243 [+0.0201, +0.0286] / +0.0220 [+0.0163, +0.0282]) is at least P
++  and Mc (+0.0021 [-0.0002, +0.0045] / +0.0025 [-0.0015, +0.0067]) is not
++  CI-clear, so the full free baseline recovers the whole proxy margin — the
++  binding statement for this lens is the full-free ABSORBED.
++  CRITERION-BEARING for F-25's S3 L3 cell (a dated note beside its SPLIT)
++  and F-17's lens note; the K-2 word is NOT issued by this stage (it comes
++  from STAGE READERS by the pinned rule); NON-CRITERION for F-26 / F-27.
++- readouts (primary / replication): PRECONDITIONS — amended rider at the
++  balanced lens PASS on both (shuffled (a) 0.4199 / 0.4256, shuffled fplus
++  0.4193 / 0.4243, shuffled fplus_b 0.4189 / 0.4247, shuffled fplus_r 0.4186
++  / 0.4246; leg 1 raw and leg 2 amended both pass; the registered raw leg 2
++  X_raw at seed 0 +0.0003 / +0.0001, reported never halting); reader
++  validity three of three legs on both (min gate-cell accuracy minus floor
++  +0.0046 / +0.0018; Mf gate CI upper +0.0435 / +0.0412; Mf_x gate CI upper
++  +0.0444 / +0.0412, Mf_x paired against THIS run's fresh R-0 linear (a),
++  the pinned deviation); the Phase-3 state reproduces its payload at load;
++  the hz moments equal the committed OQ-17 sha; the corrected twin's
++  same-prompt fraction 0 at every offset (412,656 / 207,251 anchors at off2,
++  wrapped fraction 0.0342 / 0.0323); no grid id collides with a committed
++  cell (none shared at this space). READER DIAGNOSTICS: best VAL epochs at
++  the gate cell fplus [1, 1, 1] / [0, 1, 1], fplus_b [1, 1, 1] / [1, 1, 1],
++  fplus_r [1, 1, 1] / [1, 1, 1] against (a) [10, 14, 25] / [12, 16, 21] —
++  F-24's 0-2 pattern on the h_a-bearing arms, again. OTHER MARGINS: Mf
++  (fplus - fresh (a), mlp256) +0.0375 [+0.0317, +0.0435] / +0.0355 [+0.0296,
++  +0.0412], at linear +0.0243 [+0.0201, +0.0286] / +0.0220 [+0.0163,
++  +0.0282]; Mf_x +0.0391 [+0.0340, +0.0444] / +0.0354 [+0.0297, +0.0412]; Mc
++  (fplus - fresh (c), linear) +0.0021 [-0.0002, +0.0045] / +0.0025 [-0.0015,
++  +0.0067]. BUDGET: 15,302.5 / 7,808.9 s elapsed (4.25 / 2.17 CPU-hours at
++  six threads) against the estimate of about 5.3 on the primary and half on
++  the replication; no resume, no torn bytes. LANDING CONDITION: the primary
++  gate cell (R-0, fplus_b, mlp256, seed 0) re-run from a clean clone at
++  d3504b2 with the absolute --harvest path to a scratch path IS identical
++  except runtime_s (test_acc 0.468526 / 0.468526; runtime 411.4 / 398.6 s).
++- caveats: every label is a statement about the registered reader at the
++  registered budget at the gate cells of ONE balanced lens, pinned before
++  the artifact existed and built once; the lens is a 1-D Fiedler order (gap
++  0.0166, nearly degenerate second and third eigenvectors) whose groups
++  persist barely above their label-marginal baseline (train glue-dropped
++  persistence 0.1033 against sum q^2 0.0777, excess 0.026; k16 0.2293
++  against 0.1902; lopsided 0.6748 against 0.5291; baselines
++  critic-recomputed), so the 657-summary proxy reads about +0.003 above the
++  floor at it while the full free baseline reads about +0.04 (the lens is
++  predictable; the proxy is not the reader that predicts it; a probable,
++  UNTESTED mechanism, written as a hypothesis: the (a) summaries describe
++  the next token's distribution, and with an excess persistence of 0.026
++  that barely predicts the group two tokens ahead). ABSORBED here is the
++  registered strong-null form (every D upper below +0.005) and is NOT zero:
++  on the primary D is CI-clear positive at off2 at both capacities but
++  immaterial, Mt is CI-clear positive on both harvests but below the floor
++  and matched by the corrected twin's own gain, and that sign flip of the
++  twin's term accounts for most of the difference in D between the lenses
++  (lopsided +0.0041 / +0.0053); it is not a demonstration that the lopsided
++  lens's margin is an artifact — the lopsided-lens numbers stand as
++  registered and no second lens is built (OQ-13 (ii)'s rule). The payloads
++  record the companion files the tool filled in (fidelity rider, Phase-3
++  state and payload, label spaces) as absolute machine paths where earlier
++  families recorded repo-relative ones; --conclude-from reads them by name
++  and the tool is frozen, so this is disclosed, not fixed. LENS-SURVIVES is
++  existence under a size-capped partition, not size; the growth word is
++  NOT-SETTLED, and cross-space accuracy margins (different label spaces,
++  floors and class counts) are not like-for-like. Mn_r positive on both
++  harvests means a same-marginal prompt-deranged slots block adds about
++  +0.002 at this reader and lens, so D = Mt - Mn_r subtracts a gain, not a
++  cost (the corrected-twin-helps reading of F-24, here too); the twin's cost
++  at the lopsided lens was therefore a property of that lens's labels, which
++  the registration's clause (3) rationale had denied and the critic struck
++  before the freeze. One reader (R-0) and one stage: the stronger readers
++  are STAGE READERS, not yet run; the K-2 word is theirs. PREDICTIONS scored
++  under the five conventions in the block's OUTCOME: the assistant's 10 of
++  16 clauses HELD (FAILED: (1) its train glue-dropped persistence ABOVE
++  k16's (scored FAILED at the freeze) -> FAILED; (2) P at off2
++  +0.020..+0.050 on both harvests -> FAILED; (2) ratio to F-17's margin
++  0.3..0.7 on both -> FAILED; (3) Mt within -0.003..+0.003 on both ->
++  FAILED; (3) Mn_r within -0.007..+0.001 on both -> FAILED; (3) OFF3 and
++  OFF4 NOT-SHOWN (modal words) -> FAILED); the critic's 7 of 7 (FAILED:
++  none); the pre-registered surprise "Mn_r non-negative at the balanced lens
++  on both harvests" occurred.
+#################### README.md
+@@ -49 +49 @@ are defined in docs/GLOSSARY.md.
+-| Existence: telemetry carries future-concept information beyond the strongest free baseline at offsets >= 2 (2-3 at S1; 2 at S3, reaching 3-4 only under coarse labels) (kill criterion K-2) | shown against the
+657-summary proxy, replicated on fresh seeds at two sources; DATED NOTE 2026-09-06 (F-24): ABSORBED by the FULL free baseline ((a) ++ hashed token ids ++ z-scored h_a) at the registered reader at the pinned L1 offset-2
+cells of both sources — every equal-dims D CI95 upper below +0.005, Mt beside it about +0.003; corrected-twin reading TWIN-ROBUST (S1) / TWIN-ROBUST (S3); K-2 STATUS 2026-09-06 | S1 (compute-tier weight-slot tap,
+Llama-3.1-8B): pinned replication cell +0.0141 [+0.0081, +0.0203] top-1 accuracy over the free-features probe; margins span +0.008..+0.044 over floors of 0.41-0.59 (F-15). S3 (pure address stream: top-8-of-64 expert ids
+at 16 OLMoE gates): +0.0147 [+0.0113, +0.0182] primary, +0.0173 [+0.0133, +0.0221] replication, up to +0.0721 [+0.0652, +0.0792] at coarse labels (F-17). Neither margin is prefix-topic state at the histogram-feature
+level (F-16, F-18; richer prefix families remain an untested residual). | results/real/probes_s1*.json, probes_s3*.json and their .state.jsonl; DATED NOTE 2026-09-14 (F-25): [read under the 2026-09-07 rider amendment
+after the registered rider fired at S1 L3 (raw leg 2 +0.0132 against the 0.01 band); diagnostic branch AMENDABLE, mechanism TWIN-MATCHED; a post-hoc reroute around a fired kill condition: the leg that fired was replaced
+after the fire by a twin-referenced dependence-excess leg whose S1 seed-0 values at both spaces were known from the diagnostic payload when the amendment was written; it is a fresh test only at the other three harvests;
+the E leg sees every non-causal block the raw leg sees (the twin lacks it) and is sharper under a drifted reader; what it drops (prediction-marginal drift and twin-shared position information) are non-leaks; S1
+diagnostic X_raw at seed 0 +0.0006, the registered statistic, twin-referenced, would also have passed] at the coarse label spaces L2 / L3 the re-test reads S1 L2 ABSORBED; S1 L3 NOT-SHOWN; S3 L2 ABSORBED; S3 L3 SPLIT
+(every L3 label read at the L3 group lens (S1: one mega-group of 455/510 concepts including all 165 zero-degree concepts, the next group 10; S3: two mega-groups of 268 and 193 = 461/510 including all 20 zero-degree
+concepts)) against the full free baseline at the registered reader |
++| Existence: telemetry carries future-concept information beyond the strongest free baseline at offsets >= 2 (2-3 at S1; 2 at S3, reaching 3-4 only under coarse labels) (kill criterion K-2) | shown against the
+657-summary proxy, replicated on fresh seeds at two sources; DATED NOTE 2026-09-06 (F-24): ABSORBED by the FULL free baseline ((a) ++ hashed token ids ++ z-scored h_a) at the registered reader at the pinned L1 offset-2
+cells of both sources — every equal-dims D CI95 upper below +0.005, Mt beside it about +0.003; corrected-twin reading TWIN-ROBUST (S1) / TWIN-ROBUST (S3); K-2 STATUS 2026-09-06 | S1 (compute-tier weight-slot tap,
+Llama-3.1-8B): pinned replication cell +0.0141 [+0.0081, +0.0203] top-1 accuracy over the free-features probe; margins span +0.008..+0.044 over floors of 0.41-0.59 (F-15). S3 (pure address stream: top-8-of-64 expert ids
+at 16 OLMoE gates): +0.0147 [+0.0113, +0.0182] primary, +0.0173 [+0.0133, +0.0221] replication, up to +0.0721 [+0.0652, +0.0792] at coarse labels (F-17). Neither margin is prefix-topic state at the histogram-feature
+level (F-16, F-18; richer prefix families remain an untested residual). | results/real/probes_s1*.json, probes_s3*.json and their .state.jsonl; DATED NOTE 2026-09-14 (F-25): [read under the 2026-09-07 rider amendment
+after the registered rider fired at S1 L3 (raw leg 2 +0.0132 against the 0.01 band); diagnostic branch AMENDABLE, mechanism TWIN-MATCHED; a post-hoc reroute around a fired kill condition: the leg that fired was replaced
+after the fire by a twin-referenced dependence-excess leg whose S1 seed-0 values at both spaces were known from the diagnostic payload when the amendment was written; it is a fresh test only at the other three harvests;
+the E leg sees every non-causal block the raw leg sees (the twin lacks it) and is sharper under a drifted reader; what it drops (prediction-marginal drift and twin-shared position information) are non-leaks; S1
+diagnostic X_raw at seed 0 +0.0006, the registered statistic, twin-referenced, would also have passed] at the coarse label spaces L2 / L3 the re-test reads S1 L2 ABSORBED; S1 L3 NOT-SHOWN; S3 L2 ABSORBED; S3 L3 SPLIT
+(every L3 label read at the L3 group lens (S1: one mega-group of 455/510 concepts including all 165 zero-degree concepts, the next group 10; S3: two mega-groups of 268 and 193 = 461/510 including all 20 zero-degree
+concepts)) against the full free baseline at the registered reader; DATED NOTE 2026-10-05 (F-28, STAGE LENS): through a size-capped BALANCED lens at S3 L3 the full-free re-test reads ABSORBED at the registered reader (D
++0.0019 [+0.0006, +0.0032] / +0.0004 [-0.0011, +0.0018], every upper below +0.005 at off2 / off3 / off4; Mn_r +0.0023 [+0.0010, +0.0038] / +0.0017 [-0.0000, +0.0035], the corrected twin gaining) where the lopsided lens
+read SPLIT, and F-17's proxy margin survives the lens at +0.0221 [+0.0187, +0.0258] / +0.0195 [+0.0160, +0.0232] (0.307 / 0.267 of the recorded margin) with its growth over L2 NOT-SETTLED; the stronger readers (STAGE
+READERS) are not yet run |
+#################### docs/REPORT.md
+@@ -20 +20 @@ Sideband asks whether the memory-access address stream a weight-serving device s
+-| Existence (K-2), full free baseline at L2 / L3 (dated note 2026-09-14) | Do the coarse-label margins survive (a) ++ hashed token ids ++ z-scored h_a at the registered reader against the corrected twin? | [read under
+the 2026-09-07 rider amendment after the registered rider fired at S1 L3 (raw leg 2 +0.0132 against the 0.01 band); diagnostic branch AMENDABLE, mechanism TWIN-MATCHED; a post-hoc reroute around a fired kill condition:
+the leg that fired was replaced after the fire by a twin-referenced dependence-excess leg whose S1 seed-0 values at both spaces were known from the diagnostic payload when the amendment was written; it is a fresh test
+only at the other three harvests; the E leg sees every non-causal block the raw leg sees (the twin lacks it) and is sharper under a drifted reader; what it drops (prediction-marginal drift and twin-shared position
+information) are non-leaks; S1 diagnostic X_raw at seed 0 +0.0006, the registered statistic, twin-referenced, would also have passed] S1 L2 ABSORBED; S1 L3 NOT-SHOWN; S3 L2 ABSORBED; S3 L3 SPLIT (every L3 label read at
+the L3 group lens (S1: one mega-group of 455/510 concepts including all 165 zero-degree concepts, the next group 10; S3: two mega-groups of 268 and 193 = 461/510 including all 20 zero-degree concepts)) (registered-reader
+scope; F-25) | gate D: S1 L2 +0.0011 [-0.0001, +0.0023] / +0.0006 [-0.0007, +0.0020]; S1 L3 +0.0010 [-0.0006, +0.0026] / +0.0012 [-0.0015, +0.0040]; S3 L2 +0.0018 [+0.0008, +0.0030] / +0.0003 [-0.0009, +0.0013]; S3 L3
++0.0041 [+0.0026, +0.0055] / +0.0053 [+0.0019, +0.0091] | F-25; results/real/fullfree_coarse_{s1,s1_r,s3,s3_r}.json |
++| Existence (K-2), full free baseline at L2 / L3 (dated note 2026-09-14) | Do the coarse-label margins survive (a) ++ hashed token ids ++ z-scored h_a at the registered reader against the corrected twin? | [read under
+the 2026-09-07 rider amendment after the registered rider fired at S1 L3 (raw leg 2 +0.0132 against the 0.01 band); diagnostic branch AMENDABLE, mechanism TWIN-MATCHED; a post-hoc reroute around a fired kill condition:
+the leg that fired was replaced after the fire by a twin-referenced dependence-excess leg whose S1 seed-0 values at both spaces were known from the diagnostic payload when the amendment was written; it is a fresh test
+only at the other three harvests; the E leg sees every non-causal block the raw leg sees (the twin lacks it) and is sharper under a drifted reader; what it drops (prediction-marginal drift and twin-shared position
+information) are non-leaks; S1 diagnostic X_raw at seed 0 +0.0006, the registered statistic, twin-referenced, would also have passed] S1 L2 ABSORBED; S1 L3 NOT-SHOWN; S3 L2 ABSORBED; S3 L3 SPLIT (every L3 label read at
+the L3 group lens (S1: one mega-group of 455/510 concepts including all 165 zero-degree concepts, the next group 10; S3: two mega-groups of 268 and 193 = 461/510 including all 20 zero-degree concepts)) (registered-reader
+scope; F-25); DATED NOTE 2026-10-05 (F-28, STAGE LENS): through a size-capped balanced lens at S3 L3 the same cell reads ABSORBED at the registered reader (D +0.0019 [+0.0006, +0.0032] / +0.0004 [-0.0011, +0.0018]; Mn_r
++0.0023 [+0.0010, +0.0038] / +0.0017 [-0.0000, +0.0035]; OFF3-ABSORBED, OFF4-ABSORBED); F-17's proxy margin survives that lens at +0.0221 [+0.0187, +0.0258] / +0.0195 [+0.0160, +0.0232], its growth over L2 NOT-SETTLED |
+gate D: S1 L2 +0.0011 [-0.0001, +0.0023] / +0.0006 [-0.0007, +0.0020]; S1 L3 +0.0010 [-0.0006, +0.0026] / +0.0012 [-0.0015, +0.0040]; S3 L2 +0.0018 [+0.0008, +0.0030] / +0.0003 [-0.0009, +0.0013]; S3 L3 +0.0041 [+0.0026,
++0.0055] / +0.0053 [+0.0019, +0.0091] | F-25; results/real/fullfree_coarse_{s1,s1_r,s3,s3_r}.json |
+#################### docs/FINDINGS_INDEX.md
+@@ -3,3 +3,3 @@
+-A reader's map of the 28 registered findings in `FINDINGS.md` (F-0 through
+-F-27, entry dates 2026-08-28 to 2026-10-04; the F-27 row and its arc section
+-added 2026-10-04; dated addenda inside the
++A reader's map of the 29 registered findings in `FINDINGS.md` (F-0 through
++F-28, entry dates 2026-08-28 to 2026-10-05; the F-27 row and its arc section
++added 2026-10-04; the F-28 row and its arc section added 2026-10-05; dated addenda inside the
+@@ -127,0 +128 @@ Vocabulary used in the table, in brief:
++| F-28 | 2026-10-05 | Reader-and-lens re-test, stage LENS (the lane's entry) | REAL: the two committed OLMoE S3 harvests at the registered reader through a size-capped balanced L3 lens pinned before it was built (CPU,
+six threads; registration frozen at b128fda, runs from d3504b2) | the full-free re-test reads ABSORBED through the balanced lens where the lopsided lens read SPLIT; F-17's proxy margin survives the lens as existence
+(LENS-SURVIVES), its growth over L2 NOT-SETTLED | gate D +0.0019 [+0.0006, +0.0032] / +0.0004 [-0.0011, +0.0018]; Mt +0.0042 [+0.0025, +0.0061] / +0.0021 [+0.0002, +0.0041]; Mn_r +0.0023 [+0.0010, +0.0038] / +0.0017
+[-0.0000, +0.0035]; P +0.0221 [+0.0187, +0.0258] / +0.0195 [+0.0160, +0.0232] (0.307 / 0.267 of +0.0721 / +0.0730); L2 +0.0206 / +0.0207 | stands (STAGE LENS landed; the K-2 word waits for STAGE READERS) |
+results/real/lens_s3.json, results/real/lens_s3_r.json and their .state.jsonl; results/real/concept_groups_olmoe_balanced_v1.json |
+@@ -526,0 +528,25 @@ Kill-criterion outcome: none.
++### Reader-and-lens re-test, stage LENS (F-28; added 2026-10-05)
++  The one
++named path to overturn K-2 is a stronger or differently balanced reader; the
++registration folds OQ-13 (ii)'s balanced-lens read into that re-test and
++runs it in stages. STAGE LENS re-reads the S3 L3 cell through ONE
++size-capped lens (Fiedler-order quantile binning of the registered
++transition affinity into 16 groups of 31 or 32; persistence 0.1033 against
++the lopsided lens's 0.6748 and k16's 0.2293, less coherent than k16 against
++each lens's own baseline) at the registered reader, CPU only, pre-registered
++with four critic rounds and a code review before the freeze. Full-free:
++ABSORBED (gate D +0.0019 [+0.0006, +0.0032] / +0.0004 [-0.0011, +0.0018];
++OFF3-ABSORBED, OFF4-ABSORBED; Mt +0.0042 [+0.0025, +0.0061] / +0.0021
++[+0.0002, +0.0041]; Mn_r +0.0023 [+0.0010, +0.0038] / +0.0017 [-0.0000,
+++0.0035], the corrected twin GAINING where it cost -0.0031 / -0.0067 at the
++lopsided lens) where F-25 read SPLIT. Proxy: LENS-SURVIVES — P +0.0221
++[+0.0187, +0.0258] / +0.0195 [+0.0160, +0.0232], 0.307 / 0.267 of F-17's
+++0.0721 / +0.0730; growth over the committed L2 margin (+0.0206 / +0.0207)
++NOT-SETTLED on both, combined L3-GROWTH-NOT-SETTLED: existence under a size
++cap, size not settled. The 657-summary proxy (a) reads about +0.003 above
++the floor at this lens while the full free baseline reads about +0.04 and
++recovers the whole proxy margin, so P is essentially acc((c)) minus the
++floor. What it is not: no K-2 word (that is STAGE READERS'); the
++lopsided-lens numbers stand as registered; no second lens. Kill-criterion
++outcome: none from this stage.
++
+#################### CHANGELOG.md
+@@ -31,0 +32,22 @@ eb0154d), each marked as added on 2026-10-02.
++## 2026-10-05 - Reader-and-lens re-test at S3: stage LENS landed (branch
++espalier-trial)  - (the landing commit; its hash is recorded in the
++handoff's memory row, since a commit cannot cite itself) feat(evidence):
++land the reader-and-lens stage LENS - both registered runs from the clean
++tree at d3504b2, results/real/lens_s3.json and lens_s3_r.json with their
++state files; full-free ABSORBED at the balanced lens (OFF3-ABSORBED,
++OFF4-ABSORBED), proxy LENS-SURVIVES with the combined growth word
++L3-GROWTH-NOT-SETTLED; F-28 in FINDINGS.md with dated notes on F-17 and
++F-25; the block's OUTCOME with both predictions scored; dated OUTCOME notes
++under OQ-13 (ii) and OQ-18; pointers in README, docs/REPORT.md,
++docs/FINDINGS_INDEX.md; tests/test_reader_lens_landing.py; the tool joins
++the frozen closure (ruff exclude, CLAUDE.md twelve attested of fifteen, the
++CONVENTIONS and SHARP_EDGES entries). - d3504b2 docs(memory): log the
++reader-and-lens freeze lane - the handoff row; the stage launched from this
++commit. - b128fda feat(instrument): register the reader-and-lens re-test at
++S3 - the registration block (the balanced lens pinned before it was built;
++readers R-0 / R-N hz-only rescale / R-T two-tower / R-L; stages LENS /
++READERS / READERS-LONG / S1; labels, licences, the K-2 word; both
++predictions), tools/run_reader_lens.py, tools/build_balanced_groups.py and
++the artifact, tests (26 + 7), the pins; four critic rounds and the code
++review recorded in the block.
++
+#################### OPEN_QUESTIONS.md
+@@ -541,0 +542,21 @@ and lens_s3_r.json + state files; the outcome lands as a dated note here.)
++(2026-10-05 OUTCOME, STAGE LENS (F-28): both registered runs from the clean
++tree at d3504b2; the lens built once as pinned (sizes [32 x 14, 31 x 2],
++Fiedler gap 0.0166; train glue-dropped persistence 0.1033 against the
++lopsided lens's 0.6748 and k16's 0.2293). PROXY: LENS-SURVIVES — P +0.0221
++[+0.0187, +0.0258] / +0.0195 [+0.0160, +0.0232], 0.307 / 0.267 of F-17's
+++0.0721 / +0.0730; GROWTH over the committed L2 margin (+0.0206 / +0.0207):
++NOT-SETTLED on both harvests, combined L3-GROWTH-NOT-SETTLED — the margin
++exists under a size-capped partition, its size over L2 is not settled at
++this power, and the "coarser claim" sentence is not written; the 657-summary
++proxy (a) reads only about +0.003 above the majority floor at this lens (the
++same floor as the lopsided lens's) while the full free baseline reads about
+++0.04, so P is essentially acc((c)) minus the floor and the lens is
++predictable by the full baseline, not by the proxy. FULL-FREE at the
++balanced lens: ABSORBED (D +0.0019 [+0.0006, +0.0032] / +0.0004 [-0.0011,
+++0.0018]; Mt +0.0042 [+0.0025, +0.0061] / +0.0021 [+0.0002, +0.0041]; Mn_r
+++0.0023 [+0.0010, +0.0038] / +0.0017 [-0.0000, +0.0035], the corrected twin
++gaining where it cost at the lopsided lens; OFF3-ABSORBED, OFF4-ABSORBED),
++written beside F-25's S3 L3 SPLIT as a dated note. No second lens; the
++lopsided-lens numbers stand as registered. Item (ii) is ANSWERED at this
++lens: the signal survives a balanced lens as existence, not as size.)
++
+@@ -1041,0 +1063,9 @@ beside D as F-25 pins; the lopsided-lens number stands as registered.)
++(2026-10-05 OUTCOME, STAGE LENS of the reader-and-lens re-test (F-28):
++through the balanced lens the S3 L3 cell reads ABSORBED at the registered
++reader — D +0.0019 [+0.0006, +0.0032] / +0.0004 [-0.0011, +0.0018], Mt
+++0.0042 [+0.0025, +0.0061] / +0.0021 [+0.0002, +0.0041], Mn_r +0.0023
++[+0.0010, +0.0038] / +0.0017 [-0.0000, +0.0035] (the corrected twin gaining
++where it cost at the lopsided lens), OFF3-ABSORBED, OFF4-ABSORBED — written
++beside this entry's SPLIT as the dated note; the SPLIT at the lopsided lens
++stands as registered; the stronger readers are STAGE READERS, not yet run.)
++
+#################### CLAUDE.md
+@@ -82,3 +82,3 @@ docs/BLUEPRINT.md is the plan of record.
+-  (eleven on 2026-10-04, the seed-noise floor's the eleventh) or any tools/ module such an instrument imports
+-  (run_fullfree.py, run_posthoc_topic.py, run_probes.py), fourteen files in all.
+-  `ruff` excludes those fourteen outright (`force-exclude`) and is otherwise
++  (twelve on 2026-10-05, the reader-and-lens re-test's the twelfth) or any tools/ module such an instrument imports
++  (run_fullfree.py, run_posthoc_topic.py, run_probes.py), fifteen files in all.
++  `ruff` excludes those fifteen outright (`force-exclude`) and is otherwise
+#################### docs/CONVENTIONS.md
+@@ -186 +186 @@ instrument style, refusals, test shape, and the evidence/commit pattern.
+-  (`select = ["F"]`); `tools/cc` and the fourteen frozen-instrument files (nine until the free-bigram twin landed on
++  (`select = ["F"]`); `tools/cc` and the fifteen frozen-instrument files (nine until the free-bigram twin landed on
+@@ -189 +189 @@ instrument style, refusals, test shape, and the evidence/commit pattern.
+-  day) are excluded outright with `force-exclude = true` (`tests/test_harness_doc_claims.py` derives the
++  day, fourteen until the reader-and-lens re-test's lens stage landed on 2026-10-05) are excluded outright with `force-exclude = true` (`tests/test_harness_doc_claims.py` derives the
+#################### docs/SHARP_EDGES.md
+@@ -139,0 +140,9 @@ drift, including a meta or summary file on disk that is not the one the state fi
++**Update 2026-10-05:** a twelfth attested instrument, `tools/run_reader_lens.py` (the reader-and-lens re-test at S3:
++the balanced-lens stage landed; the readers stages run through the same file), joined the closure at the lens
++landing. It imports the frozen OQ-18 chain by bare name and asserts the amended instrument's sha at import, hides
++CUDA at import, carries `-text` since its freeze commit b128fda, and is pinned by `tests/test_reader_lens_landing.py`
++with both lens state files' shas. The ruff list has fifteen tool entries beside `tools/cc`, twelve of them attested.
++Its `--conclude-from` binds every payload to its stage and role and to the tool's CURRENT bytes, so a dated
++amendment of a reader is a new file that imports this one (the OQ-18 precedent), never an edit; a registered
++readers run refuses unless both lens payloads verify with their riders passed (`--lens-payloads`).
++
+#################### pyproject.toml
+@@ -53,0 +54 @@ extend-exclude = [
++    "tools/run_reader_lens.py",

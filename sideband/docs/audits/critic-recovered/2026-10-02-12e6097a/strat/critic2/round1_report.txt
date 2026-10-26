@@ -1,0 +1,146 @@
+I recommend **NO-GO for the freeze**, with 4 BLOCKING objections and 15 advisories. All four blockers can be fixed by editing text in the block, the tool's label sentences and `conclude()`, then re-running the tests; nothing has to be run on the real harvests first.
+
+Along the way I checked these directly:
+- **Smoke recompute:** exact.
+- **Frozen files:** both unchanged.
+- **State files:** all four un-ignored.
+- **Tests:** the 16 tests pass (16 passed in 255.31 s, exit 0; `critic/pytest.log`).
+- **Leakage:** I found no leakage path in the code.
+
+The blockers are in what the pinned consequence texts claim, not in the computation.
+
+## A. Smoke recompute
+
+I used my own parser and my own bootstrap (same recipe as the library, written independently), and cross-checked against `sideband.stats`.
+
+- **Discrepancy:** the max abs discrepancy against the payload conclusion is **0.0 over 13,177 compared values**, with 0 string or boolean mismatches. My bootstrap and `sideband.stats` differ by 0.0.
+  - Tables: 234 (13 arms × 3 budgets × 6 scopes), each with pooled point, lo, hi and needed, plus 16 per-gate points and CIs.
+  - Deltas: 180 (10 pairs × 3 × 6), each with delta, lo, hi and needed.
+  - Every label field: three gate cells, readings per scope, both straddle flags, the D_eq^PT agreement, Q1, Q2, label, encoding/free arm, scope positions, shares and prompt counts.
+- **Pairing:** per-(prompt, gate) `needed` is identical across all 13 arms in all 156 (budget, stratum, arm) cells, and identical across budgets.
+- **Strata sum:** 528 + 694 + 695 + 623 = 2540, which equals `n_positions` bigram/test in `strat_smoke.meta.json`. Pooled `needed` is 325,120 = 2540 × 128. Every stratum has positions on all 10 prompts.
+- **Labels:**
+  - Q1 reads COVERAGE-EFFECT and Q2 reads PT-SURVIVES.
+  - D_eq^COV is NOT-SHOWN and D_eq^FB is SIGNAL.
+  - D_pt is SIGNAL, and D_eq^PT is SIGNAL, agreeing with it.
+  - Neither gate straddles the floor.
+- **Block (b) quotes:** every number in (b) matches my recompute or the smoke meta, with one exception, item 11 below.
+- **Ordering:** the smoke ran on the current tool bytes (instrument sha f349d6c03784 = `tools/run_prefetch_strat.py` on disk).
+- **REPRODUCE on real rows:** this extra check succeeded. The strat smoke's nine twin arms, summed over strata, reproduce the twin smoke's 4,320 rows exactly (0 `needed` and 0 `hits` mismatches; `…/4f289fb0-…/scratchpad/bigram_smoke/bigram_smoke.json.state.jsonl`). That holds even though the twin smoke came from the pre-freeze twin (f8d415306832). So EXACT is achievable, not just hoped for.
+
+## B and C. Objections
+
+**1. BLOCKING — Q2's gate and the PT-ABSORBS branch (BLUEPRINT 6978-6984, 7008-7010, 7059-7067; tool lines 535 and 568).**
+- **The asymmetry.** D_pt compares history_tok (S[t] + TABLE_CUR) against free_bigram_pt (TABLE_CUR + TABLE_PREV + PT). The free side gets PT and the previous-token table; the address side gets neither.
+- **Mis-citation.** Line 6982 calls this "the F-24 full-free shape". It isn't: F-24's gate compared fplus ++ telemetry against fplus ++ the twin, so the full free block sat on both sides (FINDINGS.md F-24).
+- **Size of the gap.** D_add^PT − D_pt equals history_bigram_pt − history_tok, which is roughly +0.0082 on the smoke (+0.0896 vs +0.0814). The previous-table term alone is HISTORY_BIGRAM − history_tok = +0.0052 [+0.0049, +0.0054] on the primary (`prefetch_bigram_s3.json`).
+- **Why it matters.** D_pt is predicted at +0.048..+0.059. So "D_pt NOT-SHOWN while the union arm D_add^PT is SIGNAL" is a plausible outcome (roughly 20%). In that case the pinned text writes "accounted for by free information … the K-2 shape … stage 2's address-beyond-free motivation is struck", while the address stream still adds a material margin over those same free blocks.
+- **Wording rule.** "Accounted for" also breaks the block's own NOT-SHOWN rule (7011-7015) whenever D_pt is CI-positive.
+- **Fix.** Give Q2 the twin's two-reading structure on D_eq^PT (equal dims) and D_add^PT (union):
+
+  | Branch | Condition |
+  |---|---|
+  | PT-SURVIVES | both SIGNAL |
+  | PT-COMPLEMENTARY | only D_add^PT SIGNAL |
+  | PT-ABSORBS | neither SIGNAL |
+  | PT-INCONSISTENT | only D_eq^PT SIGNAL |
+
+  - Report D_pt as the asymmetric "replacement" read.
+  - Strike "accounted for".
+  - Either drop "the K-2 shape" or append "NON-CRITERION; K-2 untouched".
+  - Strike stage 2 only under the both-null branch.
+  - The multiplicity count becomes four.
+
+**2. BLOCKING — the COVERAGE-EFFECT mechanism claim is wrong on the largest fallback stratum (BLUEPRINT 7040-7042, 7044, 6876-6877; tool 436-439).**
+- The text says: "where the free tables read the marginal and any informative block beats them". By construction:
+  - At cur-unseen positions, TABLE_CUR reads the marginal in both arms, and the free arm's TABLE_PREV is informative.
+  - At prev-unseen positions, free_bigram collapses to free_tok.
+  - Only at both-unseen positions (0.0113 of test positions) do the free tables read nothing but the marginal.
+- "Any informative block beats them" is an unmeasured, universal claim — the same class of error the twin's second critic pass blocked.
+- **Fix.** Write "positions with at least one unseen key (current-token table blind in both arms / free previous-token table blind / both)". Drop the "any block" clause, or replace it with the measured PT GAIN on fallback.
+
+**3. BLOCKING — PT-SURVIVES misstates what the record already holds (BLUEPRINT 7055-7057).**
+- The text says "the full p_t or its stored top-32 is the stronger free arm, unrun". But the committed harvests store h_a, the final norm output of the same forward that produced p_t.
+  - Sources: `src/sideband/real/moe_telemetry.py` 26 and 338; `shadow_telemetry.py` 252-255.
+- F-23 makes h_a an exact linear function of the full p.
+- F-24 used z-scored h_a on this very harvest, inside fplus = (a) 657 ++ TOK ++ hz. The 81-dim block is a subset of that (a) and has neither TOK nor hz.
+- D-6's corollary to D-5 warns that the soft bucket-mass variant alone "quietly lowers the bar". F-23 also puts top-32 at R² 0.014, so naming it as the stronger arm is wrong too.
+- **Fix the text** to name F-24's full-free block, stored on disk and unrun at this reader, and say PT-SURVIVES says nothing about it.
+
+**4. BLOCKING — the consequence texts are pinned on a coin flip the arithmetic already predicts (BLUEPRINT 6996-6999, 7027-7039).**
+- Pooled D_eq is exactly s_cov·D_cov + s_fb·D_fb.
+- Inputs: the pooled +0.0609 (`prefetch_bigram_s3.json`, 0.060895) plus the shares and val strata quoted in the twin's OUTCOME.
+- Derived: D_eq^COV ≈ +0.0472 (FB +0.1857) on the primary under the primary's val strata, and +0.0491 under the replication's. The replication harvest gives +0.0469..+0.0495.
+- The pooled CI half-width is about 0.0095–0.0103 ([+0.0514, +0.0712]). So a floor straddle is about 90% likely, and SIGNAL vs NOT-SHOWN turns on about ±0.003.
+- As pinned, COVERED-MATERIAL "RETIRES" a caveat carried on five texts on that flip, and COVERAGE-EFFECT asserts the mirror. Q2 has the same problem.
+- **Fix.** Pin straddle (or replication-disagrees) variants: "not retired at this power" and "straddles the floor" in place of "RETIRED", "is a COVERAGE EFFECT", "does not account for" and "accounted for". The mechanical label itself stays.
+
+**5. ADVISORY — split COVERED by train count.** A key with count 128 has one train occurrence, a single sample (train singletons are 0.0196 of positions; `prefetch_bigram_s3.json`). Add a reported split of COVERED by train occurrences ({1, 2–4, >4}) and add "sparse seen keys" to COVERED-MATERIAL's open-mechanism list. It changes the state-row schema, so it is now or never.
+
+**6. ADVISORY — consider adding F-24's full-free block (or hz alone) as an arm now.** This is already the fourth read of these test rows; a later R2 would be the fifth.
+
+**7. ADVISORY — Q1 has no "NEGATIVE said in words" clause.** The tool routes a NEGATIVE covered reading to COVERAGE-EFFECT (test lines 419-424). UNLOCATED combined with a NEGATIVE covered reading is arithmetically excluded here: it would need FB ≥ +0.617.
+
+**8. ADVISORY — "SURVIVES holds on the covered positions" (7031)** asserts a label that also requires D_add, which isn't gated on covered. Reword, or gate `address_beyond_bigram|covered` too.
+
+**9. ADVISORY — misattributed shares (6909-6912).** The either/both shares (0.0987 / 0.1418, 0.0113 / 0.0141) are not payload fields; they come from the unregistered diagnostic. The payload's table_coverage holds only cur, prev and cur_at_prev.
+
+**10. ADVISORY — predictions.**
+- (2) is near-certain, so it carries no weight.
+- (3) and (4) are one prediction, linked by the identity in item 4.
+- The would-surprise "D_eq^COV ≥ +0.08" would need FB < 0, so it is vacuous.
+
+**11. ADVISORY — wrong ratio in (b) (7210-7211).** "Five times more heavily" should be 8.0× against the primary (0.7921 vs 0.0987), or 5.6× against the replication (0.1418).
+
+**12. ADVISORY — ORDERING (7202-7206).** The meta proves only that BLUEPRINT.md was modified, not what it held. Scratch `block.md` (19:47, before the tool's last edit at 20:05:21 and the smoke start at 20:07:15) has the HONEST PREDICTIONS, LABELS, CONSEQUENCES and READOUTS sections whitespace-identical to the current block. Cite that, and drop "before the tool existed", which nothing attests.
+
+**13. ADVISORY — REPRODUCE hardening.**
+- Pin "EXACT with `all_gate_eq_matches_twin` False is INVALID" (tool 543-548).
+- Record the BLAS thread configuration in the meta.
+- Add the twin-smoke EXACT result from section A to (b).
+- NEAR is not a loophole: at most 12 hits in 7,588,480 trials.
+
+**14. ADVISORY — `conclude_from` tamper gap (tool 774-791).**
+- It checks the twin's sha but not fresh twin vs header for `encoding`, `lambda_selected` or `gate_eq`.
+- `read_twin` doesn't assert the twin's `instrument_sha256`.
+
+**15. ADVISORY — void payloads still carry readings** (`q1`, `q2` and every `*_reading`; tool 552-569). Null them or tag them void (7068-7070).
+
+**16. ADVISORY — dilution anchor.** If D_add^PT becomes label-bearing (item 1), report history_bigram_pt − history_tok_pt beside it.
+
+**17. ADVISORY — timing clause.** p_t arrives after the LM head, while S[t] arrives layer by layer. "Free under D-5" is right in the information sense; add one clause so nobody later reads it as a timing claim.
+
+**18. ADVISORY — OPEN_QUESTIONS.** The note says "both predictions pinned", which is only true once (c) is filled.
+
+**19. ADVISORY — consider renaming COVERAGE-EFFECT to FALLBACK-LOCATED** to drop the causal word.
+
+**Code (C): no leakage path found.**
+- **Tables and strata are train-only.** The tables come only from `masks["train"]` (`run_prefetch_bigram.py` 227-241), and `strata_masks` reads exactly those (strat 215-219).
+- **Test is read last.** The test split is evaluated only at the selected lambdas, after selection (691-693).
+- **Twin test rows feed only the precondition.** They reach only REPRODUCE and the identity flag, never a fit or a selection.
+- **PT at index t is p_t.** At iteration a, `harvest_batch` stores the masses and entropy of the forward whose routing is `slots[a]`, then samples `tokens[a]` from that same p (`shadow_telemetry.py` 249-268).
+- **The design itself has seen test numbers.** It was chosen after test-row diagnostics. That is disclosed and is the F-24 precedent, but it should state that Q1 decomposes an already-read pooled number.
+
+**Checklist items that don't apply:**
+- Survivorship (D-9): these are hit-rate counts, not acceptance-by-offset.
+- Gate hygiene (D-7): mass16 and mass64 are features, not bucket gates.
+- Function-word tax: there is no steering.
+- Wall-clock: none is claimed; runtimes are instrument elapsed time.
+- Kill criteria: no goalpost moves. K-6 stays UNTESTED.
+
+## D. Critic's prediction (to pin verbatim under (c))
+
+"THE CRITIC'S (2026-10-01, design round; informed by the committed twin payloads, the OUTCOME's val-only strata and the identity pooled = s_cov·D_cov + s_fb·D_fb; no test row read beyond committed files): (1) REPRODUCE EXACT on both harvests; (2) primary D_eq^COV +0.041..+0.054, point near +0.047, NOT-SHOWN modal with a FLOOR STRADDLE (P(SIGNAL) about 0.3); (3) D_eq^FB +0.13..+0.24 SIGNAL; cur-unseen +0.13..+0.23, prev-unseen +0.08..+0.16, both-unseen +0.20..+0.50; (4) Q1 COVERAGE-EFFECT modal, COVERED-MATERIAL the alternative, UNLOCATED under 0.01; (5) PT GAIN on ALL +0.002..+0.012 (NOT-SHOWN), on COVERED -0.002..+0.006, on CUR-UNSEEN +0.03..+0.10; (6) pt_only at B = 16 0.52..0.66; (7) D_pt on ALL +0.048..+0.059, FLOOR STRADDLE, SIGNAL modal (about 0.7), Q2 PT-SURVIVES modal; (8) history_tok_pt - history_tok +0.000..+0.006, D_add^PT about D_eq^PT + 0.005, SIGNAL; (9) replication D_eq^COV +0.042..+0.056 (a coin flip; a Q1 disagreement would not surprise), D_pt +0.050..+0.062 SIGNAL, agrees on Q2. WOULD SURPRISE: primary D_eq^COV outside +0.038..+0.058; D_eq^FB NOT-SHOWN or above +0.26; PT GAIN at or above +0.015 on ALL or +0.010 on COVERED; pt_only below 0.48 or above 0.72; D_pt below +0.045 or above +0.065; history_tok_pt - history_tok above +0.010; any REPRODUCE mismatch; a Q2 disagreement between harvests."
+
+## E. Verdict
+
+NO-GO: items 1–4 are BLOCKING; items 5–19 are ADVISORY.
+
+What would change my mind: run the tool's own val pass on the primary harvest (about 5 minutes, no test row read), which already fits the PT arms; if history_bigram_pt − history_tok at the selected lambdas comes out at or below +0.002, D_pt and D_add^PT cannot disagree on a reading and item 1 drops to advisory — though I expect it to exceed +0.0052.
+
+Scratch files are in `C:\Users\<user>\AppData\Local\Temp\claude\c--Users-<user>-Desktop-Research-sideband\12e6097a-8666-465a-b5a3-e76024a56cff\scratchpad\strat\critic\`:
+- recompute_smoke.py
+- recompute.log
+- mine.json
+- pytest.log
+- block_now.txt

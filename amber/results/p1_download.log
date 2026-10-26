@@ -1,0 +1,4 @@
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+Fetching 7 files:  14%|█▍        | 1/7 [00:00<00:02,  2.08it/s]Fetching 7 files:  43%|████▎     | 3/7 [23:38<35:01, 525.39s/it]Fetching 7 files: 100%|██████████| 7/7 [23:38<00:00, 202.67s/it]
+DOWNLOAD OK C:\Users\Michael\.cache\huggingface\hub\models--meta-llama--Llama-3.2-1B\snapshots\4e20de362430cd3b72f300e6b0f18e50e7166e08
+exit 0

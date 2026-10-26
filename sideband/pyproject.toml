@@ -1,0 +1,73 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sideband"
+version = "0.3.0"
+description = "Telemetry-steered speculative decoding: can the address stream alone steer a draft model?"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.15"]
+# tools/build_concept_groups.py (vocab clustering) and tools/build_balanced_groups.py's
+# lazy scipy import: the four Fiedler-order tests of tests/test_balanced_groups.py skip
+# without it (2026-10-13); the private CI installs dev only, the public cut's root
+# workflow and its proof install dev plus analysis
+analysis = ["scipy>=1.11", "scikit-learn>=1.3"]
+# Real-model adapters run on a GPU box, not in the CI/testbed environment.
+real = ["torch>=2.3", "transformers>=4.44"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# rootdir-relative: a clone or worktree tests its own src/, not whichever
+# checkout the global editable install points at (docs/SHARP_EDGES.md).
+pythonpath = ["src"]
+
+[tool.ruff]
+target-version = "py310"
+# Never touched by ruff, even when a path is passed explicitly (force-exclude):
+# tools/cc is harness-owned (tools/cc/hooks is integrity-manifested), and the
+# seventeen tools below are the frozen instruments: fourteen whose bytes are attested by
+# sha256 in results/ payloads plus the three they import by bare module name.
+# tests/test_harness_doc_claims.py derives this list from the payloads and
+# goes red when it drifts.
+force-exclude = true
+extend-exclude = [
+    "tools/cc",
+    "tools/run_fullfree.py",
+    "tools/run_fullfree_coarse.py",
+    "tools/run_fullfree_coarse_amended.py",
+    "tools/run_fullfree_twin.py",
+    "tools/run_noise_floor.py",
+    "tools/run_oq18_rider_diag.py",
+    "tools/run_oq18_rider_poscontrol.py",
+    "tools/run_posthoc_topic.py",
+    "tools/run_prefetch_bigram.py",
+    "tools/run_prefetch_horizon.py",
+    "tools/run_prefetch_r2.py",
+    "tools/run_prefetch_readouts.py",
+    "tools/run_prefetch_strat.py",
+    "tools/run_probes.py",
+    "tools/run_reader_lens.py",
+    "tools/run_reader_s1.py",
+    "tools/run_seed_replay.py",
+    # The recovered critic folder's session folders (2026-10-17, the public-cut plan 14.2 item 3): the
+    # reviewer's own scratch scripts, copied as a record and pinned by their manifests, never linted or
+    # edited; the folder's own recover.py and gen_readme.py beside them are linted like any tool.
+    "docs/audits/critic-recovered/20*",
+]
+
+[tool.ruff.lint]
+# Pyflakes only: real defects (undefined names, unused imports, shadowed
+# definitions). The house style keeps one-line statements, lambdas and short
+# math names on purpose (E702, E741 and E731 under ruff's defaults: 89 sites
+# under this configuration's own exclusions on 2026-10-01), so the default
+# rule set stays off. The
+# remaining unused imports carry a line-level `# noqa: F401`.
+select = ["F"]

@@ -1,0 +1,132 @@
+{
+ "placement": {
+  "FINDINGS.md": [
+   {
+    "after_line": 78,
+    "prev_line": "- erratum (2026-10-10): see F-14, rows E8a, E8c, E9",
+    "first_chars": "- erratum (2026-10-11): see F-15, rows E15, E16",
+    "next_line": ""
+   },
+   {
+    "after_line": 86,
+    "prev_line": "- erratum (2026-10-10): see F-14, rows E6, E7, E8b",
+    "first_chars": "- erratum (2026-10-11): see F-15, row E15",
+    "next_line": ""
+   },
+   {
+    "after_line": 55,
+    "prev_line": "- caveats: as F-5 (one box, one GPU architecture, one corpus); instruct-tuned draft (the b",
+    "first_chars": "- erratum (2026-10-11): see F-15, row E16",
+    "next_line": ""
+   },
+   {
+    "after_line": 125,
+    "prev_line": "- caveats: as F-5 (one box, one GPU architecture, one corpus); instruct-tuned draft (the b",
+    "first_chars": "- erratum (2026-10-11): see F-15, row E16",
+    "next_line": ""
+   },
+   {
+    "after_line": 125,
+    "prev_line": "- erratum (2026-10-11): see F-15, row E16",
+    "first_chars": "## F-15 \u2014 2026-10 errata pass, second batch (rows E15, E16): 2 of 2 cl",
+    "next_line": ""
+   }
+  ],
+  "docs/BLUEPRINT.md": [
+   {
+    "after_line": 70,
+    "prev_line": "costs that erase the asymmetric-decode advantage.",
+    "first_chars": "> Erratum (2026-10-11; F-15 row E15): E15: F-10's figures reproduce in",
+    "next_line": ""
+   }
+  ],
+  "OPEN_QUESTIONS.md": [
+   {
+    "after_line": 16,
+    "prev_line": "Answered for one box, two models (F-5 TinyLlama, F-7 Llama-3.2-1B-Instruct): FREE within f",
+    "first_chars": "> Erratum (2026-10-11; F-15 row E16): E16: the top-64 order of cuda_fp",
+    "next_line": "F-2/D-5: the codec needs order-preserving draft replay, not bitwise lo"
+   }
+  ],
+  "README.md": [
+   {
+    "after_line": 50,
+    "prev_line": "> Erratum (2026-10-10; F-14 row E8a): E8a: at theta 0 (the shipped default) cpu_fp32 -> cu",
+    "first_chars": "> Erratum (2026-10-11; F-15 row E16): E16: the top-64 order of cuda_fp",
+    "next_line": ""
+   },
+   {
+    "after_line": 16,
+    "prev_line": "> Erratum pass (2026-10-10): F-14 corrects 12 of 16 checked claims from a pre-registered r",
+    "first_chars": "> Second errata batch (2026-10-11): F-15 adds rows E15, E16 from a sec",
+    "next_line": "Working v0 codec on the sideband synthetic world: byte-exact roundtrip"
+   }
+  ]
+ },
+ "untraced": {
+  "FINDINGS.md": [
+   {
+    "numeral": "-245",
+    "context": "(set-coded 2916), and 1 - exp(-245/N) from t"
+   },
+   {
+    "numeral": "-7",
+    "context": "epth (slot 0: 5.9e-05, slots 1-7: 4.8e-05,"
+   },
+   {
+    "numeral": "-63",
+    "context": " slots 8-15: 4.4e-05, slots 16-63: 4.0e-05)"
+   },
+   {
+    "numeral": "-7",
+    "context": " slot 0: 1; slot 1: 2; slots 2-7: 11; slot"
+   },
+   {
+    "numeral": "-63",
+    "context": ": 11; slots 8-15: 13; slots 16-63: 352 (2 a"
+   }
+  ],
+  "docs/BLUEPRINT.md": [
+   {
+    "numeral": "-245",
+    "context": "(set-coded 2916), and 1 - exp(-245/N) from t"
+   }
+  ],
+  "OPEN_QUESTIONS.md": [
+   {
+    "numeral": "-7",
+    "context": "epth (slot 0: 5.9e-05, slots 1-7: 4.8e-05,"
+   },
+   {
+    "numeral": "-63",
+    "context": " slots 8-15: 4.4e-05, slots 16-63: 4.0e-05)"
+   },
+   {
+    "numeral": "-7",
+    "context": " slot 0: 1; slot 1: 2; slots 2-7: 11; slot"
+   },
+   {
+    "numeral": "-63",
+    "context": ": 11; slots 8-15: 13; slots 16-63: 352 (2 a"
+   }
+  ],
+  "README.md": [
+   {
+    "numeral": "-7",
+    "context": "epth (slot 0: 5.9e-05, slots 1-7: 4.8e-05,"
+   },
+   {
+    "numeral": "-63",
+    "context": " slots 8-15: 4.4e-05, slots 16-63: 4.0e-05)"
+   },
+   {
+    "numeral": "-7",
+    "context": " slot 0: 1; slot 1: 2; slots 2-7: 11; slot"
+   },
+   {
+    "numeral": "-63",
+    "context": ": 11; slots 8-15: 13; slots 16-63: 352 (2 a"
+   }
+  ]
+ }
+}

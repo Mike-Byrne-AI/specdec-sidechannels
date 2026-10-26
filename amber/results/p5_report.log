@@ -1,0 +1,51 @@
+{
+ "archives": 200,
+ "generated_tokens": 48958,
+ "prompt_tokens_incl_first": 2692,
+ "v3_total_bits_per_generated_token": 4.260468156378937,
+ "v3_total_bits_per_all_tokens": 4.038412391093901,
+ "v2_json_total_bits_per_generated_token": 18.46153846153846,
+ "v3_over_v2_size_ratio": 0.23077535847052574,
+ "breakdown_bits_per_generated_token": {
+  "fixed_header": 3.1700641366068876,
+  "prompt_payload": 0.5747171044568814,
+  "content_payload": 0.45473671310102537
+ },
+ "fixed_header_bytes": 97,
+ "prompt_coding": {
+  "bits_per_prompt_token": 11.290930979133226,
+  "raw17_bits_per_prompt_token": 17.0,
+  "varint_raw_bits_per_prompt_token": 17.274478330658106,
+  "prompt_rank_quantiles": {
+   "0.5": 5,
+   "0.9": 1330,
+   "0.99": 4761
+  },
+  "prompt_rank_gt_max_rank_rate": 0.27247191011235955
+ },
+ "zstd19_full_text_per_archive_bits_per_generated_token": 7.280526165284529,
+ "zstd19_full_text_concatenated_bits_per_generated_token": 3.9372523387393277,
+ "raw_bits_per_token": 16.97,
+ "amber_v3_bits_per_generated_token_vs_L_curve": {
+  "64": 14.778,
+  "128": 7.616,
+  "245": 4.196,
+  "512": 2.245,
+  "1024": 1.35,
+  "2048": 0.902,
+  "4096": 0.679,
+  "8192": 0.567
+ },
+ "curve_model": {
+  "per_archive_const_bits": 916.685,
+  "payload_gen_rate": 0.45473671310102537,
+  "note": "const/L + rate; assumes P1-like divergence and this prompt mix"
+ },
+ "decode_cuda_fp32": {
+  "archives": 200,
+  "byte_exact": 200,
+  "first_desync_positions": [],
+  "decode_tok_per_s": 72.41612744062928
+ }
+}
+[saved] results/p5_binformat.json

@@ -1,0 +1,165 @@
+{
+ "fixed_header_bytes": 97,
+ "by_k_mode": {
+  "k2_m0": {
+   "sessions": 100,
+   "gen_tokens": 48958,
+   "bits_per_gen_token": 2.7921075207320563,
+   "bits_per_all_tokens": 2.6465827686350436,
+   "vs_k_separate_v3_files": 0.6553522801365397,
+   "zstd19_per_session_bits_per_gen_token": 6.556313574900935,
+   "breakdown_per_gen_token": {
+    "fixed+table": 1.7469667878589812,
+    "prompt_payload": 0.5747171044568814,
+    "content_payload": 0.43992810163813884
+   }
+  },
+  "k4_m0": {
+   "sessions": 50,
+   "gen_tokens": 48958,
+   "bits_per_gen_token": 2.027206993749745,
+   "bits_per_all_tokens": 1.9215488867376573,
+   "vs_k_separate_v3_files": 0.4758178959076439,
+   "zstd19_per_session_bits_per_gen_token": 6.0241022917602844,
+   "breakdown_per_gen_token": {
+    "fixed+table": 0.9725887495404224,
+    "prompt_payload": 0.5747171044568814,
+    "content_payload": 0.43992810163813884
+   }
+  },
+  "k8_m0": {
+   "sessions": 25,
+   "gen_tokens": 48958,
+   "bits_per_gen_token": 1.6453286490461212,
+   "bits_per_all_tokens": 1.5595740561471443,
+   "vs_k_separate_v3_files": 0.38618494227745176,
+   "zstd19_per_session_bits_per_gen_token": 5.485518199272846,
+   "breakdown_per_gen_token": {
+    "fixed+table": 0.5866252706401406,
+    "prompt_payload": 0.5747171044568814,
+    "content_payload": 0.43992810163813884
+   }
+  },
+  "k16_m0": {
+   "sessions": 12,
+   "gen_tokens": 47034,
+   "bits_per_gen_token": 1.4474635370157758,
+   "bits_per_all_tokens": 1.3720274083031037,
+   "vs_k_separate_v3_files": 0.34025028987245615,
+   "zstd19_per_session_bits_per_gen_token": 4.926988986690479,
+   "breakdown_per_gen_token": {
+    "fixed+table": 0.39035591274397247,
+    "prompt_payload": 0.574690649317515,
+    "content_payload": 0.4358974358974359
+   }
+  },
+  "k2_m1": {
+   "sessions": 100,
+   "gen_tokens": 48958,
+   "bits_per_gen_token": 2.84096572572409,
+   "bits_per_all_tokens": 2.6928944820909972,
+   "vs_k_separate_v3_files": 0.6668200820772446,
+   "zstd19_per_session_bits_per_gen_token": 6.556313574900935,
+   "breakdown_per_gen_token": {
+    "fixed+table": 1.6979451774990808,
+    "prompt_payload": 0.6312757874096164,
+    "content_payload": 0.47777686997017854
+   }
+  },
+  "k4_m1": {
+   "sessions": 50,
+   "gen_tokens": 48958,
+   "bits_per_gen_token": 2.088974222803219,
+   "bits_per_all_tokens": 1.9800968054211037,
+   "vs_k_separate_v3_files": 0.4903156522072642,
+   "zstd19_per_session_bits_per_gen_token": 6.0241022917602844,
+   "breakdown_per_gen_token": {
+    "fixed+table": 0.8997099554720372,
+    "prompt_payload": 0.6384247722537686,
+    "content_payload": 0.5079251603415172
+   }
+  },
+  "k8_m1": {
+   "sessions": 25,
+   "gen_tokens": 48958,
+   "bits_per_gen_token": 1.7231096041504963,
+   "bits_per_all_tokens": 1.6333010648596322,
+   "vs_k_separate_v3_files": 0.4044413761362329,
+   "zstd19_per_session_bits_per_gen_token": 5.485518199272846,
+   "breakdown_per_gen_token": {
+    "fixed+table": 0.5010008578781813,
+    "prompt_payload": 0.621451039666653,
+    "content_payload": 0.5534539809632747
+   }
+  },
+  "k16_m1": {
+   "sessions": 12,
+   "gen_tokens": 47034,
+   "bits_per_gen_token": 1.5423736020750947,
+   "bits_per_all_tokens": 1.4619911326078194,
+   "vs_k_separate_v3_files": 0.36256047339170766,
+   "zstd19_per_session_bits_per_gen_token": 4.926988986690479,
+   "breakdown_per_gen_token": {
+    "fixed+table": 0.29850746268656714,
+    "prompt_payload": 0.5861717055746907,
+    "content_payload": 0.6078794063868691
+   }
+  }
+ },
+ "per_turn_index_k8": {
+  "m0": {
+   "0": {
+    "prompt_bits_per_token": 11.52861952861953,
+    "content_bits_per_token": 0.37099161322150964,
+    "divergence": 0.05476073014306857
+   },
+   "1": {
+    "prompt_bits_per_token": 11.104615384615384,
+    "content_bits_per_token": 0.43103989946591265,
+    "divergence": 0.06817467797675149
+   },
+   "2": {
+    "prompt_bits_per_token": 11.168316831683168,
+    "content_bits_per_token": 0.3340719277313789,
+    "divergence": 0.05420146582580535
+   },
+   "3": {
+    "prompt_bits_per_token": 11.14723926380368,
+    "content_bits_per_token": 0.51,
+    "divergence": 0.076875
+   },
+   "4": {
+    "prompt_bits_per_token": 11.281967213114754,
+    "content_bits_per_token": 0.38633377135348224,
+    "divergence": 0.059954007884362684
+   },
+   "5": {
+    "prompt_bits_per_token": 11.346625766871165,
+    "content_bits_per_token": 0.4846875,
+    "divergence": 0.07765625
+   },
+   "6": {
+    "prompt_bits_per_token": 11.494736842105263,
+    "content_bits_per_token": 0.45247012662743,
+    "divergence": 0.0697342607454967
+   },
+   "7": {
+    "prompt_bits_per_token": 11.292307692307693,
+    "content_bits_per_token": 0.5404130752967963,
+    "divergence": 0.08407871198568873
+   }
+  },
+  "m1": {
+   "0": {
+    "prompt_bits_per_token": 11.52861952861953,
+    "content_bits_per_token": 0.37099161322150964,
+    "divergence": 0.05476073014306857
+   },
+   "1": {
+    "prompt_bits_per_token": 12.762857142857143,
+    "content_bits_per_token": 0.49811498586239394,
+    "divergence": 0.07885642475651901
+   },
+   "2": {
+    "p
+[saved] results/p6_sessions.json

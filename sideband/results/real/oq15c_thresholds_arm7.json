@@ -1,0 +1,19 @@
+{
+ "arm": 7,
+ "extend": 0.4036281867600829,
+ "extend_level": 0.9,
+ "kind": "head",
+ "provenance": {
+  "b_ref": 1.3255813953488371,
+  "materialized_grids_sha256": "3b5cf4ca940b285189078a2be02043003c9822838c60f393d860159cd894e08b",
+  "search_payload": "oq15c_search_arm7.json",
+  "search_payload_sha256": "50bb4d1b15dc5ba54dedef6878c0bd07e958430d2fe00c894c52e884de4e90a7",
+  "val_run": "results/real/oq15c_val_arm1.jsonl"
+ },
+ "selection_label": "SELECTED",
+ "stop": [
+  0.4628807136508148,
+  0.25838813760102197
+ ],
+ "stop_level": 0.05
+}

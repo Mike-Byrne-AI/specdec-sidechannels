@@ -1,0 +1,343 @@
+############ docs/WHY_THIS_DIES.md
+@@ -125,0 +126,34 @@ NOT all four pairs read ABSORBED; the per-(source, space) lines above carry the
++STATUS (2026-10-05, appended; F-28, READER-AND-LENS RE-TEST AT S3, STAGE
++READERS — the stronger-reader residual tested at the S3 gate cells under two
++further readers, R-N (hz-rescaled) and R-T (two-tower), at L1, the lopsided
++L3 and a balanced L3 lens; the registration pinned the word before any cell
++trained):
++S3: K-2-ISOLATED (under readers R-N and R-T at S3 (R-L pending); one more
++family of readers, not K-2's universal; interim: READERS-LONG runs under the
++pinned trigger and the one sentence lands with it): the SURVIVES-STRONGER
++cell(s) RN|L3_olmoe_groups_v1 named with their numbers below; the S3 L1 kill
++stands at the registered reader; S3 L3 stays OPEN at the registered reader
++(F-25's SPLIT); not settled across readers / harvests at this power; no
++reopen; with RN|L3_olmoe_groups_v1 on the board the final word after
++READERS-LONG can only be ISOLATED or a reopen (NOT-OVERTURNED needs every
++cell ABSORBED or NOT-SHOWN, UNSETTLED needs no SURVIVES-STRONGER); the
++cells: at L1 R-N (hz-rescaled) ABSORBED (D +0.0030 [+0.0016, +0.0045] /
+++0.0032 [+0.0016, +0.0050]); R-T (two-tower) ABSORBED (D +0.0006 [-0.0002,
+++0.0014] / +0.0007 [-0.0002, +0.0015]); at the lopsided L3 R-N (hz-rescaled)
++SURVIVES-STRONGER (D +0.0080 [+0.0062, +0.0097] / +0.0130 [+0.0095,
+++0.0169]); R-T (two-tower) ABSORBED (D +0.0012 [-0.0003, +0.0026] / +0.0008
++[-0.0006, +0.0023]); at the balanced L3 R-N (hz-rescaled) NOT-SHOWN (D
+++0.0040 [+0.0025, +0.0054] / +0.0045 [+0.0027, +0.0061]); R-T (two-tower)
++ABSORBED (D +0.0015 [+0.0003, +0.0027] / +0.0013 [-0.0002, +0.0028]). Per
++cell: R-N (hz-rescaled) at L1 ABSORBED; R-N (hz-rescaled) at the lopsided L3
++SURVIVES-STRONGER; R-N (hz-rescaled) at the balanced L3 NOT-SHOWN; R-T
++(two-tower) at L1 ABSORBED; R-T (two-tower) at the lopsided L3 ABSORBED; R-T
++(two-tower) at the balanced L3 ABSORBED. STAGE READERS-LONG RUNS (no
++SURVIVES-STRONGER or SPLIT at L1 or the balanced L3); STAGE S1 is not
++triggered by this stage (no reopen-grade cell at L1 or the balanced L3);
++final at the READERS-LONG landing. The S3 L1 kill of 2026-09-06 stands as a
++statement about the registered reader; S3 L3 stays OPEN (SPLIT) at the
++registered reader; one more family of readers, not K-2's universal. Numbers
++and licences: FINDINGS.md F-28 (the STAGE READERS line) and the block's
++OUTCOME in docs/BLUEPRINT.md.
++
+############ FINDINGS.md
+@@ -61,2 +61,2 @@ Reading this file (index header added 2026-09-05; every entry below is unchanged
+-[removed line, 620 chars]
+-[removed line, 1884 chars]
++| F-24 | 2026-09-06 | OQ-17 FULL-FREE EXISTENCE RE-TEST: F-15 and F-17 margins ABSORBED by the full free baseline ((a) ++ hashed token ids ++ z-scored h_a) at the registered reader at the pinned L1 offset-2 cells of both sources
+— gate D S1 +0.0002 [-0.0012, +0.0015] / +0.0012 [-0.0003, +0.0028], S3 +0.0003 [-0.0013, +0.0020] / +0.0001 [-0.0019, +0.0021], every D upper below +0.005, Mt about +0.003 beside it; prediction failed on both sources; corrected
+twin TWIN-ROBUST (S1) / TWIN-ROBUST (S3) | stands (criterion-bearing for F-15 / F-17 through the pinned OQ-17 consequence rules; critic-recomputed three times); DATED NOTE 2026-10-05 (F-28, STAGE READERS): the S3 L1 kill re-tested
+under the hz-rescaled and two-tower readers — R-N (hz-rescaled) ABSORBED (D +0.0030 [+0.0016, +0.0045] / +0.0032 [+0.0016, +0.0050]; Mt -0.0016 [-0.0033, +0.0001] / -0.0005 [-0.0022, +0.0014]; Mn_r -0.0046 [-0.0063, -0.0028] /
+-0.0037 [-0.0052, -0.0020]), R-T (two-tower) ABSORBED (D +0.0006 [-0.0002, +0.0014] / +0.0007 [-0.0002, +0.0015]; Mt +0.0026 [+0.0009, +0.0041] / +0.0009 [-0.0006, +0.0024]; Mn_r +0.0020 [+0.0005, +0.0035] / +0.0002 [-0.0009,
++0.0014]); the K-2 word at S3 K-2-ISOLATED; the registered-reader kill stands as a statement about that reader |
++| F-25 | 2026-09-14 | [read under the 2026-09-07 rider amendment after the registered rider fired at S1 L3 (raw leg 2 +0.0132 against the 0.01 band); diagnostic branch AMENDABLE, mechanism TWIN-MATCHED; a post-hoc reroute around
+a fired kill condition: the leg that fired was replaced after the fire by a twin-referenced dependence-excess leg whose S1 seed-0 values at both spaces were known from the diagnostic payload when the amendment was written; it is a
+fresh test only at the other three harvests; the E leg sees every non-causal block the raw leg sees (the twin lacks it) and is sharper under a drifted reader; what it drops (prediction-marginal drift and twin-shared position
+information) are non-leaks; S1 diagnostic X_raw at seed 0 +0.0006, the registered statistic, twin-referenced, would also have passed] OQ-18 COARSE-LABEL FULL-FREE RE-TEST at L2 / L3, both sources, both harvests: S1 L2 ABSORBED; S1
+L3 NOT-SHOWN; S3 L2 ABSORBED; S3 L3 SPLIT (every L3 label read at the L3 group lens (S1: one mega-group of 455/510 concepts including all 165 zero-degree concepts, the next group 10; S3: two mega-groups of 268 and 193 = 461/510
+including all 20 zero-degree concepts)) at the registered reader with the corrected twin; prediction 3/4 held | stands; registered-reader scope; consequences executed on F-15 / F-17 / F-16 / F-18 / K-2 as pinned; DATED NOTE
+2026-10-05 (F-28, STAGE LENS): through a balanced lens at S3 L3 the same cell reads ABSORBED with D +0.0019 [+0.0006, +0.0032] / +0.0004 [-0.0011, +0.0018], Mt +0.0042 [+0.0025, +0.0061] / +0.0021 [+0.0002, +0.0041] and Mn_r
++0.0023 [+0.0010, +0.0038] / +0.0017 [-0.0000, +0.0035] (OFF3-ABSORBED, OFF4-ABSORBED) — the corrected twin point-positive on both harvests, CI-clear on the primary only at this lens, where it cost -0.0031 / -0.0067 at the
+lopsided one; the SPLIT at the lopsided lens stands as registered; DATED NOTE 2026-10-05 (F-28, STAGE READERS): the S3 L3 cell under the stronger readers — at the lopsided lens R-N (hz-rescaled) SURVIVES-STRONGER (D +0.0080
+[+0.0062, +0.0097] / +0.0130 [+0.0095, +0.0169]; Mn_r -0.0121 [-0.0141, -0.0100] / -0.0144 [-0.0173, -0.0116]), R-T (two-tower) ABSORBED (D +0.0012 [-0.0003, +0.0026] / +0.0008 [-0.0006, +0.0023]; Mn_r -0.0001 [-0.0015, +0.0014] /
+-0.0027 [-0.0045, -0.0009]); at the balanced lens R-N (hz-rescaled) NOT-SHOWN (D +0.0040 [+0.0025, +0.0054] / +0.0045 [+0.0027, +0.0061]), R-T (two-tower) ABSORBED (D +0.0015 [+0.0003, +0.0027] / +0.0013 [-0.0002, +0.0028]); K-2
+at S3 L3 stays OPEN at the registered reader (the SPLIT stands as registered); the K-2 word at S3 K-2-ISOLATED |
+@@ -65 +65 @@ Reading this file (index header added 2026-09-05; every entry below is unchanged
+-[removed line, 963 chars]
++| F-28 | 2026-10-05 | READER-AND-LENS RE-TEST AT S3, STAGE LENS (the lane's entry): through a size-capped balanced lens at S3 L3 the full-free re-test reads ABSORBED at the registered reader (gate D +0.0019 [+0.0006, +0.0032] /
++0.0004 [-0.0011, +0.0018]; every D upper below +0.005 at off2 / off3 / off4 on both harvests; OFF3-ABSORBED, OFF4-ABSORBED; Mn_r +0.0023 [+0.0010, +0.0038] / +0.0017 [-0.0000, +0.0035], the corrected twin point-positive on both
+harvests, CI-clear on the primary only, where it cost at the lopsided lens) where the lopsided lens read SPLIT; F-17's (c) - (a) proxy margin survives the lens at +0.0221 [+0.0187, +0.0258] / +0.0195 [+0.0160, +0.0232] (0.307 /
+0.267 of +0.0721 / +0.0730), its growth over L2 (+0.0206 / +0.0207) NOT-SETTLED on both (LENS-SURVIVES; combined L3-GROWTH-NOT-SETTLED) | stands (STAGE LENS landed 2026-10-05; the K-2 word waits for STAGE READERS; F-25's S3 L3
+SPLIT at the lopsided lens stands as registered); STAGE READERS landed 2026-10-05: K-2-ISOLATED (R-N (hz-rescaled) at L1 ABSORBED; R-N (hz-rescaled) at the lopsided L3 SURVIVES-STRONGER; R-N (hz-rescaled) at the balanced L3 NOT-
+SHOWN; R-T (two-tower) at L1 ABSORBED; R-T (two-tower) at the lopsided L3 ABSORBED; R-T (two-tower) at the balanced L3 ABSORBED); STAGE READERS-LONG RUNS; S1 not run |
+@@ -459,0 +460,176 @@ Reading this file (index header added 2026-09-05; every entry below is unchanged
++- STAGE READERS (2026-10-05, appended at its landing; both registered runs
++  from the clean tree at 790b2fc, the handoff commit after the LENS landing
++  9bbe905; 75 / 75 state rows, 23,314.0 / 11,799.0 s elapsed (6.48 / 3.28
++  hours elapsed on CPU, two six-thread processes concurrent); the balanced
++  space admitted on both verified lens payloads; the three shared L1 (a) ids
++  named and never pooled): THE K-2 WORD, issued from this pair with the lens
++  payloads: K-2-ISOLATED (under readers R-N and R-T at S3 (R-L pending); one
++  more family of readers, not K-2's universal; interim: READERS-LONG runs
++  under the pinned trigger and the one sentence lands with it): the
++  SURVIVES-STRONGER cell(s) RN|L3_olmoe_groups_v1 named with their numbers
++  below; the S3 L1 kill stands at the registered reader; S3 L3 stays OPEN at
++  the registered reader (F-25's SPLIT); not settled across readers /
++  harvests at this power; no reopen; with RN|L3_olmoe_groups_v1 on the board
++  the final word after READERS-LONG can only be ISOLATED or a reopen
++  (NOT-OVERTURNED needs every cell ABSORBED or NOT-SHOWN, UNSETTLED needs no
++  SURVIVES-STRONGER); the cells: at L1 R-N (hz-rescaled) ABSORBED (D +0.0030
++  [+0.0016, +0.0045] / +0.0032 [+0.0016, +0.0050]); R-T (two-tower) ABSORBED
++  (D +0.0006 [-0.0002, +0.0014] / +0.0007 [-0.0002, +0.0015]); at the
++  lopsided L3 R-N (hz-rescaled) SURVIVES-STRONGER (D +0.0080 [+0.0062,
++  +0.0097] / +0.0130 [+0.0095, +0.0169]); R-T (two-tower) ABSORBED (D
++  +0.0012 [-0.0003, +0.0026] / +0.0008 [-0.0006, +0.0023]); at the balanced
++  L3 R-N (hz-rescaled) NOT-SHOWN (D +0.0040 [+0.0025, +0.0054] / +0.0045
++  [+0.0027, +0.0061]); R-T (two-tower) ABSORBED (D +0.0015 [+0.0003,
++  +0.0027] / +0.0013 [-0.0002, +0.0028]). PER (READER, SPACE), the frozen
++  rules per cell: R-N (hz-rescaled) at L1: ABSORBED — D +0.0030 [+0.0016,
++  +0.0045] / +0.0032 [+0.0016, +0.0050] (per seed +0.0014, +0.0029, +0.0048
++  / +0.0053, +0.0024, +0.0018); Mt -0.0016 [-0.0033, +0.0001] / -0.0005
++  [-0.0022, +0.0014]; Mn_r -0.0046 [-0.0063, -0.0028] / -0.0037 [-0.0052,
++  -0.0020]; Mf +0.0313 [+0.0267, +0.0357] / +0.0213 [+0.0142, +0.0274]; Mf_x
++  +0.0328 [+0.0289, +0.0369] / +0.0252 [+0.0200, +0.0310]; Mc +0.0113
++  [+0.0085, +0.0140] / +0.0044 [-0.0009, +0.0087]; reader validity three of
++  three legs on both (min gate-cell accuracy minus floor +0.0024 / +0.0044;
++  Mf gate CI upper +0.0357 / +0.0274; Mf_x gate CI upper +0.0369 / +0.0310);
++  best VAL epochs fplus [1, 1, 1] / [0, 1, 1], fplus_b [1, 1, 1] / [1, 1,
++  2], fplus_r [1, 2, 2] / [1, 1, 1], (a) [14, 14, 15] / [14, 15, 23]; c_HZ
++  0.24999 / 0.24999 (m_HZ 2048.1, m_SLOTS 128.0 on the primary's seed-0
++  cell); consequence: narrowed: the stronger-reader residual at L1 excludes
++  reader R-N (hz-rescaled) (one D row per harvest, every upper below +0.005;
++  the replication's D upper +0.004951 at six decimals, below the +0.005
++  floor) — D is CI-clear positive on both harvests only because the
++  corrected twin COSTS (Mn_r CI-clear negative on both) while Mt is not
++  positive. R-N (hz-rescaled) at the lopsided L3: SURVIVES-STRONGER licence
++  EQUAL-DIMS-ONLY (Mt CI95 upper < 0 on a harvest) — D +0.0080 [+0.0062,
++  +0.0097] / +0.0130 [+0.0095, +0.0169] (per seed +0.0076, +0.0061, +0.0103
++  / +0.0109, +0.0146, +0.0134); Mt -0.0041 [-0.0063, -0.0018] / -0.0015
++  [-0.0055, +0.0029]; Mn_r -0.0121 [-0.0141, -0.0100] / -0.0144 [-0.0173,
++  -0.0116]; Mf +0.0933 [+0.0845, +0.1025] / +0.0923 [+0.0834, +0.1012]; Mf_x
++  +0.1195 [+0.1122, +0.1273] / +0.1092 [+0.0997, +0.1187]; reader validity
++  three of three legs on both (min gate-cell accuracy minus floor +0.1108 /
++  +0.1017; Mf gate CI upper +0.1025 / +0.1012; Mf_x gate CI upper +0.1273 /
++  +0.1187); best VAL epochs fplus [1, 2, 2] / [2, 3, 3], fplus_b [2, 3, 3] /
++  [3, 3, 3], fplus_r [2, 3, 3] / [3, 4, 4], (a) [21, 22, 25] / [21, 23, 29];
++  c_HZ 0.24999 / 0.24999 (m_HZ 2048.1, m_SLOTS 128.0 on the primary's seed-0
++  cell); consequence: SURVIVES-STRONGER with the EQUAL-DIMS-ONLY licence
++  (both pinned reasons hold: Mt's CI95 upper below zero on primary; Mn_r's
++  CI95 upper below zero on both harvests; the tool's reason string names the
++  first): the fire is PRODUCED by the gap between two costs, not inflated on
++  top of a gain — D = Mt - Mn_r exactly, both terms sharing the fplus base:
++  adding the aligned slots block LOWERS this reader's accuracy (Mt -0.0041
++  [-0.0063, -0.0018] / -0.0015 [-0.0055, +0.0029]; CI-clear on primary),
++  adding the prompt-deranged block of the same dimension lowers it MORE
++  (Mn_r -0.0121 [-0.0141, -0.0100] / -0.0144 [-0.0173, -0.0116], CI-clear on
++  both); equal-dims evidence that the aligned stream carries some
++  label-relevant structure compared with noise, NOT that telemetry adds over
++  the free baseline; the twin's cost is largest here under this reader
++  (against -0.0046 [-0.0063, -0.0028] / -0.0037 [-0.0052, -0.0020] at L1 and
++  -0.0046 [-0.0062, -0.0031] / -0.0071 [-0.0087, -0.0056] at the balanced
++  L3); the lopsided lens never decides a reopen, so this cell counts as
++  ISOLATED whatever its licence; read beside the balanced cell under the
++  same reader (NOT-SHOWN), it is said in the LENS words the block pins —
++  mostly mega-group membership — a phrase that presupposes a telemetry
++  signal Mt shows to be absent here, so it is written with the licence
++  reasons and Mn_r in the same sentence; no reopen. R-N (hz-rescaled) at the
++  balanced L3: NOT-SHOWN — D +0.0040 [+0.0025, +0.0054] / +0.0045 [+0.0027,
++  +0.0061] (per seed +0.0025, +0.0042, +0.0052 / +0.0058, +0.0048, +0.0027);
++  Mt -0.0006 [-0.0020, +0.0007] / -0.0026 [-0.0047, -0.0007]; Mn_r -0.0046
++  [-0.0062, -0.0031] / -0.0071 [-0.0087, -0.0056]; Mf +0.0431 [+0.0371,
++  +0.0492] / +0.0404 [+0.0344, +0.0465]; Mf_x +0.0446 [+0.0393, +0.0499] /
++  +0.0403 [+0.0344, +0.0466]; reader validity three of three legs on both
++  (min gate-cell accuracy minus floor +0.0046 / +0.0018; Mf gate CI upper
++  +0.0492 / +0.0465; Mf_x gate CI upper +0.0499 / +0.0466); best VAL epochs
++  fplus [1, 1, 1] / [1, 1, 2], fplus_b [1, 1, 1] / [2, 2, 2], fplus_r [1, 1,
++  1] / [2, 2, 2], (a) [10, 14, 25] / [12, 16, 21]; c_HZ 0.24999 / 0.24999
++  (m_HZ 2048.1, m_SLOTS 128.0 on the primary's seed-0 cell); consequence:
++  not overturned, not narrowed (a straddle never narrows) — D is CI-clear
++  positive on both harvests only because the corrected twin COSTS (Mn_r
++  CI-clear negative on both) while Mt is not positive. R-T (two-tower) at
++  L1: ABSORBED — D +0.0006 [-0.0002, +0.0014] / +0.0007 [-0.0002, +0.0015]
++  (per seed +0.0004, +0.0006, +0.0007 / +0.0018, +0.0004, -0.0002); Mt
++  +0.0026 [+0.0009, +0.0041] / +0.0009 [-0.0006, +0.0024]; Mn_r +0.0020
++  [+0.0005, +0.0035] / +0.0002 [-0.0009, +0.0014]; Mf +0.0262 [+0.0219,
++  +0.0306] / +0.0178 [+0.0107, +0.0241]; Mf_x +0.0277 [+0.0235, +0.0321] /
++  +0.0217 [+0.0165, +0.0274]; Mc +0.0062 [+0.0031, +0.0093] / +0.0009
++  [-0.0044, +0.0055]; reader validity three of three legs on both (min
++  gate-cell accuracy minus floor +0.0024 / +0.0044; Mf gate CI upper +0.0306
++  / +0.0241; Mf_x gate CI upper +0.0321 / +0.0274); best VAL epochs fplus
++  [0, 1, 1] / [0, 0, 1], fplus_b [0, 1, 1] / [0, 0, 1], fplus_r [0, 1, 1] /
++  [0, 0, 1], (a) [14, 14, 15] / [14, 15, 23]; tower A 4753 -> 256, tower B
++  1024 -> 64; consequence: narrowed: the stronger-reader residual at L1
++  excludes reader R-T (two-tower) (one D row per harvest, every upper below
++  +0.005); R-T's Mt on the primary (+0.0026 [+0.0009, +0.0041]) is matched
++  by Mn_r (+0.0020 [+0.0005, +0.0035]) and compares architectures (a
++  320-unit two-tower model against mlp256), said once here since R-T carries
++  no licence. R-T (two-tower) at the lopsided L3: ABSORBED — D +0.0012
++  [-0.0003, +0.0026] / +0.0008 [-0.0006, +0.0023] (per seed +0.0007,
++  +0.0025, +0.0003 / +0.0024, +0.0004, -0.0003); Mt +0.0011 [-0.0004,
++  +0.0024] / -0.0019 [-0.0034, -0.0004]; Mn_r -0.0001 [-0.0015, +0.0014] /
++  -0.0027 [-0.0045, -0.0009]; Mf +0.0894 [+0.0805, +0.0983] / +0.0855
++  [+0.0758, +0.0950]; Mf_x +0.1155 [+0.1079, +0.1234] / +0.1024 [+0.0922,
++  +0.1121]; reader validity three of three legs on both (min gate-cell
++  accuracy minus floor +0.1108 / +0.1017; Mf gate CI upper +0.0983 /
++  +0.0950; Mf_x gate CI upper +0.1234 / +0.1121); best VAL epochs fplus [1,
++  1, 1] / [1, 1, 2], fplus_b [1, 1, 1] / [1, 1, 2], fplus_r [1, 1, 2] / [1,
++  1, 2], (a) [21, 22, 25] / [21, 23, 29]; tower A 4753 -> 256, tower B 1024
++  -> 64; consequence: OPEN at the registered reader (F-25's SPLIT stands);
++  ABSORBED under reader R-T (two-tower) beside it — narrowed: the
++  stronger-reader residual at the lopsided L3 excludes reader R-T
++  (two-tower) (one D row per harvest, every upper below +0.005). R-T
++  (two-tower) at the balanced L3: ABSORBED — D +0.0015 [+0.0003, +0.0027] /
++  +0.0013 [-0.0002, +0.0028] (per seed +0.0009, +0.0017, +0.0019 / +0.0008,
++  +0.0026, +0.0005); Mt +0.0010 [-0.0002, +0.0025] / +0.0010 [-0.0006,
++  +0.0025]; Mn_r -0.0005 [-0.0020, +0.0011] / -0.0004 [-0.0022, +0.0014]; Mf
++  +0.0375 [+0.0317, +0.0435] / +0.0355 [+0.0296, +0.0412]; Mf_x +0.0391
++  [+0.0340, +0.0444] / +0.0354 [+0.0297, +0.0412]; reader validity three of
++  three legs on both (min gate-cell accuracy minus floor +0.0046 / +0.0018;
++  Mf gate CI upper +0.0435 / +0.0412; Mf_x gate CI upper +0.0444 / +0.0412);
++  best VAL epochs fplus [1, 1, 1] / [0, 1, 1], fplus_b [1, 1, 1] / [0, 1,
++  1], fplus_r [0, 1, 1] / [1, 1, 1], (a) [10, 14, 25] / [12, 16, 21]; tower
++  A 4753 -> 256, tower B 1024 -> 64; consequence: OPEN at the registered
++  reader (F-25's SPLIT stands); ABSORBED under reader R-T (two-tower) beside
++  it — narrowed: the stronger-reader residual at the balanced L3 excludes
++  reader R-T (two-tower) (one D row per harvest, every upper below +0.005).
++  STAGE READERS-LONG RUNS (no SURVIVES-STRONGER or SPLIT at L1 or the
++  balanced L3); STAGE S1 is not triggered by this stage (no reopen-grade
++  cell at L1 or the balanced L3); final at the READERS-LONG landing. LANDING
++  CONDITION: R-N (hz-rescaled) gate cell at L1 (seed 0, fplus_b) re-run from
++  a clean clone at 790b2fc: identical except runtime_s (test_acc 0.612415 /
++  0.612415; runtime 450.3 / 445.0 s). R-T (two-tower) gate cell at L1 (seed
++  0, fplus_b) re-run from a clean clone at 790b2fc: identical except
++  runtime_s (test_acc 0.609929 / 0.609929; runtime 383.2 / 402.2 s). The
++  three R-0 linear (a) cells at the balanced lens, re-trained in this stage,
++  are identical to STAGE LENS's proxy (a) rows except runtime_s on both
++  harvests (the critic's recompute also found, beyond the registered check,
++  R-T's fplus and (a) cells at the balanced lens bit-identical to STAGE
++  LENS's R-0 cells and the (a) cells identical between R-N and R-T at all
++  three spaces: the two-tower trainer reproduces mlp256 exactly without a
++  slots tower, on real data). PREDICTIONS scored under the five conventions
++  (the OUTCOME carries the clause list): the assistant's 9 of 14 HELD
++  (FAILED: (4) Mt at L1 +0.001..+0.006 under both readers on both harvests;
++  (4) R-N: the median best VAL epoch over the nine h_a-arm gate cells in
++  3..15 on both harvests; (4) R-T: the median best VAL epoch over the six
++  fplus_b / fplus_r gate cells in 3..15 on both harvests; (5) lopsided L3:
++  SPLIT or NOT-SHOWN under both readers (modal labels); (6)
++  K-2-NOT-OVERTURNED-AT-S3 (modal word); 3 calibration-only; 1 pending
++  READERS-LONG); the critic's 4 of 8 (FAILED: (4) R-N's median best epoch on
++  the h_a-arm cells >= 5 (the original clause, scored as written); (6)
++  K-2-UNSETTLED (modal word under the round-one definitions); (4, dated
++  revision) R-N's median best epoch over the nine h_a-arm cells >= 3 on both
++  harvests; (4, dated revision) R-N's D at L1 within +-0.002 of R-0's
++  corrected-twin D; 2 calibration-only); surprises that occurred: the median
++  best epoch still at most 2 under R-N. The pre-registered surprise "a
++  reader reading SURVIVES-STRONGER at the lopsided lens and ABSORBED at the
++  balanced one" did not occur as written: R-N reads SURVIVES-STRONGER at the
++  lopsided lens and NOT-SHOWN, not ABSORBED, at the balanced one. SAID IN
++  WORDS for R-N: removing the hz block's norm dominance (c_HZ 0.24999) left
++  the h_a arms' best VAL epochs at the gate cell at L1 at [1, 1, 1] / [0, 1,
++  1] (fplus) and median 1 / 1 over the nine h_a-arm cells — F-24's named
++  mechanism, as rescaled here, is NOT shown to cause the early best epochs
++  (one reader; untested beyond that). Under R-N every added sparse block
++  costs accuracy: Mn_r is CI-clear negative at all three spaces on both
++  harvests and Mt is at most zero everywhere (CI-clear negative at the
++  lopsided L3 on the primary, the balanced L3 on the replication). R-T's
++  licence readouts compare architectures (its fplus arm IS mlp256; fplus_b /
++  fplus_r are two-tower), said beside every R-T licence; ABSORBED under a
++  reader rests on one D row per harvest; four readers are one more family,
++  not K-2's universal.
+############ OPEN_QUESTIONS.md
+@@ -972,0 +973,12 @@ of readers: K-2's universal is not established by it either way.)
++(2026-10-05 OUTCOME, STAGE READERS (F-28): the stronger-reader residual
++tested at S3 under R-N (hz-rescaled) and R-T (two-tower): R-N (hz-rescaled)
++at L1 ABSORBED; R-N (hz-rescaled) at the lopsided L3 SURVIVES-STRONGER; R-N
++(hz-rescaled) at the balanced L3 NOT-SHOWN; R-T (two-tower) at L1 ABSORBED;
++R-T (two-tower) at the lopsided L3 ABSORBED; R-T (two-tower) at the balanced
++L3 ABSORBED; the K-2 word at S3 K-2-ISOLATED; per cell, ABSORBED narrows the
++residual to readers outside these families and NOT-SHOWN neither overturns
++nor narrows; the registered-reader kill stands as a statement about that
++reader; STAGE READERS-LONG RUNS (no SURVIVES-STRONGER or SPLIT at L1 or the
++balanced L3); STAGE S1 is not triggered by this stage (no reopen-grade cell
++at L1 or the balanced L3); final at the READERS-LONG landing.)
++
+@@ -1079,0 +1092,6 @@ registered; the stronger readers are STAGE READERS, not yet run.)
++(2026-10-05 OUTCOME, STAGE READERS (F-28): the S3 L3 cell under the stronger
++readers reads, at the lopsided lens, R-N (hz-rescaled) SURVIVES-STRONGER and
++R-T (two-tower) ABSORBED, and at the balanced lens R-N (hz-rescaled)
++NOT-SHOWN and R-T (two-tower) ABSORBED (D rows in F-28); K-2 at S3 L3 stays
++OPEN at the registered reader; the K-2 word at S3 K-2-ISOLATED.)
++
+############ README.md
+@@ -49 +49 @@ are defined in docs/GLOSSARY.md.
+-[removed line, 3115 chars]
++| Existence: telemetry carries future-concept information beyond the strongest free baseline at offsets >= 2 (2-3 at S1; 2 at S3, reaching 3-4 only under coarse labels) (kill criterion K-2) | shown against the 657-summary proxy,
+replicated on fresh seeds at two sources; DATED NOTE 2026-09-06 (F-24): ABSORBED by the FULL free baseline ((a) ++ hashed token ids ++ z-scored h_a) at the registered reader at the pinned L1 offset-2 cells of both sources — every
+equal-dims D CI95 upper below +0.005, Mt beside it about +0.003; corrected-twin reading TWIN-ROBUST (S1) / TWIN-ROBUST (S3); K-2 STATUS 2026-09-06 | S1 (compute-tier weight-slot tap, Llama-3.1-8B): pinned replication cell +0.0141
+[+0.0081, +0.0203] top-1 accuracy over the free-features probe; margins span +0.008..+0.044 over floors of 0.41-0.59 (F-15). S3 (pure address stream: top-8-of-64 expert ids at 16 OLMoE gates): +0.0147 [+0.0113, +0.0182] primary,
++0.0173 [+0.0133, +0.0221] replication, up to +0.0721 [+0.0652, +0.0792] at coarse labels (F-17). Neither margin is prefix-topic state at the histogram-feature level (F-16, F-18; richer prefix families remain an untested
+residual). | results/real/probes_s1*.json, probes_s3*.json and their .state.jsonl; DATED NOTE 2026-09-14 (F-25): [read under the 2026-09-07 rider amendment after the registered rider fired at S1 L3 (raw leg 2 +0.0132 against the
+0.01 band); diagnostic branch AMENDABLE, mechanism TWIN-MATCHED; a post-hoc reroute around a fired kill condition: the leg that fired was replaced after the fire by a twin-referenced dependence-excess leg whose S1 seed-0 values at
+both spaces were known from the diagnostic payload when the amendment was written; it is a fresh test only at the other three harvests; the E leg sees every non-causal block the raw leg sees (the twin lacks it) and is sharper
+under a drifted reader; what it drops (prediction-marginal drift and twin-shared position information) are non-leaks; S1 diagnostic X_raw at seed 0 +0.0006, the registered statistic, twin-referenced, would also have passed] at the
+coarse label spaces L2 / L3 the re-test reads S1 L2 ABSORBED; S1 L3 NOT-SHOWN; S3 L2 ABSORBED; S3 L3 SPLIT (every L3 label read at the L3 group lens (S1: one mega-group of 455/510 concepts including all 165 zero-degree concepts,
+the next group 10; S3: two mega-groups of 268 and 193 = 461/510 including all 20 zero-degree concepts)) against the full free baseline at the registered reader; DATED NOTE 2026-10-05 (F-28, STAGE LENS): through a size-capped
+BALANCED lens at S3 L3 the full-free re-test reads ABSORBED at the registered reader (D +0.0019 [+0.0006, +0.0032] / +0.0004 [-0.0011, +0.0018], every upper below +0.005 at off2 / off3 / off4; Mn_r +0.0023 [+0.0010, +0.0038] /
++0.0017 [-0.0000, +0.0035], the corrected twin point-positive on both harvests, CI-clear on the primary only) where the lopsided lens read SPLIT, and F-17's proxy margin survives the lens at +0.0221 [+0.0187, +0.0258] / +0.0195
+[+0.0160, +0.0232] (0.307 / 0.267 of the recorded margin) with its growth over L2 NOT-SETTLED; the stronger readers (STAGE READERS) are not yet run; DATED NOTE 2026-10-05 (F-28, STAGE READERS): under the hz-rescaled and two-tower
+readers at the S3 gate cells R-N (hz-rescaled) at L1 ABSORBED; R-N (hz-rescaled) at the lopsided L3 SURVIVES-STRONGER; R-N (hz-rescaled) at the balanced L3 NOT-SHOWN; R-T (two-tower) at L1 ABSORBED; R-T (two-tower) at the lopsided
+L3 ABSORBED; R-T (two-tower) at the balanced L3 ABSORBED; the K-2 word at S3 K-2-ISOLATED (under readers R-N and R-T at S3 (R-L pending); one more family of readers, not K-2's universal; interim: READERS-LONG runs under the pinned
+trigger and the one sentence lands with it) |
+############ docs/REPORT.md
+@@ -20 +20 @@ Sideband asks whether the memory-access address stream a weight-serving device s
+-[removed line, 2070 chars]
++| Existence (K-2), full free baseline at L2 / L3 (dated note 2026-09-14) | Do the coarse-label margins survive (a) ++ hashed token ids ++ z-scored h_a at the registered reader against the corrected twin? | [read under the
+2026-09-07 rider amendment after the registered rider fired at S1 L3 (raw leg 2 +0.0132 against the 0.01 band); diagnostic branch AMENDABLE, mechanism TWIN-MATCHED; a post-hoc reroute around a fired kill condition: the leg that
+fired was replaced after the fire by a twin-referenced dependence-excess leg whose S1 seed-0 values at both spaces were known from the diagnostic payload when the amendment was written; it is a fresh test only at the other three
+harvests; the E leg sees every non-causal block the raw leg sees (the twin lacks it) and is sharper under a drifted reader; what it drops (prediction-marginal drift and twin-shared position information) are non-leaks; S1
+diagnostic X_raw at seed 0 +0.0006, the registered statistic, twin-referenced, would also have passed] S1 L2 ABSORBED; S1 L3 NOT-SHOWN; S3 L2 ABSORBED; S3 L3 SPLIT (every L3 label read at the L3 group lens (S1: one mega-group of
+455/510 concepts including all 165 zero-degree concepts, the next group 10; S3: two mega-groups of 268 and 193 = 461/510 including all 20 zero-degree concepts)) (registered-reader scope; F-25); DATED NOTE 2026-10-05 (F-28, STAGE
+LENS): through a size-capped balanced lens at S3 L3 the same cell reads ABSORBED at the registered reader (D +0.0019 [+0.0006, +0.0032] / +0.0004 [-0.0011, +0.0018]; Mn_r +0.0023 [+0.0010, +0.0038] / +0.0017 [-0.0000, +0.0035];
+OFF3-ABSORBED, OFF4-ABSORBED); F-17's proxy margin survives that lens at +0.0221 [+0.0187, +0.0258] / +0.0195 [+0.0160, +0.0232], its growth over L2 NOT-SETTLED; DATED NOTE 2026-10-05 (F-28, STAGE READERS): R-N (hz-rescaled) at L1
+ABSORBED; R-N (hz-rescaled) at the lopsided L3 SURVIVES-STRONGER; R-N (hz-rescaled) at the balanced L3 NOT-SHOWN; R-T (two-tower) at L1 ABSORBED; R-T (two-tower) at the lopsided L3 ABSORBED; R-T (two-tower) at the balanced L3
+ABSORBED; the K-2 word at S3 K-2-ISOLATED | gate D: S1 L2 +0.0011 [-0.0001, +0.0023] / +0.0006 [-0.0007, +0.0020]; S1 L3 +0.0010 [-0.0006, +0.0026] / +0.0012 [-0.0015, +0.0040]; S3 L2 +0.0018 [+0.0008, +0.0030] / +0.0003 [-0.0009,
++0.0013]; S3 L3 +0.0041 [+0.0026, +0.0055] / +0.0053 [+0.0019, +0.0091] | F-25; results/real/fullfree_coarse_{s1,s1_r,s3,s3_r}.json |
+############ docs/FINDINGS_INDEX.md
+@@ -128 +128 @@ Vocabulary used in the table, in brief:
+-[removed line, 988 chars]
++| F-28 | 2026-10-05 | Reader-and-lens re-test, stage LENS (the lane's entry) | REAL: the two committed OLMoE S3 harvests at the registered reader through a size-capped balanced L3 lens pinned before it was built (CPU, six
+threads; registration frozen at b128fda, runs from d3504b2) | the full-free re-test reads ABSORBED through the balanced lens where the lopsided lens read SPLIT; F-17's proxy margin survives the lens as existence (LENS-SURVIVES),
+its growth over L2 NOT-SETTLED | gate D +0.0019 [+0.0006, +0.0032] / +0.0004 [-0.0011, +0.0018]; Mt +0.0042 [+0.0025, +0.0061] / +0.0021 [+0.0002, +0.0041]; Mn_r +0.0023 [+0.0010, +0.0038] / +0.0017 [-0.0000, +0.0035]; P +0.0221
+[+0.0187, +0.0258] / +0.0195 [+0.0160, +0.0232] (0.307 / 0.267 of +0.0721 / +0.0730); L2 +0.0206 / +0.0207 | stands (STAGE LENS landed; the K-2 word waits for STAGE READERS); STAGE READERS landed 2026-10-05: K-2-ISOLATED; R-N (hz-
+rescaled) at L1 ABSORBED; R-N (hz-rescaled) at the lopsided L3 SURVIVES-STRONGER; R-N (hz-rescaled) at the balanced L3 NOT-SHOWN; R-T (two-tower) at L1 ABSORBED; R-T (two-tower) at the lopsided L3 ABSORBED; R-T (two-tower) at the
+balanced L3 ABSORBED | results/real/lens_s3.json, results/real/lens_s3_r.json and their .state.jsonl; results/real/concept_groups_olmoe_balanced_v1.json |
+@@ -557,0 +558,16 @@ stage.
++Stage READERS (added 2026-10-05): the hz-rescaled reader (the hz block alone
++brought to the aligned slots block's norm) and the two-tower reader (the
++slots block with its own first layer) at the S3 gate cells of L1, the
++lopsided L3 and the balanced L3, 75 cells per harvest, CPU only. R-N
++(hz-rescaled) at L1 ABSORBED; R-N (hz-rescaled) at the lopsided L3
++SURVIVES-STRONGER; R-N (hz-rescaled) at the balanced L3 NOT-SHOWN; R-T
++(two-tower) at L1 ABSORBED; R-T (two-tower) at the lopsided L3 ABSORBED; R-T
++(two-tower) at the balanced L3 ABSORBED. The K-2 word at S3, pinned before
++any cell trained: K-2-ISOLATED (under readers R-N and R-T at S3 (R-L
++pending); one more family of readers, not K-2's universal; interim:
++READERS-LONG runs under the pinned trigger and the one sentence lands with
++it). STAGE READERS-LONG RUNS (no SURVIVES-STRONGER or SPLIT at L1 or the
++balanced L3); STAGE S1 is not triggered by this stage (no reopen-grade cell
++at L1 or the balanced L3); final at the READERS-LONG landing. Numbers per
++cell in F-28. Kill-criterion outcome: K-2-ISOLATED.
++
+############ CHANGELOG.md
+@@ -31,0 +32,17 @@ eb0154d), each marked as added on 2026-10-02.
++## 2026-10-05 - Reader-and-lens re-test at S3: stage READERS landed (branch espalier-trial)
++
++- (the landing commit; its hash is recorded in the handoff's memory row,
++since a commit cannot cite itself) feat(evidence): land the reader-and-lens
++stage READERS - both registered runs from the clean tree at 790b2fc,
++results/real/readers_s3.json and readers_s3_r.json with their state files;
++the K-2 word K-2-ISOLATED; per cell R-N (hz-rescaled) at L1 ABSORBED; R-N
++(hz-rescaled) at the lopsided L3 SURVIVES-STRONGER; R-N (hz-rescaled) at the
++balanced L3 NOT-SHOWN; R-T (two-tower) at L1 ABSORBED; R-T (two-tower) at
++the lopsided L3 ABSORBED; R-T (two-tower) at the balanced L3 ABSORBED;
++F-28's STAGE READERS line with dated notes on F-24 and F-25; the K-2 STATUS
++line in docs/WHY_THIS_DIES.md; OUTCOME notes under OQ-17 and OQ-18; pointers
++in README, docs/REPORT.md, docs/FINDINGS_INDEX.md;
++tests/test_reader_lens_readers_landing.py; the block's OUTCOME with both
++predictions scored. - 790b2fc docs(memory): log the reader-and-lens stage
++LENS landing - the handoff row; the stage launched from this commit.
++

@@ -1,0 +1,10 @@
+{
+  "_experiment": "e01_verifier_exactness.json",
+  "_written_unix": 1787965335,
+  "empirical_max_abs_dev": 0.00031799999999999884,
+  "empirical_samples": 500000,
+  "n_random_pairs": 2000,
+  "regime": "mathematical property of the rejection scheme; distribution-agnostic",
+  "worst_abs_dev_closed_form_plain": 2.220446049250313e-16,
+  "worst_abs_dev_closed_form_steered": 2.220446049250313e-16
+}

@@ -1,0 +1,123 @@
+{
+ "buckets_sha256": {
+  "buckets16": "e31db51ef0f689d97372a831330082e3db5cad8911af9bab6a7849e742383999",
+  "buckets32": "076fe00aaaf51ae3418732e7eb3ff1a2a1b8cd6453d4c091085b667f7f74c360",
+  "buckets512": "04390056c54803ce70a0837f85090cb5dfbaf71590491e97ce73e5349d45a995",
+  "buckets64": "ba6e05aeeb23a1da85ba172f13c2cb5acd5da9c602a10b7e94917916c5a06172"
+ },
+ "cells": [
+  {
+   "W_shape": [
+    16,
+    657
+   ],
+   "arm": "a",
+   "best_epoch": 27,
+   "binding_gate": "PASS",
+   "cell": "L1_concept_k16|off2|a|linear|s0",
+   "offset": 2,
+   "self_check_n": 3000,
+   "self_check_worst_prob_dev": 1.3487088385000234e-06,
+   "test_acc": 0.605603801409143,
+   "val_acc_best": 0.6042168271803103
+  },
+  {
+   "W_shape": [
+    16,
+    657
+   ],
+   "arm": "a",
+   "best_epoch": 11,
+   "binding_gate": "PASS",
+   "cell": "L1_concept_k16|off3|a|linear|s0",
+   "offset": 3,
+   "self_check_n": 3000,
+   "self_check_worst_prob_dev": 1.1444296137419485e-06,
+   "test_acc": 0.5915282118769535,
+   "val_acc_best": 0.5850792371743218
+  },
+  {
+   "W_shape": [
+    16,
+    2705
+   ],
+   "arm": "c",
+   "best_epoch": 23,
+   "binding_gate": "PASS",
+   "cell": "L1_concept_k16|off2|c|linear|s0",
+   "offset": 2,
+   "self_check_n": 3000,
+   "self_check_worst_prob_dev": 7.064131229972404e-07,
+   "test_acc": 0.6223660494838604,
+   "val_acc_best": 0.6179942482611022
+  },
+  {
+   "W_shape": [
+    16,
+    2705
+   ],
+   "arm": "c",
+   "best_epoch": 4,
+   "binding_gate": "PASS",
+   "cell": "L1_concept_k16|off3|c|linear|s0",
+   "offset": 3,
+   "self_check_n": 3000,
+   "self_check_worst_prob_dev": 5.175967858206398e-07,
+   "test_acc": 0.6005099522947853,
+   "val_acc_best": 0.5964779747515444
+  }
+ ],
+ "device": "cuda",
+ "export_seed": 0,
+ "git_commit": "69cb8f2fd0150497644a2c36519c42a92105751b-dirty",
+ "glue_class": 15,
+ "harvest_npz_sha256": {
+  "shadow_s0.npz": "56edc5fd54f8d6b8e937d044d562ac2965944892c39c99c320a0f071d3bf4877",
+  "shadow_s1.npz": "dd36dfeead8d71a52e3a0d665c090feb27da410d7b21f4018c505eb8c37cd157",
+  "shadow_s2.npz": "af3a3cdd49fa98d52eb1e368c4d34442d305c7564d15b282b6fe871177f15578",
+  "shadow_s3.npz": "ed202b013984b44754328afc22b757f87a23b09b48ecac9934fbe64d97572fb5",
+  "shadow_s4.npz": "b9daed5f8e710b4fb6dece92031a9b64bc1bb5effcf02b974909580b801b0b99",
+  "shadow_s5.npz": "d84276d9ca85cb492037465388a631e7127a34e20536f6476e0f74ce0975d587",
+  "shadow_s6.npz": "820e4a248ecfb4867936b4dc3e11faa21d4859f144d5e36adc8f2352c14adb3a",
+  "shadow_s7.npz": "4cf0bce266d5e2359b7fd0e53ad743246e1cbfa78bf06701b52c2ba63b175e9c"
+ },
+ "harvest_temperature": 1.0,
+ "label_space_sha256": {
+  "buckets_k16.json": "e31db51ef0f689d97372a831330082e3db5cad8911af9bab6a7849e742383999",
+  "buckets_k32.json": "076fe00aaaf51ae3418732e7eb3ff1a2a1b8cd6453d4c091085b667f7f74c360",
+  "buckets_k512.json": "04390056c54803ce70a0837f85090cb5dfbaf71590491e97ce73e5349d45a995",
+  "buckets_k64.json": "ba6e05aeeb23a1da85ba172f13c2cb5acd5da9c602a10b7e94917916c5a06172",
+  "glue_k16.json": "abeab44833ca63bc7ddcf6bc6e14ea650cf7ed066c86bf166e867b2a1bf15ac6"
+ },
+ "n_classes": 16,
+ "npz_file": "k3_probe_weights.npz",
+ "npz_sha256": "8374da6b8f60b164ae4812d09e026378b9de73f3f92c964070d66d7fc2055d11",
+ "phase3_payload_sha256": "c2dfa659a4a57cbad5ba5b558973e2f4ee381d10e7208e936db958d61c78854c",
+ "phase3_state_sha256": "7c08c09ecd15c0a9b65e77246fee0b7221f6cd320dc66ac1bf3e9ec32b2dff7d",
+ "registered": "K-3 stage-E probe export (arc registration 2026-09-01; clarifications E1/E7 2026-09-02); export seed 0, binding gate bit-exact vs committed Phase-3 cells",
+ "runtime_s": 469.0,
+ "self_check_prob_tol": 1e-05,
+ "space": "L1_concept_k16",
+ "tap": {
+  "layer_names": [
+   "model.layers.7.mlp.down_proj",
+   "model.layers.15.mlp.down_proj",
+   "model.layers.23.mlp.down_proj",
+   "model.layers.31.mlp.down_proj"
+  ],
+  "layer_regex": "mlp\\.down_proj$",
+  "layers": "7,15,23,31",
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "n_slots": 512,
+  "sketch_layer_seeds": {
+   "model.layers.15.mlp.down_proj": 80082,
+   "model.layers.23.mlp.down_proj": 84498,
+   "model.layers.31.mlp.down_proj": 51090,
+   "model.layers.7.mlp.down_proj": 88370
+  },
+  "sketch_seed": 0,
+  "target_load": "nf4-double-quant-bf16compute",
+  "top_n": 32
+ },
+ "torch_version": "2.6.0+cu124"
+}

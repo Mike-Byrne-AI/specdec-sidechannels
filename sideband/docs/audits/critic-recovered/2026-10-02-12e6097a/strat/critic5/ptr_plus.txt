@@ -1,0 +1,85 @@
++(2026-10-02, STRATIFIED COVERAGE READ of the twin's margin, both runs
++from the clean freeze commit fea2431; label FALLBACK-LOCATED /
++PT-SURVIVES on both harvests, REPRODUCE EXACT, both gates straddling the
++floor: on the covered positions (0.9013 / 0.8582) D_eq +0.0463 /
+++0.0481, CI-positive below the floor with the floor inside the CI; on
++the unseen-key positions (0.0987 / 0.1418) +0.1940 / +0.1741 (SIGNAL);
++with p_t's stored summaries in both arms D_eq^PT +0.0532 / +0.0565 and
++D_add^PT +0.0583 / +0.0609 (SIGNAL, the equal-dims CI containing the
++floor); the caveat is neither retired nor confirmed at this power — its
++location is indicated, not settled; the sparse covered keys (one to four
++train occurrences) read at or above the floor while the well-covered
++keys do not; next rung R2, a free baseline whose encoding handles unseen
++and sparse keys; see F-26's second dated status line and the block's
++OUTCOME.)
++
++  (2026-10-02, STRATIFIED COVERAGE READ of the twin's margin, both runs from
++  the clean freeze commit fea2431; label FALLBACK-LOCATED / PT-SURVIVES on
++  both harvests, REPRODUCE EXACT, both gates straddling the floor: on the
++  covered positions (0.9013 / 0.8582) D_eq +0.0463 / +0.0481, CI-positive
++  below the floor with the floor inside the CI; on the unseen-key positions
++  (0.0987 / 0.1418) +0.1940 / +0.1741 (SIGNAL); with p_t's stored summaries
++  in both arms D_eq^PT +0.0532 / +0.0565 and D_add^PT +0.0583 / +0.0609
++  (SIGNAL, the equal-dims CI containing the floor); the caveat is neither
++  retired nor confirmed at this power — its location is indicated, not
++  settled; the sparse covered keys (one to four train occurrences) read at
++  or above the floor while the well-covered keys do not; next rung R2, a
++  free baseline whose encoding handles unseen and sparse keys; see F-26's
++  second dated status line and the block's OUTCOME.)
++| F-26 | 2026-09-15 (dated status lines 2026-10-01, 2026-10-02) | OQ-9 stage 1, prefetch | REAL: CPU-only readouts on the two committed S3 harvests of OLMoE-1B-7B-0125-Instruct (NF4, bf16 routers; 210 prompts x 256 tokens; primary seeds 0..7, replication 8..11 on the same prompts); the sorted top-8 expert ids at 16 gates, no router weights; estimand = hit rate of the next forward's expert sets at residency budget B of 64 per gate; linear ridge readers, 30 test prompts, prompt-cluster bootstrap CI95; registration frozen at c4c4511; NON-CRITERION, a K-6 datum | The router address stream is a prefetch source with headroom over a recency cache and a material margin over the free input token at B = 16, j = 1 (stage PREFETCH-HEADROOM, the seed replication agrees on every label); the margin is below the +0.05 floor at B = 32 at j = 1 and above it at j = 2 / 3 / 4 (+0.0545 / +0.0534 at j = 2; CI lower above the floor at j = 3 / 4 only); the critic's scope objection (the equally free previous token is not in the one-token baseline and gate 0 routes on it; F-26's GATE-0 NOTE records an unresolved alternative, that the stored gate-0 slot lags one forward) was answered by the equal-dims free-bigram twin on 2026-10-01: SURVIVES at that encoding, with a coverage caveat (the material part of the surviving margin sits on positions whose token key the train tables never saw); nothing reads it as context information or as support for the sideband premise | B = 16, j = 1: recency 0.5197 / 0.5155, free one-token table 0.8111 / 0.8036, history 0.8064 / 0.8056, history ++ token 0.9143 / 0.9108; HISTORY +0.2867 [+0.2784, +0.2939] / +0.2901 [+0.2808, +0.2978]; ADDRESS-BEYOND-TOKEN +0.1032 [+0.0926, +0.1146] / +0.1072 [+0.0952, +0.1206] (B = 32, j = 1: +0.0405 / +0.0434; B = 32, j = 3 / 4: +0.0683 / +0.0654, +0.0698 / +0.0669); INTRA-FORWARD +0.4861 [+0.4710, +0.5009] / +0.4816 [+0.4663, +0.4975]; DRAFT ceiling (horizon 2) +0.1556 [+0.1512, +0.1599] / +0.1545 [+0.1495, +0.1594]; twin (2026-10-01): D_eq +0.0609 [+0.0514, +0.0712] / +0.0659 [+0.0547, +0.0788], D_add +0.0661 [+0.0569, +0.0762] / +0.0705 [+0.0592, +0.0834], at B = 32 (j = 1, the twin's only horizon; the j = 2..4 margins are over the one-token table and were never tested against the bigram twin) D_eq +0.0261 / +0.0287; covered-key D_eq +0.0454 / +0.0472 on val (unregistered diagnostic, not evidence) | stands (NON-CRITERION; dated status line 2026-10-01: SURVIVES at this encoding with the coverage caveat; K-5 / K-6 stay UNTESTED; prior art occupies every cell; the stratified covered-vs-fallback test read ran on 2026-10-02 (FALLBACK-LOCATED / PT-SURVIVES on both harvests, both gates straddling the floor: the caveat indicated, not settled; next rung R2, a free baseline whose encoding handles unseen and sparse keys)) | results/real/prefetch_s3.json; results/real/prefetch_s3_r.json; results/real/prefetch_bigram_s3.json; results/real/prefetch_bigram_s3_r.json; results/real/prefetch_strat_s3.json; results/real/prefetch_strat_s3_r.json (each with .meta.json and .state.jsonl); tools/run_prefetch_readouts.py; tools/run_prefetch_bigram.py; tools/run_prefetch_strat.py |
++(2026-10-02: the stratified read ran — FALLBACK-LOCATED / PT-SURVIVES on
++both harvests, both gates straddling the floor: covered-position D_eq
+++0.0463 / +0.0481 below the floor with the floor inside the CI, unseen-key
+++0.1940 / +0.1741; the caveat indicated, not settled; next rung R2, a free
++baseline whose encoding handles unseen and sparse keys; F-26's second dated
++status line)
++  carries the coverage caveat (left indicated, not settled, by the
++  2026-10-02 stratified read); the K-6 STATUS lines of 2026-09-15,
++  2026-10-01 and 2026-10-02 record it as a count, never as economics.
++  (2026-10-02, STRATIFIED COVERAGE READ of the twin's margin, both runs from
++  the clean freeze commit fea2431; label FALLBACK-LOCATED / PT-SURVIVES on
++  both harvests, REPRODUCE EXACT, both gates straddling the floor: on the
++  covered positions (0.9013 / 0.8582) D_eq +0.0463 / +0.0481, CI-positive
++  below the floor with the floor inside the CI; on the unseen-key positions
++  (0.0987 / 0.1418) +0.1940 / +0.1741 (SIGNAL); with p_t's stored summaries
++  in both arms D_eq^PT +0.0532 / +0.0565 and D_add^PT +0.0583 / +0.0609
++  (SIGNAL, the equal-dims CI containing the floor); the caveat is neither
++  retired nor confirmed at this power — its location is indicated, not
++  settled; the sparse covered keys (one to four train occurrences) read at
++  or above the floor while the well-covered keys do not; next rung R2, a
++  free baseline whose encoding handles unseen and sparse keys; see F-26's
++  second dated status line and the block's OUTCOME.)
++| OQ-9 | bidirectional sidecar (steer + prefetch) | the STEER half PARKED by the 2026-09-14 note (no actuator in the record converts); the PREFETCH half ran as stage 1 on the OLMoE harvests (registered 2026-09-14, landed 2026-09-15 as F-26: PREFETCH-HEADROOM, NON-CRITERION, a K-6 datum) and as its free-bigram twin (2026-10-01: SURVIVES at that encoding, with a coverage caveat); the stratified covered-vs-fallback test read ran on 2026-10-02 (FALLBACK-LOCATED / PT-SURVIVES on both harvests, both gates straddling the floor: the caveat indicated, not settled; next rung R2, a free baseline whose encoding handles unseen and sparse keys); stage 2 (a real draft partner for OLMoE) is an option, not a plan | F-26 and its dated status lines |
++- Record boundary (2026-09-05, revised the same day): every number and label here is taken from the committed record (FINDINGS.md F-0..F-23; docs/BLUEPRINT.md through the OQ-16 DATED ERRATUM + LANE CLOSURE block; results/). DATED NOTE (2026-09-06, F-24): the existence statements below that read "beyond the strongest free baseline" are superseded in the qualified sense of F-24 — at the registered reader the F-15 / F-17 margins are ABSORBED by the full free baseline ((a) ++ hashed token ids ++ z-scored h_a) at the pinned L1 offset-2 cells on both harvests of both sources (every equal-dims D CI95 upper below +0.005; Mt beside it about +0.003, CI-clear on three of four harvests); they stand against the 657-summary PROXY; the corrected-twin diagnostic read TWIN-ROBUST at both sources, so the null does not depend on the registered control. The abstract, the scorecard row and section 5 are left as written with this note; see FINDINGS.md F-24 and the K-2 STATUS line of 2026-09-06. F-23 registered, with a critic recompute round, what an earlier draft of this report could only disclose as an uncommitted check: the anchor state h_a that the reconstruction lane targeted is an exact linear function of the verifier's own next-token distribution (results/real/oq16_ha_identity.json; tools/ha_identity_check.py). Sections 4.6, 4.7, 5 and 8 carry the consequence; every registered Stage-R and DR readout is kept as it landed. DATED NOTE (2026-10-01, F-26 and its free-bigram twin): the record now runs to F-26 (2026-09-15), OQ-9 stage 1 - a prefetch hit-rate datum on the OLMoE router harvests, NON-CRITERION for every layer of this report and registered as a K-6 datum: at 16 of 64 experts resident per gate a linear reader on the routing history plus the free input token covers 0.9143 / 0.9108 of the next forward's expert sets against 0.5197 / 0.5155 for a recency cache and 0.8111 / 0.8036 for a one-token table (ADDRESS-BEYOND-TOKEN +0.1032 [+0.0926, +0.1146] / +0.1072 [+0.0952, +0.1206]; below the +0.05 floor at B = 32, j = 1). The equal-dims free-bigram twin (F-26's status line of 2026-10-01) reads SURVIVES at that encoding, +0.0609 [+0.0514, +0.0712] / +0.0659 [+0.0547, +0.0788], with the coverage caveat that the material part of the surviving margin sits on positions whose token key the train tables never saw (covered-key D_eq +0.0454 / +0.0472 on val in an unregistered diagnostic), so nothing in it reads as context information or as support for the sideband premise; the economics row of the scorecard stays untested. The F-24 note above and the F-25 scorecard row of 2026-09-14 are unchanged. See FINDINGS.md F-26 and docs/FINDINGS_INDEX.md. (2026-10-02: the stratified read ran — FALLBACK-LOCATED / PT-SURVIVES on both harvests, both gates straddling the floor: covered-position D_eq +0.0463 / +0.0481 below the floor with the floor inside the CI, unseen-key +0.1940 / +0.1741; the caveat indicated, not settled; next rung R2, a free baseline whose encoding handles unseen and sparse keys; F-26's second dated status line)
++| Economics (K-5/K-6) | Wall-clock cost; a boundary where SD^2's vector cannot cross | untested (dated note 2026-10-01: still untested; the first K-6 datum is a hit-rate COUNT, not bytes, latency or a boundary argument) | none exists (dated note 2026-10-01, F-26: next-forward expert-set hit rate at 16 of 64 resident on the OLMoE router harvests, 0.9143 / 0.9108 for routing history plus the free token against 0.5197 / 0.5155 for a recency cache; the address block over the equal-dims free bigram +0.0609 / +0.0659, below the floor at B = 32, j = 1, with the coverage caveat: the material part of that margin sits on positions whose token key the train tables never saw) (2026-10-02: the stratified read ran — FALLBACK-LOCATED / PT-SURVIVES on both harvests, both gates straddling the floor: covered-position D_eq +0.0463 / +0.0481 below the floor with the floor inside the CI, unseen-key +0.1940 / +0.1741; the caveat indicated, not settled; next rung R2, a free baseline whose encoding handles unseen and sparse keys; F-26's second dated status line) | docs/ECONOMICS.md section 6; F-26 and its 2026-10-01 and 2026-10-02 status lines; docs/WHY_THIS_DIES.md K-6 STATUS lines of 2026-09-15, 2026-10-01 and 2026-10-02 |
++STATUS (2026-10-02, appended; the stratified coverage read of the twin's
++margin): K-6 stays UNTESTED. 2026-10-02, STRATIFIED COVERAGE READ of the
++twin's margin, both runs from the clean freeze commit fea2431; label
++FALLBACK-LOCATED / PT-SURVIVES on both harvests, REPRODUCE EXACT, both
++gates straddling the floor: on the covered positions (0.9013 / 0.8582)
++D_eq +0.0463 / +0.0481, CI-positive below the floor with the floor
++inside the CI; on the unseen-key positions (0.0987 / 0.1418) +0.1940 /
+++0.1741 (SIGNAL); with p_t's stored summaries in both arms D_eq^PT
+++0.0532 / +0.0565 and D_add^PT +0.0583 / +0.0609 (SIGNAL, the equal-dims
++CI containing the floor); the caveat is neither retired nor confirmed at
++this power — its location is indicated, not settled; the sparse covered
++keys (one to four train occurrences) read at or above the floor while
++the well-covered keys do not; next rung R2, a free baseline whose
++encoding handles unseen and sparse keys; see F-26's second dated status
++line and the block's OUTCOME. Still a hit-rate COUNT on a harvest: no
++bytes, latency or boundary; prior art occupies the cells. No finding
++rules on K-6.
++
++  keys. (2026-10-02: that rung RAN as the dated amendment block below; its
++  OUTCOME and F-26's second dated status line carry the result —
++  FALLBACK-LOCATED / PT-SURVIVES on both harvests with both gates straddling
++  the floor, so this caveat is neither retired nor confirmed at this power.)
++  REPLICATION: the same diagnostic on the replication:
++- OUTCOME (2026-10-02; written after both registered runs landed and were
++  read through --conclude-from; the critic's recompute round preceded every
++  landing edit). RUNS: one chained CPU job from the clean tree at fea2431
++  (git_status_tracked empty on both payloads; instrument sha
++  39a6cd587492..., the same on both and the sha the third pre-freeze smoke
++  attested; the frozen twin asserted at 10599fa98c27 and its parent at
++  8529532d4d78; the committed twin payloads re-read by sha, 73a6df94c4cc /
++  0f4d5d70a4db, their state files 972b0a8ba693 / e1b58c38dd7b), the primary

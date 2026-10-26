@@ -1,0 +1,188 @@
+{
+  "caution_band": [
+    0.15,
+    0.35
+  ],
+  "f10_reopen_trigger": {
+    "fires": false,
+    "mass_level_k512_upper_below_bar": false,
+    "token_level_all_k_upper_below_bar": false
+  },
+  "internal_consistency": "PASS",
+  "kill_bar": 0.25,
+  "mass_level_vanilla_k512": {
+    "concept_cross_fraction": 0.6104367856826437,
+    "concept_cross_fraction_ci95_binomial": [
+      0.6013685489853964,
+      0.6194480222366416
+    ],
+    "concept_cross_fraction_ci95_prompt_bootstrap": [
+      0.6001225109167012,
+      0.6209877356489677
+    ],
+    "emitted_in_glue_fraction": 0.3213431381235049,
+    "glue_involved_fraction": 0.4573403030034553,
+    "n_glue_buckets": 2,
+    "n_records_with_glue_mass": 11287,
+    "proposed_in_glue_fraction": 0.32214051563745905,
+    "residual_mass_concept_other": 0.607172800688081,
+    "residual_mass_concept_other_ci95_prompt_bootstrap": [
+      0.5972346197369296,
+      0.617352973297643
+    ]
+  },
+  "per_k": {
+    "1024": {
+      "alternative_glue_sets": {
+        "count_rule_ge5": {
+          "concept_cross_fraction": 0.6237264109152122,
+          "concept_cross_fraction_ci95_prompt_bootstrap": [
+            0.6132433473997992,
+            0.6342045812589685
+          ],
+          "n_glue_buckets": 6
+        },
+        "cover_0.70": {
+          "concept_cross_fraction": 0.6762647293346328,
+          "concept_cross_fraction_ci95_prompt_bootstrap": [
+            0.6661994376392277,
+            0.686140660964014
+          ],
+          "n_glue_buckets": 3
+        },
+        "cover_0.90": {
+          "concept_cross_fraction": 0.5833259502082041,
+          "concept_cross_fraction_ci95_prompt_bootstrap": [
+            0.5727774630645801,
+            0.594342095400878
+          ],
+          "n_glue_buckets": 9
+        }
+      },
+      "bucket_level_cross_fraction": 0.8646230176309028,
+      "bucket_level_matches_committed_summary": true,
+      "concept_cross_ci_in_caution_band": false,
+      "glue": {
+        "concept_cross_fraction": 0.6742269867989723,
+        "concept_cross_fraction_ci95_binomial": [
+          0.6654924999196481,
+          0.6828715257426212
+        ],
+        "concept_cross_fraction_ci95_prompt_bootstrap": [
+          0.6641944235252051,
+          0.6841139439526881
+        ],
+        "emitted_in_glue_fraction": 0.2688048197040843,
+        "glue_involved_fraction": 0.38912022680960395,
+        "n_glue_buckets": 4,
+        "n_records_with_glue_mass": 0,
+        "proposed_in_glue_fraction": 0.2632231771064056,
+        "residual_mass_concept_other": null,
+        "residual_mass_concept_other_ci95_prompt_bootstrap": null
+      },
+      "glue_concentration_flag": false,
+      "glue_rule": {
+        "mass_cover": 0.8,
+        "name": "top_n-frequency-mass-cover",
+        "top_n": 100
+      },
+      "n_glue_buckets": 4
+    },
+    "256": {
+      "alternative_glue_sets": {
+        "count_rule_ge5": {
+          "concept_cross_fraction": 0.4960574111810047,
+          "concept_cross_fraction_ci95_prompt_bootstrap": [
+            0.48492491976786817,
+            0.5077034961257679
+          ],
+          "n_glue_buckets": 4
+        },
+        "cover_0.90": {
+          "concept_cross_fraction": 0.4960574111810047,
+          "concept_cross_fraction_ci95_prompt_bootstrap": [
+            0.48492491976786817,
+            0.5077034961257679
+          ],
+          "n_glue_buckets": 4
+        }
+      },
+      "bucket_level_cross_fraction": 0.7805439886595198,
+      "bucket_level_matches_committed_summary": true,
+      "concept_cross_ci_in_caution_band": false,
+      "glue": {
+        "concept_cross_fraction": 0.5645432798795074,
+        "concept_cross_fraction_ci95_binomial": [
+          0.5553362829559731,
+          0.5737169673857827
+        ],
+        "concept_cross_fraction_ci95_prompt_bootstrap": [
+          0.5535717991521215,
+          0.5754937789535667
+        ],
+        "emitted_in_glue_fraction": 0.3458846460529813,
+        "glue_involved_fraction": 0.4882608310445645,
+        "n_glue_buckets": 2,
+        "n_records_with_glue_mass": 0,
+        "proposed_in_glue_fraction": 0.3446442810312749,
+        "residual_mass_concept_other": null,
+        "residual_mass_concept_other_ci95_prompt_bootstrap": null
+      },
+      "glue_concentration_flag": false,
+      "glue_rule": {
+        "mass_cover": 0.8,
+        "name": "top_n-frequency-mass-cover",
+        "top_n": 100
+      },
+      "n_glue_buckets": 2
+    },
+    "512": {
+      "alternative_glue_sets": {
+        "count_rule_ge5": {
+          "concept_cross_fraction": 0.5389386019314255,
+          "concept_cross_fraction_ci95_prompt_bootstrap": [
+            0.5278582466760166,
+            0.5501337320813084
+          ],
+          "n_glue_buckets": 6
+        },
+        "cover_0.90": {
+          "concept_cross_fraction": 0.5448746345353062,
+          "concept_cross_fraction_ci95_prompt_bootstrap": [
+            0.5342107199768217,
+            0.5559482291780948
+          ],
+          "n_glue_buckets": 6
+        }
+      },
+      "bucket_level_cross_fraction": 0.8134136617347391,
+      "bucket_level_matches_committed_summary": true,
+      "concept_cross_ci_in_caution_band": false,
+      "glue": {
+        "concept_cross_fraction": 0.6104367856826437,
+        "concept_cross_fraction_ci95_binomial": [
+          0.6013685489853964,
+          0.6194480222366416
+        ],
+        "concept_cross_fraction_ci95_prompt_bootstrap": [
+          0.6001225109167012,
+          0.6209877356489677
+        ],
+        "emitted_in_glue_fraction": 0.3213431381235049,
+        "glue_involved_fraction": 0.4573403030034553,
+        "n_glue_buckets": 2,
+        "n_records_with_glue_mass": 0,
+        "proposed_in_glue_fraction": 0.32214051563745905,
+        "residual_mass_concept_other": null,
+        "residual_mass_concept_other_ci95_prompt_bootstrap": null
+      },
+      "glue_concentration_flag": false,
+      "glue_rule": {
+        "mass_cover": 0.8,
+        "name": "top_n-frequency-mass-cover",
+        "top_n": 100
+      },
+      "n_glue_buckets": 2
+    }
+  }
+}

@@ -1,0 +1,593 @@
+{
+  "_experiment": "p2_rank_census",
+  "_written_unix": 1788006620,
+  "band": "c:pipeline-bug-first",
+  "calibrated_tau_per_arm": {
+    "cuda_bf16_b1": 0.23271518707275263,
+    "cuda_bf16_b8": 0.22603400135040141,
+    "cuda_fp16_b1": 0.03312434291839672,
+    "cuda_fp32_b1": 4.291534423828125e-05,
+    "cuda_fp32_b8": 4.863739013671875e-05,
+    "cuda_int8_b1": 1.6489544391632118,
+    "cuda_nf4_b1": 3.941267652511556
+  },
+  "corpus_sha256": "0cfad2b0955de652bae20beb18bb2a05dc02e7cd0e1034db7acc3255b9580ab5",
+  "deciding_arms": [
+    "cuda_fp32_b1",
+    "cuda_bf16_b1",
+    "cuda_fp16_b1"
+  ],
+  "determinism_checks": {
+    "batch_invariance:cuda_bf16_b1_vs_b8": {
+      "bit_identical": false,
+      "max_abs_logit_delta": 0.9375,
+      "top1_flip_rate": 0.015299479166666666,
+      "top1_flips": 752
+    },
+    "batch_invariance:cuda_fp32_b1_vs_b8": {
+      "bit_identical": false,
+      "max_abs_logit_delta": 0.0005064010620117188,
+      "top1_flip_rate": 2.0345052083333332e-05,
+      "top1_flips": 1
+    },
+    "run_to_run:cpu_fp32": {
+      "bit_identical": true,
+      "max_abs_logit_delta": 0.0,
+      "top1_flip_rate": 0.0,
+      "top1_flips": 0
+    },
+    "run_to_run:cuda_bf16_b1": {
+      "bit_identical": true,
+      "max_abs_logit_delta": 0.0,
+      "top1_flip_rate": 0.0,
+      "top1_flips": 0
+    }
+  },
+  "ks": [
+    1,
+    2,
+    8,
+    64
+  ],
+  "n_seqs": 96,
+  "positions": 49152,
+  "post_hoc_investigation": {
+    "batch_invariance:cuda_bf16_b1_vs_b8": {
+      "flip_gap_max": 0.25,
+      "flips_beyond_2tau": 0,
+      "judged_at_2tau_of": "cuda_bf16_b1",
+      "max_abs_delta_by_in_batch_row": [
+        0.328125,
+        0.359375,
+        0.375,
+        0.375,
+        0.3645833432674408,
+        0.4010416567325592,
+        0.3802083432674408,
+        0.3489583432674408
+      ],
+      "max_abs_delta_by_position_quarter": [
+        0.625,
+        0.5625,
+        0.5,
+        0.625
+      ],
+      "tau": 0.23271518707275263,
+      "top1_flips": 752
+    },
+    "batch_invariance:cuda_fp32_b1_vs_b8": {
+      "flip_gap_max": 0.0,
+      "flips_beyond_2tau": 0,
+      "judged_at_2tau_of": "cuda_fp32_b1",
+      "max_abs_delta_by_in_batch_row": [
+        7.804235065123066e-05,
+        0.00012675921607296914,
+        0.00010021527850767598,
+        7.510185241699219e-05,
+        8.138021075865254e-05,
+        0.00011531511700013652,
+        8.606910705566406e-05,
+        8.16186293377541e-05
+      ],
+      "max_abs_delta_by_position_quarter": [
+        0.0005064010620117188,
+        0.0001163482666015625,
+        0.00014781951904296875,
+        0.0001583099365234375
+      ],
+      "tau": 4.291534423828125e-05,
+      "top1_flips": 1
+    }
+  },
+  "provenance": {
+    "cpu_fp32": {
+      "cpu_threads": 16,
+      "cuda": "12.4",
+      "cudnn": 90100,
+      "deterministic_algorithms": false,
+      "envprobe_digest": "2d2a2e0c1d7795d5383d36bd22b9b51dfac7fde4171fa4f0db074f6de145bbbd",
+      "gpu": "NVIDIA GeForce RTX 3080 Ti",
+      "model_id": "meta-llama/Llama-3.2-1B-Instruct",
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python": "3.11.9",
+      "snapshot": "9213176726f574b556790deb65791e0c5aa438b6",
+      "torch": "2.6.0+cu124",
+      "transformers": "4.57.3"
+    },
+    "cpu_fp32_rep": {
+      "cpu_threads": 16,
+      "cuda": "12.4",
+      "cudnn": 90100,
+      "deterministic_algorithms": false,
+      "envprobe_digest": "2d2a2e0c1d7795d5383d36bd22b9b51dfac7fde4171fa4f0db074f6de145bbbd",
+      "gpu": "NVIDIA GeForce RTX 3080 Ti",
+      "model_id": "meta-llama/Llama-3.2-1B-Instruct",
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python": "3.11.9",
+      "snapshot": "9213176726f574b556790deb65791e0c5aa438b6",
+      "torch": "2.6.0+cu124",
+      "transformers": "4.57.3"
+    },
+    "cuda_bf16_b1": {
+      "cpu_threads": 16,
+      "cuda": "12.4",
+      "cudnn": 90100,
+      "deterministic_algorithms": false,
+      "envprobe_digest": "2d2a2e0c1d7795d5383d36bd22b9b51dfac7fde4171fa4f0db074f6de145bbbd",
+      "gpu": "NVIDIA GeForce RTX 3080 Ti",
+      "model_id": "meta-llama/Llama-3.2-1B-Instruct",
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python": "3.11.9",
+      "snapshot": "9213176726f574b556790deb65791e0c5aa438b6",
+      "torch": "2.6.0+cu124",
+      "transformers": "4.57.3"
+    },
+    "cuda_bf16_b1_rep": {
+      "cpu_threads": 16,
+      "cuda": "12.4",
+      "cudnn": 90100,
+      "deterministic_algorithms": false,
+      "envprobe_digest": "2d2a2e0c1d7795d5383d36bd22b9b51dfac7fde4171fa4f0db074f6de145bbbd",
+      "gpu": "NVIDIA GeForce RTX 3080 Ti",
+      "model_id": "meta-llama/Llama-3.2-1B-Instruct",
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python": "3.11.9",
+      "snapshot": "9213176726f574b556790deb65791e0c5aa438b6",
+      "torch": "2.6.0+cu124",
+      "transformers": "4.57.3"
+    },
+    "cuda_bf16_b8": {
+      "cpu_threads": 16,
+      "cuda": "12.4",
+      "cudnn": 90100,
+      "deterministic_algorithms": false,
+      "envprobe_digest": "2d2a2e0c1d7795d5383d36bd22b9b51dfac7fde4171fa4f0db074f6de145bbbd",
+      "gpu": "NVIDIA GeForce RTX 3080 Ti",
+      "model_id": "meta-llama/Llama-3.2-1B-Instruct",
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python": "3.11.9",
+      "snapshot": "9213176726f574b556790deb65791e0c5aa438b6",
+      "torch": "2.6.0+cu124",
+      "transformers": "4.57.3"
+    },
+    "cuda_fp16_b1": {
+      "cpu_threads": 16,
+      "cuda": "12.4",
+      "cudnn": 90100,
+      "deterministic_algorithms": false,
+      "envprobe_digest": "2d2a2e0c1d7795d5383d36bd22b9b51dfac7fde4171fa4f0db074f6de145bbbd",
+      "gpu": "NVIDIA GeForce RTX 3080 Ti",
+      "model_id": "meta-llama/Llama-3.2-1B-Instruct",
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python": "3.11.9",
+      "snapshot": "9213176726f574b556790deb65791e0c5aa438b6",
+      "torch": "2.6.0+cu124",
+      "transformers": "4.57.3"
+    },
+    "cuda_fp32_b1": {
+      "cpu_threads": 16,
+      "cuda": "12.4",
+      "cudnn": 90100,
+      "deterministic_algorithms": false,
+      "envprobe_digest": "2d2a2e0c1d7795d5383d36bd22b9b51dfac7fde4171fa4f0db074f6de145bbbd",
+      "gpu": "NVIDIA GeForce RTX 3080 Ti",
+      "model_id": "meta-llama/Llama-3.2-1B-Instruct",
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python": "3.11.9",
+      "snapshot": "9213176726f574b556790deb65791e0c5aa438b6",
+      "torch": "2.6.0+cu124",
+      "transformers": "4.57.3"
+    },
+    "cuda_fp32_b8": {
+      "cpu_threads": 16,
+      "cuda": "12.4",
+      "cudnn": 90100,
+      "deterministic_algorithms": false,
+      "envprobe_digest": "2d2a2e0c1d7795d5383d36bd22b9b51dfac7fde4171fa4f0db074f6de145bbbd",
+      "gpu": "NVIDIA GeForce RTX 3080 Ti",
+      "model_id": "meta-llama/Llama-3.2-1B-Instruct",
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python": "3.11.9",
+      "snapshot": "9213176726f574b556790deb65791e0c5aa438b6",
+      "torch": "2.6.0+cu124",
+      "transformers": "4.57.3"
+    },
+    "cuda_int8_b1": {
+      "bitsandbytes": "0.49.1",
+      "cpu_threads": 16,
+      "cuda": "12.4",
+      "cudnn": 90100,
+      "deterministic_algorithms": false,
+      "envprobe_digest": "2d2a2e0c1d7795d5383d36bd22b9b51dfac7fde4171fa4f0db074f6de145bbbd",
+      "gpu": "NVIDIA GeForce RTX 3080 Ti",
+      "model_id": "meta-llama/Llama-3.2-1B-Instruct",
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python": "3.11.9",
+      "snapshot": "9213176726f574b556790deb65791e0c5aa438b6",
+      "torch": "2.6.0+cu124",
+      "transformers": "4.57.3"
+    },
+    "cuda_nf4_b1": {
+      "bitsandbytes": "0.49.1",
+      "cpu_threads": 16,
+      "cuda": "12.4",
+      "cudnn": 90100,
+      "deterministic_algorithms": false,
+      "envprobe_digest": "2d2a2e0c1d7795d5383d36bd22b9b51dfac7fde4171fa4f0db074f6de145bbbd",
+      "gpu": "NVIDIA GeForce RTX 3080 Ti",
+      "model_id": "meta-llama/Llama-3.2-1B-Instruct",
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python": "3.11.9",
+      "snapshot": "9213176726f574b556790deb65791e0c5aa438b6",
+      "torch": "2.6.0+cu124",
+      "transformers": "4.57.3"
+    }
+  },
+  "reference_arm": "cpu_fp32",
+  "regime": "meta-llama/Llama-3.2-1B-Instruct draft, teacher-forced 96x512 windows of a wiki/docs corpus, top-k dumps, CPU fp32 reference, one 3080 Ti box; bands pre-registered in P2_PROTOCOL.md",
+  "rows": [
+    {
+      "arm": "cuda_bf16_b1",
+      "delta_coverage": 0.9858579635620117,
+      "dispersion_index": 1.782798459563543,
+      "flip_gap_max": 0.2630271911621094,
+      "flip_gap_median": 0.03159046173095703,
+      "flip_gap_min": 1.33514404296875e-05,
+      "flips_beyond_tau": 0,
+      "flips_within_tau": 984,
+      "halves": [
+        {
+          "flips_beyond_2tau": 0,
+          "top1_flip_rate": 0.015909830729166668
+        },
+        {
+          "flips_beyond_2tau": 0,
+          "top1_flip_rate": 0.024129231770833332
+        }
+      ],
+      "ks": [
+        1,
+        2,
+        8,
+        64
+      ],
+      "longest_flip_run": 3,
+      "max_abs_logit_delta": 1.5969743728637695,
+      "n_positions": 49152,
+      "p99_abs_logit_delta": 0.14022521972656254,
+      "tau": 0.46543037414550525,
+      "top1_flip_rate": 0.02001953125,
+      "top1_flips": 984,
+      "topk_order_flip_rate": {
+        "1": 0.02001953125,
+        "2": 0.05615234375,
+        "64": 1.0,
+        "8": 0.4721883138020833
+      },
+      "topk_set_flip_rate": {
+        "1": 0.02001953125,
+        "2": 0.037556966145833336,
+        "64": 0.6854451497395834,
+        "8": 0.13775634765625
+      },
+      "vocab": 64,
+      "window": 512
+    },
+    {
+      "arm": "cuda_bf16_b8",
+      "delta_coverage": 0.9862435658772787,
+      "dispersion_index": 2.1962892843619843,
+      "flip_gap_max": 0.2630271911621094,
+      "flip_gap_median": 0.03436565399169922,
+      "flip_gap_min": 0.00011157989501953125,
+      "flips_beyond_tau": 0,
+      "flips_within_tau": 834,
+      "halves": [
+        {
+          "flips_beyond_2tau": 0,
+          "top1_flip_rate": 0.012736002604166666
+        },
+        {
+          "flips_beyond_2tau": 0,
+          "top1_flip_rate": 0.021199544270833332
+        }
+      ],
+      "ks": [
+        1,
+        2,
+        8,
+        64
+      ],
+      "longest_flip_run": 3,
+      "max_abs_logit_delta": 2.2219743728637695,
+      "n_positions": 49152,
+      "p99_abs_logit_delta": 0.13515135765075703,
+      "tau": 0.45206800270080283,
+      "top1_flip_rate": 0.0169677734375,
+      "top1_flips": 834,
+      "topk_order_flip_rate": {
+        "1": 0.0169677734375,
+        "2": 0.053955078125,
+        "64": 1.0,
+        "8": 0.463623046875
+      },
+      "topk_set_flip_rate": {
+        "1": 0.0169677734375,
+        "2": 0.038330078125,
+        "64": 0.67694091796875,
+        "8": 0.13315836588541666
+      },
+      "vocab": 64,
+      "window": 512
+    },
+    {
+      "arm": "cuda_fp16_b1",
+      "delta_coverage": 0.9978542327880859,
+      "dispersion_index": 0.6574898785425101,
+      "flip_gap_max": 0.02392578125,
+      "flip_gap_median": 0.0016632080078125,
+      "flip_gap_min": 1.33514404296875e-05,
+      "flips_beyond_tau": 0,
+      "flips_within_tau": 208,
+      "halves": [
+        {
+          "flips_beyond_2tau": 0,
+          "top1_flip_rate": 0.0037841796875
+        },
+        {
+          "flips_beyond_2tau": 0,
+          "top1_flip_rate": 0.004679361979166667
+        }
+      ],
+      "ks": [
+        1,
+        2,
+        8,
+        64
+      ],
+      "longest_flip_run": 2,
+      "max_abs_logit_delta": 0.8000993728637695,
+      "n_positions": 49152,
+      "p99_abs_logit_delta": 0.019018173217773438,
+      "tau": 0.06624868583679344,
+      "top1_flip_rate": 0.004231770833333333,
+      "top1_flips": 208,
+      "topk_order_flip_rate": {
+        "1": 0.004231770833333333,
+        "2": 0.0093994140625,
+        "64": 0.9803059895833334,
+        "8": 0.08577473958333333
+      },
+      "topk_set_flip_rate": {
+        "1": 0.004231770833333333,
+        "2": 0.00518798828125,
+        "64": 0.1356201171875,
+        "8": 0.018595377604166668
+      },
+      "vocab": 64,
+      "window": 512
+    },
+    {
+      "arm": "cuda_fp32_b1",
+      "delta_coverage": 0.9999945958455404,
+      "dispersion_index": 1.0,
+      "flip_gap_max": 1.33514404296875e-05,
+      "flip_gap_median": 1.33514404296875e-05,
+      "flip_gap_min": 1.33514404296875e-05,
+      "flips_beyond_tau": 0,
+      "flips_within_tau": 1,
+      "halves": [
+        {
+          "flips_beyond_2tau": 0,
+          "top1_flip_rate": 4.0690104166666664e-05
+        },
+        {
+          "flips_beyond_2tau": 0,
+          "top1_flip_rate": 0.0
+        }
+      ],
+      "ks": [
+        1,
+        2,
+        8,
+        64
+      ],
+      "longest_flip_run": 1,
+      "max_abs_logit_delta": 0.00044918060302734375,
+      "n_positions": 49152,
+      "p99_abs_logit_delta": 2.86102294921875e-05,
+      "tau": 8.58306884765625e-05,
+      "top1_flip_rate": 2.0345052083333332e-05,
+      "top1_flips": 1,
+      "topk_order_flip_rate": {
+        "1": 2.0345052083333332e-05,
+        "2": 6.103515625e-05,
+        "64": 0.007710774739583333,
+        "8": 0.0002848307291666667
+      },
+      "topk_set_flip_rate": {
+        "1": 2.0345052083333332e-05,
+        "2": 4.0690104166666664e-05,
+        "64": 0.0003458658854166667,
+        "8": 6.103515625e-05
+      },
+      "vocab": 64,
+      "window": 512
+    },
+    {
+      "arm": "cuda_fp32_b8",
+      "delta_coverage": 0.9999949137369791,
+      "dispersion_index": null,
+      "flip_gap_max": null,
+      "flip_gap_median": null,
+      "flip_gap_min": null,
+      "flips_beyond_tau": 0,
+      "flips_within_tau": 0,
+      "halves": [
+        {
+          "flips_beyond_2tau": 0,
+          "top1_flip_rate": 0.0
+        },
+        {
+          "flips_beyond_2tau": 0,
+          "top1_flip_rate": 0.0
+        }
+      ],
+      "ks": [
+        1,
+        2,
+        8,
+        64
+      ],
+      "longest_flip_run": 0,
+      "max_abs_logit_delta": 0.00022220611572265625,
+      "n_positions": 49152,
+      "p99_abs_logit_delta": 3.24249267578125e-05,
+      "tau": 9.72747802734375e-05,
+      "top1_flip_rate": 0.0,
+      "top1_flips": 0,
+      "topk_order_flip_rate": {
+        "1": 0.0,
+        "2": 2.0345052083333332e-05,
+        "64": 0.008402506510416666,
+        "8": 0.00022379557291666666
+      },
+      "topk_set_flip_rate": {
+        "1": 0.0,
+        "2": 2.0345052083333332e-05,
+        "64": 0.0003255208333333333,
+        "8": 2.0345052083333332e-05
+      },
+      "vocab": 64,
+      "window": 512
+    },
+    {
+      "arm": "cuda_int8_b1",
+      "delta_coverage": 0.9246441523234049,
+      "dispersion_index": 2.3303713830029618,
+      "flip_gap_max": 3.659933090209961,
+      "flip_gap_median": 0.12121200561523438,
+      "flip_gap_min": 3.814697265625e-06,
+      "flips_beyond_tau": 2,
+      "flips_within_tau": 2770,
+      "halves": [
+        {
+          "flips_beyond_2tau": 2,
+          "top1_flip_rate": 0.048299153645833336
+        },
+        {
+          "flips_beyond_2tau": 0,
+          "top1_flip_rate": 0.06449381510416667
+        }
+      ],
+      "ks": [
+        1,
+        2,
+        8,
+        64
+      ],
+      "longest_flip_run": 4,
+      "max_abs_logit_delta": 6.940334320068359,
+      "n_positions": 49152,
+      "p99_abs_logit_delta": 0.9696838569641115,
+      "tau": 3.2979088783264237,
+      "top1_flip_rate": 0.056396484375,
+      "top1_flips": 2772,
+      "topk_order_flip_rate": {
+        "1": 0.056396484375,
+        "2": 0.18672688802083334,
+        "64": 1.0,
+        "8": 0.9006144205729166
+      },
+      "topk_set_flip_rate": {
+        "1": 0.056396484375,
+        "2": 0.14487711588541666,
+        "64": 0.99609375,
+        "8": 0.52197265625
+      },
+      "vocab": 64,
+      "window": 512
+    },
+    {
+      "arm": "cuda_nf4_b1",
+      "delta_coverage": 0.7951491673787435,
+      "dispersion_index": 5.00616396247093,
+      "flip_gap_max": 6.323980331420898,
+      "flip_gap_median": 0.2960653305053711,
+      "flip_gap_min": 1.33514404296875e-05,
+      "flips_beyond_tau": 0,
+      "flips_within_tau": 7876,
+      "halves": [
+        {
+          "flips_beyond_2tau": 0,
+          "top1_flip_rate": 0.13631184895833334
+        },
+        {
+          "flips_beyond_2tau": 0,
+          "top1_flip_rate": 0.18416341145833334
+        }
+      ],
+      "ks": [
+        1,
+        2,
+        8,
+        64
+      ],
+      "longest_flip_run": 6,
+      "max_abs_logit_delta": 9.263357162475586,
+      "n_positions": 49152,
+      "p99_abs_logit_delta": 2.5020465278625443,
+      "tau": 7.882535305023112,
+      "top1_flip_rate": 0.16023763020833334,
+      "top1_flips": 7876,
+      "topk_order_flip_rate": {
+        "1": 0.16023763020833334,
+        "2": 0.4393513997395833,
+        "64": 1.0,
+        "8": 0.9945271809895834
+      },
+      "topk_set_flip_rate": {
+        "1": 0.16023763020833334,
+        "2": 0.3686116536458333,
+        "64": 0.99993896484375,
+        "8": 0.8753255208333334
+      },
+      "vocab": 64,
+      "window": 512
+    }
+  ],
+  "seq_len": 512,
+  "throughput_pos_per_s": {
+    "cpu_fp32": 290.5366807114729,
+    "cpu_fp32_rep": 281.2695149478561,
+    "cuda_bf16_b1": 7360.866793607187,
+    "cuda_bf16_b1_rep": 7469.449164356799,
+    "cuda_bf16_b8": 12629.12985020448,
+    "cuda_fp16_b1": 6773.792788841805,
+    "cuda_fp32_b1": 2014.6062444719903,
+    "cuda_fp32_b8": 2289.382716608104,
+    "cuda_int8_b1": 2812.320116020394,
+    "cuda_nf4_b1": 6229.5160985178945
+  },
+  "topk_used": 64
+}

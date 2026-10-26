@@ -1,0 +1,20 @@
+{
+ "_README": "Probes for FORWARD_LEDGER.md rows: one entry per filed row, either a command and the value it prints while the row is open, or a declared why_not. Written by ledger_row.py, re-derived by check_ledger_probes.py; never hand-edit.",
+ "_count": 1,
+ "probes": [
+  {
+   "id": "LINT-1",
+   "subject": "src/sideband/synthetic.py",
+   "cmd": "python -c \"import subprocess;o=subprocess.run(['ruff','check','--isolated','--no-cache','--ignore-noqa','--select','F401','--output-format','concise','src/sideband/synthetic.py','tests/test_fullfree.py','tests/test_tools_and_real.py'],capture_output=True,text=True).stdout;print(o.count('F401'))\"",
+   "open_value": "5",
+   "why_not": null,
+   "inputs": [
+    "tests/test_fullfree.py",
+    "tests/test_tools_and_real.py"
+   ],
+   "row_sha": "1bc99afcf207",
+   "text_sha": "8d1a91ad2b6b",
+   "verified_2026_10_01": "OPEN (filed 2026-10-01; probe driven at filing)"
+  }
+ ]
+}
